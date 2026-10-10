@@ -119,6 +119,10 @@
       "paperIds": [
         "p-dc34f128ac0cce",
         "p-2f50ba145c7c17",
+        "p-dibbelt2016customizable",
+        "p-blasius2025customizable",
+        "p-delling2013phast",
+        "p-yen1971finding",
         "p-7e412a60ce06db",
         "p-2e091a5b9a71d4",
         "p-710aecde5fd91f",
@@ -22682,6 +22686,333 @@
             "publication.issn",
             "access.licenses",
             "access.original"
+          ]
+        }
+      ]
+    },
+    "p-dibbelt2016customizable": {
+      "citationKey": "dibbelt2016customizable",
+      "title": "Customizable Contraction Hierarchies",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Dibbelt",
+            "given": "Julian",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Karlsruhe Institute of Technology"
+            ]
+          },
+          {
+            "family": "Strasser",
+            "given": "Ben",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Karlsruhe Institute of Technology"
+            ]
+          },
+          {
+            "family": "Wagner",
+            "given": "Dorothea",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Karlsruhe Institute of Technology"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "ACM Journal of Experimental Algorithmics",
+        "kind": "journal-article",
+        "year": 2016,
+        "publisher": "Association for Computing Machinery (ACM)",
+        "volume": "21",
+        "issue": null,
+        "pages": "1-49",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1084-6654"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1145/2886843",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "固定路网的快速查询",
+        "question": "如何把路网拓扑预处理与通行成本更新分开，以支持反复的最短路径查询？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1145/2886843",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1145/2886843",
+          "retrievedOn": "2026-10-10",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-delling2013phast": {
+      "citationKey": "delling2013phast",
+      "title": "PHAST: Hardware-accelerated shortest path trees",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Delling",
+            "given": "Daniel",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Goldberg",
+            "given": "Andrew V.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Nowatzyk",
+            "given": "Andreas",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Werneck",
+            "given": "Renato F.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Parallel and Distributed Computing",
+        "kind": "journal-article",
+        "year": 2013,
+        "publisher": "Elsevier BV",
+        "volume": "73",
+        "issue": "7",
+        "pages": "940-952",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0743-7315"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.jpdc.2012.02.007",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "并行与 GPU 路径搜索",
+        "question": "路网预处理和有序扫描如何利用多核及 GPU 加速单源最短路径树？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.jpdc.2012.02.007",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016/j.jpdc.2012.02.007",
+          "retrievedOn": "2026-10-10",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-yen1971finding": {
+      "citationKey": "yen1971finding",
+      "title": "Finding the K Shortest Loopless Paths in a Network",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Yen",
+            "given": "Jin Y.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Santa Clara"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Management Science",
+        "kind": "journal-article",
+        "year": 1971,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1287/mnsc.17.11.712",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "多候选路径生成",
+        "question": "如何按成本顺序求出网络中的 K 条最短无环路径？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1287/mnsc.17.11.712",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1287/mnsc.17.11.712",
+          "retrievedOn": "2026-10-10",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-blasius2025customizable": {
+      "citationKey": "blasius2025customizable",
+      "title": "Customizable Contraction Hierarchies – A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Bläsius",
+            "given": null,
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": false
+      },
+      "publication": {
+        "venue": "arXiv",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2502.10519",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "一对多搜索与转向约束",
+        "question": "可定制层次路网索引如何实现高效的一对多查询、成本更新和转向限制？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://arxiv.org/html/2502.10519v1",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/html/2502.10519v1",
+          "retrievedOn": "2026-10-10",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "links.original"
           ]
         }
       ]

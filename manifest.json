@@ -1,8 +1,8 @@
 {
-  "version": "a08154f19f35f77b8dff1a40f9dbd970dfd513570177595653e9ce207b486400",
-  "catalogVersion": "93850b769df96fc0f24db6ab364ea8186817c557302a2fde6ab2c86e59e577bd",
+  "version": "0bee0ee549eb1ef0677007d03605a8b01d8164e4ecd05a92eaf14de8bd278574",
+  "catalogVersion": "9c9628ea2529133df446ca60a94334ea339ab8302922631e2a49d1dc195750bf",
   "readingVersion": "a8748b9d93db2c2740ce2a6defa7df0be9d378bf273037a439763435ae9bfc5d",
-  "papers": 174,
+  "papers": 178,
   "readings": 95,
   "chapters": [
     "复杂系统理论与集体动力学",
@@ -80,9 +80,9 @@
     "assets/katex-LICENSE.txt": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
     "assets/katex.min.css": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00",
     "assets/style.css": "8eb747ae03f10b1149c3f3ae3047d9e5c09c7eb1b69c3c5a26420c8d74beaba4",
-    "catalog.json": "93850b769df96fc0f24db6ab364ea8186817c557302a2fde6ab2c86e59e577bd",
+    "catalog.json": "9c9628ea2529133df446ca60a94334ea339ab8302922631e2a49d1dc195750bf",
     "catalog.schema.json": "8f9fbc9581faf1bfb01b516d5f122f18ffe8a9442064a5ed7e4f2f7ddfe345e7",
-    "index.html": "64f674db37003881efca712de1fe9b752f09827c0d31b47b8e92cb7a45490d6f",
+    "index.html": "b69a8209eaa94a747239e6288c15edf25ee3ce6eb3aacb607d79b6918fc701ef",
     "reading-cards.json": "a8748b9d93db2c2740ce2a6defa7df0be9d378bf273037a439763435ae9bfc5d",
     "readings/alessandretti2020scales.html": "44b8665feae7676c41e52c6b8ac082564e790e058526ad29a38f6c8378daecd6",
     "readings/ashery2025emergent.html": "f388cf8ccc7dfa9ff4fa2ce1fdad67ea3953f7d9342705d685e401b59753b88e",
