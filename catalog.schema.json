@@ -1,0 +1,635 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json",
+  "title": "AgentCity 文献主数据",
+  "description": "文献主数据。",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "const": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json"
+    },
+    "schemaVersion": {
+      "const": 1,
+      "description": "数据结构版本。"
+    },
+    "library": {
+      "type": "object",
+      "description": "文献库的公开名称。",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "文献库标题。",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "文献库副标题。",
+          "minLength": 1
+        },
+        "language": {
+          "const": "zh-CN",
+          "description": "目录与阅读界面的语言。"
+        }
+      },
+      "required": [
+        "title",
+        "subtitle",
+        "language"
+      ]
+    },
+    "chapters": {
+      "type": "array",
+      "description": "数组顺序决定索引章节和网页选项卡顺序。",
+      "items": {
+        "type": "object",
+        "description": "一个章节。",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "稳定章节 ID，重命名和排序时保持不变。",
+            "pattern": "^s-[a-z0-9-]+$"
+          },
+          "title": {
+            "type": "string",
+            "description": "章节名称。",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "description": "章节覆盖的研究主题。",
+            "minLength": 1
+          },
+          "paperIds": {
+            "type": "array",
+            "description": "本章论文顺序；每篇论文只属于一个主章节。",
+            "items": {
+              "type": "string",
+              "description": "papers 词典中的论文 ID。",
+              "pattern": "^p-[a-z0-9-]+$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "description",
+          "paperIds"
+        ]
+      },
+      "minItems": 1
+    },
+    "papers": {
+      "type": "object",
+      "description": "按永久论文 ID 索引的词典。ID 不随 DOI、题名、年份和引用键修改。",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "patternProperties": {
+        "^p-[a-z0-9-]+$": {
+          "type": "object",
+          "description": "一个独立文献条目。正式论文与对应预印本共用一个条目。",
+          "additionalProperties": false,
+          "properties": {
+            "citationKey": {
+              "type": "string",
+              "description": "稳定的 BibTeX 风格引用键；有解读时与 Markdown 文件名一致。",
+              "pattern": "^[a-z][a-z0-9]+$"
+            },
+            "title": {
+              "type": "string",
+              "description": "论文的原文完整题名，使用纯文本。",
+              "minLength": 1
+            },
+            "titleZh": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "经过核对的中文题名；中文主题不是题名翻译，未知时为 null。"
+            },
+            "authors": {
+              "type": "object",
+              "description": "作者资料；页面和索引自动显示第一作者姓氏，存在其他作者时添加 et al.。",
+              "additionalProperties": false,
+              "properties": {
+                "items": {
+                  "type": "array",
+                  "description": "已取得的有序作者名单。",
+                  "items": {
+                    "type": "object",
+                    "description": "一位个人或团体作者；顺序与论文署名一致。",
+                    "additionalProperties": false,
+                    "properties": {
+                      "family": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "英文姓氏；机构作者可为 null。"
+                      },
+                      "given": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "英文名字或来源中的缩写；未取得时为 null。"
+                      },
+                      "literal": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "机构或团体作者的完整名称；个人作者为 null。"
+                      },
+                      "orcid": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "ORCID 的 HTTPS 标识链接。",
+                        "format": "uri",
+                        "pattern": "^https?://"
+                      },
+                      "affiliations": {
+                        "type": "array",
+                        "description": "已取得的作者机构；空数组表示尚无机构资料。",
+                        "items": {
+                          "type": "string",
+                          "description": "来源明确列出的机构名称。",
+                          "minLength": 1
+                        }
+                      }
+                    },
+                    "required": [
+                      "family",
+                      "given",
+                      "literal",
+                      "orcid",
+                      "affiliations"
+                    ]
+                  },
+                  "minItems": 1
+                },
+                "complete": {
+                  "type": "boolean",
+                  "description": "是否已取得全部作者；false 时名单为部分署名，显示第一作者 et al.。"
+                }
+              },
+              "required": [
+                "items",
+                "complete"
+              ]
+            },
+            "publication": {
+              "type": "object",
+              "description": "出版信息。日期含义分别维护，不因不同日期年份不同就覆盖已确认的卷期年。",
+              "additionalProperties": false,
+              "properties": {
+                "venue": {
+                  "type": "string",
+                  "description": "精确到子刊的期刊名称；会议、专著、预印本保留明确标识。",
+                  "minLength": 1
+                },
+                "kind": {
+                  "enum": [
+                    "journal-article",
+                    "conference-paper",
+                    "preprint",
+                    "book",
+                    "book-chapter",
+                    "other"
+                  ],
+                  "description": "文献类型。"
+                },
+                "year": {
+                  "type": "integer",
+                  "minimum": 1600,
+                  "maximum": 2200,
+                  "description": "索引用年份，优先正式卷期年；不要自动用在线发表年覆盖。"
+                },
+                "publisher": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "出版机构。"
+                },
+                "volume": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "卷号，保留字符串格式。"
+                },
+                "issue": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "期号。"
+                },
+                "pages": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "页码或页码范围。"
+                },
+                "articleNumber": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "文章编号；与页码分开。"
+                },
+                "publishedOnline": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "在线发表日期，可精确到年、月或日。",
+                  "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$"
+                },
+                "publishedPrint": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "正式卷期出版日期，可精确到年、月或日。",
+                  "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$"
+                },
+                "posted": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "预印本发布日期，可精确到年、月或日。",
+                  "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$"
+                },
+                "issn": {
+                  "type": "array",
+                  "description": "来源提供的 ISSN。",
+                  "items": {
+                    "type": "string",
+                    "description": "期刊 ISSN。",
+                    "pattern": "^\\d{4}-\\d{3}[\\dX]$"
+                  },
+                  "uniqueItems": true
+                },
+                "isbn": {
+                  "type": "array",
+                  "description": "来源提供的 ISBN。",
+                  "items": {
+                    "type": "string",
+                    "description": "书籍 ISBN。",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "venue",
+                "kind",
+                "year",
+                "publisher",
+                "volume",
+                "issue",
+                "pages",
+                "articleNumber",
+                "publishedOnline",
+                "publishedPrint",
+                "posted",
+                "issn",
+                "isbn"
+              ]
+            },
+            "identifiers": {
+              "type": "object",
+              "description": "稳定文献标识。",
+              "additionalProperties": false,
+              "properties": {
+                "doi": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "裸 DOI，不包含 https://doi.org/。",
+                  "pattern": "^10\\.\\d{4,9}/\\S+$"
+                },
+                "arxiv": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "arXiv 裸编号，不含版本后缀。",
+                  "pattern": "^(?:\\d{4}\\.\\d{4,5}|[a-z-]+(?:\\.[A-Z]{2})?/\\d{7})$"
+                },
+                "arxivVersion": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 1,
+                  "description": "原文链接明确指定的 arXiv 版本；未指定时为 null。"
+                }
+              },
+              "required": [
+                "doi",
+                "arxiv",
+                "arxivVersion"
+              ]
+            },
+            "research": {
+              "type": "object",
+              "description": "文献分类与研究问题。方法、发现及局限的长文仍维护在单篇解读中。",
+              "additionalProperties": false,
+              "properties": {
+                "direction": {
+                  "type": "string",
+                  "description": "具体研究方向，对应表格第一列。",
+                  "minLength": 1
+                },
+                "question": {
+                  "type": "string",
+                  "description": "该论文研究的问题，对应表格第二列。",
+                  "minLength": 1
+                },
+                "indexTerms": {
+                  "type": "array",
+                  "description": "辅助检索的主题词；没有资料时保留空数组。",
+                  "items": {
+                    "type": "string",
+                    "description": "经过来源或人工支持的主题词。",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "direction",
+                "question",
+                "indexTerms"
+              ]
+            },
+            "links": {
+              "type": "object",
+              "description": "资源链接；空数组表示尚无已确认的链接，不表示论文没有相应资源。",
+              "additionalProperties": false,
+              "properties": {
+                "original": {
+                  "type": "string",
+                  "description": "原文正式入口；尚无正式发表版本时为预印本入口。",
+                  "format": "uri",
+                  "pattern": "^https?://"
+                },
+                "arxiv": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "对应 arXiv 版本；可保存已确认的链接，显示由 access.original 决定。",
+                  "format": "uri",
+                  "pattern": "^https?://"
+                },
+                "data": {
+                  "type": "array",
+                  "description": "已确认属于论文的数据入口。",
+                  "items": {
+                    "type": "object",
+                    "description": "数据、代码或补充材料入口。",
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "description": "资源名称。",
+                        "minLength": 1
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "已核对属于该论文的公开资源链接。",
+                        "format": "uri",
+                        "pattern": "^https?://"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "url"
+                    ]
+                  }
+                },
+                "code": {
+                  "type": "array",
+                  "description": "已确认属于论文的代码入口。",
+                  "items": {
+                    "type": "object",
+                    "description": "数据、代码或补充材料入口。",
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "description": "资源名称。",
+                        "minLength": 1
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "已核对属于该论文的公开资源链接。",
+                        "format": "uri",
+                        "pattern": "^https?://"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "url"
+                    ]
+                  }
+                },
+                "supplement": {
+                  "type": "array",
+                  "description": "已确认属于论文的补充材料入口。",
+                  "items": {
+                    "type": "object",
+                    "description": "数据、代码或补充材料入口。",
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "description": "资源名称。",
+                        "minLength": 1
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "已核对属于该论文的公开资源链接。",
+                        "format": "uri",
+                        "pattern": "^https?://"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "url"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "original",
+                "arxiv",
+                "data",
+                "code",
+                "supplement"
+              ]
+            },
+            "access": {
+              "type": "object",
+              "description": "访问与许可信息。原文付费且存在 arXiv 链接时，表格才显示 arXiv 替代入口。",
+              "additionalProperties": false,
+              "properties": {
+                "original": {
+                  "enum": [
+                    "open",
+                    "subscription",
+                    "unknown"
+                  ],
+                  "description": "原文访问状态；unknown 表示没有充分的访问依据。"
+                },
+                "licenses": {
+                  "type": "array",
+                  "description": "已取得的许可记录。",
+                  "items": {
+                    "type": "object",
+                    "description": "许可记录；存在许可不自动等于当前正式版可免费访问。",
+                    "additionalProperties": false,
+                    "properties": {
+                      "url": {
+                        "type": "string",
+                        "description": "来源记录的许可协议地址。",
+                        "format": "uri",
+                        "pattern": "^https?://"
+                      },
+                      "appliesTo": {
+                        "type": "string",
+                        "description": "许可适用版本，例如 vor、am 或 unspecified。"
+                      },
+                      "startDate": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "许可起始日期。",
+                        "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$"
+                      }
+                    },
+                    "required": [
+                      "url",
+                      "appliesTo",
+                      "startDate"
+                    ]
+                  }
+                },
+                "sourceIds": {
+                  "type": "array",
+                  "description": "支持原文访问状态的来源。",
+                  "items": {
+                    "type": "string",
+                    "description": "同一篇论文 provenance 中的来源 ID。",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "original",
+                "licenses",
+                "sourceIds"
+              ]
+            },
+            "reading": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "相对 catalog.json 所在目录的解读路径；暂无解读时为 null。",
+              "pattern": "^论文解读/[a-z][a-z0-9]+\\.md$"
+            },
+            "provenance": {
+              "type": "array",
+              "description": "支持条目信息的来源；字段冲突保留在核查工作记录，不能凭空补齐。",
+              "items": {
+                "type": "object",
+                "description": "字段来源。接口取得的书目信息不等于论文结论核验。",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "条目内唯一的来源键。",
+                    "pattern": "^[a-z0-9-]+$"
+                  },
+                  "provider": {
+                    "type": "string",
+                    "description": "来源机构或资料类型。",
+                    "minLength": 1
+                  },
+                  "url": {
+                    "type": "string",
+                    "description": "可公开访问的来源记录或论文地址。",
+                    "format": "uri",
+                    "pattern": "^https?://"
+                  },
+                  "retrievedOn": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "取得此来源的日期；历史未记录时为 null。",
+                    "format": "date"
+                  },
+                  "fields": {
+                    "type": "array",
+                    "description": "按字段记录证据归属；不表示完成全文验证。",
+                    "items": {
+                      "type": "string",
+                      "description": "本来源实际支持的字段路径。",
+                      "minLength": 1
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "id",
+                  "provider",
+                  "url",
+                  "retrievedOn",
+                  "fields"
+                ]
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "citationKey",
+            "title",
+            "titleZh",
+            "authors",
+            "publication",
+            "identifiers",
+            "research",
+            "links",
+            "access",
+            "reading",
+            "provenance"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "library",
+    "chapters",
+    "papers"
+  ]
+}

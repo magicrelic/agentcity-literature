@@ -1,6 +1,7 @@
 {
-  "version": "b7c9d267ae1fab80d264b2bc69ef5cbe7f4dd0d0517484c2d090b09123ffd5d1",
-  "catalogVersion": "31ed4b2dde7371263a18f3fba369ebbcf43a0d229501e424e6f43d515de800f4",
+  "version": "a08154f19f35f77b8dff1a40f9dbd970dfd513570177595653e9ce207b486400",
+  "catalogVersion": "93850b769df96fc0f24db6ab364ea8186817c557302a2fde6ab2c86e59e577bd",
+  "readingVersion": "a8748b9d93db2c2740ce2a6defa7df0be9d378bf273037a439763435ae9bfc5d",
   "papers": 174,
   "readings": 95,
   "chapters": [
@@ -13,7 +14,8 @@
   ],
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "assets/app.js": "f6024e7495bdb4f883bb035f2bc47dace4a3fb8e37832ec688d065798c64c16a",
+    "assets/app.js": "249097321b661877467ac751885e59ecb2917ebd94a223450bf1e898a4695f73",
+    "assets/catalog-model.js": "fef3e55480445423cb0a8c064cc792daf73c408bbab34f347962dcdb8e6f2493",
     "assets/fonts/KaTeX_AMS-Regular.ttf": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
     "assets/fonts/KaTeX_AMS-Regular.woff": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
     "assets/fonts/KaTeX_AMS-Regular.woff2": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
@@ -78,8 +80,10 @@
     "assets/katex-LICENSE.txt": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
     "assets/katex.min.css": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00",
     "assets/style.css": "8eb747ae03f10b1149c3f3ae3047d9e5c09c7eb1b69c3c5a26420c8d74beaba4",
-    "catalog.json": "74c28ed16f2debeb64f960f00c0a1b83e3cbff869068ad758750521983e18f50",
-    "index.html": "bb35dda83ab78b068f2da8b148ddfbb999e43a92fcea09f515eb8fb32eec8bbe",
+    "catalog.json": "93850b769df96fc0f24db6ab364ea8186817c557302a2fde6ab2c86e59e577bd",
+    "catalog.schema.json": "8f9fbc9581faf1bfb01b516d5f122f18ffe8a9442064a5ed7e4f2f7ddfe345e7",
+    "index.html": "64f674db37003881efca712de1fe9b752f09827c0d31b47b8e92cb7a45490d6f",
+    "reading-cards.json": "a8748b9d93db2c2740ce2a6defa7df0be9d378bf273037a439763435ae9bfc5d",
     "readings/alessandretti2020scales.html": "44b8665feae7676c41e52c6b8ac082564e790e058526ad29a38f6c8378daecd6",
     "readings/ashery2025emergent.html": "f388cf8ccc7dfa9ff4fa2ce1fdad67ea3953f7d9342705d685e401b59753b88e",
     "readings/astero2022mobility.html": "88f2144be3158306a42aad6da413c61bddf0c826b905d5685c18fcebb12c8422",

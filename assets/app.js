@@ -1,6 +1,14 @@
-(() => {
-  'use strict';
-  const catalog = JSON.parse(document.getElementById('catalog-data').textContent);
+import { catalogView } from './catalog-model.js?v=5beb1aa2e3d3e058dba2e4be4888e1803915ccda18c2361f41abe995067b06ac';
+
+async function start() {
+  const versions=['catalog-version','reading-version'].map(name=>document.querySelector(`meta[name="${name}"]`).content);
+  const [source,cards]=await Promise.all(['catalog.json','reading-cards.json'].map(async (file,i)=>{
+    const response=await fetch(`${file}?v=${versions[i]}`);
+    if (!response.ok) throw new Error(`文献数据加载失败 (${response.status})`);
+    return response.json();
+  }));
+  const catalog = catalogView(source,cards);
+  document.getElementById('load-status').hidden=true;
   const $ = id => document.getElementById(id);
   const paperMap = new Map(catalog.chapters.flatMap(c => c.papers.map(p => [p.id, { ...p, chapterId:c.id }])));
   const tabs = $('tabs'), rows = $('paper-rows'), card = $('paper-card');
@@ -17,7 +25,7 @@
   function matches(p) {
     if ($('has-reading').checked && !p.reading) return false;
     const keywords = normalize($('search').value.trim()).split(/\s+/).filter(Boolean);
-    const haystack = normalize([p.title,p.authors,p.journal,p.year,p.direction,p.question].join(' '));
+    const haystack = normalize([p.title,p.metadata.titleZh,p.authors,...p.metadata.authors.items.flatMap(a=>[a.given,a.family,a.literal]),p.journal,p.year,p.direction,p.question,...p.metadata.research.indexTerms,p.metadata.identifiers.doi,p.metadata.identifiers.arxiv].join(' '));
     return keywords.every(word => haystack.includes(word));
   }
   function updateHash(paperId = null) {
@@ -108,7 +116,11 @@
     currentPaper = paper; anchor = button; pinned = pin || mobile.matches;
     if (anchor) anchor.setAttribute('aria-expanded','true');
     $('card-title').textContent = paper.title; $('card-direction').textContent = paper.direction;
-    $('card-authors').textContent = paper.authors; $('card-publication').textContent = `${paper.journal} (${paper.year})`;
+    $('card-authors').textContent = paper.authors;
+    const publication=paper.metadata.publication;
+    const issue=publication.volume ? ` ${publication.volume}${publication.issue ? `(${publication.issue})` : ''}` : '';
+    const pages=publication.pages || publication.articleNumber;
+    $('card-publication').textContent = `${paper.journal}${issue}${pages ? `, ${pages}` : ''} (${paper.year})`;
     $('card-theme').textContent = paper.card.theme || ''; $('card-theme').hidden = !paper.card.theme;
     const sections = [ ['研究问题',paper.card.question || paper.question], ['研究方法',paper.card.approach], ['主要发现',paper.card.findings], ['方法与证据',paper.card.overview], ['证据范围',paper.card.scope] ];
     $('card-sections').replaceChildren(...sections.filter(([,value]) => value).map(([name,value]) => { const section=text('section','', 'card-section'); section.append(text('h3',name),text('p',value)); return section; }));
@@ -187,4 +199,10 @@
   }
   window.addEventListener('hashchange',readHash);
   readHash();
-})();
+}
+start().catch(error=>{
+  const status=document.getElementById('load-status');
+  status.hidden=false; status.textContent='文献暂时未能加载，请刷新页面重试。';
+  status.setAttribute('role','alert');
+  console.error(error);
+});
