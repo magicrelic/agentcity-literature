@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>How basin stability complements the linear-stability paradigm · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-87731059078047">返回文献库</a><a href="https://doi.org/10.1038/nphys2516" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Menck et al. - How basin stability complements the linear-stability paradigm</h1>
+<p><strong>如何衡量有限扰动下的状态稳定性</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Menck et al.，<em>How basin stability complements the linear-stability paradigm</em>，<strong>Nature Physics（2013）</strong>。<a href="https://doi.org/10.1038/nphys2516">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；吸引域与非线性稳定性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/nphys2516</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 提出吸引域稳定性，用一个状态吸引域相对于指定扰动分布的大小补充局部线性稳定性。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 稳定状态抵抗大扰动的能力如何由吸引域刻画，并补充局部线性稳定分析？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 局部特征值回答小扰动能否衰减，多吸引子系统还涉及有限扰动会进入哪一个状态。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>稳定状态抵抗大扰动的能力如何由吸引域刻画，并补充局部线性稳定分析</td>
+<td>[Analysis] 局部特征值回答小扰动能否衰减，多吸引子系统还涉及有限扰动会进入哪一个状态。</td>
+<td>[Analysis] 把状态稳定性定义为指定扰动下留在目标吸引域的概率，补充局部线性判据。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 把状态稳定性定义为指定扰动下留在目标吸引域的概率，补充局部线性判据。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 局部恢复率描述平衡点附近的小扰动；吸引域方法关注有限位移后是否仍返回目标状态，因此需要明确扰动空间与抽样分布。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 吸引域稳定性的概率表达为
+[
+S_B=\int_{\mathcal B}q(x),\mathrm dx.
+]
+<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">B</mi></mrow><annotation encoding="application/x-tex">\mathcal B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.0304em;">B</span></span></span></span></eq> 是目标吸引子的吸引域，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span></eq> 是指定的初始扰动分布。它回答有限扰动后返回的概率，不是平衡点附近的特征值；换一个 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span></eq>，概率也可能改变。此式解释摘要提出的度量，正文的具体估计方案不可评估。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：提出吸引域稳定性，用一个状态吸引域相对于指定扰动分布的大小补充局部线性稳定性。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 吸引域概率依赖扰动分布，并非状态固有的单一数值；线性稳定与有限扰动返回能力回答不同问题。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 在相同初始状态下分层抽样不同方向与幅度的扰动，比较返回概率和小扰动恢复率；有限观测时间可能误判暂态与最终吸引域。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 稳定性数值应连同扰动方向、幅度分布和返回判据一起报告。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="ashwin2012tipping.md">Ashwin et al. - Tipping points in open systems: bifurcation, noise-induced and rate-dependent examples in the climate system</a> 对照阅读：该文研究“分岔、随机噪声及外部条件变化速率分别如何使系统离开原有状态”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：吸引域概率依赖扰动分布，并非状态固有的单一数值；线性稳定与有限扰动返回能力回答不同问题。</li>
+<li>核心假说与增量：在相同初始状态下分层抽样不同方向与幅度的扰动，比较返回概率和小扰动恢复率。</li>
+<li>初始方法与如何验证：在相同初始状态下分层抽样不同方向与幅度的扰动，比较返回概率和小扰动恢复率；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：有限观测时间可能误判暂态与最终吸引域。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

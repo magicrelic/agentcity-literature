@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Uncovering space-independent communities in spatial networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-650180ffdc77bb">返回文献库</a><a href="https://doi.org/10.1073/pnas.1018962108" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Expert et al. - Uncovering space-independent communities in spatial networks</h1>
+<p><strong>社区怎样从空间邻近效应中分离</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Expert et al.，<em>Uncovering space-independent communities in spatial networks</em>，<strong>Proceedings of the National Academy of Sciences (PNAS)（2011）</strong>。<a href="https://doi.org/10.1073/pnas.1018962108">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；空间效应的分离</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1073/pnas.1018962108</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Complexity and Networks Group, Imperial College London, London SW7 2AZ, United Kingdom;；Blackett Laboratory, Prince Consort Road, Imperial College London, London SW7 2AZ, United Kingdom;；Massachusetts Institute of Technology, Laboratory for Information and Decision Systems, 77 Massachusetts Avenue, Cambridge, MA 02139;</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 1–12, main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 为嵌入空间的网络构建距离相关零模型，借助空间模块度识别不能仅由地理机会解释的连接组织。 [Paper: PDF pp. 1–12, main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 排除节点规模和距离衰减后，空间网络中还存在哪些社区联系？ [Paper: PDF pp. 1–12, main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 邻近性本身产生密集连接，普通模块度可能把地理梯度当成特殊社区。 [Paper: PDF pp. 1–12, main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>排除节点规模和距离衰减后，空间网络中还存在哪些社区联系</td>
+<td>[Analysis] 邻近性本身产生密集连接，普通模块度可能把地理梯度当成特殊社区。</td>
+<td>[Analysis] 在期望边权中纳入空间距离，使残差分组对应超出该基线的联系。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 在期望边权中纳入空间距离，使残差分组对应超出该基线的联系。 [Paper: PDF pp. 1–12, main text]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 估计空间距离对预期连接的贡献，再用观测边相对该预期的偏离寻找社区。 [Paper: PDF pp. 1–12, main text]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 在期望边权中纳入空间距离，使残差分组对应超出该基线的联系。</td>
+<td>[Analysis] 零模型规定“超出什么”；残差社区需要独立活动信息解释。</td>
+<td>[Paper: PDF pp. 1–12, main text]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Paper] 空间零模型的模块度比较可概括为
+[
+Q=\frac{1}{2m}\sum_{ij}(A_{ij}-P^{\rm space}_{ij})\delta(c_i,c_j).
+]
+<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">A_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 为观测边权，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">P^{\rm space}_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1953em;vertical-align:-0.413em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7823em;"><span style="top:-2.4231em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span><span style="top:-3.1809em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">space</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.413em;"><span></span></span></span></span></span></span></span></span></span></eq> 为包含距离作用的期望边权，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">c_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 为分组。残差结构表示超过该空间基线的连接，不能解释为地理影响已被完全消除。</p>
+<p>[Paper: PDF pp. 1–12, main text]</p>
+<p>其余形式化推导按主文位置索引：</p>
+<ul>
+<li>公式1：[Paper: PDF p. 2, equations]。</li>
+<li>公式2、公式3：[Paper: PDF p. 4, equations]。</li>
+<li>公式4、公式5、公式6：[Paper: PDF p. 5, equations]。</li>
+<li>公式7：[Paper: PDF p. 8, equations]。</li>
+<li>公式8：[Paper: PDF p. 9, equations]。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>排除节点规模和距离衰减后，空间网络中还存在哪些社区联系</td>
+<td>摘要报告手机网络与带空间效应的人工基准；</td>
+<td>为嵌入空间的网络构建距离相关零模型，借助空间模块度识别不能仅由地理机会解释的连接组织。</td>
+<td>消除某个距离函数不等于消除全部空间约束；校正后的残差社区也可能反映设施、道路或区域边界。</td>
+<td>[Paper: PDF p. 10, Discussion]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Decomposition of a Belgian mobile phone network into co…</td>
+<td>[Paper: PDF p. 7, Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Variation of information over the (λdiﬀerent, ρ) parame…</td>
+<td>[Paper: PDF p. 10, Figure 2]</td>
+</tr>
+<tr>
+<td>Table 1</td>
+<td>z-scores for the modularity measured on the original da…</td>
+<td>[Paper: PDF p. 8, Table 1]</td>
+</tr>
+<tr>
+<td>Table 2</td>
+<td>Average VI measured between the partition found on the …</td>
+<td>[Paper: PDF p. 9, Table 2]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 消除某个距离函数不等于消除全部空间约束；校正后的残差社区也可能反映设施、道路或区域边界。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 用已知行为分组而地理梯度不同的人工网络检验恢复，并在真实网络交叉验证；距离函数错配与样本不均可能造成残差结构。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 零模型规定“超出什么”；残差社区需要独立活动信息解释。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="arnaudon2024algorithm.md">Arnaudon et al. - Algorithm 1044: PyGenStability, a Multiscale Community Detection Framework with Generalized Markov Stability</a> 对照阅读：该文研究“如何在不同网络类型中稳定识别多个扩散尺度上的社区结构”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：消除某个距离函数不等于消除全部空间约束；校正后的残差社区也可能反映设施、道路或区域边界。</li>
+<li>核心假说与增量：用已知行为分组而地理梯度不同的人工网络检验恢复，并在真实网络交叉验证。</li>
+<li>初始方法与如何验证：用已知行为分组而地理梯度不同的人工网络检验恢复，并在真实网络交叉验证；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：距离函数错配与样本不均可能造成残差结构。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

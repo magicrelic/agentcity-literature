@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Implementing a household joint activity-travel multi-agent simulation tool: first results · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-45a455701696&paper=p-710aecde5fd91f">返回文献库</a><a href="https://doi.org/10.1007/s11116-015-9645-7" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Dubernet et al. - Implementing a household joint activity-travel multi-agent simulation tool: first results</h1>
+<p><strong>家庭共同活动怎样进入交通仿真</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Dubernet et al.，<em>Implementing a household joint activity-travel multi-agent simulation tool: first results</em>，<strong>Transportation（2015）</strong>。<a href="https://doi.org/10.1007/s11116-015-9645-7">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；联合活动与行程规划</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1007/s11116-015-9645-7</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 用博弈框架和近似求解算法把家庭共同决策接入MATSim，测试联合出行安排的可实现性。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 传统多智能体模型如何生成家庭成员相互协调的联合活动与出行？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 家庭任务和共同出行要求多个人的计划在时间与分工上相互一致。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统多智能体模型如何生成家庭成员相互协调的联合活动与出行</td>
+<td>[Analysis] 家庭任务和共同出行要求多个人的计划在时间与分工上相互一致。</td>
+<td>[Analysis] 用联合博弈与近似搜索产生可共同执行的计划，再接入共享交通负载。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用联合博弈与近似搜索产生可共同执行的计划，再接入共享交通负载。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 家庭成员的计划需共同满足联合出行与任务约束；算法搜索相互一致的活动旅行方案并在交通环境中迭代。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：不补写未见正文中的公式或参数。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：用博弈框架和近似求解算法把家庭共同决策接入MATSim，测试联合出行安排的可实现性。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 传统模型已有家庭协调机制，不能把联合决策写成LLM的独占优势；近似解也不自动对应真实家庭安排。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 对同一家庭需求比较独立规划和联合规划的可行率、总时间及负担分配；初始计划与效用设定可能影响解。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 联合决策已有非LLM建模方式，新增生成机制必须比较相同输入和执行权限。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：传统模型已有家庭协调机制，不能把联合决策写成LLM的独占优势；近似解也不自动对应真实家庭安排。</li>
+<li>核心假说与增量：对同一家庭需求比较独立规划和联合规划的可行率、总时间及负担分配。</li>
+<li>初始方法与如何验证：对同一家庭需求比较独立规划和联合规划的可行率、总时间及负担分配；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：初始计划与效用设定可能影响解。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

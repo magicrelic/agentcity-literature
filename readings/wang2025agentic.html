@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Agentic Large Language Models for day-to-day route choices · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-cc4665b62d22&paper=p-b53beea3db39bc">返回文献库</a><a href="https://doi.org/10.1016/j.trc.2025.105307" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Wang et al. - Agentic Large Language Models for day-to-day route choices</h1>
+<p><strong>经验记忆怎样改变逐日路线选择</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Wang et al.，<em>Agentic Large Language Models for day-to-day route choices</em>，<strong>Transportation Research Part C: Emerging Technologies（2025）</strong>。<a href="https://doi.org/10.1016/j.trc.2025.105307">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；生成式路径决策</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1016/j.trc.2025.105307</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 1–24, main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] LLMTraveler用经验记忆与个体属性生成逐日路线选择，在单OD实验数据及多OD交通网络中比较适应行为。 [Paper: PDF pp. 1–24, main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] LLM 智能体如何利用经历与反馈作出逐日路径选择，并影响交通分配？ [Paper: PDF pp. 1–24, main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 路线选择既依赖最新反馈，也依赖个人过去的使用经验。 [Paper: PDF pp. 1–24, main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM 智能体如何利用经历与反馈作出逐日路径选择，并影响交通分配</td>
+<td>[Analysis] 路线选择既依赖最新反馈，也依赖个人过去的使用经验。</td>
+<td>[Analysis] 让经验记忆进入逐日换路，并分别在行为数据与多OD网络评价。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 让经验记忆进入逐日换路，并分别在行为数据与多OD网络评价。 [Paper: PDF p. 3, Method]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 检索过往路线反馈并结合人格输入决策；单OD检验换路行为，多OD使用Ortuzar–Willumsen网络比较MNL和强化学习。 [Paper: PDF p. 3, Method]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 让经验记忆进入逐日换路，并分别在行为数据与多OD网络评价。</td>
+<td>[Analysis] 个人换路拟合与群体负载稳定性应分开报告。</td>
+<td>[Paper: PDF p. 3, Method]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<p>其余形式化推导按主文位置索引：</p>
+<ul>
+<li>公式1：[Paper: PDF p. 3, equations]。</li>
+<li>公式2：[Paper: PDF p. 4, equations]。</li>
+<li>公式3：[Paper: PDF p. 6, equations]。</li>
+<li>公式4：[Paper: PDF p. 7, equations]。</li>
+<li>公式5：[Paper: PDF p. 10, equations]。</li>
+<li>公式6：[Paper: PDF p. 16, equations]。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM 智能体如何利用经历与反馈作出逐日路径选择，并影响交通分配</td>
+<td>作者稿图表覆盖单OD与多OD实验及轻量模型；摘要报告单OD可部分对照实验行为，多OD表现可与既有模型比较。</td>
+<td>LLMTraveler用经验记忆与个体属性生成逐日路线选择，在单OD实验数据及多OD交通网络中比较适应行为。</td>
+<td>不应把部分真人选择一致写成完整城市有效性；记忆、人格、信息内容和模型推理需要分别控制。</td>
+<td>[Paper: PDF p. 20, Conclusion]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Framework of LLMTraveler 2.2 LLM-empowered traveler age…</td>
+<td>[Paper: PDF p. 4, Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Example prompt template Traveler Profile. Individual at…</td>
+<td>[Paper: PDF p. 5, Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>DTD route choice modeling framework of the model but al…</td>
+<td>[Paper: PDF p. 6, Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>Single OD pair network Output. After sufficient days/it…</td>
+<td>[Paper: PDF p. 7, Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 不应把部分真人选择一致写成完整城市有效性；记忆、人格、信息内容和模型推理需要分别控制。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 相同路线集合、反馈和调用预算下比较LLM、强化学习与MNL，检验换路率和负载波动；信息权限和记忆长度不匹配可能造成伪优势。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 个人换路拟合与群体负载稳定性应分开报告。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="bielawski2025heterogeneity.md">Bielawski et al. - Heterogeneity, reinforcement learning, and chaos in population games</a> 对照阅读：该文研究“学习速度的异质性如何产生复杂集体波动，并与平均流量均衡并存”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：不应把部分真人选择一致写成完整城市有效性；记忆、人格、信息内容和模型推理需要分别控制。</li>
+<li>核心假说与增量：相同路线集合、反馈和调用预算下比较LLM、强化学习与MNL，检验换路率和负载波动。</li>
+<li>初始方法与如何验证：相同路线集合、反馈和调用预算下比较LLM、强化学习与MNL，检验换路率和负载波动；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：信息权限和记忆长度不匹配可能造成伪优势。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

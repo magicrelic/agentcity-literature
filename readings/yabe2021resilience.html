@@ -2,26 +2,68 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Resilience of Interdependent Urban Socio-Physical Systems using Large-Scale Mobility Data: Modeling Recovery Dynamics · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-6d3ec36b92835b">返回文献库</a><a href="https://doi.org/10.1016/j.scs.2021.103237" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Yabe et al. - Resilience of Interdependent Urban Socio-Physical Systems using Large-Scale Mobility Data: Modeling Recovery Dynamics</h1>
 <p><strong>社会活动与基础设施恢复的反馈</strong></p>
-<p><strong>核心判断：本文把灾后恢复写成社会活动与基础设施的双向动力学，但从恢复曲线拟合出“耦合参数”，还不能直接确认真实的双向因果机制。</strong></p>
-<p>阅读依据：<a href="https://doi.org/10.1016/j.scs.2021.103237">正式论文记录</a>及<a href="https://arxiv.org/abs/2104.07603">arXiv v1 作者全文</a>，19页，覆盖4幅主图、1张表及模型公式。以下页码对应作者稿；正式发表版未逐项核对，数值和模型细节按该作者稿解释。</p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
 <h2>01 基本信息</h2>
-<p>Yabe et al. <strong>Resilience of Interdependent Urban Socio-Physical Systems using Large-Scale Mobility Data: Modeling Recovery Dynamics</strong>. <em>Sustainable Cities and Society</em> <strong>75</strong>, 103237（2021）。DOI：10.1016/j.scs.2021.103237。</p>
-<p>作者主要来自 Purdue University。类型：移动数据实证、耦合微分方程与情景模拟。研究对象为2017年 Maria 飓风后波多黎各的区域恢复。阅读日期：2026年10月4日。</p>
+<p>Yabe et al.，<em>Resilience of Interdependent Urban Socio-Physical Systems using Large-Scale Mobility Data: Modeling Recovery Dynamics</em>，<strong>Sustainable Cities and Society（2021）</strong>。<a href="https://doi.org/10.1016/j.scs.2021.103237">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；基础设施与活动耦合恢复</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1016/j.scs.2021.103237</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>02 一句话概括</h2>
 <p>将 POI 访问恢复与供水短缺放进同一组动力学方程，比较5个区域的反馈参数，再模拟重复飓风下哪些耦合方式更容易保持社会活动。（PDF 第4—12页）</p>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>03 研究问题</h2>
 <p>基础设施恢复与社会活动恢复是否应共同建模？不同区域的恢复差异，能否用“设施受损对活动的抑制”和“社会活动对设施修复的支持”两个方向解释？同样经历后续灾害，这些区域是否表现不同？</p>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>04 研究背景与发展路径</h2>
 <p>本文承接 Klammler 等社会—物理系统韧性模型。此前模型能够产生良性恢复与衰退等不同稳定状态，但参数常缺少真实灾后数据约束。作者增加外部修复项、调整损耗函数，用移动数据和供水资料连接理论与现实。（Introduction；PDF 第5—6页）</p>
-<h2>05 核心问题及其表现</h2>
+<p>[Paper: PDF pp. 1–19, main text]</p>
+<h2>05 论文识别的核心问题</h2>
 <p>最关键的难点是两个系统如何被测量：社会系统被压缩为 POI 访问活动，物理系统被压缩为供水短缺。这样便于拟合，却只代表社会和设施系统的一部分。</p>
 <p>其次，两条曲线可能因同一灾害冲击而共同下降。只有拟合相似性，并不足以区分共同外因和内部反馈。</p>
 <h2>06 核心思想</h2>
 <p>设施缺口压低社会活动增长；社会活动又促进设施缺口消除。如果两条作用方向强弱不同，就可能形成良性恢复或持续低活动状态。模型还允许一部分设施修复独立于本地社会活动，例如外部援助。（PDF 第6页）</p>
 <p>这里的反馈发生在区域状态变量之间，不是逐个人、逐条道路的行为互动。</p>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>07 方法总览</h2>
 <p>用观测流动网络的 Infomap 社区识别5个区域 → 汇总6类 POI 访问和区域供水短缺 → 为每个区域拟合耦合方程 → 比较参数与区域背景 → 在重复飓风情景下模拟长期韧性。</p>
 <p>社会活动类别包括教育、医疗、建筑、汽车、杂货和其他商店。设施数据来自官方 StatusPR；供水有区域差异数据，而其他设施主要只有全岛口径，因此选供水代表设施状态。灾后最初约9天缺少供水数据。（Figure 1；PDF 第3—4页）</p>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>08 核心模块拆解</h2>
 <table>
 <thead>
@@ -54,7 +96,7 @@
 </tbody>
 </table>
 <p>模型对未参与社会活动的独立修复也留有通道，因此“没有活动就完全无法修复”不是其硬性假设。（PDF 第6—8页）</p>
-<h2>09 必要公式与符号</h2>
+<h2>09 关键公式与符号</h2>
 <p>作者修改后的区域模型为：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>d</mi><msub><mi mathvariant="normal">Φ</mi><mi>i</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub><mi mathvariant="normal">Φ</mi><mi>i</mi></msub><mo stretchy="false">)</mo><msub><mi>b</mi><mi>i</mi></msub><mo>−</mo><mo stretchy="false">(</mo><msub><mi>w</mi><mi>i</mi></msub><msub><mi mathvariant="normal">Ω</mi><mi>i</mi></msub><mo>+</mo><msub><mi>q</mi><mi>i</mi></msub><mo stretchy="false">)</mo><msub><mi mathvariant="normal">Φ</mi><mi>i</mi></msub><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">
 \frac{d\Phi_i}{dt}=(1-\Phi_i)b_i-(w_i\Omega_i+q_i)\Phi_i,
@@ -63,7 +105,15 @@
 -r_i\frac{\Omega_i}{\Omega_i+\beta_i}.
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:2.0574em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="mord mathnormal">t</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord">Φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.2408em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></eq>为设施退化，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq>为社会活动支持修复的强度，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span></span></span></eq>为独立修复能力；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span></eq>为设施缺口对社会活动增长的抑制，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo separator="true">,</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">r,\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span></span></span></eq>控制社会活动损耗。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord">Ω</span></span></span></span></eq>高、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord">Φ</span></span></span></span></eq>低通常是较好状态。（PDF 第6页，Equations 3—5）</p>
 <p>单次 Maria 冲击主要通过初值体现。令<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>w</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c=w=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq>可切断两方向耦合，但保留各自变化；这给机制比较提供了自然的无耦合基线。</p>
-<h2>10 实证设计与证据链</h2>
+<p>[Paper: PDF pp. 1–19, main text]</p>
+<p>推导定位：</p>
+<ul>
+<li>公式1：[Paper: PDF p. 5, equations]。</li>
+<li>公式2：[Paper: PDF p. 2, equations]。</li>
+<li>公式3、公式4、公式5：[Paper: PDF p. 6, equations]。</li>
+<li>公式6、公式7、公式8、公式9、公式10：[Paper: PDF p. 7, equations]。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
 <table>
 <thead>
 <tr>
@@ -92,15 +142,21 @@
 </table>
 <p>作者以正态误差似然、先验和 HMC 估计参数，每组进行5000次采样，以后验密度峰值报告代表参数。高相关主要是对已观测恢复轨迹的解释能力，不是独立事件预测。（PDF 第7—11页）</p>
 <p>长期部分每区域运行500次、每次10年的模拟，以规定的季节性随机飓风过程驱动。San Juan 在该情景下较有韧性，Humacao 较弱；这些不是实际观察到的10年结果。（PDF 第12页）</p>
-<h2>11 结论应当怎样理解</h2>
-<p>研究表明，这组低维方程能够容纳现实恢复曲线和区域异质性，并把“更能支持修复”与“更易受设施制约”分开。它比单一恢复速度参数提供更多机制假设。</p>
+<p>[Paper: PDF p. 14, Discussion]</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 研究表明，这组低维方程能够容纳现实恢复曲线和区域异质性，并把“更能支持修复”与“更易受设施制约”分开。它比单一恢复速度参数提供更多机制假设。</p>
 <p>但高<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq>并非在任何条件下都更好，结果取决于其他参数、初始状态、灾害强度和评价标准。跨区域关系也主要来自5个区域；对同一区域的不同 POI 类别拟合，不能当成完全独立的地区重复实验。</p>
-<h2>12 作者明确指出的局限</h2>
+<p>[Paper: PDF p. 14, Discussion]</p>
+<h2>12 作者明确承认的局限</h2>
 <p>更细空间尺度会遭遇数据稀疏；只用供水代表设施系统有局限；现实中改变<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo separator="true">,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">c,w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq>未必能保持其他参数不变；单次事件与有限区域不足以证明普遍适用性。（PDF 第15—16页）</p>
 <p>作者还指出，理想的干预应同时增强有利耦合并削弱不利依赖，而具体如何做到仍需要进一步研究。</p>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>13 批判性分析</h2>
-<p><strong>参数可识别性比拟合优度更关键。</strong> 多组<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo separator="true">,</mo><mi>q</mi><mo separator="true">,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">b,q,w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq>可能生成近似的设施恢复曲线；社会活动与设施又共同受援助、灾损和政策影响。需要比较无耦合、单向耦合与双向耦合的留出预测，才能判断增加反馈是否必要。</p>
+<p>[Analysis] <strong>参数可识别性比拟合优度更关键。</strong> 多组<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo separator="true">,</mo><mi>q</mi><mo separator="true">,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">b,q,w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq>可能生成近似的设施恢复曲线；社会活动与设施又共同受援助、灾损和政策影响。需要比较无耦合、单向耦合与双向耦合的留出预测，才能判断增加反馈是否必要。</p>
 <p>访问量不直接等于劳动、维修投入或可动用资源。若医院访问增加源于病情恶化，将其视为社会容量恢复可能方向相反，应按活动类型解释。</p>
 <h2>14 可迁移的知识</h2>
-<p>将恢复中的两种关系分开：某类活动帮助系统修复，与该类活动依赖系统服务，是不同参数。模型也提示必须保留外部援助或独立修复通道，避免把一切恢复都归给本地活动。</p>
+<p>[Analysis] 将恢复中的两种关系分开：某类活动帮助系统修复，与该类活动依赖系统服务，是不同参数。模型也提示必须保留外部援助或独立修复通道，避免把一切恢复都归给本地活动。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 研究启示：可以先在空间社区层写清“服务可用性影响活动、活动影响资源修复”的反馈，再讨论哪些个体和跨圈联系承载它。本文已提供宏观耦合框架，因此新工作不能仅以“存在反馈”作为创新。</p>
+<p>更有价值的差别是把聚合参数还原为可观察行为：谁调整目的地、谁连接资源区、哪些变化真正加快了服务恢复。</p>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

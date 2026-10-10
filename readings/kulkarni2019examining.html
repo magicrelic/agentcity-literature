@@ -2,10 +2,79 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Examining the Limits of Predictability of Human Mobility · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-69e2c8c29c74c3">返回文献库</a><a href="https://doi.org/10.3390/e21040432" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Kulkarni et al. - Examining the Limits of Predictability of Human Mobility</h1>
 <p><strong>移动中的长程记忆与熵估计</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Kulkarni et al.，<em>Examining the Limits of Predictability of Human Mobility</em>，<strong>Entropy（2019）</strong>。<a href="https://doi.org/10.3390/e21040432">原文</a>。</p>
-<h2>研究问题</h2>
-<p>轨迹编码和熵率估计如何影响对人类移动可预测上限的判断？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；轨迹熵与预测边界</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.3390/e21040432</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Department of Information Systems, UNIL-HEC Lausanne, 1015 Lausanne, Switzerland；Applied Intelligence Research Center, Technological University Dublin, D08 NF82 Dublin, Ireland</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 长程依赖与编码、估计方法会改变人类移动预测上限的判断。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 轨迹编码和熵率估计如何影响对人类移动可预测上限的判断？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 有限历史编码可能把真实长程结构当成随机，抬高熵估计。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>轨迹编码和熵率估计如何影响对人类移动可预测上限的判断</td>
+<td>[Analysis] 有限历史编码可能把真实长程结构当成随机，抬高熵估计。</td>
+<td>[Analysis] 用互信息衰减与替代编码检验上界估计的假设。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用互信息衰减与替代编码检验上界估计的假设。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 对三个真实移动数据集分析互信息衰减和逐点互信息，并比较熵估计与学习模型。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 以下为摘要所涉概念的数学解释；本文公式编号及具体估计实现不可据摘要评估。</p>
 <h3>时滞互信息：移动的记忆延伸多远</h3>
 <p><strong>直接用于真实移动的时滞互信息。</strong></p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo stretchy="false">(</mo><mi>τ</mi><mo stretchy="false">)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow></munder><mi>p</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mi>t</mi></msub><mo>=</mo><mi>a</mi><mo separator="true">,</mo><msub><mi>X</mi><mrow><mi>t</mi><mo>+</mo><mi>τ</mi></mrow></msub><mo>=</mo><mi>b</mi><mo stretchy="false">)</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mfrac><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mi>t</mi></msub><mo>=</mo><mi>a</mi><mo separator="true">,</mo><msub><mi>X</mi><mrow><mi>t</mi><mo>+</mo><mi>τ</mi></mrow></msub><mo>=</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mi>t</mi></msub><mo>=</mo><mi>a</mi><mo stretchy="false">)</mo><mi>p</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>t</mi><mo>+</mo><mi>τ</mi></mrow></msub><mo>=</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
@@ -13,6 +82,28 @@ I(\tau)=\sum_{a,b}p(X_t=a,X_{t+\tau}=b)
 \log_2\frac{p(X_t=a,X_{t+\tau}=b)}{p(X_t=a)p(X_{t+\tau}=b)}.
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.4882em;vertical-align:-1.4382em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">b</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4382em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.1132em;">τ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord mathnormal">b</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">a</span><span class="mclose">)</span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.1132em;">τ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">b</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.1132em;">τ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">b</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><strong>计算。</strong> 在每个滞后 <code>tau</code> 统计位置对，估计联合和边际概率；画 <code>I(tau)</code> 衰减曲线，并用保持每人位置频率的置乱序列估计有限样本基线。可报告特定滞后处的互信息、衰减时间，或有限范围面积 <code>sum_(tau=1..T) I(tau)</code>；该面积不是严格的 excess entropy。</p>
 <p><strong>含义与数据。</strong> <code>I(tau)=0</code> 表示这一对时点在该统计意义下独立，正值说明较早地点对较晚地点提供信息。24 小时/7 日峰反映例行节律；平滑长尾反映跨多步依赖。输入可为每人位置符号，也可为离散化后的区域流量。长滞后需要足够有效样本，概率表的维数为位置数平方。</p>
-<p><strong>真实应用。</strong> Kulkarni, Mahalunkar, Garbinato &amp; Kelleher (2019)，<a href="https://doi.org/10.3390/e21040432">10.3390/e21040432</a>，在三个真实移动数据集上计算互信息随位置序列间隔的衰减及 pointwise mutual information，比较长期依赖与短记忆近似；正文已核验。</p>
+<p><strong>真实应用。</strong> Kulkarni, Mahalunkar, Garbinato &amp; Kelleher (2019)，<a href="https://doi.org/10.3390/e21040432">10.3390/e21040432</a>，在三个真实移动数据集上计算互信息随位置序列间隔的衰减及 pointwise mutual information，比较长期依赖与短记忆近似；</p>
 <p><strong>动态比较。</strong> 可直接比较事件前后记忆长度、日周期峰及跨日相关的变化。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：长程依赖与编码、估计方法会改变人类移动预测上限的判断。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 两时点互信息面积不是严格超额熵；估计上界的破坏也可能来自有限样本或非平稳性。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 保持地点频率及周期打乱跨日顺序，比较互信息和留出准确率；长滞后样本稀疏可能产生偏差。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 两时点信息、熵率和真实预测误差需要共同对照。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：两时点互信息面积不是严格超额熵；估计上界的破坏也可能来自有限样本或非平稳性。</li>
+<li>核心假说与增量：保持地点频率及周期打乱跨日顺序，比较互信息和留出准确率。</li>
+<li>初始方法与如何验证：保持地点频率及周期打乱跨日顺序，比较互信息和留出准确率；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：长滞后样本稀疏可能产生偏差。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

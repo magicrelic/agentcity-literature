@@ -2,10 +2,95 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Urban spatial order: street network orientation, configuration, and entropy · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-8666873319266f">返回文献库</a><a href="https://doi.org/10.1007/s41109-019-0189-1" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Boeing - Urban spatial order: street network orientation, configuration, and entropy</h1>
 <p><strong>街道方向与网格秩序</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Boeing，<em>Urban spatial order: street network orientation, configuration, and entropy</em>，<strong>Applied Network Science（2019）</strong>。<a href="https://doi.org/10.1007/s41109-019-0189-1">原文</a>。</p>
-<h2>研究问题</h2>
-<p>街道方向、网络构型与方向熵如何共同表征不同城市的空间布局？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；街道网络的空间有序性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1007/s41109-019-0189-1</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 街道方向熵和方向秩序量描述网格轴线组织，100城呈现不同定向结构。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 街道方向、网络构型与方向熵如何共同表征不同城市的空间布局？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 方向分布刻画街道轴线组织，而非活动强度或交通功能。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>街道方向、网络构型与方向熵如何共同表征不同城市的空间布局</td>
+<td>[Analysis] 方向分布刻画街道轴线组织，而非活动强度或交通功能。</td>
+<td>[Analysis] 将街道方位编码入方向箱，比较定向秩序及网络几何。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 将街道方位编码入方向箱，比较定向秩序及网络几何。 [Paper: Section Street network modeling]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 用OSMnx提取街道方位及反向方位，以36个方向箱比较方向分布。 [Paper: Section Street network modeling]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 将街道方位编码入方向箱，比较定向秩序及网络几何。</td>
+<td>[Analysis] 权重、方向箱和道路简化方式属于指标定义。</td>
+<td>[Paper: Section Street network modeling]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
 <h3>街道方向熵：方向是否被少数网格轴控制</h3>
 <p><strong>定义。</strong> 将街段方向分成 B 个方向箱，p_b 是方向箱的街段数份额或街段长度份额：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>H</mi><mi>θ</mi></msub><mo>=</mo><mo>−</mo><munderover><mo>∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mi>B</mi></munderover><msub><mi>p</mi><mi>b</mi></msub><mi>ln</mi><mo>⁡</mo><msub><mi>p</mi><mi>b</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
@@ -17,4 +102,76 @@ H_\theta=-\sum_{b=1}^B p_b\ln p_b.
 \varphi=1-\left(\frac{H_\theta-\ln4}{\ln36-\ln4}\right)^2.
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.604em;vertical-align:-0.95em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">36</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.654em;"><span style="top:-3.9029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">.</span></span></span></span></span></eqn></section><p>它是以四向网格为参照的秩序指标，不能当作任意方向系统均满足“越低熵 φ 越大”的一般定律。实测 Chicago、Miami、Minneapolis 的方向熵最低，Charlotte 最高，其后是 São Paulo 和 Rome；Chicago 的 φ≈0.90，Charlotte≈0.002。最低熵的前 16 城都在美国/加拿大，但最高熵的 Charlotte 也在美国，说明地域标签不能替代具体形态测量。</p>
 <p><strong>输入和尺度。</strong> 可通行街道的几何与交叉点，常以城区或市域统计；应先简化由曲线中间点形成的伪节点，或明确使用长度加权折线方向。该指标测定向秩序，不测路网连通性、服务可达性或交通稳定性。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>街道方向、网络构型与方向熵如何共同表征不同城市的空间布局</td>
+<td>街道方向熵和方向秩序量描述网格轴线组织，100城呈现不同定向结构。</td>
+<td>街道方向熵和方向秩序量描述网格轴线组织，100城呈现不同定向结构。</td>
+<td>方向有序不等于服务可达或交通稳定；计数与长度加权的熵不能混用。</td>
+<td>[Paper: Section Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Table 1 Resulting indicators for the 100 study sites</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 1</td>
+<td>主文图表</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Table 2 Mean values of indicators aggregated by world r…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>主文图表</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 方向有序不等于服务可达或交通稳定；计数与长度加权的熵不能混用。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 同城改变统计边界及权重，比较方向秩序与绕行成本；曲线中间节点和方向箱边界可能制造差异。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 权重、方向箱和道路简化方式属于指标定义。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：方向有序不等于服务可达或交通稳定；计数与长度加权的熵不能混用。</li>
+<li>核心假说与增量：同城改变统计边界及权重，比较方向秩序与绕行成本。</li>
+<li>初始方法与如何验证：同城改变统计边界及权重，比较方向秩序与绕行成本；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：曲线中间节点和方向箱边界可能制造差异。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

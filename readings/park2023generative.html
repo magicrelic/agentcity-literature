@@ -2,11 +2,166 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Generative Agents: Interactive Simulacra of Human Behavior · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-cc4665b62d22&paper=p-83d820b3c4161c">返回文献库</a><a href="https://doi.org/10.1145/3586183.3606763" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Park et al. - Generative Agents: Interactive Simulacra of Human Behavior</h1>
 <p><strong>语义记忆与计划进入持续行为</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Park et al.，<em>Generative Agents: Interactive Simulacra of Human Behavior</em>，<strong>ACM Symposium on User Interface Software and Technology (UIST)（会议论文集）（2023）</strong>。<a href="https://doi.org/10.1145/3586183.3606763">原文</a>。</p>
-<h2>研究问题</h2>
-<p>记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为？</p>
-<h2>方法、证据与解释</h2>
-<p><strong>方法。</strong> 语义记忆检索、反思、反应式计划与对话进入后续活动。</p>
-<p><strong>证据对象。</strong> 25 个虚拟角色、两天演示；真人可信度评审及组件消融。</p>
-<p><strong>解释范围。</strong> 支持实现语义记忆和局部协调；不等于真实居民长期轨迹验证。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；生成式智能体架构</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1145/3586183.3606763</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Computer Science Department, Stanford University, United States；Google, United States；Google Research, United States</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 1–20, main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 记忆检索、反思和计划支持虚拟角色在持续环境中产生连贯行为与局部协调。 [Paper: PDF pp. 1–20, main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为？ [Paper: PDF pp. 1–20, main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 持续角色行为需要从经历中选择相关信息，而非每次独立生成动作。 [Paper: PDF pp. 1–20, main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为</td>
+<td>[Analysis] 持续角色行为需要从经历中选择相关信息，而非每次独立生成动作。</td>
+<td>[Analysis] 记忆检索、反思与计划共同维持虚拟行为历史。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 记忆检索、反思与计划共同维持虚拟行为历史。 [Paper: PDF pp. 1–20, main text]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 25个虚拟角色进行两天演示，结合真人可信度评价及组件消融。 [Paper: PDF pp. 1–20, main text]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 记忆检索、反思与计划共同维持虚拟行为历史。</td>
+<td>[Analysis] 可信度、组件效用和真实长期轨迹需要不同验证。</td>
+<td>[Paper: PDF pp. 1–20, main text]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为</td>
+<td>记忆检索、反思和计划支持虚拟角色在持续环境中产生连贯行为与局部协调。</td>
+<td>记忆检索、反思和计划支持虚拟角色在持续环境中产生连贯行为与局部协调。</td>
+<td>可信度与短期演示不等于真实居民长期轨迹验证；无逐行为规则仍存在环境和执行约束。</td>
+<td>[Paper: PDF p. 14, Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Generative agents are believable simulacra of human beh…</td>
+<td>[Paper: PDF p. 1, Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>The Smallville sandbox world, with areas labeled. The r…</td>
+<td>[Paper: PDF p. 5, Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>A morning in the life of a generative agent, John Lin. …</td>
+<td>[Paper: PDF p. 7, Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>At the beginning of the simulation, one agent is initia…</td>
+<td>[Paper: PDF p. 7, Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 可信度与短期演示不等于真实居民长期轨迹验证；无逐行为规则仍存在环境和执行约束。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>[Paper] 25个智能体运行两天仍耗费显著时间与调用资源；评价时间短，众包基线不代表最高人类表现；检索相关性及架构效率有待改善。 [Paper: PDF p. 17, Limitations]</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 以独立真人活动对照，并匹配历史输入后消融检索和反思；评分偏好与提示内容可能混杂。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 可信度、组件效用和真实长期轨迹需要不同验证。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="rao1995bdi.md">Rao et al. - BDI Agents: From Theory to Practice</a> 对照阅读：该文研究“如何用信念、愿望和意图组织智能体的持续决策与计划更新”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：可信度与短期演示不等于真实居民长期轨迹验证；无逐行为规则仍存在环境和执行约束。</li>
+<li>核心假说与增量：以独立真人活动对照，并匹配历史输入后消融检索和反思。</li>
+<li>初始方法与如何验证：以独立真人活动对照，并匹配历史输入后消融检索和反思；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：评分偏好与提示内容可能混杂。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

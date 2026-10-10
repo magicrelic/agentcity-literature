@@ -2,9 +2,17 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>The scales of human mobility · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-b358eab32c4eef">返回文献库</a><a href="https://doi.org/10.1038/s41586-020-2909-1" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Alessandretti et al. - The scales of human mobility</h1>
 <p><strong>个体嵌套活动空间</strong></p>
-<p><strong>核心判断：个人移动可以具有可辨识的空间尺度，而混合不同层级的移动后，总体位移分布仍可能呈现近似幂律。</strong> 论文的贡献是把这种解释变成可拟合、可生成、可检验的模型；其证据范围是个人轨迹及其统计规律。</p>
-<p>本文依据 <a href="https://doi.org/10.1038/s41586-020-2909-1">Nature 正式论文</a>和<a href="https://arxiv.org/abs/2109.07381">公开作者稿</a>。下文“PDF页”均指38页作者稿的文件页序，不是期刊印刷页码。</p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
 <h2>01 基本信息</h2>
+<p>Alessandretti et al.，<em>The scales of human mobility</em>，<strong>Nature（2020）</strong>。<a href="https://doi.org/10.1038/s41586-020-2909-1">原文</a>。</p>
 <table>
 <thead>
 <tr>
@@ -14,403 +22,138 @@
 </thead>
 <tbody>
 <tr>
-<td>题名</td>
-<td>The scales of human mobility</td>
+<td>分析类型与领域</td>
+<td>discovery；个体活动尺度</td>
 </tr>
 <tr>
-<td>作者</td>
-<td>Alessandretti et al. (co-first authors: Alessandretti and Aslak)</td>
+<td>标识符</td>
+<td>DOI：10.1038/s41586-020-2909-1；arXiv：2109.07381</td>
 </tr>
 <tr>
-<td>机构</td>
-<td>丹麦技术大学、哥本哈根大学 Copenhagen Center for Social Data Science</td>
+<td>作者机构</td>
+<td>书目资料未提供</td>
 </tr>
 <tr>
-<td>发表</td>
-<td>Nature 587, 402–407，2020年11月18日在线发表</td>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
 </tr>
 <tr>
-<td>DOI</td>
-<td>10.1038/s41586-020-2909-1</td>
-</tr>
-<tr>
-<td>作者稿</td>
-<td>arXiv:2109.07381，2021年上传，期刊发表年份仍为2020</td>
-</tr>
-<tr>
-<td>领域与关键词</td>
-<td>人类移动、空间尺度、嵌套活动空间、轨迹生成、人口与建成环境差异</td>
-</tr>
-<tr>
-<td>代码</td>
-<td><a href="https://github.com/lalessan/scales_human_mobility/">作者代码仓库</a></td>
-</tr>
-<tr>
-<td>数据</td>
-<td><a href="https://doi.org/10.11583/DTU.12941993.v1">DTU衍生数据</a>；原始个人轨迹不公开下载</td>
+<td>阅读日期</td>
+<td>2026-10-11</td>
 </tr>
 </tbody>
 </table>
-<p>对空间层级研究，这篇论文提供了“怎样从个人轨迹估计活动尺度”的方法基础。它并未直接研究城市群体互动如何形成空间结构。 （来源：作者稿PDF第13页，The container model；作者稿PDF第18页，Data Availability）</p>
+<p>[Paper: PDF pp. 1–19, main text]</p>
 <h2>02 一句话概括</h2>
-<p>作者用嵌套空间容器模型拟合个人GPS轨迹，发现分层活动空间具有可描述的典型大小，并通过后续轨迹统计验证说明：有尺度的局部活动可以与总体近似无尺度的位移分布并存。（来源：作者稿PDF第3页，Nested scales generate power laws；作者稿PDF第6页，Results）</p>
+<p>作者用嵌套空间容器模型拟合个人GPS轨迹，发现分层活动空间具有可描述的典型大小，并通过后续轨迹统计验证说明：有尺度的局部活动可以与总体近似无尺度的位移分布并存。[Paper: Nested scales generate power laws；Results]</p>
 <h2>03 研究问题</h2>
-<p>传统移动研究经常从连续两次停留之间的距离出发。短距离移动很多，长距离移动很少，合起来可能出现幂律尾部。地理学却长期依赖街区、城市、区域等有尺度的空间单元。论文追问：<strong>个人移动究竟没有典型尺度，还是分析时把不同尺度的活动混在了一起？</strong> （来源：作者稿PDF第2页，Introduction；作者稿PDF第3页，Nested scales generate power laws）</p>
-<p>一个便于理解的例子是：买菜、通勤和跨城旅行可能属于不同的活动范围。把它们放入同一张距离直方图，会隐藏各自的组织方式。这是解释性示例，并非论文按出行目的识别出的三类行为。</p>
-<p>更精确地说：能否识别一种空间分层，使它既能解释已观测轨迹，也能重现之后的移动统计？</p>
+<p>[Paper] 个人活动空间是否存在典型尺度？能否用同一生成机制解释个体的空间层级与群体近似幂律的位移分布？ [Paper: PDF p. 1–3, Introduction]</p>
 <h2>04 研究背景与发展路径</h2>
-<p>以下为论文提出问题时采用的背景脉络，不构成对全部相关研究的系统综述。</p>
-<table>
-<thead>
-<tr>
-<th>研究路线</th>
-<th>关注点</th>
-<th>本文指出的缺口</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>位移分布与随机移动</td>
-<td>距离分布、重尾和尺度不变性</td>
-<td>汇总分布可能掩盖不同活动尺度</td>
-</tr>
-<tr>
-<td>探索与优先返回模型 EPR</td>
-<td>是否探索新地点，以及返回哪些熟悉地点</td>
-<td>空间嵌套结构未被充分表达</td>
-</tr>
-<tr>
-<td>地理学的空间层级</td>
-<td>地点、街区、城市、区域及其社会含义</td>
-<td>需要可从个人轨迹估计并检验的定量模型</td>
-</tr>
-<tr>
-<td>容器模型</td>
-<td>个人空间分层与跨层目的地选择</td>
-<td>将层级描述与轨迹生成连接起来</td>
-</tr>
-</tbody>
-</table>
-<p>（来源：作者稿PDF第2页，Introduction；作者稿PDF第11页，Discussion）</p>
-<p>与Song等人的EPR模型相比，可以把两者的重点理解为：EPR强调“探索还是返回”，本文强调“在什么空间层级移动、选中哪一个目的地”。这是一种机制分工的解读，不意味着两者已在本文中完成整合。 （来源：作者稿PDF第14页，Model description；作者稿PDF第17页，EPR model）</p>
+<p>[Paper] 群体位移的近似幂律常被解释为无尺度移动，既有探索—返回模型主要解释地点增长与访问频率。本文将个人活动地点的嵌套关系作为另一解释层，检验混合不同尺度如何形成总体分布。背景沿作者论证。 [Paper: PDF p. 1–3, Introduction]</p>
 <h2>05 论文识别的核心问题</h2>
 <table>
 <thead>
 <tr>
-<th>问题</th>
-<th>具体表现</th>
-<th>论文的处理</th>
+<th>识别问题</th>
+<th>处理</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>分布与空间经验不一致</td>
-<td>总体似乎没有尺度，生活空间却有街区和城市等层次</td>
-<td>将不同尺度的移动作为混合来源</td>
+<td>总体分布掩盖个人尺度</td>
+<td>逐人推断活动容器，再比较不同层级</td>
 </tr>
 <tr>
-<td>单纯几何聚类不足</td>
-<td>地点相近不保证对应稳定的移动组织</td>
-<td>用真实转移序列的似然筛选空间分层</td>
-</tr>
-<tr>
-<td>生成结果可能只“形似”</td>
-<td>训练数据上拟合好不保证后续轨迹仍吻合</td>
-<td>按时间划分训练和检验数据</td>
-</tr>
-<tr>
-<td>单一平均距离掩盖人群差异</td>
-<td>活动范围、层数和跨层行为可能分别变化</td>
-<td>分别分析层数、容器大小和人群环境关联</td>
+<td>有层级结构不表示有行为解释</td>
+<td>用转移似然选模型，并评价留出访问序列</td>
 </tr>
 </tbody>
 </table>
-<p>（来源：作者稿PDF第3页，Nested scales generate power laws；作者稿PDF第6页，Validation；作者稿PDF第15页，Likelihood optimization）</p>
+<p>[Paper: PDF p. 3–7, model and validation]</p>
 <h2>06 核心思想</h2>
-<p>**空间容器（container）**是个人活动地点的嵌套集合。一个小容器完全属于某个更大的父容器。不同的人有各自的结构，并不共享一套统一边界。（来源：作者稿PDF第3页，A simple model identifies containers；作者稿PDF第4页，Figure 1）</p>
-<p>以下术语决定了这篇论文应该怎样理解：</p>
-<table>
-<thead>
-<tr>
-<th>术语</th>
-<th>本文含义</th>
-<th>容易混淆的概念</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>空间容器</td>
-<td>个人地点集合中可嵌套的活动单元</td>
-<td>行政区、全城统一生活圈</td>
-</tr>
-<tr>
-<td>容器大小</td>
-<td>内部任意两地点之间的最大距离，即直径</td>
-<td>半径、单次出行距离</td>
-</tr>
-<tr>
-<td>层级距离</td>
-<td>两地点所属容器开始不同的最高层级编号</td>
-<td>公里距离</td>
-</tr>
-<tr>
-<td>吸引力</td>
-<td>一个子容器在父容器内被选中的相对概率</td>
-<td>直接测得的经济或心理效用</td>
-</tr>
-<tr>
-<td>典型尺度</td>
-<td>用分布参数描述的活动空间大小</td>
-<td>每个人都相同的固定阈值</td>
-</tr>
-</tbody>
-</table>
-<p>（来源：作者稿PDF第4页，Figure 1；作者稿PDF第6页，Results；作者稿PDF第13页，Model description）</p>
-<p>核心洞见是：<strong>汇总后的分布形状，不能单独决定微观过程是否有特征尺度。</strong> 不同尺度的成分可以形成近似幂律的整体。论文展示了这一可能机制，但并非任意几个分布相加都会得到严格幂律，也未排除所有其他解释。 （来源：作者稿PDF第3页，Nested scales generate power laws；作者稿PDF第4页，Figure 1d）</p>
+<p>[Paper] container是个人地点的紧凑嵌套集合。模型先选择跨出当前容器的层级，再沿目标分支选择地点；混合不同层级的尺度可产生近似幂律的总体位移。 [Paper: PDF p. 3–5, Figure 1]</p>
+<p>[Analysis] 层级进入候选结构，得到拟合树不等于证明多人交互使层级自组织。</p>
 <h2>07 方法总览</h2>
-<p>模型的流程为：</p>
-<p><strong>个人GPS记录 → 停留地点序列 → 候选嵌套空间结构 → 用转移似然选择层级与参数 → 生成新序列 → 与后续真实轨迹统计比较。</strong></p>
-<ol>
-<li><strong>识别停留地点。</strong> 使用Infostop把定位点转为有顺序的停留地点；主要设置包括30米空间参数、最少停留10分钟。（来源：作者稿PDF第12页，Data description and pre-processing）</li>
-<li><strong>建立候选层级。</strong> 对个人地点用complete-linkage层次聚类，限制容器具有空间紧凑性。（来源：作者稿PDF第16页，Likelihood optimization）</li>
-<li><strong>拟合行为参数。</strong> 估计层级结构 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span></span></span></span></eq>、容器吸引力 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span></eq>、跨层转移概率矩阵 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq>。通过逐层增加树的切分、比较轨迹似然选择结构。（来源：作者稿PDF第15页，Likelihood optimization；作者稿PDF第16页，Likelihood optimization）</li>
-<li><strong>生成移动。</strong> 先决定本次跨多大的层级，再逐层选择目标容器，最终落到具体地点。（来源：作者稿PDF第14页，Generating traces；作者稿PDF第15页，Generating traces）</li>
-</ol>
-<p>这是逐个人拟合的统计模型，不需要LLM，也没有显式人际互动或拥堵反馈。它依赖足够长的历史轨迹；在本文验证中，训练窗口为一年。候选结构的搜索采用启发式，不能把结果理解为在任意空间分区中保证找到全局最优。 （来源：作者稿PDF第7页，Figure 2；作者稿PDF第16页，Likelihood optimization）</p>
+<p>[Paper] GPS记录→停留地点→候选嵌套树→似然选层数和转移参数→生成访问序列→留出轨迹验证。D1为全球长期定位用户；D2为851名丹麦大学学生。D1要求较长记录并筛选覆盖，不能按全体人口样本解释。 [Paper: PDF p. 12–16, Data description and Methods]</p>
 <h2>08 核心模块拆解</h2>
 <table>
 <thead>
 <tr>
 <th>模块</th>
-<th>输入与输出</th>
-<th>为什么需要</th>
-<th>证据与移除后的含义</th>
+<th>输入输出及作用</th>
+<th>证据边界</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>停留地点识别</td>
-<td>定位记录→离散地点序列</td>
-<td>排除仅经过的位置，定义最小分析单元</td>
-<td>补充材料检验部分停留点参数敏感性；未覆盖所有采样制度</td>
+<td>停留地点与嵌套树</td>
+<td>轨迹→紧凑层级结构</td>
+<td>紧凑和嵌套是候选先验</td>
 </tr>
 <tr>
-<td>紧凑嵌套结构 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span></span></span></span></eq></td>
-<td>个人地点→候选树和层级</td>
-<td>表达活动空间的包含关系</td>
-<td>EPR合成轨迹的层数对照有帮助，但不是无空间先验的发现</td>
+<td>跨层概率p</td>
+<td>当前位置及离家层级→跨层选择</td>
+<td>不是每次都从家出发</td>
 </tr>
 <tr>
-<td>吸引力 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span></eq></td>
-<td>历史容器选择→相对选择概率</td>
-<td>容器内不同目的地并非等概率</td>
-<td>未给出单独移除该项的等条件消融</td>
-</tr>
-<tr>
-<td>跨层概率 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq></td>
-<td>当前位置及其离家层级距离→下一次跨层概率</td>
-<td>区分本地活动和远离家时的移动行为</td>
-<td>不等同于所有人每一步都从家出发；未单独隔离其增益</td>
+<td>容器吸引力a</td>
+<td>历史选择→分支概率</td>
+<td>未单独隔离全部增益</td>
 </tr>
 <tr>
 <td>似然选择与生成</td>
-<td>序列、候选层级→参数及模拟序列</td>
-<td>使空间结构接受行为数据检验</td>
-<td>图2验证整体模型，不能将全部优势归功于某一个模块</td>
+<td>序列→参数及新序列</td>
+<td>图2验证整体模型</td>
 </tr>
 </tbody>
 </table>
-<p>（来源：作者稿PDF第12页，Pre-processing；作者稿PDF第13页，Model description；作者稿PDF第16页，Likelihood optimization；作者稿PDF第26页，Supplementary Note 1；作者稿PDF第38页，Extended Data Figure S5）</p>
+<p>[Paper: PDF p. 13–16, Model description and likelihood]</p>
 <h2>09 关键公式与符号</h2>
-<p><strong>层级距离。</strong> 将地点 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq> 写成其所在容器的序列 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>k</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>k</mi><mi>L</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(k_1,\ldots,k_L)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">L</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></eq>，地点层为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">l=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></eq>。于是</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>max</mi><mo>⁡</mo><mo stretchy="false">{</mo><mi>l</mi><mo>:</mo><msub><mi>j</mi><mi>l</mi></msub><mo mathvariant="normal">≠</mo><msub><mi>k</mi><mi>l</mi></msub><mo stretchy="false">}</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-d(j,k)=\max\{l:j_l\ne k_l\}.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0572em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord katex-vbox"><span class="katex-thinbox"><span class="rlap"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="katex-inner"><span class="mord"><span class="mrel"></span></span></span><span class="katex-fix"></span></span></span></span></span><span class="mspace nobreak"></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mord">.</span></span></span></span></span></eqn></section><p>同一街区中的两个地点与不同城市中的两个地点，对应不同的层级距离。这个度量依赖推断出的树。（来源：作者稿PDF第4页，A simple model identifies containers）</p>
-<p><strong>转移概率。</strong> 正文 Equation 1 用简写表达“跨层概率×目的地选择概率”。实际计算应使用Methods中的完整形式，令 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>d</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d=d(j,k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span></span></span></span></eq>：</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>j</mi><mo>→</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>p</mi><mrow><mi>d</mi><mo separator="true">,</mo><mi>d</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></msub><mfrac><mrow><mi>a</mi><mo stretchy="false">(</mo><msub><mi>k</mi><mi>d</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>a</mi><mo stretchy="false">(</mo><msub><mi>j</mi><mi>d</mi></msub><mo stretchy="false">)</mo></mrow></mfrac><munderover><mo>∏</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>d</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>a</mi><mo stretchy="false">(</mo><msub><mi>k</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-P(j\to k)=
-p_{d,d(j,h)}
-\frac{a(k_d)}{1-a(j_d)}
-\prod_{l=1}^{d-1}a(k_l).
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:3.1382em;vertical-align:-1.3021em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.5198em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">d</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">h</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3552em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0572em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8361em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3021em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord">.</span></span></span></span></span></eqn></section><ul>
-<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span></eq>是模型中的家位置，按层级吸引力定义，不应直接视为独立核验过的真实住址。</li>
-<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>d</mi><mo separator="true">,</mo><mi>d</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></msub></mrow><annotation encoding="application/x-tex">p_{d,d(j,h)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7858em;vertical-align:-0.3552em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.5198em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">d</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">h</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3552em;"><span></span></span></span></span></span></span></span></span></span></eq>决定此次跨到哪个层级，并允许它随当前位置离家的层级距离变化。</li>
-<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo stretchy="false">(</mo><msub><mi>k</mi><mi>d</mi></msub><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>a</mi><mo stretchy="false">(</mo><msub><mi>j</mi><mi>d</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a(k_d)/(1-a(j_d))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord">/</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0572em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">))</span></span></span></span></eq>在该层排除当前容器后选择另一个容器。</li>
-<li>最后的乘积沿目标分支逐层选择，直至具体地点。</li>
-</ul>
-<p>分母不能省略用于实际概率计算；它确保已经决定跨出当前容器后，剩余选择得到正确归一化。（来源：作者稿PDF第5页，Equation 1；作者稿PDF第13页，Model description；作者稿PDF第14页，Model description）</p>
-<p><strong>典型尺度。</strong> 对第 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span></span></span></span></eq> 层容器直径 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>l</mi></msub></mrow><annotation encoding="application/x-tex">D_l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>，论文用对数正态拟合：</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>log</mi><mo>⁡</mo><msub><mi>D</mi><mi>l</mi></msub><mo>∼</mo><mi mathvariant="script">N</mi><mo stretchy="false">(</mo><msub><mi>μ</mi><mi>l</mi></msub><mo separator="true">,</mo><msubsup><mi>σ</mi><mi>l</mi><mn>2</mn></msubsup><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><mi mathvariant="normal">median</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>D</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mo>=</mo><msup><mi>e</mi><msub><mi>μ</mi><mi>l</mi></msub></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-\log D_l\sim\mathcal N(\mu_l,\sigma_l^2),\qquad
-\operatorname{median}(D_l)=e^{\mu_l}.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mord mathrm">median</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7144em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3488em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1512em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>论文所报“3.1公里”等是分布中位数；不是峰值，也不是每个人的容器边界。存在典型尺度仍允许很大的个体差异。（来源：作者稿PDF第6页，Results；作者稿PDF第35页，Extended Data Table S3）</p>
+<p>[Paper] 地点以所属容器序列表示，层级距离为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>max</mi><mo>⁡</mo><mo stretchy="false">{</mo><mi>l</mi><mo>:</mo><msub><mi>j</mi><mi>l</mi></msub><mo mathvariant="normal">≠</mo><msub><mi>k</mi><mi>l</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">d(j,k)=\max\{l:j_l\ne k_l\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0572em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord katex-vbox"><span class="katex-thinbox"><span class="rlap"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="katex-inner"><span class="mord"><span class="mrel"></span></span></span><span class="katex-fix"></span></span></span></span></span><span class="mspace nobreak"></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span></eq>。令 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>d</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d=d(j,k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span></span></span></span></eq>，Methods中的完整转移为
+[
+P(j\to k)=p_{d,d(j,h)}\frac{a(k_d)}{1-a(j_d)}\prod_{l=1}^{d-1}a(k_l).
+]
+<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span></eq> 是模型家位置，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq> 控制跨层选择，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span></eq> 控制目标分支的吸引力；分母排除当前容器后重新归一化。Equation 1的简写不能代替完整计算。 [Paper: PDF p. 5, Equation 1; PDF p. 13–14, Model description]</p>
+<p>[Analysis] 容器尺度的分布可有典型值及显著个体差异；典型尺度不意味着所有人共享统一边界。</p>
 <h2>10 实验设计与证据链</h2>
-<p><strong>数据。</strong> D1来自2017—2019年全球智能手机定位记录，正文称筛选后约70万人，要求至少一年观测且每日位置覆盖至少一半时间。正文约70万人与Nature扩展图1所写600,817存在数值不一致，现有来源未解释差异。D2为2013—2015年丹麦技术大学851名学生的GPS与Wi-Fi轨迹。（来源：作者稿PDF第12页，Data description；Nature Extended Data Figure 1）</p>
-<p><strong>验证。</strong> 图2随机抽取9,000人；每人用一年轨迹训练，再比较训练之后的50次真实位移与1,000条各含50次位移的生成序列。这个设计避免训练和检验轨迹重叠，但并未测量多年持续生成的准确性。（来源：作者稿PDF第6页，Validation；作者稿PDF第7页，Figure 2）</p>
+<p>[Paper] 图2随机抽9,000人，用一年轨迹训练，评价之后50次真实位移，并与生成序列及EPR等基线比较。它检验活动范围增长、访问组织和位移统计，尚不是多年自由运行验证。 [Paper: PDF p. 6–7, Validation]</p>
 <table>
 <thead>
 <tr>
-<th>证据</th>
-<th>具体发现</th>
-<th>可以支持什么</th>
-<th>不能支持什么</th>
+<th>主图</th>
+<th>论证作用</th>
+<th>来源</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>图1：空间尺度</td>
-<td>第2—5层容器直径中位数约3.1、27.1、88.4、161.6公里；分层分布可由对数正态描述</td>
-<td>在该样本与模型下存在可描述的活动尺度</td>
-<td>全球统一的生活圈半径或行政层级阈值</td>
+<td>Figure 1</td>
+<td>个人嵌套结构、跨层模型与尺度混合</td>
+<td>[Paper: PDF p. 4, Figure 1]</td>
 </tr>
 <tr>
-<td>图2：后续轨迹</td>
-<td>对位移、回转半径增长、访问频次和熵差的重现优于主要对照</td>
-<td>结构具有超出训练期拟合的统计解释力</td>
-<td>准确预测某个人下一站或下一次出发时刻</td>
+<td>Figure 2</td>
+<td>留出真实序列与生成统计</td>
+<td>[Paper: PDF p. 7, Figure 2]</td>
 </tr>
 <tr>
-<td>图3：人群与环境</td>
-<td>容器尺度与性别、城乡、步行便利度有关联</td>
-<td>该描述能表达有意义的异质性</td>
-<td>环境或性别因素的独立因果效应</td>
-</tr>
-<tr>
-<td>EPR合成轨迹对照</td>
-<td>对EPR轨迹通常恢复更少层级，真实轨迹平均约4层，含地点层</td>
-<td>该流程不会对所有序列都输出同样的多层结构</td>
-<td>多层结构一定由主体互动或认知过程产生</td>
-</tr>
-<tr>
-<td>合成结构恢复</td>
-<td>用已知容器模型生成数据，再反推结构与参数</td>
-<td>检验同类生成机制下的识别能力</td>
-<td>真实地理边界或个人认知边界已得到独立验证</td>
+<td>Figure 3</td>
+<td>人群与建成环境的尺度关联</td>
+<td>[Paper: PDF p. 10, Figure 3]</td>
 </tr>
 </tbody>
 </table>
-<p>（来源：作者稿PDF第4页，Figure 1；作者稿PDF第7页，Figure 2；作者稿PDF第10页，Figure 3；作者稿PDF第28页，Supplementary Note 3；作者稿PDF第38页，Extended Data Figure S5）</p>
-<p><strong>图1怎么读。</strong> 地图示例展示个人嵌套空间；分布展示同一层级的容器大小，以及各人在该层级容器内驻留时间中位数的群体分布；示意图说明跨层与目的地选择；混合分布示意解释为何总体可近似幂律。这四部分共同连接了空间结构、行为模型与统计解释。 （来源：作者稿PDF第4页，Figure 1）</p>
-<p><strong>图2怎么读。</strong> 容器模型在活动范围的增长和访问序列组织上更接近真实数据，说明比较不止于一张位移直方图。但各面板阴影含义不同：a、c、d为模拟均值周围两个标准差，b为四分位区间，不宜统一称为置信区间。（来源：作者稿PDF第7页，Figure 2）</p>
-<p><strong>图3怎么读。</strong> 补充说明中，48/53个国家的女性第2层容器较小；农村居民容器较大，差异在较低层级更明显。WalkScore分析覆盖四国11,511人，呈现第2层容器大小与步行便利度的负关联。层数多、容器大、移动更自由是不同概念，不能相互替换。（来源：作者稿PDF第10页，Figure 3；作者稿PDF第13页，Other data；作者稿PDF第27页，Supplementary Note 2）</p>
-<p><strong>对照与补充证据。</strong> 对照共5种：EPR、m-EPR、d-EPR、DITRAS和recency-EPR；D2未运行d-EPR与DITRAS。Extended Data Table S4的d-EPR位移分布比较仅标为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≤</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">p\le0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8304em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></eq>，其余非空条目标为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≤</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">p\le0.001</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8304em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.001</span></span></span></span></eq>，因此不应笼统说每项都达到0.01显著性。主文没有表格；补充Tables S1—S3支持性别与城乡比较，扩展Tables S1—S4分别支持尺度分布、驻留时间、参数和模型比较。（来源：作者稿PDF第29页，Supplementary Note 4；作者稿PDF第31页，Table S1；作者稿PDF第32页，Table S2；作者稿PDF第33页，Table S3；作者稿PDF第34页，Extended Data Tables S1 and S2；作者稿PDF第35页，Extended Data Table S3；作者稿PDF第38页，Extended Data Table S4）</p>
-<h2>11 如何准确理解结论</h2>
-<p><strong>可以据此主张：</strong> 在作者分析的个人轨迹中，用嵌套空间及跨层转移来描述移动，能揭示可解释的尺度差异，并改善若干留出轨迹统计的重现。（来源：作者稿PDF第6页，Results；作者稿PDF第7页，Figure 2）</p>
-<p>以下四种更强说法不成立：</p>
-<ol>
-<li><strong>“人类移动绝不服从幂律。”</strong> 论文保留了总体近似幂律的现象，改变的是解释。</li>
-<li><strong>“容器就是行政区或全城共享生活圈。”</strong> 容器逐个人拟合，地理名称主要帮助解释层级。</li>
-<li><strong>“层级由数据完全无先验地发现。”</strong> 嵌套、紧凑性和层次聚类都已进入候选结构。</li>
-<li><strong>“该模型证明空间层级自组织。”</strong> 模型描述了个人如何在层级空间中转移，没有建立多人相互作用导致层级形成的机制。</li>
-</ol>
-<p>这些是依据方法与实验范围作出的解读。 （来源：作者稿PDF第3页，A simple model identifies containers；作者稿PDF第13页，Model description；作者稿PDF第16页，Likelihood optimization）</p>
-<p>因此，本文最稳妥的结论是：<strong>具有典型尺度的个人活动空间，是解释总体移动分布与生成轨迹统计的一种有证据支持的模型。</strong></p>
+<p>[Analysis] 图2各面板的误差带有不同定义，不应一概称置信区间；人群环境比较是观察证据。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 论文支持个人嵌套活动空间这一可生成、可检验的统计解释。容器逐人拟合，不是行政区或全城共享生活圈；总体分布仍可近似幂律。本文没有建立多人相互作用导致层级形成的机制。</p>
 <h2>12 作者明确承认的局限</h2>
-<table>
-<thead>
-<tr>
-<th>局限</th>
-<th>含义</th>
-<th>作者提出的方向</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>时间访问模式未充分建模</td>
-<td>不提供完整的日内、周内活动日程机制</td>
-<td>在后续模型中纳入</td>
-</tr>
-<tr>
-<td>探索未建模</td>
-<td>当前模型未解释持续发现新地点的过程</td>
-<td>与探索机制结合</td>
-</tr>
-<tr>
-<td>地理空间的结构连接未建模</td>
-<td>没有显式表示交通网络等连接约束</td>
-<td>将空间连接引入模型</td>
-</tr>
-</tbody>
-</table>
-<p>这三项是作者Discussion明确列出的局限。（来源：作者稿PDF第11页，Discussion）</p>
-<p>另有数据访问约束：D1原始轨迹不公开；D2需满足保密与受监督使用等要求。它影响独立复现的便利性，论文将其列于数据可得性说明，而非理论局限。（来源：作者稿PDF第18页，Data Availability）</p>
+<p>[Paper] Discussion明确指出时间访问模式、持续探索与地理连接尚未充分建模。数据访问亦有限制，但这是复现条件，不应冒充理论局限。 [Paper: PDF p. 11, Discussion; PDF p. 18, Data availability]</p>
 <h2>13 批判性分析</h2>
-<p>下列判断属于对论文证据的分析，不是作者自述。</p>
-<table>
-<thead>
-<tr>
-<th>观察</th>
-<th>为什么影响解释</th>
-<th>可检验方式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>层次结构被写入候选空间</td>
-<td>恢复一棵树不足以证明真实活动必须是一棵树</td>
-<td>比较非嵌套、允许重叠的活动空间模型，并控制复杂度</td>
-</tr>
-<tr>
-<td>推断依赖较长轨迹</td>
-<td>观测窗口或缺测可能改变层数与大小</td>
-<td>用同一批人做窗口长度、缺测率和采样频率敏感性试验</td>
-</tr>
-<tr>
-<td>手机用户与学生样本存在选择</td>
-<td>跨国规模大仍不代表人口完全有代表性</td>
-<td>按年龄、性别、地区分层并在独立样本检验</td>
-</tr>
-<tr>
-<td>人群环境分析为观察比较</td>
-<td>收入、交通方式、职业与居住选择可能共同影响结果</td>
-<td>纵向变化、匹配或准实验，并报告调整前后效应</td>
-</tr>
-<tr>
-<td>整体模型优于基线</td>
-<td>无法据此分配每个组件的独立贡献</td>
-<td>在同一地点集合和相同数据下逐项消融</td>
-</tr>
-</tbody>
-</table>
-<p>（来源：作者稿PDF第12页，Data description；作者稿PDF第16页，Likelihood optimization；作者稿PDF第29页，Supplementary Note 4）</p>
-<p>原文还有几处数字需要带着口径引用：层数恢复率正文及补充说明约95%，扩展图S3写70%，且两处合成序列长度不同；性别层数的21/53在补充说明中对应KS分布检验，44/53对应MW方向检验；WalkScore相关系数正文和补充说明分别为−0.96与−0.98。它们不改变本文主要概念，但限制了对单一精确数字的使用。（来源：作者稿PDF第9页，Demographics and Built Environment；作者稿PDF第26页，Supplementary Note 2；作者稿PDF第27页，Supplementary Note 2；作者稿PDF第28页，Supplementary Note 3；作者稿PDF第36页，Extended Data Figure S3）</p>
-<h2>14 可以迁移的方法认识</h2>
-<p>以下为从本文提炼的方法启示。</p>
-<ul>
-<li><strong>先区分聚合层次，再解释统计规律。</strong> “所有人的所有移动”与“同一人同一层级内的移动”回答不同问题。</li>
-<li><strong>用生成验证约束结构解释。</strong> 推断出的空间分区应接受未参与拟合的数据检验。</li>
-<li><strong>同时测量大小、层数和跨层概率。</strong> 三者表达活动空间的不同方面，一个平均出行距离难以替代。</li>
-<li><strong>将测量模型与形成机制分开。</strong> 能测到层级、能用层级生成轨迹，仍与解释层级为何形成相隔一步。</li>
-</ul>
-<p>（来源：作者稿PDF第3页，Nested scales generate power laws；作者稿PDF第7页，Figure 2；作者稿PDF第13页，Model description）</p>
-<h2>15 与空间层级研究的衔接</h2>
-<p>对个人活动与城市群体响应研究，最直接的衔接有三个：</p>
-<table>
-<thead>
-<tr>
-<th>研究对象</th>
-<th>可以借鉴的内容</th>
-<th>需要新增的证据</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>个人活动空间</td>
-<td>容器直径、层数、跨层移动概率</td>
-<td>对本地LBS观测长度和缺测制度的稳定性检验</td>
-</tr>
-<tr>
-<td>群体流动社区</td>
-<td>将个人结构与集计OD社区进行对应</td>
-<td>不能从个人嵌套直接推定全城共享结构</td>
-</tr>
-<tr>
-<td>灾害或事件响应</td>
-<td>比较冲击前后的跨层移动变化</td>
-<td>区分行为改变、样本流失、空间可达性变化与推断误差</td>
-</tr>
-</tbody>
-</table>
-<p>这是基于本文方法提出的研究衔接，不是本文已经完成的结论。 （来源：作者稿PDF第13页，The container model；作者稿PDF第11页，Discussion）</p>
-<p>若研究目标是集体适应或空间涌现，独立个体的容器模型可作为一个有解释力的基线。在地点、观察窗口和约束可比的条件下，先测量它能重现多少结构，再检验引入相互依赖后增加了什么。只有新增机制具有独立的可检验增益，才能把结论推进到互动或适应机制。</p>
+<p>[Analysis] 与允许重叠、非嵌套的活动空间模型做复杂度匹配，能够检验树结构是否必要；改变窗口、缺测和采样可检验层级稳健性。整体模型优势不能自动分配到p、a或结构先验。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] 先保留个人尺度、再解释群体混合，是避免把群体重尾当成个人无尺度运动的方法。空间层级、访问顺序和地点探索分别承担不同建模职责。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="gonzalez2008understanding.md">González et al.</a>的个人尺度及 <a href="song2010modelling.md">Song et al.</a>的探索—返回对照：前者关注个人活动范围，后者关注历史强化，本篇加入嵌套空间。三者均需另行检验共享资源反馈。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验嵌套结构的必要性。</strong> 假说：在匹配模型复杂度后，允许活动空间重叠会改变部分人的留出预测，说明严格树结构有适用边界。增量：把候选结构作为竞争性假设。如何验证：同一地点集、同一训练窗比较树、重叠集合及无层级模型，以未见访问顺序和范围变化评价。可能失败：样本过短，复杂度惩罚或缺测决定分组。创新状态：未核查（unverified）。</p>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

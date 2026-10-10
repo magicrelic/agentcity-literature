@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Discrete Choice Methods with Simulation · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-45a455701696&paper=p-7f0224f36f5ee6">返回文献库</a><a href="https://eml.berkeley.edu/books/choice2.html" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Train - Discrete Choice Methods with Simulation</h1>
+<p><strong>离散选择的概率、识别与微观到宏观的聚合</strong></p>
+<blockquote>
+<p>资料范围：专著第 2 章正文，Properties of Discrete Choice Models（不含其他章节及补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：review。
+次要分析类型：无。
+背景核验：paper-only；背景沿本章论证组织。
+解读完整性：部分；第 2 章完整，整本专著的估计程序与应用未纳入。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Train，<em>Discrete Choice Methods with Simulation</em>，<strong>Cambridge University Press（专著，第 2 版）（2009）</strong>。<a href="https://eml.berkeley.edu/books/choice2.html">原文</a>；<a href="https://eml.berkeley.edu/books/choice2nd/Ch02_p9-33.pdf">第 2 章</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作者与机构</td>
+<td>Kenneth Train；章节与书籍下载页未列机构信息</td>
+</tr>
+<tr>
+<td>分析类型与领域</td>
+<td>review；随机效用、选择模型识别、聚合预测</td>
+</tr>
+<tr>
+<td>阅读范围</td>
+<td>第 2 章第 2.1–2.8 节；章文件 PDF 第 3–25 页，印刷页码 11–33</td>
+</tr>
+<tr>
+<td>资源</td>
+<td>作者提供章节 PDF；本章不提供独立实验数据集</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF p. 3, Section 2.1]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 本章从有限选择集合和随机效用出发，说明不同误差分布怎样生成不同选择模型，哪些参数能够识别，以及如何把异质个体的选择概率聚合为群体预测。[Paper: PDF p. 3, Section 2.1]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 个体选择不能被完整观测时，研究者如何用有限属性构造概率模型，并得到可解释、可比较的群体预测？本章将问题分成选择集合、概率推导、参数识别、聚合及跨地区或时期预测五部分。[Paper: PDF pp. 3–9, Sections 2.2–2.3]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Paper] 按本章的历史叙述，随机效用方法由刺激辨别的概率模型发展为效用最大化表示；logit、GEV、probit 和 mixed logit 的差异，主要由未观测效用的联合分布决定。效用最大化是一种可兼容的推导解释，模型也可作为解释变量与选择结果之间的统计关系使用，不能由概率拟合反推个体实际执行了效用计算。[Paper: PDF pp. 6–11, Sections 2.3–2.4]</p>
+<h2>05 本章识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>成因与处理</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>选择集合影响研究对象</td>
+<td>备选项需互斥、穷尽且有限；组合选择与“主要选择”要求不同的数据</td>
+<td>[Paper: PDF pp. 3–6, Section 2.2]</td>
+</tr>
+<tr>
+<td>误差分布随表示改变</td>
+<td>未观测项是相对于研究者已纳入的变量定义的，而非情境固有噪声</td>
+<td>[Paper: PDF p. 7, Section 2.3]</td>
+</tr>
+<tr>
+<td>参数不能全部识别</td>
+<td>选择只依赖效用差，效用整体尺度也需归一化</td>
+<td>[Paper: PDF pp. 11–20, Section 2.5]</td>
+</tr>
+<tr>
+<td>平均个体不能代表群体</td>
+<td>概率函数非线性，平均属性处的概率一般不等于平均概率</td>
+<td>[Paper: PDF pp. 21–23, Section 2.6]</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Paper] 观察者不知道全部效用，因此对未观测部分积分，得到行动概率；这一区分把行为表示、分布假设和预测结果连接起来。[Paper: PDF pp. 7–8, Section 2.3]</p>
+<p>[Analysis] 本章最可迁移的认识是：模型的随机性、参数大小和宏观预测都依赖表示方式。增加行为细节是否有价值，应看它是否改变可检验的选择与响应预测。</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 输入包括备选项属性、个体属性、误差分布与总体抽样权重。流程为：定义选择集合 → 构造代表性效用 → 推导选择概率 → 归一化可识别参数 → 按个体或分组加权聚合 → 更新未来属性与权重。跨地区或时期预测还可用已知份额重校准备选项常数。[Paper: PDF pp. 7–11, Sections 2.3–2.4; PDF pp. 23–25, Sections 2.6–2.8]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>假设与用途</th>
+<th>本章说明的边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>logit</td>
+<td>未观测项独立同分布、服从极值分布；概率有闭式</td>
+<td>替代项之间或跨时间的未观测相关可能违背独立性</td>
+</tr>
+<tr>
+<td>GEV</td>
+<td>允许特定的替代项相关结构</td>
+<td>相关结构仍由所选 GEV 形式限定</td>
+</tr>
+<tr>
+<td>probit</td>
+<td>联合正态误差，可表示相关与异方差</td>
+<td>正态分布未必适合要求单侧取值的因素</td>
+</tr>
+<tr>
+<td>mixed logit</td>
+<td>一部分误差可采用不同分布，另一部分为独立极值项</td>
+<td>概率一般需要数值模拟；详细估计在后续章节</td>
+</tr>
+<tr>
+<td>聚合与重校准</td>
+<td>个体概率按人口权重累加，必要时调整常数</td>
+<td>新地区份额校准不等于验证对新条件的响应</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 10–11, Section 2.4; PDF pp. 23–25, Sections 2.6–2.8]</p>
+<h2>09 关键公式与符号</h2>
+<p>[Paper] 令 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mrow><mi>n</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>n</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>ε</mi><mrow><mi>n</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">U_{nj}=V_{nj}+\varepsilon_{nj}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">nj</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">nj</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">ε</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">nj</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq>，其中 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></eq> 为决策者，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span></span></span></span></eq> 为备选项，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span></span></span></span></eq> 是研究者可表示的效用，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span></eq> 是未纳入部分。公式 2.1–2.2 为
+[
+P_{ni}=\Pr(\varepsilon_{nj}-\varepsilon_{ni}&lt;V_{ni}-V_{nj},\ \forall j\ne i)
+=\int I(\varepsilon_{nj}-\varepsilon_{ni}&lt;V_{ni}-V_{nj},\ \forall j\ne i)f(\varepsilon_n),\mathrm d\varepsilon_n.
+]
+指示函数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span></span></span></span></eq> 选出使备选项 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> 效用最高的区域，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span></span></span></span></eq> 给该区域分配概率。不同分布假设产生不同模型。[Paper: PDF p. 7, Equation 2.1; Equation 2.2]</p>
+<p>[Paper] 效用差协方差的推导（公式 2.3、2.4、2.5）说明，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi></mrow><annotation encoding="application/x-tex">J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0962em;">J</span></span></span></span></eq> 个备选项归一化后至多有 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo stretchy="false">(</mo><mi>J</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">J(J-1)/2-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0962em;">J</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0962em;">J</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></eq> 个可识别协方差参数。4 项例子中的参数由原误差协方差的 10 个降为 5 个。[Paper: PDF pp. 19–20, Equation 2.3; Equation 2.4; Equation 2.5]</p>
+<p>[Paper] 群体选择人数采用 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>N</mi><mo stretchy="true">^</mo></mover><mi>i</mi></msub><mo>=</mo><msub><mo>∑</mo><mi>n</mi></msub><msub><mi>w</mi><mi>n</mi></msub><msub><mi>P</mi><mrow><mi>n</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\widehat N_i=\sum_n w_nP_{ni}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0733em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9233em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span><span class="svg-align" style="width:calc(100% - 0.1667em);margin-left:0.1667em;top:-3.6833em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.24em;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="0.24em" viewBox="0 0 1062 239" preserveAspectRatio="none"><path d="M529 0h5l519 115c5 1 9 5 9 10 0 1-1 2-1 3l-4 22
+c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z"/></svg></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0497em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0017em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">ni</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">w_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 为个体代表的人口权重；用“平均居民”的属性代替逐个体预测，一般不能得到同一结果。[Paper: PDF p. 23, Section 2.6.1]</p>
+<h2>10 论证设计与证据链</h2>
+<p>本章是理论与教学论证，没有单独的新实验或模型消融。</p>
+<table>
+<thead>
+<tr>
+<th>论证</th>
+<th>支持的认识</th>
+<th>证据范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汽车—公交选择例子</td>
+<td>观测效用较高不保证个体一定选择该项</td>
+<td>[Paper: PDF pp. 8–9, Section 2.3]</td>
+</tr>
+<tr>
+<td>两城市系数比较</td>
+<td>系数差异可能来自误差尺度，不能直接当作偏好差异</td>
+<td>[Paper: PDF pp. 16–18, Section 2.5.2]</td>
+</tr>
+<tr>
+<td>Figure 2.1</td>
+<td>平均概率与平均效用处的概率不同</td>
+<td>[Paper: PDF p. 22, Figure 2.1]</td>
+</tr>
+<tr>
+<td>Figure 2.2</td>
+<td>平均响应与平均效用处的导数也不同</td>
+<td>[Paper: PDF p. 22, Figure 2.2]</td>
+</tr>
+<tr>
+<td>常数重校准</td>
+<td>调整常数可匹配基年份额，再预测属性变化</td>
+<td>[Paper: PDF p. 25, Section 2.8]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 选择模型可以表示异质性、跨备选项相关和时间相关，不能把它们统一描述为不具适应能力的固定规则。其限制在于选择集合、可观测变量及统计结构仍需确定。本章支持概率表示与聚合的理论关系，未验证开放情境中未知策略的生成，也未提供城市组织形成的动力学理论。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>[Paper] 本章明确指出：logit 的未观测独立性可能不合适；probit 的正态假设存在适用范围；参数解释受尺度归一化影响；平均属性代入非线性模型会产生聚合偏差。这些属于方法条件与解释边界，而非整本专著的完整局限清单。[Paper: PDF pp. 10–11, Section 2.4; PDF pp. 16–22, Sections 2.5–2.6]</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 匹配已有份额可能吸收地区差异，却未必识别扰动下的替代关系。应将份额重校准和响应验证分开：固定人口与选择集合，分别检验新成本、可达性及备选项变化后的选择概率。错误的可用选项记录与未观测约束均可能产生貌似合理的预测。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] 微观到宏观不能只平均输入；应平均个体预测并保留人口权重。跨模型或跨城市比较时，先检查误差尺度，再解释系数差异。个体属性必须通过改变备选项之间的效用差进入选择模型。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 与 <a href="simini2012universal.md">Simini et al. - A universal model for mobility and migration patterns</a>对照，Train 本章从异质个体选择聚合到总体份额，Simini 的 radiation model 从机会分布预测流动。二者提供不同层次的生成假设；拟合相同总流量不能证明微观解释相同。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>候选：异质性分布决定扰动后的聚合响应。</strong> 来源为第 2.6 节的非线性聚合差异。[Paper: PDF pp. 21–23, Section 2.6]</p>
+<p>假说：在相同平均属性和基年份额下，两个人口组若保留不同属性分布，其成本变化后的份额响应仍可不同。相对本章的教学例子，增量是在独立出行选择数据中检验响应。如何验证：比较逐个体加权预测与平均属性模型，固定选择集合，以未参与校准的成本变化检验份额与弹性；若两者预测相当，则异质性分布在该范围内没有额外解释力。可能失败：观测的属性分布不能代表真正的效用异质性；新增约束使原选择集合失效。创新状态：未核查（unverified）。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

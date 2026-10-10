@@ -2,10 +2,79 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Stability and Resilience of Transportation Systems: Is a Traffic Jam About to Occur? · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-cb3c05b33165e5">返回文献库</a><a href="https://doi.org/10.1109/TITS.2021.3095897" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Ghadami et al. - Stability and Resilience of Transportation Systems: Is a Traffic Jam About to Occur?</h1>
 <p><strong>交通失稳前的波动与恢复</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Ghadami et al.，<em>Stability and Resilience of Transportation Systems: Is a Traffic Jam About to Occur?</em>，<strong>IEEE Transactions on Intelligent Transportation Systems（2022）</strong>。<a href="https://doi.org/10.1109/TITS.2021.3095897">原文</a>。</p>
-<h2>研究问题</h2>
-<p>交通系统接近拥堵失稳时，其稳定性与恢复能力能否从动态波动中识别？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；交通稳定性与恢复</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1109/TITS.2021.3095897</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Department of Mechanical Engineering, University of Michigan, Ann Arbor, MI, USA；Department of Mathematics, Center for the Study of Complex Systems, University of Michigan, Ann Arbor, MI, USA；Odum School of Ecology, University of Georgia, Athens, GA, USA</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 临界减速为交通失稳提供候选预警，论文包含模拟与经验案例。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 交通系统接近拥堵失稳时，其稳定性与恢复能力能否从动态波动中识别？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 交通稳定性在复杂道路条件下缺少可比较的实测代理。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交通系统接近拥堵失稳时，其稳定性与恢复能力能否从动态波动中识别</td>
+<td>[Analysis] 交通稳定性在复杂道路条件下缺少可比较的实测代理。</td>
+<td>[Analysis] 把临界减速的时间序列特征用于交通失稳风险评价。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 把临界减速的时间序列特征用于交通失稳风险评价。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 比较接近拥堵时恢复、方差与自相关的变化，检验稳定性和韧性。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 以下为摘要所涉概念的数学解释；本文公式编号及具体估计实现不可据摘要评估。</p>
 <h3>滚动方差：局部扰动是否被更强放大</h3>
 <p>对去除预期趋势/季节后的速度、密度或占有率残差 y_t，在长度 W 的窗口中：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>W</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mi>t</mi><mo>−</mo><mi>W</mi><mo>+</mo><mn>1</mn></mrow><mi>t</mi></munderover><mo stretchy="false">(</mo><msub><mi>y</mi><mi>s</mi></msub><mo>−</mo><msub><mover accent="true"><mi>y</mi><mo>ˉ</mo></mover><mi>t</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
@@ -30,6 +99,28 @@ a_1\simeq e^{-r\Delta t},\qquad
 <li><strong>需要：</strong> 明确采样间隔 Δt、稳定背景的残差时间序列，或可识别的小扰动及随后的恢复段。τ_rec 的单位随 Δt，应以分钟/小时报告。</li>
 <li><strong>真实交通证据：</strong> 来源 A 的原文摘要明确报告 empirical case studies，因而“CSD 在交通中只有仿真”不正确；但证据不覆盖全文，不能进一步断言其具体实测数据集、a₁窗口长度或实测恢复率。来源 B 已取得全文，但只有交通仿真。</li>
 </ul>
-<p><strong>来源 A：</strong> Ghadami, A., Doering, C. R., Drake, J. M., Rohani, P. &amp; Epureanu, B. I. (2022；2021 online). <em>Stability and Resilience of Transportation Systems: Is a Traffic Jam About to Occur?</em> IEEE Transactions on Intelligent Transportation Systems <strong>23</strong>, 10803–10814. DOI <a href="https://doi.org/10.1109/TITS.2021.3095897">10.1109/TITS.2021.3095897</a>。Crossref 元数据、OpenAlex 收录作者摘要已核验；<a href="https://ieeexplore.ieee.org/document/9508834">IEEE 文章页</a>，证据不覆盖 PDF 全文。</p>
+<p><strong>来源 A：</strong> Ghadami, A., Doering, C. R., Drake, J. M., Rohani, P. &amp; Epureanu, B. I. (2022；2021 online). <em>Stability and Resilience of Transportation Systems: Is a Traffic Jam About to Occur?</em> IEEE Transactions on Intelligent Transportation Systems <strong>23</strong>, 10803–10814. DOI <a href="https://doi.org/10.1109/TITS.2021.3095897">10.1109/TITS.2021.3095897</a>。作者摘要报告交通实证案例；<a href="https://ieeexplore.ieee.org/document/9508834">IEEE 文章页</a>，证据不覆盖 PDF 全文。</p>
 <p><strong>来源 B：</strong> Chattopadhyay, S. N. &amp; Gupta, A. K. (2024). <em>Anticipating Tipping Points for Disordered Traffic: Critical Slowing Down on the Onset of Congestion.</em> 预印本 DOI <a href="https://doi.org/10.48550/arXiv.2401.09364">10.48550/arXiv.2401.09364</a>，<a href="https://arxiv.org/pdf/2401.09364">作者全文</a>，已读 Fig. 4、§III.B。未核验到对应正式发表版本，因此不赋予期刊状态。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：临界减速为交通失稳提供候选预警，论文包含模拟与经验案例。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 摘要不能支持具体检测器与参数；噪声增强也能产生高方差。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 在恒定噪声和增噪负例中盲测预警，报告误报和提前量；季节趋势与滤波可能制造信号。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 预警要区分增噪、趋势和真实恢复变慢。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：摘要不能支持具体检测器与参数；噪声增强也能产生高方差。</li>
+<li>核心假说与增量：在恒定噪声和增噪负例中盲测预警，报告误报和提前量。</li>
+<li>初始方法与如何验证：在恒定噪声和增噪负例中盲测预警，报告误报和提前量；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：季节趋势与滤波可能制造信号。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

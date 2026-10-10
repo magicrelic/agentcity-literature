@@ -2,10 +2,79 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Finite size scaling analysis of Ising model block distribution functions · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-92380f41b8929c">返回文献库</a><a href="https://doi.org/10.1007/BF01293604" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Binder - Finite size scaling analysis of Ising model block distribution functions</h1>
 <p><strong>有限尺寸下的序参量分布</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：review。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Binder，<em>Finite size scaling analysis of Ising model block distribution functions</em>，<strong>Zeitschrift für Physik B Condensed Matter（1981）</strong>。<a href="https://doi.org/10.1007/BF01293604">原文</a>。</p>
-<h2>研究问题</h2>
-<p>序参量分布及其矩如何随系统尺寸变化，并帮助识别临界行为？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>review；有限尺寸与临界测量</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1007/BF01293604</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 有限块序参量分布及其矩提供研究Ising临界行为的尺寸标度途径。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 序参量分布及其矩如何随系统尺寸变化，并帮助识别临界行为？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 有限系统在临界点附近不表现为无穷体系的严格奇异性。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序参量分布及其矩如何随系统尺寸变化，并帮助识别临界行为</td>
+<td>[Analysis] 有限系统在临界点附近不表现为无穷体系的严格奇异性。</td>
+<td>[Analysis] 用分布函数及矩的尺寸关系识别临界行为与共存。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用分布函数及矩的尺寸关系识别临界行为与共存。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 对不同维数和块尺寸分析分布函数，并研究矩比值的临界行为。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 以下为摘要所涉概念的数学解释；本文公式编号及具体估计实现不可据摘要评估。</p>
 <h3>Binder 四阶累积量：分布形状随系统尺寸是否具有一致交点</h3>
 <p>常用非中心形式为</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>U</mi><mn>4</mn></msub><mo stretchy="false">(</mo><mi>L</mi><mo separator="true">,</mo><mi>u</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mo stretchy="false">⟨</mo><msup><mi>m</mi><mn>4</mn></msup><mo stretchy="false">⟩</mo></mrow><mrow><mn>3</mn><mo stretchy="false">⟨</mo><msup><mi>m</mi><mn>2</mn></msup><msup><mo stretchy="false">⟩</mo><mn>2</mn></msup></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
@@ -14,6 +83,28 @@ U_4(L,u)=1-\frac{\langle m^4\rangle}{3\langle m^2\rangle^2}.
 <ul>
 <li><strong>什么信号：</strong> 在适用的连续转变与尺寸标度假设下，不同 L 的 U₄(u) 曲线在临界控制量附近交汇；某些一阶转变可出现显著凹陷及分布共存。对非负拥堵份额，不能照搬对称磁化变量的“0/2⁄3”极限解释。</li>
 <li><strong>需要：</strong> 多个可比系统尺寸、每一控制量上的大量近稳态样本、同一 m 定义；仅扩大轨迹抽样比例不是增加物理系统尺寸。</li>
-<li><strong>来源与现实级别：</strong> Binder (1981), <em>Finite size scaling analysis of Ising model block distribution functions</em>, Z. Phys. B <strong>43</strong>, 119–140，DOI <a href="https://doi.org/10.1007/BF01293604">10.1007/BF01293604</a>，元数据已核验。<strong>通用统计物理指标；纳入文献尚无可靠的真实城市/移动 Binder 应用，不能列成已被城市实证验证的常规指标。</strong></li>
+<li><strong>来源与现实级别：</strong> Binder (1981), <em>Finite size scaling analysis of Ising model block distribution functions</em>, Z. Phys. B <strong>43</strong>, 119–140，DOI <a href="https://doi.org/10.1007/BF01293604">10.1007/BF01293604</a>，<strong>通用统计物理指标；纳入文献尚无可靠的真实城市/移动 Binder 应用，不能列成已被城市实证验证的常规指标。</strong></li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：有限块序参量分布及其矩提供研究Ising临界行为的尺寸标度途径。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] Ising的对称序参量条件不能直接搬到非负拥堵份额；增加抽样比例不等于增大物理系统。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 在物理尺寸可控的模型中比较分布和累积量，检验数据塌缩；长暂态和非对称变量可能误导。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 边界条件、序参量对称性和物理尺寸都影响累积量解释。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：Ising的对称序参量条件不能直接搬到非负拥堵份额；增加抽样比例不等于增大物理系统。</li>
+<li>核心假说与增量：在物理尺寸可控的模型中比较分布和累积量，检验数据塌缩。</li>
+<li>初始方法与如何验证：在物理尺寸可控的模型中比较分布和累积量，检验数据塌缩；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：长暂态和非对称变量可能误导。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
 </ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

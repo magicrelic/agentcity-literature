@@ -2,10 +2,79 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Multiscale Entropy Analysis of Traffic Time Series · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-eefdcbc97be194">返回文献库</a><a href="https://doi.org/10.1142/S012918311350006X" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Wang et al. - Multiscale Entropy Analysis of Traffic Time Series</h1>
 <p><strong>交通片段的延续与多尺度不规则性</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Wang et al.，<em>Multiscale Entropy Analysis of Traffic Time Series</em>，<strong>International Journal of Modern Physics C（2013）</strong>。<a href="https://doi.org/10.1142/S012918311350006X">原文</a>。</p>
-<h2>研究问题</h2>
-<p>交通时间序列在不同时间尺度上的不规则性如何随工作日与周末变化？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；交通波动的多尺度结构</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1142/S012918311350006X</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Department of Mathematics, Beijing Jiaotong University, No. 3 of Shangyuan Residence Haidian District, Beijing 100044, P. R. China</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 交通时间序列的多尺度样本熵可比较工作日与周末等动态组织。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 交通时间序列在不同时间尺度上的不规则性如何随工作日与周末变化？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 单一时间尺度可能给出彼此矛盾的交通复杂性排序。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交通时间序列在不同时间尺度上的不规则性如何随工作日与周末变化</td>
+<td>[Analysis] 单一时间尺度可能给出彼此矛盾的交通复杂性排序。</td>
+<td>[Analysis] 结合MSE与MSPE比较粗粒化序列，识别工作日和周末差异。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 结合MSE与MSPE比较粗粒化序列，识别工作日和周末差异。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 将流量序列跨尺度平均，以模式延续的条件相似性衡量不规则性。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 以下为摘要所涉概念的数学解释；本文公式编号及具体估计实现不可据摘要评估。</p>
 <h3>样本熵 SampEn：相似的交通片段是否会继续相似</h3>
 <p><strong>测量对象。</strong> 等间隔连续值序列：路段速度、过车数、站点客流或地区人口。它度量短片段延长一步后仍相似的条件概率。</p>
 <p><strong>计算。</strong> 对序列构造 <code>m</code> 维延迟向量 <code>u_i=(x_i,...,x_(i+m-1))</code>；用 Chebyshev 距离 <code>d(u_i,u_j)=max_k|x_(i+k)-x_(j+k)|</code>，排除 <code>i=j</code>。在相同起始位置集合中，<code>B</code> 是 <code>m</code> 维匹配对数，<code>A</code> 是延长至 <code>m+1</code> 后仍匹配的对数：</p>
@@ -17,4 +86,26 @@
 <p><strong>真实应用。</strong> Wang, Shang, Zhao &amp; Xia (2013), <em>Multiscale Entropy Analysis of Traffic Time Series</em>, <strong>International Journal of Modern Physics C 24</strong>, 1350006，<a href="https://doi.org/10.1142/S012918311350006X">10.1142/S012918311350006X</a>。传统 MSE 在尺度 1 即原序列 SampEn；论文以交通时间序列比较工作日与周末（原摘要/Crossref）。Yin &amp; Shang (2016)，<a href="https://doi.org/10.1007/s11071-016-2901-3">10.1007/s11071-016-2901-3</a>，进一步比较原始/打乱交通序列的单、多变量样本熵（期刊摘要与图注）。</p>
 <p><strong>动态比较。</strong> 滑动窗口 <code>SampEn(t)</code> 可给出交通从规则到不规则、或拥堵后进入稳定低速的阶段变化；不同状态的升降方向由具体序列决定，不预设“拥堵必然熵高”。</p>
 <p>标准多尺度熵先以尺度 s 对序列分段平均，再计算各尺度的样本熵；尺度 1 对应原序列。不同尺度的容差归一化必须保持一致。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：交通时间序列的多尺度样本熵可比较工作日与周末等动态组织。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 工作日差异不直接识别形成机制；拥堵不必伴随更高熵。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 固定时间窗与容差，对照原始和保持周期的代理序列；粗粒化缩短样本及标准差变化可能影响熵。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 复杂性需要报告尺度曲线和容差，而非单个熵值。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：工作日差异不直接识别形成机制；拥堵不必伴随更高熵。</li>
+<li>核心假说与增量：固定时间窗与容差，对照原始和保持周期的代理序列。</li>
+<li>初始方法与如何验证：固定时间窗与容差，对照原始和保持周期的代理序列；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：粗粒化缩短样本及标准差变化可能影响熵。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

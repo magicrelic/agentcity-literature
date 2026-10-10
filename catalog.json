@@ -297,7 +297,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/barthelemy2019statistical.md",
       "provenance": [
         {
           "id": "catalog",
@@ -401,7 +401,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/barthelemy2011spatial.md",
       "provenance": [
         {
           "id": "catalog",
@@ -509,7 +509,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/crutchfield2012order.md",
       "provenance": [
         {
           "id": "catalog",
@@ -625,7 +625,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/gross2008adaptive.md",
       "provenance": [
         {
           "id": "catalog",
@@ -905,7 +905,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/scholtes2014causality.md",
       "provenance": [
         {
           "id": "catalog",
@@ -1435,7 +1435,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/zeng2020multiple.md",
       "provenance": [
         {
           "id": "catalog",
@@ -1564,7 +1564,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/menck2013how.md",
       "provenance": [
         {
           "id": "catalog",
@@ -1804,7 +1804,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/arenas2008synchronization.md",
       "provenance": [
         {
           "id": "catalog",
@@ -2236,7 +2236,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/zhou2026human.md",
       "provenance": [
         {
           "id": "catalog",
@@ -2375,7 +2375,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/sugiyama2008traffic.md",
       "provenance": [
         {
           "id": "catalog",
@@ -2506,7 +2506,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/vicsek1995novel.md",
       "provenance": [
         {
           "id": "catalog",
@@ -2959,7 +2959,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/bain2019dynamic.md",
       "provenance": [
         {
           "id": "catalog",
@@ -3214,7 +3214,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/hens2019spatiotemporal.md",
       "provenance": [
         {
           "id": "catalog",
@@ -3700,7 +3700,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/gao2016universal.md",
       "provenance": [
         {
           "id": "catalog",
@@ -3834,7 +3834,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/ashwin2012tipping.md",
       "provenance": [
         {
           "id": "catalog",
@@ -4005,7 +4005,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/scheffer2009early.md",
       "provenance": [
         {
           "id": "catalog",
@@ -5623,7 +5623,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/savit1999adaptive.md",
       "provenance": [
         {
           "id": "catalog",
@@ -6023,7 +6023,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/battiston2026collective.md",
       "provenance": [
         {
           "id": "catalog",
@@ -6273,7 +6273,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/bettencourt2013origins.md",
       "provenance": [
         {
           "id": "catalog",
@@ -6402,7 +6402,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/villegas2023laplacian.md",
       "provenance": [
         {
           "id": "catalog",
@@ -6524,7 +6524,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/barzel2015constructing.md",
       "provenance": [
         {
           "id": "catalog",
@@ -6638,7 +6638,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/barzel2013universality.md",
       "provenance": [
         {
           "id": "catalog",
@@ -6750,7 +6750,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/liu2016control.md",
       "provenance": [
         {
           "id": "catalog",
@@ -7126,7 +7126,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/piao2026emergence.md",
       "provenance": [
         {
           "id": "catalog",
@@ -7888,7 +7888,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/pappalardo2023future.md",
       "provenance": [
         {
           "id": "catalog",
@@ -8308,7 +8308,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/gonzalez2008understanding.md",
       "provenance": [
         {
           "id": "catalog",
@@ -8445,7 +8445,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/alessandretti2018evidence.md",
       "provenance": [
         {
           "id": "catalog",
@@ -8566,7 +8566,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/boucherie2025decoupling.md",
       "provenance": [
         {
           "id": "catalog",
@@ -8700,7 +8700,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/xu2021emergence.md",
       "provenance": [
         {
           "id": "catalog",
@@ -9570,7 +9570,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/heblich2020making.md",
       "provenance": [
         {
           "id": "catalog",
@@ -9693,7 +9693,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/ahlfeldt2015economics.md",
       "provenance": [
         {
           "id": "catalog",
@@ -9822,7 +9822,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/moro2021mobility.md",
       "provenance": [
         {
           "id": "catalog",
@@ -9995,7 +9995,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/nilforoshan2023human.md",
       "provenance": [
         {
           "id": "catalog",
@@ -10133,7 +10133,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/fan2026hidden.md",
       "provenance": [
         {
           "id": "catalog",
@@ -10447,7 +10447,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/louail2015uncovering.md",
       "provenance": [
         {
           "id": "catalog",
@@ -11692,7 +11692,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/toole2015coupling.md",
       "provenance": [
         {
           "id": "catalog",
@@ -11980,7 +11980,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/bettencourt2007growth.md",
       "provenance": [
         {
           "id": "catalog",
@@ -12258,7 +12258,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/zhou2025flow.md",
       "provenance": [
         {
           "id": "catalog",
@@ -12389,7 +12389,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/moussaid2010walking.md",
       "provenance": [
         {
           "id": "catalog",
@@ -12883,7 +12883,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/dubernet2015implementing.md",
       "provenance": [
         {
           "id": "catalog",
@@ -12985,7 +12985,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/wilson1967statistical.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13110,7 +13110,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/simini2012universal.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13256,7 +13256,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/jiang2016timegeo.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13303,7 +13303,7 @@
         "items": [
           {
             "family": "Train",
-            "given": null,
+            "given": "Kenneth",
             "literal": null,
             "orcid": null,
             "affiliations": []
@@ -13315,7 +13315,7 @@
         "venue": "Cambridge University Press（专著，第 2 版）",
         "kind": "book",
         "year": 2009,
-        "publisher": null,
+        "publisher": "Cambridge University Press",
         "volume": null,
         "issue": null,
         "pages": null,
@@ -13344,11 +13344,13 @@
         "supplement": []
       },
       "access": {
-        "original": "unknown",
+        "original": "open",
         "licenses": [],
-        "sourceIds": []
+        "sourceIds": [
+          "author-site"
+        ]
       },
-      "reading": null,
+      "reading": "论文解读/train2009discrete.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13367,6 +13369,27 @@
             "research.question",
             "links.original",
             "links.arxiv",
+            "reading"
+          ]
+        },
+        {
+          "id": "author-site",
+          "provider": "Kenneth Train author-hosted book page",
+          "url": "https://eml.berkeley.edu/books/choice2.html",
+          "retrievedOn": "2026-10-11",
+          "fields": [
+            "authors.items",
+            "publication.publisher",
+            "publication.year",
+            "access.original"
+          ]
+        },
+        {
+          "id": "chapter-2",
+          "provider": "Author-hosted second-edition Chapter 2",
+          "url": "https://eml.berkeley.edu/books/choice2nd/Ch02_p9-33.pdf",
+          "retrievedOn": "2026-10-11",
+          "fields": [
             "reading"
           ]
         }
@@ -13425,7 +13448,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/hornietaleds2016multi.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13502,7 +13525,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/rao1995bdi.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13618,7 +13641,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/yuan2025learning.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13749,7 +13772,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/simini2021deep.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13859,7 +13882,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/lindell2012protective.md",
       "provenance": [
         {
           "id": "catalog",
@@ -13963,7 +13986,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/paulov2017constraints.md",
       "provenance": [
         {
           "id": "catalog",
@@ -14125,7 +14148,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/wang2025agentic.md",
       "provenance": [
         {
           "id": "catalog",
@@ -16384,7 +16407,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/yang2024oasis.md",
       "provenance": [
         {
           "id": "catalog",
@@ -16630,7 +16653,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/wang2019local.md",
       "provenance": [
         {
           "id": "catalog",
@@ -16760,7 +16783,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/dong2022modest.md",
       "provenance": [
         {
           "id": "catalog",
@@ -16897,7 +16920,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/loreti2022local.md",
       "provenance": [
         {
           "id": "catalog",
@@ -18698,7 +18721,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/ersing2020geophysical.md",
       "provenance": [
         {
           "id": "catalog",
@@ -18816,7 +18839,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/bagrow2011collective.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19046,7 +19069,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/sultimov2026respond.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19167,7 +19190,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/yang2026leveraging.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19331,7 +19354,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/li2025adaptive.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19447,7 +19470,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/liu2026intercity.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19764,7 +19787,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/arnaudon2024algorithm.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19876,7 +19899,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/rosvall2011multilevel.md",
       "provenance": [
         {
           "id": "catalog",
@@ -19980,7 +20003,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/peixoto2014hierarchical.md",
       "provenance": [
         {
           "id": "catalog",
@@ -20083,7 +20106,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/peixoto2018nonparametric.md",
       "provenance": [
         {
           "id": "catalog",
@@ -20205,7 +20228,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/jeub2018multiresolution.md",
       "provenance": [
         {
           "id": "catalog",
@@ -20334,7 +20357,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/expert2011uncovering.md",
       "provenance": [
         {
           "id": "catalog",
@@ -20449,7 +20472,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/boettiger2012quantifying.md",
       "provenance": [
         {
           "id": "catalog",
@@ -21018,7 +21041,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/tsai2005quantifying.md",
       "provenance": [
         {
           "id": "catalog",
@@ -21268,7 +21291,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/costa2002multiscale.md",
       "provenance": [
         {
           "id": "catalog",
@@ -21616,7 +21639,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/zhang2019complexityentropy.md",
       "provenance": [
         {
           "id": "catalog",
@@ -21848,7 +21871,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/gallotti2024distorted.md",
       "provenance": [
         {
           "id": "catalog",
@@ -21962,7 +21985,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/grimm2012pattern.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22115,7 +22138,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/sugihara2012detecting.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22224,7 +22247,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/cobey2016limits.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22329,7 +22352,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/schreiber2000measuring.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22446,7 +22469,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/kim2025correlated.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22550,7 +22573,7 @@
           "catalog"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/santos2026when.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22649,7 +22672,7 @@
           "crossref"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/timme2007revealing.md",
       "provenance": [
         {
           "id": "catalog",
@@ -22765,7 +22788,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/dibbelt2016customizable.md",
       "provenance": [
         {
           "id": "crossref",
@@ -22858,7 +22881,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/delling2013phast.md",
       "provenance": [
         {
           "id": "crossref",
@@ -22930,7 +22953,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/yen1971finding.md",
       "provenance": [
         {
           "id": "crossref",
@@ -23000,7 +23023,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/blasius2025customizable.md",
       "provenance": [
         {
           "id": "arxiv",

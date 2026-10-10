@@ -2,10 +2,79 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Multivariate multiscale sample entropy of traffic time series · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-8d69a3b2832d40">返回文献库</a><a href="https://doi.org/10.1007/s11071-016-2901-3" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Yin et al. - Multivariate multiscale sample entropy of traffic time series</h1>
 <p><strong>速度与流量的跨尺度联合结构</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Yin et al.，<em>Multivariate multiscale sample entropy of traffic time series</em>，<strong>Nonlinear Dynamics（2016）</strong>。<a href="https://doi.org/10.1007/s11071-016-2901-3">原文</a>。</p>
-<h2>研究问题</h2>
-<p>速度和流量的联合波动在不同时间尺度上呈现怎样的复杂性？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；多变量交通波动</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1007/s11071-016-2901-3</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 多变量多尺度样本熵可以描述速度与流量的联合时间组织。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 速度和流量的联合波动在不同时间尺度上呈现怎样的复杂性？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 速度与流量的联合组织不等于两个通道熵的相加。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>速度和流量的联合波动在不同时间尺度上呈现怎样的复杂性</td>
+<td>[Analysis] 速度与流量的联合组织不等于两个通道熵的相加。</td>
+<td>[Analysis] 以多变量嵌入和跨尺度计算检验联合相关。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 以多变量嵌入和跨尺度计算检验联合相关。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 同步通道分别归一化、粗粒化并拼接嵌入向量，比较原始与打乱序列。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 以下为摘要所涉概念的数学解释；本文公式编号及具体估计实现不可据摘要评估。</p>
 <h3>多尺度熵 MSE 与多变量 MMSE：不规则性发生在哪些时间尺度</h3>
 <p><strong>计算。</strong> 按尺度 <code>s</code> 对原序列分段平均：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>y</mi><mi>j</mi><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mo stretchy="false">(</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi>s</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>j</mi><mi>s</mi></mrow></munderover><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><mspace width="2em"/><mi>j</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mo stretchy="false">⌊</mo><mi>N</mi><mi mathvariant="normal">/</mi><mi>s</mi><mo stretchy="false">⌋</mo><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">
@@ -17,6 +86,28 @@ y_j^{(s)}=\frac1s\sum_{i=(j-1)s+1}^{js}x_i,
 <p><strong>含义。</strong> 单尺度高 SampEn 可能来自很细的噪声，粗粒化后迅速消失；在较大尺度仍保持丰富变化的序列，其 MSE 不会如此迅速降低。因此 <code>MSE(s)</code> 回答“是分钟层面的杂乱，还是较长时间尺度仍有变化结构”。</p>
 <p><strong>多变量版本。</strong> 对速度、流量、占有率等同步通道分别标准化和粗粒化，拼接多通道嵌入向量；统计这些联合向量由给定维数增加一维后的条件匹配概率。应报告各通道嵌入维数和延迟。MMSE 中的联合匹配不同于把各单变量 SampEn 简单相加，能反映通道间关系。</p>
 <p><strong>数据。</strong> 长度至少随最大尺度增加：尺度 <code>s_max</code> 时只有 <code>N/s_max</code> 点；各通道必须时间对齐，缺测不能各自错位删除。</p>
-<p><strong>真实应用。</strong> Yin, Y. &amp; Shang, P. (2016), <em>Multivariate multiscale sample entropy of traffic time series</em>, <strong>Nonlinear Dynamics 86</strong>, 479–488，<a href="https://doi.org/10.1007/s11071-016-2901-3">10.1007/s11071-016-2901-3</a>。期刊摘要说明用 MMSE 比较交通多变量数据和工作日/周末，Figure 13 明确是 <strong>detector 2036 的八周 speed+volume 双变量数据</strong>，比较平均工作日和周末 MMSE；证据限于摘要和图注，不补写未核实的城市名与采样间隔。<a href="https://link.springer.com/article/10.1007/s11071-016-2901-3/figures/13">图13</a>。方法原典：Costa, Goldberger &amp; Peng (2002), <a href="https://doi.org/10.1103/PhysRevLett.89.068102">10.1103/PhysRevLett.89.068102</a>。</p>
+<p><strong>真实应用。</strong> Yin, Y. &amp; Shang, P. (2016), <em>Multivariate multiscale sample entropy of traffic time series</em>, <strong>Nonlinear Dynamics 86</strong>, 479–488，<a href="https://doi.org/10.1007/s11071-016-2901-3">10.1007/s11071-016-2901-3</a>。[Paper] 摘要说明 MMSE 比较交通多变量数据、原始与打乱序列及工作日/周末差异。[Paper: Abstract] 方法背景：Costa, Goldberger &amp; Peng (2002), <a href="https://doi.org/10.1103/PhysRevLett.89.068102">10.1103/PhysRevLett.89.068102</a>。</p>
 <p><strong>动态比较。</strong> 用“日期/时间窗口 × 尺度”的 MSE 热图观察改变先出现在哪个尺度、是否向更长尺度扩展；可计算前后 <code>Delta MSE(s)</code>，比单个平均熵更能描述过程。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：多变量多尺度样本熵可以描述速度与流量的联合时间组织。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 联合熵不同于单变量熵求和；现有摘要和图注不能支持未核验的城市或采样参数。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 保留各通道自相关而打乱通道对应，测试联合信息；时间错位与高维样本稀疏可能造成伪差异。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 打乱通道对应可区分各自记忆与跨通道依赖。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：联合熵不同于单变量熵求和；现有摘要和图注不能支持未核验的城市或采样参数。</li>
+<li>核心假说与增量：保留各通道自相关而打乱通道对应，测试联合信息。</li>
+<li>初始方法与如何验证：保留各通道自相关而打乱通道对应，测试联合信息；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：时间错位与高维样本稀疏可能造成伪差异。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

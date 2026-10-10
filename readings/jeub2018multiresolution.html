@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Multiresolution Consensus Clustering in Networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-33dcc20a85fc71">返回文献库</a><a href="https://doi.org/10.1038/s41598-018-21352-7" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Jeub et al. - Multiresolution Consensus Clustering in Networks</h1>
+<p><strong>不同分辨率的划分怎样合成稳健层级</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Jeub et al.，<em>Multiresolution Consensus Clustering in Networks</em>，<strong>Scientific Reports（2018）</strong>。<a href="https://doi.org/10.1038/s41598-018-21352-7">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；社区结构的稳健性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/s41598-018-21352-7</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 结合分辨率抽样与层级共识聚类，整合多组网络划分而减少单次优化及任意尺度选择的影响。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 如何从不同分辨率和随机优化结果中提取具有统计支持的共识层级？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 本文关注社区结构的稳健性，其关键辨别在于：一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如何从不同分辨率和随机优化结果中提取具有统计支持的共识层级</td>
+<td>[Analysis] 本文关注社区结构的稳健性，其关键辨别在于：一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。</td>
+<td>[Analysis] 基于模块度性质覆盖有意义的分辨率，再以修订的共识质量函数递归组织输入划分。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 基于模块度性质覆盖有意义的分辨率，再以修订的共识质量函数递归组织输入划分。 [Paper: Section A hierarchical model for community identification in complex networks through modularity and genetic algorithm]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 基于模块度性质覆盖有意义的分辨率，再以修订的共识质量函数递归组织输入划分。 [Paper: Section A hierarchical model for community identification in complex networks through modularity and genetic algorithm]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 基于模块度性质覆盖有意义的分辨率，再以修订的共识质量函数递归组织输入划分。</td>
+<td>[Analysis] 一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。</td>
+<td>[Paper: Section A hierarchical model for community identification in complex networks through modularity and genetic algorithm]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如何从不同分辨率和随机优化结果中提取具有统计支持的共识层级</td>
+<td>正文的两个贡献分别是尺度采样和层级共识；共识方法也可用于其他聚类输出，不能把二者绑定为唯一组合。</td>
+<td>结合分辨率抽样与层级共识聚类，整合多组网络划分而减少单次优化及任意尺度选择的影响。</td>
+<td>一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。</td>
+<td>[Paper: Section Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>主文图表</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>主文图表</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>主文图表</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>主文图表</td>
+<td>[Paper: Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>[Paper] 当前层级共识实现需要O(n²)内存，更适合较小网络的细致分析；划分较保守，可能合并真实群组形成多余中间层。 [Paper: Section Hierarchical consensus]</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 改变尺度抽样与优化器，再与保持空间机会的零模型比较共识树；相关输入解与递归构造可能造成伪稳定。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：一致性主要反映输入划分集合；若集合全部受同一空间或分辨率偏差影响，共识不能消除该偏差。</li>
+<li>核心假说与增量：改变尺度抽样与优化器，再与保持空间机会的零模型比较共识树。</li>
+<li>初始方法与如何验证：改变尺度抽样与优化器，再与保持空间机会的零模型比较共识树；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：相关输入解与递归构造可能造成伪稳定。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

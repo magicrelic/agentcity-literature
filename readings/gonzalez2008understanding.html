@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Understanding individual human mobility patterns · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-4625aa3d71ea7e">返回文献库</a><a href="https://doi.org/10.1038/nature06958" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>González et al. - Understanding individual human mobility patterns</h1>
+<p><strong>个人移动的规律性如何与群体异质性共存</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>González et al.，<em>Understanding individual human mobility patterns</em>，<strong>Nature（2008）</strong>。<a href="https://doi.org/10.1038/nature06958">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；个体移动规律</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/nature06958；arXiv：0806.1256</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 分析十万匿名手机用户六个月的轨迹，发现个人移动受相对稳定的尺度及频繁返回地点约束，标准化后呈现可比较的空间分布。 [Paper: Section main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 个体活动范围、重复访问和人群异质性如何共同塑造移动轨迹的统计规律？ [Paper: Section main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 群体距离分布容易被误解为每个个体都遵循同一种无尺度随机运动。 [Paper: Section main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>个体活动范围、重复访问和人群异质性如何共同塑造移动轨迹的统计规律</td>
+<td>[Analysis] 群体距离分布容易被误解为每个个体都遵循同一种无尺度随机运动。</td>
+<td>[Analysis] 先保留个人活动尺度，再标准化空间分布，能把个体规律与群体异质性区分开。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 先保留个人活动尺度，再标准化空间分布，能把个体规律与群体异质性区分开。 [Paper: Section main text]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 分别统计位移分布、回转半径及位置访问频率，再消除个人尺度和轨迹方向差异，避免把群体混合等同于个人随机游走。 [Paper: Section main text]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 先保留个人活动尺度，再标准化空间分布，能把个体规律与群体异质性区分开。</td>
+<td>[Analysis] 事件触发采样影响停留与返回统计，观测机制属于推断边界。</td>
+<td>[Paper: Section main text]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Paper] 回转半径概括个人活动范围：
+[
+r_g=\sqrt{\frac1n\sum_{j=1}^{n}|\mathbf r_j-\mathbf r_{\rm cm}|^2}.
+]
+<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold">r</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\mathbf r_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7305em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathbf">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 为记录位置，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold">r</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathbf r_{\rm cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5944em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathbf">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">cm</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 为位置中心，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></eq> 为记录数。它是记录加权的空间尺度，不保留访问顺序，不能替代记忆或状态转换的测量。</p>
+<p>[Paper: Section main text]</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>个体活动范围、重复访问和人群异质性如何共同塑造移动轨迹的统计规律</td>
+<td>图1比较轨迹与距离统计；图2显示轨迹尺度的有界性和返回规律；图3为个人坐标系中的空间分布及标准化。</td>
+<td>分析十万匿名手机用户六个月的轨迹，发现个人移动受相对稳定的尺度及频繁返回地点约束，标准化后呈现可比较的空间分布。</td>
+<td>群体重尾位移分布不证明每个个体遵循相同 Lévy flight；电话触发位置记录并非连续真实轨迹。</td>
+<td>[Paper: Section main text]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Basic human mobility patterns . a, Week-long trajectory…</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>The bounded nature of human trajectories. a, Radius of …</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>The shape of human trajectories. a, The probability den…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 群体重尾位移分布不证明每个个体遵循相同 Lévy flight；电话触发位置记录并非连续真实轨迹。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 在不同采样频率下重算个人尺度与返回频率，比较连续GPS和事件触发记录；观测不均和居住地识别误差可能影响稳定性判断。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 事件触发采样影响停留与返回统计，观测机制属于推断边界。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="song2010modelling.md">Song et al. - Modelling the scaling properties of human mobility</a> 对照阅读：该文研究“探索新地点与返回熟悉地点如何产生访问频率、活动范围和地点增长的标度规律”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：群体重尾位移分布不证明每个个体遵循相同 Lévy flight；电话触发位置记录并非连续真实轨迹。</li>
+<li>核心假说与增量：在不同采样频率下重算个人尺度与返回频率，比较连续GPS和事件触发记录。</li>
+<li>初始方法与如何验证：在不同采样频率下重算个人尺度与返回频率，比较连续GPS和事件触发记录；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：观测不均和居住地识别误差可能影响稳定性判断。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

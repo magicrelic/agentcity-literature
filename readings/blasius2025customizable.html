@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Customizable Contraction Hierarchies – A Survey · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-45a455701696&paper=p-blasius2025customizable">返回文献库</a><a href="https://arxiv.org/html/2502.10519v1" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Bläsius et al. - Customizable Contraction Hierarchies – A Survey</h1>
+<p><strong>怎样构建可复用且高效的CCH实现</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：review。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Bläsius et al.，<em>Customizable Contraction Hierarchies – A Survey</em>，<strong>arXiv（2025）</strong>。<a href="https://arxiv.org/html/2502.10519v1">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>review；一对多搜索与转向约束</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>arXiv：2502.105191</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section 1 Introduction]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 整理CCH预处理、定制、查询与工程优化，并通过评估比较其功能覆盖和性能。 [Paper: Section 1 Introduction]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 可定制层次路网索引如何实现高效的一对多查询、成本更新和转向限制？ [Paper: Section 1 Introduction]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] CCH的理论结构之外，排序、内存和三角处理决定实现性能。 [Paper: Section 1 Introduction]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可定制层次路网索引如何实现高效的一对多查询、成本更新和转向限制</td>
+<td>[Analysis] CCH的理论结构之外，排序、内存和三角处理决定实现性能。</td>
+<td>[Analysis] 按预处理、不同定制方式和查询阶段组织算法及工程选择，比较复用收益与代价。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 按预处理、不同定制方式和查询阶段组织算法及工程选择，比较复用收益与代价。 [Paper: Section 5.3 Related Approaches]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 区分与度量无关的顺序、基础及完美定制、查询和路径解包，讨论并行化与内存布局。 [Paper: Section 5.3 Related Approaches]</p>
+<h2>08 核心模块拆解</h2>
+<p>不适用：这是理论或方法综合，分析单位是不同模型、适用假设和证据类别，而非可移除的软件组件。 [Paper: Section 5.3 Related Approaches]</p>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可定制层次路网索引如何实现高效的一对多查询、成本更新和转向限制</td>
+<td>图1—4解释填充、三角类型与排序；算法给出收缩和定制；性能表对照CH及CRP，结论需绑定图、权重和硬件。</td>
+<td>整理CCH预处理、定制、查询与工程优化，并通过评估比较其功能覆盖和性能。</td>
+<td>综述的性能是具体实现的测量，不是所有CCH实现的固定优势；可达性和权重语义仍由应用决定。</td>
+<td>[Paper: Section main text]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Visualization of the metric-independent preprocessing. …</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Left: A triangle ( u , v , w ) (u,v,w) in G + G^{+} . W…</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Left: The directed input graph G G . Note that no addit…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>Visualization of different rank orders derived from the…</td>
+<td>[Paper: Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 综述的性能是具体实现的测量，不是所有CCH实现的固定优势；可达性和权重语义仍由应用决定。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 统一编译选项、硬件、图与权重后分开测定各阶段；缓存布局和不同基线调优程度可能造成性能差异。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 公平性能比较需绑定硬件、编译、图、度量及查询任务。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：综述的性能是具体实现的测量，不是所有CCH实现的固定优势；可达性和权重语义仍由应用决定。</li>
+<li>核心假说与增量：统一编译选项、硬件、图与权重后分开测定各阶段。</li>
+<li>初始方法与如何验证：统一编译选项、硬件、图与权重后分开测定各阶段；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：缓存布局和不同基线调优程度可能造成性能差异。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

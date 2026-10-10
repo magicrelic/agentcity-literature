@@ -2,10 +2,95 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Complexity-Entropy Causality Plane as a Complexity Measure for Two-Dimensional Patterns · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-81dcbe010a377b">返回文献库</a><a href="https://doi.org/10.1371/journal.pone.0040689" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Ribeiro et al. - Complexity-Entropy Causality Plane as a Complexity Measure for Two-Dimensional Patterns</h1>
 <p><strong>二维图样的统计复杂度</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Ribeiro et al.，<em>Complexity-Entropy Causality Plane as a Complexity Measure for Two-Dimensional Patterns</em>，<strong>PLOS ONE（2012）</strong>。<a href="https://doi.org/10.1371/journal.pone.0040689">原文</a>。</p>
-<h2>研究问题</h2>
-<p>排列熵与统计复杂度能否区分随机、相关及有组织的二维图样？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；统计复杂度与图样识别</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1371/journal.pone.0040689</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 排列概率上的归一化熵与Jensen–Shannon复杂度可区分二维图样的随机性和组织性。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 排列熵与统计复杂度能否区分随机、相关及有组织的二维图样？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 高熵可以来自纯随机，而组织性需要额外统计结构。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>排列熵与统计复杂度能否区分随机、相关及有组织的二维图样</td>
+<td>[Analysis] 高熵可以来自纯随机，而组织性需要额外统计结构。</td>
+<td>[Analysis] 用熵与偏离均匀分布的乘积在平面上区分图样。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用熵与偏离均匀分布的乘积在平面上区分图样。 [Paper: Section Methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 对局部二维窗口做排列编码，用偏离均匀分布的程度乘以熵，比较纹理、液晶和Ising图样。 [Paper: Section Methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 用熵与偏离均匀分布的乘积在平面上区分图样。</td>
+<td>[Analysis] JS复杂度与C_mu预测状态复杂度不属于同一指标。</td>
+<td>[Paper: Section Methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
 <p>使用排列模式的概率 <code>P=(p_1,...,p_K)</code>，<code>K=d!</code>，均匀分布 <code>U=(1/K,...,1/K)</code>：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>J</mi><mo stretchy="false">(</mo><mi>P</mi><mo separator="true">,</mo><mi>U</mi><mo stretchy="false">)</mo><mo>=</mo><mi>H</mi><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><mfrac><mrow><mi>P</mi><mo>+</mo><mi>U</mi></mrow><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mo>−</mo><mfrac><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo>−</mo><mfrac><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">
 J(P,U)=H\!\left(\frac{P+U}{2}\right)-\frac{H(P)}2-\frac{H(U)}2,
@@ -16,4 +101,44 @@ C_{JS}=Q_J(P,U)\frac{H(P)}{\ln K},
 <p><strong>含义。</strong> 完全固定一种排列时 <code>h=0,C=0</code>；所有排列等频时 <code>h=1,C=0</code>；有多种排列但又明显偏好某些次序时 <code>C&gt;0</code>。因而此指标会把“几乎纯随机”和“有组织的多样变化”分开。同一个熵值可以有不同 <code>C</code>。这里的 statistical complexity 是 Jensen–Shannon 构造，与预测状态的信息存储量 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>μ</mi></msub></mrow><annotation encoding="application/x-tex">C_\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">μ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 不同。</p>
 <p><strong>计算与数据。</strong> 窗口化估计排列分布，同时报告 <code>d,tau,window</code>；用相同参数在真实序列和时间打乱序列上计算，画位置及置信椭圆。轨迹在这个平面的迁移可显示一个状态向另一状态转移。</p>
 <p>原文实证与数值对象为二维纹理、液晶及 Ising 图样。上述 Jensen–Shannon 统计复杂度公式来自方法正文；将排列概率用于交通时序属于不同应用，不能把二维实例计作城市实证。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>排列熵与统计复杂度能否区分随机、相关及有组织的二维图样</td>
+<td>排列概率上的归一化熵与Jensen–Shannon复杂度可区分二维图样的随机性和组织性。</td>
+<td>排列概率上的归一化熵与Jensen–Shannon复杂度可区分二维图样的随机性和组织性。</td>
+<td>Jensen–Shannon复杂度不是预测状态复杂度C_mu；二维图样实例不等于城市移动验证。</td>
+<td>[Paper: Section Results and Discussion]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] Jensen–Shannon复杂度不是预测状态复杂度C_mu；二维图样实例不等于城市移动验证。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 保持像素值分布打乱空间排列，比较复杂度平面位置；窗口、并列值和样本稀疏可能改变结果。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> JS复杂度与C_mu预测状态复杂度不属于同一指标。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="liao2012scaling.md">Liao et al. - Scaling and Complexity-Entropy Analysis in Discriminating Traffic Dynamics</a> 对照阅读：该文研究“标度与复杂度—熵特征能否区分不同交通动力学状态”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：Jensen–Shannon复杂度不是预测状态复杂度C_mu；二维图样实例不等于城市移动验证。</li>
+<li>核心假说与增量：保持像素值分布打乱空间排列，比较复杂度平面位置。</li>
+<li>初始方法与如何验证：保持像素值分布打乱空间排列，比较复杂度平面位置；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：窗口、并列值和样本稀疏可能改变结果。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

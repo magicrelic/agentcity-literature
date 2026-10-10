@@ -2,18 +2,58 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Human mobility networks manifest dissimilar resilience characteristics at macroscopic, substructure, and microscopic scales · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-09b067921d9c73">返回文献库</a><a href="https://doi.org/10.1038/s41598-023-44444-5" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Hsu et al. - Human mobility networks manifest dissimilar resilience characteristics at macroscopic, substructure, and microscopic scales</h1>
 <p><strong>为什么“网络恢复”取决于观察尺度</strong></p>
-<p><strong>核心判断：城市重新连通，并不意味着居民的日常活动已经恢复。</strong> 本文在同一场飓风、同一数据来源上比较全局网络、四节点子结构和个人移动指标，直接展示恢复结论对测量对象的依赖。</p>
-<p>阅读依据：<a href="https://www.nature.com/articles/s41598-023-44444-5">正式论文全文</a>，覆盖主文13幅图、1张表；原始轨迹与分析代码未复跑。</p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
 <h2>01 基本信息</h2>
-<p>Hsu et al. <strong>Human mobility networks manifest dissimilar resilience characteristics at macroscopic, substructure, and microscopic scales</strong>. <em>Scientific Reports</em> <strong>13</strong>, 17327（2023）。<a href="https://doi.org/10.1038/s41598-023-44444-5">DOI</a>。</p>
-<p>作者来自 Texas A&amp;M University。研究类型为多层次恢复测量的实证比较。Spectus 原始数据须向提供方申请，代码向作者申请。阅读日期：2026年10月4日。</p>
+<p>Hsu et al.，<em>Human mobility networks manifest dissimilar resilience characteristics at macroscopic, substructure, and microscopic scales</em>，<strong>Scientific Reports（2023）</strong>。<a href="https://doi.org/10.1038/s41598-023-44444-5">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；多尺度移动韧性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/s41598-023-44444-5</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
 <h2>02 一句话概括</h2>
 <p>作者比较2021年 Ida 飓风下路易斯安那州8个 parish 的移动网络，发现最大连通分量、模体分布与微观出行指标呈现不同冲击和恢复过程，单个指标不足以代表完整恢复。（Abstract；Figure 13）</p>
+<p>[Paper: Section Data description and methods]</p>
 <h2>03 研究问题</h2>
 <p>当不同研究各选一个“韧性指标”，它们测到的究竟是不是同一件事？即使使用同一事件和同一批位置数据，全局连通性、局部连接模式、居民移动范围，是否也会给出不同恢复时间？</p>
+<p>[Paper: Section Data description and methods]</p>
 <h2>04 研究背景与发展路径</h2>
 <p>原文从以巨型分量、网络密度等全局量为主的研究，推进到同步比较子结构和微观行为。其价值在于控制研究对象和数据来源后暴露测量差异；这是一种多指标检验，尚非多层级自组织生成理论。（Introduction；Figure 1）</p>
-<h2>05 核心问题及其表现</h2>
+<p>[Paper: Section Data description and methods]</p>
+<h2>05 论文识别的核心问题</h2>
 <table>
 <thead>
 <tr>
@@ -43,9 +83,11 @@
 <p>依据：Data description and methods。</p>
 <h2>06 核心思想</h2>
 <p>不先假设哪个指标最权威，而是在同一冲击上逐项建立基线、测偏离、测回归，再检查结论是否一致。只要最大分量保持连通，网络可能仍有目的地替换、联系减少或活动半径缩小；后几项需要别的量才能看到。（Results）</p>
+<p>[Paper: Section Data description and methods]</p>
 <h2>07 方法总览</h2>
 <p>Spectus 设备位置 → 按先后关系推断出行 → census tract OD → 每个 parish 的每日无向加权网络 → 三类指标 → 相对基线变化 → 恢复时间分布。</p>
 <p>完整分析窗口为2021年8月19日至9月30日，共43天；基线为8月19日至26日。8月29日飓风登陆，作者将随后一周界定为影响期。正文数据描述有仅写“8月19日至26日”的短句，但方法和结果明确使用43天序列；这里区分基线窗与分析窗。（Study context；Human mobility network analysis）</p>
+<p>[Paper: Section Data description and methods]</p>
 <h2>08 核心模块拆解</h2>
 <table>
 <thead>
@@ -79,7 +121,7 @@
 </tbody>
 </table>
 <p>作者并未逐模块做删减消融。子结构序列采用7天滚动平均，微观结果也不是对每个人分别估计恢复参数。（Methods）</p>
-<h2>09 必要公式与符号</h2>
+<h2>09 关键公式与符号</h2>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>r</mi><mi>g</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">∥</mi><msub><mi mathvariant="bold">p</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi mathvariant="bold">p</mi><mo>ˉ</mo></mover><msup><mi mathvariant="normal">∥</mi><mn>2</mn></msup></mrow></msqrt><mo separator="true">,</mo><mspace width="2em"/><mover accent="true"><mi mathvariant="bold">p</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munder><mo>∑</mo><mi>i</mi></munder><msub><mi mathvariant="bold">p</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
 r_g=\sqrt{\frac1n\sum_{i=1}^{n}\|\mathbf p_i-\bar{\mathbf p}\|^2},
 \qquad \bar{\mathbf p}=\frac1n\sum_i\mathbf p_i .
@@ -89,7 +131,8 @@ h-12l-28-84c-16.667-52-96.667 -294.333-240-727l-212 -643 -85 170
 c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 219 661 l218 661zM702 80H400000v40H742z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.5812em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathbf">p</span></span><span style="top:-3.0134em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.5991em;vertical-align:-1.2777em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathbf">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>g</mi></msub></mrow><annotation encoding="application/x-tex">r_g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">g</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq>为回转半径，衡量位置围绕中心的离散程度；不是路径长度、最远距离或活动面积。（Microscopic-level analyses）</p>
 <p>各指标以灾前均值归一化。恢复时长从基线结束日计算，而非从冲击最深日计算；比较其他论文的“恢复天数”前，必须统一时间起点。（Baseline calculation）</p>
-<h2>10 实证设计与证据链</h2>
+<p>[Paper: Section Data description and methods]</p>
+<h2>10 实验设计与证据链</h2>
 <table>
 <thead>
 <tr>
@@ -121,14 +164,19 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 </tbody>
 </table>
 <p>这里没有训练／测试预测任务。证据是时间序列与分布比较，不能把某个变化百分比当作跨城市预测精度。</p>
-<h2>11 结论应当怎样理解</h2>
-<p>文章证明的是<strong>恢复的测量结果依赖分析层次和指标</strong>。宏观、子结构、微观是分析对象的层次，不是街区—城区—都市圈的地理嵌套层级。</p>
+<p>[Paper: Section Results]</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 文章证明的是<strong>恢复的测量结果依赖分析层次和指标</strong>。宏观、子结构、微观是分析对象的层次，不是街区—城区—都市圈的地理嵌套层级。</p>
 <p>原文恢复段一处写最大分量恢复“更长”，但同段、摘要和结论均指向最快或近乎未受影响；不采用该矛盾短句。更准确的理解是：某些量从未明显离开正常带，因此其“零天恢复”不能解释为经历严重破坏后迅速自愈。</p>
-<h2>12 作者明确指出的局限</h2>
+<p>[Paper: Section Results]</p>
+<h2>12 作者明确承认的局限</h2>
 <p>全文未设置专门局限段，也未明确列出完整方法缺陷清单。作者在讨论中强调，不同数据源与不同指标可能得到不同结果，必须按研究目的选择多个指标；数据可得性部分说明商业数据受许可限制。（Discussion；Data availability）</p>
+<p>[Paper: Section Data description and methods]</p>
 <h2>13 批判性分析</h2>
-<p>恢复排序可能受到正常带宽度、平滑窗和周末周期影响，应检验5%、10%、20%容许偏差及同星期基线。最大分量对边权减少本来就不敏感，不能把指标钝感直接等同系统韧性。</p>
+<p>[Analysis] 恢复排序可能受到正常带宽度、平滑窗和周末周期影响，应检验5%、10%、20%容许偏差及同星期基线。最大分量对边权减少本来就不敏感，不能把指标钝感直接等同系统韧性。</p>
 <p>作者用相邻位置记录的时间差近似出行时长；若采样稀疏，该时间可能包含未观测驻留。应以密集轨迹或交通传感器验证，避免把记录间隔变化误判为通行恢复。（分析依据：Baseline calculation；Microscopic-level analyses）</p>
 <h2>14 可迁移的知识</h2>
-<p>恢复评估至少保留三个互补问题：还能不能连接、联系怎样组织、个体能活动到哪里。分开报告受冲击程度与恢复速度，并把“未显著受冲击”和“已恢复”区别记录。</p>
+<p>[Analysis] 恢复评估至少保留三个互补问题：还能不能连接、联系怎样组织、个体能活动到哪里。分开报告受冲击程度与恢复速度，并把“未显著受冲击”和“已恢复”区别记录。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 研究启示：在事件前固定空间社区后，可比较圈内流量、跨圈联系和个人活动范围的恢复是否同步。本文支持采用多种观测量，但不能直接充当“空间层级重组”的证明；后者还需检验社区边界与嵌套关系。</p>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

@@ -1,144 +1,77 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Evaluating crisis perturbations on urban mobility using adaptive reinforcement learning · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-48778fd59733a0">返回文献库</a><a href="https://doi.org/10.1016/j.scs.2021.103367" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Fan et al. - Evaluating crisis perturbations on urban mobility using adaptive reinforcement learning</h1>
-<p><strong>用常态轨迹学习灾害中的路径调整</strong></p>
-<p><strong>核心判断：先学习平时怎样走，再把灾害写入奖励环境，可以生成情景下的绕行；但这还不等于验证了真实的集体适应机制。</strong></p>
-<p>阅读依据：<a href="https://www.sciencedirect.com/science/article/pii/S2210670721006429">正式期刊摘要及可见章节</a>，以及同作者、同一研究路线的<a href="https://arxiv.org/abs/2009.01359">2020年完整早期稿</a>。早期稿题为 <em>Adaptive Reinforcement Learning Model for Simulation of Urban Mobility during Crises</em>，共20页，含7幅图。<strong>以下方法细节和图号依据早期稿；正式版完整主文尚未核对。</strong> PDF页码均为早期稿文件页序，两版本不默认逐字相同。</p>
+<p><strong>危机扰动下的移动与自适应强化学习</strong></p>
+<blockquote>
+<p>资料范围：仅书目信息（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；仅有书目信息，研究背景不可评估。
+解读完整性：部分；全文方法、图表和作者局限不可据书目评估。</p>
+</blockquote>
 <h2>01 基本信息</h2>
-<p>Fan et al.，<strong>Evaluating crisis perturbations on urban mobility using adaptive reinforcement learning</strong>，<em>Sustainable Cities and Society</em> <strong>75</strong>, 103367（2021）。<a href="https://doi.org/10.1016/j.scs.2021.103367">DOI</a>。作者机构为 Texas A&amp;M University。类型：数据驱动路径生成与灾害情景模拟；关键词：逆强化学习、目的地预测、奖励调整、Harvey洪水。INRIX与TTI数据受许可限制；所读材料未提供独立公开实现。阅读日期：2026年10月4日。</p>
+<p>Fan et al.，<em>Evaluating crisis perturbations on urban mobility using adaptive reinforcement learning</em>，<strong>Sustainable Cities and Society（2021）</strong>。<a href="https://doi.org/10.1016/j.scs.2021.103367">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；危机中的行为适应</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1016/j.scs.2021.103367</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Metadata]</p>
 <h2>02 一句话概括</h2>
-<p>模型以常态轨迹学习目的地和路径偏好，通过降低受灾网格的奖励生成替代路线，在Houston案例中得到与部分灾中交通特征一致的空间分布；严格的灾中个体轨迹精度仍需另行验证。（正式摘要；早期稿PDF第4—5、14—15页）</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：书目没有提供论文发现。</p>
 <h2>03 研究问题</h2>
-<p>灾害轨迹稀缺时，能否用正常时期的数据建立可调整模型，并通过输入灾害情景推演移动变化？困难在于同时回答“去哪”和“怎么走”，又避免把正常路线原样外推到不可通行区域。</p>
+<p>[Analysis] 题名对应的研究主题已列入文献索引；具体科学问题及作者论证不可据书目确认。</p>
 <h2>04 研究背景与发展路径</h2>
-<p>按原文脉络，常态移动预测利用时空规律，道路韧性研究分析物理可达性；本文尝试把二者连接起来。其主要贡献是让环境变化进入可执行的路径决策流程，而非只计算灾前灾后的网络指标。该定位依原文引言，不代表对所有同类方法完成独立查新。（早期稿PDF第2—4页）</p>
-<h2>05 核心问题及其表现</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>模型中的处理</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>灾害样本少</td>
-<td>先学习正常时期的OD与轨迹</td>
-</tr>
-<tr>
-<td>相同出发地不总去同一终点</td>
-<td>将周内时刻、工作日／周末和位置作为特征</td>
-</tr>
-<tr>
-<td>经验奖励可能让路线滞留或绕圈</td>
-<td>归一化奖励、加入终点接近项与到达奖励</td>
-</tr>
-<tr>
-<td>受灾区域需要避让</td>
-<td>将灾害严重度转为负奖励</td>
-</tr>
-</tbody>
-</table>
-<p>依据：早期稿PDF第5—11页。奖励塑形是人为设计的一部分，不能全部称为从数据自动学得。</p>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
+<h2>05 论文识别的核心问题</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
 <h2>06 核心思想</h2>
-<p>保留日常移动偏好，同时允许外部环境改写局部行动的价值。模型中的“适应”主要通过情景矩阵改变奖励实现；没有证据表明它模拟了居民长期学习、互相模仿或共享拥堵负载反馈。<strong>多条生成轨迹叠加，不自动构成多主体闭环。</strong>（早期稿PDF第11页；分析）</p>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
 <h2>07 方法总览</h2>
-<p>常态轨迹 → 按服务商分组的KNN目的地回归 → 按OD学习逆强化学习奖励 → 奖励塑形 → 优先经验回放DQN生成路径 → 加入洪水矩阵重新生成 → 汇总经过网格的次数。</p>
-<p>早期稿使用2017年3—4月Houston约2600万条INRIX行程，去掉约20%的短于5英里行程，再随机分成80%训练、20%测试。“服务商”是车辆定位数据提供方，不是单个司机；模型也明确不预测路线中每个位置的经过时刻。（PDF第5、12页）</p>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
 <h2>08 核心模块拆解</h2>
-<table>
-<thead>
-<tr>
-<th>模块</th>
-<th>输入与输出</th>
-<th>边界</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>KNN目的地回归</td>
-<td>起点、时间→终点坐标</td>
-<td>仍依赖正常时期的目的地模式</td>
-</tr>
-<tr>
-<td>逆强化学习</td>
-<td>同一OD附近的历史轨迹→奖励表</td>
-<td>不是无历史数据的自主规划</td>
-</tr>
-<tr>
-<td>奖励塑形</td>
-<td>经验奖励＋接近终点＋终点奖励</td>
-<td>三项贡献未被完整消融隔离</td>
-</tr>
-<tr>
-<td>DQN</td>
-<td>奖励表→四邻域网格路径</td>
-<td>网格行动不等于道路链接级通行</td>
-</tr>
-<tr>
-<td>情景与汇总</td>
-<td>洪水惩罚→重复路径与密度</td>
-<td>密度由重复模拟加总，不是直接预测交通速度</td>
-</tr>
-</tbody>
-</table>
-<p>依据：早期稿Figure 1，PDF第5页；Sections 3.4–3.7，PDF第7—11页。</p>
-<h2>09 必要公式与符号</h2>
-<p>早期稿的情景奖励为</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi></mrow></msub><mo>=</mo><msup><mi>R</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>+</mo><mi>L</mi><mo>+</mo><mi>D</mi><mo>−</mo><mfrac><mi>F</mi><mi>β</mi></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-R_{\mathrm{scenario}}=R&#x27;+L+D-\frac{F}{\beta}.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3175em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">scenario</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8852em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8019em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.2408em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">R&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span></eq>是归一化到<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-1,0]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">−</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">]</span></span></span></span></eq>的历史奖励，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span></eq>鼓励接近终点，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span></span></eq>为到达终点的额外奖励，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span></eq>为网格灾害严重度。原式写成<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi mathvariant="normal">/</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">F/\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span></span></span></eq>，因此固定<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span></eq>时，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span></span></span></eq>越大惩罚越弱，不能把它直接称为越大越敏感。（PDF第8—11页，Equations 10–15、25）</p>
-<p>路线评价以经过网格集合的重合计算：</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi>P</mi><mo>∩</mo><mi>G</mi><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mi>P</mi><mi mathvariant="normal">∣</mi></mrow></mfrac><mo separator="true">,</mo><mspace width="2em"/><mrow><mi mathvariant="normal">R</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">l</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi>P</mi><mo>∩</mo><mi>G</mi><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mi>G</mi><mi mathvariant="normal">∣</mi></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-\mathrm{Precision}=\frac{|P\cap G|}{|P|},\qquad
-\mathrm{Recall}=\frac{|P\cap G|}{|G|}.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">Precision</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∩</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">G</span><span class="mord">∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathrm">Recall</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord mathnormal">G</span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∩</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">G</span><span class="mord">∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span></eq>分别为预测和实际经过的格子。这不衡量行驶时刻、格子经过顺序或最终交通延误。（PDF第10页，Equations 23–24）</p>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
+<h2>09 关键公式与符号</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
 <h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>证据</th>
-<th>实际检验</th>
-<th>可以支持什么</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Figure 1</td>
-<td>三模块流程</td>
-<td>说明算法如何连接</td>
-</tr>
-<tr>
-<td>Figures 2–3，PDF第12—13页</td>
-<td>四个服务商的目的地误差及地图示例</td>
-<td>正常数据下有预测能力，未证明灾中目的地同样准确</td>
-</tr>
-<tr>
-<td>Figure 4，PDF第13页</td>
-<td>OD对应奖励表</td>
-<td>展示经验信息进入路径生成</td>
-</tr>
-<tr>
-<td>Figures 5–6，PDF第14页</td>
-<td>平均precision 0.765、recall 0.766及路线重合</td>
-<td>学习阶段轨迹重建，不能改称灾害检测准确率</td>
-</tr>
-<tr>
-<td>Figure 7，PDF第15页</td>
-<td>2017年8月29日10—12时的积水、速度和模拟密度关系</td>
-<td>支持情景输出与部分交通现象相符</td>
-</tr>
-</tbody>
-</table>
-<p>正式版摘要另报告预测轨迹距离的平均百分比误差为4.29%；其完整计算细节未在所读早期稿中核实。正式摘要也明确将“超过76%”限定于模型学习阶段。这些数值属于不同评价对象。</p>
-<h2>11 结论应当怎样理解</h2>
-<p>证据支持“常态学习＋情景奖励调整”是一种可用的灾害移动模拟路线。灾中验证主要是空间关联，并非逐人观测到的绕行路线与预测一一匹配。道路速度参与验证，但模型没有逐秒车辆跟驰、排队或流量反过来改变道路成本的闭环。（早期稿PDF第11、14—15页）</p>
-<p>因此，不能由模拟密度与低速度对应就声称居民真实决策机制已经识别，也不能将本文直接当作实时交通数字孪生的完整验证。</p>
-<h2>12 作者明确指出的局限</h2>
-<p>早期稿作者明确承认：附近社区和POI等短程活动仍需改进；目前预测坐标与路径，没有充分纳入具体访问地点和所经道路；算法计算成本高，实时应用以及跨城市、跨灾害推广仍需进一步工作。正式版完整局限段尚未核对。（PDF第16页，Discussion）</p>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
+<h2>11 结论的正确解释</h2>
+<p>现有资料仅为书目信息，不足以判断论文结论。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）。</p>
 <h2>13 批判性分析</h2>
-<p>随机拆分可能让相似OD与重复行程同时进入训练和测试，应增加按时间、OD和车辆身份留出。移除短程行程，也限制了它解释本地生活圈调整的能力。</p>
-<p>受灾道路识别与交通速度来自同一供应商；轨迹“密度”又依赖起点采样与每个OD重复50次，应校准为真实需求后再解释容量。最关键的机制对照，是比较单纯避灾代价、历史奖励、奖励塑形以及动态拥堵反馈分别提供多少增益。（分析依据：PDF第8—12、14页）</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：不据题名提出论文特定的机制批评。</p>
 <h2>14 可迁移的知识</h2>
-<p>将“正常习惯”“外部冲击”“群体负载反馈”分成三个模型层。奖励函数改变能实现情景适应，但只有群体行动改变环境、再影响后续行动，才具备共享状态反馈。评价目的地、路线和全局交通分布也应分别报告。</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：未从未见正文中提炼方法与发现。</p>
+<h2>15 与现有知识的联系</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：书目不足以比较具体方法或证据。</p>
+<h2>16 研究设想</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）。创新状态：未核查；如何验证与可能失败尚无足够论文证据。</p>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

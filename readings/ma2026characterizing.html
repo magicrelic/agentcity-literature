@@ -2,18 +2,58 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Characterizing Community Formation in Response to Extreme Weather Events Through Human Mobility Networks: A Case Study of Winter Storm Uri · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-72f05226653970">返回文献库</a><a href="https://doi.org/10.1007/s13753-026-00748-4" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Ma et al. - Characterizing Community Formation in Response to Extreme Weather Events Through Human Mobility Networks: A Case Study of Winter Storm Uri</h1>
 <p><strong>寒潮停电中的流动社区形成</strong></p>
-<p><strong>核心判断：灾害中的流动社区既受地理邻近和既有社会联系约束，也需要连接到受损较轻的区域。</strong> 本文与“事件中空间组织如何改变”的选题直接相关，但其证据主要是社区层面的关联。</p>
-<p>阅读依据：<a href="https://link.springer.com/article/10.1007/s13753-026-00748-4">正式论文全文</a>，覆盖正文7幅图及8个公式；附录的全部稳健性结果未重新计算。</p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
 <h2>01 基本信息</h2>
-<p>Ma et al. <strong>Characterizing Community Formation in Response to Extreme Weather Events Through Human Mobility Networks: A Case Study of Winter Storm Uri</strong>. <em>International Journal of Disaster Risk Science</em> <strong>17</strong>, 709–724（2026）。<a href="https://doi.org/10.1007/s13753-026-00748-4">DOI</a>。</p>
-<p>作者主要来自 Texas A&amp;M University。类型为动态社区检测与灾害响应的观察研究。商业移动和 Meta 数据按许可获取，代码向作者申请。阅读日期：2026年10月4日。</p>
+<p>Ma et al.，<em>Characterizing Community Formation in Response to Extreme Weather Events Through Human Mobility Networks: A Case Study of Winter Storm Uri</em>，<strong>International Journal of Disaster Risk Science（2026）</strong>。<a href="https://doi.org/10.1007/s13753-026-00748-4">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；极端天气与社区形成</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1007/s13753-026-00748-4</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
 <h2>02 一句话概括</h2>
 <p>论文用2021年2月 Harris County 的每日 OD 识别30个持续流动社区，比较灾害暴露异质性、人口属性相似性和既有社会联系，发现高受损区域占比越高的社区，越倾向出现越界流动，但该关系解释力有限。（Sections 3–4）</p>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
 <h2>03 研究问题</h2>
 <p>停电时居民为何仍在某些地方群组内移动，又在什么情况下转向社区之外？这些群组是由相同灾害暴露连接起来，还是由互补暴露、社会相似性及社会联系共同组织？</p>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
 <h2>04 研究背景与发展路径</h2>
 <p>按原文脉络，灾害移动研究由总量与人口流失，延伸到临时形成或维持的社区结构。本文提出三条观察维度：不同受损程度地区的联系、类似社会群体的空间聚集、既有线上社交联系。这三者并未被实验独立操纵。（Introduction；Figure 1）</p>
-<h2>05 核心问题及其表现</h2>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
+<h2>05 论文识别的核心问题</h2>
 <table>
 <thead>
 <tr>
@@ -43,9 +83,11 @@
 <p>依据：Section 3.3.4。</p>
 <h2>06 核心思想</h2>
 <p>把社区当作居民可暂时寻找替代资源的活动范围：如果其内部同时包含受损重、受损轻地区，居民可能在熟悉的范围内调整；如果社区多数地区一起失去服务，就更可能跨出原有范围。这是有现实解释力的机制假说，本文直接观测的是流动与地区属性的对应。（Section 4.3）</p>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
 <h2>07 方法总览</h2>
 <p>Spectus 住地—停留地记录 → 日 OD → 多时间窗 Louvain → 持续性与内部流量筛选 → 30个社区 → 拼接 Mapbox 活动、ACS 人口属性和 Meta SCI。</p>
 <p>空间单位为786个 census tract。访问要求在另一 CBG 停留超过2小时；最终分析为集计 OD。Mapbox 以2月1—7日为基线，活动下降充当停电影响代理，缺乏细粒度直接停电记录。（Sections 3.1–3.2）</p>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
 <h2>08 核心模块拆解</h2>
 <table>
 <thead>
@@ -78,7 +120,7 @@
 </tbody>
 </table>
 <p>这些筛选共同定义“稳定社区”，不是无条件发现的客观边界。凝聚性门槛从0.7变0.9，文中报告保留社区数从78变12。（Section 3.3.3）</p>
-<h2>09 必要公式与符号</h2>
+<h2>09 关键公式与符号</h2>
 <p>暴露异配性的核心定义为：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>H</mi><mrow><mi>H</mi><mi>E</mi></mrow></msup><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>∈</mo><mi>C</mi></mrow></munder><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mn mathvariant="bold">1</mn><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo mathvariant="normal">≠</mo><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>∈</mo><mi>C</mi></mrow></munder><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
 H^{HE}(C)=
@@ -87,7 +129,8 @@ H^{HE}(C)=
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1413em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0813em;">H</span><span class="mord mathnormal mtight" style="margin-right:0.0576em;">E</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.6976em;vertical-align:-1.1218em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5758em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1786em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mrel mtight">∈</span><span class="mord mathnormal mtight" style="margin-right:0.0715em;">C</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.8258em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1786em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mrel mtight">∈</span><span class="mord mathnormal mtight" style="margin-right:0.0715em;">C</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord mathbf">1</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.044em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord katex-vbox"><span class="katex-thinbox"><span class="rlap"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="katex-inner"><span class="mord"><span class="mrel"></span></span></span><span class="katex-fix"></span></span></span></span></span><span class="mspace nobreak"></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.044em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1218em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">z_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.044em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>为地区受损等级，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq>为流量，数值越大表示社区内部跨受损等级的流动占比越高。（Equation 6）</p>
 <p>社会同配性用属性四分位距<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mi>Q</mi><mn>75</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>25</mn></msub></mrow><annotation encoding="application/x-tex">IQR=Q_{75}-Q_{25}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mord mathnormal" style="margin-right:0.0077em;">QR</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">75</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">25</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>比较；社会连接用内部 SCI 除以本社区对全研究区 SCI 总和。（Equations 7–8）</p>
 <p>原文 Equation 3 分母写作<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo mathvariant="normal">∉</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">j\notin V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord katex-vbox"><span class="katex-thinbox"><span class="llap"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="katex-inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.0556em;"></span></span></span><span class="katex-fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span></span></span></span></eq>，与“全网络总流出”的文字定义冲突；复现前必须核对代码，不能直接照抄这一式。Equation 2 的活动密度为网格活动指数的均方根，并非简单人口密度。</p>
-<h2>10 实证设计与证据链</h2>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
+<h2>10 实验设计与证据链</h2>
 <table>
 <thead>
 <tr>
@@ -123,14 +166,19 @@ H^{HE}(C)=
 </tbody>
 </table>
 <p>最后一项只是有限解释力的总体倾向，不能据此提出一个普遍适用的溢出临界比例。</p>
-<h2>11 结论应当怎样理解</h2>
-<p>这是已有的“灾害期流动社区形成”研究先例。它支持把暴露互补、地区相似性和社会联系同时纳入解释，但不能证明三者的独立因果作用，也没有追踪谁得到了何种资源。</p>
+<p>[Paper: Section 4 Results]</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 这是已有的“灾害期流动社区形成”研究先例。它支持把暴露互补、地区相似性和社会联系同时纳入解释，但不能证明三者的独立因果作用，也没有追踪谁得到了何种资源。</p>
 <p>方法中的“多尺度”主要是时间窗口粗细；保留的空间社区不等于验证了一棵多层嵌套生活圈树。不存在持续社区的区域，也可能只是不符合算法筛选条件。</p>
-<h2>12 作者明确指出的局限</h2>
+<p>[Paper: Section 4 Results]</p>
+<h2>12 作者明确承认的局限</h2>
 <p>作者明确指出通信、电力、手机电池及样本覆盖影响数据可靠性；地理邻近可能混入社会同配性；活动下降不是直接停电测量；Spectus、Mapbox、Meta 覆盖不同人群，因此只能解释地区层面的关联，不能建立个人之间的一一对应。（Discussion）</p>
+<p>[Paper: Section 2.1 State-of-the-Art Approaches for Understanding Disaster Response]</p>
 <h2>13 批判性分析</h2>
-<p>社区原本按流动内聚性选取，再报告内部流动多，应避免循环论证。社会属性相似也可能继承了灾前居住分化。需要与相同大小、距离和人口构成的空间随机社区，以及灾前社区比较。</p>
+<p>[Analysis] 社区原本按流动内聚性选取，再报告内部流动多，应避免循环论证。社会属性相似也可能继承了灾前居住分化。需要与相同大小、距离和人口构成的空间随机社区，以及灾前社区比较。</p>
 <p>活动数据虽来自不同供应商，暴露代理与流动结果仍可能共同反映手机失联或整体活动下降。最关键的增强是独立停电记录或设施可用性数据。</p>
 <h2>14 可迁移的知识</h2>
-<p>社区内部并非越同质越好：社会联系的相近可能帮助找到支持，灾害暴露却需要一定差异才能保留可达资源。两种“相似／不同”对应不同变量，应分别测量。</p>
+<p>[Analysis] 社区内部并非越同质越好：社会联系的相近可能帮助找到支持，灾害暴露却需要一定差异才能保留可达资源。两种“相似／不同”对应不同变量，应分别测量。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 研究启示：将问题推进到“哪些人的调整使联系越过了哪层边界”。以灾前社区为参照，并单独检测事件期社区，区分流量重分配与成员边界重组；同时保留独立社会网络和移动网络的区别。</p>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

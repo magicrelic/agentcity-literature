@@ -2,10 +2,95 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Predictability of human mobility during the COVID-19 pandemic in the United States · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-54cd0f40e066f0">返回文献库</a><a href="https://doi.org/10.1093/pnasnexus/pgae308" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Hajlasz et al. - Predictability of human mobility during the COVID-19 pandemic in the United States</h1>
 <p><strong>疫情如何改变移动的排列规律</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Hajlasz et al.，<em>Predictability of human mobility during the COVID-19 pandemic in the United States</em>，<strong>PNAS Nexus（2024）</strong>。<a href="https://doi.org/10.1093/pnasnexus/pgae308">原文</a>。</p>
-<h2>研究问题</h2>
-<p>疫情如何改变不同类型移动时间序列的可预测性及其恢复过程？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；疫情与移动规律性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1093/pnasnexus/pgae308</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Department of Computer Science, Columbia University , 500 W 120th St, New York, NY 10027 , USA；Department of Environmental Health Sciences, Mailman School of Public Health, Columbia University , 722 W 168th St, New York, NY 10032 , USA</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Introduction]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 疫情期间美国不同活动类型的排列有序性变化方向及恢复过程不同。 [Paper: Section Introduction]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 疫情如何改变不同类型移动时间序列的可预测性及其恢复过程？ [Paper: Section Introduction]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 疫情冲击可能让不同活动类型的涨跌次序发生不同方向变化。 [Paper: Section Introduction]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>疫情如何改变不同类型移动时间序列的可预测性及其恢复过程</td>
+<td>[Analysis] 疫情冲击可能让不同活动类型的涨跌次序发生不同方向变化。</td>
+<td>[Analysis] 用滑动窗口排列熵追踪有序性与恢复。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用滑动窗口排列熵追踪有序性与恢复。 [Paper: Section Materials and methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 美国县级六类日移动指标，2020-02-15至2021-11-23；30日窗口、d=4、tau=1，计算1-h_PE。 [Paper: Section Materials and methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 用滑动窗口排列熵追踪有序性与恢复。</td>
+<td>[Analysis] 包含未来数据的窗口标签不可直接用于实时预警。</td>
+<td>[Paper: Section Materials and methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
 <h3>排列熵 PE：移动流量的升降次序有多丰富</h3>
 <p><strong>计算。</strong> 选择嵌入维数 <code>d</code> 和延迟 <code>tau</code>，对 <code>(x_t,x_(t+tau),...,x_(t+(d-1)tau))</code> 做排序，以其名次排列作为符号 <code>pi</code>。统计 <code>d!</code> 种排列频率，计算：</p>
 <section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>H</mi><mrow><mi>P</mi><mi>E</mi></mrow></msub><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>π</mi></munder><mi>p</mi><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo><mi>ln</mi><mo>⁡</mo><mi>p</mi><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><msub><mi>h</mi><mrow><mi>P</mi><mi>E</mi></mrow></msub><mo>=</mo><msub><mi>H</mi><mrow><mi>P</mi><mi>E</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>ln</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">!</mo><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
@@ -14,6 +99,83 @@ h_{PE}=H_{PE}/\ln(d!).
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.0576em;">E</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.3em;vertical-align:-1.25em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.9em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">π</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.0576em;">E</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.0576em;">E</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">ln</span><span class="mopen">(</span><span class="mord mathnormal">d</span><span class="mclose">!)</span><span class="mord">.</span></span></span></span></span></eqn></section><p><code>0&lt;=h_PE&lt;=1</code>；上限表示各种顺序模式近等频，低值表示少数模式占主导。相同数值的 tie 必须使用统一排序规则或明确的带 ties 变体。</p>
 <p><strong>含义。</strong> 只保留涨跌次序，基本不受变量单位和单调幅度变换影响。持续上升和持续下降都可得低 PE；高 PE 表示短窗升降模式更杂乱。<code>1-h_PE</code> 可作有序性/预测性代理，但不是分类模型的准确率。</p>
 <p><strong>数据。</strong> 等时间间隔的数值序列；窗口内样本应足以覆盖 <code>d!</code> 种模式。选择 <code>d=3–5</code> 作为起点，逐一检查结果，不将很短窗口中的大 <code>d</code> 视为高分辨率优势。</p>
-<p><strong>真实应用。</strong> Hajlasz, M. &amp; Pei, S. (2024), <em>Predictability of human mobility during the COVID-19 pandemic in the United States</em>, <strong>PNAS Nexus 3</strong>, pgae308，<a href="https://doi.org/10.1093/pnasnexus/pgae308">10.1093/pnasnexus/pgae308</a>。美国县尺度、2020-02-15 至 2021-11-23，住宅、工作场所、交通站、公园、食品药店、零售娱乐六类日移动指标；采用 <strong>30 日窗口、<code>d=4</code>、<code>tau=1</code></strong>，以 <code>1-h_PE</code> 表示预测性。住宅在 2020 年 3 月居家令期间变得更有序，另外五类在同期更不规则，随后出现不同恢复过程（正文与参数已核验）。</p>
+<p><strong>真实应用。</strong> Hajlasz, M. &amp; Pei, S. (2024), <em>Predictability of human mobility during the COVID-19 pandemic in the United States</em>, <strong>PNAS Nexus 3</strong>, pgae308，<a href="https://doi.org/10.1093/pnasnexus/pgae308">10.1093/pnasnexus/pgae308</a>。美国县尺度、2020-02-15 至 2021-11-23，住宅、工作场所、交通站、公园、食品药店、零售娱乐六类日移动指标；采用 <strong>30 日窗口、<code>d=4</code>、<code>tau=1</code></strong>，以 <code>1-h_PE</code> 表示预测性。住宅在 2020 年 3 月居家令期间变得更有序，另外五类在同期更不规则，随后出现不同恢复过程。</p>
 <p><strong>动态比较。</strong> 这篇论文就是使用窗口 PE 描述真实移动模式转折的直接案例。其窗口标记在起始日、覆盖未来 30 日；若用于实时监测，应改成尾随窗口而不是照搬其时间标签。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>疫情如何改变不同类型移动时间序列的可预测性及其恢复过程</td>
+<td>疫情期间美国不同活动类型的排列有序性变化方向及恢复过程不同。</td>
+<td>疫情期间美国不同活动类型的排列有序性变化方向及恢复过程不同。</td>
+<td>排列有序性不是实际预测准确率；原图窗口起始日标记包含未来30日，不可直接当成实时预警。</td>
+<td>[Paper: Section Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 2</td>
+<td>Clustering of mobility patterns across different place …</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Periodicity of human mobility to different place catego…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>Predictability of mobility in six place categories. For…</td>
+<td>[Paper: Figure 4]</td>
+</tr>
+<tr>
+<td>Figure 5</td>
+<td>Average mobility predictability at the US county level.…</td>
+<td>[Paper: Figure 5]</td>
+</tr>
+<tr>
+<td>Figure 6</td>
+<td>The partial effects of population size, government resp…</td>
+<td>[Paper: Figure 6]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 排列有序性不是实际预测准确率；原图窗口起始日标记包含未来30日，不可直接当成实时预警。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 采用尾随窗口并留出地区，比较排列代理与真正留出预测；季节趋势、并列值与短窗偏差可能混杂。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 包含未来数据的窗口标签不可直接用于实时预警。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="kulkarni2019examining.md">Kulkarni et al. - Examining the Limits of Predictability of Human Mobility</a> 对照阅读：该文研究“轨迹编码和熵率估计如何影响对人类移动可预测上限的判断”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：排列有序性不是实际预测准确率；原图窗口起始日标记包含未来30日，不可直接当成实时预警。</li>
+<li>核心假说与增量：采用尾随窗口并留出地区，比较排列代理与真正留出预测。</li>
+<li>初始方法与如何验证：采用尾随窗口并留出地区，比较排列代理与真正留出预测；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：季节趋势、并列值与短窗偏差可能混杂。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Local floods induce large-scale abrupt failures of road networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-392d900aebebed">返回文献库</a><a href="https://doi.org/10.1038/s41467-019-10063-w" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Wang et al. - Local floods induce large-scale abrupt failures of road networks</h1>
+<p><strong>局部洪水为何造成全网突然失效</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Wang et al.，<em>Local floods induce large-scale abrupt failures of road networks</em>，<strong>Nature Communications（2019）</strong>。<a href="https://doi.org/10.1038/s41467-019-10063-w">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；洪水与网络级联失效</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/s41467-019-10063-w</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 将道路高程与洪水三维特征纳入网络失效模型，研究局部淹没引起的大尺度功能破坏。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 局部洪水如何通过道路网络的连通依赖引起大范围突发失效？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 洪水失效不是随机删边，道路高程和淹没形状决定失效的空间相关。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>局部洪水如何通过道路网络的连通依赖引起大范围突发失效</td>
+<td>[Analysis] 洪水失效不是随机删边，道路高程和淹没形状决定失效的空间相关。</td>
+<td>[Analysis] 将三维危险映射到道路可通行性，再研究局部损坏的全网后果。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 将三维危险映射到道路可通行性，再研究局部损坏的全网后果。 [Paper: Section Methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 依据地形和水位判定路段失效，再跟踪连通簇随淹没条件的变化，用Harvey道路关闭及积水记录验证。 [Paper: Section Methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 将三维危险映射到道路可通行性，再研究局部损坏的全网后果。</td>
+<td>[Analysis] 失效命中、网络连通和实际服务损失应分别验证。</td>
+<td>[Paper: Section Methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>局部洪水如何通过道路网络的连通依赖引起大范围突发失效</td>
+<td>摘要报告覆盖90.6%的关闭道路与94.1%的积水道路；后续多地网络分析展示突变式失效，须区分验证命中与仿真转变。</td>
+<td>将道路高程与洪水三维特征纳入网络失效模型，研究局部淹没引起的大尺度功能破坏。</td>
+<td>高覆盖率不是全部分类性能；连通簇骤降也不自动量化真实需求、救援可达性或经济损失。</td>
+<td>[Paper: Section Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>主文图表</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>主文图表</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>主文图表</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>主文图表</td>
+<td>[Paper: Figure 4]</td>
+</tr>
+<tr>
+<td>Figure 5</td>
+<td>主文图表</td>
+<td>[Paper: Figure 5]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 高覆盖率不是全部分类性能；连通簇骤降也不自动量化真实需求、救援可达性或经济损失。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 在相同淹没比例下比较真实高程失效和随机删边，再检查医院可达性；水深误差与可通行阈值可能决定失效边界。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 失效命中、网络连通和实际服务损失应分别验证。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="loreti2022local.md">Loreti et al. - Local impacts on road networks and access to critical locations during extreme floods</a> 对照阅读：该文研究“极端洪水造成的局部道路中断如何改变关键服务的可达范围和绕行成本”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：高覆盖率不是全部分类性能；连通簇骤降也不自动量化真实需求、救援可达性或经济损失。</li>
+<li>核心假说与增量：在相同淹没比例下比较真实高程失效和随机删边，再检查医院可达性。</li>
+<li>初始方法与如何验证：在相同淹没比例下比较真实高程失效和随机删边，再检查医院可达性；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：水深误差与可通行阈值可能决定失效边界。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

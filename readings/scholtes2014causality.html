@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Causality-driven slow-down and speed-up of diffusion in non-Markovian temporal networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-1b99f6da8aa689">返回文献库</a><a href="https://doi.org/10.1038/ncomms6024" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Scholtes et al. - Causality-driven slow-down and speed-up of diffusion in non-Markovian temporal networks</h1>
+<p><strong>交互时间顺序如何加快或减慢扩散</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Scholtes et al.，<em>Causality-driven slow-down and speed-up of diffusion in non-Markovian temporal networks</em>，<strong>Nature Communications（2014）</strong>。<a href="https://doi.org/10.1038/ncomms6024">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；时序网络与非马尔可夫动力学</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/ncomms6024</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 通过二阶时间聚合网络保留交互先后顺序，预测非马尔可夫路径记忆对扩散速度的影响。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 时间有序路径中的相关性为何能使网络扩散加快或减慢？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 时间聚合保留了谁与谁相连，却丢掉两次交互能否顺序连接。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间有序路径中的相关性为何能使网络扩散加快或减慢</td>
+<td>[Analysis] 时间聚合保留了谁与谁相连，却丢掉两次交互能否顺序连接。</td>
+<td>[Analysis] 把一条已走过的边当成记忆状态，可将二步顺序转为显式转移结构并预测扩散变化。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 把一条已走过的边当成记忆状态，可将二步顺序转为显式转移结构并预测扩散变化。 [Paper: Section Methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 将相邻两步的路径作为状态，构造保留因果可达性的转移表示，再与只保留单边频率的一阶网络比较。 [Paper: Section Methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 把一条已走过的边当成记忆状态，可将二步顺序转为显式转移结构并预测扩散变化。</td>
+<td>[Analysis] 边频率和时间顺序需要分别控制；静态网络相同不意味着动态过程相同。</td>
+<td>[Paper: Section Methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 一阶模型使用 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><msub><mi>v</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>∣</mo><msub><mi>v</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(v_{t+1}\mid v_t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></eq>，二阶表示保留 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><msub><mi>v</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>∣</mo><msub><mi>v</mi><mi>t</mi></msub><mo separator="true">,</mo><msub><mi>v</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(v_{t+1}\mid v_t,v_{t-1})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></eq>。共享相同单边流量的系统可以有不同二步转移概率，因而有不同扩散速度；这里的时间因果可达性不等同于干预因果。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间有序路径中的相关性为何能使网络扩散加快或减慢</td>
+<td>图1展示一阶网络相同而二阶结构不同的例子；图2检验扩散时间；图3给出可加速也可减速的参数区间，正文用六组数据验证预测。</td>
+<td>通过二阶时间聚合网络保留交互先后顺序，预测非马尔可夫路径记忆对扩散速度的影响。</td>
+<td>本文的 causality 指时间顺序允许的路径，不等于识别现实行为的因果机制；路径记忆既可能阻滞也可能促进扩散。</td>
+<td>[Paper: Section Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Two temporal networks with the same first-order, but di…</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Causality-driven changes of diffusion speed.</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Slow-down and speed-up regimes in a temporal network mo…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 本文的 causality 指时间顺序允许的路径，不等于识别现实行为的因果机制；路径记忆既可能阻滞也可能促进扩散。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 保持每条边的频率和周期负载，改变边的先后顺序；若扩散差异消失，则时间顺序解释不成立；有限时间采样可能偏置二阶转移估计。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 边频率和时间顺序需要分别控制；静态网络相同不意味着动态过程相同。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="rosvall2014memory.md">Rosvall et al. - Memory in network flows and its effects on spreading dynamics and community detection</a> 对照阅读：该文研究“网络流动中的路径记忆如何改变传播过程与可识别的社区结构”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：本文的 causality 指时间顺序允许的路径，不等于识别现实行为的因果机制；路径记忆既可能阻滞也可能促进扩散。</li>
+<li>核心假说与增量：保持每条边的频率和周期负载，改变边的先后顺序。</li>
+<li>初始方法与如何验证：保持每条边的频率和周期负载，改变边的先后顺序；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：若扩散差异消失，则时间顺序解释不成立；有限时间采样可能偏置二阶转移估计。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

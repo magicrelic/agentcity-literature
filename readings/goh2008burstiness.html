@@ -2,10 +2,95 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Burstiness and memory in complex systems · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-81f32e0b41173a">返回文献库</a><a href="https://doi.org/10.1209/0295-5075/81/48002" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Goh et al. - Burstiness and memory in complex systems</h1>
 <p><strong>事件间隔的离散程度与记忆</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Goh et al.，<em>Burstiness and memory in complex systems</em>，<strong>EPL（2008）</strong>。<a href="https://doi.org/10.1209/0295-5075/81/48002">原文</a>。</p>
-<h2>研究问题</h2>
-<p>事件间隔的异质性与相邻间隔的记忆如何分别塑造复杂系统的时间活动？</p>
-<h2>方法、证据与解释</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；突发性与时间记忆</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1209/0295-5075/81/48002；arXiv：physics/0610233</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 等待间隔的异质性与相邻间隔的相关性是独立的时间组织维度。 [Paper: Section main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 事件间隔的异质性与相邻间隔的记忆如何分别塑造复杂系统的时间活动？ [Paper: Section main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 厚尾间隔不决定相邻事件是否互相依赖。 [Paper: Section main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>事件间隔的异质性与相邻间隔的记忆如何分别塑造复杂系统的时间活动</td>
+<td>[Analysis] 厚尾间隔不决定相邻事件是否互相依赖。</td>
+<td>[Analysis] 把间隔离散程度B与相邻间隔相关M分开，建立二维时间组织表征。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 把间隔离散程度B与相邻间隔相关M分开，建立二维时间组织表征。 [Paper: Section main text]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 以间隔变异系数构造爆发性B，以相邻间隔相关构造M，比较多类事件序列。 [Paper: Section main text]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 把间隔离散程度B与相邻间隔相关M分开，建立二维时间组织表征。</td>
+<td>[Analysis] 保留间隔分布而打乱顺序，可隔离时间记忆。</td>
+<td>[Paper: Section main text]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
 <p>对事件时刻 <code>t_1,...,t_n</code>，定义等待/事件间隔 <code>Delta_i=t_(i+1)-t_i</code>。事件可为出发、进入某地、状态从停留变移动、过闸或经过检测器。</p>
 <p><strong>三个互补量。</strong></p>
 <ol>
@@ -24,4 +109,66 @@ M=\operatorname{Corr}(\Delta_i,\Delta_{i+1}).
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">Corr</span></span><span class="mopen">(</span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord">.</span></span></span></span></span></eqn></section><p><code>M&gt;0</code> 表示短间隔后仍倾向短、长后仍倾向长；高 <code>B</code> 也可能 <code>M≈0</code>，所以两者要分别计算。</p>
 <p><strong>数据。</strong> 事件时间而非均匀位置采样；若用自动停留检测，需要报告速度/距离与最短停留阈值。跨夜长等待可单独统计，给出分时段版本；有限记录的首尾等待是截尾样本，分布拟合时按删失处理。</p>
 <p>方法原典跨多类事件系统；B 与 M 分别度量间隔异质性与相邻间隔相关性。事件序列是否来自人群移动需由具体数据说明。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>事件间隔的异质性与相邻间隔的记忆如何分别塑造复杂系统的时间活动</td>
+<td>等待间隔的异质性与相邻间隔的相关性是独立的时间组织维度。</td>
+<td>等待间隔的异质性与相邻间隔的相关性是独立的时间组织维度。</td>
+<td>高B不保证高M；事件定义、删失和昼夜节律都会影响结果。</td>
+<td>[Paper: Section main text]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 2</td>
+<td>Interevent time distributions P ⁡ ( τ ) P(\tau) for som…</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>(Color) (a) The ( μ , Δ ) (\mu,\Delta) phase diagram. H…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 高B不保证高M；事件定义、删失和昼夜节律都会影响结果。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 保留间隔分布但随机重排顺序，比较B与M；短序列和夜间长等待可能主导结果。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 保留间隔分布而打乱顺序，可隔离时间记忆。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="rutten2021state.md">Rutten et al. - State-space models reveal bursty movement behaviour of dance event visitors</a> 对照阅读：该文研究“大型活动参与者的停留与移动如何交替，等待时间为何呈现突发性”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：高B不保证高M；事件定义、删失和昼夜节律都会影响结果。</li>
+<li>核心假说与增量：保留间隔分布但随机重排顺序，比较B与M。</li>
+<li>初始方法与如何验证：保留间隔分布但随机重排顺序，比较B与M；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：短序列和夜间长等待可能主导结果。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

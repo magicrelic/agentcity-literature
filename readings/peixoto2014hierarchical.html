@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Hierarchical Block Structures and High-Resolution Model Selection in Large Networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-871075db688549">返回文献库</a><a href="https://doi.org/10.1103/PhysRevX.4.011047" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Peixoto - Hierarchical Block Structures and High-Resolution Model Selection in Large Networks</h1>
+<p><strong>如何推断层级块结构而避免固定分辨率</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Peixoto，<em>Hierarchical Block Structures and High-Resolution Model Selection in Large Networks</em>，<strong>Physical Review X（2014）</strong>。<a href="https://doi.org/10.1103/PhysRevX.4.011047">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；层级结构与模型选择</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1103/PhysRevX.4.011047</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 1–18, main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 以嵌套随机块模型和描述长度选择网络层级，通过对模块关系继续建模来降低单层模型的分辨率限制。 [Paper: PDF pp. 1–18, main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 如何从网络证据推断层级块结构，同时控制模型复杂度和分辨率限制？ [Paper: PDF pp. 1–18, main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 固定分辨率的社区方法可能合并统计上显著的小群组。 [Paper: PDF pp. 1–18, main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如何从网络证据推断层级块结构，同时控制模型复杂度和分辨率限制</td>
+<td>[Analysis] 固定分辨率的社区方法可能合并统计上显著的小群组。</td>
+<td>[Analysis] 用嵌套生成模型继续描述组间结构，并以简约原则选择层级。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用嵌套生成模型继续描述组间结构，并以简约原则选择层级。 [Paper: PDF p. 4, 3 Note that MDL can still be used to select the simpler model in]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 节点分配到块，块间连接形成上一级表示，递归建模并用编码成本比较结构复杂度与拟合。 [Paper: PDF p. 4, 3 Note that MDL can still be used to select the simpler model in]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 用嵌套生成模型继续描述组间结构，并以简约原则选择层级。</td>
+<td>[Analysis] 层级模型应同时避免过度合并与过拟合，需要完整模型比较。</td>
+<td>[Paper: PDF p. 4, 3 Note that MDL can still be used to select the simpler model in]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 嵌套块模型把社区间的连接结构继续分组，形成层级。模型选择必须权衡拟合与表示长度，而非直接把最细的划分称为最佳；层级标签与实际功能层级仍需要外部验证。</p>
+<p>其余形式化推导按主文位置索引：</p>
+<ul>
+<li>公式1、公式2、公式3、公式4：[Paper: PDF p. 3, equations]。</li>
+<li>公式5、公式6、公式7、公式8、公式9、公式10：[Paper: PDF p. 4, equations]。</li>
+<li>公式11：[Paper: PDF p. 5, equations]。</li>
+<li>公式12：[Paper: PDF p. 6, equations]。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如何从网络证据推断层级块结构，同时控制模型复杂度和分辨率限制</td>
+<td>人工网络检验结构恢复，真实网络检验分组与压缩；两者提供不同验证。</td>
+<td>以嵌套随机块模型和描述长度选择网络层级，通过对模块关系继续建模来降低单层模型的分辨率限制。</td>
+<td>模型选出的层级不是动态自组织的形成证据；块可表示同配、异配或其他关系，不都等于生活圈。</td>
+<td>[Paper: PDF p. 12, DISCUSSION]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 模型选出的层级不是动态自组织的形成证据；块可表示同配、异配或其他关系，不都等于生活圈。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 比较嵌套与平坦SBM对留出边和时间迁移的预测，控制度异质性；先验设定和空间依赖可能影响层级数。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 层级模型应同时避免过度合并与过拟合，需要完整模型比较。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="peixoto2018nonparametric.md">Peixoto - Nonparametric weighted stochastic block models</a> 对照阅读：该文研究“如何联合利用连接与边权信息推断网络分组及其层级，而无需预先固定模型规模”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：模型选出的层级不是动态自组织的形成证据；块可表示同配、异配或其他关系，不都等于生活圈。</li>
+<li>核心假说与增量：比较嵌套与平坦SBM对留出边和时间迁移的预测，控制度异质性。</li>
+<li>初始方法与如何验证：比较嵌套与平坦SBM对留出边和时间迁移的预测，控制度异质性；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：先验设定和空间依赖可能影响层级数。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

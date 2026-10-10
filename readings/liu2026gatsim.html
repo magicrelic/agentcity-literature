@@ -2,10 +2,166 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>GATSim: Urban mobility simulation with generative agents · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-cc4665b62d22&paper=p-a88c9dafa2874a">返回文献库</a><a href="https://doi.org/10.1016/j.trc.2026.105576" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Liu et al. - GATSim: Urban mobility simulation with generative agents</h1>
 <p><strong>生成式智能体的多日移动与扰动响应</strong></p>
+<blockquote>
+<p>资料范围：开放作者稿正文（不含补充材料）；正式发表信息见基本信息。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Liu et al.，<em>GATSim: Urban mobility simulation with generative agents</em>，<strong>Transportation Research Part C: Emerging Technologies（2026）</strong>。<a href="https://doi.org/10.1016/j.trc.2026.105576">原文</a>。</p>
-<h2>研究问题</h2>
-<p>生成式智能体能否产生连贯的多日活动，并随交通条件变化调整移动安排？</p>
-<h2>方法、证据与解释</h2>
-<p><strong>方法与证据。</strong> 记忆、反思及计划生成交通调整与持续回避；核读正式书目和作者 v3 §6–7</p>
-<p><strong>解释范围。</strong> 微观评价含角色扮演与 LLM 评判；作者稿社会关系固定，不等于真实城市组织形成验证</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；生成式城市移动</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1016/j.trc.2026.105576</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section 1 Introduction]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 生成式智能体能够形成多日活动，并在交通变化后持续调整。 [Paper: Section 1 Introduction]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 生成式智能体能否产生连贯的多日活动，并随交通条件变化调整移动安排？ [Paper: Section 1 Introduction]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 多日活动需要维持历史连贯，并响应交通环境变化。 [Paper: Section 1 Introduction]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生成式智能体能否产生连贯的多日活动，并随交通条件变化调整移动安排</td>
+<td>[Analysis] 多日活动需要维持历史连贯，并响应交通环境变化。</td>
+<td>[Analysis] 记忆、反思和计划持续进入交通执行，使回避和恢复成为动态对象。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 记忆、反思和计划持续进入交通执行，使回避和恢复成为动态对象。 [Paper: Section 2.2 Traditional Urban Mobility Simulation Methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 以记忆、反思和计划接入移动执行，比较常态与扰动中的活动及恢复。 [Paper: Section 2.2 Traditional Urban Mobility Simulation Methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 记忆、反思和计划持续进入交通执行，使回避和恢复成为动态对象。</td>
+<td>[Analysis] 多日连贯性、LLM评判与真人真实性应分别检验。</td>
+<td>[Paper: Section 2.2 Traditional Urban Mobility Simulation Methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生成式智能体能否产生连贯的多日活动，并随交通条件变化调整移动安排</td>
+<td>生成式智能体能够形成多日活动，并在交通变化后持续调整。</td>
+<td>生成式智能体能够形成多日活动，并在交通变化后持续调整。</td>
+<td>角色扮演与LLM评判不等于真人验证；固定社会关系不证明关系的内生形成。</td>
+<td>[Paper: Section 6 Experiments]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Table 1: Comparison of GATSim with traditional simulati…</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 1</td>
+<td>GATSim prototype implementation. (a) Generative agent a…</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Overall architecture of the GATSim framework, showing t…</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Transportation network representation in the simulation…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 角色扮演与LLM评判不等于真人验证；固定社会关系不证明关系的内生形成。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 在相同约束下用真实多日活动评价持续回避，比较有无记忆；评判模型偏好和历史输入差异可能混杂。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 多日连贯性、LLM评判与真人真实性应分别检验。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="wang2026ellmob.md">Wang et al. - ELLMob: Event-Driven Human Mobility Generation with Self-Aligned LLM Framework</a> 对照阅读：该文研究“历史行为与事件信息能否共同支持 LLM 生成事件发生后的个体移动轨迹”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：角色扮演与LLM评判不等于真人验证；固定社会关系不证明关系的内生形成。</li>
+<li>核心假说与增量：在相同约束下用真实多日活动评价持续回避，比较有无记忆。</li>
+<li>初始方法与如何验证：在相同约束下用真实多日活动评价持续回避，比较有无记忆；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：评判模型偏好和历史输入差异可能混杂。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

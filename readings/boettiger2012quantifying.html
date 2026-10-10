@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Quantifying limits to detection of early warning for critical transitions · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-d7609e9cc951d8">返回文献库</a><a href="https://doi.org/10.1098/rsif.2012.0125" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Boettiger et al. - Quantifying limits to detection of early warning for critical transitions</h1>
+<p><strong>预警指标的误报与漏报如何量化</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Boettiger et al.，<em>Quantifying limits to detection of early warning for critical transitions</em>，<strong>Journal of the Royal Society Interface（2012）</strong>。<a href="https://doi.org/10.1098/rsif.2012.0125">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；临界预警的可识别性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1098/rsif.2012.0125；arXiv：1204.6231</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Center for Population Biology, 1 Shields Avenue, University of California, Davis, CA 95616, USA；Department of Environmental Science and Policy, University of California, Davis, CA 95616, USA</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section 1 Introduction]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 将早期预警作为模型比较问题，通过模拟估计指标在稳定与临界接近情境中的分布和ROC曲线。 [Paper: Section 1 Introduction]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 有限、含噪时间序列中，临界转变预警的误报与漏报受到哪些限制？ [Paper: Section 1 Introduction]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 预警指标事后上升并不说明实际检测的错误率低。 [Paper: Section 1 Introduction]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有限、含噪时间序列中，临界转变预警的误报与漏报受到哪些限制</td>
+<td>[Analysis] 预警指标事后上升并不说明实际检测的错误率低。</td>
+<td>[Analysis] 把预警转换为候选动态模型的判别，并测量阈值下的误报与漏报。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 把预警转换为候选动态模型的判别，并测量阈值下的误报与漏报。 [Paper: Section 2 The summary statistics approach]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 拟合候选动力学模型，再生成重复序列，比较常用统计量和模型指标的检测效力，而不只检验是否有上升趋势。 [Paper: Section 2 The summary statistics approach]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 把预警转换为候选动态模型的判别，并测量阈值下的误报与漏报。</td>
+<td>[Analysis] 检测效力依赖正负例分布，阈值选择和事件窗口须预先固定。</td>
+<td>[Paper: Section 2 The summary statistics approach]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 真阳性率 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">P</mi></mrow><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">P</mi></mrow><mo>+</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">N</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{TPR}=\mathrm{TP}/(\mathrm{TP}+\mathrm{FN})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">TPR</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">TP</span></span><span class="mord">/</span><span class="mopen">(</span><span class="mord"><span class="mord mathrm">TP</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">FN</span></span><span class="mclose">)</span></span></span></span></eq> 与假阳性率 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">P</mi></mrow><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">P</mi></mrow><mo>+</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">N</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{FPR}=\mathrm{FP}/(\mathrm{FP}+\mathrm{TN})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">FPR</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">FP</span></span><span class="mord">/</span><span class="mopen">(</span><span class="mord"><span class="mord mathrm">FP</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">TN</span></span><span class="mclose">)</span></span></span></span></eq> 随阈值形成ROC。只有同时定义临界接近正例和稳定负例，上升的预警曲线才具有可评估的检测效力。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有限、含噪时间序列中，临界转变预警的误报与漏报受到哪些限制</td>
+<td>图1解释误报—敏感性权衡；图2—4分析模拟、Daphnia和冰期序列；图5比较ROC，说明即使有利条件下也可能错误率较高。</td>
+<td>将早期预警作为模型比较问题，通过模拟估计指标在稳定与临界接近情境中的分布和ROC曲线。</td>
+<td>事后已知转变的曲线趋势不是可部署预警的充分证据；ROC还依赖负例与真实转变的生成分布。</td>
+<td>[Paper: Section 4 Example Results]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Top row: The distributions of a hypothetical warning in…</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>A model-based calculation of warning signals for the si…</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>A model-based calculation of warning signals for the Da…</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>A model-based calculation of warning signals for the Gl…</td>
+<td>[Paper: Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 事后已知转变的曲线趋势不是可部署预警的充分证据；ROC还依赖负例与真实转变的生成分布。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 冻结阈值后在未见稳定序列和事件窗口盲测，报告提前量及错误率；模型错设和事后窗口选择可能虚增性能。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 检测效力依赖正负例分布，阈值选择和事件窗口须预先固定。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="scheffer2009early.md">Scheffer et al. - Early-warning signals for critical transitions</a> 对照阅读：该文研究“接近某类临界转变时，恢复速度与波动结构是否出现可观测的共同变化”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：事后已知转变的曲线趋势不是可部署预警的充分证据；ROC还依赖负例与真实转变的生成分布。</li>
+<li>核心假说与增量：冻结阈值后在未见稳定序列和事件窗口盲测，报告提前量及错误率。</li>
+<li>初始方法与如何验证：冻结阈值后在未见稳定序列和事件窗口盲测，报告提前量及错误率；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：模型错设和事后窗口选择可能虚增性能。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

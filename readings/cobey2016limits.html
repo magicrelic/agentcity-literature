@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Limits to Causal Inference with State-Space Reconstruction for Infectious Disease · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-eb94d584117646">返回文献库</a><a href="https://doi.org/10.1371/journal.pone.0169050" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Cobey et al. - Limits to Causal Inference with State-Space Reconstruction for Infectious Disease</h1>
+<p><strong>CCM在真实波动系统中何时产生错误因果</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Cobey et al.，<em>Limits to Causal Inference with State-Space Reconstruction for Infectious Disease</em>，<strong>PLOS ONE（2016）</strong>。<a href="https://doi.org/10.1371/journal.pone.0169050">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；因果识别的适用条件</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1371/journal.pone.0169050</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 用两病原模拟和历史儿童传染病记录测试CCM，发现共同周期、过程噪声及吸引子变化会限制因果推断。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 噪声、共同周期和非平稳性如何限制状态空间重构的因果推断？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 方法在理想确定性系统中成立，不保证在有噪声和共同周期的实测系统中可靠。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>噪声、共同周期和非平稳性如何限制状态空间重构的因果推断</td>
+<td>[Analysis] 方法在理想确定性系统中成立，不保证在有噪声和共同周期的实测系统中可靠。</td>
+<td>[Analysis] 用已知无作用或已知作用的反例分离周期、过程噪声和吸引子变化。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用已知无作用或已知作用的反例分离周期、过程噪声和吸引子变化。 [Paper: Section Methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 在已知作用强度的模拟中加入周期、噪声和暂态，再比较原判据及替代判据，最后分析纽约和芝加哥历史序列。 [Paper: Section Methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 用已知无作用或已知作用的反例分离周期、过程噪声和吸引子变化。</td>
+<td>[Analysis] 因果方法应报告错误率和失败机制，而不只展示成功案例。</td>
+<td>[Paper: Section Methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] CCM关注交叉映射技能随样本库增加的变化。收敛本身不是无条件充分的因果证据：共同周期可以让无真实耦合的变量共享可重建结构，方向、滞后及负例均需检验。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>噪声、共同周期和非平稳性如何限制状态空间重构的因果推断</td>
+<td>Results分别讨论周期敏感性、可辨识性、暂态与真实应用；独立但相近周期的序列也可能被原CCM判为有作用。</td>
+<td>用两病原模拟和历史儿童传染病记录测试CCM，发现共同周期、过程噪声及吸引子变化会限制因果推断。</td>
+<td>方法失败案例不意味着任何状态空间重构都无效；判据改变可缓解周期问题，但不能自动消除噪声和非平稳性。</td>
+<td>[Paper: Section Results]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 方法失败案例不意味着任何状态空间重构都无效；判据改变可缓解周期问题，但不能自动消除噪声和非平稳性。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>[Paper] 状态空间重构仍有方法选择不确定性；有限观测覆盖不能预见未曾覆盖状态空间的定性变化。 [Paper: Discussion]</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 以城市共同昼夜节律为负例、已知局部干预为正例比较CCM判据；共同驱动去除过度与短记录可能使测试无效。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 因果方法应报告错误率和失败机制，而不只展示成功案例。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="sugihara2012detecting.md">Sugihara et al. - Detecting causality in complex ecosystems</a> 对照阅读：该文研究“相互耦合的动力系统能否通过状态空间重构辨认因果作用方向”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：方法失败案例不意味着任何状态空间重构都无效；判据改变可缓解周期问题，但不能自动消除噪声和非平稳性。</li>
+<li>核心假说与增量：以城市共同昼夜节律为负例、已知局部干预为正例比较CCM判据。</li>
+<li>初始方法与如何验证：以城市共同昼夜节律为负例、已知局部干预为正例比较CCM判据；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：共同驱动去除过度与短记录可能使测试无效。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

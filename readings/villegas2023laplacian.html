@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Laplacian renormalization group for heterogeneous networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-e25848985b1d28">返回文献库</a><a href="https://doi.org/10.1038/s41567-022-01866-8" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Villegas et al. - Laplacian renormalization group for heterogeneous networks</h1>
+<p><strong>怎样在异质网络中定义动力学尺度</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
+<p>Villegas et al.，<em>Laplacian renormalization group for heterogeneous networks</em>，<strong>Nature Physics（2023）</strong>。<a href="https://doi.org/10.1038/s41567-022-01866-8">原文</a>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；网络粗粒化与重整化</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/s41567-022-01866-8</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 以拉普拉斯扩散建立网络重整化，把快速扩散模态逐步消去，在降低规模时保留目标动力学的重要性质。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 如何依据网络扩散的动力学尺度进行粗粒化，并保留重要的宏观结构？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 异质网络缺少统一几何尺度，任意合并节点可能毁掉重要动态。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如何依据网络扩散的动力学尺度进行粗粒化，并保留重要的宏观结构</td>
+<td>[Analysis] 异质网络缺少统一几何尺度，任意合并节点可能毁掉重要动态。</td>
+<td>[Analysis] 扩散时间定义可观测尺度，快速模态的消去为网络约化提供动力学依据。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 扩散时间定义可观测尺度，快速模态的消去为网络约化提供动力学依据。 [Paper: Section Methods]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 定义扩散密度矩阵及谱熵，用扩散时间识别尺度；实空间构建 Kadanoff 超节点，谱空间积分掉快速模态。 [Paper: Section Methods]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 扩散时间定义可观测尺度，快速模态的消去为网络约化提供动力学依据。</td>
+<td>[Analysis] 粗粒化应说明保留哪个算子及哪类预测，不能把任意分组称为有效理论。</td>
+<td>[Paper: Section Methods]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>[Paper] 扩散算子构造密度矩阵
+[
+\rho(\tau)=\frac{e^{-\tau L}}{\operatorname{Tr}(e^{-\tau L})},\qquad
+S(\tau)=-\operatorname{Tr}[\rho(\tau)\log\rho(\tau)].
+]
+<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span></eq> 为图拉普拉斯算子，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span></span></span></span></eq> 为扩散时间。大特征值模态消失更快，谱熵及其变化用于识别动力学尺度；这里的尺度取决于所选扩散过程。</p>
+<p>[Paper: Section Methods]</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如何依据网络扩散的动力学尺度进行粗粒化，并保留重要的宏观结构</td>
+<td>图1建立熵与热容；图2—3展示超节点与变换；图4在真实网络上检验约化，支持以动力学而非任意网格定义尺度。</td>
+<td>以拉普拉斯扩散建立网络重整化，把快速扩散模态逐步消去，在降低规模时保留目标动力学的重要性质。</td>
+<td>保留扩散性质不等于保留所有非线性过程；选用不同算子可能得到不同尺度。</td>
+<td>[Paper: Section main text]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Entropy and specific heat.</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Sketch of the Kadanoff supernodes procedure.</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Kadanoff supernodes LRG.</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>LRG transformation for real networks.</td>
+<td>[Paper: Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 保留扩散性质不等于保留所有非线性过程；选用不同算子可能得到不同尺度。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 对约化前后网络同时测试扩散与拥堵传播，比较时间谱与状态边界；粗粒化丢失瓶颈和动态权重可能造成失败。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 粗粒化应说明保留哪个算子及哪类预测，不能把任意分组称为有效理论。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：保留扩散性质不等于保留所有非线性过程；选用不同算子可能得到不同尺度。</li>
+<li>核心假说与增量：对约化前后网络同时测试扩散与拥堵传播，比较时间谱与状态边界。</li>
+<li>初始方法与如何验证：对约化前后网络同时测试扩散与拥堵传播，比较时间谱与状态边界；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：粗粒化丢失瓶颈和动态权重可能造成失败。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

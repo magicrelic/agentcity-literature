@@ -2,15 +2,159 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Unraveling the emergence of collective behavior in networks of cognitive agents · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-69c014e7725135">返回文献库</a><a href="https://doi.org/10.1038/s44387-026-00091-5" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Zomer et al. - Unraveling the emergence of collective behavior in networks of cognitive agents</h1>
 <p><strong>个体认知为何改变集体搜索与空间组织</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：discovery。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Zomer et al.，<em>Unraveling the emergence of collective behavior in networks of cognitive agents</em>，<strong>npj Artificial Intelligence（2026）</strong>。<a href="https://doi.org/10.1038/s44387-026-00091-5">原文</a>。</p>
-<h2>研究问题</h2>
-<p>个体认知能力、通信拓扑与同配性如何共同改变群体搜索和空间隔离？</p>
-<h2>两个受控任务</h2>
-<p>作者将 LLM 认知智能体与经典粒子机制比较。函数优化任务使用 LLM Agent Swarm Optimization，并与 Particle Swarm Optimization 比较；空间任务采用 Schelling 隔离模型的认知智能体变体。依据正式全文的 Results 与 Figs. 3–5。</p>
-<h2>主要证据</h2>
-<p>优化中，个体决策能力的提高没有直接转化为更好的群体搜索：交流形成的共识与模式利用可能使群体过早收敛。调整网络拓扑可以缓解这一现象，但会改变收敛速度。</p>
-<p>在空间隔离任务中，局部通信及同配性改变聚集、满意度和部分状态边界。LLM 智能体通过交流获取信息、自主选择位置，并可协同行动；因此其动态与经典随机搬迁规则不同。</p>
-<h2>机制解释的范围</h2>
-<p>比较同时涉及信息获取、通信和移动策略，结果支持这套认知智能体系统产生了不同的集体动力学。若进一步区分语言协商、记忆、推理和信息优势，需要保持信息及动作权限可比的机制对照。</p>
-<p>两个任务共同提示通信条件会改变认知的集体后果，但尚未给出一套经两个任务及新情境共同检验的有效动力学。论文没有使用独立真实城市行为验证这些机制；其证据对象是受控人工群体。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>discovery；认知与集体涌现</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1038/s44387-026-00091-5</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] LLM认知能力的集体后果依赖通信条件：优化中共识可过早收敛，空间任务中交流改变聚集。 [Paper: Section Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 个体认知能力、通信拓扑与同配性如何共同改变群体搜索和空间隔离？ [Paper: Section Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 个体推理更强未必改善群体性能，通信也可能压缩独立探索。 [Paper: Section Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>个体认知能力、通信拓扑与同配性如何共同改变群体搜索和空间隔离</td>
+<td>[Analysis] 个体推理更强未必改善群体性能，通信也可能压缩独立探索。</td>
+<td>[Analysis] 优化和空间任务提供不同集体结果，机制解释必须区分通信、信息和行动策略。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 优化和空间任务提供不同集体结果，机制解释必须区分通信、信息和行动策略。 [Paper: Section Emergence of polarization in networks of large language model agents]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 两个受控任务使用相互通信的LLM智能体。llmASO令代理读取位置、目标值及邻居消息，再选择搜索位置，与PSO比较；认知Schelling变体令代理交流信息并选择搬迁位置，改变网络拓扑及同配性。 [Paper: Section Optimization: background and compared algorithms; Section Segregation model]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>作用</th>
+<th>归因问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM决策</td>
+<td>根据任务和信息选择新位置</td>
+<td>需与非LLM策略的同信息决策比较</td>
+</tr>
+<tr>
+<td>通信网络</td>
+<td>控制可见信息与协调</td>
+<td>拓扑变化也改变信息获取</td>
+</tr>
+<tr>
+<td>自主搬迁</td>
+<td>改变可执行的空间策略</td>
+<td>不能与随机搬迁只按认知能力归因</td>
+</tr>
+<tr>
+<td>同配性</td>
+<td>改变可交流对象</td>
+<td>结构与语言作用可能共变</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section Agents interactions; Section Emergence of segregation]</p>
+<h2>09 关键公式与符号</h2>
+<p>[Analysis] 应分别测量个体任务表现、群体搜索误差及空间组织。个体提升并不推出集体提升；不同拓扑下的差异也不唯一确定语言协商、信息量或移动策略中的哪一项是原因。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>设计与发现</th>
+<th>支持的结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>优化与Schelling两类受控任务</td>
+<td>明确研究对象与系统比较</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>函数和拓扑下的优化收敛</td>
+<td>共识倾向可能造成过早收敛；拓扑缓解有时间代价</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>认知和通信条件下的空间动态</td>
+<td>整套决策与交流架构改变组织过程</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>邻近群体尺度</td>
+<td>空间组织差异可量化</td>
+</tr>
+<tr>
+<td>Figure 5</td>
+<td>网络同配性</td>
+<td>通信对象影响隔离动态</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Figures 1–5; Section Results]</p>
+<p>[Analysis] 两任务提供不同后果，尚需一个经新条件检验的共同机制将它们连接。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 论文有力地说明：LLM个体能力与集体表现之间存在条件依赖。它尚不能把观察差异唯一归于语言协商、记忆或推理，也未用独立真实群体数据证明同一机制解释现实行为。Schelling具有科学意义，受控人工任务与现实机制验证仍是不同证据。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>[Paper] 结论还依赖所用语言模型、提示、交互方式和激励结构；这些条件对集体结果的影响仍需进一步研究。 [Paper: Discussion]</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 空间比较同时改变了信息获取、交流和移动策略。最有辨识力的对照是固定信息和动作权限，分别替换通信、记忆与决策，并让非LLM经验响应模型复现同样条件。若一个简单响应函数能预测未测拓扑中的组织，贡献就从系统差异推进到可迁移机制。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] 个体能力、交互架构与集体结果应分层测量；通信既可能改善协调，也可能使决策相关、缩短探索。这个方向性的矛盾比“智能体能够涌现”更有研究价值。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 与 <a href="bielawski2025heterogeneity.md">Bielawski et al.</a>对照：简单学习规则也能产生复杂波动，而平均行为仍可达到均衡。两篇共同提示应检验状态分布和动态过程；它们尚未建立同一套经验证的理论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：信息相关性是否解释集体后果。</strong> 假说：通信引起的条件动作相关性，而非孤立个体任务分数，能预测探索损失与空间聚集。增量：从模型类别转向可独立测量的微观响应。如何验证：固定信息量和动作集合，测条件选择的相关性，以经验响应代理预测未测拓扑及规模，再与LLM结果比较。可能失败：目标函数、搬迁权限或未观测策略变化承担主要解释。创新状态：未核查（unverified）。</p>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

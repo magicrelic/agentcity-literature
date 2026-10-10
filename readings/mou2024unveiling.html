@@ -2,10 +2,172 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-cc4665b62d22&paper=p-2665b4fea8615a">返回文献库</a><a href="https://aclanthology.org/2024.findings-acl.285/" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Mou et al. - Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation</h1>
 <p><strong>LLM 核心用户与传统群体模型</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：page-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Mou et al.，<em>Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation</em>，<strong>Findings of the Association for Computational Linguistics: ACL（会议论文集）（2024）</strong>。<a href="https://aclanthology.org/2024.findings-acl.285/">原文</a>。</p>
-<h2>研究问题</h2>
-<p>LLM 核心用户与传统行为模型的组合能否再现大规模线上群体活动？</p>
-<h2>方法、证据与解释</h2>
-<p><strong>方法与证据。</strong> 每事件 1,000 用户：300 LLM 核心用户＋700 普通用户；对照 BC、HK、RA、SJ、Lorenz 五种纯 ABM 及对应混合版本</p>
-<p><strong>解释范围。</strong> 已做“不同传统机制＋LLM 混合”。§5.4 固定 300 核心用户而改变普通用户数，同时改变总人数与比例；核心用户按影响力/活跃度选取，也不是随机替换</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；混合群体模拟</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>未确认</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: PDF pp. 1–12, main text]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] LLM核心用户与多类经典模型的混合可用于线上群体活动模拟。 [Paper: PDF pp. 1–12, main text]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] LLM 核心用户与传统行为模型的组合能否再现大规模线上群体活动？ [Paper: PDF pp. 1–12, main text]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 少量语义决策可与已有群体动态模型结合，降低直接推理需求。 [Paper: PDF pp. 1–12, main text]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM 核心用户与传统行为模型的组合能否再现大规模线上群体活动</td>
+<td>[Analysis] 少量语义决策可与已有群体动态模型结合，降低直接推理需求。</td>
+<td>[Analysis] 重要用户用LLM，普通用户用多种传统作用规则。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 重要用户用LLM，普通用户用多种传统作用规则。 [Paper: PDF p. 8, Method]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 每事件1,000用户中300核心用户用LLM，700普通用户用传统模型；比较BC、HK、RA、SJ和Lorenz。 [Paper: PDF p. 8, Method]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 重要用户用LLM，普通用户用多种传统作用规则。</td>
+<td>[Analysis] 混合收益需区分核心选择优势、传统机制与规模变化。</td>
+<td>[Paper: PDF p. 8, Method]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<p>其余形式化推导按主文位置索引：</p>
+<ul>
+<li>公式1：[Paper: PDF p. 2, equations]。</li>
+<li>公式2：[Paper: PDF p. 3, equations]。</li>
+<li>公式4：[Paper: PDF p. 5, equations]。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM 核心用户与传统行为模型的组合能否再现大规模线上群体活动</td>
+<td>LLM核心用户与多类经典模型的混合可用于线上群体活动模拟。</td>
+<td>LLM核心用户与多类经典模型的混合可用于线上群体活动模拟。</td>
+<td>核心按影响力或活跃度选择；固定300核心而增加普通用户同时改变规模和比例。</td>
+<td>[Paper: PDF p. 7, Experiments]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>An illustration of user interactions and attitude chang…</td>
+<td>[Paper: PDF p. 1, Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>The proposed framework architecture. The bottom part il…</td>
+<td>[Paper: PDF p. 3, Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>(a) System metrics when simulating with varying numbers…</td>
+<td>[Paper: PDF p. 8, Figure 3]</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>(a) Similarity of content of consumption and production…</td>
+<td>[Paper: PDF p. 9, Figure 4]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 核心按影响力或活跃度选择；固定300核心而增加普通用户同时改变规模和比例。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>[Paper] 未验证百万智能体互动；RLHF语言模型可能比真实社交平台用户更礼貌，导致模拟偏差。 [Paper: PDF p. 10, Limitations]</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 固定规模后随机和重要性选核心，比较不同传统机制；选择偏差与真实活跃信息可能主导结果。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 混合收益需区分核心选择优势、传统机制与规模变化。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="li2025integrating.md">Li et al. - Integrating LLM and Diffusion-Based Agents for Social Simulation</a> 对照阅读：该文研究“LLM 核心智能体与扩散模型代理如何协同模拟大规模群体行为”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：核心按影响力或活跃度选择；固定300核心而增加普通用户同时改变规模和比例。</li>
+<li>核心假说与增量：固定规模后随机和重要性选核心，比较不同传统机制。</li>
+<li>初始方法与如何验证：固定规模后随机和重要性选核心，比较不同传统机制；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：选择偏差与真实活跃信息可能主导结果。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

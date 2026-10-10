@@ -2,11 +2,99 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Scaling and Complexity-Entropy Analysis in Discriminating Traffic Dynamics · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-10c00deb4a1d&paper=p-73fb65379f4990">返回文献库</a><a href="https://doi.org/10.1142/S0218348X12500211" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Liao et al. - Scaling and Complexity-Entropy Analysis in Discriminating Traffic Dynamics</h1>
 <p><strong>用复杂度与熵辨别交通状态</strong></p>
+<blockquote>
+<p>资料范围：仅摘要（不含补充材料）。
+文本可靠性：局限于可用资料。
+来源定位：source-limited。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Liao et al.，<em>Scaling and Complexity-Entropy Analysis in Discriminating Traffic Dynamics</em>，<strong>Fractals（2012）</strong>。<a href="https://doi.org/10.1142/S0218348X12500211">原文</a>。</p>
-<h2>研究问题</h2>
-<p>标度与复杂度—熵特征能否区分不同交通动力学状态？</p>
-<h2>方法、证据与解释</h2>
-<p><strong>直接交通应用。</strong> Liao, G. &amp; Shang, P. (2012), <em>Scaling and Complexity-Entropy Analysis in Discriminating Traffic Dynamics</em>, <strong>Fractals 20</strong>, 233–243，<a href="https://doi.org/10.1142/S0218348X12500211">10.1142/S0218348X12500211</a>。原始摘要明确：对交通数据计算 complexity–entropy causality plane，采用排列构造概率分布，比较 R/S 与 DFA；实证结果可比后两者更细致地区分拥堵等级（出版社摘要由 Crossref/OpenAlex 核验）。<strong>证据限于摘要，不能核实其具体检测器、参数和 <code>C</code> 的实现细节。</strong> 上述 <code>C_JS</code> 标准公式另由 Ribeiro et al. (2012) 的方法正文核验：<a href="https://doi.org/10.1371/journal.pone.0040689">10.1371/journal.pone.0040689</a>；该方法论文的实例是二维纹理、液晶和 Ising 图样，不能算城市应用。</p>
-<p>补充：Zhang &amp; Shang 的 <em>The complexity–entropy causality plane based on multivariate multiscale distribution entropy of traffic time series</em>，<a href="https://doi.org/10.1007/s11071-018-4586-2">10.1007/s11071-018-4586-2</a>，2018 在线、2019 卷期。它用 distribution entropy；可见图注还有相邻尺度熵的相图，<strong>不能仅凭名称就当作完全相同的排列 <code>C_JS</code> 实现</strong>。</p>
-<p><strong>动态比较。</strong> 可把自由流、同步流、拥堵窗口投影到同一平面，观察是否形成可分的状态群、过渡路径、拐弯和状态占比改变；真实交通文献已把它用于拥堵状态分辨。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；交通状态的统计辨识</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>DOI：10.1142/S0218348X12500211</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>Department of Mathematics, School of Science, Beijing Jiaotong University, No. 18, Jiaoda East Road, Room 405, Building 2, Haidian District, Beijing, 100044, P. R. China</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Abstract]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 复杂度—熵平面在所测交通数据上能更细致地区分拥堵等级。 [Paper: Abstract]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 标度与复杂度—熵特征能否区分不同交通动力学状态？ [Paper: Abstract]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 交通不规则程度的单指标排序可能遗漏有组织波动。 [Paper: Abstract]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标度与复杂度—熵特征能否区分不同交通动力学状态</td>
+<td>[Analysis] 交通不规则程度的单指标排序可能遗漏有组织波动。</td>
+<td>[Analysis] 用排列概率的复杂度—熵平面与标度方法比较拥堵判别。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 用排列概率的复杂度—熵平面与标度方法比较拥堵判别。 [Paper: Abstract]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 用排列概率构造复杂度—熵表征，与R/S和DFA比较。 [Paper: Abstract]</p>
+<h2>08 核心模块拆解</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
+<h2>09 关键公式与符号</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：不补写未见正文中的公式或参数。</p>
+<h2>10 实验设计与证据链</h2>
+<p>[Paper] 摘要报告：复杂度—熵平面在所测交通数据上能更细致地区分拥堵等级。 [Paper: Abstract]</p>
+<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 摘要不能确认检测器、参数或复杂度公式；不能把同名的distribution entropy方法当成相同实现。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 冻结参数后留出道路和日期比较拥堵判别及误报；同源标注和窗口选择可能造成优势。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 相近指标名称不保证相同概率构造。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 可与 <a href="ribeiro2012complexity.md">Ribeiro et al. - Complexity-Entropy Causality Plane as a Complexity Measure for Two-Dimensional Patterns</a> 对照阅读：该文研究“排列熵与统计复杂度能否区分随机、相关及有组织的二维图样”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：摘要不能确认检测器、参数或复杂度公式；不能把同名的distribution entropy方法当成相同实现。</li>
+<li>核心假说与增量：冻结参数后留出道路和日期比较拥堵判别及误报。</li>
+<li>初始方法与如何验证：冻结参数后留出道路和日期比较拥堵判别及误报；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：同源标注和窗口选择可能造成优势。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

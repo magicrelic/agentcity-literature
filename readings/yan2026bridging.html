@@ -2,10 +2,166 @@
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Bridging Individual and Collective Realism in LLM-Based Human Mobility Simulation via Mobility Scaling-Law Guidance · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
 <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-cc4665b62d22&paper=p-cdba08b6b40b06">返回文献库</a><a href="https://arxiv.org/html/2602.16726v2" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Yan et al. - Bridging Individual and Collective Realism in LLM-Based Human Mobility Simulation via Mobility Scaling-Law Guidance</h1>
 <p><strong>移动标度如何约束生成式轨迹</strong></p>
+<blockquote>
+<p>资料范围：论文正文（不含补充材料）。
+文本可靠性：高。
+来源定位：structure-grounded。
+主要分析类型：methods。
+次要分析类型：无。
+背景核验：paper-only；背景沿论文论证组织。
+解读完整性：完整（相对于论文正文）。</p>
+</blockquote>
+<h2>01 基本信息</h2>
 <p>Yan et al.，<em>Bridging Individual and Collective Realism in LLM-Based Human Mobility Simulation via Mobility Scaling-Law Guidance</em>，<strong>arXiv（预印本，v2）（2026）</strong>。<a href="https://arxiv.org/html/2602.16726v2">原文</a>。</p>
-<h2>研究问题</h2>
-<p>经验移动标度的反馈能否同时改善 LLM 生成轨迹的个体合理性和群体统计规律？</p>
-<h2>方法、证据与解释</h2>
-<p><strong>方法与证据。</strong> 将经验移动标度转为反馈，优化个体提示；核读作者 v2 问题、优化及评价设置</p>
-<p><strong>解释范围。</strong> 对齐作为目标的分布与解释其生成机制具有不同证据职责；正式发表状态未核实</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析类型与领域</td>
+<td>methods；个体与集体真实性</td>
+</tr>
+<tr>
+<td>标识符</td>
+<td>arXiv：2602.167262</td>
+</tr>
+<tr>
+<td>作者机构</td>
+<td>书目资料未提供</td>
+</tr>
+<tr>
+<td>代码与数据</td>
+<td>未确认公开资源入口</td>
+</tr>
+<tr>
+<td>阅读日期</td>
+<td>2026-10-11</td>
+</tr>
+</tbody>
+</table>
+<p>[Paper: Section 1. Introduction]</p>
+<h2>02 一句话概括</h2>
+<p>[Paper] 移动标度反馈可同时约束LLM轨迹的个人行为和群体分布。 [Paper: Section 1. Introduction]</p>
+<h2>03 研究问题</h2>
+<p>[Paper] 经验移动标度的反馈能否同时改善 LLM 生成轨迹的个体合理性和群体统计规律？ [Paper: Section 1. Introduction]</p>
+<h2>04 研究背景与发展路径</h2>
+<p>[Analysis] 个人轨迹合理与群体移动标度吻合可能无法同时满足。 [Paper: Section 1. Introduction]</p>
+<h2>05 论文识别的核心问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>为什么难以辨别</th>
+<th>处理思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经验移动标度的反馈能否同时改善 LLM 生成轨迹的个体合理性和群体统计规律</td>
+<td>[Analysis] 个人轨迹合理与群体移动标度吻合可能无法同时满足。</td>
+<td>[Analysis] 将标度偏差作为反馈更新提示，连接微观生成与宏观约束。</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>[Analysis] 将标度偏差作为反馈更新提示，连接微观生成与宏观约束。 [Paper: Section 3. Methodology]</p>
+<h2>07 方法总览</h2>
+<p>[Paper] 把经验标度的偏差作为反馈，迭代个体提示，并分别评价个人与群体统计。 [Paper: Section 3. Methodology]</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>在论证中的作用</th>
+<th>可区分性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心表示或机制</td>
+<td>[Analysis] 将标度偏差作为反馈更新提示，连接微观生成与宏观约束。</td>
+<td>[Analysis] 作为优化目标的统计量需与独立评价量分开。</td>
+<td>[Paper: Section 3. Methodology]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与符号</h2>
+<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>检验对象</th>
+<th>设计与证据</th>
+<th>支持的结论</th>
+<th>不支持的更强解释</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经验移动标度的反馈能否同时改善 LLM 生成轨迹的个体合理性和群体统计规律</td>
+<td>移动标度反馈可同时约束LLM轨迹的个人行为和群体分布。</td>
+<td>移动标度反馈可同时约束LLM轨迹的个人行为和群体分布。</td>
+<td>目标分布的改善证明约束有效，不能把注入的标度当成自发发现的机制。</td>
+<td>[Paper: Section 5. Discussion]</td>
+</tr>
+</tbody>
+</table>
+<p>主文图表的论证入口（图题保留原文关键词）：</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>证据对象</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>Core idea of COMPASS.</td>
+<td>[Paper: Figure 1]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Travel distance distributions (Real vs. Simulation).</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>Travel distance distributions (Real vs. Simulation).</td>
+<td>[Paper: Figure 2]</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>Visitation frequency (Real vs. Simulation).</td>
+<td>[Paper: Figure 3]</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论的正确解释</h2>
+<p>[Analysis] 目标分布的改善证明约束有效，不能把注入的标度当成自发发现的机制。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
+<h2>13 批判性分析</h2>
+<p>[Analysis] 留出一种事件或一座城市，固定已学提示检验新条件；目标泄漏和反复调参可能制造泛化。</p>
+<h2>14 可迁移的知识</h2>
+<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 作为优化目标的统计量需与独立评价量分开。</p>
+<h2>15 与现有知识的联系</h2>
+<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
+<h2>16 研究设想</h2>
+<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
+<ul>
+<li>来源观察：目标分布的改善证明约束有效，不能把注入的标度当成自发发现的机制。</li>
+<li>核心假说与增量：留出一种事件或一座城市，固定已学提示检验新条件。</li>
+<li>初始方法与如何验证：留出一种事件或一座城市，固定已学提示检验新条件；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
+<li>可能失败：目标泄漏和反复调参可能制造泛化。若对照能够解释观察差异，应收缩机制解释。</li>
+<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
+</ul>
 </main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

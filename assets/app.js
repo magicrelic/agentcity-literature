@@ -1,4 +1,4 @@
-import { catalogView } from './catalog-model.js?v=5beb1aa2e3d3e058dba2e4be4888e1803915ccda18c2361f41abe995067b06ac';
+import { catalogView } from './catalog-model.js?v=c566e2f3da729c549a80021a02d95aa24e74ce33ce441e9f8a738480377cf6ad';
 
 async function start() {
   const versions=['catalog-version','reading-version'].map(name=>document.querySelector(`meta[name="${name}"]`).content);
@@ -122,7 +122,7 @@ async function start() {
     const pages=publication.pages || publication.articleNumber;
     $('card-publication').textContent = `${paper.journal}${issue}${pages ? `, ${pages}` : ''} (${paper.year})`;
     $('card-theme').textContent = paper.card.theme || ''; $('card-theme').hidden = !paper.card.theme;
-    const sections = [ ['研究问题',paper.card.question || paper.question], ['研究方法',paper.card.approach], ['主要发现',paper.card.findings], ['方法与证据',paper.card.overview], ['证据范围',paper.card.scope] ];
+    const sections = [ ['阅读范围',paper.card.coverage], ['研究问题',paper.card.question || paper.question], ['研究方法',paper.card.approach], ['主要发现',paper.card.findings], ['方法与证据',paper.card.overview], ['证据范围',paper.card.scope] ];
     $('card-sections').replaceChildren(...sections.filter(([,value]) => value).map(([name,value]) => { const section=text('section','', 'card-section'); section.append(text('h3',name),text('p',value)); return section; }));
     $('card-links').replaceChildren(resource('原文',paper.original));
     if (paper.arxiv) $('card-links').append(resource('arXiv',paper.arxiv));
