@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Understanding post-disaster population recovery patterns · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-00394c4aa542c5">返回文献库</a><a href="https://doi.org/10.1098/rsif.2019.0532" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Yabe et al. - Understanding post-disaster population recovery patterns</h1>
+<p><strong>跨灾害人口返回的共同形态</strong></p>
+<p><strong>核心判断：灾后人口返回可以用少数参数描述，但相似曲线不意味着相同原因，也不意味着全部居民最终返回。</strong> 本文把跨事件共同形态与地区差异放在同一框架中。</p>
+<p>阅读依据：<a href="https://doi.org/10.1098/rsif.2019.0532">期刊论文</a>及<a href="https://par.nsf.gov/servlets/purl/10204513">NSF 公共库正式全文</a>，9页，覆盖5幅主图；补充材料的全部模型表未重新估计。以下页码为文件页序。</p>
+<h2>01 基本信息</h2>
+<p>Yabe et al. <strong>Understanding post-disaster population recovery patterns</strong>. <em>Journal of the Royal Society Interface</em> <strong>17</strong>, 20190532（2020）。</p>
+<p>作者来自 Purdue、Yahoo Japan、Tohoku、东京大学等。类型：跨灾害观察研究与恢复曲线建模。原始轨迹由三家企业提供，论文指向<a href="https://github.com/takayabe0505">作者代码主页</a>。阅读日期：2026年10月4日。</p>
+<h2>02 一句话概括</h2>
+<p>通过约190万受影响用户的纵向轨迹，作者发现5次灾害后的离居比例可近似为带非零尾部的指数衰减；初始离居、长期未返回和恢复速度，又与损失、收入、基础设施及周边城市可达性存在地区关联。（PDF 第2—7页）</p>
+<h2>03 研究问题</h2>
+<p>居民何时返回原居住区域？不同灾害是否共享一种恢复形态？同场灾害中，受损程度相似的地区为什么恢复快慢不同？</p>
+<p>这里“恢复”首先是原居民回到住地所在行政区域，不是恢复全部出行活动、就业或社会联系。</p>
+<h2>04 研究背景与发展路径</h2>
+<p>按原文脉络，人口迁移和灾后调查解释许多驱动因素，但缺少连续恢复时间序列；移动数据提高时间分辨率后，仍需要跨事件统一比较。本研究先寻找共同函数，再用地区属性解释其参数差异。（Introduction）</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短期撤离与长期未返回混合</td>
+<td>同时估计初始离居与长期尾部</td>
+</tr>
+<tr>
+<td>地区规模和统计口径不同</td>
+<td>使用当地政府单位LGU作共同分析层</td>
+</tr>
+<tr>
+<td>常规外出被误当撤离</td>
+<td>对照灾前离居基线</td>
+</tr>
+<tr>
+<td>只用本地损失解释恢复</td>
+<td>加入邻近大城市与富裕城市可达性</td>
+</tr>
+</tbody>
+</table>
+<p>依据：PDF 第2—5页。</p>
+<h2>06 核心思想</h2>
+<p>先确定灾前住地并固定受影响用户，计算每天仍在住地 LGU 外的人数比例。将一条曲线分成三个部分：起初离开多少、返回有多快、观察期末仍有多少未返回。随后分别解释这些参数，而不把所有恢复差异压成一个分数。（Figure 1）</p>
+<h2>07 方法总览</h2>
+<p>夜间 GPS 加权 mean-shift 识别住地 → 定义灾害受损 LGU 与居民 → 追踪160天 → 高斯过程平滑与指数拟合 → LGU 属性回归。</p>
+<p>5次事件为 Maria、Irma、东北海啸、熊本地震、鬼怒川洪水。原文称“三国”，实际研究地域为美国本土、波多黎各和日本；准确说是三个研究地域，波多黎各是美国属地。精细地区比较主要使用前4场、约200个 LGU；鬼怒川受损地区有限，未进入该部分回归。（PDF 第2—4页）</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>作用及限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固定灾前居民</td>
+<td>避免把新进入者当原居民回流，但不估计新增迁入</td>
+</tr>
+<tr>
+<td>离居比例</td>
+<td>LGU外人数／当日受影响用户，受行政边界大小影响</td>
+</tr>
+<tr>
+<td>曲线拟合</td>
+<td>描述共同时间形态，不提供唯一微观成因</td>
+</tr>
+<tr>
+<td>对数／logit回归</td>
+<td>保持时间参数为正、比例在0与1之间</td>
+</tr>
+<tr>
+<td>城际可达性</td>
+<td>将周边资源环境纳入恢复解释</td>
+</tr>
+</tbody>
+</table>
+<p>依据：PDF 第2、4—5页。</p>
+<h2>09 必要公式与符号</h2>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><msub><mi>D</mi><mn>0</mn></msub><mo>−</mo><msub><mi>D</mi><mn>160</mn></msub><mo stretchy="false">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mi mathvariant="normal">/</mi><mi>τ</mi></mrow></msup><mo>+</mo><msub><mi>D</mi><mn>160</mn></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+D(t)=(D_0-D_{160})e^{-t/\tau}+D_{160}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.188em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">160</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">t</span><span class="mord mtight">/</span><span class="mord mathnormal mtight" style="margin-right:0.1132em;">τ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">160</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">D_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>是初始离居比例，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>160</mn></msub></mrow><annotation encoding="application/x-tex">D_{160}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">160</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>代表长期尾部，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span></span></span></span></eq>为特征恢复时间。减去尾部并除以初始差后，曲线为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mi mathvariant="normal">/</mi><mi>τ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">e^{-t/\tau}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.888em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">t</span><span class="mord mtight">/</span><span class="mord mathnormal mtight" style="margin-right:0.1132em;">τ</span></span></span></span></span></span></span></span></span></span></span></span></eq>；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span></span></span></span></eq>不是“全体已返回”的天数。（PDF 第2—3页）</p>
+<p>原文 Methods 一处把差写为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>160</mn></msub><mo>−</mo><msub><mi>D</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">D_{160}-D_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">160</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>，与 Results、归一化定义及初值不符；这里采用一致的<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>0</mn></msub><mo>−</mo><msub><mi>D</mi><mn>160</mn></msub></mrow><annotation encoding="application/x-tex">D_0-D_{160}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">160</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>。严格地说公式中的尾部是渐近值，以第160天命名是近似口径。</p>
+<p>周边城市联系指标为一小时驾车可达城市的家庭数之和除以本地家庭数；它是可达机会量，不是实际社会交往强度。（PDF 第5页）</p>
+<h2>10 实证设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>图</th>
+<th>主要发现与用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>5场灾害曲线均可近似指数衰减；Maria 的<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span></span></span></span></eq>约26.8天，其他案例约3—8天</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>撤离距离分布长尾，平均离居时长随距离增长</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>地区回归的初始与长期离居拟合相关分别约0.864、0.848</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>房屋损失与初始离居的关系因事件而异；Maria 更突出收入和规模差异</td>
+</tr>
+<tr>
+<td>Figure 5</td>
+<td>对照相近背景的城市对，周边大城市可达性与更快返回相符</td>
+</tr>
+</tbody>
+</table>
+<p>相关系数衡量拟合对应，不能替代留出事件预测误差。恢复速度参数的可解释性弱于初始和长期离居比例。（PDF 第5—6页）</p>
+<h2>11 结论应当怎样理解</h2>
+<p>共同指数形式是这5场灾害中的经验近似；它不证明每个人以恒定概率返回。远距离撤离常持续较久能提供解释线索，但“长尾距离＋正相关”本身不足以数学推出唯一的指数返回过程。</p>
+<p>第160天未返回也不等于永久迁移。人口数量回归还不能保证原有就业、访问目的地和流动网络全部恢复。</p>
+<h2>12 作者明确指出的局限</h2>
+<p>作者列出缺少年龄、性别、族群、风险感知和社会关系等个人属性；灾害案例数量有限；160天追踪不足以识别永久迁移；小空间样本不足；研究聚焦原居民返回，未包含新增迁入。（PDF 第7页）</p>
+<h2>13 批判性分析</h2>
+<p>LGU 大小不同会改变“离居”的门槛，同样移动距离在小行政区容易跨界、在大行政区可能仍算返回。应同步报告地理距离或住址邻近阈值。</p>
+<p>灾后供电恢复与人口返回可能双向关联，地区回归不能仅凭系数判定设施修复促成人口回流。模型还需要独立时间留出和不同灾种外推检验。</p>
+<h2>14 可迁移的知识</h2>
+<p>把初始损失、恢复速度和残余缺口分开。先固定原居民，再研究人口返回；同时记录新增迁入，避免将净人口变化等同原群体恢复。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

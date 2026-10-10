@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>A spatiotemporal decay model of human mobility when facing large-scale crises · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-c14473946a8460">返回文献库</a><a href="https://doi.org/10.1073/pnas.2203042119" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Li et al. - A spatiotemporal decay model of human mobility when facing large-scale crises</h1>
+<p><strong>危机中移动变化的时空衰减</strong></p>
+<p><strong>核心判断：复杂的灾害响应曲线，可以先由“空间暴露＋响应随时间减弱”的低维模型解释。</strong> 这为识别额外的群体反馈提供了一个必须超越的共同外部冲击基线。</p>
+<p>阅读依据：<a href="https://doi.org/10.1073/pnas.2203042119">正式论文</a>及<a href="https://pdfs.semanticscholar.org/a856/60d78c00c52467a54ffea49dbfd00ca22b55.pdf">公开全文 PDF</a>，共7页，覆盖5幅主图与主文6个编号公式；补充材料的全部稳健性结果未复算。页码指该 PDF 文件页序。</p>
+<h2>01 基本信息</h2>
+<p>Li et al. <strong>A spatiotemporal decay model of human mobility when facing large-scale crises</strong>. <em>PNAS</em> <strong>119</strong>(33), e2203042119（2022）。</p>
+<p>作者来自苏州科技大学、Northeastern、Rensselaer、Columbia 等机构。研究类型：经验模型与跨事件检验。数据为 SafeGraph 匿名移动统计；处理代码指向 <a href="https://github.com/he-h/Covid-Mobility-Network-Analysis">Covid-Mobility-Network-Analysis</a>，原始数据受限。阅读日期：2026年10月4日。</p>
+<h2>02 一句话概括</h2>
+<p>论文把地区移动减少写成受空间加权灾害强度和时间衰减系数共同控制的双曲函数，在6类事件实例、5类指标中得到较一致的拟合关系，并用参数比较收入群体的响应差异。（PDF 第2—6页）</p>
+<h2>03 研究问题</h2>
+<p>疫情、山火、热带风暴与寒潮的持续时间和影响方式相差很大，是否仍有简洁关系描述移动偏离及恢复？如果有，哪些参数表示初始响应强度，哪些表示维持改变的时间？</p>
+<h2>04 研究背景与发展路径</h2>
+<p>按原文脉络，常态移动已有若干统计规律，危机研究却常按单一事件分别建模。本文借用行为折扣函数，把“风险越远影响越弱”和“响应随时间减弱”合并，寻找跨事件可比较的参数。（Introduction；Modified Mobility Model）</p>
+<p>这是一种现象层面的统一，不代表不同灾种具有相同心理动机或微观决策规则。</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>难点</th>
+<th>作者的处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每个地区灾害严重度不同</td>
+<td>输入空间加权风险，而非只用全国统一事件标记</td>
+</tr>
+<tr>
+<td>危机本身与人的响应同时变化</td>
+<td>分开时变灾害强度和响应系数</td>
+</tr>
+<tr>
+<td>原始曲线难以跨事件比较</td>
+<td>用正常移动水平归一化</td>
+</tr>
+<tr>
+<td>收入差异藏在复杂序列中</td>
+<td>分别比较初始参数与衰减速度</td>
+</tr>
+</tbody>
+</table>
+<p>依据：PDF 第2—5页，Figures 1–4。</p>
+<h2>06 核心思想</h2>
+<p>地区<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq>既受本地危险影响，也受周边地区危险影响；即使风险不变，居民维持移动限制的程度也可能随时间下降。因此，观测到的恢复由两条路径共同产生：危险变弱，以及同等危险下的行为响应变弱。（Figure 1）</p>
+<p>**分析：**这种分解比单纯拟合一条恢复曲线更有解释力，但响应参数仍可能吸收政策、就业与未观测因素。</p>
+<h2>07 方法总览</h2>
+<p>CBG 移动统计与灾害强度 → 聚合到县等空间尺度 → 构建空间权重<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span></span></span></span></eq> → 拟合双曲响应及时间衰减 → 比较替代函数 → 分析收入分组参数。</p>
+<p>6次事件包括 Dorian、Imelda、Saddleridge 和 Kincade 山火、COVID-19、Texas 寒潮。摘要报告覆盖超过9,000万人；这不意味着每场事件均包含同一批9,000万稳定用户。风险输入分别包括降雨、病例、PM2.5及温度下降等。（PDF 第3、6页）</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>实际职责与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">WN(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></eq></td>
+<td>汇总空间相关的灾害暴露；不是社会信息传播矩阵</td>
+</tr>
+<tr>
+<td>双曲响应</td>
+<td>把暴露转成相对移动水平，风险增大时移动下降</td>
+</tr>
+<tr>
+<td><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></eq></td>
+<td>允许同等风险对应的行为响应随时间减弱</td>
+</tr>
+<tr>
+<td>模型比较</td>
+<td>对照其他折扣形式，用 SMAPE 比较误差</td>
+</tr>
+<tr>
+<td>收入分组</td>
+<td>将3,050个县分成10组，每组305县</td>
+</tr>
+</tbody>
+</table>
+<p>没有以个体交互或强化学习产生这些参数；删除组件的效果主要通过函数对照与补充材料比较，而非微观机制消融。（PDF 第4—6页）</p>
+<h2>09 必要公式与符号</h2>
+<p>按正常移动水平统一记号，核心关系为：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><msub><mi>r</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><msub><mi>r</mi><mrow><mi>i</mi><mo separator="true">,</mo><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>k</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>N</mi><mi>j</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mfrac><mo separator="true">,</mo><mspace width="2em"/><mi>k</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>α</mi><mi>t</mi></mrow></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+\frac{r_i(t)}{r_{i,\mathrm{base}}}
+=\frac{1}{1+k(t)\sum_j w_{ij}N_j(t)},
+\qquad k(t)=k_0e^{-\alpha t}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:2.3991em;vertical-align:-0.9721em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mtight"><span class="mord mathrm mtight">base</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9721em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.4433em;vertical-align:-1.1218em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.162em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1218em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.9936em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8436em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>j</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N_j(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></eq>为地区<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span></span></span></span></eq>的灾害强度，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq>为空间影响权重；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">k_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>越大，初始移动压低越明显；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span></eq>越大，响应衰减越快。原文一般模型还含敏感度指数<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span></eq>，本研究取<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">s=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></eq>。（PDF 第2页，Equations 1–2；第6页，Equation 5）</p>
+<p>Equation 6 的 SMAPE 衡量相对拟合误差；Equations 3–4 为5天滞后的分组条件概率，用于比较病例与响应的关联，不能自行识别因果方向。</p>
+<h2>10 实证设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>主图</th>
+<th>检验内容</th>
+<th>主要支持</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure 1</td>
+<td>空间暴露与时间衰减示意</td>
+<td>明确模型假设</td>
+</tr>
+<tr>
+<td>Figure 2</td>
+<td>各危机中的外向流动实测与拟合</td>
+<td>简式能覆盖不同曲线形状</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>5种移动指标变换后的塌缩关系</td>
+<td>跨指标存在经验一致性</td>
+</tr>
+<tr>
+<td>Figure 4</td>
+<td>收入与<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>0</mn></msub><mo separator="true">,</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">k_0,\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span></eq></td>
+<td>高收入县初始减少更多、维持更久</td>
+</tr>
+<tr>
+<td>Figure 5</td>
+<td>病例与响应的滞后条件概率</td>
+<td>收入组的响应关联不同</td>
+</tr>
+</tbody>
+</table>
+<p>5个指标涉及外出活动时间、线下工作、县内流动、县外流出和流入。原文主文对第一项写成在家时间，而 Methods 实际定义为“每日总时长减在家时长”；不能将方向相反的二者混用。（PDF 第2、6页）</p>
+<h2>11 结论应当怎样理解</h2>
+<p>这些结果支持一个可压缩复杂数据的经验响应关系。论文展示了拟合、函数比较和跨情境一致性，但主文不足以把全部结果认定为严格未见事件的前瞻预测。</p>
+<p>收入分析的单位是县；不能直接推断每个低收入个体的动机。更快恢复在疫情情境下可能意味着不得不恢复线下活动，不能统一称为更好韧性。（PDF 第4—5页）</p>
+<h2>12 作者明确指出的局限</h2>
+<p>作者明确承认：手机样本覆盖和人口属性不完整；CBG 数据不能说明更细空间；反复恶化与缓解的长期危机可能不符合单调衰减；模型主要考虑地理距离，未纳入社会网络，跨社会环境推广受限。（PDF 第5页，Discussion）</p>
+<h2>13 批判性分析</h2>
+<p>当灾害暴露与政策同步改变，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></eq>可能只是残差吸收项。应检验参数能否在事先固定、仅输入新灾害强度的情况下预测后续流动；还需与“星期效应＋本地暴露＋普通恢复函数”比较。</p>
+<p>曲线塌缩也不是个体交互证据。若用同一段数据估计<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq>再把横轴写成<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>W</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">kWN</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span></eq>，关系的一致性部分来自模型构造，应额外报告独立时段误差。</p>
+<h2>14 可迁移的知识</h2>
+<p>把“危险退去”和“行为响应减弱”分开建模；同时区分外来风险、本地暴露、响应强度及恢复速度。不同任务中，同方向移动变化的社会含义可能相反。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

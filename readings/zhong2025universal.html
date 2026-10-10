@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Universal expansion of human mobility across urban scales · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-2468e77ed40b02">返回文献库</a><a href="https://doi.org/10.1038/s44284-025-00268-0" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Zhong et al. - Universal expansion of human mobility across urban scales</h1>
+<p><strong>离家越远，活动模块为何越大</strong></p>
+<p><strong>本文已直接连接个人活动模块与城市空间层级，但没有证明层级由个体之间的交互生成。</strong> 其经验规律是：离家更远的活动模块通常更大，而且增长慢于离家距离。</p>
+<h2>01 基本信息</h2>
+<p>Zhong et al.，<em>Universal expansion of human mobility across urban scales</em>，Nature Cities <strong>2</strong>, 603–607（2025），Brief Communication。机构包括 RPI、北京大学、Northeastern University、University of Miami。<a href="https://www.nature.com/articles/s44284-025-00268-0">期刊页面</a>；<a href="https://arxiv.org/html/2406.06889v4">完整作者稿v4</a>。正式版摘要、数据声明和扩展图说明可读；详细方法以下依据2025年5月20日作者稿，不能视为正式主文逐字核对。</p>
+<h2>02 一句话概括</h2>
+<p>作者把个人轨迹分成空间模块，发现模块半径随离家距离呈约0.6指数的次线性增长，并将模块映射到集体流动构造的不同层级空间单元。（作者稿图1—2）</p>
+<h2>03 研究问题</h2>
+<p>个人活动空间通常以家为锚，城市系统又具有社区、城市、区域等组织尺度。二者之间是否存在可测的数量联系：个人离家越远时，其目的地附近的活动范围如何变化，又对应哪种空间层次？</p>
+<h2>04 背景与发展路径</h2>
+<p>按论文组织，距离衰减强调“远处去得少”，个人活动空间强调“以家为锚”，中心地理论强调服务与城市的层级。本文增加另一个维度：<strong>到达远处以后，在那里活动多大范围</strong>。这与到访远处的概率不是同一个问题。</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单一回转半径混合不同活动片段</td>
+<td>把轨迹网络拆成多个模块</td>
+</tr>
+<tr>
+<td>行政层级跨国不可直接比较</td>
+<td>结合H3与集体流动构造统一层级</td>
+</tr>
+<tr>
+<td>规律可能来自单地区或单算法</td>
+<td>比较三国、不同模块方法及分组</td>
+</tr>
+<tr>
+<td>个体尺度与城市层级缺少连接</td>
+<td>用模块点位被空间单元包含的比例映射</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>将连续停留点构成有向轨迹网络，以近距离连接赋予更大权重，再用Louvain分组。对每个模块分别计算其半径和中心离家的距离。这样同一个人在家附近的细密活动与远方的较大活动片段可被分别比较。（Methods：Extracting modules）</p>
+<h2>07 方法总览</h2>
+<p>作者稿报告：美国约200万匿名用户的6个月GPS记录，塞内加尔约30万、科特迪瓦约5万用户的两周CDR。夜间20—8时最常访问位置用于识别家；美国来源为Cuebiq，非洲数据来自D4D。人口属性来自居住地对应的统计资料，不应当作每个用户已知的个人属性。</p>
+<p>流程为：位置预处理 → 轨迹网络 → 个体模块 → 半径与离家距离 → 集体流动分层 → 模块层级归属与稳健性比较。原始轨迹受共享限制，分析代码公开。（Data；Methods；Data/Code availability）</p>
+<h2>08 核心模块</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>定义与作用</th>
+<th>对解释的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>轨迹连接</td>
+<td>只连接连续停留点</td>
+<td>不同于对所有地点按空间邻近连接</td>
+</tr>
+<tr>
+<td>距离权重</td>
+<td>越近的连接权重越大</td>
+<td>提取方法本身偏向空间紧凑模块</td>
+</tr>
+<tr>
+<td>模块半径</td>
+<td>点位到模块中心的平均距离</td>
+<td>不等于最大覆盖半径或城市单元等效半径</td>
+</tr>
+<tr>
+<td>城市分层</td>
+<td>在H3分辨率上递归以集体流动聚类</td>
+<td>嵌套性部分来自构造程序</td>
+</tr>
+<tr>
+<td>模块归属</td>
+<td>找到包含至少80%模块点位的最小层级</td>
+<td>80%是分析阈值，需检验敏感性</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式</h2>
+<p>作者稿实际使用的边权为</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>w</mi><mo stretchy="false">(</mo><msub><mi>θ</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>θ</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mi>log</mi><mo>⁡</mo><mfrac><mover accent="true"><mi>d</mi><mo>^</mo></mover><mrow><mi>d</mi><mo stretchy="false">(</mo><msub><mi>θ</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>θ</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mfrac><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">
+w(\theta_i,\theta_{i+1})=\log\frac{\hat d}{d(\theta_i,\theta_{i+1})},
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.5709em;vertical-align:-0.936em;"></span><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6349em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">d</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span></span></span></span></span></eqn></section><p>不是简单的 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/</span><span class="mord mathnormal">d</span></span></span></span></eq>；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>d</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9579em;"></span><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">d</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span></span></span></span></span></span></span></eq> 为设定最大距离。核心经验关系为</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>r</mi><mi>c</mi></msub><mo>∝</mo><msubsup><mi>d</mi><mi>c</mi><mi>κ</mi></msubsup><mo separator="true">,</mo><mspace width="2em"/><mn>0</mn><mo>&lt;</mo><mi>κ</mi><mo>&lt;</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
+r_c\propto d_c^{\kappa},\qquad 0&lt;\kappa&lt;1.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∝</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.9614em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">κ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">κ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">r_c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 为模块半径，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">d_c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 为模块中心离家距离。作者稿图1报告美国约 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.61</mn><mo>±</mo><mn>0.03</mn></mrow><annotation encoding="application/x-tex">0.61\pm0.03</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.61</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.03</span></span></span></span></eq>，两组非洲数据约0.58；正文一处误差写作0.3，与图注不一致，因此此处采用图注并保留版本限定。它是群体统计标度，不规定每个人、每个距离都落在同一曲线上。（式1—2；图1）</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>检验内容</th>
+<th>能支持的结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图1</td>
+<td>三个国家的模块半径—离家距离</td>
+<td>多背景下存在次线性扩张形态</td>
+</tr>
+<tr>
+<td>图2</td>
+<td>模块映射到集体空间层级</td>
+<td>越远的模块通常对应更高层级</td>
+</tr>
+<tr>
+<td>扩展图1</td>
+<td>凸包面积替代半径</td>
+<td>模块尺度指标改变后仍有扩张趋势</td>
+</tr>
+<tr>
+<td>扩展图2—3</td>
+<td>按美国各州分组</td>
+<td>地域差异不完全破坏总体规律</td>
+</tr>
+<tr>
+<td>扩展图4</td>
+<td>按居住地人口属性分组</td>
+<td>区域人口背景分组下仍有类似关系</td>
+</tr>
+</tbody>
+</table>
+<p>作者稿还报告替代模块提取、采样比例及POI分组检查，但这些补充结果未在此逐一复现。正式版扩展图1的面积指数与作者稿数值有变化，不能混用两版本来宣称精确指数一致。</p>
+<h2>11 结论的正确解释</h2>
+<p>“模块对上城市层级”是几何与统计对应，不是个体直接感知或选择该层级的证据。空间层级通过递归划分构建，输出嵌套树不能单独证明层级自发涌现。论文给出规律与关联，没有通过行为干预识别其唯一生成机制。</p>
+<h2>12 作者明确指出的局限</h2>
+<p>作者稿结尾说明，非洲两国有限地理范围可能导致100公里以外扩张减弱；CDR依赖基站，乡村记录稀疏可能偏置指数；建议引入更多数据来源降低偏差。这些限制直接影响跨国指数比较，不能只报告“普适”。</p>
+<h2>13 批判性分析</h2>
+<p><strong>分析：</strong> 近距离高权重、模块去离群点和最少地点数都会改变模块大小分布，应与保持轨迹长度、距离序列的随机重排比较。80%包含阈值和H3尺度也可能制造稳定的层级对应。作者稿对离群点阈值的文字表述较难直接实施，复现时需结合公开代码核实，不能自行猜测。</p>
+<h2>14 可迁移知识</h2>
+<p><strong>研究启示：</strong> 个人活动范围不应只用一个全局半径概括；局部活动片段与家的相对位置都重要。必须分开模块半径、凸包面积和城市单元等效半径，不能将不同尺度量的指数直接互换。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

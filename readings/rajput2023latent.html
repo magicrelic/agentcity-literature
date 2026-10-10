@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Latent sub-structural resilience mechanisms in temporal human mobility networks during urban flooding · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-a617444be894&paper=p-d2827d169cc164">返回文献库</a><a href="https://doi.org/10.1038/s41598-023-37965-6" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Rajput et al. - Latent sub-structural resilience mechanisms in temporal human mobility networks during urban flooding</h1>
+<p><strong>全局恢复之后仍存在的局部扰动</strong></p>
+<p><strong>核心判断：同一网络可以“整体看起来恢复”，但局部连接组合、流量和稳定性仍保留灾害影响。</strong> 本文尤其强调，某种结构经常出现，不代表同一组地点能长期维持这种结构。</p>
+<p>阅读依据：<a href="https://www.nature.com/articles/s41598-023-37965-6">正式论文全文</a>，覆盖主文10幅图及方法；补充转换图未全部复算。</p>
+<h2>01 基本信息</h2>
+<p>Rajput et al. <strong>Latent sub-structural resilience mechanisms in temporal human mobility networks during urban flooding</strong>. <em>Scientific Reports</em> <strong>13</strong>, 10953（2023）。<a href="https://doi.org/10.1038/s41598-023-37965-6">DOI</a>。</p>
+<p>作者来自 Texas A&amp;M University。研究类型：时变网络的实证结构分析。对象为2017年 Harvey 洪水前后 Harris County；输入为 StreetLight 商业集计 OD，数据使用受许可约束。阅读日期：2026年10月4日。</p>
+<h2>02 一句话概括</h2>
+<p>作者追踪四节点移动子图的分布、存续、转换及流量距离，发现局部子结构可比全局网络量更晚恢复，部分稀有而平时稳定的结构受到更持久影响。（Results；Discussion）</p>
+<h2>03 研究问题</h2>
+<p>最大连通分量或网络直径回到平时值，是否足以说明日常联系恢复？如果不足，局部连接形状、同一组地点的维持时间，以及这些联系承载的流量，分别揭示什么？</p>
+<h2>04 研究背景与发展路径</h2>
+<p>按原文脉络，网络韧性研究常用全局拓扑变化刻画破坏和恢复；本文引入模体（motif）与时间追踪，观察总体统计之下的组成变化。其“潜在机制”主要指结构层面的转换规律，不是对居民认知、学习或互助动机的直接测量。（Introduction）</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>本文中的具体例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全局量可能不敏感</td>
+<td>最大分量始终包含全部500节点</td>
+</tr>
+<tr>
+<td>数量与身份被混同</td>
+<td>同类模体占比稳定，具体四节点组合仍可频繁替换</td>
+</tr>
+<tr>
+<td>拓扑与负载被混同</td>
+<td>联系形状恢复后，承载流量仍低于基线</td>
+</tr>
+</tbody>
+</table>
+<p>依据：Motif persistence；Global network properties。</p>
+<h2>06 核心思想</h2>
+<p>把四个地区看作一个小系统，记录它们之间的连边构成稠密网、链式、中心辐射等哪类形态；再保持这四个地区身份不变，追踪结构何时出现、何时转成别类或断开。这样就能把“网络有多少这种形状”和“这些具体联系活了多久”分开。（Figure 3；Methods）</p>
+<h2>07 方法总览</h2>
+<p>2017年8月1日至9月30日小时 OD → 61个日网络 → 500个合并 census tract 节点 → 双向流量阈值筛边并无向化 → 四节点抽样和持续追踪 → 与全局指标比较。</p>
+<p>原本约800个 tract 因平台查询限制合并为500个。方法采用约50次移动的边筛选门槛，正常时期约30,000条边；分布估计抽样100,000组四节点，存续分析追踪约900,000组曾经构成模体的不同组合。（Data and methods；Figure 9）</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>输出</th>
+<th>关键意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分布</td>
+<td>各类模体占比</td>
+<td>观察网络组成</td>
+</tr>
+<tr>
+<td>存续图</td>
+<td>出生、消亡与下一类型</td>
+<td>追踪具体节点组</td>
+</tr>
+<tr>
+<td>转换概率</td>
+<td>今天一类到明天另一类的比例</td>
+<td>区分保留、降级与断开</td>
+</tr>
+<tr>
+<td>模体属性</td>
+<td>边流量均值、连接距离均值的类别中位数</td>
+<td>补充拓扑之外的强度</td>
+</tr>
+<tr>
+<td>全局对照</td>
+<td>直径、密度、度、模块度、最大分量</td>
+<td>检查全局恢复是否漏报</td>
+</tr>
+</tbody>
+</table>
+<p>“出生／消亡”是图形状态变化，不是人员进入／离开；文中类比持久同调的展示，不应当理解为完整的持久同调推断。（Methods）</p>
+<h2>09 必要公式与符号</h2>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>D</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mrow><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>N</mi><mi>j</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+D_i(t)=\frac{N_i(t)}{\sum_jN_j(t)}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.5488em;vertical-align:-1.1218em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.162em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1218em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N_i(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></eq>为第<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq>类四节点模体数量，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">D_i(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></eq>为相对组成。原文对照8月前两周的同星期基线，并用7天平滑查看趋势。（Motif distribution）</p>
+<p>**分析：**某类占比上升，既可能来自该类增多，也可能来自其他类别减少；必须同时看数量、总边数和流量，不能只凭占比证明某类行为增加。</p>
+<h2>10 实证设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>主要证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figures 1–2</td>
+<td>洪水改变模体组成；最稠密类型显著下降，部分影响延续数周</td>
+</tr>
+<tr>
+<td>Figure 3</td>
+<td>稠密模体平时更易保持或转成近似稠密类型；链和辐射型可频繁断开</td>
+</tr>
+<tr>
+<td>Figures 4–5</td>
+<td>模体连接距离在冲击时下降，最高约40%，之后恢复</td>
+</tr>
+<tr>
+<td>Figures 6–7</td>
+<td>流量变化与结构变化不一致；部分流量到9月底仍约低10%</td>
+</tr>
+<tr>
+<td>Figure 8</td>
+<td>最大分量完全不变；直径更快回归，无法覆盖长期局部损失</td>
+</tr>
+<tr>
+<td>Figures 9–10</td>
+<td>节点合并的空间分布与6种连通四节点结构，加符号类0</td>
+</tr>
+</tbody>
+</table>
+<p>正文将类型5定义为链、类型6定义为辐射；Figure 2 图注个别编号描述相反。本解读按方法及讨论中一致的定义，不据错误编号推导行为含义。</p>
+<h2>11 结论应当怎样理解</h2>
+<p>支持的是测量层面的“恢复不同步”：全局拓扑、局部结构和流量不同时返回基线。保持三角形或稠密结构，说明边组合有连续性，不证明居民主动保护联系。</p>
+<p>链型增加可能关联撤离或救援，但作者明确说需要更细轨迹才能确认。更长的残留影响也可能只是持续道路积水、设施关闭或住房损害，而非学习记忆。（Results，Motif distribution）</p>
+<h2>12 作者明确指出的局限</h2>
+<p>作者承认无向四节点结构牺牲方向信息；未纳入 POI、用地、人口密度、年龄等节点属性及道路网络；合并空间单元和流量阈值可能掩盖细节，特别是远距离弱联系。进一步解释需要地理分布与人口属性。（Discussion；Data description）</p>
+<h2>13 批判性分析</h2>
+<p>固定阈值下，流量整体减少会机械地删除边，从而改变模体。应与“原网络统一缩流”或保持出入边际的随机网络比较，检查是否存在超过总量缩减的结构重排。</p>
+<p>节点合并会创造或消灭三角联系；抽样虽支持组成稳定，却不能自动保证稀有模体的时序置信度。应对空间尺度、流量阈值和重复抽样共同做敏感性检验。</p>
+<h2>14 可迁移的知识</h2>
+<p>至少区分四种稳定性：数量稳定、占比稳定、成员稳定、流量稳定。网络分析中的“小尺度”首先指节点组合大小，不能直接称为地理小生活圈。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>The universal visitation law of human mobility · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-6048f550ee3178">返回文献库</a><a href="https://doi.org/10.1038/s41586-021-03480-9" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Schläpfer et al. - The universal visitation law of human mobility</h1>
+<p><strong>距离与访问频率如何共同约束城市流动</strong></p>
+<p><strong>同一地点吸引的访客密度，近似随“居住距离×访问频率”的平方倒数下降。</strong> 论文进一步用累积访问反馈解释吸引力在空间上的不均匀分布；这比单纯的独立轨迹生成多了一层集体机制。</p>
+<h2>01 基本信息</h2>
+<p>Schläpfer et al.，<em>The universal visitation law of human mobility</em>，Nature <strong>593</strong>, 522–527（2021），DOI：10.1038/s41586-021-03480-9。机构包括MIT Senseable City Lab、Santa Fe Institute等。类型：经验规律、生成模型与流量预测。<a href="https://doi.org/10.1038/s41586-021-03480-9">期刊</a>；<a href="https://senseable.mit.edu/papers/pdf/20210527_Schlapfer-etal_UniversalVisitation_Nature.pdf">MIT保存的全文、方法及补充材料</a>。下文主要依据该合集中的作者稿，重点覆盖主文图1—5与Methods；补充材料未逐图展开。</p>
+<h2>02 一句话概括</h2>
+<p>以目的地为中心，将距离和重访频率联合起来，可压缩不同城市的访客分布；在个体探索—返回基础上加入偏向热门方向的探索，又能生成空间吸引力聚类。（图1—4）</p>
+<h2>03 研究问题</h2>
+<p>为什么有的地方远客多、有的近客多？高频访客是否遵守与偶访者相同的空间规律？一种微观移动机制能否同时解释这些访问谱、热点分布与聚合OD？</p>
+<h2>04 背景与发展路径</h2>
+<p>原文指出，重力与辐射模型通常关注两个区域之间的聚合流量；个体轨迹模型关注探索和习惯。本文把“多少不同的人、从多远处、以多高频率访问目的地”作为中间层，连接个人历史和城市吸引力。</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>难点</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>访问人次掩盖重复访客</td>
+<td>同时保留访客人数与访问频率</td>
+</tr>
+<tr>
+<td>远处环带天然面积更大</td>
+<td>用来源环带面积归一化</td>
+</tr>
+<tr>
+<td>城市规模和活跃程度不同</td>
+<td>用目的地吸引力参数吸收幅度差异</td>
+</tr>
+<tr>
+<td>独立移动难形成异质热点</td>
+<td>引入共享的累积访问方向偏好</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>先识别经验访问谱，再检验微观生成机制。原始探索—优先返回模型（EPR）能生成主要距离—频率规律，却不能生成明显的吸引力异质性和聚类。作者因此提出PEPR：个人返回仍依赖自己的历史，但探索方向倾向于群体已大量访问的区域。（主文微观模型段，合集PDF第10—12、26页）</p>
+<h2>07 方法总览</h2>
+<p>五组手机资料来自波士顿、葡萄牙、塞内加尔、科特迪瓦和新加坡，合计超过800万匿名用户、30亿定位记录；观察时长从两周到八个月不等。波士顿、新加坡划为边长500米网格，其余为1公里网格。默认停留至少1小时才计访问，频率按访问该网格的不同日期计算；夜间最常到访网格作为家。（Methods，PDF第28—31页）</p>
+<h2>08 核心模块</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>操作</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>访问谱</td>
+<td>按家到目的地距离、访问频率分组</td>
+<td>面积归一化访客密度</td>
+</tr>
+<tr>
+<td>吸引力</td>
+<td>在标度关系中估计幅度</td>
+<td>各目的地的 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\mu_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq></td>
+</tr>
+<tr>
+<td>空间聚类</td>
+<td>对吸引力阈值化后连接邻接网格</td>
+<td>聚类面积与排名关系</td>
+</tr>
+<tr>
+<td>PEPR</td>
+<td>个体习惯返回＋群体访问方向反馈</td>
+<td>访问谱及热点异质性</td>
+</tr>
+<tr>
+<td>OD推算</td>
+<td>结合人口密度与频率积分</td>
+<td>人次、独立访客和频率分组流量</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与实际机制</h2>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>ρ</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>r</mi><mo separator="true">,</mo><mi>f</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>r</mi><mo separator="true">,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><mrow><mi>A</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>≈</mo><mfrac><msub><mi>μ</mi><mi>i</mi></msub><mrow><mo stretchy="false">(</mo><mi>r</mi><mi>f</mi><msup><mo stretchy="false">)</mo><mi>η</mi></msup></mrow></mfrac><mo separator="true">,</mo><mspace width="2em"/><mi>η</mi><mo>≈</mo><mn>2.</mn></mrow><annotation encoding="application/x-tex">
+\rho_i(r,f)=\frac{N_i(r,f)}{A(r)}\approx\frac{\mu_i}{(rf)^\eta},\qquad \eta\approx2.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">ρ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0436em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.5904em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">η</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">η</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>≈</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">A(r)\approx2\pi r\Delta r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span></eq> 是来源环带面积。逆平方规律说的是 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ρ</span></span></span></span></eq>，不能直接套在未归一化人数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span></eq> 上；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span></eq> 为家到目的地的距离，不是每一次实际路径长度。（式1，PDF第8页）</p>
+<p>PEPR保留 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">w</mi></mrow></msub><mo>=</mo><mi>σ</mi><msup><mi>S</mi><mrow><mo>−</mo><mi>γ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P_{\rm new}=\sigma S^{-\gamma}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight" style="margin-right:0.0139em;">new</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7713em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight" style="margin-right:0.0556em;">γ</span></span></span></span></span></span></span></span></span></span></span></span></eq>，取 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>0.6</mn><mo separator="true">,</mo><mi>γ</mi><mo>=</mo><mn>0.21</mn></mrow><annotation encoding="application/x-tex">\sigma=0.6,\gamma=0.21</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">0.6</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0556em;">γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.21</span></span></span></span></eq>；返回概率按个人累计访问次数分配。探索距离按重尾分布抽取，探索方向满足</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>θ</mi><mo separator="true">;</mo><mi>R</mi><mo separator="true">,</mo><mi>ν</mi><mo stretchy="false">)</mo><mo>∝</mo><msub><mover accent="true"><mi>d</mi><mo stretchy="true">~</mo></mover><mi>i</mi></msub><mo stretchy="false">(</mo><mi>θ</mi><mo separator="true">;</mo><mi>R</mi><msup><mo stretchy="false">)</mo><mi>ν</mi></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+P(\theta;R,\nu)\propto\widetilde d_i(\theta;R)^\nu.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0637em;">ν</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∝</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.2044em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9544em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">d</span></span><span class="svg-align" style="width:calc(100% - 0.3333em);margin-left:0.3333em;top:-3.6944em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.26em;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="0.26em" viewBox="0 0 600 260" preserveAspectRatio="none"><path d="M200 55.538c-77 0-168 73.953-177 73.953-3 0-7
+-2.175-9-5.437L2 97c-1-2-2-4-2-6 0-4 2-7 5-9l20-12C116 12 171 0 207 0c86 0
+ 114 68 191 68 78 0 168-68 177-68 4 0 7 2 9 5l12 19c1 2.175 2 4.35 2 6.525 0
+ 4.35-2 7.613-5 9.788l-19 13.05c-92 63.077-116.937 75.308-183 76.128
+-68.267.847-113-73.952-191-73.952z"/></svg></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0637em;">ν</span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>d</mi><mo stretchy="true">~</mo></mover></mrow><annotation encoding="application/x-tex">\widetilde d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9544em;"></span><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9544em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">d</span></span><span class="svg-align" style="width:calc(100% - 0.3333em);margin-left:0.3333em;top:-3.6944em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.26em;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="0.26em" viewBox="0 0 600 260" preserveAspectRatio="none"><path d="M200 55.538c-77 0-168 73.953-177 73.953-3 0-7
+-2.175-9-5.437L2 97c-1-2-2-4-2-6 0-4 2-7 5-9l20-12C116 12 171 0 207 0c86 0
+ 114 68 191 68 78 0 168-68 177-68 4 0 7 2 9 5l12 19c1 2.175 2 4.35 2 6.525 0
+ 4.35-2 7.613-5 9.788l-19 13.05c-92 63.077-116.937 75.308-183 76.128
+-68.267.847-113-73.952-191-73.952z"/></svg></span></span></span></span></span></span></span></span></span></eq> 汇集<strong>所有个体</strong>在半径 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span></span></span></span></eq>、相应方向内累积的有效出行距离；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi></mrow><annotation encoding="application/x-tex">\nu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0637em;">ν</span></span></span></span></eq> 控制热门方向的强化。模拟按个体依次生成完整轨迹，并不是所有人同步更新。（图4、Methods）</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>支持内容</th>
+<th>判断边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图1</td>
+<td>多地区访问谱近似按 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">rf</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span></span></span></span></eq> 折叠</td>
+<td>有限距离、频率和采样范围内的规律</td>
+</tr>
+<tr>
+<td>图2</td>
+<td>每位访客平均有效出行距离近似空间不变</td>
+<td>不等于实际时间、费用处处相同</td>
+</tr>
+<tr>
+<td>图3</td>
+<td>吸引力热点呈空间聚类与面积排名规律</td>
+<td>阈值和空间网格参与定义结果</td>
+</tr>
+<tr>
+<td>图4</td>
+<td>PEPR同时生成访问谱与聚类统计</td>
+<td><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo separator="true">,</mo><mi>ν</mi></mrow><annotation encoding="application/x-tex">R,\nu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0637em;">ν</span></span></span></span></eq> 经扫描选择以匹配聚类分布</td>
+</tr>
+<tr>
+<td>图5</td>
+<td>与重力、辐射模型比较OD及访客分组</td>
+<td>各模型输入和校准方式不同</td>
+</tr>
+</tbody>
+</table>
+<p>重力模型参数由回归拟合；访问律模型由人口密度与边界访问假设估计吸引力。相似度用SSI衡量。因此结果是指定资料和输入条件下的性能比较，不是无条件证明某类模型永远优越。（Methods式2—3）</p>
+<h2>11 结论的正确解释</h2>
+<p>“普适”表示跨这些地区与数据形式的统计一致性，不表示每个地点、任意距离都严格服从指数2。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">rf</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span></span></span></span></eq> 是有效移动量，不是瞬时速度。论文的交通近优讨论涉及给定访客集合的吸引点位置，不能直接推出整个城市交通系统达到全局最优。</p>
+<h2>12 作者明确指出的局限</h2>
+<p>作者说明PEPR未纳入河流、地形及特定资源位置，不能复现真实城市的具体吸引力地图；低密度基站地区限制空间分析。Methods另明确记录缺失使实际家访频率不能直接取每天一次，必须按资料采样设定。补充分析检验若干网格与停留阈值，不能消除所有样本偏差。</p>
+<h2>13 批判性分析</h2>
+<p><strong>分析：</strong> 访问律是统计约束，不唯一确定微观机制。PEPR匹配聚类时调过参数，因此聚类不是完全独立的外部预测。共享历史场没有显式容量惩罚，可能强化热门地点却无法回答过载后是否分流；模拟按个体依次生成，也需核查顺序效应。</p>
+<h2>14 可迁移知识</h2>
+<p><strong>研究启示：</strong> 同时检验人次、独立人数与重访频率，比只比较OD总量更能识别错误机制。共享环境反馈可由被动留下的访问痕迹实现，不要求面对面交流；“没有显式沟通”不能等同“个体完全独立”。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

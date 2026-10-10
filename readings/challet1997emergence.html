@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Emergence of cooperation and organization in an evolutionary game · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-5ef9d6e943d4&paper=p-fb1ce01ba5d99a">返回文献库</a><a href="https://doi.org/10.1016/S0378-4371%2897%2900419-6" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Challet et al. - Emergence of cooperation and organization in an evolutionary game</h1>
+<p><strong>少数者博弈：自利选择怎样形成分散协调</strong></p>
+<h2>01 基本信息</h2>
+<p>Challet et al.，<em>Emergence of cooperation and organization in an evolutionary game</em>，<strong>Physica A 246, 407–418（1997）</strong>，DOI：<a href="https://doi.org/10.1016/S0378-4371(97)00419-6">10.1016/S0378-4371(97)00419-6</a>。作者机构为瑞士弗里堡大学。依据<a href="https://arxiv.org/html/adap-org/9708006v2">作者公开稿 v2</a>，提交版本日期1997-09-03；期刊排版版未逐字比对。类型：机制模型；关键词：少数者博弈、有限记忆、虚拟得分、演化选择。阅读日期：2026-10-04。全文含 Table 1 与 Figs. 1–11；未见独立代码或数据仓库。</p>
+<h2>02 一句话概括</h2>
+<p>一群只依据有限公共历史、选择当前最佳策略的自利个体，在“少数一方获胜”的负反馈下，可以形成某种资源分配组织，但更多策略和更同质的群体也可能使表现恶化。</p>
+<h2>03 研究问题</h2>
+<p>不假设完美理性、不施加中央分配，个体试错是否能产生有利于整体的协调？关键不是大家选同一个方向，而是人数接近均衡，使更多个体获益。论文把“个体成功”和“集体资源利用”放进同一可计算环境，而不预先指定合作协议。〔原文：模型定义；Conclusions〕</p>
+<h2>04 研究背景与发展路径</h2>
+<p>作者从 Arthur 的 El Farol 问题及有限理性出发，用二元、对称的游戏压缩现实资源竞争。与演绎式求均衡相比，重点变为：给定可执行的适应规则，人口状态如何在重复博弈中演化。这里的发展路线依原文引言整理，并非对全部博弈论史的独立评价。本文之后的“少数者博弈”理论不能倒写成本篇已经完成的解析结论。〔原文：引言；Conclusions〕</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>可观察表现</th>
+<th>原文的处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>好策略被很多人采用便可能失效</td>
+<td>扎堆、资源浪费</td>
+<td>收益由当轮全体选择共同决定</td>
+</tr>
+<tr>
+<td>个体无法存储全部历史</td>
+<td>仅记最近 M 位胜方</td>
+<td>以有限策略表近似归纳决策</td>
+</tr>
+<tr>
+<td>适应可能同质化</td>
+<td>克隆最佳者后大幅波动</td>
+<td>比较有无策略变异</td>
+</tr>
+</tbody>
+</table>
+<p>〔原文：Table 1；Figs. 1、9–10〕</p>
+<h2>06 核心思想</h2>
+<p>收益具有反拥挤性：选择的价值不是物品固定属性，而取决于多少人同时选择它。适应者又共享同一胜负历史，因此没有直接交流也会发生相关行动。分析：这提供了最简的“选择—环境负载—新收益—再选择”闭环；集体组织并不要求利他动机，也不意味着形成共识。</p>
+<h2>07 方法总览</h2>
+<p>N 为奇数，每人每轮选 A 或 B，少数一方每人得1分。玩家只观察最近 M 轮哪个选项获胜，不知道准确到访人数。每人随机持有 S 个固定策略，每个策略把 M 位历史映射成下一次选择。所有策略均累计“如果当时使用它会获得多少分”的虚拟得分，玩家采用得分最高者；实际收益另计。扩展实验加入收益函数变化、淘汰和克隆、策略变异以及记忆长度演化。〔原文：模型定义；Table 1；Figs. 4、9–11〕</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>实际作用</th>
+<th>证据和注意点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>二元公共历史</td>
+<td>提供共享信号</td>
+<td>Table 1；信息本身会协调行动</td>
+</tr>
+<tr>
+<td>有限策略集合</td>
+<td>约束可计算选择</td>
+<td>Figs. 2、5；M 与 S 是不同能力维度</td>
+</tr>
+<tr>
+<td>虚拟评分</td>
+<td>更新未执行策略的相对吸引力</td>
+<td>Figs. 7–8；不是只学实际经验</td>
+</tr>
+<tr>
+<td>少数收益</td>
+<td>把全体行动转成竞争结果</td>
+<td>Figs. 3–4；改变收益会改变组织</td>
+</tr>
+<tr>
+<td>克隆与变异</td>
+<td>群体层面的演化更新</td>
+<td>Figs. 9–11；不等同单人学习</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式与直觉</h2>
+<p>M 位历史有 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>M</mi></msup></mrow><annotation encoding="application/x-tex">2^M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8413em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.109em;">M</span></span></span></span></span></span></span></span></span></span></span></eq> 种状态，每种状态可选0或1，因此所有确定性策略的数量为</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mn>2</mn><msup><mn>2</mn><mi>M</mi></msup></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+2^{2^M}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0564em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.0564em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9191em;"><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.109em;">M</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>每人只抽取其中 S 个；不能把策略全集数量误作每人的计算开销。若 A 方有 A(t) 人，当轮获奖人数为</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>W</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>min</mi><mo>⁡</mo><mo stretchy="false">{</mo><mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>N</mi><mo>−</mo><mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+W(t)=\min\{A(t),N-A(t)\}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mopen">{</span><span class="mord mathnormal">A</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)}</span><span class="mord">.</span></span></span></span></span></eqn></section><p>第二式是对原文游戏规则的等价表达。最大获奖人数为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">(N-1)/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/2</span></span></span></span></eq>，人数偏离均分越远，单位收益版本的总收益越低。另一个实验把赢家单人收益改为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mi>x</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">N/x-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mord">/</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq> 的近似整数值，x 为赢家人数，使更小的少数更有吸引力，福利目标随之改变。〔原文：Table 1；Fig. 4 前后〕</p>
+<h2>10 实验设计与证据链</h2>
+<p>主要为合成人口数值实验，典型 N=1001，没有人类受试者或真实城市校准。</p>
+<table>
+<thead>
+<tr>
+<th>图表</th>
+<th>比较与结果</th>
+<th>论证用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table 1；Figs. 1–3</td>
+<td>策略例子、M=6/8/10的到访序列、不同记忆个体收益与人数分布</td>
+<td>有限记忆可产生不同集体波动和个体优势</td>
+</tr>
+<tr>
+<td>Fig. 4</td>
+<td>改变少数方奖励，出现双峰人数分布</td>
+<td>宏观结构依赖收益制度</td>
+</tr>
+<tr>
+<td>Figs. 5–6</td>
+<td>增加 S 和统计切换频率</td>
+<td>更多备选策略未必改善收益</td>
+</tr>
+<tr>
+<td>Figs. 7–8</td>
+<td>个体累积收益与所有策略虚拟收益</td>
+<td>策略持有、使用时机和个体表现不能混同</td>
+</tr>
+<tr>
+<td>Figs. 9–10</td>
+<td>淘汰最差、克隆最佳，有无变异</td>
+<td>保留差异能降低波动，同质复制可能失效</td>
+</tr>
+<tr>
+<td>Fig. 11</td>
+<td>允许记忆长度中性增减，比较 N=101/1001</td>
+<td>演化可增加平均记忆，但饱和值依规则</td>
+</tr>
+</tbody>
+</table>
+<p>不能将这些特定参数例子概括为“所有少数者博弈中记忆越长越好”。〔原文：Figs. 1–11〕</p>
+<h2>11 结论的正确解释</h2>
+<p>“合作”在本文主要指涌现的资源使用效果，不代表玩家相互承诺或交换信息。“智能”被具象为记忆和策略能力，既不是现代模型评测分数，也不是人类一般智力。结果证明这组规则能够产生组织，未证明真实市场或城市必然遵循这些规则。公开稿有明显文字笔误，例如比较大小人口的一句话重复写N=1001，应依Fig. 11的101与1001识别设计。</p>
+<h2>12 作者明确承认的局限</h2>
+<p>作者指出该模型过度简化、只是回答其提出的一系列经济行为问题的开端，更现实收益和游戏结构可能产生新问题。正文还说明记忆增益会因当前二元信息结构而饱和，演化饱和值受繁殖间隔影响；这些是作者明确讨论的设定依赖，不应当作通用常数。〔原文：Fig. 2 后；Fig. 11 后；Conclusions〕</p>
+<h2>13 批判性分析</h2>
+<p>分析：虚拟评分默认个人行动变化不会改变反事实胜方，大群体时或可近似，临界人数附近则值得检验。只报告低波动还不能评价公平：长期由同一批人胜出，整体资源利用仍可能很好。可同时记录个体收益分布、赢家更替率及改变自身选择后的反事实收益。演化替换又改变了人口组成，不能把所有改进解释为同一批个体学会协调。</p>
+<h2>14 可迁移的知识</h2>
+<p>资源协调与意见一致是两种不同任务：匹配游戏奖励一致，容量竞争往往奖励分散。另一个可迁移原则是把记忆 M、备选策略数 S、更新阈值和人口替换分别控制，不能用一个“智能等级”概括所有改动。</p>
+<h2>15 与现有研究的联系</h2>
+<p><a href="https://doi.org/10.1103/PhysRevE.99.032302">Zhang等（2019）</a>延续二元资源竞争，但用Q表替代固定策略集合；这使其成为适应性比较的后续基线。对城市研究而言，可把负反馈迁移为目的地容量或服务等待成本，但需加入距离、异质需求和可达性，不能直接把两侧对称均分作为城市最优分配。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Field theory for recurrent mobility · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#section=s-7f01c87f5bc1&paper=p-821a58ca186db7">返回文献库</a><a href="https://doi.org/10.1038/s41467-019-11841-2" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Mazzoli et al. - Field theory for recurrent mobility</h1>
+<p><strong>把通勤OD转成城市吸引场</strong></p>
+<p><strong>本文的场描述“居民总体倾向往哪边工作”，不是道路上的即时速度场。</strong> 势场提供了识别吸引中心与城市联系区域的办法，也增加了检验出行分布模型的方向性维度。</p>
+<h2>01 基本信息</h2>
+<p>Mazzoli et al.，<em>Field theory for recurrent mobility</em>，Nature Communications <strong>10</strong>, 3895（2019）。主要机构：IFISC、Irstea。类型：方法与经验场性质研究。<a href="https://doi.org/10.1038/s41467-019-11841-2">期刊入口</a>；<a href="https://ifisc.uib-csic.es/~jramasco/text/field_theory.pdf">作者站公开排版全文</a>。以下页码为该10页PDF页序；覆盖主文、图1—7与方法，补充材料未全面复核。</p>
+<h2>02 一句话概括</h2>
+<p>作者把通勤OD向量化，发现所分析城市的介观场近似无旋，可用势函数压缩表示；指数距离衰减的重力模型较好复现了方向、通量与势场。（PDF第2—7页）</p>
+<h2>03 研究问题</h2>
+<p>两种模型即使产生类似的出行距离分布，也可能把人送往不同方向。能否把OD组织成可比较的空间场，检验城市吸引结构，而不仅逐条比较流量误差？</p>
+<h2>04 背景与发展路径</h2>
+<p>按原文，重力模型显式规定距离阻抗，机会模型通过周边机会分布间接作用于距离。此前比较多集中于OD大小或距离分布；本文新增每个地区的合成方向、闭合边界通量与势场。（PDF第2页 Introduction）</p>
+<h2>05 核心问题及其表现</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>本文对应方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OD矩阵难直观看出城市吸引方向</td>
+<td>将各目的地流量按方向求向量和</td>
+</tr>
+<tr>
+<td>单看距离分布难分辨模型</td>
+<td>同时比较向量角度和跨边界通量</td>
+</tr>
+<tr>
+<td>相邻城市的功能边界不清楚</td>
+<td>用势函数极小值与吸引盆地表征</td>
+</tr>
+</tbody>
+</table>
+<p>最后一项是方法用途，并未完成一套唯一、无需阈值的行政边界划定。（PDF第5—8页）</p>
+<h2>06 核心思想</h2>
+<p>对每个居住网格，把指向各工作网格的单位方向向量按人数加权相加，再除以该网格通勤者数。相反方向会抵消，因此合成向量很小可能意味着方向平衡，并不意味着没人出行。分析关注的是集计后的方向结构。（式1；图1）</p>
+<h2>07 方法总览</h2>
+<p>研究利用2015年3月至2017年10月地理标注 Twitter，在伦敦、巴黎、洛杉矶、东京、里约及英国城市群推断居住与工作地，汇成1平方公里网格OD；部分城市另用英法人口普查验证。</p>
+<p>Twitter 按工作日8—20时与其余时段的最常出现位置推断工作、居住地。产生的是时间窗口内的典型通勤需求，不是每天实际观察到的全部通勤次数。随后构造向量场、检查散度定理与旋度，比较模型，并数值重建势场。（PDF第8页 Methods）</p>
+<h2>08 核心模块</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>作用</th>
+<th>关键假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>家—工作识别</td>
+<td>从位置记录构建经常性OD</td>
+<td>固定日间/夜间规则适合多数通勤者</td>
+</tr>
+<tr>
+<td>向量聚合与人均归一化</td>
+<td>区分规模与方向</td>
+<td>OD端点足以定义合成方向</td>
+</tr>
+<tr>
+<td>散度/旋度检验</td>
+<td>判断连续场工具的适用性</td>
+<td>网格差分和噪声不会制造主导结构</td>
+</tr>
+<tr>
+<td>模型对照</td>
+<td>检验方向及通量可否复现</td>
+<td>明确输入约束和参数校准对象</td>
+</tr>
+<tr>
+<td>势场重建</td>
+<td>由向量得到标量吸引格局</td>
+<td>经验场可近似视作无旋</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式</h2>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi mathvariant="bold">W</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>m</mi><mi>i</mi></msub></mfrac><munder><mo>∑</mo><mrow><mi>j</mi><mo mathvariant="normal">≠</mo><mi>i</mi></mrow></munder><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mover accent="true"><mi mathvariant="bold">u</mi><mo>^</mo></mover><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo separator="true">,</mo><mspace width="2em"/><msub><mi>m</mi><mi>i</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+\mathbf W_i=\frac{1}{m_i}\sum_{j\ne i}T_{ij}\hat{\mathbf u}_{ij},\qquad m_i=\sum_jT_{ij}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8361em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.016em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.016em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.7597em;vertical-align:-1.4382em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span><span class="mrel mtight"><span class="mrel mtight"><span class="mord katex-vbox mtight"><span class="katex-thinbox mtight"><span class="rlap mtight"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="katex-inner"><span class="mord mtight"><span class="mrel mtight"></span></span></span><span class="katex-fix"></span></span></span></span></span><span class="mspace nobreak mtight"></span><span class="mrel mtight">=</span></span><span class="mord mathnormal mtight">i</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4382em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7079em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathbf">u</span></span><span style="top:-3.0134em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.4638em;vertical-align:-1.4138em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4138em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">T_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 为居住在 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq>、工作于 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span></span></span></span></eq> 的人数，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi mathvariant="bold">u</mi><mo>^</mo></mover><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\hat{\mathbf u}_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.994em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7079em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathbf">u</span></span><span style="top:-3.0134em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 是方向单位向量；分母包含网格内部通勤者。（PDF第2页，式1）</p>
+<p>在近似无旋条件下，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">W</mi><mo>=</mo><mo>−</mo><mi mathvariant="normal">∇</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">\mathbf W=-\nabla V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6861em;"></span><span class="mord mathbf" style="margin-right:0.016em;">W</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">∇</span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span></span></span></span></eq>。这里 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span></span></span></span></eq> 是根据通勤场构造的标量，并不是人的心理效用或实际物理引力。主文重力对照为</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>k</mi><msub><mi>m</mi><mi>i</mi></msub><msub><mi>m</mi><mi>j</mi></msub><mi>exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mo>−</mo><msub><mi>d</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi mathvariant="normal">/</mi><msub><mi>d</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">
+T_{ij}=k m_i m_j\exp(-d_{ij}/d_0),
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">exp</span><span class="mopen">(</span><span class="mord">−</span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo separator="true">,</mo><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">k,d_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 通过经验通量曲线校准。因此其优良拟合不等于未经校准的跨城市预测。（PDF第4页 Models；第8页式9）</p>
+<h2>10 实验设计与证据链</h2>
+<table>
+<thead>
+<tr>
+<th>主图</th>
+<th>检验内容与结果</th>
+<th>证据边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图1</td>
+<td>OD转换与伦敦、巴黎的方向场</td>
+<td>是端点合成方向，非真实路线</td>
+</tr>
+<tr>
+<td>图2</td>
+<td>边界积分与内部散度积分较一致</td>
+<td>支持介观连续表示的数值一致性</td>
+</tr>
+<tr>
+<td>图3</td>
+<td>经验旋度与随机方向对照</td>
+<td>作者据此支持近似无旋，非逐点旋度严格为零</td>
+</tr>
+<tr>
+<td>图4—5</td>
+<td>指数重力模型更好复现通量及角度</td>
+<td>属于本文数据、约束和校准下比较</td>
+</tr>
+<tr>
+<td>图6</td>
+<td>势场对比相关平方约0.98（伦敦）、0.93（巴黎）</td>
+<td>势场吻合不保证逐项OD完整恢复</td>
+</tr>
+<tr>
+<td>图7</td>
+<td>多城市等势线与多个吸引中心</td>
+<td>展示空间中心与盆地，不证明多层嵌套</td>
+</tr>
+</tbody>
+</table>
+<p>上述图位于PDF第3—7页；正文无主表。</p>
+<h2>11 结论的正确解释</h2>
+<p>场是对OD的压缩，多个不同OD矩阵可以产生相同向量和，因此不能从势场唯一还原所有目的地流量。无旋说的是这种介观合成场，不禁止个体绕行或道路环线。重力模型优于所比较辐射模型的结论也不能泛化到全部移动类型、指标和输入条件。（PDF第2—6页）</p>
+<h2>12 作者明确指出的局限</h2>
+<p>作者说明研究集中在通勤，其他更长或更短距离移动是否具有相同性质仍待探索。Twitter 家—工作判定可能误分夜班人员；人口普查栅格化则引入另一种空间不确定性。方法还明确将没有居住通勤者的网格场设为零，这不同于处处定义的经典连续物理场。（PDF第7—8页）</p>
+<h2>13 批判性分析</h2>
+<p><strong>分析：</strong> 数值散度定理的一致性，主要验证场计算和粗粒化表现，不能单独证明特定行为机制。无旋证据还应检验网格尺度、缺失单元、平滑及边界处理，并用保留空间相关的替代场对照。由势阱定义盆地时需报告阈值敏感性，避免将选择的等势线当作唯一真实城市边界。</p>
+<h2>14 可迁移知识</h2>
+<p><strong>研究启示：</strong> 模型评估应保留方向；距离分布吻合可能掩盖目的地偏差。将高维OD压缩为可解释场可以帮助比较，但必须同时记录压缩损失。用字段的数学类比组织数据，不意味着已经发现与物理场相同的生成原因。</p>
+</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>
