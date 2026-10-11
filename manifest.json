@@ -1,5 +1,5 @@
 {
-  "version": "12b4f4c425e607706f7600cf22f76c341afbc383c5a95815f33086707f9961df",
+  "version": "586a86f335fcf0d21bbe74ee185bccdc8556fdaa9a954fee1df9b591a639bbed",
   "catalogVersion": "dcf48f1abf69e87aa0cfd3a10a0aba10c1d20d615c393a338cdb6def1c893059",
   "readingVersion": "cef02b50b428abdc2be6f6c06350c563d68372dc8928cf521ec4ef1da355f4c2",
   "papers": 178,
@@ -82,6 +82,7 @@
     "assets/style.css": "8eb747ae03f10b1149c3f3ae3047d9e5c09c7eb1b69c3c5a26420c8d74beaba4",
     "catalog.json": "dcf48f1abf69e87aa0cfd3a10a0aba10c1d20d615c393a338cdb6def1c893059",
     "catalog.schema.json": "8f9fbc9581faf1bfb01b516d5f122f18ffe8a9442064a5ed7e4f2f7ddfe345e7",
+    "downloads/agentcity-literature-2026-10-11-a8cecbf567b7.epub": "4130a9f944426480862551866765240d7b035dd3dc7ded9d77af010fb308cf58",
     "index.html": "275cd702b08a50eaddd13fed41038dff04dff9002ad00188dac7664eb698b371",
     "reading-cards.json": "cef02b50b428abdc2be6f6c06350c563d68372dc8928cf521ec4ef1da355f4c2",
     "readings/ahlfeldt2015economics.html": "32ca708fdbe85181f7c43b9e0f39250d2cc60af146887b9273630ea06a320ddd",
