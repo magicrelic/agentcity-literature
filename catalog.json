@@ -27,6 +27,7 @@
         "p-1cab18c64f255d",
         "p-fd311a53f01a6d",
         "p-fb1ce01ba5d99a",
+        "p-9b34fbe94d5532",
         "p-0973989224e55e",
         "p-927b987bcafd9f",
         "p-1231e138b3e7b9",
@@ -36,7 +37,9 @@
         "p-92beb433376903",
         "p-d8d0e78246825a",
         "p-cb3c05b33165e5",
+        "p-4c933e5e68ad8c",
         "p-81f32e0b41173a",
+        "p-4ae1482f649cdb",
         "p-ea13c6abbe92cb",
         "p-ba3e8fdd391dea",
         "p-c052dbe87b9b33",
@@ -49,11 +52,14 @@
         "p-0cfbe42b13d82d",
         "p-dc4a6f8086da48",
         "p-5cc41cdf26eaf1",
+        "p-c8178fc552a36c",
+        "p-88357203f43dff",
         "p-6f787ecc91cce6",
         "p-0ecd26d0a6c94e",
         "p-ce7326738ca2a3",
         "p-ab9898e594ee14",
         "p-f3f55b2aa62ea1",
+        "p-d1789c45dd0067",
         "p-0e1efe6bfcaa0b",
         "p-25874be5fe713c",
         "p-87731059078047",
@@ -69,15 +75,18 @@
         "p-4fd16b9e277e4b",
         "p-cfca7cd9a963e6",
         "p-1e110688d4db72",
+        "p-68856f50c447b4",
         "p-4f90d2d88f48f3",
         "p-e25848985b1d28",
         "p-3201f7e7920957",
         "p-f5f86e2cc67d05",
+        "p-79c6b221bd5d5e",
         "p-8ae94d79b81871",
         "p-78425bfba7b080",
         "p-f67deb3654bb3a",
         "p-db3e8858f740ee",
-        "p-69c014e7725135"
+        "p-69c014e7725135",
+        "p-db15a72f9c49a0"
       ]
     },
     {
@@ -23684,6 +23693,1004 @@
             "publication.issn",
             "identifiers.doi",
             "links.original",
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-79c6b221bd5d5e": {
+      "citationKey": "wilson1971renormalization",
+      "title": "Renormalization Group and Critical Phenomena. I. Renormalization Group and the Kadanoff Scaling Picture",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Wilson",
+            "given": "Kenneth G.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review B",
+        "kind": "journal-article",
+        "year": 1971,
+        "publisher": "American Physical Society (APS)",
+        "volume": "4",
+        "issue": "9",
+        "pages": "3174-3183",
+        "articleNumber": null,
+        "publishedOnline": "1971-11-01",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0556-2805"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrevb.4.3174",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "重整化群与临界普适性",
+        "question": "重整化群如何解释临界标度关系，并区分粗粒化后保留和衰减的变量？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrevb.4.3174",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "1971-11-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103/physrevb.4.3174",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.issn",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "openalex-abstract",
+          "provider": "OpenAlex indexed abstract",
+          "url": "https://api.openalex.org/works/W2246296081",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-d1789c45dd0067": {
+      "citationKey": "machta2013parameter",
+      "title": "Parameter Space Compression Underlies Emergent Theories and Predictive Models",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Machta",
+            "given": "Benjamin B.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, NY 14853, USA.",
+              "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ 08854, USA."
+            ]
+          },
+          {
+            "family": "Chachra",
+            "given": "Ricky",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, NY 14853, USA."
+            ]
+          },
+          {
+            "family": "Transtrum",
+            "given": "Mark K.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, NY 14853, USA.",
+              "Department of Physics and Astronomy, Brigham Young University, Provo, UT 84602, USA."
+            ]
+          },
+          {
+            "family": "Sethna",
+            "given": "James P.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, NY 14853, USA."
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Science",
+        "kind": "journal-article",
+        "year": 2013,
+        "publisher": "American Association for the Advancement of Science (AAAS)",
+        "volume": "342",
+        "issue": "6158",
+        "pages": "604-607",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2013-11",
+        "posted": null,
+        "issn": [
+          "0036-8075",
+          "1095-9203"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1126/science.1238723",
+        "arxiv": "1303.6738",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "参数空间压缩与涌现有效理论",
+        "question": "复杂微观模型为何能产生简单且可预测的宏观理论，观测尺度如何改变参数组合的重要性？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1126/science.1238723",
+        "arxiv": "https://arxiv.org/abs/1303.6738v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1126/science.1238723",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedPrint",
+            "publication.issn"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/1303.6738v1",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ]
+    },
+    "p-4ae1482f649cdb": {
+      "citationKey": "grinstein1985statistical",
+      "title": "Statistical Mechanics of Probabilistic Cellular Automata",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Grinstein",
+            "given": "G.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Jayaprakash",
+            "given": "C.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "He",
+            "given": "Yu",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review Letters",
+        "kind": "journal-article",
+        "year": 1985,
+        "publisher": "American Physical Society (APS)",
+        "volume": "55",
+        "issue": "23",
+        "pages": "2527-2530",
+        "articleNumber": null,
+        "publishedOnline": "1985-12-02",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0031-9007"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrevlett.55.2527",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "非平衡更新规则与临界普适性",
+        "question": "概率元胞自动机在何种条件下具有哈密顿描述，其对称性如何关联动力学 Ising 模型的临界普适类？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrevlett.55.2527",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "1985-12-02"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103/physrevlett.55.2527",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.issn",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "openalex-abstract",
+          "provider": "OpenAlex indexed abstract",
+          "url": "https://api.openalex.org/works/W1989562908",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-68856f50c447b4": {
+      "citationKey": "toner1995long",
+      "title": "Long-Range Order in a Two-Dimensional Dynamical XY Model: How Birds Fly Together",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Toner",
+            "given": "John",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Tu",
+            "given": "Yuhai",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review Letters",
+        "kind": "journal-article",
+        "year": 1995,
+        "publisher": "American Physical Society (APS)",
+        "volume": "75",
+        "issue": "23",
+        "pages": "4326-4329",
+        "articleNumber": null,
+        "publishedOnline": "1995-12-04",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0031-9007",
+          "1079-7114"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrevlett.75.4326",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "集体运动的连续理论与普适性",
+        "question": "不同微观运动规则能否由共同的非平衡连续动力学描述，并在二维产生长程有序？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrevlett.75.4326",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "1995-12-04"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103/physrevlett.75.4326",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.issn",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "openalex-abstract",
+          "provider": "OpenAlex indexed abstract",
+          "url": "https://api.openalex.org/works/W2063134919",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        },
+        {
+          "id": "openalex-title",
+          "provider": "OpenAlex",
+          "url": "https://api.openalex.org/works/W2063134919",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title"
+          ]
+        }
+      ]
+    },
+    "p-9b34fbe94d5532": {
+      "citationKey": "challet2000statistical",
+      "title": "Statistical Mechanics of Systems with Heterogeneous Agents: Minority Games",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Challet",
+            "given": "Damien",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Marsili",
+            "given": "Matteo",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Zecchina",
+            "given": "Riccardo",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review Letters",
+        "kind": "journal-article",
+        "year": 2000,
+        "publisher": "American Physical Society (APS)",
+        "volume": "84",
+        "issue": "8",
+        "pages": "1824-1827",
+        "articleNumber": null,
+        "publishedOnline": "2000-02-21",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0031-9007",
+          "1079-7114"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrevlett.84.1824",
+        "arxiv": "cond-mat/9904392",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "异质适应性智能体与资源竞争",
+        "question": "异质智能体的竞争稳态如何由统计物理描述，信息结构与学习方式如何改变集体状态？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrevlett.84.1824",
+        "arxiv": "https://arxiv.org/abs/cond-mat/9904392v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2000-02-21"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103/physrevlett.84.1824",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.issn",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/cond-mat/9904392v2",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ]
+    },
+    "p-db15a72f9c49a0": {
+      "citationKey": "zwanzig1961memory",
+      "title": "Memory Effects in Irreversible Thermodynamics",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Zwanzig",
+            "given": "Robert",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review",
+        "kind": "journal-article",
+        "year": 1961,
+        "publisher": "American Physical Society (APS)",
+        "volume": "124",
+        "issue": "4",
+        "pages": "983-992",
+        "articleNumber": null,
+        "publishedOnline": "1961-11-15",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0031-899X"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrev.124.983",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "宏观动力学中的记忆效应",
+        "question": "如何从微观统计力学导出具有记忆效应的宏观输运方程，瞬时响应近似何时成立？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrev.124.983",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "1961-11-15"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103/physrev.124.983",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.issn",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "openalex-abstract",
+          "provider": "OpenAlex indexed abstract",
+          "url": "https://api.openalex.org/works/W2084333107",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-4c933e5e68ad8c": {
+      "citationKey": "givon2004extracting",
+      "title": "Extracting macroscopic dynamics: model problems and algorithms",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Givon",
+            "given": "Dror",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Kupferman",
+            "given": "Raz",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Stuart",
+            "given": "Andrew",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nonlinearity",
+        "kind": "journal-article",
+        "year": 2004,
+        "publisher": "IOP Publishing",
+        "volume": "17",
+        "issue": "6",
+        "pages": "R55-R127",
+        "articleNumber": null,
+        "publishedOnline": "2004-08-21",
+        "publishedPrint": "2004-11-01",
+        "posted": null,
+        "issn": [
+          "0951-7715",
+          "1361-6544"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1088/0951-7715/17/6/r01",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "多尺度系统的有效宏观动力学",
+        "question": "如何从确定性或随机微观系统提取低维宏观动力学，并建立相应的数学分析与计算方法？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1088/0951-7715/17/6/r01",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1088/0951-7715/17/6/r01",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn"
+          ]
+        },
+        {
+          "id": "openalex-abstract",
+          "provider": "OpenAlex indexed abstract",
+          "url": "https://api.openalex.org/works/W2156603435",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-c8178fc552a36c": {
+      "citationKey": "jung2025kinetic",
+      "title": "Kinetic Theory of Decentralized Learning for Smart Active Matter",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Jung",
+            "given": "Gerhard",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6739-1603",
+            "affiliations": [
+              "Université Grenoble Alpes",
+              "LIPhy"
+            ]
+          },
+          {
+            "family": "Ozawa",
+            "given": "Misaki",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-4603-8878",
+            "affiliations": [
+              "Université Grenoble Alpes",
+              "LIPhy"
+            ]
+          },
+          {
+            "family": "Bertin",
+            "given": "Eric",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-7354-6755",
+            "affiliations": [
+              "Université Grenoble Alpes",
+              "LIPhy"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review Letters",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "American Physical Society (APS)",
+        "volume": "134",
+        "issue": "24",
+        "pages": null,
+        "articleNumber": "248302",
+        "publishedOnline": "2025-06-18",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0031-9007",
+          "1079-7114"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/5m44-kwhv",
+        "arxiv": "2501.03948",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "适应性智能体的集体学习动力学",
+        "question": "智能体局部交换策略的去中心化学习，能否从不同微观控制模型导出可预测的策略分布动力学？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/5m44-kwhv",
+        "arxiv": "https://arxiv.org/abs/2501.03948v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2025-06-18"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103/5m44-kwhv",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "identifiers.doi",
+            "links.original",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.issn",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/2501.03948v2",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ]
+    },
+    "p-88357203f43dff": {
+      "citationKey": "jung2026theory",
+      "title": "Theory of collective learning in populations of adaptive agents",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Jung",
+            "given": "Gerhard",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Asnacios",
+            "given": "Johann",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ozawa",
+            "given": "Misaki",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Dauchot",
+            "given": "Olivier",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Bertin",
+            "given": "Eric",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v1）",
+        "kind": "preprint",
+        "year": 2026,
+        "publisher": "arXiv",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2026-07-02",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2607.02171",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "集体学习的有效理论与记忆约化",
+        "question": "个体运动、记忆与策略交换如何共同决定集体学习，何时能以有效奖励和少数策略统计量闭合描述？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2607.02171v1",
+        "arxiv": "https://arxiv.org/abs/2607.02171v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv author manuscript and metadata",
+          "url": "https://arxiv.org/abs/2607.02171v1",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.original",
+            "links.arxiv",
+            "access.original",
             "research.direction",
             "research.question"
           ]
