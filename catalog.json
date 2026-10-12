@@ -41,14 +41,20 @@
         "p-ba3e8fdd391dea",
         "p-c052dbe87b9b33",
         "p-5a53b2982f1e73",
+        "p-8faf1f4ace3247",
         "p-07e44c4aadc448",
         "p-c2ad25bf624a81",
         "p-48bdeb33bcb81c",
+        "p-644d7c29f0501b",
         "p-0cfbe42b13d82d",
+        "p-dc4a6f8086da48",
         "p-5cc41cdf26eaf1",
+        "p-6f787ecc91cce6",
+        "p-0ecd26d0a6c94e",
         "p-ce7326738ca2a3",
         "p-ab9898e594ee14",
         "p-f3f55b2aa62ea1",
+        "p-0e1efe6bfcaa0b",
         "p-25874be5fe713c",
         "p-87731059078047",
         "p-2f52a2879ba49e",
@@ -23036,6 +23042,658 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        }
+      ]
+    },
+    "p-8faf1f4ace3247": {
+      "citationKey": "helbing2001traffic",
+      "title": "Traffic and related self-driven many-particle systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Helbing",
+            "given": "Dirk",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Reviews of Modern Physics",
+        "kind": "journal-article",
+        "year": 2001,
+        "publisher": "American Physical Society (APS)",
+        "volume": "73",
+        "issue": "4",
+        "pages": "1067-1141",
+        "articleNumber": null,
+        "publishedOnline": "2001-12-07",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0034-6861",
+          "1539-0756"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/revmodphys.73.1067",
+        "arxiv": "cond-mat/0012229",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "非平衡自驱多体系统",
+        "question": "统计物理与非线性动力学如何连接个体运动、集体拥堵和跨尺度流动？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/revmodphys.73.1067",
+        "arxiv": "https://arxiv.org/abs/cond-mat/0012229v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103%2Frevmodphys.73.1067",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/cond-mat/0012229v2",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-6f787ecc91cce6": {
+      "citationKey": "kivela2014multilayer",
+      "title": "Multilayer networks",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Kivela",
+            "given": "M.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Arenas",
+            "given": "A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Barthelemy",
+            "given": "M.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Gleeson",
+            "given": "J. P.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Moreno",
+            "given": "Y.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Porter",
+            "given": "M. A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Complex Networks",
+        "kind": "journal-article",
+        "year": 2014,
+        "publisher": "Oxford University Press (OUP)",
+        "volume": "2",
+        "issue": "3",
+        "pages": "203-271",
+        "articleNumber": null,
+        "publishedOnline": "2014-07-14",
+        "publishedPrint": "2014-09-01",
+        "posted": null,
+        "issn": [
+          "2051-1310",
+          "2051-1329"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1093/comnet/cnu016",
+        "arxiv": "1309.7233",
+        "arxivVersion": 4
+      },
+      "research": {
+        "direction": "多层网络表示",
+        "question": "不同类型的关系、跨层连接与时间层如何统一表示，并支持网络结构和过程分析？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1093/comnet/cnu016",
+        "arxiv": "https://arxiv.org/abs/1309.7233v4",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1093%2Fcomnet%2Fcnu016",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/1309.7233v4",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-644d7c29f0501b": {
+      "citationKey": "holme2012temporal",
+      "title": "Temporal networks",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Holme",
+            "given": "Petter",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Saramäki",
+            "given": "Jari",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physics Reports",
+        "kind": "journal-article",
+        "year": 2012,
+        "publisher": "Elsevier BV",
+        "volume": "519",
+        "issue": "3",
+        "pages": "97-125",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2012-10",
+        "posted": null,
+        "issn": [
+          "0370-1573"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.physrep.2012.03.001",
+        "arxiv": "1108.1780",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "时序网络与动态可达性",
+        "question": "接触的时间顺序和持续时间如何改变网络传播、可达性与动力学？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.physrep.2012.03.001",
+        "arxiv": "https://arxiv.org/abs/1108.1780v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.physrep.2012.03.001",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/1108.1780v2",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-0e1efe6bfcaa0b": {
+      "citationKey": "marchetti2013hydrodynamics",
+      "title": "Hydrodynamics of soft active matter",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Marchetti",
+            "given": "M. C.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Joanny",
+            "given": "J. F.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ramaswamy",
+            "given": "S.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Liverpool",
+            "given": "T. B.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Prost",
+            "given": "J.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Rao",
+            "given": "Madan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Simha",
+            "given": "R. Aditi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Reviews of Modern Physics",
+        "kind": "journal-article",
+        "year": 2013,
+        "publisher": "American Physical Society (APS)",
+        "volume": "85",
+        "issue": "3",
+        "pages": "1143-1189",
+        "articleNumber": null,
+        "publishedOnline": "2013-07-19",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0034-6861",
+          "1539-0756"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/revmodphys.85.1143",
+        "arxiv": "1207.2929",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "有源物质与集体流体动力学",
+        "question": "局部能量驱动及相互作用如何产生有源物质的宏观有序、失稳和流动？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/revmodphys.85.1143",
+        "arxiv": "https://arxiv.org/abs/1207.2929v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1103%2Frevmodphys.85.1143",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original"
+          ]
+        },
+        {
+          "id": "author-manuscript",
+          "provider": "arXiv author manuscript",
+          "url": "https://arxiv.org/abs/1207.2929v1",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-0ecd26d0a6c94e": {
+      "citationKey": "levin1998ecosystems",
+      "title": "Ecosystems and the Biosphere as Complex Adaptive Systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Levin",
+            "given": "Simon A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Ecosystems",
+        "kind": "journal-article",
+        "year": 1998,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "1",
+        "issue": "5",
+        "pages": "431-436",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1998-09-01",
+        "posted": null,
+        "issn": [
+          "1432-9840",
+          "1435-0629"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/s100219900037",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "复杂适应系统",
+        "question": "局部相互作用和适应选择如何形成生态系统的宏观组织、历史依赖及多种动力学结果？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/s100219900037",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [],
+        "sourceIds": [
+          "publisher"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1007%2Fs100219900037",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original"
+          ]
+        },
+        {
+          "id": "publisher",
+          "provider": "Publisher abstract",
+          "url": "https://doi.org/10.1007/s100219900037",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-dc4a6f8086da48": {
+      "citationKey": "jackson1957networks",
+      "title": "Networks of Waiting Lines",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Jackson",
+            "given": "James R.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of California, Los Angeles, California"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Operations Research",
+        "kind": "journal-article",
+        "year": 1957,
+        "publisher": "Institute for Operations Research and the Management Sciences (INFORMS)",
+        "volume": "5",
+        "issue": "4",
+        "pages": "518-521",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1957-08",
+        "posted": null,
+        "issn": [
+          "0030-364X",
+          "1526-5463"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1287/opre.5.4.518",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "排队网络与随机资源流动",
+        "question": "离散随机流通过相互连接的服务系统时，如何刻画网络负载和稳态排队性质？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1287/opre.5.4.518",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1287%2Fopre.5.4.518",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original"
+          ]
+        },
+        {
+          "id": "publisher",
+          "provider": "Publisher abstract",
+          "url": "https://doi.org/10.1287/opre.5.4.518",
+          "retrievedOn": "2026-10-12",
+          "fields": [
+            "research.direction",
+            "research.question"
           ]
         }
       ]
