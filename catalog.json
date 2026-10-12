@@ -23683,15 +23683,7 @@
             "publication.publishedPrint",
             "publication.issn",
             "identifiers.doi",
-            "links.original"
-          ]
-        },
-        {
-          "id": "publisher",
-          "provider": "Publisher abstract",
-          "url": "https://doi.org/10.1287/opre.5.4.518",
-          "retrievedOn": "2026-10-12",
-          "fields": [
+            "links.original",
             "research.direction",
             "research.question"
           ]
