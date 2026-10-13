@@ -164,6 +164,7 @@
         "p-gao2025survey",
         "p-geng2026scaling",
         "p-guo2024large",
+        "p-kotseruba2020years",
         "p-li2024survey",
         "p-qi2026beyond",
         "p-sumers2023cognitive",
@@ -28500,6 +28501,140 @@
           "retrievedOn": "2026-10-13",
           "fields": [
             "links.code"
+          ]
+        }
+      ]
+    },
+    "p-kotseruba2020years": {
+      "citationKey": "kotseruba2020years",
+      "title": "40 years of cognitive architectures: core cognitive abilities and practical applications",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Kotseruba",
+            "given": "Iuliia",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-5490-9805",
+            "affiliations": []
+          },
+          {
+            "family": "Tsotsos",
+            "given": "John K.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-8621-9147",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Artificial Intelligence Review",
+        "kind": "journal-article",
+        "year": 2020,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "53",
+        "issue": "1",
+        "pages": "17-94",
+        "articleNumber": null,
+        "publishedOnline": "2018-07-28",
+        "publishedPrint": "2020-01",
+        "posted": "2016-10-27",
+        "issn": [
+          "0269-2821",
+          "1573-7462"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/s10462-018-9646-y",
+        "arxiv": "1610.08602",
+        "arxivVersion": 3
+      },
+      "research": {
+        "direction": "认知架构与动作选择机制",
+        "question": "认知架构如何组织感知、动作选择、记忆与学习，规划和动态动作选择等机制如何组合？",
+        "indexTerms": [
+          "认知架构",
+          "规划",
+          "动态动作选择",
+          "记忆"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/s10462-018-9646-y",
+        "arxiv": "https://arxiv.org/abs/1610.08602v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2018-07-28"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2018-07-28"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1007%2Fs10462-018-9646-y",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/1610.08602v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher article, Section 6",
+          "url": "https://link.springer.com/article/10.1007/s10462-018-9646-y",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "access.original"
           ]
         }
       ]
