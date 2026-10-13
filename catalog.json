@@ -154,6 +154,30 @@
       ]
     },
     {
+      "id": "s-agent-architectures-multi-agent-systems",
+      "title": "智能体架构与多智能体系统",
+      "description": "智能体决策与认知架构、多智能体学习与协调，以及语言智能体的协作和自演化机制。",
+      "paperIds": [
+        "p-arunkumar2026agentic",
+        "p-balke2014how",
+        "p-cao2025survey",
+        "p-gao2025survey",
+        "p-geng2026scaling",
+        "p-guo2024large",
+        "p-li2024survey",
+        "p-qi2026beyond",
+        "p-sumers2023cognitive",
+        "p-sun2025multi",
+        "p-tran2025multi",
+        "p-wooldridge1995intelligent",
+        "p-yan2025beyond",
+        "p-zhang2021multi",
+        "p-zhang2025landscape",
+        "p-zhou2027analysis",
+        "p-zhu2024survey"
+      ]
+    },
+    {
       "id": "s-cc4665b62d22",
       "title": "LLM 智能体与生成式模拟",
       "description": "大语言模型智能体的行为生成、群体模拟、混合建模与真实性评估。",
@@ -161,16 +185,22 @@
         "p-36f253690ad9bb",
         "p-d6d74fb842e48f",
         "p-65cf8bd1e00a08",
+        "p-gao2024large",
         "p-7a4664cae0a3f3",
         "p-5e798704d1df8e",
         "p-a88c9dafa2874a",
         "p-2665b4fea8615a",
+        "p-mou2026individual",
+        "p-padilla2026survey",
         "p-83d820b3c4161c",
         "p-d1b9fe80ce88f8",
         "p-47fbd6a8087a51",
+        "p-piao2026agentsociety2",
         "p-2b3d90b68fce19",
         "p-9354fddc69fed8",
         "p-2c26be7edde2b9",
+        "p-vezhnevets2023generative",
+        "p-vezhnevets2025multi",
         "p-b53beea3db39bc",
         "p-cdba08b6b40b06",
         "p-efad42578155bc",
@@ -14910,7 +14940,7 @@
         "articleNumber": null,
         "publishedOnline": null,
         "publishedPrint": "2026-07",
-        "posted": null,
+        "posted": "2025-02-12",
         "issn": [
           "3135-3169"
         ],
@@ -14918,8 +14948,8 @@
       },
       "identifiers": {
         "doi": "10.26599/IF.2026.9710004",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2502.08691",
+        "arxivVersion": 2
       },
       "research": {
         "direction": "大规模生成式模拟",
@@ -14928,9 +14958,14 @@
       },
       "links": {
         "original": "https://doi.org/10.26599/IF.2026.9710004",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2502.08691v2",
         "data": [],
-        "code": [],
+        "code": [
+          {
+            "label": "AgentSociety",
+            "url": "https://github.com/tsinghua-fib-lab/agentsociety"
+          }
+        ],
         "supplement": []
       },
       "access": {
@@ -14970,6 +15005,27 @@
             "publication.publisher",
             "publication.publishedPrint",
             "publication.issn"
+          ]
+        },
+        {
+          "id": "repository-20261013",
+          "provider": "Official project repository",
+          "url": "https://github.com/tsinghua-fib-lab/agentsociety",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "links.code"
+          ]
+        },
+        {
+          "id": "arxiv-20261013",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2502.08691v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.posted"
           ]
         }
       ]
@@ -16412,7 +16468,12 @@
         "original": "https://arxiv.org/abs/2411.11581v1",
         "arxiv": null,
         "data": [],
-        "code": [],
+        "code": [
+          {
+            "label": "OASIS",
+            "url": "https://github.com/camel-ai/oasis"
+          }
+        ],
         "supplement": []
       },
       "access": {
@@ -16453,6 +16514,15 @@
           "fields": [
             "authors",
             "publication.posted"
+          ]
+        },
+        {
+          "id": "repository-20261013",
+          "provider": "Official project repository",
+          "url": "https://github.com/camel-ai/oasis",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "links.code"
           ]
         }
       ]
@@ -24693,6 +24763,3743 @@
             "access.original",
             "research.direction",
             "research.question"
+          ]
+        }
+      ]
+    },
+    "p-wooldridge1995intelligent": {
+      "citationKey": "wooldridge1995intelligent",
+      "title": "Intelligent agents: theory and practice",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Wooldridge",
+            "given": "Michael",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Jennings",
+            "given": "Nicholas R.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "The Knowledge Engineering Review",
+        "kind": "journal-article",
+        "year": 1995,
+        "publisher": "Maximum Academic Press",
+        "volume": "10",
+        "issue": "2",
+        "pages": "115-152",
+        "articleNumber": null,
+        "publishedOnline": "2009-07-07",
+        "publishedPrint": "1995-06",
+        "posted": null,
+        "issn": [
+          "0269-8889",
+          "1469-8005"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1017/s0269888900008122",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "智能体概念与架构",
+        "question": "智能体的自主性、反应性与主动性如何定义，审慎式、反应式及混合架构如何实现这些性质？",
+        "indexTerms": [
+          "智能体概念与架构"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1017/s0269888900008122",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.cambridge.org/core/terms",
+            "appliesTo": "unspecified",
+            "startDate": "2009-07-07"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1017%2Fs0269888900008122",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/ker95.pdf",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-balke2014how": {
+      "citationKey": "balke2014how",
+      "title": "How Do Agents Make Decisions? A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Balke",
+            "given": "Tina",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Gilbert",
+            "given": "Nigel",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Artificial Societies and Social Simulation",
+        "kind": "journal-article",
+        "year": 2014,
+        "publisher": "Journal of Artificial Societies and Social Simulation",
+        "volume": "17",
+        "issue": "4",
+        "pages": null,
+        "articleNumber": "13",
+        "publishedOnline": "2014",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1460-7425"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.18564/jasss.2687",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "智能体决策架构综述",
+        "question": "社会仿真中的智能体决策架构如何表达认知、情感、社会关系、规范与学习机制？",
+        "indexTerms": [
+          "智能体决策架构综述"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.18564/jasss.2687",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.18564%2Fjasss.2687",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://www.jasss.org/17/4/13.html",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-zhang2021multi": {
+      "citationKey": "zhang2021multi",
+      "title": "Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Zhang",
+            "given": "Kaiqing",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Yang",
+            "given": "Zhuoran",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Başar",
+            "given": "Tamer",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Handbook of Reinforcement Learning and Control（专著章节）",
+        "kind": "book-chapter",
+        "year": 2021,
+        "publisher": "Springer International Publishing",
+        "volume": null,
+        "issue": null,
+        "pages": "321-384",
+        "articleNumber": null,
+        "publishedOnline": "2021-06-24",
+        "publishedPrint": "2021",
+        "posted": "2019-11-24",
+        "issn": [
+          "2198-4182",
+          "2198-4190"
+        ],
+        "isbn": [
+          "9783030609894",
+          "9783030609900"
+        ]
+      },
+      "identifiers": {
+        "doi": "10.1007/978-3-030-60990-0_12",
+        "arxiv": "1911.10635",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "多智能体强化学习理论",
+        "question": "合作、竞争与一般和环境中的多智能体强化学习具有哪些理论框架、算法与主要挑战？",
+        "indexTerms": [
+          "多智能体强化学习理论"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/978-3-030-60990-0_12",
+        "arxiv": "https://arxiv.org/abs/1911.10635v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.springer.com/tdm",
+            "appliesTo": "tdm",
+            "startDate": "2021-01-01"
+          },
+          {
+            "url": "https://www.springer.com/tdm",
+            "appliesTo": "vor",
+            "startDate": "2021-01-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/1911.10635v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1007%2F978-3-030-60990-0_12",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/1911.10635v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-sumers2023cognitive": {
+      "citationKey": "sumers2023cognitive",
+      "title": "Cognitive Architectures for Language Agents",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Sumers",
+            "given": "Theodore R.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Shunyu Yao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Karthik Narasimhan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Thomas L. Griffiths",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v3）",
+        "kind": "preprint",
+        "year": 2023,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2023-09-05",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2309.02427",
+        "arxivVersion": 3
+      },
+      "research": {
+        "direction": "语言智能体认知架构",
+        "question": "如何用记忆、内部与外部动作及决策循环统一描述和比较语言智能体？",
+        "indexTerms": [
+          "语言智能体认知架构"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2309.02427v3",
+        "arxiv": "https://arxiv.org/abs/2309.02427v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2309.02427v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2309.02427v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-zhou2027analysis": {
+      "citationKey": "zhou2027analysis",
+      "title": "Analysis of architecture options for foundation-model-based agents: A taxonomy and decision model",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Zhou",
+            "given": "Jingwen",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-4055-162X",
+            "affiliations": []
+          },
+          {
+            "family": "Lu",
+            "given": "Qinghua",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Chen",
+            "given": "Jieshan",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2700-7478",
+            "affiliations": []
+          },
+          {
+            "family": "Zhu",
+            "given": "Liming",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5839-3765",
+            "affiliations": []
+          },
+          {
+            "family": "Xu",
+            "given": "Xiwei",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2273-1862",
+            "affiliations": []
+          },
+          {
+            "family": "Xing",
+            "given": "Zhenchang",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Harrer",
+            "given": "Stefan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Systems and Software",
+        "kind": "journal-article",
+        "year": 2027,
+        "publisher": "Elsevier BV",
+        "volume": "243",
+        "issue": null,
+        "pages": null,
+        "articleNumber": "113109",
+        "publishedOnline": null,
+        "publishedPrint": "2027-01",
+        "posted": "2024-08-06",
+        "issn": [
+          "0164-1212"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.jss.2026.113109",
+        "arxiv": "2408.02920",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "基础模型智能体架构选项",
+        "question": "基础模型智能体有哪些可组合的架构设计选项，这些选择如何影响系统功能与质量权衡？",
+        "indexTerms": [
+          "基础模型智能体架构选项"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.jss.2026.113109",
+        "arxiv": "https://arxiv.org/abs/2408.02920v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2027-01-01"
+          },
+          {
+            "url": "https://www.elsevier.com/legal/tdmrep-license",
+            "appliesTo": "tdm",
+            "startDate": "2027-01-01"
+          },
+          {
+            "url": "http://creativecommons.org/licenses/by/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2026-10-02"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2408.02920v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jss.2026.113109",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2408.02920v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-arunkumar2026agentic": {
+      "citationKey": "arunkumar2026agentic",
+      "title": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": null,
+            "given": null,
+            "literal": "Arunkumar V",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Gangadharan G. R.",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Rajkumar Buyya",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v1）",
+        "kind": "preprint",
+        "year": 2026,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2026-01-18",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2601.12560",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "Agentic AI 架构分类",
+        "question": "如何从感知、认知、规划、行动、工具与协作机制描述和评估语言模型智能体？",
+        "indexTerms": [
+          "Agentic AI 架构分类"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2601.12560v1",
+        "arxiv": "https://arxiv.org/abs/2601.12560v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2601.12560v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2601.12560v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-guo2024large": {
+      "citationKey": "guo2024large",
+      "title": "Large Language Model Based Multi-agents: A Survey of Progress and Challenges",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Guo",
+            "given": "Taicheng",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Notre Dame"
+            ]
+          },
+          {
+            "family": "Chen",
+            "given": "Xiuying",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "KAUST"
+            ]
+          },
+          {
+            "family": "Wang",
+            "given": "Yaqi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Southern University of Science and Technology"
+            ]
+          },
+          {
+            "family": "Chang",
+            "given": "Ruidi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Independent Researcher"
+            ]
+          },
+          {
+            "family": "Pei",
+            "given": "Shichao",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Massachusetts Boston"
+            ]
+          },
+          {
+            "family": "Chawla",
+            "given": "Nitesh V.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Notre Dame"
+            ]
+          },
+          {
+            "family": "Wiest",
+            "given": "Olaf",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Notre Dame"
+            ]
+          },
+          {
+            "family": "Zhang",
+            "given": "Xiangliang",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Notre Dame"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "IJCAI 2024（会议）",
+        "kind": "conference-paper",
+        "year": 2024,
+        "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+        "volume": null,
+        "issue": null,
+        "pages": "8048-8057",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2024-08",
+        "posted": "2024-01-21",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.24963/ijcai.2024/890",
+        "arxiv": "2402.01680",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "LLM 多智能体系统综述",
+        "question": "基于大语言模型的多智能体系统如何组织个体、通信和协作，并应用于问题求解与仿真？",
+        "indexTerms": [
+          "LLM 多智能体系统综述"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.24963/ijcai.2024/890",
+        "arxiv": "https://arxiv.org/abs/2402.01680v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2402.01680v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.24963%2Fijcai.2024%2F890",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://www.ijcai.org/proceedings/2024/0890.pdf",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-li2024survey": {
+      "citationKey": "li2024survey",
+      "title": "A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Li",
+            "given": "Xinyi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Wang",
+            "given": "Sai",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Zeng",
+            "given": "Siqi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Wu",
+            "given": "Yu",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Yang",
+            "given": "Yi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Vicinagearth",
+        "kind": "journal-article",
+        "year": 2024,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "1",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "9",
+        "publishedOnline": "2024-10-08",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "3005-060X"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/s44336-024-00009-2",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "多智能体工作流与基础设施",
+        "question": "LLM 多智能体系统的工作流、基础设施与协作实现有哪些共同结构和挑战？",
+        "indexTerms": [
+          "多智能体工作流与基础设施"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/s44336-024-00009-2",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2024-10-08"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2024-10-08"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1007%2Fs44336-024-00009-2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://link.springer.com/article/10.1007/s44336-024-00009-2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-tran2025multi": {
+      "citationKey": "tran2025multi",
+      "title": "Multi-Agent Collaboration Mechanisms: A Survey of LLMs",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Tran",
+            "given": "Khanh-Tung",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Dung Dao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Minh-Duong Nguyen",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Quoc-Viet Pham",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Barry O'Sullivan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Hoang D. Nguyen",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v1）",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2025-01-10",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2501.06322",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "多智能体协作机制",
+        "question": "LLM 多智能体的合作关系、协作协议、通信结构和静态或动态编排如何分类与比较？",
+        "indexTerms": [
+          "多智能体协作机制"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2501.06322v1",
+        "arxiv": "https://arxiv.org/abs/2501.06322v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2501.06322v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2501.06322v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-yan2025beyond": {
+      "citationKey": "yan2025beyond",
+      "title": "Beyond Self-Talk: A Communication-Centric Survey of LLM-Based Multi-Agent Systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Yan",
+            "given": "Bingyu",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zhibo Zhou",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Litian Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Lian Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Ziyi Zhou",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Dezhuang Miao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zhoujun Li",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Chaozhuo Li",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xiaoming Zhang",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v3）",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2025-02-20",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2502.14321",
+        "arxivVersion": 3
+      },
+      "research": {
+        "direction": "多智能体通信架构",
+        "question": "通信架构、目标、协议与内部信息交换如何塑造 LLM 多智能体系统？",
+        "indexTerms": [
+          "多智能体通信架构"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2502.14321v3",
+        "arxiv": "https://arxiv.org/abs/2502.14321v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2502.14321v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2502.14321v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-qi2026beyond": {
+      "citationKey": "qi2026beyond",
+      "title": "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Qi",
+            "given": "Shihao",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jie Ma",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Rui Xing",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Wei Guo",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xiao Huang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zhitao Gao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jianhao Deng",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jun Liu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Lingling Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Bifan Wei",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Boqian Yang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Pinghui Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jianwen Sun",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jing Tao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yaqiang Wu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Hui Liu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yu Yao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Tongliang Liu",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v2）",
+        "kind": "preprint",
+        "year": 2026,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2026-05-14",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2605.14892",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "协作、归因与系统自演化",
+        "question": "个体能力、多智能体协作、失败归因和自演化机制如何共同构成 LLM 多智能体系统？",
+        "indexTerms": [
+          "协作、归因与系统自演化"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2605.14892v2",
+        "arxiv": "https://arxiv.org/abs/2605.14892v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2605.14892v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2605.14892v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-sun2025multi": {
+      "citationKey": "sun2025multi",
+      "title": "Multi-Agent Coordination across Diverse Applications: A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Sun",
+            "given": "Lijun",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yijun Yang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Qiqi Duan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yuhui Shi",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Chao Lyu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yu-Cheng Chang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Chin-Teng Lin",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yang Shen",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v2）",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2025-02-20",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2502.14743",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "跨领域多智能体协调",
+        "question": "不同应用中的多智能体为何协调、与谁协调，以及如何通过学习、通信和利益冲突处理实现协调？",
+        "indexTerms": [
+          "跨领域多智能体协调"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2502.14743v2",
+        "arxiv": "https://arxiv.org/abs/2502.14743v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2502.14743v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2502.14743v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-zhu2024survey": {
+      "citationKey": "zhu2024survey",
+      "title": "A survey of multi-agent deep reinforcement learning with communication",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Zhu",
+            "given": "Changxi",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2910-5506",
+            "affiliations": []
+          },
+          {
+            "family": "Dastani",
+            "given": "Mehdi",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Wang",
+            "given": "Shihan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Autonomous Agents and Multi-Agent Systems",
+        "kind": "journal-article",
+        "year": 2024,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "38",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "4",
+        "publishedOnline": "2024-01-06",
+        "publishedPrint": "2024-06",
+        "posted": null,
+        "issn": [
+          "1387-2532",
+          "1573-7454"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/s10458-023-09633-6",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "通信型多智能体强化学习",
+        "question": "如何从目标、通信约束、消息生成与整合、学习方法和训练方式比较通信型多智能体深度强化学习？",
+        "indexTerms": [
+          "通信型多智能体强化学习"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/s10458-023-09633-6",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2024-01-06"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2024-01-06"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1007%2Fs10458-023-09633-6",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://link.springer.com/article/10.1007/s10458-023-09633-6",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-geng2026scaling": {
+      "citationKey": "geng2026scaling",
+      "title": "Scaling Up Multi-Agent Reinforcement Learning for Large Agent Teams and Long-Horizon Tasks: A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Geng",
+            "given": "Minghong",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-4041-0883",
+            "affiliations": [
+              "School of Computing and Information Systems, Singapore Management University"
+            ]
+          },
+          {
+            "family": "Pateria",
+            "given": "Shubham",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6507-4479",
+            "affiliations": [
+              "School of Computing and Information Systems, Singapore Management University"
+            ]
+          },
+          {
+            "family": "Subagdja",
+            "given": "Budhitama",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-9774-0264",
+            "affiliations": [
+              "School of Computing and Information Systems, Singapore Management University"
+            ]
+          },
+          {
+            "family": "Tan",
+            "given": "Ah-Hwee",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-0378-4069",
+            "affiliations": [
+              "School of Computing and Information Systems, Singapore Management University"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "ACM Computing Surveys",
+        "kind": "journal-article",
+        "year": 2026,
+        "publisher": "Association for Computing Machinery (ACM)",
+        "volume": "58",
+        "issue": "14",
+        "pages": "1-37",
+        "articleNumber": null,
+        "publishedOnline": "2026-07-10",
+        "publishedPrint": "2026-10-31",
+        "posted": null,
+        "issn": [
+          "0360-0300",
+          "1557-7341"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1145/3817113",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "大规模与长时程多智能体学习",
+        "question": "群体组织控制结构与个体内部策略结构如何支持更大规模和更长时程的多智能体强化学习？",
+        "indexTerms": [
+          "大规模与长时程多智能体学习"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1145/3817113",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "appliesTo": "vor",
+            "startDate": "2026-07-10"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1145%2F3817113",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher abstract",
+          "url": "https://doi.org/10.1145/3817113",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-cao2025survey": {
+      "citationKey": "cao2025survey",
+      "title": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Cao",
+            "given": "Yuji",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8664-0823",
+            "affiliations": [
+              "Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong, Hong Kong, SAR, China"
+            ]
+          },
+          {
+            "family": "Zhao",
+            "given": "Huan",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-3133-3137",
+            "affiliations": [
+              "Department of Building Environment and Energy Engineering, The Hong Kong Polytechnic University, Hong Kong, China"
+            ]
+          },
+          {
+            "family": "Cheng",
+            "given": "Yuheng",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0008-9268-2067",
+            "affiliations": [
+              "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen, China"
+            ]
+          },
+          {
+            "family": "Shu",
+            "given": "Ting",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-8630-7868",
+            "affiliations": [
+              "National Engineering Laboratory for Big Data System Computing Technology, Shenzhen University, Shenzhen, China"
+            ]
+          },
+          {
+            "family": "Chen",
+            "given": "Yue",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-7594-7587",
+            "affiliations": [
+              "Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong, Hong Kong, SAR, China"
+            ]
+          },
+          {
+            "family": "Liu",
+            "given": "Guolong",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "School of Electrical and Electronic Engineering, Nanyang Technological University, Jurong West, Singapore"
+            ]
+          },
+          {
+            "family": "Liang",
+            "given": "Gaoqi",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-9060-1675",
+            "affiliations": [
+              "School of Mechanical Engineering and Automation, Harbin Institute of Technology, Shenzhen, China"
+            ]
+          },
+          {
+            "family": "Zhao",
+            "given": "Junhua",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5446-2655",
+            "affiliations": [
+              "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen, China"
+            ]
+          },
+          {
+            "family": "Yan",
+            "given": "Jinyue",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China"
+            ]
+          },
+          {
+            "family": "Li",
+            "given": "Yun",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6575-1839",
+            "affiliations": [
+              "Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "36",
+        "issue": "6",
+        "pages": "9737-9757",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2025-06",
+        "posted": "2024-03-30",
+        "issn": [
+          "2162-237X",
+          "2162-2388"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1109/tnnls.2024.3497992",
+        "arxiv": "2404.00282",
+        "arxivVersion": 3
+      },
+      "research": {
+        "direction": "LLM 与强化学习融合",
+        "question": "大语言模型如何作为信息处理器、奖励设计者、决策者和生成器增强强化学习？",
+        "indexTerms": [
+          "LLM 与强化学习融合"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1109/tnnls.2024.3497992",
+        "arxiv": "https://arxiv.org/abs/2404.00282v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+            "appliesTo": "vor",
+            "startDate": "2025-06-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-029",
+            "appliesTo": "stm-asf",
+            "startDate": "2025-06-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-037",
+            "appliesTo": "stm-asf",
+            "startDate": "2025-06-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2404.00282v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1109%2Ftnnls.2024.3497992",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2404.00282v3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-zhang2025landscape": {
+      "citationKey": "zhang2025landscape",
+      "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Zhang",
+            "given": "Guibin",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Hejia Geng",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xiaohang Yu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zhenfei Yin",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zaibin Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zelin Tan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Heng Zhou",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zhongzhi Li",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xiangyuan Xue",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yijiang Li",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yifan Zhou",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yang Chen",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Chen Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yutao Fan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zihu Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Songtao Huang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Francisco Piedrahita-Velez",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yue Liao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Hongru Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Mengyue Yang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Heng Ji",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jun Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Shuicheng Yan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Philip Torr",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Lei Bai",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v5）",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2025-09-02",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2509.02547",
+        "arxivVersion": 5
+      },
+      "research": {
+        "direction": "语言智能体强化学习",
+        "question": "强化学习如何训练具有多步环境交互、规划、工具、记忆及协作能力的语言智能体？",
+        "indexTerms": [
+          "语言智能体强化学习"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2509.02547v5",
+        "arxiv": "https://arxiv.org/abs/2509.02547v5",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2509.02547v5",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2509.02547v5",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-gao2025survey": {
+      "citationKey": "gao2025survey",
+      "title": "A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gao",
+            "given": "Huan-ang",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jiayi Geng",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Wenyue Hua",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Mengkang Hu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xinzhe Juan",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Hongzhang Liu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Shilong Liu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jiahao Qiu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xuan Qi",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yiran Wu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Hongru Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Han Xiao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yuhang Zhou",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Shaokun Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jiayi Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jinyu Xiang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yixiong Fang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Qiwen Zhao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Dongrui Liu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Qihan Ren",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Cheng Qian",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Zhenhailong Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Minda Hu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Huazheng Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Qingyun Wu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Heng Ji",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Mengdi Wang",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v4）",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2025-07-28",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2507.21046",
+        "arxivVersion": 4
+      },
+      "research": {
+        "direction": "智能体自演化机制",
+        "question": "智能体的模型、上下文、工具与架构分别在何时、通过何种反馈和方法实现持续更新？",
+        "indexTerms": [
+          "智能体自演化机制"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2507.21046v4",
+        "arxiv": "https://arxiv.org/abs/2507.21046v4",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2507.21046v4",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2507.21046v4",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-mou2026individual": {
+      "citationKey": "mou2026individual",
+      "title": "From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Mou",
+            "given": "Xinyi",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0000-9255-8164",
+            "affiliations": [
+              "School of Data Science, Fudan University"
+            ]
+          },
+          {
+            "family": "Ding",
+            "given": "Xuanwen",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0002-2598-2365",
+            "affiliations": [
+              "School of Computer Science and Technology, East China Normal University",
+              "School of Data Science, Fudan University"
+            ]
+          },
+          {
+            "family": "He",
+            "given": "Qi",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0000-8719-444X",
+            "affiliations": [
+              "School of Data Science, Fudan University"
+            ]
+          },
+          {
+            "family": "Wang",
+            "given": "Liang",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0003-3892-0785",
+            "affiliations": [
+              "School of Science, Harbin Institute of Technology Shenzhen",
+              "School of Data Science, Fudan University"
+            ]
+          },
+          {
+            "family": "Liang",
+            "given": "Jingcong",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0000-2488-2683",
+            "affiliations": [
+              "School of Data Science, Fudan University"
+            ]
+          },
+          {
+            "family": "Zhang",
+            "given": "Xinnong",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0005-8791-3308",
+            "affiliations": [
+              "Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University",
+              "Shanghai Innovation Institute"
+            ]
+          },
+          {
+            "family": "Sun",
+            "given": "Libo",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0008-3705-7656",
+            "affiliations": [
+              "School of Data Science, Fudan University"
+            ]
+          },
+          {
+            "family": "Lin",
+            "given": "Jiayu",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0000-2740-5401",
+            "affiliations": [
+              "School of Data Science, Fudan University",
+              "Shanghai Innovation Institute"
+            ]
+          },
+          {
+            "family": "Zhou",
+            "given": "Jie",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2589-0164",
+            "affiliations": [
+              "School of Computer Science and Technology, East China Normal University"
+            ]
+          },
+          {
+            "family": "Xuanjing",
+            "given": "Huang",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-9197-9426",
+            "affiliations": [
+              "School of Computer Science, Fudan University"
+            ]
+          },
+          {
+            "family": "Wei",
+            "given": "Zhongyu",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-3789-8507",
+            "affiliations": [
+              "School of Data Science, Fudan University",
+              "Shanghai Innovation Institute"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "ACM Computing Surveys",
+        "kind": "journal-article",
+        "year": 2026,
+        "publisher": "Association for Computing Machinery (ACM)",
+        "volume": "58",
+        "issue": "11",
+        "pages": "1-41",
+        "articleNumber": null,
+        "publishedOnline": "2026-04-17",
+        "publishedPrint": "2026-08-30",
+        "posted": "2024-12-04",
+        "issn": [
+          "0360-0300",
+          "1557-7341"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1145/3800683",
+        "arxiv": "2412.03563",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "生成式社会仿真综述",
+        "question": "LLM 智能体如何支持个体、场景与社会三个层次的仿真，其构建和评价方法如何组织？",
+        "indexTerms": [
+          "生成式社会仿真综述"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1145/3800683",
+        "arxiv": "https://arxiv.org/abs/2412.03563v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2412.03563v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1145%2F3800683",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2412.03563v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-gao2024large": {
+      "citationKey": "gao2024large",
+      "title": "Large language models empowered agent-based modeling and simulation: a survey and perspectives",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gao",
+            "given": "Chen",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Lan",
+            "given": "Xiaochong",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Li",
+            "given": "Nian",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Yuan",
+            "given": "Yuan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ding",
+            "given": "Jingtao",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Zhou",
+            "given": "Zhilun",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Xu",
+            "given": "Fengli",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Li",
+            "given": "Yong",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5617-1659",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Humanities and Social Sciences Communications",
+        "kind": "journal-article",
+        "year": 2024,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "11",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "1259",
+        "publishedOnline": "2024-09-27",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2662-9992"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1057/s41599-024-03611-3",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "LLM 赋能主体建模",
+        "question": "大语言模型如何扩展传统主体建模与仿真的感知、行为生成和适应能力，并用于不同系统？",
+        "indexTerms": [
+          "LLM 赋能主体建模"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1057/s41599-024-03611-3",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2024-09-27"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2024-09-27"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1057%2Fs41599-024-03611-3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://www.nature.com/articles/s41599-024-03611-3",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-padilla2026survey": {
+      "citationKey": "padilla2026survey",
+      "title": "A survey of multi-agent geosimulation methodologies: from ABM to LLM",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Padilla",
+            "given": "Virginia",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Department of Science and Technology, National Experimental University of Guayana, Ciudad Guayana, Venezuela",
+              "Center for Modeling and Simulations (CESIMO), University of the Andes, Mérida, Venezuela"
+            ]
+          },
+          {
+            "family": "Dávila",
+            "given": "Jacinto",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Center for Modeling and Simulations (CESIMO), University of the Andes, Mérida, Venezuela"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Academia AI and Applications",
+        "kind": "journal-article",
+        "year": 2026,
+        "publisher": "Academia.edu Journals",
+        "volume": "2",
+        "issue": "3",
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": "2026-08-12",
+        "publishedPrint": null,
+        "posted": "2025-07-31",
+        "issn": [
+          "3071-0286"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.20935/acadai8466",
+        "arxiv": "2507.23694",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "地理多智能体仿真",
+        "question": "如何用智能体内部状态、内部动态及环境接口组织地理仿真方法，并将 LLM 纳入智能体组件？",
+        "indexTerms": [
+          "地理多智能体仿真"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.20935/acadai8466",
+        "arxiv": "https://arxiv.org/abs/2507.23694v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2507.23694v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.20935%2Facadai8466",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2507.23694v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-vezhnevets2023generative": {
+      "citationKey": "vezhnevets2023generative",
+      "title": "Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Vezhnevets",
+            "given": "Alexander Sasha",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "John P. Agapiou",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Avia Aharon",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Ron Ziv",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jayd Matyas",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Edgar A. Duéñez-Guzmán",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "William A. Cunningham",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Simon Osindero",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Danny Karmon",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Joel Z. Leibo",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v2）",
+        "kind": "preprint",
+        "year": 2023,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2023-12-06",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2312.03664",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "模块化生成式社会仿真",
+        "question": "如何将生成式智能体的行动落实到物理、社会或数字环境，并通过模块化组件构建社会仿真？",
+        "indexTerms": [
+          "模块化生成式社会仿真"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2312.03664v2",
+        "arxiv": "https://arxiv.org/abs/2312.03664v2",
+        "data": [],
+        "code": [
+          {
+            "label": "Concordia",
+            "url": "https://github.com/google-deepmind/concordia"
+          }
+        ],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2312.03664v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2312.03664v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        },
+        {
+          "id": "repository",
+          "provider": "Official project repository",
+          "url": "https://github.com/google-deepmind/concordia",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "links.code"
+          ]
+        }
+      ]
+    },
+    "p-vezhnevets2025multi": {
+      "citationKey": "vezhnevets2025multi",
+      "title": "Multi-Actor Generative Artificial Intelligence as a Game Engine",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Vezhnevets",
+            "given": "Alexander Sasha",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jayd Matyas",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Logan Cross",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Davide Paglieri",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Minsuk Chang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "William A. Cunningham",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Simon Osindero",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "William S. Isaac",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Joel Z. Leibo",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v1）",
+        "kind": "preprint",
+        "year": 2025,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2025-07-10",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2507.08892",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "多主体生成式仿真设计",
+        "question": "实体—组件架构如何支持以评价、叙事和社会仿真为不同目标的多主体生成式环境？",
+        "indexTerms": [
+          "多主体生成式仿真设计"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2507.08892v1",
+        "arxiv": "https://arxiv.org/abs/2507.08892v1",
+        "data": [],
+        "code": [
+          {
+            "label": "Concordia",
+            "url": "https://github.com/google-deepmind/concordia"
+          }
+        ],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2507.08892v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2507.08892v1",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        },
+        {
+          "id": "repository",
+          "provider": "Official project repository",
+          "url": "https://github.com/google-deepmind/concordia",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "links.code"
+          ]
+        }
+      ]
+    },
+    "p-piao2026agentsociety2": {
+      "citationKey": "piao2026agentsociety2",
+      "title": "AgentSociety 2: An Integrated Research Environment for Executable Social Science",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Piao",
+            "given": "Jinghua",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jun Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Haoyu Huang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Keming Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jing Yi Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Xinran Zhao",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Songwei Li",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Boyuan Sun",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jiayi Chang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Fengli Xu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Chunyan Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Fang Zhang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Ke Rong",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Jun Su",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Tianguang Meng",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yi Liu",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Qingguo Meng",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yu Wang",
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": null,
+            "given": null,
+            "literal": "Yong Li",
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本，v2）",
+        "kind": "preprint",
+        "year": 2026,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2026-06-11",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2607.11895",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "可执行社会实验平台",
+        "question": "如何将社会智能体、环境接口、研究流程和数据资产整合为可执行的社会科学实验平台？",
+        "indexTerms": [
+          "可执行社会实验平台"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2607.11895v2",
+        "arxiv": "https://arxiv.org/abs/2607.11895v2",
+        "data": [],
+        "code": [
+          {
+            "label": "AgentSociety 2",
+            "url": "https://github.com/tsinghua-fib-lab/agentsociety"
+          }
+        ],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv",
+          "url": "https://arxiv.org/abs/2607.11895v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "title",
+            "authors",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.kind",
+            "publication.venue",
+            "publication.year",
+            "links.original",
+            "access.original"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Article text",
+          "url": "https://arxiv.org/abs/2607.11895v2",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        },
+        {
+          "id": "repository",
+          "provider": "Official project repository",
+          "url": "https://github.com/tsinghua-fib-lab/agentsociety",
+          "retrievedOn": "2026-10-13",
+          "fields": [
+            "links.code"
           ]
         }
       ]
