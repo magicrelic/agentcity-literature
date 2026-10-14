@@ -12,6 +12,7 @@
       "title": "复杂系统理论与集体动力学",
       "description": "城市统计物理、网络结构与演化、集体动力学、临界现象及跨尺度规律。",
       "paperIds": [
+        "p-acemoglu2018informational",
         "p-327891a3ee570c",
         "p-e8cead12867124",
         "p-f46b208e899256",
@@ -143,6 +144,7 @@
         "p-7e412a60ce06db",
         "p-9bfa8115038b98",
         "p-87af9925eb2eaa",
+        "p-rapoport2014pre",
         "p-1205d41f7545fb",
         "p-9e783ef97d9d3f",
         "p-dc34f128ac0cce",
@@ -164,6 +166,7 @@
         "p-gao2025survey",
         "p-geng2026scaling",
         "p-guo2024large",
+        "p-kaelbling1998planning",
         "p-kotseruba2020years",
         "p-li2024survey",
         "p-qi2026beyond",
@@ -28635,6 +28638,364 @@
             "research.question",
             "research.indexTerms",
             "access.original"
+          ]
+        }
+      ]
+    },
+    "p-kaelbling1998planning": {
+      "citationKey": "kaelbling1998planning",
+      "title": "Planning and acting in partially observable stochastic domains",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Kaelbling",
+            "given": "Leslie Pack",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Littman",
+            "given": "Michael L.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Cassandra",
+            "given": "Anthony R.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Artificial Intelligence",
+        "kind": "journal-article",
+        "year": 1998,
+        "publisher": "Elsevier BV",
+        "volume": "101",
+        "issue": "1-2",
+        "pages": "99-134",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1998-05",
+        "posted": null,
+        "issn": [
+          "0004-3702"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/s0004-3702(98)00023-x",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "部分可观测决策与信念状态",
+        "question": "部分可观测环境中，如何用信念状态概括历史并据此规划和选择行动？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/s0004-3702(98)00023-x",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "1998-05-01"
+          },
+          {
+            "url": "https://www.elsevier.com/open-access/userlicense/1.0/",
+            "appliesTo": "vor",
+            "startDate": "2013-07-25"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fs0004-3702%2898%2900023-x",
+          "retrievedOn": "2026-10-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "author-fulltext",
+          "provider": "Author-hosted full text, section 3.2",
+          "url": "https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf",
+          "retrievedOn": "2026-10-14",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-acemoglu2018informational": {
+      "citationKey": "acemoglu2018informational",
+      "title": "Informational Braess’ Paradox: The Effect of Information on Traffic Congestion",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Acemoglu",
+            "given": "Daron",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Department of Economics, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+            ]
+          },
+          {
+            "family": "Makhdoumi",
+            "given": "Ali",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5422-0314",
+            "affiliations": [
+              "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+            ]
+          },
+          {
+            "family": "Malekian",
+            "given": "Azarakhsh",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-9464-746X",
+            "affiliations": [
+              "Rotman School of Management, University of Toronto, Toronto, Ontario M5S 3E6, Canada"
+            ]
+          },
+          {
+            "family": "Ozdaglar",
+            "given": "Asuman",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-1827-1285",
+            "affiliations": [
+              "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Operations Research",
+        "kind": "journal-article",
+        "year": 2018,
+        "publisher": "Institute for Operations Research and the Management Sciences (INFORMS)",
+        "volume": "66",
+        "issue": "4",
+        "pages": "893-917",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2018-08",
+        "posted": null,
+        "issn": [
+          "0030-364X",
+          "1526-5463"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1287/opre.2017.1712",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "交通信息与拥堵博弈",
+        "question": "扩大部分出行者的可用路段信息集何时会提高其均衡出行成本，哪些网络结构能够排除这种信息悖论？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1287/opre.2017.1712",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1287%2Fopre.2017.1712",
+          "retrievedOn": "2026-10-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "crossref-abstract",
+          "provider": "Publisher abstract deposited in Crossref",
+          "url": "https://api.crossref.org/works/10.1287%2Fopre.2017.1712",
+          "retrievedOn": "2026-10-14",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-rapoport2014pre": {
+      "citationKey": "rapoport2014pre",
+      "title": "Pre-trip information and route-choice decisions with stochastic travel conditions: Experiment",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Rapoport",
+            "given": "Amnon",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Gisches",
+            "given": "Eyran J.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Daniel",
+            "given": "Terry",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Lindsey",
+            "given": "Robin",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Transportation Research Part B: Methodological",
+        "kind": "journal-article",
+        "year": 2014,
+        "publisher": "Elsevier BV",
+        "volume": "68",
+        "issue": null,
+        "pages": "154-172",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2014-10",
+        "posted": null,
+        "issn": [
+          "0191-2615"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.trb.2014.06.007",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "出行前信息与路线选择实验",
+        "question": "在容量随机变化的两条拥挤路线中，出行前信息与容量相关结构如何共同影响路线选择和期望总成本？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.trb.2014.06.007",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2014-10-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.trb.2014.06.007",
+          "retrievedOn": "2026-10-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "repec-abstract",
+          "provider": "IDEAS/RePEc indexed abstract",
+          "url": "https://ideas.repec.org/a/eee/transb/v68y2014icp154-172.html",
+          "retrievedOn": "2026-10-14",
+          "fields": [
+            "research.direction",
+            "research.question"
           ]
         }
       ]
