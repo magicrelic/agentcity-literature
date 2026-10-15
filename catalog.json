@@ -140,6 +140,7 @@
         "p-delling2013phast",
         "p-dibbelt2016customizable",
         "p-710aecde5fd91f",
+        "p-gleave2022imitation",
         "p-gonzalez2003instance",
         "p-8f83536e2710e6",
         "p-2af1c7c985c32f",
@@ -148,6 +149,7 @@
         "p-9bfa8115038b98",
         "p-87af9925eb2eaa",
         "p-rapoport2014pre",
+        "p-schulman2017proximal",
         "p-1205d41f7545fb",
         "p-9e783ef97d9d3f",
         "p-dc34f128ac0cce",
@@ -174,6 +176,7 @@
         "p-kotseruba2020years",
         "p-li2024survey",
         "p-qi2026beyond",
+        "p-russell2021artificial",
         "p-sumers2023cognitive",
         "p-sun2025multi",
         "p-tran2025multi",
@@ -29789,6 +29792,404 @@
             "research.direction",
             "research.question",
             "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-russell2021artificial": {
+      "citationKey": "russell2021artificial",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "given": "Stuart J.",
+            "family": "Russell",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Peter",
+            "family": "Norvig",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Pearson（专著，第 4 版，美国版）",
+        "kind": "book",
+        "year": 2021,
+        "publisher": "Pearson",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2021",
+        "posted": null,
+        "issn": [],
+        "isbn": [
+          "9780134610993"
+        ]
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "智能体结构与人工智能方法体系",
+        "question": "如何将感知、内部状态、目标、效用与学习组织为智能体，并结合搜索、规划和不确定性推理进行决策？",
+        "indexTerms": [
+          "intelligent agents",
+          "agent architectures",
+          "search",
+          "planning",
+          "utility",
+          "learning"
+        ]
+      },
+      "links": {
+        "original": "https://aima.cs.berkeley.edu/index.html",
+        "arxiv": null,
+        "data": [],
+        "code": [
+          {
+            "label": "AIMA 官方配套代码",
+            "url": "https://github.com/aimacode"
+          }
+        ],
+        "supplement": [
+          {
+            "label": "第 4 版美国版前言与出版信息",
+            "url": "https://aima.cs.berkeley.edu/newchap00.pdf"
+          },
+          {
+            "label": "官方第 2 章课件（智能体类型）",
+            "url": "https://aima.cs.berkeley.edu/slides-pdf/chapter02.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "official-us-edition",
+          "provider": "Authors’ official fourth US edition website",
+          "url": "https://aima.cs.berkeley.edu/index.html",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "publication.venue",
+            "publication.kind",
+            "links.original",
+            "links.code",
+            "links.supplement",
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        },
+        {
+          "id": "official-frontmatter",
+          "provider": "Official fourth US edition front matter, copyright and Library of Congress CIP",
+          "url": "https://aima.cs.berkeley.edu/newchap00.pdf",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "authors",
+            "publication.year",
+            "publication.publisher",
+            "publication.publishedPrint",
+            "publication.isbn"
+          ]
+        },
+        {
+          "id": "official-chapter2-slides",
+          "provider": "Authors’ official Chapter 2 teaching slides, agent types; edition not specified",
+          "url": "https://aima.cs.berkeley.edu/slides-pdf/chapter02.pdf",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "links.supplement"
+          ]
+        }
+      ]
+    },
+    "p-schulman2017proximal": {
+      "citationKey": "schulman2017proximal",
+      "title": "Proximal Policy Optimization Algorithms",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "given": "John",
+            "family": "Schulman",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Filip",
+            "family": "Wolski",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Prafulla",
+            "family": "Dhariwal",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Alec",
+            "family": "Radford",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Oleg",
+            "family": "Klimov",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本）",
+        "kind": "preprint",
+        "year": 2017,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2017-07-20",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "1707.06347",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "近端策略优化",
+        "question": "如何通过可重复进行小批量优化的代理目标，兼顾策略梯度强化学习的样本效率、实现简洁性与训练时间？",
+        "indexTerms": [
+          "PPO",
+          "policy gradient",
+          "reinforcement learning",
+          "surrogate objective"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/1707.06347v2",
+        "arxiv": "https://arxiv.org/abs/1707.06347v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv metadata and abstract",
+          "url": "https://export.arxiv.org/api/query?id_list=1707.06347",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "links.original",
+            "links.arxiv",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-gleave2022imitation": {
+      "citationKey": "gleave2022imitation",
+      "title": "imitation: Clean Imitation Learning Implementations",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "given": "Adam",
+            "family": "Gleave",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Mohammad",
+            "family": "Taufeeque",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Juan",
+            "family": "Rocamonde",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Erik",
+            "family": "Jenner",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Steven H.",
+            "family": "Wang",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Sam",
+            "family": "Toyer",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Maximilian",
+            "family": "Ernestus",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Nora",
+            "family": "Belrose",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Scott",
+            "family": "Emmons",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "given": "Stuart",
+            "family": "Russell",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv（预印本）",
+        "kind": "preprint",
+        "year": 2022,
+        "publisher": null,
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2022-11-22",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": null,
+        "arxiv": "2211.11972",
+        "arxivVersion": 1
+      },
+      "research": {
+        "direction": "模仿学习与奖励学习实现",
+        "question": "如何提供经过基准验证、模块化且便于复用的模仿学习、逆强化学习和偏好学习实现？",
+        "indexTerms": [
+          "imitation learning",
+          "inverse reinforcement learning",
+          "preference learning",
+          "PyTorch"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2211.11972v1",
+        "arxiv": "https://arxiv.org/abs/2211.11972v1",
+        "data": [],
+        "code": [
+          {
+            "label": "imitation 官方代码与示例",
+            "url": "https://github.com/HumanCompatibleAI/imitation"
+          }
+        ],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "arxiv",
+          "provider": "arXiv metadata and abstract",
+          "url": "https://export.arxiv.org/api/query?id_list=2211.11972",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.posted",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "research.direction",
+            "research.question",
+            "research.indexTerms",
+            "links.original",
+            "links.arxiv",
+            "access.original",
+            "links.code"
           ]
         }
       ]
