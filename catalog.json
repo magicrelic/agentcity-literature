@@ -56,6 +56,7 @@
         "p-c8178fc552a36c",
         "p-88357203f43dff",
         "p-6f787ecc91cce6",
+        "p-krall2021obscuring",
         "p-0ecd26d0a6c94e",
         "p-ce7326738ca2a3",
         "p-ab9898e594ee14",
@@ -71,6 +72,7 @@
         "p-b0256bc4c86303",
         "p-00e275341a5bf0",
         "p-1b99f6da8aa689",
+        "p-shalizi2001computational",
         "p-df4a16e7f495e7",
         "p-85a7ecbc7a3b7a",
         "p-4fd16b9e277e4b",
@@ -138,6 +140,7 @@
         "p-delling2013phast",
         "p-dibbelt2016customizable",
         "p-710aecde5fd91f",
+        "p-gonzalez2003instance",
         "p-8f83536e2710e6",
         "p-2af1c7c985c32f",
         "p-1352705ce59729",
@@ -148,6 +151,7 @@
         "p-1205d41f7545fb",
         "p-9e783ef97d9d3f",
         "p-dc34f128ac0cce",
+        "p-tang2017exploratory",
         "p-7f0224f36f5ee6",
         "p-7574ed701c6563",
         "p-yen1971finding",
@@ -222,10 +226,12 @@
         "p-ba4e06e6aef777",
         "p-dc1cd60f5fa37c",
         "p-48778fd59733a0",
+        "p-gayah2011clockwise",
         "p-798c1fa49a313a",
         "p-54cd0f40e066f0",
         "p-f37ba905202b0c",
         "p-09b067921d9c73",
+        "p-larcom2017benefits",
         "p-c14473946a8460",
         "p-ec991cba55dc96",
         "p-3e355fba53b65b",
@@ -14287,8 +14293,8 @@
       },
       "identifiers": {
         "doi": "10.1016/j.trc.2026.105576",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2506.23306",
+        "arxivVersion": 1
       },
       "research": {
         "direction": "生成式城市移动",
@@ -14297,9 +14303,14 @@
       },
       "links": {
         "original": "https://doi.org/10.1016/j.trc.2026.105576",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2506.23306v1",
         "data": [],
-        "code": [],
+        "code": [
+          {
+            "label": "GATSim 官方原型代码",
+            "url": "https://github.com/qiliuchn/gatsim"
+          }
+        ],
         "supplement": []
       },
       "access": {
@@ -14379,6 +14390,27 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-v1-code",
+          "provider": "arXiv author manuscript, version 1, abstract and author list",
+          "url": "https://arxiv.org/html/2506.23306v1",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "links.code"
+          ]
+        },
+        {
+          "id": "gatsim-official-code",
+          "provider": "GATSim official repository",
+          "url": "https://github.com/qiliuchn/gatsim",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "links.code"
           ]
         }
       ]
@@ -28996,6 +29028,767 @@
           "fields": [
             "research.direction",
             "research.question"
+          ]
+        }
+      ]
+    },
+    "p-gayah2011clockwise": {
+      "citationKey": "gayah2011clockwise",
+      "title": "Clockwise hysteresis loops in the Macroscopic Fundamental Diagram: An effect of network instability",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gayah",
+            "given": "Vikash V.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Daganzo",
+            "given": "Carlos F.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Transportation Research Part B: Methodological",
+        "kind": "journal-article",
+        "year": 2011,
+        "publisher": "Elsevier BV",
+        "volume": "45",
+        "issue": "4",
+        "pages": "643-655",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2011-05",
+        "posted": null,
+        "issn": [
+          "0191-2615"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.trb.2010.11.006",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "适应性选路与宏观交通滞回",
+        "question": "驾驶者的适应性选路如何影响拥堵恢复中的空间不均衡与宏观基本图的顺时针滞回？",
+        "indexTerms": [
+          "macroscopic fundamental diagram",
+          "hysteresis",
+          "adaptive route choice",
+          "network instability"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.trb.2010.11.006",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2011-05-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.trb.2010.11.006",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "pennstate-abstract",
+          "provider": "Penn State institutional publication record and abstract",
+          "url": "https://pure.psu.edu/en/publications/clockwise-hysteresis-loops-in-the-macroscopic-fundamental-diagram/",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-larcom2017benefits": {
+      "citationKey": "larcom2017benefits",
+      "title": "The Benefits of Forced Experimentation: Striking Evidence from the London Underground Network",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Larcom",
+            "given": "Shaun",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Cambridge"
+            ]
+          },
+          {
+            "family": "Rauch",
+            "given": "Ferdinand",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "University of Oxford"
+            ]
+          },
+          {
+            "family": "Willems",
+            "given": "Tim",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "International Monetary Fund"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "The Quarterly Journal of Economics",
+        "kind": "journal-article",
+        "year": 2017,
+        "publisher": "Oxford University Press (OUP)",
+        "volume": "132",
+        "issue": "4",
+        "pages": "2019-2055",
+        "articleNumber": null,
+        "publishedOnline": "2017-05-29",
+        "publishedPrint": "2017-11-01",
+        "posted": null,
+        "issn": [
+          "0033-5533",
+          "1531-4650"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1093/qje/qjx020",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "交通中断与持续行为改变",
+        "question": "伦敦地铁罢工迫使通勤者尝试新路线后，是否产生持续的路线变化，信息不完善在其中发挥什么作用？",
+        "indexTerms": [
+          "forced experimentation",
+          "London Underground",
+          "route choice",
+          "information imperfections"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1093/qje/qjx020",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1093%2Fqje%2Fqjx020",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses",
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-shalizi2001computational": {
+      "citationKey": "shalizi2001computational",
+      "title": "Computational Mechanics: Pattern and Prediction, Structure and Simplicity",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Shalizi",
+            "given": "Cosma Rohilla",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Crutchfield",
+            "given": "James P.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Statistical Physics",
+        "kind": "journal-article",
+        "year": 2001,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "104",
+        "issue": "3-4",
+        "pages": "817-879",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2001-08",
+        "posted": "1999-07-13",
+        "issn": [
+          "0022-4715",
+          "1572-9613"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1023/a:1010388907793",
+        "arxiv": "cond-mat/9907176",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "最小预测状态与计算力学",
+        "question": "如何从历史构造能够准确预测未来的最小因果状态表示，并刻画其最优性、唯一性与结构复杂度？",
+        "indexTerms": [
+          "computational mechanics",
+          "causal states",
+          "epsilon machines",
+          "prediction"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1023/a:1010388907793",
+        "arxiv": "https://arxiv.org/abs/cond-mat/9907176v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "tdm",
+            "startDate": "2001-08-01"
+          },
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "vor",
+            "startDate": "2001-08-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1023%2Fa%3A1010388907793",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-abstract",
+          "provider": "arXiv metadata and abstract, version 2",
+          "url": "https://export.arxiv.org/api/query?id_list=cond-mat/9907176",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.posted",
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-krall2021obscuring": {
+      "citationKey": "krall2021obscuring",
+      "title": "Obscuring digital route-choice information prevents delay-induced congestion",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Krall",
+            "given": "Verena",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-1598-9371",
+            "affiliations": [
+              "Chair for Network Dynamics, Center for Advancing Electronics Dresden (cfaed), Technical University of Dresden 1 , 01069 Dresden, Germany",
+              "Institute for Theoretical Physics, Technical University of Dresden 2 , 01069 Dresden, Germany"
+            ]
+          },
+          {
+            "family": "Burg",
+            "given": "Max F.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-4402-4373",
+            "affiliations": [
+              "Institute for Theoretical Physics, University of Tübingen 3 , 72076 Tübingen, Germany",
+              "Bernstein Center for Computational Neuroscience, Tübingen 4 , 72076 Tübingen, Germany"
+            ]
+          },
+          {
+            "family": "Pagenkopf",
+            "given": "Friedrich",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Institute for Theoretical Physics, Technical University of Dresden 2 , 01069 Dresden, Germany"
+            ]
+          },
+          {
+            "family": "Wolf",
+            "given": "Henrik",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2031-6796",
+            "affiliations": [
+              "Institute for Theoretical Physics, Technical University of Dresden 2 , 01069 Dresden, Germany"
+            ]
+          },
+          {
+            "family": "Timme",
+            "given": "Marc",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-5956-3137",
+            "affiliations": [
+              "Chair for Network Dynamics, Center for Advancing Electronics Dresden (cfaed), Technical University of Dresden 1 , 01069 Dresden, Germany",
+              "Institute for Theoretical Physics, Technical University of Dresden 2 , 01069 Dresden, Germany",
+              "Lakeside Labs 5 , 9020 Klagenfurt, Austria"
+            ]
+          },
+          {
+            "family": "Schröder",
+            "given": "Malte",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8756-9918",
+            "affiliations": [
+              "Chair for Network Dynamics, Center for Advancing Electronics Dresden (cfaed), Technical University of Dresden 1 , 01069 Dresden, Germany",
+              "Institute for Theoretical Physics, Technical University of Dresden 2 , 01069 Dresden, Germany"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Chaos: An Interdisciplinary Journal of Nonlinear Science",
+        "kind": "journal-article",
+        "year": 2021,
+        "publisher": "AIP Publishing",
+        "volume": "31",
+        "issue": "11",
+        "pages": null,
+        "articleNumber": "113120",
+        "publishedOnline": "2021-11-09",
+        "publishedPrint": "2021-11-01",
+        "posted": "2021-05-25",
+        "issn": [
+          "1054-1500",
+          "1089-7682"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1063/5.0056234",
+        "arxiv": "2105.11790",
+        "arxivVersion": 2
+      },
+      "research": {
+        "direction": "延迟路线信息与集体拥堵",
+        "question": "路线信息的延迟如何诱发集体交通振荡，时间平均或降低建议遵从比例能否避免由此产生的拥堵？",
+        "indexTerms": [
+          "route choice",
+          "delayed information",
+          "collective dynamics",
+          "congestion",
+          "oscillations"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1063/5.0056234",
+        "arxiv": "https://arxiv.org/abs/2105.11790v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1063%2F5.0056234",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses",
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        },
+        {
+          "id": "arxiv-abstract",
+          "provider": "arXiv metadata and abstract, version 2",
+          "url": "https://export.arxiv.org/api/query?id_list=2105.11790",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv",
+            "publication.posted",
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        }
+      ]
+    },
+    "p-gonzalez2003instance": {
+      "citationKey": "gonzalez2003instance",
+      "title": "Instance-based learning in dynamic decision making",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gonzalez",
+            "given": "Cleotilde",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Lerch",
+            "given": "Javier F.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Lebiere",
+            "given": "Christian",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Cognitive Science",
+        "kind": "journal-article",
+        "year": 2003,
+        "publisher": "Wiley",
+        "volume": "27",
+        "issue": "4",
+        "pages": "591-635",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2003-08",
+        "posted": null,
+        "issn": [
+          "0364-0213"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/s0364-0213(03)00031-4",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "基于实例的认知学习",
+        "question": "动态决策中，个体如何积累、检索和更新包含情境、行动与结果的实例，实例学习机制能否解释人类表现的变化？",
+        "indexTerms": [
+          "instance-based learning",
+          "dynamic decision making",
+          "ACT-R",
+          "experience",
+          "feedback"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/s0364-0213(03)00031-4",
+        "arxiv": null,
+        "data": [],
+        "code": [
+          {
+            "label": "PyIBL（IBLT 子集的研究实现）",
+            "url": "https://github.com/DDM-Lab/pyibl"
+          }
+        ],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://doi.wiley.com/10.1002/tdm_license_1",
+            "appliesTo": "tdm",
+            "startDate": "2015-09-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fs0364-0213%2803%2900031-4",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "crossref-complete-authors-abstract",
+          "provider": "Crossref metadata and abstract for the same article under its Wiley DOI",
+          "url": "https://api.crossref.org/works/10.1207%2Fs15516709cog2704_2",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "authors",
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
+          ]
+        },
+        {
+          "id": "pyibl-official",
+          "provider": "Carnegie Mellon University Dynamic Decision Making Laboratory, PyIBL README",
+          "url": "https://github.com/DDM-Lab/pyibl/blob/main/README.md",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "authors",
+            "links.code"
+          ]
+        }
+      ]
+    },
+    "p-tang2017exploratory": {
+      "citationKey": "tang2017exploratory",
+      "title": "An exploratory study of instance-based learning for route choice with random travel times",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Tang",
+            "given": "Yue",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Gao",
+            "given": "Song",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ben-Elia",
+            "given": "Eran",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Choice Modelling",
+        "kind": "journal-article",
+        "year": 2017,
+        "publisher": "Elsevier BV",
+        "volume": "24",
+        "issue": null,
+        "pages": "22-35",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2017-09",
+        "posted": null,
+        "issn": [
+          "1755-5345"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.jocm.2017.03.004",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "随机时耗下的经验学习与路线选择",
+        "question": "基于实例的学习模型能否刻画随机行程时间下的逐日路线选择，并改善对重复选择行为的拟合和预测？",
+        "indexTerms": [
+          "instance-based learning",
+          "route choice",
+          "random travel times",
+          "recency",
+          "hot stove effect"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.jocm.2017.03.004",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2017-09-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.jocm.2017.03.004",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "repec-abstract",
+          "provider": "IDEAS/RePEc indexed abstract",
+          "url": "https://ideas.repec.org/a/eee/eejocm/v24y2017icp22-35.html",
+          "retrievedOn": "2026-10-15",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "research.indexTerms"
           ]
         }
       ]
