@@ -25202,9 +25202,9 @@
         "complete": true
       },
       "publication": {
-        "venue": "arXiv（预印本，v3）",
-        "kind": "preprint",
-        "year": 2023,
+        "venue": "Transactions on Machine Learning Research",
+        "kind": "journal-article",
+        "year": 2024,
         "publisher": null,
         "volume": null,
         "issue": null,
@@ -25213,7 +25213,9 @@
         "publishedOnline": null,
         "publishedPrint": null,
         "posted": "2023-09-05",
-        "issn": [],
+        "issn": [
+          "2835-8856"
+        ],
         "isbn": []
       },
       "identifiers": {
@@ -25229,7 +25231,7 @@
         ]
       },
       "links": {
-        "original": "https://arxiv.org/abs/2309.02427v3",
+        "original": "https://openreview.net/forum?id=1i6ZCvflQJ",
         "arxiv": "https://arxiv.org/abs/2309.02427v3",
         "data": [],
         "code": [],
@@ -25239,7 +25241,7 @@
         "original": "open",
         "licenses": [],
         "sourceIds": [
-          "arxiv"
+          "tmlr-list"
         ]
       },
       "reading": null,
@@ -25255,12 +25257,7 @@
             "publication.posted",
             "identifiers.arxiv",
             "identifiers.arxivVersion",
-            "links.arxiv",
-            "publication.kind",
-            "publication.venue",
-            "publication.year",
-            "links.original",
-            "access.original"
+            "links.arxiv"
           ]
         },
         {
@@ -25272,6 +25269,34 @@
             "research.direction",
             "research.question",
             "research.indexTerms"
+          ]
+        },
+        {
+          "id": "tmlr",
+          "provider": "Transactions on Machine Learning Research — official bibliography and accepted-paper listing",
+          "url": "https://jmlr.org/tmlr/papers/bib/1i6ZCvflQJ.bib",
+          "retrievedOn": "2026-10-16",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.issn",
+            "links.original"
+          ]
+        },
+        {
+          "id": "tmlr-list",
+          "provider": "Transactions on Machine Learning Research — accepted papers",
+          "url": "https://jmlr.org/tmlr/papers/",
+          "retrievedOn": "2026-10-16",
+          "fields": [
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "links.original",
+            "access.original"
           ]
         }
       ]
