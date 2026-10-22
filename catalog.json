@@ -16,6 +16,7 @@
         "p-327891a3ee570c",
         "p-e8cead12867124",
         "p-f46b208e899256",
+        "p-asllani2018structure",
         "p-3558328577a9fe",
         "p-20e09c785972ea",
         "p-c01a38e3575e6a",
@@ -65,7 +66,9 @@
         "p-0e1efe6bfcaa0b",
         "p-25874be5fe713c",
         "p-87731059078047",
+        "p-murakami2021mutual",
         "p-2f52a2879ba49e",
+        "p-politi2013lyapunov",
         "p-7b4b04a97935a1",
         "p-7ab7c365a0e650",
         "p-b75c5bd2214cf8",
@@ -265,11 +268,14 @@
         "p-7e69f85392a682",
         "p-650180ffdc77bb",
         "p-6c2fc55d092c81",
+        "p-gneiting2007strictly",
         "p-c76e7b710f1bb0",
         "p-33dcc20a85fc71",
+        "p-jolliffe2016principal",
         "p-3d8ebfa1c87a5d",
         "p-69e2c8c29c74c3",
         "p-73fb65379f4990",
+        "p-lin1991divergence",
         "p-ea2f6abf70cc49",
         "p-b40ce84f2485ba",
         "p-871075db688549",
@@ -282,6 +288,7 @@
         "p-9686223e96f977",
         "p-522eb1dfa14974",
         "p-e765a0942d716e",
+        "p-welch1967use",
         "p-00cb862d0c7614"
       ]
     }
@@ -30215,6 +30222,684 @@
             "links.arxiv",
             "access.original",
             "links.code"
+          ]
+        }
+      ]
+    },
+    "p-murakami2021mutual": {
+      "citationKey": "murakami2021mutual",
+      "title": "Mutual anticipation can contribute to self-organization in human crowds",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Murakami",
+            "given": "Hisashi",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-1433-0524",
+            "affiliations": [
+              "Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo 153-8904, Japan."
+            ]
+          },
+          {
+            "family": "Feliciani",
+            "given": "Claudio",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo 153-8904, Japan."
+            ]
+          },
+          {
+            "family": "Nishiyama",
+            "given": "Yuta",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-1536-060X",
+            "affiliations": [
+              "Information and Management Systems Engineering, Nagaoka University of Technology, Niigata 940-2188, Japan."
+            ]
+          },
+          {
+            "family": "Nishinari",
+            "given": "Katsuhiro",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-3069-1757",
+            "affiliations": [
+              "Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo 153-8904, Japan.",
+              "Department of Aeronautics and Astronautics, Graduate School of Engineering, The University of Tokyo, Tokyo 113-8656, Japan."
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Science Advances",
+        "kind": "journal-article",
+        "year": 2021,
+        "publisher": "American Association for the Advancement of Science (AAAS)",
+        "volume": "7",
+        "issue": "12",
+        "pages": null,
+        "articleNumber": "eabe7758",
+        "publishedOnline": null,
+        "publishedPrint": "2021-03-19",
+        "posted": null,
+        "issn": [
+          "2375-2548"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1126/sciadv.abe7758",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "人群自组织与相互预期",
+        "question": "行人之间的相互预期如何影响条带形成及人群运动的自组织？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1126/sciadv.abe7758",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2021-03-17"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1126/sciadv.abe7758",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Published article",
+          "url": "https://doi.org/10.1126/sciadv.abe7758",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-asllani2018structure": {
+      "citationKey": "asllani2018structure",
+      "title": "Structure and dynamical behavior of non-normal networks",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Asllani",
+            "given": "Malbor",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-3335-429X",
+            "affiliations": [
+              "Mathematical Institute, University of Oxford, Woodstock Rd, OX2 6GG Oxford, UK.",
+              "Department of Mathematics and naXys, Namur Institute for Complex Systems, University of Namur, rempart de la Vierge 8, B 5000 Namur, Belgium."
+            ]
+          },
+          {
+            "family": "Lambiotte",
+            "given": "Renaud",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-0583-4595",
+            "affiliations": [
+              "Mathematical Institute, University of Oxford, Woodstock Rd, OX2 6GG Oxford, UK."
+            ]
+          },
+          {
+            "family": "Carletti",
+            "given": "Timoteo",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-2596-4503",
+            "affiliations": [
+              "Department of Mathematics and naXys, Namur Institute for Complex Systems, University of Namur, rempart de la Vierge 8, B 5000 Namur, Belgium."
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Science Advances",
+        "kind": "journal-article",
+        "year": 2018,
+        "publisher": "American Association for the Advancement of Science (AAAS)",
+        "volume": "4",
+        "issue": "12",
+        "pages": null,
+        "articleNumber": "eaau9403",
+        "publishedOnline": null,
+        "publishedPrint": "2018-12-07",
+        "posted": null,
+        "issn": [
+          "2375-2548"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1126/sciadv.aau9403",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "非正规网络与瞬态动力学",
+        "question": "网络的非正规结构如何影响瞬态放大、稳定性及非线性动力学？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1126/sciadv.aau9403",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1126/sciadv.aau9403",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Published article",
+          "url": "https://doi.org/10.1126/sciadv.aau9403",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-jolliffe2016principal": {
+      "citationKey": "jolliffe2016principal",
+      "title": "Principal component analysis: a review and recent developments",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Jolliffe",
+            "given": "Ian T.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "College of Engineering, Mathematics and Physical Sciences, University of Exeter, Exeter, UK"
+            ]
+          },
+          {
+            "family": "Cadima",
+            "given": "Jorge",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Secção de Matemática (DCEB), Instituto Superior de Agronomia, Universidade de Lisboa, Tapada da Ajuda, Lisboa 1340-017, Portugal",
+              "Centro de Estatística e Aplicações da Universidade de Lisboa (CEAUL), Lisboa, Portugal"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+        "kind": "journal-article",
+        "year": 2016,
+        "publisher": "The Royal Society",
+        "volume": "374",
+        "issue": "2065",
+        "pages": null,
+        "articleNumber": "20150202",
+        "publishedOnline": "2016-04-13",
+        "publishedPrint": "2016-04-13",
+        "posted": null,
+        "issn": [
+          "1364-503X",
+          "1471-2962"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1098/rsta.2015.0202",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "主成分分析与降维",
+        "question": "主成分分析如何通过方差与低秩表示提取多变量数据结构，其主要扩展适用于哪些数据条件？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1098/rsta.2015.0202",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://royalsociety.org/journals/ethics-policies/data-sharing-mining/",
+            "appliesTo": "tdm",
+            "startDate": "2016-04-13"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1098/rsta.2015.0202",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Published article",
+          "url": "https://doi.org/10.1098/rsta.2015.0202",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-welch1967use": {
+      "citationKey": "welch1967use",
+      "title": "The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Welch",
+            "given": "P.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "IEEE Transactions on Audio and Electroacoustics",
+        "kind": "journal-article",
+        "year": 1967,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "15",
+        "issue": "2",
+        "pages": "70-73",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1967-06",
+        "posted": null,
+        "issn": [
+          "0018-9278"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1109/TAU.1967.1161901",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "功率谱估计",
+        "question": "如何通过短时加窗周期图的平均，以快速傅里叶变换估计功率谱？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1109/TAU.1967.1161901",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+            "appliesTo": "vor",
+            "startDate": "1967-06-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1109/TAU.1967.1161901",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Published article",
+          "url": "https://doi.org/10.1109/TAU.1967.1161901",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-gneiting2007strictly": {
+      "citationKey": "gneiting2007strictly",
+      "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gneiting",
+            "given": "Tilmann",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Raftery",
+            "given": "Adrian E",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of the American Statistical Association",
+        "kind": "journal-article",
+        "year": 2007,
+        "publisher": "Informa UK Limited",
+        "volume": "102",
+        "issue": "477",
+        "pages": "359-378",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2007-03",
+        "posted": null,
+        "issn": [
+          "0162-1459",
+          "1537-274X"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1198/016214506000001437",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "概率预测评价",
+        "question": "严格适当评分规则如何评价概率预测，并连接预测分布、估计与决策？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1198/016214506000001437",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1198/016214506000001437",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Published article",
+          "url": "https://doi.org/10.1198/016214506000001437",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-lin1991divergence": {
+      "citationKey": "lin1991divergence",
+      "title": "Divergence measures based on the Shannon entropy",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Lin",
+            "given": "J.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "IEEE Transactions on Information Theory",
+        "kind": "journal-article",
+        "year": 1991,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "37",
+        "issue": "1",
+        "pages": "145-151",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1991",
+        "posted": null,
+        "issn": [
+          "0018-9448"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1109/18.61115",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "概率分布差异度量",
+        "question": "如何基于Shannon熵构造对称且有界的概率分布散度？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1109/18.61115",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+            "appliesTo": "vor",
+            "startDate": "1991-01-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.1109/18.61115",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Published article",
+          "url": "https://doi.org/10.1109/18.61115",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "links.original"
+          ]
+        }
+      ]
+    },
+    "p-politi2013lyapunov": {
+      "citationKey": "politi2013lyapunov",
+      "title": "Lyapunov exponent",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Politi",
+            "given": "Antonio",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Scholarpedia",
+        "kind": "journal-article",
+        "year": 2013,
+        "publisher": "Scholarpedia",
+        "volume": "8",
+        "issue": "3",
+        "pages": null,
+        "articleNumber": "2722",
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1941-6016"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.4249/scholarpedia.2722",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "动力系统的轨迹敏感性",
+        "question": "Lyapunov 指数如何定义与计算，如何刻画动力系统中小扰动的长期增长率？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.4249/scholarpedia.2722",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "article-20261022"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261022",
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.4249/scholarpedia.2722",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers"
+          ]
+        },
+        {
+          "id": "article-20261022",
+          "provider": "Scholarpedia",
+          "url": "http://www.scholarpedia.org/article/Lyapunov_exponent",
+          "retrievedOn": "2026-10-22",
+          "fields": [
+            "research",
+            "links.original",
+            "access.original"
           ]
         }
       ]
