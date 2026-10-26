@@ -19,6 +19,7 @@
         "p-asllani2018structure",
         "p-3558328577a9fe",
         "p-20e09c785972ea",
+        "p-banisch2012agent",
         "p-c01a38e3575e6a",
         "p-c70e39fc5f66f8",
         "p-b896af39b2c26b",
@@ -31,14 +32,19 @@
         "p-fb1ce01ba5d99a",
         "p-9b34fbe94d5532",
         "p-0973989224e55e",
+        "p-chen2024persistent",
+        "p-chorin2002optimal",
+        "p-couzin2005effective",
         "p-927b987bcafd9f",
         "p-1231e138b3e7b9",
         "p-009a5f79210d35",
         "p-31a6594b7a0d2b",
         "p-a94aab3134500a",
+        "p-fruchart2021nonreciprocal",
         "p-92beb433376903",
         "p-d8d0e78246825a",
         "p-cb3c05b33165e5",
+        "p-ginelli2010relevance",
         "p-4c933e5e68ad8c",
         "p-81f32e0b41173a",
         "p-4ae1482f649cdb",
@@ -46,16 +52,19 @@
         "p-ba3e8fdd391dea",
         "p-c052dbe87b9b33",
         "p-5a53b2982f1e73",
+        "p-helbing1997modelling",
         "p-8faf1f4ace3247",
         "p-07e44c4aadc448",
         "p-c2ad25bf624a81",
         "p-48bdeb33bcb81c",
         "p-644d7c29f0501b",
+        "p-iacopini2019simplicial",
         "p-0cfbe42b13d82d",
         "p-dc4a6f8086da48",
         "p-5cc41cdf26eaf1",
         "p-c8178fc552a36c",
         "p-88357203f43dff",
+        "p-kevrekidis2003equation",
         "p-6f787ecc91cce6",
         "p-krall2021obscuring",
         "p-0ecd26d0a6c94e",
@@ -66,8 +75,10 @@
         "p-0e1efe6bfcaa0b",
         "p-25874be5fe713c",
         "p-87731059078047",
+        "p-morin2015collective",
         "p-murakami2021mutual",
         "p-2f52a2879ba49e",
+        "p-pimentel2008intrinsic",
         "p-politi2013lyapunov",
         "p-7b4b04a97935a1",
         "p-7ab7c365a0e650",
@@ -81,6 +92,7 @@
         "p-4fd16b9e277e4b",
         "p-cfca7cd9a963e6",
         "p-1e110688d4db72",
+        "p-tian2006lumpability",
         "p-68856f50c447b4",
         "p-4f90d2d88f48f3",
         "p-e25848985b1d28",
@@ -178,6 +190,7 @@
         "p-kaelbling1998planning",
         "p-kotseruba2020years",
         "p-li2024survey",
+        "p-littman1994markov",
         "p-qi2026beyond",
         "p-russell2021artificial",
         "p-sumers2023cognitive",
@@ -30899,6 +30912,1552 @@
           "fields": [
             "research",
             "links.original",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-littman1994markov": {
+      "citationKey": "littman1994markov",
+      "title": "Markov games as a framework for multi-agent reinforcement learning",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Littman",
+            "given": "Michael L.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "International Conference on Machine Learning (ICML)",
+        "kind": "conference-paper",
+        "year": 1994,
+        "publisher": "Elsevier",
+        "volume": null,
+        "issue": null,
+        "pages": "157-163",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1994",
+        "posted": null,
+        "issn": [],
+        "isbn": [
+          "9781558603356"
+        ]
+      },
+      "identifiers": {
+        "doi": "10.1016/b978-1-55860-335-6.50027-1",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "马尔可夫博弈与多智能体学习",
+        "question": "多个目标相互作用的学习主体如何在由联合行动决定状态转移的环境中学习策略？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/b978-1-55860-335-6.50027-1",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "1994-01-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1016%2Fb978-1-55860-335-6.50027-1",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Conference paper abstract and publication record",
+          "url": "https://mlanthology.org/icml/1994/littman1994icml-markov/",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "publication.venue",
+            "publication.kind"
+          ]
+        }
+      ]
+    },
+    "p-banisch2012agent": {
+      "citationKey": "banisch2012agent",
+      "title": "Agent based models and opinion dynamics as Markov chains",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Banisch",
+            "given": "Sven",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Lima",
+            "given": "Ricardo",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Araújo",
+            "given": "Tanya",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Social Networks",
+        "kind": "journal-article",
+        "year": 2012,
+        "publisher": "Elsevier BV",
+        "volume": "34",
+        "issue": "4",
+        "pages": "549-561",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2012-10",
+        "posted": null,
+        "issn": [
+          "0378-8733"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.socnet.2012.06.001",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "主体模型的微观—宏观投影",
+        "question": "如何将基于主体的意见动力学表示为马尔可夫链，并确定宏观聚合何时仍保留马尔可夫性质？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.socnet.2012.06.001",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2012-10-01"
+          },
+          {
+            "url": "https://www.elsevier.com/legal/tdmrep-license",
+            "appliesTo": "tdm",
+            "startDate": "2012-10-01"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.socnet.2012.06.001",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher abstract and publication record",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0378873312000378",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-tian2006lumpability": {
+      "citationKey": "tian2006lumpability",
+      "title": "Lumpability and Commutativity of Markov Processes",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Tian",
+            "given": "Jianjun Paul",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Kannan",
+            "given": "D.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Stochastic Analysis and Applications",
+        "kind": "journal-article",
+        "year": 2006,
+        "publisher": "Informa UK Limited",
+        "volume": "24",
+        "issue": "3",
+        "pages": "685-702",
+        "articleNumber": null,
+        "publishedOnline": "2007-02-15",
+        "publishedPrint": "2006-07",
+        "posted": null,
+        "issn": [
+          "0736-2994",
+          "1532-9356"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1080/07362990600632045",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "马尔可夫过程的可聚合性",
+        "question": "连续时间离散状态马尔可夫过程何时可以聚合，聚合与交换性满足哪些条件？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1080/07362990600632045",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1080%2F07362990600632045",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Author-hosted published article",
+          "url": "https://people.nmsu.edu/jtian/publications/2006-3.pdf",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        },
+        {
+          "id": "publisher-online-date",
+          "provider": "Publisher publication record",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/07362990600632045",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "publication.publishedOnline"
+          ]
+        }
+      ]
+    },
+    "p-chorin2002optimal": {
+      "citationKey": "chorin2002optimal",
+      "title": "Optimal prediction with memory",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Chorin",
+            "given": "Alexandre J.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Hald",
+            "given": "Ole H.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Kupferman",
+            "given": "Raz",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physica D: Nonlinear Phenomena",
+        "kind": "journal-article",
+        "year": 2002,
+        "publisher": "Elsevier BV",
+        "volume": "166",
+        "issue": "3-4",
+        "pages": "239-257",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2002-06",
+        "posted": null,
+        "issn": [
+          "0167-2789"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/s0167-2789(02)00446-3",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "含记忆的降阶预测",
+        "question": "如何通过条件期望和统计投影描述未解析变量的作用，并在低维预测中保留非马尔可夫记忆项？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/s0167-2789(02)00446-3",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2002-06-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1016%2Fs0167-2789%2802%2900446-3",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Author-hosted published article",
+          "url": "https://math.berkeley.edu/~chorin/CHK02.pdf",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-kevrekidis2003equation": {
+      "citationKey": "kevrekidis2003equation",
+      "title": "Equation-Free, Coarse-Grained Multiscale Computation: Enabling Microscopic Simulators to Perform System-Level Analysis",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Kevrekidis",
+            "given": "Ioannis G.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Gear",
+            "given": "C. William",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Hyman",
+            "given": "James M.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Kevrekidis",
+            "given": "Panagiotis G.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Runborg",
+            "given": "Olof",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Theodoropoulos",
+            "given": "Constantinos",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Communications in Mathematical Sciences",
+        "kind": "journal-article",
+        "year": 2003,
+        "publisher": "International Press of Boston",
+        "volume": "1",
+        "issue": "4",
+        "pages": "715-762",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2003",
+        "posted": null,
+        "issn": [
+          "1539-6746",
+          "1945-0796"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.4310/cms.2003.v1.n4.a5",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "无显式宏观方程的多尺度计算",
+        "question": "如何用经过适当初始化的短时微观模拟进行宏观演化、稳定性与系统层面的计算分析？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.4310/cms.2003.v1.n4.a5",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.4310%2Fcms.2003.v1.n4.a5",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher full text",
+          "url": "https://intlpress.com/site/pub/files/_fulltext/journals/cms/2003/0001/0004/CMS-2003-0001-0004-a005.pdf",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "title",
+            "authors",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-couzin2005effective": {
+      "citationKey": "couzin2005effective",
+      "title": "Effective leadership and decision-making in animal groups on the move",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Couzin",
+            "given": "Iain D.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Krause",
+            "given": "Jens",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Franks",
+            "given": "Nigel R.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Levin",
+            "given": "Simon A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature",
+        "kind": "journal-article",
+        "year": 2005,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "433",
+        "issue": "7025",
+        "pages": "513-516",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2005-02",
+        "posted": null,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/nature03236",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "知情个体与群体决策",
+        "question": "知情个体的比例、方向偏好及其权重如何通过局部交互影响移动群体的决策准确性和一致性？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/nature03236",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://www.springer.com/tdm",
+            "appliesTo": "tdm",
+            "startDate": "2005-02-01"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1038%2Fnature03236",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher article record and supplementary-information description",
+          "url": "https://www.nature.com/articles/nature03236",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-morin2015collective": {
+      "citationKey": "morin2015collective",
+      "title": "Collective motion with anticipation: Flocking, spinning, and swarming",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Morin",
+            "given": "Alexandre",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Caussin",
+            "given": "Jean-Baptiste",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Eloy",
+            "given": "Christophe",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Bartolo",
+            "given": "Denis",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review E",
+        "kind": "journal-article",
+        "year": 2015,
+        "publisher": "American Physical Society (APS)",
+        "volume": "91",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "012134",
+        "publishedOnline": "2015-01-20",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1539-3755",
+          "1550-2376"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physreve.91.012134",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "前瞻与集体运动",
+        "question": "对邻居方向的预判如何改变自驱动粒子的群集、旋转与聚群状态？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physreve.91.012134",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2015-01-20"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1103%2Fphysreve.91.012134",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher abstract and publication record",
+          "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012134",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-chen2024persistent": {
+      "citationKey": "chen2024persistent",
+      "title": "Persistent and responsive collective motion with adaptive time delay",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Chen",
+            "given": "Zhihan",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5043-303X",
+            "affiliations": [
+              "Materials Science and Engineering Program and Texas Materials Institute, The University of Texas at Austin, Austin, TX 78712, USA."
+            ]
+          },
+          {
+            "family": "Zheng",
+            "given": "Yuebing",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-9168-9477",
+            "affiliations": [
+              "Materials Science and Engineering Program and Texas Materials Institute, The University of Texas at Austin, Austin, TX 78712, USA.",
+              "Walker Department of Mechanical Engineering, The University of Texas at Austin, Austin, TX 78712, USA."
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Science Advances",
+        "kind": "journal-article",
+        "year": 2024,
+        "publisher": "American Association for the Advancement of Science (AAAS)",
+        "volume": "10",
+        "issue": "14",
+        "pages": null,
+        "articleNumber": "eadk3914",
+        "publishedOnline": null,
+        "publishedPrint": "2024-04-05",
+        "posted": null,
+        "issn": [
+          "2375-2548"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1126/sciadv.adk3914",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "自适应响应时延",
+        "question": "自适应时延如何协调集体运动对环境噪声的持续性与对外部刺激的响应性？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1126/sciadv.adk3914",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1126%2Fsciadv.adk3914",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Published article full text in PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10990279/",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-ginelli2010relevance": {
+      "citationKey": "ginelli2010relevance",
+      "title": "Relevance of Metric-Free Interactions in Flocking Phenomena",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Ginelli",
+            "given": "Francesco",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Chaté",
+            "given": "Hugues",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review Letters",
+        "kind": "journal-article",
+        "year": 2010,
+        "publisher": "American Physical Society (APS)",
+        "volume": "105",
+        "issue": "16",
+        "pages": null,
+        "articleNumber": "168103",
+        "publishedOnline": "2010-10-13",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0031-9007",
+          "1079-7114"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrevlett.105.168103",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "交互邻域与集体运动",
+        "question": "基于拓扑邻居而非固定几何距离的交互如何改变自驱动粒子的集体性质？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrevlett.105.168103",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2010-10-13"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1103%2Fphysrevlett.105.168103",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher abstract and publication record",
+          "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.168103",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "access.original"
+          ]
+        }
+      ]
+    },
+    "p-fruchart2021nonreciprocal": {
+      "citationKey": "fruchart2021nonreciprocal",
+      "title": "Non-reciprocal phase transitions",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Fruchart",
+            "given": "Michel",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Hanai",
+            "given": "Ryo",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Littlewood",
+            "given": "Peter B.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Vitelli",
+            "given": "Vincenzo",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-6328-8783",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature",
+        "kind": "journal-article",
+        "year": 2021,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "592",
+        "issue": "7854",
+        "pages": "363-369",
+        "articleNumber": null,
+        "publishedOnline": "2021-04-14",
+        "publishedPrint": "2021-04-15",
+        "posted": null,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/s41586-021-03375-9",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "非互易耦合与集体转变",
+        "question": "非互易相互作用如何使同步、集群与图案形成系统出现随时间变化的集体相及相应转变？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41586-021-03375-9",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.springer.com/tdm",
+            "appliesTo": "tdm",
+            "startDate": "2021-04-14"
+          },
+          {
+            "url": "https://www.springer.com/tdm",
+            "appliesTo": "vor",
+            "startDate": "2021-04-14"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41586-021-03375-9",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher abstract and publication record",
+          "url": "https://www.nature.com/articles/s41586-021-03375-9",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-iacopini2019simplicial": {
+      "citationKey": "iacopini2019simplicial",
+      "title": "Simplicial models of social contagion",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Iacopini",
+            "given": "Iacopo",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8794-6410",
+            "affiliations": []
+          },
+          {
+            "family": "Petri",
+            "given": "Giovanni",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Barrat",
+            "given": "Alain",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8683-269X",
+            "affiliations": []
+          },
+          {
+            "family": "Latora",
+            "given": "Vito",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-0984-8038",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature Communications",
+        "kind": "journal-article",
+        "year": 2019,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "10",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "2485",
+        "publishedOnline": "2019-06-06",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2041-1723"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/s41467-019-10431-6",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "高阶相互作用与传播",
+        "question": "群体层面的高阶相互作用如何改变传播阈值、转变连续性及双稳态？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41467-019-10431-6",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2019-06-06"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2019-06-06"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41467-019-10431-6",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher-deposited abstract in Crossref",
+          "url": "https://api.crossref.org/works/10.1038%2Fs41467-019-10431-6",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question"
+          ]
+        }
+      ]
+    },
+    "p-helbing1997modelling": {
+      "citationKey": "helbing1997modelling",
+      "title": "Modelling the evolution of human trail systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Helbing",
+            "given": "Dirk",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Keltsch",
+            "given": "Joachim",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Molnár",
+            "given": "Péter",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature",
+        "kind": "journal-article",
+        "year": 1997,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "388",
+        "issue": "6637",
+        "pages": "47-50",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "1997-07-03",
+        "posted": null,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/40353",
+        "arxiv": "cond-mat/9805158",
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "行人—环境反馈与路径形成",
+        "question": "行人的运动和定向与周围环境的反馈如何形成城市绿地中的路径网络？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/40353",
+        "arxiv": "https://arxiv.org/abs/cond-mat/9805158",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "tdm",
+            "startDate": "1997-07-03"
+          },
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "vor",
+            "startDate": "1997-07-03"
+          }
+        ],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1038%2F40353",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Author-posted version of the published article, abstract",
+          "url": "https://arxiv.org/abs/cond-mat/9805158",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
+            "identifiers.arxiv",
+            "links.arxiv"
+          ]
+        }
+      ]
+    },
+    "p-pimentel2008intrinsic": {
+      "citationKey": "pimentel2008intrinsic",
+      "title": "Intrinsic and extrinsic noise effects on phase transitions of network models with applications to swarming systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Pimentel",
+            "given": "Jaime A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Aldana",
+            "given": "Maximino",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Huepe",
+            "given": "Cristián",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Larralde",
+            "given": "Hernán",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review E",
+        "kind": "journal-article",
+        "year": 2008,
+        "publisher": "American Physical Society (APS)",
+        "volume": "77",
+        "issue": "6",
+        "pages": null,
+        "articleNumber": "061138",
+        "publishedOnline": "2008-06-27",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1539-3755",
+          "1550-2376"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physreve.77.061138",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "direction": "随机性来源与集体转变",
+        "question": "作用于输入信号与决策更新的不同噪声，在网络化集群模型中如何改变有序—无序转变？",
+        "indexTerms": []
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physreve.77.061138",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2008-06-27"
+          }
+        ],
+        "sourceIds": [
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref metadata",
+          "url": "https://api.crossref.org/works/10.1103%2Fphysreve.77.061138",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "title",
+            "authors",
+            "publication.venue",
+            "publication.kind",
+            "publication.year",
+            "publication.publisher",
+            "publication.volume",
+            "publication.issue",
+            "publication.pages",
+            "publication.articleNumber",
+            "publication.publishedOnline",
+            "publication.publishedPrint",
+            "publication.issn",
+            "publication.isbn",
+            "identifiers.doi",
+            "links.original",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher abstract and publication record",
+          "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.77.061138",
+          "retrievedOn": "2026-10-26",
+          "fields": [
+            "research.direction",
+            "research.question",
             "access.original"
           ]
         }
