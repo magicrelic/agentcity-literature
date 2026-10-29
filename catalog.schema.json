@@ -10,7 +10,7 @@
       "const": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json"
     },
     "schemaVersion": {
-      "const": 1,
+      "const": 2,
       "description": "数据结构版本。"
     },
     "library": {
@@ -38,49 +38,6 @@
         "subtitle",
         "language"
       ]
-    },
-    "chapters": {
-      "type": "array",
-      "description": "数组顺序决定索引章节和网页选项卡顺序。",
-      "items": {
-        "type": "object",
-        "description": "一个章节。",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "稳定章节 ID，重命名和排序时保持不变。",
-            "pattern": "^s-[a-z0-9-]+$"
-          },
-          "title": {
-            "type": "string",
-            "description": "章节名称。",
-            "minLength": 1
-          },
-          "description": {
-            "type": "string",
-            "description": "章节覆盖的研究主题。",
-            "minLength": 1
-          },
-          "paperIds": {
-            "type": "array",
-            "description": "本章论文顺序；每篇论文只属于一个主章节。",
-            "items": {
-              "type": "string",
-              "description": "papers 词典中的论文 ID。",
-              "pattern": "^p-[a-z0-9-]+$"
-            },
-            "uniqueItems": true
-          }
-        },
-        "required": [
-          "id",
-          "title",
-          "description",
-          "paperIds"
-        ]
-      },
-      "minItems": 1
     },
     "papers": {
       "type": "object",
@@ -333,7 +290,7 @@
                     "null"
                   ],
                   "minimum": 1,
-                  "description": "原文链接明确指定的 arXiv 版本；未指定时为 null。"
+                  "description": "已核验的 arXiv 版本号；未核验时为 null。"
                 }
               },
               "required": [
@@ -390,7 +347,7 @@
                     "string",
                     "null"
                   ],
-                  "description": "对应 arXiv 版本；可保存已确认的链接，显示由 access.original 决定。",
+                  "description": "已确认属于同一论文的 arXiv 版本链接；不同于原文链接时显示。",
                   "format": "uri",
                   "pattern": "^https?://"
                 },
@@ -606,6 +563,52 @@
                 ]
               },
               "minItems": 1
+            },
+            "classification": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "topics": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true,
+                  "minItems": 1,
+                  "description": "可多选；首项用于 Markdown 和 EPUB 的唯一主主题归档，网页匹配全部主题。"
+                },
+                "objects": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true,
+                  "minItems": 1
+                },
+                "evidenceTypes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true,
+                  "minItems": 0
+                },
+                "documentType": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "venueGroup": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "topics",
+                "objects",
+                "evidenceTypes",
+                "documentType",
+                "venueGroup"
+              ]
             }
           },
           "required": [
@@ -619,17 +622,157 @@
             "links",
             "access",
             "reading",
-            "provenance"
+            "provenance",
+            "classification"
           ]
         }
       }
+    },
+    "taxonomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "legacyIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "legacyIds"
+            ]
+          },
+          "minItems": 1
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ]
+          },
+          "minItems": 1
+        },
+        "evidenceTypes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ]
+          },
+          "minItems": 1
+        },
+        "documentTypes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ]
+          },
+          "minItems": 1
+        },
+        "venueGroups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "venues": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "venues"
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "topics",
+        "objects",
+        "evidenceTypes",
+        "documentTypes",
+        "venueGroups"
+      ]
     }
   },
   "required": [
     "$schema",
     "schemaVersion",
     "library",
-    "chapters",
-    "papers"
+    "papers",
+    "taxonomy"
   ]
 }
