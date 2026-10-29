@@ -1,4 +1,4 @@
-import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=4a0349c39ce5e7b5bc07c25a85e52042e75a8f656aa3d433321dc4081392840c';
+import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c';
 
 async function start() {
   const $ = id => document.getElementById(id);
@@ -10,10 +10,7 @@ async function start() {
   $('load-status').hidden=true;
   const paperMap=new Map(catalog.papers.map(p=>[p.id,p]));
   const rows=$('paper-rows'), card=$('paper-card'), panel=$('filter-panel');
-  const mobile=window.matchMedia('(max-width: 760px)');
-  const hoverDevice=window.matchMedia('(hover: hover) and (pointer: fine)');
-  let currentPaper=null, anchor=null, pinned=false, hoverTimer, closeTimer, touchTimer, touchOrigin;
-  let suppressTouchClick=false, restoringFocus=false, activeColumn=null, filterAnchor=null;
+  let currentPaper=null, anchor=null, activeColumn=null, filterAnchor=null;
   const state={}, readingCache=new Map();
   let readingStyles;
   const text=(tag,value,className)=>{const el=document.createElement(tag);el.textContent=value;if(className)el.className=className;return el;};
@@ -179,7 +176,7 @@ async function start() {
   $('clear-search').addEventListener('click',()=>{$('search').value='';filter();$('search').focus();});
   for(const id of ['reset-filter','clear-filters'])$(id).addEventListener('click',()=>{closeFilter();resetFilters();filter();});
   document.addEventListener('pointerdown',event=>{if(!panel.hidden && !panel.contains(event.target) && !event.target.closest('.column-filter'))closeFilter();});
-  $('papers').addEventListener('scroll',()=>{hideJournal();positionFilter();if(!card.hidden && !pinned)closeCard(false);},{passive:true});
+  $('papers').addEventListener('scroll',()=>{hideJournal();positionFilter();},{passive:true});
   window.addEventListener('resize',positionFilter);
   document.addEventListener('keydown',event=>{if(event.key==='Escape' && !panel.hidden){event.preventDefault();closeFilter(true);}});
 
@@ -232,7 +229,6 @@ async function start() {
       if(currentPaper?.id!==paper.id || card.hidden)return;
       $('card-reading').replaceChildren(...[...body.childNodes].map(node=>document.importNode(node,true)));
       $('card-reading').hidden=false;$('card-metadata').hidden=true;$('card-status').hidden=true;
-      positionCard();
     } catch(error) {
       readingCache.delete(paper.id);
       if(currentPaper?.id!==paper.id || card.hidden)return;
@@ -240,23 +236,11 @@ async function start() {
     }
   }
   $('retry-card').addEventListener('click',()=>{if(currentPaper)loadCardReading(currentPaper);});
-  function positionCard() {
-    if (!anchor || pinned || card.hidden) return;
-    const rect = anchor.getBoundingClientRect();
-    const width = card.offsetWidth, height = card.offsetHeight, gap=14;
-    let left = rect.right + gap;
-    if (left + width > innerWidth - 16) left = rect.left - width - gap;
-    left = Math.max(16, Math.min(left, innerWidth - width - 16));
-    const top = Math.max(16, Math.min(rect.top - 16, innerHeight - height - 16));
-    card.style.left = `${left}px`; card.style.top = `${top}px`;
-  }
-  function openCard(id, button, pin = false) {
-    clearTimeout(hoverTimer); clearTimeout(closeTimer);
-    if (pinned && !pin) return;
+  function openCard(id, button) {
     const paper = paperMap.get(id); if (!paper) return;
     if (anchor) anchor.setAttribute('aria-expanded','false');
     closeFilter();
-    currentPaper = paper; anchor = button; pinned = pin || mobile.matches;
+    currentPaper = paper; anchor = button;
     if (anchor) anchor.setAttribute('aria-expanded','true');
     $('card-title').textContent = paper.title; $('card-direction').textContent = paper.topicLabels.join(' · ');
     $('card-authors').textContent = paper.authors;
@@ -271,71 +255,37 @@ async function start() {
     if (paper.arxiv) $('card-links').append(resource('arXiv',paper.arxiv));
     if (paper.reading) $('card-links').append(resource('解读',readingHref(paper)));
     $('copy-link').textContent='复制链接'; $('copy-status').textContent='';
-    card.classList.toggle('pinned',pinned); card.setAttribute('aria-modal',String(pinned));
-    card.hidden=false; $('backdrop').hidden=!pinned; document.body.classList.toggle('dialog-open',pinned);
+    card.setAttribute('aria-modal','true');
+    card.hidden=false; $('backdrop').hidden=false; document.body.classList.add('dialog-open');
     card.querySelector('.card-scroll').scrollTop=0;
-    positionCard();
-    if (pinned) { updateHash(paper.id); $('close-card').focus({preventScroll:true}); }
+    updateHash(paper.id); $('close-card').focus({preventScroll:true});
     loadCardReading(paper);
   }
   function closeCard(restoreFocus = true, syncHash = true) {
-    clearTimeout(hoverTimer); clearTimeout(closeTimer); clearTimeout(touchTimer);
-    const wasPinned=pinned, previous=anchor;
+    const wasOpen=!card.hidden, previous=anchor;
     card.hidden=true; $('backdrop').hidden=true; document.body.classList.remove('dialog-open');
     if (previous) previous.setAttribute('aria-expanded','false');
-    pinned=false; anchor=null; currentPaper=null;
-    if (wasPinned && syncHash) updateHash();
-    if (wasPinned && restoreFocus && previous?.isConnected) {
-      restoringFocus=true; previous.focus({preventScroll:true}); restoringFocus=false;
+    anchor=null; currentPaper=null;
+    if (wasOpen && syncHash) updateHash();
+    if (wasOpen && restoreFocus && previous?.isConnected) {
+      previous.focus({preventScroll:true});
     }
   }
-  function scheduleClose() { if (!pinned) { clearTimeout(closeTimer); closeTimer=setTimeout(() => closeCard(false),240); } }
-  // A long press can put the backdrop under the finger before touch release.
-  // Suppress that gesture's synthetic click, including clicks outside the row.
-  document.addEventListener('pointerdown',()=>{suppressTouchClick=false;},{capture:true});
-  document.addEventListener('click',event=>{
-    if(!suppressTouchClick)return;
-    suppressTouchClick=false;event.preventDefault();event.stopPropagation();
-  },{capture:true});
-  rows.addEventListener('pointerover',event => {
-    const button=event.target.closest('.paper-title'); if (!button || !hoverDevice.matches || event.pointerType==='touch') return;
-    clearTimeout(closeTimer); clearTimeout(hoverTimer); hoverTimer=setTimeout(() => openCard(button.dataset.paper,button),220);
-  });
-  rows.addEventListener('pointerout',event => {
-    const button=event.target.closest('.paper-title'); if (button && !button.contains(event.relatedTarget)) { clearTimeout(hoverTimer); scheduleClose(); }
-  });
   rows.addEventListener('click',event => {
     const button=event.target.closest('.paper-title'); if (!button) return;
-    openCard(button.dataset.paper,button,true);
+    openCard(button.dataset.paper,button);
   });
-  rows.addEventListener('pointerdown',event => {
-    const button=event.target.closest('.paper-title'); if (!button || event.pointerType==='mouse') return;
-    clearTimeout(touchTimer); touchOrigin={x:event.clientX,y:event.clientY,id:event.pointerId};
-    touchTimer=setTimeout(() => { touchOrigin=null; suppressTouchClick=true; openCard(button.dataset.paper,button,true); },450);
-  });
-  rows.addEventListener('pointermove',event => {
-    if (touchOrigin && Math.hypot(event.clientX-touchOrigin.x,event.clientY-touchOrigin.y)>10) { clearTimeout(touchTimer); touchOrigin=null; suppressTouchClick=true; }
-  },{passive:true});
-  for (const name of ['pointerup','pointercancel']) rows.addEventListener(name,() => { clearTimeout(touchTimer); touchOrigin=null; });
-  rows.addEventListener('contextmenu',event => { if (event.target.closest('.paper-title')) event.preventDefault(); });
-  rows.addEventListener('focusin',event => { const button=event.target.closest('.paper-title'); if (!restoringFocus && button && button.matches(':focus-visible') && hoverDevice.matches) openCard(button.dataset.paper,button); });
-  rows.addEventListener('focusout',event => { if (!card.contains(event.relatedTarget)) scheduleClose(); });
-  card.addEventListener('pointerenter',() => clearTimeout(closeTimer));
-  card.addEventListener('pointerleave',scheduleClose);
   $('close-card').addEventListener('click',() => closeCard());
   $('backdrop').addEventListener('click',() => closeCard());
   document.addEventListener('keydown',event => {
     if (card.hidden) return;
     if (event.key==='Escape') { event.preventDefault(); closeCard(); }
-    if (event.key==='Tab' && pinned) {
+    if (event.key==='Tab') {
       const focusables=[...card.querySelectorAll('button,a[href]')]; const first=focusables[0], last=focusables.at(-1);
       if (event.shiftKey && document.activeElement===first) { event.preventDefault(); last.focus(); }
       else if (!event.shiftKey && document.activeElement===last) { event.preventDefault(); first.focus(); }
     }
   });
-  document.addEventListener('pointerdown',event => { if (!pinned && !card.hidden && !card.contains(event.target) && !event.target.closest('.paper-title')) closeCard(false); });
-  window.addEventListener('scroll',() => { if (!card.hidden && !pinned) closeCard(false); },{passive:true});
-  window.addEventListener('resize',() => { if (!card.hidden && mobile.matches && !pinned) openCard(currentPaper.id,anchor,true); else positionCard(); });
   $('copy-link').addEventListener('click',async () => {
     if (!currentPaper) return;
     const url=new URL(location.href); url.hash=new URLSearchParams({paper:currentPaper.id}).toString();
@@ -361,7 +311,7 @@ async function start() {
     const paper=paperMap.get(params.get('paper'));
     if(paper && !filterPapers([paper],filters()).length)resetFilters();
     closeCard(false,false);render();
-    if(paper)openCard(paper.id,rows.querySelector(`button[data-paper="${paper.id}"]`),true);
+    if(paper)openCard(paper.id,rows.querySelector(`button[data-paper="${paper.id}"]`));
   }
   window.addEventListener('hashchange',readHash);
   readHash();

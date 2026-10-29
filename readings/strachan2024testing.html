@@ -1,162 +1,87 @@
 <!doctype html>
-  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Testing theory of mind in large language models and humans · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=4a0349c39ce5e7b5bc07c25a85e52042e75a8f656aa3d433321dc4081392840c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Testing theory of mind in large language models and humans · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1038/s41562-024-01882-z" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Strachan et al. - Testing theory of mind in large language models and humans</h1>
-<p><strong>语言模型的他人知识推断</strong></p>
+<p><strong>大语言模型能否理解他人心智：区分推断能力、回答策略与答题偏向</strong></p>
+<p>Nature Human Behaviour，2024，8：1285–1295。DOI：<a href="https://doi.org/10.1038/s41562-024-01882-z">10.1038/s41562-024-01882-z</a>。</p>
 <blockquote>
-<p>资料范围：论文正文（不含补充材料）。
-文本可靠性：高。
-来源定位：structure-grounded。
-主要分析类型：discovery。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：完整（相对于论文正文）。</p>
+<p>资料范围：出版社正式排版版全文与 Methods（PDF第1–11页，印刷页1285–1295），全部主图1–2及表1；研究性补充材料全文（PDF第1–24页，含封面及内部页1–23；7节、图S1–S8、表S1–S4、附录1–2），Reporting Summary（8页），以及三份随附计分数据表。主文PDF第12–19页与独立 Reporting Summary 重复。源数据覆盖限于三份CSV；未覆盖OSF完整逐字回答、分析工程、原始ZIP的其余内容及审稿通信。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Strachan et al.，<em>Testing theory of mind in large language models and humans</em>，<strong>Nature Human Behaviour（2024）</strong>。<a href="https://doi.org/10.1038/s41562-024-01882-z">原文</a>。</p>
+<p>资料检索日期：2026-10-29；阅读日期：2026-10-29；核验日期：2026-10-29。</p>
+<h2>一、研究问题</h2>
+<p>一个系统会回答“他不知道东西被移走，所以会去原处找”，是否就说明它理解了他人的信念？反过来，它回答“无法确定这个人是否知情”，是否就意味着它不会推断？这篇论文把这两个问题放在同一套实验中：<strong>同一道心智理论测验的成功，可能来自理解，也可能来自固定答题倾向；失败则可能来自推断困难，也可能来自不愿作出不确定的判断。</strong></p>
+<p>心智理论在这里指追踪他人的信念、意图与知识状态，并据此解释行为的能力。作者没有把它当成一个单项分数，而是采用五类文字任务，同时比较人类与模型，再针对最反常的结果设计后续实验。关键发现是：GPT-4在多项任务中达到或超过人类组，却在“失言”任务中落后；整体表现较弱的LLaMA2-70B反而在失言任务中领先。这种交叉关系说明，仅按总分排列“谁更懂人心”，会掩盖不同系统的作答方式（Results，图1）。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从单题演示转向有对照的任务组合</h3>
+<p>研究主要比较GPT-4、GPT-3.5和LLaMA2-70B-Chat，另在补充材料中报告7B、13B模型。主测验每种模型、每类任务重复15个独立会话；一个会话连续完成该任务的全部题目。这里的15次是同一模型的重复观测，不能理解成15个独立训练的模型。人类每项任务约50人，采用英语文字故事与自由文本回答；另有900人的信念可能性实验及757人的错误信念扰动实验。论文报告总样本为1,907人（表1；样本计数差异见第四节）。</p>
 <table>
 <thead>
 <tr>
-<th>项目</th>
-<th>内容</th>
+<th>任务</th>
+<th>实际要求</th>
+<th>题目与计分</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>分析类型与领域</td>
-<td>discovery；情境理解与他人知识推断</td>
+<td>错误信念</td>
+<td>区分人物记忆中的位置与现实位置</td>
+<td>4个既有故事加3个新故事，交替安排真、假信念版本；答对计1分</td>
 </tr>
 <tr>
-<td>标识符</td>
-<td>DOI：10.1038/s41562-024-01882-z</td>
+<td>反讽</td>
+<td>识别话语表面意思与说话者信念的反差</td>
+<td>12题，含反讽及非反讽条件；0或1分</td>
 </tr>
 <tr>
-<td>作者机构</td>
-<td>书目资料未提供</td>
+<td>失言</td>
+<td>识别说话者因不知情而无意冒犯</td>
+<td>10个既有故事加5个新故事；主分析聚焦最后的信念问题</td>
 </tr>
 <tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
+<td>暗示</td>
+<td>说出间接话语希望对方采取的行动</td>
+<td>10个既有故事加6个新故事；取消原测验追加提示，按0或1分计</td>
 </tr>
 <tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
+<td>奇异故事</td>
+<td>用信念与意图解释撒谎、误导、误解等行为</td>
+<td>8个既有故事加4个新故事；0、1、2分，允许部分正确</td>
 </tr>
 </tbody>
 </table>
-<p>[Paper: Section Abstract]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] LLM在多项他人知识推断任务中可接近人类，但失败模式依任务变化。 [Paper: Section Abstract]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] LLM 在推断他人知识与意图的任务中表现如何，与人类有何差异？ [Paper: Section Abstract]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 不同他人知识推断任务要求不同语义处理，平均分会掩盖失败。 [Paper: Section Abstract]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LLM 在推断他人知识与意图的任务中表现如何，与人类有何差异</td>
-<td>[Analysis] 不同他人知识推断任务要求不同语义处理，平均分会掩盖失败。</td>
-<td>[Analysis] 用多类受控题型及人类对照检查任务特定能力。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 用多类受控题型及人类对照检查任务特定能力。 [Paper: Section Testing theory of mind in large language models and humans]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 与1,907名真人比较错误信念、间接请求及其他语言情境，检查任务特定表现。 [Paper: Section Testing theory of mind in large language models and humans]</p>
-<h2>08 核心模块拆解</h2>
-<table>
-<thead>
-<tr>
-<th>分析环节</th>
-<th>在论证中的作用</th>
-<th>可区分性</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>核心表示或机制</td>
-<td>[Analysis] 用多类受控题型及人类对照检查任务特定能力。</td>
-<td>[Analysis] 文本任务的表现不能单独验证实际联合行动。</td>
-<td>[Paper: Section Testing theory of mind in large language models and humans]</td>
-</tr>
-</tbody>
-</table>
-<h2>09 关键公式与符号</h2>
-<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
-<h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>检验对象</th>
-<th>设计与证据</th>
-<th>支持的结论</th>
-<th>不支持的更强解释</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LLM 在推断他人知识与意图的任务中表现如何，与人类有何差异</td>
-<td>LLM在多项他人知识推断任务中可接近人类，但失败模式依任务变化。</td>
-<td>LLM在多项他人知识推断任务中可接近人类，但失败模式依任务变化。</td>
-<td>文本任务表现不证明内部推理机制或真实联合行动能力；措辞敏感性影响结论。</td>
-<td>[Paper: Section Results]</td>
-</tr>
-</tbody>
-</table>
-<p>主文图表的论证入口（图题保留原文关键词）：</p>
-<table>
-<thead>
-<tr>
-<th>图表</th>
-<th>证据对象</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Figure 1</td>
-<td>Performance of human (purple), GPT-4 (dark blue), GPT-3…</td>
-<td>[Paper: Figure 1]</td>
-</tr>
-<tr>
-<td>Figure 2</td>
-<td>Results of the variants of the faux pas test.</td>
-<td>[Paper: Figure 2]</td>
-</tr>
-<tr>
-<td>Figure 3</td>
-<td>Table 1 Data collection details for each model</td>
-<td>[Paper: Figure 3]</td>
-</tr>
-</tbody>
-</table>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 文本任务表现不证明内部推理机制或真实联合行动能力；措辞敏感性影响结论。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 在等义改写和未知活动情景上比较条件选择；题目熟悉度与输出评分方式可能影响表现。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 文本任务的表现不能单独验证实际联合行动。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：文本任务表现不证明内部推理机制或真实联合行动能力；措辞敏感性影响结论。</li>
-<li>核心假说与增量：在等义改写和未知活动情景上比较条件选择。</li>
-<li>初始方法与如何验证：在等义改写和未知活动情景上比较条件选择；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：题目熟悉度与输出评分方式可能影响表现。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p>各任务得分按满分归一化后比较。五位研究者参与编码，20%的会话交叉编码，总体初始一致率超过95%，分歧经讨论处理。既有题目先出现，新题最后出现；因此新题既检验对特定措辞的熟悉程度，也可能受到会话顺序影响。补充材料将GPT-3.5的题序随机化后，只在反讽中保留了越往后答得越好的效应，不能把原顺序下所有变化都解释成学习（Methods；补充第3节、图S3及表S2–S3）。</p>
+<h3>失言任务为何能拆开不同解释</h3>
+<p>设想一个人刚买好窗帘，朋友来访却批评窗帘难看，还建议换新的。理解“失言”，既要知道主人会受伤，也要推断朋友很可能不知道窗帘刚买。原题问的是“朋友知道窗帘是新的吗？”作者主要按是否承诺“不知道”计分；只说“故事没有交代”不给分。这个选择聚焦说话者的心智状态，也避免把部分人类“不知者无罪”的道德判断误当成无法理解冒犯。恢复四问全部答对的严格标准，主要组间排序仍然保持。另有一道原题因提问的时间指向不清而接受两种解释，删除该题也不改变总体结果（Methods；补充第5节、图S5、表S4）。</p>
+<p>GPT的典型错误恰是保留判断。作者提出三个可区分的解释：不能生成“不知情”的推断；能列出这个解释，却不能判断它是否更可能；能够排序，却不愿将可能性当成确定事实作答。于是把末问改成“知道与不知道，哪一种更可能？”如果模型能够直接选出不知情，前两种解释就不足以说明原来的失败。少数错误或不明确回答还会被追问；未经追问答对得2分，追问后答对得1分，再归一化（Results：Understanding faux pas；Methods：Faux pas likelihood test）。</p>
+<p>但这还不够：原失言题的预期答案几乎总是不知情，固定选择这个选项也能得高分。第二项控制用六个全新故事，各造三个版本，只改变关键话语。以同学聚会为例：当面贬低一个旧同学而未认出他，暗示“不知道身份”；只问酒吧在哪里，不提供相关线索；问“你还写诗吗”，则暗示认出了对方。每个版本独立呈现，每种模型每题重复15次，共270次；人类每人只答一题，避免读过另一版本后获得额外信息（Methods：Belief likelihood test；补充附录2）。</p>
+<p>图2b需要同时展示回答方向与“不确定”的频数。依作者的编码规则，令<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mo>−</mo></msub></mrow><annotation encoding="application/x-tex">n_-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6389em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">n_+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6389em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span></eq>分别是不知情、不确定、知情的回答次数，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span></eq>为总次数，则无量纲的方向分数可写成：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>=</mo><mfrac><mrow><mo>−</mo><msub><mi>n</mi><mo>−</mo></msub><mo>+</mo><msub><mi>n</mi><mo>+</mo></msub></mrow><mi>N</mi></mfrac><mo separator="true">,</mo><mspace width="2em"/><mi>N</mi><mo>=</mo><msub><mi>n</mi><mo>−</mo></msub><mo>+</mo><msub><mi>n</mi><mn>0</mn></msub><mo>+</mo><msub><mi>n</mi><mo>+</mo></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+D=\frac{-n_-+n_+}{N},\qquad N=n_-+n_0+n_+.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.9463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6389em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>理解演示：假设10次回答中6次“不知道”、3次“不确定”、1次“知道”，则<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>10</mn><mo>=</mo><mo>−</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">D=(-6+1)/10=-0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">0.5</span></span></span></span></eq>，说明整体偏向不知情；这不是论文实验数据。若各5次选择知情与不知情，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq>；若10次全部不确定，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span></span></eq>也为0。因此零均值不能证明模型承认不确定，必须连同三类频数一起看。作者的卡方检验比较的正是频数分布，而非仅比较这条均值柱。</p>
+<h2>三、主要结果与证据</h2>
+<h3>总体成绩中的反常点</h3>
+<p>原始错误信念题中，人类与三个主模型均达到满分；天花板效应使这项任务无法进一步区分能力。GPT-4在反讽、暗示和奇异故事中高于人类组，Holm校正后的<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq>分别为0.040、0.040和<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.04</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow><annotation encoding="application/x-tex">1.04\times10^{-5}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.04</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></span></eq>。奇异故事的效应量<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0.60</mn></mrow><annotation encoding="application/x-tex">r=0.60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.60</span></span></span></span></eq>，95%置信区间0.46–0.72；反讽的<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0.32</mn></mrow><annotation encoding="application/x-tex">r=0.32</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.32</span></span></span></span></eq>，区间0.14–0.48。它们说明的是这些题目和计分条件下的组间差异，不是通用社交能力排名。</p>
+<p>失言任务呈相反关系：原题会话得分中位数约为人类0.90、GPT-4 0.40、GPT-3.5 0.10、LLaMA2-70B 1.00。LLaMA2只有一个会话没有达到满分。GPT-3.5的反讽表现也低于人类，而暗示与奇异故事的差异不显著；“不显著”不等于证明两者等效（图1a）。</p>
+<p><a class="reading-image" href="assets/strachan2024testing/fig-task-performance.png?v=0ff8422b3b168a8ceedd4aa11ee9ca10b0d11c36e0c9471ba6f5058a8b1f3b13" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/strachan2024testing/fig-task-performance.png?v=0ff8422b3b168a8ceedd4aa11ee9ca10b0d11c36e0c9471ba6f5058a8b1f3b13" alt="五类心智任务的组间表现与新旧题目比较" loading="lazy" decoding="async"></a></p>
+<p>图1｜原图1a–b，正式版PDF第3页、印刷页1287。横轴为任务，纵轴为归一化得分。a中彩点为单个人或会话，黑点为中位数；b中深浅色分别为既有题与新题，菱形为中位数，线段为四分位范围，并非均值的置信区间。失言任务上的排序反转推动了后续机制实验。来源：<a href="https://doi.org/10.1038/s41562-024-01882-z">原文</a>。</p>
+<p>新题没有使所有模型系统性下降，一些新暗示题甚至更容易；这削弱了“高分只因记住原题文字”的解释。但题目仍沿用原有逻辑结构，所以不能排除学到答题模板。补充图S2还表明，人类与模型并不总在相同题目上失分：总体接近不意味着逐题推理方式相同。</p>
+<h3>改变问题与改变语境，分别检验什么</h3>
+<p>改成可能性问法后，GPT-4在15个故事、15次会话的225个回答中全部直接答对，无须追加追问；对应15个故事的原问法计分数据为97/225，即43.1%，这里合并了10道既有题和5道新题（图2a源数据）。这种幅度的变化支持“原来的低分包含保留判断的因素”，不能简单归结为完全不会产生所需推断。GPT-3.5也明显改善，但存在追加提示及残余错误。</p>
+<p>第二项控制提供了更关键的证据。相对中性话语，人类和两个GPT模型在失言版本中更偏向不知情，在暗示知情版本中更偏向知情。GPT-4的两项校正检验分别为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>1.54</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>23</mn></mrow></msup></mrow><annotation encoding="application/x-tex">p=1.54\times10^{-23}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.54</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">23</span></span></span></span></span></span></span></span></span></span></span></span></eq>和<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.57</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">3.57\times10^{-4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3.57</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span></span></eq>。因此它的成功不只是机械选择“不知道”，而是至少在这些故事中对相关语境作出不同回答（图2b）。</p>
+<p>LLaMA2-70B也区分了失言与中性版本，却没有显著区分暗示知情与中性版本：<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>χ</mi><mn>2</mn></msup><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1.80</mn></mrow><annotation encoding="application/x-tex">\chi^2(1)=1.80</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">χ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.80</span></span></span></span></eq>，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.180</mn></mrow><annotation encoding="application/x-tex">p=0.180</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.180</span></span></span></span></eq>，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><msub><mi>F</mi><mn>10</mn></msub><mo>=</mo><mn>0.56</mn></mrow><annotation encoding="application/x-tex">BF_{10}=0.56</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.56</span></span></span></span></eq>。这支持其原题高分可能混入不知情归因偏向；但贝叶斯因子并不构成“两条件绝对相同”的强证据，也不能说它完全不读取故事。GPT-3.5与LLaMA2在这项实验中均未选择“不确定”，GPT-4则保留了这一回答类别。</p>
+<p><a class="reading-image" href="assets/strachan2024testing/fig-belief-framing-and-context.png?v=2c7da16a1a57bd49de578f024a0524642ad2e73491f47ac2300ec30a8cca2b9f" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/strachan2024testing/fig-belief-framing-and-context.png?v=2c7da16a1a57bd49de578f024a0524642ad2e73491f47ac2300ec30a8cca2b9f" alt="可能性问法改善得分，但语境控制揭示模型之间的差别" loading="lazy" decoding="async"></a></p>
+<p>图2｜原图2a–b，正式版PDF第5页、印刷页1289。a连接同一故事在两种问法下的平均得分，黑点和粗、细线分别表示跨故事中位数、66%及99%分位范围。b横轴为不知情、不确定、知情；粉、灰、青对应失言、中性、暗示知情，圆点大小表示回答频数，横柱表示方向均值。每种模型每条件90次回答。来源：<a href="https://doi.org/10.1038/s41562-024-01882-z">原文</a>。</p>
+<p>“答对”仍未保证解释有效。补充第7节将正确回答拆成完整解释、事件解释、无解释和循环解释。例如“她不知道窗帘是新的，因为她说话时没意识到窗帘刚买”，只是重复结论，没有提供独立理由。图S8中，GPT-4虽全部得分，只有11个回答被归为使用假设或反事实的完整解释；另有37个事件解释、109个无解释、68个循环解释。事件解释可以依据故事中的信息提供合理理由，只是较少引入额外推断，不能与循环解释或无解释混为一类。这是对输出解释的探索性人工分类，也不是对模型内部计算的直接观测。</p>
+<p><a class="reading-image" href="assets/strachan2024testing/fig-explanation-quality.png?v=e1eb8dee3a6df1b542bdd1cc4f140e56ed7f6e379f31dfd2d17956108d4c8eed" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/strachan2024testing/fig-explanation-quality.png?v=e1eb8dee3a6df1b542bdd1cc4f140e56ed7f6e379f31dfd2d17956108d4c8eed" alt="失言回答的计分成功与解释质量并不重合" loading="lazy" decoding="async"></a></p>
+<p>图3｜原图S8 A–C，作者提供、未经编辑的补充材料PDF第15页、内部页14。横轴为模型，纵轴为回答次数；A区分成功回答的四种解释，B、C分别为GPT-3.5的部分成功与失败，三面板纵轴尺度不同。图支持“正确选项仍可能缺少充分解释”，不能将柱高跨面板直接比较。来源：<a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41562-024-01882-z/MediaObjects/41562_2024_1882_MOESM1_ESM.pdf">补充材料</a>。</p>
+<h3>错误信念的高分能经受怎样的变化</h3>
+<p>补充第4节把三个故事分别改成透明容器、物体放在容器上、提前告知移动计划、改问移动者四种条件，连同标准条件共15题。模型在标准题上满分，却在透明、介词改变和提前告知条件中严重失分。人类在前两种条件中也经常继续选择旧位置，但在提前告知与询问移动者时表现较好（图S4）。</p>
+<p>这既揭示模型对任务变化的脆弱性，也否定了“这些变化对人类必然无影响”的假定。透明与位置介词条件同时涉及可见性、空间常识和人物何时更新信念；它们不能单独定位失败究竟发生在哪一步。人类也失败更不能反过来证明模型采用了人类机制。</p>
+<p><a class="reading-image" href="assets/strachan2024testing/fig-false-belief-perturbations.png?v=c47b6e1378476fd1e3aa692dd546e95c2428ac726c59a9f5f2c653f38dcbb955" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/strachan2024testing/fig-false-belief-perturbations.png?v=c47b6e1378476fd1e3aa692dd546e95c2428ac726c59a9f5f2c653f38dcbb955" alt="错误信念任务的小幅改写对模型与人类产生不同影响" loading="lazy" decoding="async"></a></p>
+<p>图4｜原图S4，作者提供的补充材料PDF第9页、内部页8。横轴为平均得分，纵轴依次为标准题、透明容器、介词改变、提前告知和改问移动者；每种模型每条件45次回答，人类各条件150–152人、共757人。线段连接零点与均值，没有误差区间。来源：<a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41562-024-01882-z/MediaObjects/41562_2024_1882_MOESM1_ESM.pdf">补充材料</a>。</p>
+<h2>四、意义与适用边界</h2>
+<p>这项研究最有解释力的部分，是把作答能力拆成<strong>能否生成解释、能否比较解释、是否愿意承诺，以及是否随证据变化</strong>。GPT-4的问法效应和语境效应共同支持：原失言题的失败不宜直接视为完全缺乏推断能力。LLaMA2的后续表现则说明，单一答案方向的题目会高估能力。补充材料中的解释分类进一步限制了“正确答案等于完整推理”的读法。</p>
+<p>这种机制解释仍止于行为。作者讨论了减少幻觉的训练可能使GPT过于保守，也讨论了模型缺少具身行动压力的影响，但没有操纵安全训练、模型内部结构或具身条件；这些是可能原因，尚非本研究确立的因果机制。实验也没有测量现实互动中的持续信念追踪、行动选择或非语言心智理解。</p>
+<p>结论对应2023年的模型与测试协议：GPT主测验在4月，LLaMA2主要在10–11月，部分GPT控制实验也在10–11月。GPT经网页聊天接口测试，LLaMA2使用固定采样参数；后者无法编码的回答会重新生成，7B和13B尤其频繁。因此结果并非同一时点、完全同一生成条件下的架构对照。人类样本则是18–70岁英语母语便利样本，不能代表所有年龄、语言与文化群体（表1、Methods、Reporting Summary）。</p>
+<p>具体数字还存在来源间差异。表1报告主测验250人，而图1及计分表分组相加为248人；图2正文称GPT-4中性条件有42/90次“不确定”，对应源数据却为29/90。图2b的分类检验数值与源数据一致，主要语境效应仍成立，但正文计数不能与源数据混用。GPT-3.5在图S8与图2a源数据中的成功、失败总数也不完全一致，故不宜据此给出统一的精确成功率。这些差异影响细节解释，不支持把观察到的行为进一步升级为“模型已拥有与人类相同的心智理论”。</p>
 </main></body></html>

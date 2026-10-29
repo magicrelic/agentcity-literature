@@ -101,7 +101,7 @@ h1,h2,h3,p { margin:0; }
 .resource-links a:hover { text-decoration:underline; }
 .card-footer button { border:0; border-radius:4px; background:var(--wash); color:var(--blue); font-size:12px; padding:7px 10px; white-space:nowrap; }
 .backdrop { position:fixed; inset:0; z-index:50; background:#15344650; }
-.paper-card.pinned { top:50%!important; left:50%!important; transform:translate(-50%,-50%); }
+.paper-card { top:50%!important; left:50%!important; transform:translate(-50%,-50%); }
 body.dialog-open { overflow:hidden; }
 .reading-page { background:#fcfdfe; }
 .reading-nav { max-width:960px; margin:auto; display:flex; justify-content:space-between; padding:28px 36px; }
@@ -124,7 +124,7 @@ body.dialog-open { overflow:hidden; }
 .paper-card .reading-body { max-width:none; padding:0; margin:0; }
 @media (max-width:760px) {
   .page-width { padding-inline:12px; }.toolbar { padding:12px 0; gap:12px; }.search-box { flex:1; width:auto; min-width:0; }.search-box input { font-size:16px; }.search-box input::placeholder { font-size:13px; }.total-count { font-size:12px; }.table-scroll { max-height:calc(100dvh - 78px); }
-  .paper-card,.paper-card.pinned { width:100%; max-height:88dvh; top:auto!important; bottom:0; left:0!important; transform:none; border-radius:14px 14px 0 0; border-bottom:0; padding-bottom:env(safe-area-inset-bottom); }.card-scroll { padding-inline:22px; }#card-title { font-size:23px; }.card-question p { font-size:14px; }.card-footer { padding:16px 22px; }.card-top button { width:40px; height:40px; }
+  .paper-card { width:100%; max-height:88dvh; top:auto!important; bottom:0; left:0!important; transform:none; border-radius:14px 14px 0 0; border-bottom:0; padding-bottom:env(safe-area-inset-bottom); }.card-scroll { padding-inline:22px; }#card-title { font-size:23px; }.card-question p { font-size:14px; }.card-footer { padding:16px 22px; }.card-top button { width:40px; height:40px; }
   .reading-nav { padding:22px; }.reading-body { padding:28px 22px 45px; font-size:14px; }.reading-body h1 { font-size:26px; }.reading-body h2 { font-size:20px; }.reading-body table { font-size:12px; }
 }
 @media (prefers-reduced-motion:no-preference) { .paper-card { animation:card-in .12s ease-out; } @keyframes card-in { from { opacity:0; } to { opacity:1; } } }

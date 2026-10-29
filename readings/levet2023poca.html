@@ -1,0 +1,32 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>PoCA: a software platform for point cloud data visualization and quantification · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1038/s41592-023-01811-4" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Levet et al. - PoCA: a software platform for point cloud data visualization and quantification</h1>
+<p><strong>让点云分析平台接入外部算法：PoCA 的插件架构与 CAML 调用实例</strong></p>
+<p>Nature Methods，2023，20：629–630。DOI：<a href="https://doi.org/10.1038/s41592-023-01811-4">10.1038/s41592-023-01811-4</a>。</p>
+<blockquote>
+<p>资料范围：部分解读，仅覆盖出版方发布的4页 Supplementary Information，封面注明按作者提供格式、未经编辑。已完整覆盖 Supplementary Note 中的插件架构、Python 集成、CAML 实现说明，以及 Supplementary Figure 1 的全部 a–c 子图和图注。正文及其 Methods、主图表未取得，不能据此作全文精读；补充材料没有独立表格。下文页码均指补充 PDF 页序，该附件未标印刷页码，不对应正文的629–630页。</p>
+</blockquote>
+<p>资料检索日期：2026-10-29；阅读日期：2026-10-29；核验日期：2026-10-29。</p>
+<h2>一、研究问题</h2>
+<p>这份补充材料回答了一个具体的平台问题：点云已经进入 PoCA 后，怎样把新的分析功能接进界面，并把 Python 算法的计算结果带回平台继续显示和统计？它给出的核心证据是一个完整的数据往返实例：PoCA 将定位点坐标交给 Python，调用已有 CAML 模型，取得逐点的簇归属判断，再在 PoCA 中处理和显示结果。这个实例解释了平台怎样扩展分析能力；其证据范围并不涵盖整个平台的性能评价。</p>
+<p>这里有两层不同的衔接。第一层是软件内部的扩展：新增功能如何拥有自己的界面、菜单动作和命令。第二层是计算环境之间的衔接：C++ 中的数据如何成为 Python 函数的输入，输出又如何返回。作者分别用 Qt 插件接口和 Python／NumPy 数据接口处理这两层问题，再以 CAML 作为后者的示范（Supplementary Note，PDF第2–3页）。补充说明没有叙述旧方案的失败经历，也没有提供其他架构的对照，因而不能把这些实现选择解释为经比较后唯一可行的路线。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从插件入口到数据往返</h3>
+<p>Qt 同时用于 PoCA 的图形界面和插件架构。补充说明列出的统一接口允许插件增加界面组件、提供动作、响应触发、添加命令并执行命令；加载时则按插件文件名取得实例，再转换为约定的插件接口。其实际作用是为新功能规定与宿主软件交互的入口，使“增加一个算法”能够同时涉及操作入口和命令执行，而不只是附加一个独立计算程序（“Plugin architecture”，PDF第2页）。接口代码说明了扩展机制，但没有量化插件开发工作量或维护成本。</p>
+<p>Python 集成则是一条明确的数据通路。宿主先通过 <code>Python.h</code> 所提供的接口初始化解释器；示例把一维 C 数组包装成 NumPy 数组，数据类型指定为 <code>NPY_LONGDOUBLE</code>。随后按模块名导入 Python 文件、按函数名取得函数，将数组作为参数调用；返回值也按 NumPy 数组处理，再取得其长度与底层数据指针，交回 C++ 使用。解释器生命周期的模板还包含结束调用（“Python code integration”，PDF第2–3页）。</p>
+<p>这一机制的关键是输入和输出都能被双方识别，而不仅是启动了 Python。原文给出的是一维数组的接口模板；它没有在这里完整交代 CAML 所需坐标的排列、全部预处理和返回数据的约束。因此，可以据此理解调用链，却不能把模板直接当成完整的 CAML 复现协议。作者所说嵌入 Python 不需要额外外部库，也不能读作整个分析功能没有依赖：同一补充说明明确使用 NumPy，CAML 实例还要求特定 WinPython 环境，图中显示 TensorFlow 后端。</p>
+<h3>CAML 实例究竟接入了哪一段</h3>
+<p>作者采用已有 CAML 实现，并作了有明确范围的适配：原实现分散在多个文件中，覆盖训练、预测和簇创建；此次把所需函数合并到一个脚本，只调用一个已有预训练模型进行预测。这样，演示直接检验的是 PoCA 与外部 Python 分析程序的通信，没有在 PoCA 中重新训练模型（“CAML implementation”，PDF第3页）。</p>
+<p>在这个实例中，Python 接收定位点坐标，为每个点返回“是否属于簇”的判断；随后 PoCA 可用于创建相应对象并计算统计量。<strong>逐点判定与具体簇的划分是两个层次。</strong> 为理解差别，可设一个纯演示例子：5个点的返回标记依次为1、1、0、1、0，1表示属于某个簇。于是被标记的点有3个，占3÷5＝60%；但仅凭这些标记，无法知道这3个点属于同一个簇，还是分属不同簇。这不是论文实验数据，也不是作者报告的统计指标。它说明为何外部预测结果之后仍需要对象构建；该补充说明没有给出从二元判断形成具体簇对象的详细规则。</p>
+<p>材料中的技术核心是接口与数据流，没有需要推导的核心数学公式。尤其不能从对 CAML 的引用补写其网络结构、训练目标或特征计算方法：被引用论文的书目信息并不是这些细节的全文证据。</p>
+<h2>三、主要结果与证据</h2>
+<p><a class="reading-image" href="assets/levet2023poca/fig-caml-python-integration.png?v=946e88dd5c7a43f5865bb4eb5ab3e8610916924e8b113d813bd9a44f032be615" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/levet2023poca/fig-caml-python-integration.png?v=946e88dd5c7a43f5865bb4eb5ab3e8610916924e8b113d813bd9a44f032be615" alt="PoCA 调用 Python 中的 CAML 预训练模型，并显示点云聚类结果" loading="lazy" decoding="async"></a></p>
+<p>图：Supplementary Figure 1，a–c，出版方补充附件，PDF第4页。<a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-023-01811-4/MediaObjects/41592_2023_1811_MOESM1_ESM.pdf">原始补充材料</a>。a为 CAML 提供的模拟点云；b为运行终端，红框标出连接 Python，绿框标出使用 TensorFlow 后端；c为调用预训练模型后的聚类显示，右侧两幅放大图分别对应左侧红框和黑框区域。点云图没有坐标轴、物理单位或比例尺；彩色对象与散点展示空间结果，图注未给出完整颜色编码，不能把颜色解读为概率或定量大小。这里比较的是输入点云与处理后的显示，并非不同算法之间的对照。</p>
+<p>这张图承担了补充材料最主要的实证作用。a确立演示输入是模拟数据，b显示运行时的环境衔接，c显示算法运行后的空间结果。三者合起来支持作者所描述的“输入坐标—外部预测—返回平台显示”流程。终端截图底部还能辨认出数组形状为45,520行、2列，并写有45,520个点；这是该示例加载的定位点数，不是45,520次独立重复，也不是生物样本量（补图1b）。</p>
+<p>c的两个局部放大图使小尺度对象比全局图更容易辨认，展示出聚类显示在空间上的具体形态。但局部对象看起来紧凑，并不能直接证明分类正确：图中没有并列的真值、错分标记或定量误差，也未报告准确率、召回率、重复运行次数及误差范围。因此，这个结果能支持集成实例的功能可行性，不能据此计算聚类质量，更不能得出优于其他算法的结论。</p>
+<p>补充说明还说 PoCA 可以据此创建对象、计算相应统计量，但这4页未列出统计量的定义、数值或统计表。结果显示与定量验证应当分开理解：前者在补图中可见，后者不能由彩色点云图代替。同样，材料没有通过去除插件层或更换调用方式进行对照，因而不能量化 Qt 插件设计对效率、准确性或可扩展性的独立贡献。</p>
+<h2>四、意义与适用边界</h2>
+<p>在补充材料所述范围内，PoCA 展示的价值是把平台操作与外部算法连接起来：Qt 接口规定功能进入软件的方式，Python 数据通路让既有算法能够参与计算，CAML 实例则把坐标输入、逐点输出和空间显示串成一个可观察的流程。理解这一实例，最重要的是区分三件事：平台能否调用算法、算法返回什么信息，以及这些信息是否足以支持最终的科学定量结论。</p>
+<p>适用条件也与这三层对应。作者将 Qt 架构描述为独立于操作系统，但 CAML 演示明确依赖特定 WinPython 环境，不能据此认为所有插件及其外部依赖在各系统上均已验证。演示只展示一个 CAML 提供的模拟点云和一个预训练模型；这些页面没有交代模型训练数据、与演示输入的关系或跨数据条件的性能，不能外推到任意实验点云。对象统计的准确性也不能仅靠接口调用成功来保证。</p>
+<p>因此，这份补充材料最扎实的结论是：作者给出了可扩展接口的实现说明，并展示了 CAML 预测接入 PoCA 的具体实例。至于 PoCA 的完整功能体系、正文中的定量结果以及更广泛的应用证据，均未呈现在这4页补充材料中。</p>
+</main></body></html>
