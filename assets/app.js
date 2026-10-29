@@ -1,4 +1,4 @@
-import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=f0c09fa4888e0e9662b387167a4da682e957e87eb806a5a9ae40f1bdb19d35e6';
+import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=ba486452ced93a970178b07da8bd75649e6daddfde122af0325fcc4dea739996';
 
 async function start() {
   const $ = id => document.getElementById(id);
@@ -15,9 +15,11 @@ async function start() {
   const hoverDevice=window.matchMedia('(hover: hover) and (pointer: fine)');
   let currentPaper=null, anchor=null, pinned=false, hoverTimer, closeTimer, touchTimer, touchOrigin;
   let suppressTouchClick=false, restoringFocus=false, activeColumn=null, filterAnchor=null;
-  const state={}, cardCache=new Map();
+  const state={}, readingCache=new Map();
+  let readingStyles;
   const text=(tag,value,className)=>{const el=document.createElement(tag);el.textContent=value;if(className)el.className=className;return el;};
   const resource=(label,href,className)=>{const a=text('a',label,className);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a;};
+  const readingHref=paper=>{const url=new URL(paper.reading,location.href);url.searchParams.set('v',readingVersion);return url.href;};
   const unique=values=>[...new Set(values)];
   const years=catalog.papers.map(p=>Number(p.year)), minYear=Math.min(...years), maxYear=Math.max(...years);
   let tooltipAnchor=null;
@@ -165,7 +167,7 @@ async function start() {
       button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-expanded','false');
       titleCell.append(button,text('p',paper.authors,'authors'));
       const links=text('td','','links-cell');links.append(resource('原文',paper.original));
-      if(paper.arxiv)links.append(resource('arXiv',paper.arxiv));if(paper.reading)links.append(resource('解读',paper.reading,'reading-link'));
+      if(paper.arxiv)links.append(resource('arXiv',paper.arxiv));if(paper.reading)links.append(resource('解读',readingHref(paper),'reading-link'));
       tr.append(titleCell,links);fragment.append(tr);
     }
     rows.replaceChildren(fragment);refreshCounts();
@@ -199,29 +201,44 @@ async function start() {
   document.addEventListener('keydown',event=>{if(event.key==='Escape')hideJournal();});
   window.addEventListener('resize',hideJournal);
 
-  function renderCardDetails(paper,details={}) {
-    $('card-theme').textContent=details.theme||'';$('card-theme').hidden=!details.theme;
-    const sections=[['研究问题',details.question||paper.question],['阅读范围',details.coverage],['研究方法',details.approach],['主要发现',details.findings],['方法与证据',details.overview],['证据范围',details.scope]];
-    $('card-sections').replaceChildren(...sections.filter(([,value])=>value).map(([name,value])=>{const section=text('section','','card-section');section.append(text('h3',name),text('p',value));return section;}));
-    positionCard();
+  function loadReadingStyles() {
+    if(!readingStyles)readingStyles=new Promise((resolve,reject)=>{
+      const link=document.createElement('link');link.rel='stylesheet';link.href='assets/katex.min.css';
+      link.onload=resolve;link.onerror=()=>{link.remove();readingStyles=null;reject(new Error('公式样式加载失败'));};
+      document.head.append(link);
+    });
+    return readingStyles;
   }
-  async function loadCardDetails(paper) {
+  async function loadCardReading(paper) {
     if(!paper.reading)return;
-    $('card-status').hidden=false;$('card-status').textContent='正在加载解读摘要…';$('retry-card').hidden=true;
-    if(!cardCache.has(paper.id))cardCache.set(paper.id,fetch(`cards/${paper.id}.json?v=${readingVersion}`).then(response=>{
-      if(!response.ok)throw new Error(`解读摘要加载失败 (${response.status})`);return response.json();
-    }));
+    $('card-status').hidden=false;$('card-status').textContent='正在加载解读…';$('retry-card').hidden=true;
+    if(!readingCache.has(paper.id)) {
+      const url=readingHref(paper);
+      readingCache.set(paper.id,Promise.all([fetch(url).then(async response=>{
+        if(!response.ok)throw new Error(`解读加载失败 (${response.status})`);
+        const doc=new DOMParser().parseFromString(await response.text(),'text/html'),body=doc.querySelector('main#reading');
+        if(!body)throw new Error('解读页面缺少正文');
+        // Keep relative resource links equivalent to opening the standalone page.
+        for(const element of body.querySelectorAll('a[href],img[src]')) {
+          const attribute=element.matches('a')?'href':'src';
+          element.setAttribute(attribute,new URL(element.getAttribute(attribute),url).href);
+        }
+        return body;
+      }),loadReadingStyles()]).then(([body])=>body));
+    }
     try {
-      const details=await cardCache.get(paper.id);
+      const body=await readingCache.get(paper.id);
       if(currentPaper?.id!==paper.id || card.hidden)return;
-      renderCardDetails(paper,details);$('card-status').hidden=true;
+      $('card-reading').replaceChildren(...[...body.childNodes].map(node=>document.importNode(node,true)));
+      $('card-reading').hidden=false;$('card-metadata').hidden=true;$('card-status').hidden=true;
+      positionCard();
     } catch(error) {
-      cardCache.delete(paper.id);
+      readingCache.delete(paper.id);
       if(currentPaper?.id!==paper.id || card.hidden)return;
-      $('card-status').textContent='解读摘要加载失败，可重试或打开解读全文。';$('retry-card').hidden=false;
+      $('card-status').textContent='解读加载失败，可重试或直接打开解读页。';$('retry-card').hidden=false;
     }
   }
-  $('retry-card').addEventListener('click',()=>{if(currentPaper)loadCardDetails(currentPaper);});
+  $('retry-card').addEventListener('click',()=>{if(currentPaper)loadCardReading(currentPaper);});
   function positionCard() {
     if (!anchor || pinned || card.hidden) return;
     const rect = anchor.getBoundingClientRect();
@@ -247,17 +264,18 @@ async function start() {
     const pages=publication.pages || publication.articleNumber;
     $('card-publication').textContent = `${paper.journal}${issue}${pages ? `, ${pages}` : ''} (${paper.year})`;
     $('card-status').hidden=true; $('retry-card').hidden=true;
-    renderCardDetails(paper);
+    $('card-question').textContent=paper.question;
+    $('card-metadata').hidden=false;$('card-reading').hidden=true;$('card-reading').replaceChildren();
     $('card-links').replaceChildren(resource('原文',paper.original));
     if (paper.arxiv) $('card-links').append(resource('arXiv',paper.arxiv));
-    if (paper.reading) $('card-links').append(resource('解读',paper.reading));
+    if (paper.reading) $('card-links').append(resource('解读',readingHref(paper)));
     $('copy-link').textContent='复制链接'; $('copy-status').textContent='';
     card.classList.toggle('pinned',pinned); card.setAttribute('aria-modal',String(pinned));
     card.hidden=false; $('backdrop').hidden=!pinned; document.body.classList.toggle('dialog-open',pinned);
     card.querySelector('.card-scroll').scrollTop=0;
     positionCard();
     if (pinned) { updateHash(paper.id); $('close-card').focus({preventScroll:true}); }
-    loadCardDetails(paper);
+    loadCardReading(paper);
   }
   function closeCard(restoreFocus = true, syncHash = true) {
     clearTimeout(hoverTimer); clearTimeout(closeTimer); clearTimeout(touchTimer);

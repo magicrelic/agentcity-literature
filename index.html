@@ -9,9 +9,9 @@
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <meta name="catalog-version" content="277dbf5a0453df26ff67b7c1bdc7a96e9328c9d61282f8ce876a0db892822ac5">
   <meta name="table-version" content="dd01c58a48fc0e090a30e4d1ef6020bdcfe154bb4af3608afdc8622adba2144b">
-  <meta name="reading-version" content="2d81e87a5c2ef9bf3f4e58ac4f09f22a78481b3ca8187091033ed45c144046dd">
-  <link rel="stylesheet" href="assets/style.css?v=f0c09fa4888e0e9662b387167a4da682e957e87eb806a5a9ae40f1bdb19d35e6">
-  <script src="assets/app.js?v=f0c09fa4888e0e9662b387167a4da682e957e87eb806a5a9ae40f1bdb19d35e6" type="module"></script>
+  <meta name="reading-version" content="8fb5e5c2357a395473a4690d04b39add5acebb69e25f3d517cab3de3f6e2cc74">
+  <link rel="stylesheet" href="assets/style.css?v=ba486452ced93a970178b07da8bd75649e6daddfde122af0325fcc4dea739996">
+  <script src="assets/app.js?v=ba486452ced93a970178b07da8bd75649e6daddfde122af0325fcc4dea739996" type="module"></script>
 </head>
 <body>
   <a class="skip-link" href="#papers">跳到论文表格</a>
@@ -58,7 +58,7 @@
   <div id="backdrop" class="backdrop" hidden></div>
   <aside id="paper-card" class="paper-card" role="dialog" aria-labelledby="card-title" hidden>
     <div class="card-top"><span id="card-direction"></span><button id="close-card" type="button" aria-label="关闭论文详情">×</button></div>
-    <div class="card-scroll"><h2 id="card-title"></h2><p id="card-authors" class="card-authors"></p><p id="card-publication" class="card-publication"></p><p id="card-theme" class="card-theme" hidden></p><div id="card-sections"></div><p id="card-status" role="status" hidden></p><button id="retry-card" type="button" hidden>重试</button></div>
+    <div class="card-scroll"><div id="card-metadata"><h2 id="card-title"></h2><p id="card-authors" class="card-authors"></p><p id="card-publication" class="card-publication"></p><section class="card-question"><h3>研究问题</h3><p id="card-question"></p></section></div><article id="card-reading" class="reading-body" hidden></article><p id="card-status" role="status" hidden></p><button id="retry-card" type="button" hidden>重试</button></div>
     <div class="card-footer"><div id="card-links" class="resource-links"></div><button id="copy-link" type="button">复制链接</button><span id="copy-status" class="sr-only" role="status"></span></div>
   </aside>
   <noscript><p class="page-width">请启用 JavaScript 以筛选文献和浏览论文详情。</p></noscript>

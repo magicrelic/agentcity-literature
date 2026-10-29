@@ -1,1 +1,0 @@
-{"theme":"交通失稳前的波动与恢复","coverage":"仅摘要（不含补充材料）。","question":"[Paper] 交通系统接近拥堵失稳时，其稳定性与恢复能力能否从动态波动中识别？ [Paper: Abstract]","approach":"[Analysis] 把临界减速的时间序列特征用于交通失稳风险评价。 [Paper: Abstract]","findings":"[Paper] 临界减速为交通失稳提供候选预警，论文包含模拟与经验案例。 [Paper: Abstract]","overview":"[Paper] 比较接近拥堵时恢复、方差与自相关的变化，检验稳定性和韧性。 [Paper: Abstract]","scope":"[Analysis] 摘要不能支持具体检测器与参数；噪声增强也能产生高方差。"}

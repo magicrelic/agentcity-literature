@@ -1,1 +1,0 @@
-{"theme":"预测状态需要保存多少信息","coverage":"仅摘要（不含补充材料）。","question":"[Paper] 如何从观测序列推断最小预测状态，并量化系统保存的结构信息？ [Paper: Abstract]","approach":"[Analysis] 按未来分布合并等价过去，以预测状态表示过程结构。 [Paper: Abstract]","findings":"[Paper] 统计复杂度衡量重建预测结构所需的信息，不能由随机性高低单独决定。 [Paper: Abstract]","overview":"[Paper] 以等价未来分布合并过去，构建最小充分预测状态及其转移。 [Paper: Abstract]","scope":"[Analysis] 重构的状态需要足够历史与统计证据；指标本身不是城市实测机制。"}
