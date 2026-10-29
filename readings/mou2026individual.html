@@ -1,0 +1,80 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=58e29ebe3aa01ed7e6aa56a54e772162611a4a07c879fd1f1e44b28a0c5a687e"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1145/3800683" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Mou et al. - From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents</h1>
+<p><strong>从个体逼真到群体现象：大语言模型智能体社会模拟的层次、机制与验证边界</strong></p>
+<p>ACM Computing Surveys，2026，58 卷，1–41 页。DOI：<a href="https://doi.org/10.1145/3800683">10.1145/3800683</a>；本解读依据的<a href="https://arxiv.org/pdf/2412.03563v1">作者稿 v1</a>发表于 2024 年 12 月。</p>
+<blockquote>
+<p>资料范围：部分解读（相对于期刊正式版及可能存在的补充材料）。已覆盖 arXiv:2412.03563v1 的全部 35 页，包括第 1–8 节正文、方法与评价框架、全部 7 幅主图和 6 张主表及参考文献；该版本无独立 Methods 节或附录。未取得期刊正式版，出版社补充材料是否存在及其内容未能确认，研究性补充全文及源数据未覆盖。以下定位均为作者稿 PDF 页序；该稿无可见印刷页码，不对应期刊书目中的 1–41 页。</p>
+</blockquote>
+<p>资料检索日期：2026-10-29；阅读日期：2026-10-29；核验日期：2026-10-29。</p>
+<h2>一、研究问题</h2>
+<p>这篇综述试图回答：当语言模型既能扮演一个人，又能组成工作团队、模拟社交平台时，这些研究究竟在验证什么？作者提出的主线是<strong>个体模拟、场景模拟、社会模拟</strong>。三者共享智能体技术，却分别追求人物特征的忠实再现、任务完成和群体现象的形成。文章的贡献是建立连接这三个层次的分类与评价框架；它没有开展新的受试者实验，也没有给出一个已经验证的通用“人工社会”。（§1，PDF 第 1–2 页）</p>
+<p>其现实起点有两部分。问卷和心理实验能够获得真实的人类反应，但成本、规模与伦理约束限制了实验范围；传统基于智能体的建模则往往依赖预先编写的行为规则。语言模型提供了一种可能性：利用个人资料、语言理解和情境推理生成反应，再观察交互后果。不过，“能生成像人的回答”和“能代表真实人群”仍是两项不同要求。作者借用算法忠实度这一概念，强调模拟对目标个体反应模式的匹配，而不只是语言流畅。（§1、§7.3.3）</p>
+<p><a class="reading-image" href="assets/mou2026individual/fig-simulation-levels.png?v=72e8ba3625b6fc9d8f8e5d1baef64fe8066308eee9b71ef6e2e0662c73d669b9" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/mou2026individual/fig-simulation-levels.png?v=72e8ba3625b6fc9d8f8e5d1baef64fe8066308eee9b71ef6e2e0662c73d669b9" alt="个体、场景与社会模拟的层次及精细度与规模需求" loading="lazy" decoding="async"></a></p>
+<p>图意：从左至右依次是个体、场景和社会模拟；下方箭头表示多样性与规模需求通常增加，上方反向箭头表示个体建模精细度需求。嵌套框表达层次联系，没有数值坐标或误差条，也不是实测的精度—规模曲线。来源：原 Fig. 1，作者稿 v1，PDF 第 2 页，<a href="https://arxiv.org/pdf/2412.03563v1#page=2">原文</a>。</p>
+<p>这个分类首先取决于研究目的，不能仅按智能体数量划界。表 3 将不超过 10 个智能体的博弈研究也归入社会模拟，因为它们研究信任、合作等行为规律；反过来，一个有多个角色的软件开发系统，其主要目标仍是交付可用代码。作者也承认，现有社会模拟大多限定于特定情境，尚非囊括无数子场景的完整社会。（§1、§5，表 3）</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>个体层：把“人物设定”变成持续的行为条件</h3>
+<p>作者将个体架构拆为档案、记忆、规划、行动四部分。档案规定“这个人是谁”，资料可来自人工整理、历史作品、网络记录或模型生成；记忆维持经历的连续性，区分短期上下文与长期记录，并通过写入、检索和反思组织经验。规划进一步区分理解他人处境的共情规划，以及依据自身信念行动的主观规划。行动则把这些内部条件落实为回答问卷、对话、工具调用或情境中的选择。（§3.1，PDF 第 5–6 页）</p>
+<p>这里最值得理解的设计选择是：人物身份不能只存在于一句系统提示里。若要表现稳定的偏好，身份和经历必须在后续决策时仍可被调用。作者把这种信息整合分成两条路线：提示方式在输入中提供人物与情境，参数训练则通过预训练、微调或强化学习改变模型行为。前者受上下文长度和模型原有助手倾向限制；后者需要相应训练数据。这是构建方法的分类，并非同等数据、同等成本下的优劣实验。（§3.2）</p>
+<p><a class="reading-image" href="assets/mou2026individual/fig-individual-architecture.png?v=d2457ac17414e006645d768b42163bc166fca3dbddcd3e57dbe6d0d03cd148ce" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/mou2026individual/fig-individual-architecture.png?v=d2457ac17414e006645d768b42163bc166fca3dbddcd3e57dbe6d0d03cd148ce" alt="个体模拟的构建方法、四类模块与评价方式" loading="lazy" decoding="async"></a></p>
+<p>图意：上层区分提示与训练，以及具体人物与共享特征人群两类目标；中层列出四类模块，下层区分静态、交互式评价和主观、客观策略。这是架构蓝图，没有量化坐标。来源：原 Fig. 2，作者稿 v1，PDF 第 3 页，<a href="https://arxiv.org/pdf/2412.03563v1#page=3">原文</a>。</p>
+<p>四模块不能被解读为所有系统必须具备的最小配置。表 1 的许多工作在规划栏没有对应条目，记忆形式也不相同；综述没有统一消融来证明移除任一模块必然导致失败。图 2 的作用是提示可比较的设计维度，而不是确立模块必要性的因果证据。</p>
+<h3>场景层：交互需要角色、流程与信息通道</h3>
+<p>进入场景模拟后，关键问题从“个体如何形成反应”转为“多人如何组织起来完成目标”。作者用环境、角色、组织和通信四项描述系统。环境不仅是背景文本，还包括初始配置、实时观察与反馈、历史记录和工具；角色分为实际沟通或执行任务的参与者，以及规划、协调、汇总结果的管理角色。（§4.1）</p>
+<p>软件开发是一个清楚的例子：设计、编码、测试形成多个阶段，各角色需要交换需求、代码和测试反馈。作者以 ChatDev、MetaGPT 等说明这种分工与流程，而非把所有智能体放进同一段自由对话。组织可以预先固定，也可以动态招募和调整；连接方式可以分层、集中或分散。通信采用自然语言时灵活，但可能冗余、含糊；代码、JSON 等结构化消息则提供更明确的交接格式。合作和竞争也都可能服务于系统目标，例如辩论双方立场相反，整体仍旨在改善答案。（§4.1.3–4.2.2）</p>
+<p><a class="reading-image" href="assets/mou2026individual/fig-scenario-organization.png?v=ca6a5e34d586102d3cfb31d7bbc56cc944bf78f7532bd888f59963eafc1ee261" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/mou2026individual/fig-scenario-organization.png?v=ca6a5e34d586102d3cfb31d7bbc56cc944bf78f7532bd888f59963eafc1ee261" alt="场景模拟中角色、环境、组织和通信的关系" loading="lazy" decoding="async"></a></p>
+<p>图意：顶部区分对话驱动与任务驱动场景；中部显示参与者、管理角色与环境信息如何接入交互系统；底部评价子任务、整体任务和系统。连线表示组织与交互关系，不表示测得的效应大小。来源：原 Fig. 3，作者稿 v1，PDF 第 8 页，<a href="https://arxiv.org/pdf/2412.03563v1#page=8">原文</a>。</p>
+<p>因此，场景层的主要证据是完成了什么、过程是否可执行、成本是多少。医学、法律或科研场景中的角色名称，本身不能证明模拟已再现真实专业人员的行为分布。表 2 能比较系统采用了哪些设计，但不能据其中的勾选数量判断哪套组织机制更有效。</p>
+<h3>社会层：人群组成、网络与影响过程共同决定结果</h3>
+<p>从团队任务转向社会现象，作者引入四项社会构成要素：<strong>组成、网络、社会影响和结果</strong>。它们对应一条可理解的解释链：谁在场，谁能接触谁，接触之后如何改变，最终形成什么。（§5.1，PDF 第 14–17 页）</p>
+<p>组成体现异质性：不同信念、偏好和位置的人不能由一个“平均人”替代。作者区分合成虚拟人群、利用现成数据集和复制真实人口分布三条路线。前者便于构建多样角色，后两者提供特定现实分布的约束。网络决定信息沿哪些边传播，可来自真实关系、随机设定或同质性假设——相似者更可能连接。大规模研究有时用社区统计替代具体邻居，甚至把个体作为相互独立的样本；这种简化会改变系统能回答的问题。（§5.1.1–5.1.2）</p>
+<p>社会影响又必须同时考虑接收者与发送者。同一句话对不同经历、立场的人未必产生相同效果；由不同声望或关系位置的人说出，影响也可能不同。综述列出把档案、记忆和收到的信息共同放入上下文，以及引入认知偏差、规范反思、关系记忆等实现方法。由此可以观察意见分布、传播规模，也可以观察合作、回音室或规范的形成。但出现这些模式只是模型内部的结果，仍须与现实证据比较。（§5.1.3–5.3）</p>
+<p><a class="reading-image" href="assets/mou2026individual/fig-society-construction.png?v=0918ff64332be18c009ce0a02b5dd632a80cba4414af2e0b4a81e1fcc5e5b6de" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/mou2026individual/fig-society-construction.png?v=0918ff64332be18c009ce0a02b5dd632a80cba4414af2e0b4a81e1fcc5e5b6de" alt="社会模拟从人群组成和网络到影响过程与群体结果" loading="lazy" decoding="async"></a></p>
+<p>图意：中部四栏依次为人群组成、关系网络、社会影响和结果；网络图例用红色实线表示线下关系、黑色虚线表示线上关系。年龄、性别和意见分布均为概念示意，没有数值刻度，不能视为实验数据。底部要求从微观、宏观和系统三层评价。来源：原 Fig. 4，作者稿 v1，PDF 第 14 页，<a href="https://arxiv.org/pdf/2412.03563v1#page=14">原文</a>。</p>
+<p>这里承担核心论证作用的是网络与影响过程连接了个体反应和群体变化。若只将独立回答加总，能够得到静态意见分布，却没有因此解释互动如何产生社会涌现。作者在 §5.1.4 明确把静态汇总与多轮交互分开；但综述没有证明某一种网络、影响函数或记忆结构普遍不可替代。</p>
+<h2>三、主要结果与证据</h2>
+<h3>三种成功标准需要分别成立</h3>
+<p>本文最实用的综合结果，是将评价目标和模拟层次对应起来。个体层可以通过访谈、人格量表、文本匹配或交互任务评估忠实度；场景层看任务、子任务和系统表现；社会层则同时检查个体行为、宏观规律及运行效率。（§3.4、§4.3、§5.3）</p>
+<table>
+<thead>
+<tr>
+<th>评价对象</th>
+<th>文中列举的证据</th>
+<th>能支持到哪一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>个体忠实度</td>
+<td>人物一致性、态度或行为匹配、交互中的反应</td>
+<td>支持特定人物或人群在所测情境中的相似性</td>
+</tr>
+<tr>
+<td>场景任务表现</td>
+<td>正确率、代码通过率、成功率、执行步骤及成本</td>
+<td>支持完成所测任务的能力</td>
+</tr>
+<tr>
+<td>社会模拟真实性</td>
+<td>传播规模、群体意见分布、趋势相关性、宏观经济规律</td>
+<td>支持某些群体模式与现实相符，尚需区分机制解释与预测</td>
+</tr>
+</tbody>
+</table>
+<p>一个理解演示可以说明为什么宏观匹配不能替代微观验证：假设四个人的真实回答依次为“支持、支持、反对、反对”，模拟却依次给出“反对、反对、支持、支持”。两边支持率均为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>50</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">2/4=50\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">50%</span></span></span></span></eq>，逐人一致率却是 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>0</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">0/4=0\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">0%</span></span></span></span></eq>。这些数字仅用于解释，不是论文实验。它显示，同一总体比例可能掩盖完全错误的个体对应关系，也说明图 4 为何保留微观与宏观两个评价层。</p>
+<p>综述转述了两种不同的验证路线：S³ 使用真实社交网络数据，在个体与群体层面评价模拟；EconAgent 则比较语言模型智能体与规则型等智能体生成通胀、失业等经典宏观经济现象的表现（§7.3.2，PDF 第 24 页）。后者在此处提供的是现象再现与模型间比较，不能据此认定已经完成独立现实数据上的预测验证。本文也未汇总统一效应量、置信区间或同等预算的基线结果，因此不能进一步得出某类智能体整体优于传统模拟、或已具备普遍的样本外预测能力。</p>
+<h3>数据的用途比单一规模数字更有解释力</h3>
+<p>表 4–6 分别整理个体、场景和社会模拟数据。个体资料主要是人物描述与对话；场景数据覆盖问答、选择题、代码、游戏和具身环境；社会数据则明确区分<strong>初始化</strong>与<strong>评价</strong>。人口资料用于规定谁进入模拟，真实行为或意见记录用于判断输出是否接近现实，两者承担不同功能。（§6）</p>
+<p><a class="reading-image" href="assets/mou2026individual/fig-initialization-validation-data.png?v=96d4b1531ed89b65ad997ea261720ecb849171db04a8ee8145d0c07dfbbc1dad" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/mou2026individual/fig-initialization-validation-data.png?v=96d4b1531ed89b65ad997ea261720ecb849171db04a8ee8145d0c07dfbbc1dad" alt="社会模拟数据的初始化用途、评价用途及计数单位" loading="lazy" decoding="async"></a></p>
+<p>表意：原表按经济、社会与政治、在线平台分组；Init. 和 Eval. 的勾选分别标明初始化与验证用途。数量栏混合了人数、回答数、评论数和网络数，不能直接作为统一样本量比较。来源：原 Table 6，作者稿 v1，PDF 第 21 页，<a href="https://arxiv.org/pdf/2412.03563v1#page=21">原文</a>。</p>
+<p>例如，表 4 将 RoleBench 记为 100 个个体、168,093 条对话；表 6 的 ANES 条目为 15,626 份回答，Interview 为 1,002 位用户，Reddit 为 116,932 条评论。这些数值描述各数据条目的规模，并非本综述招募的受试者，也不自动等于每项实验实际使用的独立样本数。一个数据集同时勾选初始化和评价，只说明它具有两种用途，表格本身并未交代各研究的训练测试划分，不能据此认定已经泄漏或已经避免泄漏。</p>
+<h3>发展趋势与尚未解决的证据分歧</h3>
+<p>图 5–7 将发展概括为三条路线：个体模拟从表面特征走向细致人物与情境互动；场景模拟从简单任务走向多阶段流程和更灵活的协作；社会模拟从建立环境走向现实对齐，再走向规模扩展与多模态。这是一份截至作者稿形成时的研究地图，而非性能随时间稳定上升的实测曲线。图 5 把情境导向阶段标为 2024 年 4 月，§7.1 正文写作 5 月，因而这些分期适合表达方向，不宜当作精确转折点。（PDF 第 19、22–24 页）</p>
+<p>综述呈现的主要张力是<strong>逼真程度、现实对齐与规模并不自然同步</strong>。细致记录经历和关系会增加成本；简化多数个体、共享记忆或重点建模意见领袖可以扩大规模，却改变了保留的行为细节。类似地，生成可信对话、在任务中表现优异、复现群体分布属于不同证据。作者一方面汇集“硅样本”、社会规律复现等积极探索，另一方面也指出幻觉、内在偏差、刻板印象以及真实关系数据难以获取。（§5.1.1–5.1.2、§7.1.1）</p>
+<p>该稿并未把支持和质疑模拟忠实度的研究放在统一条件下比较，也未完成分歧的定量归因。因此，这里能识别的是评价标准与建模取舍之间的冲突，不能把书目中的论文标题当作已经审查过的反证，更不能宣称“语言模型能否替代人类样本”已有统一答案。</p>
+<h2>四、意义与适用边界</h2>
+<p>这篇综述提供了一种贯通技术设计和社会科学问题的阅读方式：人物模拟需要行为一致性，团队协作需要流程与任务证据，社会模拟还需要人口组成、关系结构和影响机制的现实依据。它最有价值的部分，是使“模拟做得好”不再成为一个混合了娱乐体验、任务能力与社会真实性的模糊判断。</p>
+<p>适用范围也由此清楚。框架可以帮助解释不同系统为何采用不同模块、数据和评价方式，但不能单凭架构相似就转移效果结论。文中展示的回音室、合作或宏观经济模式，首先是特定设定下得到并被转述的模拟现象；拟合参数或趋势相关性不等于因果机制得到确认，复现既有现象也不等于预测未来情境。规模扩大同样不自动解决个体偏差或网络失真。（§5.1、§5.3）</p>
+<p>文章属于分类与叙事综合：作者稿没有独立的检索方法节，也未报告完整检索式、纳排流程、研究质量分级或跨研究效应合并。表中的代表性工作因此构成领域地图，不能据其出现频率推断整个领域的成功率。加上本解读依据的是 2024 年作者稿，其发展阶段和证据覆盖均应按该版本理解，不能延伸为 2026 年期刊正式版的全部内容。</p>
+</main></body></html>
