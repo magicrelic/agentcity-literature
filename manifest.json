@@ -1,5 +1,5 @@
 {
-  "version": "91b62ecc50447b2d37c6d9442eddf9baf1b58f1141dfdbaefbf1f8613fa49b85",
+  "version": "c1439c1bdf7fa0b568820e8ae4a59cf73d99acd35375dd33b02abebbe187f917",
   "catalogVersion": "277dbf5a0453df26ff67b7c1bdc7a96e9328c9d61282f8ce876a0db892822ac5",
   "tableVersion": "dd01c58a48fc0e090a30e4d1ef6020bdcfe154bb4af3608afdc8622adba2144b",
   "readingVersion": "8fb5e5c2357a395473a4690d04b39add5acebb69e25f3d517cab3de3f6e2cc74",
@@ -84,7 +84,7 @@
     "assets/katex.min.css": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00",
     "assets/style.css": "6e2cc1e962f20d921cacddb2cd6a86bbcb4b8c4163c34f111ac4bfdff0edd87f",
     "catalog.json": "277dbf5a0453df26ff67b7c1bdc7a96e9328c9d61282f8ce876a0db892822ac5",
-    "catalog.schema.json": "e83fb023227a11846f477e2273c93e01418aba5c0715e6eb8da49e2dada302a3",
+    "catalog.schema.json": "285e94fd0e4291e2a23dce5659faaee25b62c7b301746110be781f067ae4fed9",
     "downloads/agentcity-literature-2026-10-11-a8cecbf567b7.epub": "4130a9f944426480862551866765240d7b035dd3dc7ded9d77af010fb308cf58",
     "downloads/agentcity-literature-2026-10-11-e47a4d304ba3.epub": "a3b4f4f1d4d0fe7fe43906a3c66163cc48332ae62fc387ffdd05d221dd3c1d5b",
     "index.html": "e8576fd653b1f21df818a7c16641b495cacf137f4d0bce65c82e8acedd73aebe",

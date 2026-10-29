@@ -443,7 +443,7 @@
             },
             "access": {
               "type": "object",
-              "description": "访问与许可信息。原文付费且存在 arXiv 链接时，表格才显示 arXiv 替代入口。",
+              "description": "访问与许可信息；不控制 arXiv 链接展示。已核实的 arXiv 链接不同于原文入口时显示。",
               "additionalProperties": false,
               "properties": {
                 "original": {
