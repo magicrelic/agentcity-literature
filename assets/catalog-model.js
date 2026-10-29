@@ -15,36 +15,31 @@ export const publicationKinds = {
   'journal-article':'期刊论文', 'conference-paper':'会议论文', preprint:'预印本',
   book:'专著', 'book-chapter':'专著章节', other:'其他文献',
 };
-export const readingStates = {
-  none:'待解读', metadata:'书目级解读', abstract:'摘要解读', full:'正文解读', unknown:'阅读范围待核对',
-};
+export const comparePapers = (a,b) => b.publication.year-a.publication.year || a.citationKey.localeCompare(b.citationKey,'en');
+export const normalize = value => String(value).normalize('NFKC').toLocaleLowerCase();
 
-function readingState(paper, card) {
-  if (!paper.reading) return 'none';
-  const scope = card.coverage || '';
-  if (/仅书目信息/.test(scope)) return 'metadata';
-  if (/仅摘要/.test(scope)) return 'abstract';
-  if (/正文|全文/.test(scope)) return 'full';
-  return 'unknown';
-}
-
-// Views are derived from one record per paper; topic order sets the print/EPUB chapter.
-export function catalogView(source, cards = {}) {
+// The table index and full catalog share field names; this view is never persisted.
+export function catalogView(source) {
   const labels = Object.fromEntries(Object.entries(source.taxonomy).map(([key, values]) =>
     [key, Object.fromEntries(values.map(item => [item.id, item.label]))]));
-  const papers = Object.entries(source.papers).sort(([,a],[,b]) => a.citationKey.localeCompare(b.citationKey)).map(([id,paper]) => {
-    const classification = paper.classification, card = cards[id] || {};
-    return { id, title:paper.title, authors:authorLabel(paper.authors),
-      direction:paper.research.direction, question:paper.research.question,
-      journal:paper.publication.venue, year:String(paper.publication.year),
+  const papers = Object.entries(source.papers).sort(([,a],[,b])=>comparePapers(a,b)).map(([id,paper]) => {
+    const classification = paper.classification;
+    const view = { id, title:paper.title, authors:authorLabel(paper.authors), citationKey:paper.citationKey,
+      keywords:paper.research.keywords, question:paper.research.question,
+      journal:paper.publication.venue, journalShort:paper.publication.venueShort, year:String(paper.publication.year),
       original:paper.links.original, arxiv:arxivUrl(paper), reading:readingUrl(paper),
-      card, metadata:paper, classification, readingState:readingState(paper,card),
+      metadata:paper, classification,
       topicLabels:classification.topics.map(id=>labels.topics[id]),
       objectLabels:classification.objects.map(id=>labels.objects[id]),
       evidenceLabels:classification.evidenceTypes.map(id=>labels.evidenceTypes[id]),
       venueGroupLabel:labels.venueGroups[classification.venueGroup],
       documentTypeLabel:labels.documentTypes[classification.documentType],
     };
+    view.searchText=normalize([view.title,paper.titleZh,view.authors,view.citationKey,
+      ...paper.authors.items.flatMap(a=>[a.given,a.family,a.literal]),view.journal,view.journalShort,view.year,view.question,
+      ...view.keywords,...view.topicLabels,...view.objectLabels,...view.evidenceLabels,view.venueGroupLabel,
+      view.documentTypeLabel,paper.identifiers.doi,paper.identifiers.arxiv].join(' '));
+    return view;
   });
   const chapters = source.taxonomy.topics.map(topic => ({id:topic.id, title:topic.label,
     papers:papers.filter(p=>p.classification.topics[0]===topic.id)}));
@@ -52,24 +47,17 @@ export function catalogView(source, cards = {}) {
     readingCount:papers.filter(p=>p.reading).length };
 }
 
-const normalize = value => String(value).normalize('NFKC').toLocaleLowerCase();
+const values = value => value === undefined ? [] : Array.isArray(value) ? value : [value];
 export function filterPapers(papers, filters = {}) {
-  const keywords = normalize(filters.q || '').trim().split(/\s+/).filter(Boolean);
+  const words = normalize(filters.q || '').trim().split(/\s+/).filter(Boolean);
+  const selected=Object.fromEntries(['topic','keyword','journal','venue','year','object','evidence','type','publication'].map(key=>[key,values(filters[key])]));
+  const matches=(key,items)=>!selected[key].length || selected[key].some(value=>items.includes(value));
   return papers.filter(p => {
-    const c = p.classification;
-    if (filters.topic && !c.topics.includes(filters.topic)) return false;
-    if (filters.object && !c.objects.includes(filters.object)) return false;
-    if (filters.evidence && !c.evidenceTypes.includes(filters.evidence)) return false;
-    if (filters.venue && c.venueGroup !== filters.venue) return false;
-    if (filters.type && c.documentType !== filters.type) return false;
-    if (filters.publication && p.metadata.publication.kind !== filters.publication) return false;
-    if (filters.year && p.year !== filters.year) return false;
-    if (filters.reading && p.readingState !== filters.reading) return false;
-    if (!keywords.length) return true;
-    const haystack = normalize([p.title,p.metadata.titleZh,p.authors,
-      ...p.metadata.authors.items.flatMap(a=>[a.given,a.family,a.literal]),p.journal,p.year,p.direction,p.question,
-      ...p.topicLabels,...p.objectLabels,...p.evidenceLabels,p.venueGroupLabel,p.documentTypeLabel,
-      ...p.metadata.research.indexTerms,p.metadata.identifiers.doi,p.metadata.identifiers.arxiv].join(' '));
-    return keywords.every(word=>haystack.includes(word));
+    const c=p.classification;
+    return matches('topic',c.topics) && matches('keyword',p.keywords) && matches('journal',[p.journal])
+      && matches('venue',[c.venueGroup]) && matches('year',[p.year]) && matches('object',c.objects)
+      && matches('evidence',c.evidenceTypes) && matches('type',[c.documentType])
+      && matches('publication',[p.metadata.publication.kind]) && (!filters.hasReading || Boolean(p.reading))
+      && words.every(word=>p.searchText.includes(word));
   });
 }

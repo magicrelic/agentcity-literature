@@ -1,0 +1,1 @@
+{"theme":"交通集体相关的谱转换","coverage":"仅摘要（不含补充材料）。","question":"[Paper] 拥堵如何改变路段速度的时滞相关结构及其谱特征？ [Paper: Abstract]","approach":"[Analysis] 沿时滞扫描相关谱，用主导特征值的转换连接拥堵持续时间。 [Paper: Abstract]","findings":"[Paper] 交通速度的时滞相关谱可从正向主导转为负向主导，并与拥堵持续性有关。 [Paper: Abstract]","overview":"[Paper] 标准化同步路段序列，对时滞相关矩阵对称化，跟踪极端特征值。 [Paper: Abstract]","scope":"[Analysis] 谱转换发生在时滞轴上，不是城市在该钟表时间发生相变；零时滞矩阵与其不同。"}

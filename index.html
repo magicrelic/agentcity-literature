@@ -7,46 +7,52 @@
   <meta name="description" content="复杂系统、群体行为与智能体研究的多维分类文献库。">
   <title>城市复杂系统文献库</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <meta name="catalog-version" content="44d2f4b197e4a22d17c22f2f5e7264632f91ddb014551aadbf88b891f3b86136">
-  <meta name="reading-version" content="c5c44acd55e07b369b53d35985552b504e7432a64049dd12515164cf2a3e63fd">
-  <link rel="stylesheet" href="assets/style.css?v=62c3ec635a559835c6d1a91617fffe24709898c702c4c2f9431ec29526fdbcdb">
-  <script src="assets/app.js?v=62c3ec635a559835c6d1a91617fffe24709898c702c4c2f9431ec29526fdbcdb" type="module"></script>
+  <meta name="catalog-version" content="866d4b27f44414e821c24bdb1f65f77daa36788434f5c5f5bc718b01b8c466d2">
+  <meta name="table-version" content="445dedd2ce110c4a7405dc6d4e7ac16b97fffc0a6f9fc8da86dd3db9691f0407">
+  <meta name="reading-version" content="304d5733a898139c55d9867a96516ae8339d66506854864d45730020ee717be3">
+  <link rel="stylesheet" href="assets/style.css?v=3f455be8552a562603196fa3cbb104dd5ce913dacaf5540766212f939860894e">
+  <script src="assets/app.js?v=3f455be8552a562603196fa3cbb104dd5ce913dacaf5540766212f939860894e" type="module"></script>
 </head>
 <body>
   <a class="skip-link" href="#papers">跳到论文表格</a>
-  <header class="masthead page-width">
-    <div class="identity"><svg aria-hidden="true" viewBox="0 0 44 44"><path d="M5 32V12l11 5 12-9 11 5v20l-11-5-12 9Z"/><path d="M16 17v20M28 8v20M5 24l11 5 12-9 11 5"/><circle cx="16" cy="29" r="3"/><circle cx="28" cy="20" r="3"/></svg><div><h1>城市复杂系统文献库</h1><p>复杂系统、群体行为与智能体研究 · 多维分类文献库</p></div></div>
-    <p id="library-stats" class="library-stats"></p>
-  </header>
   <main class="page-width">
-    <p id="load-status" role="status">正在载入文献…</p>
+    <h1 class="sr-only">城市复杂系统文献库</h1>
     <div class="toolbar">
-      <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">检索文献</span><input id="search" type="search" placeholder="检索论文、作者、期刊、DOI 或关键词" autocomplete="off"><button id="clear-search" type="button" hidden aria-label="清空检索">清空</button></label>
-      <button id="clear-filters" class="clear-filters" type="button" hidden>清除全部筛选</button>
+      <label class="search-box"><span class="sr-only">检索文献</span><input id="search" type="search" placeholder="搜索论文、作者、关键词或 DOI" autocomplete="off"><button id="clear-search" type="button" hidden aria-label="清空检索">清空</button></label>
     </div>
-    <div class="facet-grid" aria-label="文献筛选">
-      <label for="filter-venue">期刊组<select id="filter-venue"></select></label>
-      <label for="filter-topic">研究主题<select id="filter-topic"></select></label>
-      <label for="filter-object">研究对象<select id="filter-object"></select></label>
-      <label for="filter-evidence">方法与证据<select id="filter-evidence"></select></label>
-      <label for="filter-type">文章类型<select id="filter-type"></select></label>
-      <label for="filter-publication">出版形式<select id="filter-publication"></select></label>
-      <label for="filter-year">发表年份<select id="filter-year"></select></label>
-      <label for="filter-reading">阅读状态<select id="filter-reading"></select></label>
+    <p id="load-status" role="status">正在载入文献…</p>
+    <p id="result-count" class="sr-only" aria-live="polite"></p>
+    <div id="papers" class="table-scroll" role="region" aria-label="文献表格" tabindex="0">
+      <table class="paper-table">
+        <caption class="sr-only">全部文献，按年份倒序、同年按英文引用键排序</caption>
+        <colgroup><col class="col-direction"><col class="col-keywords"><col class="col-question"><col class="col-journal"><col class="col-year"><col class="col-title"><col class="col-links"></colgroup>
+        <thead>
+          <tr>
+            <th scope="col"><button class="column-filter" data-column="topic" aria-haspopup="dialog" aria-expanded="false">研究方向</button></th>
+            <th scope="col"><button class="column-filter" data-column="keyword" aria-haspopup="dialog" aria-expanded="false">关键词</button></th>
+            <th scope="col">研究问题</th>
+            <th scope="col"><button class="column-filter" data-column="journal" aria-haspopup="dialog" aria-expanded="false">期刊</button></th>
+            <th scope="col"><button class="column-filter" data-column="year" aria-haspopup="dialog" aria-expanded="false">年份</button></th>
+            <th scope="col">论文名称</th>
+            <th scope="col"><span>链接</span><label class="reading-filter"><input id="has-reading" type="checkbox">有解读</label></th>
+          </tr>
+          <tr id="filter-summary" hidden><td colspan="7"><div class="filter-summary"><div id="active-filters"></div><button id="clear-filters" type="button">清除筛选</button></div></td></tr>
+        </thead>
+        <tbody id="paper-rows"></tbody>
+      </table>
+      <div id="empty" class="empty-state" hidden><p>没有匹配的文献</p><button id="reset-filter" type="button">清除筛选</button></div>
     </div>
-    <p class="filter-note">期刊组为文献库自定义分组；同一论文可属于多个主题、对象及证据类别。</p>
-    <div id="active-filters" class="active-filters" aria-label="已选筛选条件"></div>
-    <section id="papers" aria-labelledby="chapter-title" tabindex="0">
-      <div class="section-heading"><div><h2 id="chapter-title"></h2><p id="result-count" aria-live="polite"></p></div><p class="interaction-hint"><span class="desktop-hint">悬停论文名称，查看详情卡片</span><span class="mobile-hint">点击或长按论文名称，查看详情</span></p></div>
-      <table class="paper-table"><caption class="sr-only" id="table-caption"></caption><colgroup><col class="col-direction"><col class="col-question"><col class="col-journal"><col class="col-year"><col class="col-title"><col class="col-links"></colgroup><thead><tr><th scope="col">研究主题</th><th scope="col">研究的问题</th><th scope="col">期刊或出版渠道</th><th scope="col">年份</th><th scope="col">作者与论文名称</th><th scope="col">链接</th></tr></thead><tbody id="paper-rows"></tbody></table>
-      <div id="empty" class="empty-state" hidden><h3>没有匹配的文献</h3><p>请调整筛选条件或检索词。</p><button id="reset-filter" type="button">清除筛选</button></div>
-    </section>
   </main>
-  <footer class="page-width site-footer"><span>AgentCity 文献资料</span><a href="catalog.json" download>下载文献数据（JSON）</a></footer>
+  <div id="filter-panel" class="filter-panel" role="dialog" aria-labelledby="filter-title" hidden>
+    <div class="filter-panel-heading"><h2 id="filter-title"></h2><button id="close-filter" type="button" aria-label="关闭筛选">×</button></div>
+    <input id="filter-search" type="search" aria-label="搜索筛选选项" placeholder="搜索选项" autocomplete="off">
+    <div id="filter-options" class="filter-options"></div>
+    <button id="clear-column" type="button">清除此列筛选</button>
+  </div>
   <div id="backdrop" class="backdrop" hidden></div>
   <aside id="paper-card" class="paper-card" role="dialog" aria-labelledby="card-title" hidden>
     <div class="card-top"><span id="card-direction"></span><button id="close-card" type="button" aria-label="关闭论文详情">×</button></div>
-    <div class="card-scroll"><h2 id="card-title"></h2><p id="card-authors" class="card-authors"></p><p id="card-publication" class="card-publication"></p><p id="card-theme" class="card-theme" hidden></p><div id="card-sections"></div></div>
+    <div class="card-scroll"><h2 id="card-title"></h2><p id="card-authors" class="card-authors"></p><p id="card-publication" class="card-publication"></p><p id="card-theme" class="card-theme" hidden></p><div id="card-sections"></div><p id="card-status" role="status" hidden></p><button id="retry-card" type="button" hidden>重试</button></div>
     <div class="card-footer"><div id="card-links" class="resource-links"></div><button id="copy-link" type="button">复制链接</button><span id="copy-status" class="sr-only" role="status"></span></div>
   </aside>
   <noscript><p class="page-width">请启用 JavaScript 以筛选文献和浏览论文详情。</p></noscript>

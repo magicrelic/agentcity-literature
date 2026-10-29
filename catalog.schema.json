@@ -10,7 +10,7 @@
       "const": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json"
     },
     "schemaVersion": {
-      "const": 2,
+      "const": 3,
       "description": "数据结构版本。"
     },
     "library": {
@@ -147,7 +147,7 @@
               "properties": {
                 "venue": {
                   "type": "string",
-                  "description": "精确到子刊的期刊名称；会议、专著、预印本保留明确标识。",
+                  "description": "期刊或出版渠道全称。",
                   "minLength": 1
                 },
                 "kind": {
@@ -245,6 +245,11 @@
                     "minLength": 1
                   },
                   "uniqueItems": true
+                },
+                "venueShort": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "表格使用的显示简称；全称保存在 venue。"
                 }
               },
               "required": [
@@ -260,7 +265,8 @@
                 "publishedPrint",
                 "posted",
                 "issn",
-                "isbn"
+                "isbn",
+                "venueShort"
               ]
             },
             "identifiers": {
@@ -304,31 +310,28 @@
               "description": "文献分类与研究问题。方法、发现及局限的长文仍维护在单篇解读中。",
               "additionalProperties": false,
               "properties": {
-                "direction": {
-                  "type": "string",
-                  "description": "具体研究方向，对应表格第一列。",
-                  "minLength": 1
-                },
                 "question": {
                   "type": "string",
-                  "description": "该论文研究的问题，对应表格第二列。",
+                  "description": "论文实际研究的问题。",
                   "minLength": 1
                 },
-                "indexTerms": {
+                "keywords": {
                   "type": "array",
-                  "description": "辅助检索的主题词；没有资料时保留空数组。",
+                  "minItems": 1,
+                  "maxItems": 8,
+                  "uniqueItems": true,
                   "items": {
                     "type": "string",
-                    "description": "经过来源或人工支持的主题词。",
-                    "minLength": 1
+                    "minLength": 1,
+                    "maxLength": 40,
+                    "pattern": "^\\S(?:.*\\S)?$"
                   },
-                  "uniqueItems": true
+                  "description": "人工维护、可复用的检索关键词；同义概念统一用词。"
                 }
               },
               "required": [
-                "direction",
                 "question",
-                "indexTerms"
+                "keywords"
               ]
             },
             "links": {

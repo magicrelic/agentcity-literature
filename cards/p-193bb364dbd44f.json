@@ -1,0 +1,1 @@
+{"theme":"将单元面积纳入空间熵","coverage":"仅摘要（不含补充材料）。","question":"[Paper] 如何在空间单元大小不一致时定义和比较空间分布的熵？ [Paper: Abstract]","approach":"[Analysis] 把单元面积引入空间熵，对相对面积的集中作校正。 [Paper: Abstract]","findings":"[Paper] 把空间单元大小纳入离散熵，可分离面积机会与密度集中。 [Paper: Abstract]","overview":"[Paper] 以单元份额和面积构造空间熵，联系离散与连续熵的转换问题。 [Paper: Abstract]","scope":"[Analysis] 面积校正不加入邻接信息；熵对单元换位不敏感，不能单独辨认聚集形状。"}

@@ -1,0 +1,1 @@
+{"theme":"交通片段的延续与多尺度不规则性","coverage":"仅摘要（不含补充材料）。","question":"[Paper] 交通时间序列在不同时间尺度上的不规则性如何随工作日与周末变化？ [Paper: Abstract]","approach":"[Analysis] 结合MSE与MSPE比较粗粒化序列，识别工作日和周末差异。 [Paper: Abstract]","findings":"[Paper] 交通时间序列的多尺度样本熵可比较工作日与周末等动态组织。 [Paper: Abstract]","overview":"[Paper] 将流量序列跨尺度平均，以模式延续的条件相似性衡量不规则性。 [Paper: Abstract]","scope":"[Analysis] 工作日差异不直接识别形成机制；拥堵不必伴随更高熵。"}

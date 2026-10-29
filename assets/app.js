@@ -1,93 +1,163 @@
-import { catalogView, filterPapers, publicationKinds, readingStates } from './catalog-model.js?v=62c3ec635a559835c6d1a91617fffe24709898c702c4c2f9431ec29526fdbcdb';
+import { catalogView, filterPapers, normalize } from './catalog-model.js?v=3f455be8552a562603196fa3cbb104dd5ce913dacaf5540766212f939860894e';
 
 async function start() {
-  const versions=['catalog-version','reading-version'].map(name=>document.querySelector(`meta[name="${name}"]`).content);
-  const [source,cards]=await Promise.all(['catalog.json','reading-cards.json'].map(async (file,i)=>{
-    const response=await fetch(`${file}?v=${versions[i]}`);
-    if (!response.ok) throw new Error(`文献数据加载失败 (${response.status})`);
-    return response.json();
-  }));
-  const catalog = catalogView(source,cards);
-  document.getElementById('load-status').hidden=true;
   const $ = id => document.getElementById(id);
-  const paperMap = new Map(catalog.papers.map(p=>[p.id,p]));
-  const rows = $('paper-rows'), card = $('paper-card');
-  const mobile = window.matchMedia('(max-width: 760px)');
-  const hoverDevice = window.matchMedia('(hover: hover) and (pointer: fine)');
-  let currentPaper = null, anchor = null, pinned = false, hoverTimer, closeTimer, touchTimer, touchOrigin;
-  let ignoreClickUntil = 0, restoringFocus = false;
-  const text = (tag, value, className) => { const el = document.createElement(tag); el.textContent = value; if (className) el.className = className; return el; };
-  const resource = (label, href, className) => { const a = text('a', label, className); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
-  const entries = object=>Object.entries(object).map(([id,label])=>({id,label}));
-  const dimensions = {
-    venue:catalog.taxonomy.venueGroups, topic:catalog.taxonomy.topics,
-    object:catalog.taxonomy.objects, evidence:catalog.taxonomy.evidenceTypes,
-    type:catalog.taxonomy.documentTypes, publication:entries(publicationKinds),
-    year:[...new Set(catalog.papers.map(p=>p.year))].sort((a,b)=>b-a).map(id=>({id,label:id})),
-    reading:entries(readingStates),
+  const tableVersion=document.querySelector('meta[name="table-version"]').content;
+  const readingVersion=document.querySelector('meta[name="reading-version"]').content;
+  const response=await fetch(`table-index.json?v=${tableVersion}`);
+  if (!response.ok) throw new Error(`文献数据加载失败 (${response.status})`);
+  const catalog=catalogView(await response.json());
+  $('load-status').hidden=true;
+  const paperMap=new Map(catalog.papers.map(p=>[p.id,p]));
+  const rows=$('paper-rows'), card=$('paper-card'), panel=$('filter-panel');
+  const mobile=window.matchMedia('(max-width: 760px)');
+  const hoverDevice=window.matchMedia('(hover: hover) and (pointer: fine)');
+  let currentPaper=null, anchor=null, pinned=false, hoverTimer, closeTimer, touchTimer, touchOrigin;
+  let suppressTouchClick=false, restoringFocus=false, activeColumn=null, filterAnchor=null;
+  const state={}, cardCache=new Map();
+  const text=(tag,value,className)=>{const el=document.createElement(tag);el.textContent=value;if(className)el.className=className;return el;};
+  const resource=(label,href,className)=>{const a=text('a',label,className);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a;};
+  const unique=values=>[...new Set(values)];
+  const dimensions={
+    topic:catalog.taxonomy.topics,
+    keyword:unique(catalog.papers.flatMap(p=>p.keywords)).sort((a,b)=>a.localeCompare(b,'zh-CN')).map(id=>({id,label:id})),
+    venue:catalog.taxonomy.venueGroups,
+    journal:unique(catalog.papers.map(p=>p.journal)).map(id=>({id,label:catalog.papers.find(p=>p.journal===id).journalShort})).sort((a,b)=>a.label.localeCompare(b.label,'en')),
+    year:unique(catalog.papers.map(p=>p.year)).sort((a,b)=>b-a).map(id=>({id,label:id})),
   };
-  const allLabels={venue:'全部期刊组',topic:'全部主题',object:'全部研究对象',evidence:'全部方法与证据',type:'全部文章类型',publication:'全部出版形式',year:'全部年份',reading:'全部阅读状态'};
-  for (const [key,options] of Object.entries(dimensions)) {
-    const select=$(`filter-${key}`), all=text('option',allLabels[key]); all.value=''; select.append(all);
-    for (const item of options) {const option=text('option',item.label);option.value=item.id;select.append(option);}
-    select.addEventListener('change',filter);
+  const columnKeys=column=>column==='journal' ? ['venue','journal'] : [column];
+  const titles={topic:'研究方向',keyword:'关键词',journal:'期刊',year:'年份'};
+  const filters=()=>({...state,...($('search').value.trim() ? {q:$('search').value.trim()} : {}),...($('has-reading').checked ? {hasReading:true} : {})});
+  function updateHash(paperId=null) {
+    const params=new URLSearchParams();
+    for(const [key,value] of Object.entries(filters()))for(const item of Array.isArray(value)?value:[value])params.append(key,String(item));
+    if(paperId)params.set('paper',paperId);
+    history.replaceState(null,'',`${location.pathname}${location.search}${params.size?'#'+params:''}`);
   }
-  const filters = ()=>Object.fromEntries([['q',$('search').value.trim()],...Object.keys(dimensions).map(key=>[key,$(`filter-${key}`).value])].filter(([,value])=>value));
-  $('library-stats').textContent = `${catalog.total} 篇文献 · ${catalog.readingCount} 篇已有解读`;
-  function updateHash(paperId = null) {
-    const params = new URLSearchParams(filters());
-    if (paperId) params.set('paper', paperId);
-    history.replaceState(null, '', `${location.pathname}${location.search}${params.size ? '#'+params : ''}`);
+  function countOptions(key) {
+    const active=filters();delete active[key];
+    const available=filterPapers(catalog.papers,active), counts=new Map();
+    for(const p of available) {
+      const values={topic:p.classification.topics,keyword:p.keywords,venue:[p.classification.venueGroup],journal:[p.journal],year:[p.year]}[key];
+      for(const value of values)counts.set(value,(counts.get(value)||0)+1);
+    }
+    return counts;
   }
+  function refreshCounts() {
+    if(panel.hidden)return;
+    for(const key of columnKeys(activeColumn)) {
+      const counts=countOptions(key);
+      for(const label of panel.querySelectorAll(`label[data-key="${key}"]`))label.querySelector('.option-count').textContent=counts.get(label.dataset.value)||0;
+    }
+  }
+  function renderOptions() {
+    const query=normalize($('filter-search').value.trim()), groups=[];
+    for(const key of columnKeys(activeColumn)) {
+      const fieldset=document.createElement('fieldset');
+      if(activeColumn==='journal')fieldset.append(text('legend',key==='venue'?'期刊组':'期刊或出版渠道'));
+      for(const option of dimensions[key]) {
+        if(query && !normalize(`${option.label} ${option.id}`).includes(query))continue;
+        const label=text('label','','filter-option');label.dataset.key=key;label.dataset.value=option.id;label.title=option.id;
+        const checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.value=option.id;checkbox.checked=state[key]?.includes(option.id)||false;
+        checkbox.addEventListener('change',()=>{
+          const next=new Set(state[key]||[]);if(checkbox.checked)next.add(option.id);else next.delete(option.id);
+          if(next.size)state[key]=[...next];else delete state[key];
+          filter();
+        });
+        const count=text('span','','option-count');count.setAttribute('aria-hidden','true');
+        label.append(checkbox,text('span',option.label),count);fieldset.append(label);
+      }
+      if(fieldset.querySelector('label'))groups.push(fieldset);
+    }
+    $('filter-options').replaceChildren(...(groups.length?groups:[text('p','没有匹配的选项','option-empty')]));
+    refreshCounts();
+  }
+  function positionFilter() {
+    if(panel.hidden || !filterAnchor)return;
+    const rect=filterAnchor.getBoundingClientRect();
+    panel.style.left=`${Math.max(8,Math.min(rect.left,innerWidth-panel.offsetWidth-8))}px`;
+    panel.style.top=`${Math.min(rect.bottom+8,innerHeight-panel.offsetHeight-8)}px`;
+  }
+  function closeFilter(restore=false) {
+    panel.hidden=true;filterAnchor?.setAttribute('aria-expanded','false');
+    if(restore)filterAnchor?.focus();activeColumn=null;filterAnchor=null;
+  }
+  function openFilter(button) {
+    if(filterAnchor===button && !panel.hidden){closeFilter(true);return;}
+    closeCard(false);closeFilter();
+    filterAnchor=button;activeColumn=button.dataset.column;
+    $('filter-title').textContent=titles[activeColumn];$('filter-search').value='';
+    panel.hidden=false;button.setAttribute('aria-expanded','true');renderOptions();positionFilter();$('filter-search').focus({preventScroll:true});
+  }
+  for(const button of document.querySelectorAll('.column-filter'))button.addEventListener('click',()=>openFilter(button));
+  $('close-filter').addEventListener('click',()=>closeFilter(true));
+  $('filter-search').addEventListener('input',renderOptions);
+  $('clear-column').addEventListener('click',()=>{for(const key of columnKeys(activeColumn))delete state[key];filter();renderOptions();});
   function render() {
-    const active=filters(), papers=filterPapers(catalog.papers,active);
-    for (const [key,options] of Object.entries(dimensions)) {
-      const other={...active};delete other[key];
-      const available=filterPapers(catalog.papers,other),select=$(`filter-${key}`);
-      select.options[0].textContent=`${allLabels[key]} (${available.length})`;
-      options.forEach((item,i)=>{
-        const count=filterPapers(available,{[key]:item.id}).length;
-        select.options[i+1].textContent=`${item.label} (${count})`;
-      });
-    }
-    $('chapter-title').textContent = active.topic ? catalog.taxonomy.topics.find(t=>t.id===active.topic).label : '全部文献';
-    $('table-caption').textContent = '文献与多维分类';
-    $('result-count').textContent = `${papers.length} / ${catalog.total} 篇文献`;
-    $('active-filters').replaceChildren(...Object.entries(active).map(([key,value])=>{
-      const label=key==='q' ? `检索：${value}` : dimensions[key].find(item=>item.id===value)?.label;
+    const active=filters(),papers=filterPapers(catalog.papers,active),chips=[];
+    $('result-count').textContent=`${papers.length} / ${catalog.total} 篇文献`;
+    for(const [key,values] of Object.entries(state))for(const value of values) {
+      const label=dimensions[key].find(item=>item.id===value).label;
       const button=text('button',`${label} ×`,'filter-chip');button.type='button';button.setAttribute('aria-label',`移除筛选：${label}`);
-      button.addEventListener('click',()=>{if(key==='q')$('search').value='';else $(`filter-${key}`).value='';filter();});
-      return button;
-    }));
-    $('clear-filters').hidden = !Object.keys(active).length;
-    $('empty').hidden = papers.length > 0;
-    $('clear-search').hidden = !$('search').value;
-    const fragment = document.createDocumentFragment();
-    for (const paper of papers) {
-      const tr = document.createElement('tr'); tr.dataset.paper = paper.id;
-      const topics=text('td','','direction-cell');
-      for(const label of paper.topicLabels)topics.append(text('span',label,'topic-tag'));
-      const journal=text('td',paper.journal,'journal-cell');journal.append(text('p',paper.venueGroupLabel,'venue-group'));
-      tr.append(topics,text('td',paper.question,'question-cell'),journal,text('td',paper.year,'year-cell'));
-      const titleCell = document.createElement('td'); titleCell.className = 'title-cell';
-      const button = text('button',paper.title,'paper-title'); button.type='button'; button.dataset.paper = paper.id;
-      button.setAttribute('aria-haspopup','dialog'); button.setAttribute('aria-expanded','false');
-      titleCell.append(button,text('p',paper.authors,'authors'),text('p',`${paper.objectLabels.join(' · ')} · ${paper.documentTypeLabel}`,'paper-meta'));
-      const linkCell = document.createElement('td'); linkCell.className = 'links-cell';
-      linkCell.append(resource('原文',paper.original));
-      if (paper.arxiv) linkCell.append(resource('arXiv',paper.arxiv));
-      if (paper.reading) linkCell.append(resource('解读',paper.reading,'reading-link'));
-      linkCell.append(text('span',readingStates[paper.readingState],'reading-state'));
-      tr.append(titleCell,linkCell); fragment.append(tr);
+      button.addEventListener('click',()=>{state[key]=state[key].filter(v=>v!==value);if(!state[key].length)delete state[key];filter();if(!panel.hidden)renderOptions();});chips.push(button);
     }
-    rows.replaceChildren(fragment);
+    $('active-filters').replaceChildren(...chips);
+    $('filter-summary').hidden=!chips.length && !active.hasReading;
+    $('empty').hidden=papers.length>0;$('clear-search').hidden=!$('search').value;
+    for(const button of document.querySelectorAll('.column-filter'))button.classList.toggle('is-active',columnKeys(button.dataset.column).some(key=>state[key]?.length));
+    const fragment=document.createDocumentFragment();
+    for(const paper of papers) {
+      const tr=document.createElement('tr');tr.dataset.paper=paper.id;
+      const topics=text('td','','direction-cell'),keywords=text('td','','keywords-cell');
+      for(const label of paper.topicLabels)topics.append(text('span',label,'topic-tag'));
+      for(const keyword of paper.keywords) {
+        const button=text('button',keyword,'keyword');button.type='button';button.setAttribute('aria-label',`筛选关键词：${keyword}`);
+        button.addEventListener('click',()=>{closeFilter();state.keyword=[keyword];filter();});keywords.append(button);
+      }
+      const journal=text('td','','journal-cell'),abbreviation=text('abbr',paper.journalShort);abbreviation.title=paper.journal;abbreviation.tabIndex=0;journal.append(abbreviation);
+      tr.append(topics,keywords,text('td',paper.question,'question-cell'),journal,text('td',paper.year,'year-cell'));
+      const titleCell=text('td','','title-cell'),button=text('button',paper.title,'paper-title');button.type='button';button.dataset.paper=paper.id;
+      button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-expanded','false');
+      titleCell.append(button,text('p',paper.authors,'authors'));
+      const links=text('td','','links-cell');links.append(resource('原文',paper.original));
+      if(paper.arxiv)links.append(resource('arXiv',paper.arxiv));if(paper.reading)links.append(resource('解读',paper.reading,'reading-link'));
+      tr.append(titleCell,links);fragment.append(tr);
+    }
+    rows.replaceChildren(fragment);refreshCounts();
   }
-  function filter() { closeCard(false,false); render(); updateHash(); }
-  function resetFilters() { $('search').value=''; for(const key of Object.keys(dimensions))$(`filter-${key}`).value=''; }
-  $('search').addEventListener('input',filter);
-  $('clear-search').addEventListener('click',() => { $('search').value=''; filter(); $('search').focus(); });
-  for(const id of ['reset-filter','clear-filters'])$(id).addEventListener('click',() => { resetFilters(); filter(); });
+  function filter(){closeCard(false,false);render();updateHash();}
+  function resetFilters(){for(const key of Object.keys(state))delete state[key];$('search').value='';$('has-reading').checked=false;}
+  $('search').addEventListener('input',filter);$('has-reading').addEventListener('change',filter);
+  $('clear-search').addEventListener('click',()=>{$('search').value='';filter();$('search').focus();});
+  for(const id of ['reset-filter','clear-filters'])$(id).addEventListener('click',()=>{closeFilter();resetFilters();filter();});
+  document.addEventListener('pointerdown',event=>{if(!panel.hidden && !panel.contains(event.target) && !event.target.closest('.column-filter'))closeFilter();});
+  $('papers').addEventListener('scroll',()=>{positionFilter();if(!card.hidden && !pinned)closeCard(false);},{passive:true});
+  window.addEventListener('resize',positionFilter);
+  document.addEventListener('keydown',event=>{if(event.key==='Escape' && !panel.hidden){event.preventDefault();closeFilter(true);}});
 
+  function renderCardDetails(paper,details={}) {
+    $('card-theme').textContent=details.theme||'';$('card-theme').hidden=!details.theme;
+    const sections=[['研究问题',details.question||paper.question],['阅读范围',details.coverage],['研究方法',details.approach],['主要发现',details.findings],['方法与证据',details.overview],['证据范围',details.scope]];
+    $('card-sections').replaceChildren(...sections.filter(([,value])=>value).map(([name,value])=>{const section=text('section','','card-section');section.append(text('h3',name),text('p',value));return section;}));
+    positionCard();
+  }
+  async function loadCardDetails(paper) {
+    if(!paper.reading)return;
+    $('card-status').hidden=false;$('card-status').textContent='正在加载解读摘要…';$('retry-card').hidden=true;
+    if(!cardCache.has(paper.id))cardCache.set(paper.id,fetch(`cards/${paper.id}.json?v=${readingVersion}`).then(response=>{
+      if(!response.ok)throw new Error(`解读摘要加载失败 (${response.status})`);return response.json();
+    }));
+    try {
+      const details=await cardCache.get(paper.id);
+      if(currentPaper?.id!==paper.id || card.hidden)return;
+      renderCardDetails(paper,details);$('card-status').hidden=true;
+    } catch(error) {
+      cardCache.delete(paper.id);
+      if(currentPaper?.id!==paper.id || card.hidden)return;
+      $('card-status').textContent='解读摘要加载失败，可重试或打开解读全文。';$('retry-card').hidden=false;
+    }
+  }
+  $('retry-card').addEventListener('click',()=>{if(currentPaper)loadCardDetails(currentPaper);});
   function positionCard() {
     if (!anchor || pinned || card.hidden) return;
     const rect = anchor.getBoundingClientRect();
@@ -103,6 +173,7 @@ async function start() {
     if (pinned && !pin) return;
     const paper = paperMap.get(id); if (!paper) return;
     if (anchor) anchor.setAttribute('aria-expanded','false');
+    closeFilter();
     currentPaper = paper; anchor = button; pinned = pin || mobile.matches;
     if (anchor) anchor.setAttribute('aria-expanded','true');
     $('card-title').textContent = paper.title; $('card-direction').textContent = paper.topicLabels.join(' · ');
@@ -111,9 +182,8 @@ async function start() {
     const issue=publication.volume ? ` ${publication.volume}${publication.issue ? `(${publication.issue})` : ''}` : '';
     const pages=publication.pages || publication.articleNumber;
     $('card-publication').textContent = `${paper.journal}${issue}${pages ? `, ${pages}` : ''} (${paper.year})`;
-    $('card-theme').textContent = paper.card.theme || ''; $('card-theme').hidden = !paper.card.theme;
-    const sections = [ ['分类',`${paper.venueGroupLabel} · ${paper.documentTypeLabel}\n${paper.objectLabels.join(' · ')}\n${paper.evidenceLabels.join(' · ')}`], ['阅读状态',readingStates[paper.readingState]], ['阅读范围',paper.card.coverage], ['研究问题',paper.card.question || paper.question], ['研究方法',paper.card.approach], ['主要发现',paper.card.findings], ['方法与证据',paper.card.overview], ['证据范围',paper.card.scope] ];
-    $('card-sections').replaceChildren(...sections.filter(([,value]) => value).map(([name,value]) => { const section=text('section','', 'card-section'); section.append(text('h3',name),text('p',value)); return section; }));
+    $('card-status').hidden=true; $('retry-card').hidden=true;
+    renderCardDetails(paper);
     $('card-links').replaceChildren(resource('原文',paper.original));
     if (paper.arxiv) $('card-links').append(resource('arXiv',paper.arxiv));
     if (paper.reading) $('card-links').append(resource('解读',paper.reading));
@@ -123,6 +193,7 @@ async function start() {
     card.querySelector('.card-scroll').scrollTop=0;
     positionCard();
     if (pinned) { updateHash(paper.id); $('close-card').focus({preventScroll:true}); }
+    loadCardDetails(paper);
   }
   function closeCard(restoreFocus = true, syncHash = true) {
     clearTimeout(hoverTimer); clearTimeout(closeTimer); clearTimeout(touchTimer);
@@ -136,6 +207,13 @@ async function start() {
     }
   }
   function scheduleClose() { if (!pinned) { clearTimeout(closeTimer); closeTimer=setTimeout(() => closeCard(false),240); } }
+  // A long press can put the backdrop under the finger before touch release.
+  // Suppress that gesture's synthetic click, including clicks outside the row.
+  document.addEventListener('pointerdown',()=>{suppressTouchClick=false;},{capture:true});
+  document.addEventListener('click',event=>{
+    if(!suppressTouchClick)return;
+    suppressTouchClick=false;event.preventDefault();event.stopPropagation();
+  },{capture:true});
   rows.addEventListener('pointerover',event => {
     const button=event.target.closest('.paper-title'); if (!button || !hoverDevice.matches || event.pointerType==='touch') return;
     clearTimeout(closeTimer); clearTimeout(hoverTimer); hoverTimer=setTimeout(() => openCard(button.dataset.paper,button),220);
@@ -144,16 +222,16 @@ async function start() {
     const button=event.target.closest('.paper-title'); if (button && !button.contains(event.relatedTarget)) { clearTimeout(hoverTimer); scheduleClose(); }
   });
   rows.addEventListener('click',event => {
-    const button=event.target.closest('.paper-title'); if (!button || Date.now()<ignoreClickUntil) return;
+    const button=event.target.closest('.paper-title'); if (!button) return;
     openCard(button.dataset.paper,button,true);
   });
   rows.addEventListener('pointerdown',event => {
     const button=event.target.closest('.paper-title'); if (!button || event.pointerType==='mouse') return;
     clearTimeout(touchTimer); touchOrigin={x:event.clientX,y:event.clientY,id:event.pointerId};
-    touchTimer=setTimeout(() => { touchOrigin=null; ignoreClickUntil=Date.now()+700; openCard(button.dataset.paper,button,true); },450);
+    touchTimer=setTimeout(() => { touchOrigin=null; suppressTouchClick=true; openCard(button.dataset.paper,button,true); },450);
   });
   rows.addEventListener('pointermove',event => {
-    if (touchOrigin && Math.hypot(event.clientX-touchOrigin.x,event.clientY-touchOrigin.y)>10) { clearTimeout(touchTimer); touchOrigin=null; ignoreClickUntil=Date.now()+500; }
+    if (touchOrigin && Math.hypot(event.clientX-touchOrigin.x,event.clientY-touchOrigin.y)>10) { clearTimeout(touchTimer); touchOrigin=null; suppressTouchClick=true; }
   },{passive:true});
   for (const name of ['pointerup','pointercancel']) rows.addEventListener(name,() => { clearTimeout(touchTimer); touchOrigin=null; });
   rows.addEventListener('contextmenu',event => { if (event.target.closest('.paper-title')) event.preventDefault(); });
@@ -186,13 +264,14 @@ async function start() {
     resetFilters();
     $('search').value=params.get('q') || '';
     for(const [key,options] of Object.entries(dimensions)) {
-      const value=params.get(key);
-      if(options.some(item=>item.id===value))$(`filter-${key}`).value=value;
+      const selected=params.getAll(key).filter(value=>options.some(item=>item.id===value));
+      if(selected.length)state[key]=unique(selected);
     }
+    $('has-reading').checked=params.get('hasReading')==='true';
     const section=params.get('section');
     if(section && !params.has('topic')) {
       const topic=catalog.taxonomy.topics.find(t=>t.id===section || t.legacyIds.includes(section));
-      if(topic)$('filter-topic').value=topic.id;
+      if(topic)state.topic=[topic.id];
     }
     const paper=paperMap.get(params.get('paper'));
     if(paper && !filterPapers([paper],filters()).length)resetFilters();
