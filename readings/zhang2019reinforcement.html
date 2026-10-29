@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Reinforcement learning meets minority game: Toward optimal resource allocation · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex.min.css"></head>
-<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../#topic=resources&paper=p-f67deb3654bb3a">返回文献库</a><a href="https://doi.org/10.1103/PhysRevE.99.032302" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Zhang et al. - Reinforcement learning meets minority game: Toward optimal resource allocation</h1>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Reinforcement learning meets minority game: Toward optimal resource allocation · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=f0c09fa4888e0e9662b387167a4da682e957e87eb806a5a9ae40f1bdb19d35e6"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+<body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1103/PhysRevE.99.032302" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Zhang et al. - Reinforcement learning meets minority game: Toward optimal resource allocation</h1>
 <p><strong>Q-learning 如何抑制扎堆，又为何留下间歇失稳</strong></p>
 <blockquote>
 <p>资料范围：论文正文（不含补充材料）。
@@ -176,4 +176,4 @@ Q_t(s,a)=Q_{t-1}(s,a)+\alpha\left[R_t(a)+\gamma\max_{a&#x27;}Q_{t-1}(s&#x27;,a&#
 <p>[Analysis] 研究启示：记录群体内部角色转化，往往比只追踪平均收益更接近机制。噪声既可解除锁定，也可触发系统级波动。衡量适应质量应同时包含平均利用率、尾部超载、失败间隔和恢复速度，不能用单个均值替代动态可靠性。</p>
 <h2>15 与现有知识的联系</h2>
 <p>[Analysis] 与1997年少数者博弈共同点是收益随拥挤变化；区别是动作价值学习及对间歇失稳的机制解释。对城市LLM研究，这是一条必须认真考虑的非LLM自适应基线。LLM若只复现低波动阶段，并未显示增量；更有价值的比较是面对未见容量变化、延迟反馈和异质需求时，谁能更稳定地恢复。</p>
-</main><footer class="reading-footer">城市复杂系统文献库</footer></body></html>
+</main></body></html>
