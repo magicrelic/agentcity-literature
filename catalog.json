@@ -3181,7 +3181,7 @@
       },
       "links": {
         "original": "https://doi.org/10.1126/science.aeg3946",
-        "arxiv": "https://arxiv.org/abs/2609.25226",
+        "arxiv": "https://arxiv.org/abs/2609.25226v1",
         "data": [],
         "code": [],
         "supplement": []
@@ -3210,6 +3210,17 @@
           "id": "arxiv-20261029",
           "provider": "arxiv",
           "url": "https://arxiv.org/abs/2609.25226",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/2609.25226v1",
           "retrievedOn": "2026-10-29",
           "fields": [
             "identifiers.arxiv",
@@ -8534,7 +8545,28 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08543-1/MediaObjects/41586_2024_8543_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Source Data Fig. 2 (CSV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08543-1/MediaObjects/41586_2024_8543_MOESM3_ESM.csv"
+          },
+          {
+            "label": "Source Data Fig. 4 (CSV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08543-1/MediaObjects/41586_2024_8543_MOESM4_ESM.csv"
+          },
+          {
+            "label": "Source Data Fig. 5 (CSV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08543-1/MediaObjects/41586_2024_8543_MOESM5_ESM.csv"
+          },
+          {
+            "label": "Supplementary Data (DOCX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08543-1/MediaObjects/41586_2024_8543_MOESM2_ESM.docx"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -8554,6 +8586,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-024-08543-1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -9307,8 +9348,8 @@
       },
       "identifiers": {
         "doi": "10.1038/s41586-025-09215-4",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2410.20268",
+        "arxivVersion": 3
       },
       "research": {
         "question": "能否从多种行为实验训练通用模型，预测未见任务中的人类认知与选择？",
@@ -9320,10 +9361,19 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41586-025-09215-4",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2410.20268v3",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-025-09215-4/MediaObjects/41586_2025_9215_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-025-09215-4/MediaObjects/41586_2025_9215_MOESM2_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "open",
@@ -9380,6 +9430,36 @@
             "publication.issn",
             "access.licenses",
             "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/2410.20268v3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "centaur-author-version-link-20261029",
+          "provider": "Authors’ official code repository",
+          "url": "https://github.com/marcelbinz/Llama-3.1-Centaur-70B",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-025-09215-4",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -10558,7 +10638,44 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Supplementary Video 1 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM3_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 2 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM4_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 3 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM5_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 4 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM6_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 5 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM7_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 6 (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM8_ESM.mov"
+          },
+          {
+            "label": "Supplementary Video 7 (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM9_ESM.mov"
+          },
+          {
+            "label": "Supplementary Video 8 (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08514-6/MediaObjects/41586_2024_8514_MOESM10_ESM.mov"
+          }
+        ]
       },
       "access": {
         "original": "open",
@@ -10615,6 +10732,15 @@
             "publication.issn",
             "access.licenses",
             "access.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-024-08514-6",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -11900,8 +12026,8 @@
       },
       "identifiers": {
         "doi": "10.1038/s41586-024-08353-5",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2407.03249",
+        "arxivVersion": 3
       },
       "research": {
         "question": "可编程量子模拟器中的有序化与集体振荡如何演化？",
@@ -11913,17 +12039,26 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41586-024-08353-5",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2407.03249v3",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Video 1 (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08353-5/MediaObjects/41586_2024_8353_MOESM2_ESM.mov"
+          },
+          {
+            "label": "Supplementary Video 2 (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08353-5/MediaObjects/41586_2024_8353_MOESM3_ESM.mov"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/manovitz2025quantum.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -11936,6 +12071,26 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/2407.03249v3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-024-08353-5",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -12313,14 +12468,19 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-025-08983-3/MediaObjects/41586_2025_8983_MOESM1_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/slotte2025herring.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -12333,6 +12493,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-025-08983-3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -12586,14 +12755,23 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-025-09442-9/MediaObjects/41586_2025_9442_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-025-09442-9/MediaObjects/41586_2025_9442_MOESM2_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/swanson2025virtual.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -12616,6 +12794,15 @@
           "fields": [
             "research",
             "classification"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-025-09442-9",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -15597,7 +15784,36 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07077-w/MediaObjects/41586_2024_7077_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Source Data Fig. 2 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07077-w/MediaObjects/41586_2024_7077_MOESM3_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 3 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07077-w/MediaObjects/41586_2024_7077_MOESM4_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 4 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07077-w/MediaObjects/41586_2024_7077_MOESM5_ESM.xlsx"
+          },
+          {
+            "label": "Supplement and experimental data for \"Super-additive cooperation\": suppSuperAdditiveCooperation.pdf",
+            "url": "https://zenodo.org/api/records/10355347/files/suppSuperAdditiveCooperation.pdf/content"
+          },
+          {
+            "label": "Supplement and experimental data for \"Super-additive cooperation\": dataP1.txt",
+            "url": "https://zenodo.org/api/records/10355347/files/dataP1.txt/content"
+          },
+          {
+            "label": "Supplement and experimental data for \"Super-additive cooperation\": dataP2.txt",
+            "url": "https://zenodo.org/api/records/10355347/files/dataP2.txt/content"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -15617,6 +15833,24 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-024-07077-w",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
+          ]
+        },
+        {
+          "id": "zenodo-supplement-20261029",
+          "provider": "Author-linked Zenodo record",
+          "url": "https://zenodo.org/records/10355347",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -18616,14 +18850,31 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05732-2/MediaObjects/41586_2023_5732_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Source Data Fig. 2 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05732-2/MediaObjects/41586_2023_5732_MOESM2_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 3 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05732-2/MediaObjects/41586_2023_5732_MOESM3_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 4 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05732-2/MediaObjects/41586_2023_5732_MOESM4_ESM.xlsx"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/feng2023dense.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -18646,6 +18897,15 @@
           "fields": [
             "research",
             "classification"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-023-05732-2",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -18724,7 +18984,28 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06478-7/MediaObjects/41586_2023_6478_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Source Data Fig. 1 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06478-7/MediaObjects/41586_2023_6478_MOESM2_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 2 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06478-7/MediaObjects/41586_2023_6478_MOESM3_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 3 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06478-7/MediaObjects/41586_2023_6478_MOESM4_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 4 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06478-7/MediaObjects/41586_2023_6478_MOESM5_ESM.xlsx"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -18744,6 +19025,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-023-06478-7",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -19104,6 +19394,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-023-06419-4",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -19531,8 +19830,8 @@
       },
       "identifiers": {
         "doi": "10.1038/s41586-023-06757-3",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2210.07414",
+        "arxivVersion": 2
       },
       "research": {
         "question": "城市规模扩大为何与移动接触网络中更强的经济隔离相关？",
@@ -19544,10 +19843,19 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41586-023-06757-3",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2210.07414v2",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06757-3/MediaObjects/41586_2023_6757_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06757-3/MediaObjects/41586_2023_6757_MOESM2_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "open",
@@ -19604,6 +19912,26 @@
             "publication.issn",
             "access.licenses",
             "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/2210.07414v2",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-023-06757-3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -21101,7 +21429,28 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06259-2/MediaObjects/41586_2023_6259_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Supplementary Video 1 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06259-2/MediaObjects/41586_2023_6259_MOESM3_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 2 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06259-2/MediaObjects/41586_2023_6259_MOESM4_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 3 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06259-2/MediaObjects/41586_2023_6259_MOESM5_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 4 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06259-2/MediaObjects/41586_2023_6259_MOESM6_ESM.mp4"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -21121,6 +21470,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-023-06259-2",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -21750,7 +22108,16 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-022-04996-4/MediaObjects/41586_2022_4996_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-022-04996-4/MediaObjects/41586_2022_4996_MOESM2_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -21770,6 +22137,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-022-04996-4",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -21986,7 +22362,16 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-022-04997-3/MediaObjects/41586_2022_4997_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-022-04997-3/MediaObjects/41586_2022_4997_MOESM2_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -22006,6 +22391,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-022-04997-3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -23357,7 +23751,16 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2923-3/MediaObjects/41586_2020_2923_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Reporting Summary (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2923-3/MediaObjects/41586_2020_2923_MOESM2_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -23377,6 +23780,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-020-2923-3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -23767,8 +24179,8 @@
       },
       "identifiers": {
         "doi": "10.1038/s41586-021-03375-9",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2003.13176",
+        "arxivVersion": 5
       },
       "research": {
         "question": "非互易相互作用如何使同步、集群与图案形成系统出现随时间变化的集体相及相应转变？",
@@ -23780,10 +24192,35 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41586-021-03375-9",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2003.13176v5",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03375-9/MediaObjects/41586_2021_3375_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Supplementary Video 1 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03375-9/MediaObjects/41586_2021_3375_MOESM2_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 2 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03375-9/MediaObjects/41586_2021_3375_MOESM3_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 3 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03375-9/MediaObjects/41586_2021_3375_MOESM4_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 4 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03375-9/MediaObjects/41586_2021_3375_MOESM5_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 5 (MP4)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03375-9/MediaObjects/41586_2021_3375_MOESM6_ESM.mp4"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -23835,6 +24272,26 @@
           "retrievedOn": "2026-10-26",
           "fields": [
             "research.question"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/2003.13176v5",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-021-03375-9",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -25234,7 +25691,12 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-03480-9/MediaObjects/41586_2021_3480_MOESM1_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -25288,6 +25750,15 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-021-03480-9",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -26355,7 +26826,7 @@
       "identifiers": {
         "doi": "10.1038/s41586-020-2909-1",
         "arxiv": "2109.07381",
-        "arxivVersion": null
+        "arxivVersion": 1
       },
       "research": {
         "question": "个体移动是否存在嵌套的特征尺度，这些尺度如何产生总体距离分布？",
@@ -26367,10 +26838,27 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41586-020-2909-1",
-        "arxiv": "https://arxiv.org/abs/2109.07381",
+        "arxiv": "https://arxiv.org/abs/2109.07381v1",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2909-1/MediaObjects/41586_2020_2909_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Source Data Fig. 1 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2909-1/MediaObjects/41586_2020_2909_MOESM3_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 2 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2909-1/MediaObjects/41586_2020_2909_MOESM4_ESM.xlsx"
+          },
+          {
+            "label": "Source Data Fig. 3 (XLSX)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2909-1/MediaObjects/41586_2020_2909_MOESM5_ESM.xlsx"
+          }
+        ]
       },
       "access": {
         "original": "subscription",
@@ -26427,6 +26915,26 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/2109.07381v1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-020-2909-1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -33409,7 +33917,12 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature16948/MediaObjects/41586_2016_BFnature16948_MOESM80_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -33463,6 +33976,15 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/nature16948",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -38151,7 +38673,20 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature12128/MediaObjects/41586_2013_BFnature12128_MOESM58_ESM.pdf"
+          },
+          {
+            "label": "Ohmic electric fields in the archived MHD simulation (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature12128/MediaObjects/41586_2013_BFnature12128_MOESM59_ESM.mov"
+          },
+          {
+            "label": "Stochastic flux-freezing for resistive MHD (MOV)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature12128/MediaObjects/41586_2013_BFnature12128_MOESM60_ESM.mov"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -38171,6 +38706,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/nature12128",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -38535,6 +39079,17 @@
           "retrievedOn": "2026-10-12",
           "fields": [
             "research.question",
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/1303.6738v1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
             "identifiers.arxiv",
             "identifiers.arxivVersion",
             "links.arxiv"
@@ -40809,7 +41364,7 @@
       "identifiers": {
         "doi": "10.1038/nature10856",
         "arxiv": "1111.0586",
-        "arxivVersion": null
+        "arxivVersion": 2
       },
       "research": {
         "question": "人口及中间机会的分布能否解释不同尺度的移动和迁移流量？",
@@ -40821,10 +41376,15 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/nature10856",
-        "arxiv": "https://arxiv.org/abs/1111.0586",
+        "arxiv": "https://arxiv.org/abs/1111.0586v2",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature10856/MediaObjects/41586_2012_BFnature10856_MOESM5_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "subscription",
@@ -40876,6 +41436,26 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/1111.0586v2",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/nature10856",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -41157,7 +41737,12 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary material (publisher archive)",
+            "url": "https://web.archive.org/web/20141021053910id_/http://www.sciencemag.org:80/content/suppl/2012/09/19/science.1227079.DC1/Sugihara.SM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -41198,6 +41783,15 @@
             "publication.pages",
             "publication.publishedPrint",
             "publication.issn"
+          ]
+        },
+        {
+          "id": "supplement-source-supplement-1-20261029",
+          "provider": "Archived supplement source documented in material manifest",
+          "url": "https://web.archive.org/web/20141021053910id_/http://www.sciencemag.org:80/content/suppl/2012/09/19/science.1227079.DC1/Sugihara.SM.pdf",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -42662,7 +43256,12 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary material (university archive)",
+            "url": "https://pdodds.w3.uvm.edu/files/papers/others/2010/song2010a_supp.pdf"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -42703,6 +43302,15 @@
             "publication.pages",
             "publication.publishedPrint",
             "publication.issn"
+          ]
+        },
+        {
+          "id": "supplement-source-supplement-1-20261029",
+          "provider": "Archived supplement source documented in material manifest",
+          "url": "https://pdodds.w3.uvm.edu/files/papers/others/2010/song2010a_supp.pdf",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -43154,6 +43762,15 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/nature08227",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -43758,7 +44375,7 @@
       "identifiers": {
         "doi": "10.1038/nature06958",
         "arxiv": "0806.1256",
-        "arxivVersion": null
+        "arxivVersion": 1
       },
       "research": {
         "question": "个体活动范围、重复访问和人群异质性如何共同塑造移动轨迹的统计规律？",
@@ -43770,10 +44387,15 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/nature06958",
-        "arxiv": "https://arxiv.org/abs/0806.1256",
+        "arxiv": "https://arxiv.org/abs/0806.1256v1",
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary information (PDF)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature06958/MediaObjects/41586_2008_BFnature06958_MOESM256_ESM.pdf"
+          }
+        ]
       },
       "access": {
         "original": "subscription",
@@ -43829,6 +44451,26 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/0806.1256v1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/nature06958",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -45924,7 +46566,12 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary Figure 1 (DOC)",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature03236/MediaObjects/41586_2005_BFnature03236_MOESM1_ESM.doc"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -45971,6 +46618,15 @@
           "retrievedOn": "2026-10-26",
           "fields": [
             "research.question"
+          ]
+        },
+        {
+          "id": "publisher-supplement-links-20261029",
+          "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/nature03236",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -46918,7 +47574,12 @@
         "arxiv": null,
         "data": [],
         "code": [],
-        "supplement": []
+        "supplement": [
+          {
+            "label": "Supplementary material (publisher archive)",
+            "url": "https://web.archive.org/web/20040913145044id_/http://www.sciencemag.org:80/cgi/data/299/5611/1388/DC1/1"
+          }
+        ]
       },
       "access": {
         "original": "unknown",
@@ -46938,6 +47599,15 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "supplement-source-supplement-1-20261029",
+          "provider": "Archived supplement source documented in material manifest",
+          "url": "https://web.archive.org/web/20040913145044id_/http://www.sciencemag.org:80/cgi/data/299/5611/1388/DC1/1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
           ]
         }
       ],
@@ -47703,8 +48373,8 @@
       },
       "identifiers": {
         "doi": "10.1038/35059027",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "physics/0011017",
+        "arxivVersion": 1
       },
       "research": {
         "question": "充分发展湍流中的流体粒子加速度呈现怎样的统计规律？",
@@ -47716,7 +48386,7 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/35059027",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/physics/0011017v1",
         "data": [],
         "code": [],
         "supplement": []
@@ -47739,6 +48409,17 @@
             "publication",
             "identifiers",
             "links.original"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/physics/0011017v1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
           ]
         }
       ],
@@ -49109,7 +49790,7 @@
       "identifiers": {
         "doi": "10.1038/40353",
         "arxiv": "cond-mat/9805158",
-        "arxivVersion": null
+        "arxivVersion": 1
       },
       "research": {
         "question": "行人的运动和定向与周围环境的反馈如何形成城市绿地中的路径网络？",
@@ -49121,7 +49802,7 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/40353",
-        "arxiv": "https://arxiv.org/abs/cond-mat/9805158",
+        "arxiv": "https://arxiv.org/abs/cond-mat/9805158v1",
         "data": [],
         "code": [],
         "supplement": []
@@ -49177,6 +49858,17 @@
           "fields": [
             "research.question",
             "identifiers.arxiv",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "arxiv-verification-20261029",
+          "provider": "arXiv primary metadata via nature_academic_search",
+          "url": "https://arxiv.org/abs/cond-mat/9805158v1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
             "links.arxiv"
           ]
         }
