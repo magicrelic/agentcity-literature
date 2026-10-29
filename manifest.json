@@ -1,10 +1,10 @@
 {
-  "version": "5957d5be762dd4fc0d758c1619d7540565cbf9368e107b465073259085e686d4",
-  "catalogVersion": "cc3b543d73c2bd3e5f080c88350f560b6625698fa90d7b483407f996e2838c3d",
-  "tableVersion": "de69305130ce79dbe6301298440d80e7ac51b76fea735dc1a854266ea2c45817",
-  "readingVersion": "231983dede5480c8979b7e994ad552b428ce40fd935d1d2f30356bd160b4a943",
+  "version": "366e1ae6f674c925f14b02edbd3e563f73df0db696dddf7f3d451941e54ce218",
+  "catalogVersion": "63af87e962a9092c50017a7fc65737d855499bc0818217e8b276c739f32c03d9",
+  "tableVersion": "3aa50fa6bffac7033e68544a58dff85c7d63ccd22710800c4fa5afb61c018530",
+  "readingVersion": "a2b2c5d70751af4e2b88a8e309e31ea762fe317db8b01f5a41500a3e8e760096",
   "papers": 371,
-  "readings": 184,
+  "readings": 185,
   "chapters": [
     "集体运动与协调",
     "异质性与适应",
@@ -83,9 +83,9 @@
     "assets/katex-LICENSE.txt": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
     "assets/katex.min.css": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00",
     "assets/style.css": "839d6e792775300697073b6d81001c289bd4c5c80f340af216c8bbe1975ceabf",
-    "catalog.json": "cc3b543d73c2bd3e5f080c88350f560b6625698fa90d7b483407f996e2838c3d",
+    "catalog.json": "63af87e962a9092c50017a7fc65737d855499bc0818217e8b276c739f32c03d9",
     "catalog.schema.json": "e03a20152e04b82e5bea1e189eadd588355dbc3a4b0b8a2a4ba6ad6bcd8bddd0",
-    "index.html": "332aef979ef4d814f40b62c01a286ff8be0f72cca748712c98aa86383b7176f6",
+    "index.html": "7041fe626dc97e7f23dc5cad635475cea01b4a837f1377d9f38f4e78b717219e",
     "readings/ahlfeldt2015economics.html": "d93140d4e8d6225d467d2c5a441b3d9689028ba6c98a57391642088998bb35db",
     "readings/aiello2025observation.html": "c9918ebcba6b1f1a990e47437c64f1ba82496b3cce914846f1d7e22a5c3558df",
     "readings/alessandretti2018evidence.html": "6e2b4e29f22c0f7507608b6241639165e7248c8672772644d252906c9b0ac571",
@@ -110,6 +110,10 @@
     "readings/assets/feng2023dense/fig-field-test-convergence.png": "a6314e9b8ee0d17a1ac4de9f977d5a9b5a402259dd71d3c43ee12dc1b7bf1f6a",
     "readings/assets/feng2023dense/fig-learning-comparison.png": "758cb55c3339e5f2c14fc427e20103483c9872c779e890c0aa54c166fa81b423",
     "readings/assets/feng2023dense/fig-unbiased-evaluation.png": "0fbddec2b388464374624b2e05e904690640187c37bab0107299c7de706f1e3e",
+    "readings/assets/forli2023hippocampal/fig-collective-spatial-structure.png": "35c2f091a7b0f85ec193e8f86c5123ad17ecb9bc1d11052fc3e75471a2966e0c",
+    "readings/assets/forli2023hippocampal/fig-population-social-representation.png": "6dac8f7057a6876c138a7e549c441536774132be85b10fe64c9492aab18c454e",
+    "readings/assets/forli2023hippocampal/fig-responses-to-others-takeoff.png": "91c630b08680c080b02af16e33676ca7fdbcb513fd4469a4baf39375749f8610",
+    "readings/assets/forli2023hippocampal/fig-social-and-identity-coding.png": "7b3ec1bda6169ddaa01339d4da0035c8c9b002f4e85c567e9076cb420460e815",
     "readings/assets/gu2025emergence/fig-collective-correlations.png": "df8c4029cd364792fb3bf1cc466a2e09705d0d5ccc524675753bd7d20994c7f8",
     "readings/assets/gu2025emergence/fig-local-chirality.png": "813c42801d90428a4afd66e8da0d1a9f70a1d4e5f7b8b99064c71f1a8d6d4d70",
     "readings/assets/gu2025emergence/fig-odd-friction-mechanism.png": "b28a4337b6198e7b024d4a156e7a9f1ef0552f32763a61c2938efe68b00cd8ff",
@@ -175,6 +179,7 @@
     "readings/fan2021evaluating.html": "4ead265337c5a3771bd09c2637124bb3ffc4a0fccd0b1f8d43d0fe7dc7d571ab",
     "readings/fan2026hidden.html": "80fdfa07b8ff5575111595e24dd798b26f852bc59f45c2a335f348659a2fc562",
     "readings/feng2023dense.html": "9ee0041c7ea8ca0bb76319471de43673a3a28803c0f671d492bfc1ababf13d7d",
+    "readings/forli2023hippocampal.html": "8f9354deb8a012bf19759bf7c768a62f6efb98e8cf044056a469a53c4d4685b6",
     "readings/gallotti2024distorted.html": "f1c73d27efe715a1065b15452af89656a89d2d218de1c14e1edd0146b6ec3b2b",
     "readings/gao2016universal.html": "35559e2fe67659b9d8432f348fd0f68be1858ee0417b6b17b90d35fb1b17aa63",
     "readings/geroliminis2011hysteresis.html": "cfec64968ceaf3679b4ef5c0b3e737e8c9097b8e5a8f544e24541b9d9ef57259",
@@ -305,6 +310,6 @@
     "readings/zhou2026gasim.html": "be2a4f21b9a5fb93e76d29079d5aabecc0664a70dcc3ea01b320f47da6f68edf",
     "readings/zhou2026human.html": "8b45459c47348819f8bd46de243d66337b1fbcc32c723c04f358021768565154",
     "readings/zomer2026unraveling.html": "2529544cff1bd2f9363ea856cc2acb1922ad2634b77c54c2bbac1042934d012b",
-    "table-index.json": "de69305130ce79dbe6301298440d80e7ac51b76fea735dc1a854266ea2c45817"
+    "table-index.json": "3aa50fa6bffac7033e68544a58dff85c7d63ccd22710800c4fa5afb61c018530"
   }
 }
