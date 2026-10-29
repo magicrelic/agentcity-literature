@@ -578,7 +578,7 @@
                   },
                   "uniqueItems": true,
                   "minItems": 1,
-                  "description": "可多选；首项用于 Markdown 和 EPUB 的唯一主主题归档，网页匹配全部主题。"
+                  "description": "可多选；首项用于 Markdown 的唯一主主题归档，网页匹配全部主题。"
                 },
                 "objects": {
                   "type": "array",

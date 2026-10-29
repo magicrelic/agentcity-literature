@@ -120,6 +120,9 @@ body.dialog-open { overflow:hidden; }
 .reading-body pre { overflow:auto; background:var(--wash); padding:16px; }
 .reading-body .katex-display { overflow-x:auto; overflow-y:hidden; padding:8px 0; max-width:100%; }
 .reading-body img { max-width:100%; height:auto; }
+.reading-image { display:block; width:fit-content; max-width:100%; margin:22px auto; cursor:zoom-in; }
+.reading-image img { display:block; }
+.reading-image:focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
 .paper-card .reading-body { max-width:none; padding:0; margin:0; }
 @media (max-width:760px) {
   .page-width { padding-inline:12px; }.toolbar { padding:12px 0; gap:12px; }.search-box { flex:1; width:auto; min-width:0; }.search-box input { font-size:16px; }.search-box input::placeholder { font-size:13px; }.total-count { font-size:12px; }.table-scroll { max-height:calc(100dvh - 78px); }
