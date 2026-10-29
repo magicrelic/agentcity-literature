@@ -21457,7 +21457,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/woo2023dynamics.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -22124,7 +22124,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/chetty2022social.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -22378,7 +22378,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/chetty2022socialcapitalii.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -23767,7 +23767,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/chang2021mobility.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -24238,7 +24238,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/fruchart2021nonreciprocal.md",
       "provenance": [
         {
           "id": "crossref",
@@ -26857,6 +26857,42 @@
           {
             "label": "Source Data Fig. 3 (XLSX)",
             "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2909-1/MediaObjects/41586_2020_2909_MOESM5_ESM.xlsx"
+          },
+          {
+            "label": "Extended Data Fig. 1: The D1 dataset.",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/figures/4"
+          },
+          {
+            "label": "Extended Data Fig. 2: Distribution of container sizes at different levels.",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/figures/5"
+          },
+          {
+            "label": "Extended Data Fig. 3: Schematic description and validation of the likelihood optimization algorithm.",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/figures/6"
+          },
+          {
+            "label": "Extended Data Fig. 4: The container model generates realistic synthetic traces.",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/figures/7"
+          },
+          {
+            "label": "Extended Data Fig. 5: Number of hierarchical levels recovered from traces.",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/figures/8"
+          },
+          {
+            "label": "Extended Data Table 1 The distribution of container sizes is not scale free",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/tables/1"
+          },
+          {
+            "label": "Extended Data Table 2 The distribution of time spent within container is not scale free",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/tables/2"
+          },
+          {
+            "label": "Extended Data Table 3 Characteristics of the lognormal distributions of container sizes",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/tables/3"
+          },
+          {
+            "label": "Extended Data Table 4 The container model describes unseen data better than other individual mobility models",
+            "url": "https://www.nature.com/articles/s41586-020-2909-1/tables/4"
           }
         ]
       },
@@ -26931,6 +26967,15 @@
         {
           "id": "publisher-supplement-links-20261029",
           "provider": "Publisher article supplementary information and source-data links",
+          "url": "https://www.nature.com/articles/s41586-020-2909-1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "links.supplement"
+          ]
+        },
+        {
+          "id": "publisher-extended-data-20261029",
+          "provider": "Nature official Extended Data image/table pages; nine original JPEG assets and captions archived",
           "url": "https://www.nature.com/articles/s41586-020-2909-1",
           "retrievedOn": "2026-10-29",
           "fields": [
@@ -32181,7 +32226,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/stroeymeyt2018social.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -38693,7 +38738,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/eyink2013flux.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -39049,7 +39094,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/machta2013parameter.md",
       "provenance": [
         {
           "id": "crossref",
@@ -46584,7 +46629,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/couzin2005effective.md",
       "provenance": [
         {
           "id": "crossref",
@@ -47586,7 +47631,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/kondoh2003foraging.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -48396,7 +48441,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/laporta2001fluid.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -49578,7 +49623,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/watts1998collective.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -49823,7 +49868,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/helbing1997modelling.md",
       "provenance": [
         {
           "id": "crossref",
