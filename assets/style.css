@@ -86,7 +86,7 @@ h1,h2,h3,p { margin:0; }
 .year-slider input:focus-visible::-moz-range-thumb { box-shadow:0 0 0 4px #579ec64d; }
 #card-status { margin-top:15px; color:var(--muted); font-size:12px; }
 #retry-card { background:white; color:var(--blue); border:1px solid var(--line); border-radius:4px; padding:4px 12px; margin-top:8px; }
-.paper-card { position:fixed; z-index:60; width:470px; max-height:min(700px,calc(100dvh - 32px)); display:flex; flex-direction:column; border:1px solid #b6cbd9; border-radius:12px; background:white; box-shadow:0 14px 54px #18364a29,0 2px 7px #18364a12; }
+.paper-card { position:fixed; z-index:60; width:min(960px,calc(100vw - 32px)); max-height:min(700px,calc(100dvh - 32px)); display:flex; flex-direction:column; border:1px solid #b6cbd9; border-radius:12px; background:white; box-shadow:0 14px 54px #18364a29,0 2px 7px #18364a12; }
 .card-top { display:flex; justify-content:space-between; align-items:center; padding:13px 17px 8px 22px; color:var(--blue); font-size:12px; gap:20px; }
 .card-top button { border:0; background:transparent; width:32px; height:32px; font-size:25px; font-weight:300; line-height:1; border-radius:50%; }
 .card-top button:hover { background:var(--wash); }
@@ -103,7 +103,7 @@ h1,h2,h3,p { margin:0; }
 .resource-links a:hover { text-decoration:underline; }
 .card-footer button { border:0; border-radius:4px; background:var(--wash); color:var(--blue); font-size:12px; padding:7px 10px; white-space:nowrap; }
 .backdrop { position:fixed; inset:0; z-index:50; background:#15344650; }
-.paper-card.pinned { top:50%!important; left:50%!important; transform:translate(-50%,-50%); width:min(650px,calc(100vw - 40px)); }
+.paper-card.pinned { top:50%!important; left:50%!important; transform:translate(-50%,-50%); }
 body.dialog-open { overflow:hidden; }
 .reading-page { background:#fcfdfe; }
 .reading-nav { max-width:960px; margin:auto; display:flex; justify-content:space-between; padding:28px 36px; }
