@@ -10,7 +10,7 @@
       "const": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json"
     },
     "schemaVersion": {
-      "const": 3,
+      "const": 4,
       "description": "数据结构版本。"
     },
     "library": {
@@ -601,8 +601,12 @@
                   "minLength": 1
                 },
                 "venueGroup": {
-                  "type": "string",
-                  "minLength": 1
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "description": "期刊三档分类 ID；预印本、会议、专著及章节为 null，不参与期刊分档。"
                 }
               },
               "required": [

@@ -7,11 +7,11 @@
   <meta name="description" content="复杂系统、群体行为与智能体研究的多维分类文献库。">
   <title>城市复杂系统文献库</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <meta name="catalog-version" content="866d4b27f44414e821c24bdb1f65f77daa36788434f5c5f5bc718b01b8c466d2">
-  <meta name="table-version" content="445dedd2ce110c4a7405dc6d4e7ac16b97fffc0a6f9fc8da86dd3db9691f0407">
-  <meta name="reading-version" content="304d5733a898139c55d9867a96516ae8339d66506854864d45730020ee717be3">
-  <link rel="stylesheet" href="assets/style.css?v=3f455be8552a562603196fa3cbb104dd5ce913dacaf5540766212f939860894e">
-  <script src="assets/app.js?v=3f455be8552a562603196fa3cbb104dd5ce913dacaf5540766212f939860894e" type="module"></script>
+  <meta name="catalog-version" content="277dbf5a0453df26ff67b7c1bdc7a96e9328c9d61282f8ce876a0db892822ac5">
+  <meta name="table-version" content="dd01c58a48fc0e090a30e4d1ef6020bdcfe154bb4af3608afdc8622adba2144b">
+  <meta name="reading-version" content="2d81e87a5c2ef9bf3f4e58ac4f09f22a78481b3ca8187091033ed45c144046dd">
+  <link rel="stylesheet" href="assets/style.css?v=4798bd1dc3caee493f6f1385c7916f6675f365e4be006e0626602492a52c252e">
+  <script src="assets/app.js?v=4798bd1dc3caee493f6f1385c7916f6675f365e4be006e0626602492a52c252e" type="module"></script>
 </head>
 <body>
   <a class="skip-link" href="#papers">跳到论文表格</a>
@@ -19,6 +19,7 @@
     <h1 class="sr-only">城市复杂系统文献库</h1>
     <div class="toolbar">
       <label class="search-box"><span class="sr-only">检索文献</span><input id="search" type="search" placeholder="搜索论文、作者、关键词或 DOI" autocomplete="off"><button id="clear-search" type="button" hidden aria-label="清空检索">清空</button></label>
+      <p id="total-count" class="total-count"></p>
     </div>
     <p id="load-status" role="status">正在载入文献…</p>
     <p id="result-count" class="sr-only" aria-live="polite"></p>
@@ -47,8 +48,13 @@
     <div class="filter-panel-heading"><h2 id="filter-title"></h2><button id="close-filter" type="button" aria-label="关闭筛选">×</button></div>
     <input id="filter-search" type="search" aria-label="搜索筛选选项" placeholder="搜索选项" autocomplete="off">
     <div id="filter-options" class="filter-options"></div>
+    <div id="year-filter" hidden>
+      <div class="year-values"><label>起始年份<input id="year-from" type="number" inputmode="numeric" step="1"></label><span>—</span><label>结束年份<input id="year-to" type="number" inputmode="numeric" step="1"></label></div>
+      <div id="year-slider" class="year-slider"><div class="year-track"><span id="year-selection"></span></div><input id="year-lower" type="range" step="1" aria-label="起始年份滑块"><input id="year-upper" type="range" step="1" aria-label="结束年份滑块"></div>
+    </div>
     <button id="clear-column" type="button">清除此列筛选</button>
   </div>
+  <div id="journal-tooltip" class="journal-tooltip" role="tooltip" hidden></div>
   <div id="backdrop" class="backdrop" hidden></div>
   <aside id="paper-card" class="paper-card" role="dialog" aria-labelledby="card-title" hidden>
     <div class="card-top"><span id="card-direction"></span><button id="close-card" type="button" aria-label="关闭论文详情">×</button></div>

@@ -1,6 +1,6 @@
 {
   "$schema": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json",
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "library": {
     "title": "城市复杂系统文献库",
     "subtitle": "复杂系统、群体行为与智能体研究 · 多维分类文献库",
@@ -304,7 +304,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-93639e648f06ab": {
@@ -465,7 +465,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-5c82f5f2f8be13": {
@@ -565,7 +565,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-d6d74fb842e48f": {
@@ -672,7 +672,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-31a6594b7a0d2b": {
@@ -820,7 +820,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-9c9f411fd6a301": {
@@ -975,7 +975,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-7bd4a45819781b": {
@@ -1104,7 +1104,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-geng2026scaling": {
@@ -1251,7 +1251,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1c242d45c440d3": {
@@ -1489,7 +1489,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-9fe38f83ad7e7b": {
@@ -1605,7 +1605,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-b9ce2909cb60bc": {
@@ -1700,7 +1700,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-5cc41cdf26eaf1": {
@@ -1808,7 +1808,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-88357203f43dff": {
@@ -1936,7 +1936,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-44058942b11e47": {
@@ -2152,7 +2152,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-f54f8e34406d54": {
@@ -2281,7 +2281,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-a88c9dafa2874a": {
@@ -2470,7 +2470,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-3e355fba53b65b": {
@@ -2605,7 +2605,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a0bbca449fe1af": {
@@ -3010,7 +3010,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-50153d97defb09": {
@@ -3117,7 +3117,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-72292fe64823c5": {
@@ -3191,7 +3191,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/montanari2026disorder.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -3459,7 +3459,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-57296b5fd8875a": {
@@ -3576,7 +3576,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-padilla2026survey": {
@@ -3892,7 +3892,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-47fbd6a8087a51": {
@@ -4378,7 +4378,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-2f52a2879ba49e": {
@@ -4548,7 +4548,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a48a89de080c60": {
@@ -4861,7 +4861,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-7b4b04a97935a1": {
@@ -4977,7 +4977,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-2b3d90b68fce19": {
@@ -5099,7 +5099,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-d5d4e1979fb032": {
@@ -5222,7 +5222,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-e9ec0f37124bf6": {
@@ -5392,7 +5392,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-0cae0e732e45e5": {
@@ -5675,7 +5675,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-cdba08b6b40b06": {
@@ -5798,7 +5798,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-2f95d5e2a79afd": {
@@ -6052,7 +6052,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-329a141f4762d0": {
@@ -6194,7 +6194,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-db3e8858f740ee": {
@@ -6352,7 +6352,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-69c014e7725135": {
@@ -8541,7 +8541,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/aiello2025observation.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -8713,7 +8713,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-b680912cbae01a": {
@@ -8828,7 +8828,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-b914703077d946": {
@@ -8994,7 +8994,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-2e091a5b9a71d4": {
@@ -9485,7 +9485,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-4d1bd6773ed38f": {
@@ -9621,7 +9621,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-2a65a1a8bb57f9": {
@@ -9718,7 +9718,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-cao2025survey": {
@@ -9942,7 +9942,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-65cf8bd1e00a08": {
@@ -10036,7 +10036,7 @@
           "synthesis"
         ],
         "documentType": "perspective",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-4a0f022cf7af47": {
@@ -10187,7 +10187,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-gao2025survey": {
@@ -10474,7 +10474,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-ba3e8fdd391dea": {
@@ -10934,7 +10934,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-9071bedfc387ed": {
@@ -11169,7 +11169,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-ec991cba55dc96": {
@@ -11351,7 +11351,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-7a4664cae0a3f3": {
@@ -11493,7 +11493,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-e3f37032c0fd0e": {
@@ -11744,7 +11744,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-9d4a431e83f6b7": {
@@ -12047,7 +12047,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-dad13c6f8826a1": {
@@ -12190,7 +12190,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-c0e932926cd737": {
@@ -12501,7 +12501,138 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
+      }
+    },
+    "p-dd9790175aa9": {
+      "citationKey": "swanson2025virtual",
+      "title": "The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Swanson",
+            "given": "Kyle",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-7385-7844",
+            "affiliations": []
+          },
+          {
+            "family": "Wu",
+            "given": "Wesley",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-4594-0699",
+            "affiliations": []
+          },
+          {
+            "family": "Bulaong",
+            "given": "Nash L.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Pak",
+            "given": "John E.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2998-9735",
+            "affiliations": []
+          },
+          {
+            "family": "Zou",
+            "given": "James",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8880-4764",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "646",
+        "issue": "8085",
+        "pages": "716-723",
+        "articleNumber": null,
+        "publishedOnline": "2025-07-29",
+        "publishedPrint": "2025-10-16",
+        "posted": null,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "isbn": [],
+        "venueShort": "Nature"
+      },
+      "identifiers": {
+        "doi": "10.1038/s41586-025-09442-9",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "大语言模型智能体组成的虚拟实验室能否协同设计新型纳米抗体，并通过实验验证？",
+        "keywords": [
+          "LLM智能体",
+          "多智能体协作",
+          "科研智能体",
+          "蛋白质设计"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41586-025-09442-9",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261029",
+          "provider": "crossref",
+          "url": "https://api.crossref.org/works/10.1038/s41586-025-09442-9",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "links.original"
+          ]
+        },
+        {
+          "id": "publisher-20261029",
+          "provider": "publisher",
+          "url": "https://www.nature.com/articles/s41586-025-09442-9",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "research",
+            "classification"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents"
+        ],
+        "objects": [
+          "ai",
+          "biological"
+        ],
+        "evidenceTypes": [
+          "experiment",
+          "benchmark"
+        ],
+        "documentType": "research",
+        "venueGroup": "nature-science"
       }
     },
     "p-cfca7cd9a963e6": {
@@ -12623,7 +12754,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-1e110688d4db72": {
@@ -12791,7 +12922,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-tran2025multi": {
@@ -12931,7 +13062,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-vezhnevets2025multi": {
@@ -13107,7 +13238,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-b53beea3db39bc": {
@@ -13300,7 +13431,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-503b780b3bd0aa": {
@@ -13585,7 +13716,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-yan2025beyond": {
@@ -13746,7 +13877,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-7bafa2b29e1f1f": {
@@ -14170,7 +14301,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-eba5f834a736b8": {
@@ -14300,7 +14431,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-2468e77ed40b02": {
@@ -14453,7 +14584,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-9118fcccbf8492": {
@@ -14865,7 +14996,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-401fce2387bd81": {
@@ -15150,7 +15281,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-0973989224e55e": {
@@ -15265,7 +15396,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-chen2024persistent": {
@@ -15392,7 +15523,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-38db24d15f3023": {
@@ -16014,7 +16145,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-54cd0f40e066f0": {
@@ -16502,7 +16633,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-li2024survey": {
@@ -16750,7 +16881,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-bf252115e39e83": {
@@ -16846,7 +16977,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a19a7fab56c6b2": {
@@ -17201,7 +17332,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-2c26be7edde2b9": {
@@ -17405,7 +17536,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-sumers2023cognitive": {
@@ -18096,7 +18227,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-d5d23d9c24a191": {
@@ -18246,7 +18377,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-zhu2024survey": {
@@ -18387,6 +18518,153 @@
         ],
         "documentType": "review",
         "venueGroup": "other-journal"
+      }
+    },
+    "p-db08fc29dc13": {
+      "citationKey": "feng2023dense",
+      "title": "Dense reinforcement learning for safety validation of autonomous vehicles",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Feng",
+            "given": "Shuo",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2117-4427",
+            "affiliations": []
+          },
+          {
+            "family": "Sun",
+            "given": "Haowei",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Yan",
+            "given": "Xintao",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-0569-5628",
+            "affiliations": []
+          },
+          {
+            "family": "Zhu",
+            "given": "Haojie",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Zou",
+            "given": "Zhengxia",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Shen",
+            "given": "Shengyin",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Liu",
+            "given": "Henry X.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-3685-9920",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature",
+        "kind": "journal-article",
+        "year": 2023,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "615",
+        "issue": "7953",
+        "pages": "620-627",
+        "articleNumber": null,
+        "publishedOnline": "2023-03-22",
+        "publishedPrint": "2023-03-23",
+        "posted": null,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "isbn": [],
+        "venueShort": "Nature"
+      },
+      "identifiers": {
+        "doi": "10.1038/s41586-023-05732-2",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "如何通过稠密强化学习加速自动驾驶安全验证，同时保持风险估计无偏？",
+        "keywords": [
+          "强化学习",
+          "自动驾驶",
+          "安全验证",
+          "稀有事件"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41586-023-05732-2",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": []
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref-20261029",
+          "provider": "crossref",
+          "url": "https://api.crossref.org/works/10.1038/s41586-023-05732-2",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "links.original"
+          ]
+        },
+        {
+          "id": "publisher-20261029",
+          "provider": "publisher",
+          "url": "https://www.nature.com/articles/s41586-023-05732-2",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "research",
+            "classification"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "measurement"
+        ],
+        "objects": [
+          "ai",
+          "urban"
+        ],
+        "evidenceTypes": [
+          "simulation",
+          "experiment",
+          "benchmark"
+        ],
+        "documentType": "research",
+        "venueGroup": "nature-science"
       }
     },
     "p-130f72c4d55d09": {
@@ -18577,7 +18855,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-09b067921d9c73": {
@@ -18955,7 +19233,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-441bd2b074a9f7": {
@@ -19049,7 +19327,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-daa924ca148b15": {
@@ -19489,7 +19767,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-83d820b3c4161c": {
@@ -19662,7 +19940,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-1ed99bf5da4f91": {
@@ -20022,7 +20300,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a285e2fc5d3cc5": {
@@ -20145,7 +20423,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-0d4564893c6bea": {
@@ -20395,7 +20673,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-vezhnevets2023generative": {
@@ -20578,7 +20856,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-e25848985b1d28": {
@@ -20728,7 +21006,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-f83429d67542b1": {
@@ -21272,7 +21550,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-de2a2d9ca06573": {
@@ -22221,7 +22499,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-798c1fa49a313a": {
@@ -22721,7 +22999,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a6c5896add1df4": {
@@ -22984,7 +23262,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-25154d82fad59b": {
@@ -23723,7 +24001,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-f37ba905202b0c": {
@@ -23870,7 +24148,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-krall2021obscuring": {
@@ -24188,7 +24466,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-murakami2021mutual": {
@@ -24325,7 +24603,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-ac0553e5f04cfe": {
@@ -24457,7 +24735,7 @@
           "benchmark"
         ],
         "documentType": "resource",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-ad7da65cd1fd22": {
@@ -24689,7 +24967,7 @@
           "synthesis"
         ],
         "documentType": "book",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-6145efec7e0326": {
@@ -25171,7 +25449,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-e765a0942d716e": {
@@ -25596,7 +25874,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-6d3ec36b92835b": {
@@ -25920,7 +26198,7 @@
           "synthesis"
         ],
         "documentType": "chapter",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-79bd91a80fbce2": {
@@ -26394,7 +26672,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-dc1cd60f5fa37c": {
@@ -26692,7 +26970,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-3b12cac195384b": {
@@ -26791,7 +27069,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-kotseruba2020years": {
@@ -27110,7 +27388,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-00394c4aa542c5": {
@@ -27494,7 +27772,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-3558328577a9fe": {
@@ -27744,7 +28022,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-284774f238a21e": {
@@ -27960,7 +28238,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-8666873319266f": {
@@ -28225,7 +28503,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-c2ad25bf624a81": {
@@ -28374,7 +28652,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-iacopini2019simplicial": {
@@ -28518,7 +28796,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-95317f409242dc": {
@@ -28634,7 +28912,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-69e2c8c29c74c3": {
@@ -28946,7 +29224,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-37e9e2baa85af7": {
@@ -29329,7 +29607,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-8ae94d79b81871": {
@@ -29512,7 +29790,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-00cb862d0c7614": {
@@ -29952,7 +30230,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-fbedac9c3d60dc": {
@@ -30105,7 +30383,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-c8130aca1ec614": {
@@ -30337,7 +30615,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-2b915556dcec7a": {
@@ -31300,7 +31578,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-02b8452d603a2c": {
@@ -31543,7 +31821,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-f0809a4e00641e": {
@@ -31683,7 +31961,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-28e9664a59aca8": {
@@ -31778,7 +32056,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-97023b7217deea": {
@@ -31878,7 +32156,7 @@
           "synthesis"
         ],
         "documentType": "book",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-0748b50c489509": {
@@ -31987,7 +32265,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-larcom2017benefits": {
@@ -32111,7 +32389,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-9bfa8115038b98": {
@@ -32356,7 +32634,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-tang2017exploratory": {
@@ -32581,7 +32859,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-defa44d50e7ce6": {
@@ -32691,7 +32969,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-20e09c785972ea": {
@@ -33305,7 +33583,7 @@
           "synthesis"
         ],
         "documentType": "book",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-2af1c7c985c32f": {
@@ -33465,7 +33743,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-jolliffe2016principal": {
@@ -33712,7 +33990,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-2f9a867a034e21": {
@@ -33941,7 +34219,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-8d69a3b2832d40": {
@@ -34170,7 +34448,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-7c716559226876": {
@@ -34308,7 +34586,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-bc6c641caf492a": {
@@ -34447,7 +34725,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1cab18c64f255d": {
@@ -34582,7 +34860,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-82118c087d7782": {
@@ -34908,7 +35186,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-da659a2e3a2553": {
@@ -35018,7 +35296,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-ce7326738ca2a3": {
@@ -35190,7 +35468,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-f0462f94fecf8b": {
@@ -35361,7 +35639,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-morin2015collective": {
@@ -36578,7 +36856,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-rapoport2014pre": {
@@ -36714,7 +36992,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-7ab7c365a0e650": {
@@ -36869,7 +37147,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1b99f6da8aa689": {
@@ -37028,7 +37306,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-9e4cbf7401dd4e": {
@@ -37443,7 +37721,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a2da2bdb3ef595": {
@@ -37651,7 +37929,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-delling2013phast": {
@@ -38133,7 +38411,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-d1789c45dd0067": {
@@ -38429,7 +38707,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-87731059078047": {
@@ -38576,7 +38854,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-5e3aa314b7fca6": {
@@ -38673,7 +38951,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-politi2013lyapunov": {
@@ -38918,7 +39196,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-eefdcbc97be194": {
@@ -39321,7 +39599,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-banisch2012agent": {
@@ -39722,7 +40000,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-c76e7b710f1bb0": {
@@ -39970,7 +40248,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-73fb65379f4990": {
@@ -40469,7 +40747,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1205d41f7545fb": {
@@ -41138,7 +41416,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-c93b730a8b9619": {
@@ -41394,7 +41672,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-650180ffdc77bb": {
@@ -41540,7 +41818,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-gayah2011clockwise": {
@@ -41664,7 +41942,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-d8d0e78246825a": {
@@ -41886,7 +42164,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-cd86e3f91d6fce": {
@@ -42144,7 +42422,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-7e412a60ce06db": {
@@ -42590,7 +42868,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "nature-science-specialist"
+        "venueGroup": "leading-journal"
       }
     },
     "p-799240172cfe1d": {
@@ -42704,7 +42982,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-b0256bc4c86303": {
@@ -43018,7 +43296,7 @@
           "synthesis"
         ],
         "documentType": "book",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-327891a3ee570c": {
@@ -43166,7 +43444,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a94aab3134500a": {
@@ -43302,7 +43580,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-81f32e0b41173a": {
@@ -44187,7 +44465,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-41ae59e139dfa0": {
@@ -44339,7 +44617,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-57dbc1aa4a988e": {
@@ -44434,7 +44712,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-gneiting2007strictly": {
@@ -44541,7 +44819,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-07e44c4aadc448": {
@@ -44800,7 +45078,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-64220af90656a9": {
@@ -44903,7 +45181,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-849e31b202bcaf": {
@@ -45007,7 +45285,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a0624bd1d27372": {
@@ -45340,7 +45618,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-tian2006lumpability": {
@@ -45569,7 +45847,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-couzin2005effective": {
@@ -46166,7 +46444,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1231e138b3e7b9": {
@@ -46781,7 +47059,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1d92e1a7b87ac0": {
@@ -46868,7 +47146,7 @@
           "synthesis"
         ],
         "documentType": "perspective",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-chorin2002optimal": {
@@ -47132,7 +47410,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-f5f86e2cc67d05": {
@@ -47247,7 +47525,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-8faf1f4ace3247": {
@@ -47360,7 +47638,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-a1ab94fb127e83": {
@@ -47743,7 +48021,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-2cd9abf9dd9d04": {
@@ -47844,7 +48122,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-2c146ee150d593": {
@@ -47966,7 +48244,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-e896b971fdc314": {
@@ -48211,7 +48489,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-d30bc0cd5ab913": {
@@ -48306,7 +48584,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "pnas-comprehensive"
+        "venueGroup": "leading-journal"
       }
     },
     "p-kaelbling1998planning": {
@@ -48440,7 +48718,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-0ecd26d0a6c94e": {
@@ -49018,7 +49296,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-87af9925eb2eaa": {
@@ -49112,7 +49390,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-68856f50c447b4": {
@@ -49243,7 +49521,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-4f90d2d88f48f3": {
@@ -49393,7 +49671,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-wooldridge1995intelligent": {
@@ -49633,7 +49911,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "not-journal"
+        "venueGroup": null
       }
     },
     "p-41baa78903042a": {
@@ -49736,7 +50014,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-f2084ef79aa530": {
@@ -49831,7 +50109,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-1711810a6e82f4": {
@@ -49941,7 +50219,7 @@
           "observation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-lin1991divergence": {
@@ -50170,7 +50448,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-488eab6d6a54f2": {
@@ -50265,7 +50543,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-284ac816d2bd9a": {
@@ -50353,7 +50631,7 @@
           "experiment"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-4ae1482f649cdb": {
@@ -50482,7 +50760,7 @@
           "simulation"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-92380f41b8929c": {
@@ -50696,7 +50974,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-9f0cd4b5c2e045": {
@@ -50785,7 +51063,7 @@
           "synthesis"
         ],
         "documentType": "review",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-193bb364dbd44f": {
@@ -51222,7 +51500,7 @@
           "benchmark"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-welch1967use": {
@@ -51659,7 +51937,7 @@
           "theory"
         ],
         "documentType": "research",
-        "venueGroup": "field-leading"
+        "venueGroup": "leading-journal"
       }
     },
     "p-3f1647706652ce": {
@@ -52006,77 +52284,73 @@
         ]
       },
       {
-        "id": "nature-science-specialist",
-        "label": "Nature / Science 领域刊",
+        "id": "leading-journal",
+        "label": "Nature / Science 子刊及同水平期刊",
         "venues": [
-          "Nature Physics",
-          "Nature Human Behaviour",
-          "Nature Computational Science",
+          "ACM Computing Surveys",
+          "American Economic Review",
+          "Annals of Mathematics",
+          "Artificial Intelligence",
+          "Cell",
+          "Ecology Letters",
+          "Econometrica",
+          "IEEE Transactions on Neural Networks and Learning Systems",
+          "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+          "Journal of Financial Economics",
+          "Journal of Machine Learning Research",
+          "Journal of Political Economy",
+          "Journal of the American Statistical Association",
+          "Management Science",
+          "Nature Astronomy",
+          "Nature Biotechnology",
+          "Nature Chemistry",
           "Nature Cities",
-          "Nature Sustainability",
           "Nature Climate Change",
-          "Nature Reviews Physics",
-          "Nature Reviews Materials",
-          "Science Robotics",
-          "Science Translational Medicine",
-          "Nature Methods"
-        ]
-      },
-      {
-        "id": "pnas-comprehensive",
-        "label": "PNAS 等综合研究刊",
-        "venues": [
-          "Proceedings of the National Academy of Sciences (PNAS)",
-          "Proceedings of the National Academy of Sciences",
-          "PNAS",
           "Nature Communications",
-          "Science Advances"
-        ]
-      },
-      {
-        "id": "field-leading",
-        "label": "领域重要期刊",
-        "venues": [
+          "Nature Computational Science",
+          "Nature Ecology & Evolution",
+          "Nature Energy",
+          "Nature Geoscience",
+          "Nature Human Behaviour",
+          "Nature Machine Intelligence",
+          "Nature Materials",
+          "Nature Medicine",
+          "Nature Methods",
+          "Nature Nanotechnology",
+          "Nature Neuroscience",
+          "Nature Photonics",
+          "Nature Physics",
+          "Nature Reviews Earth & Environment",
+          "Nature Reviews Materials",
+          "Nature Reviews Neuroscience",
+          "Nature Reviews Physics",
+          "Nature Reviews Psychology",
+          "Nature Sustainability",
+          "Operations Research",
           "Physical Review Letters",
           "Physical Review X",
-          "Reviews of Modern Physics",
           "Physics Reports",
+          "Proceedings of the National Academy of Sciences",
           "Reports on Progress in Physics",
-          "Operations Research",
-          "Transportation Science",
-          "Transportation Research Part B: Methodological",
-          "Transportation Research Part C: Emerging Technologies",
-          "Econometrica",
-          "Quarterly Journal of Economics",
-          "The Quarterly Journal of Economics",
-          "American Economic Review",
-          "The American Economic Review",
-          "Journal of Political Economy",
-          "Journal of Finance",
-          "The Journal of Finance",
-          "Journal of Financial Economics",
-          "The Review of Financial Studies",
-          "Management Science",
-          "Ecology Letters",
-          "ACM Computing Surveys",
-          "Artificial Intelligence",
-          "Journal of the American Statistical Association",
+          "Reviews of Modern Physics",
+          "Science Advances",
+          "Science Immunology",
+          "Science Robotics",
+          "Science Signaling",
+          "Science Translational Medicine",
           "The Annals of Applied Probability",
           "The Annals of Applied Statistics",
-          "Annals of Mathematics",
-          "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-          "IEEE Transactions on Neural Networks and Learning Systems",
-          "Journal of Machine Learning Research"
+          "The Journal of Finance",
+          "The Quarterly Journal of Economics",
+          "The Review of Financial Studies",
+          "Transportation Research Part B: Methodological",
+          "Transportation Research Part C: Emerging Technologies",
+          "Transportation Science"
         ]
       },
       {
         "id": "other-journal",
         "label": "其他期刊",
-        "venues": []
-      },
-      {
-        "id": "not-journal",
-        "label": "非期刊文献",
         "venues": []
       }
     ]

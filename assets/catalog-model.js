@@ -32,7 +32,7 @@ export function catalogView(source) {
       topicLabels:classification.topics.map(id=>labels.topics[id]),
       objectLabels:classification.objects.map(id=>labels.objects[id]),
       evidenceLabels:classification.evidenceTypes.map(id=>labels.evidenceTypes[id]),
-      venueGroupLabel:labels.venueGroups[classification.venueGroup],
+      venueGroupLabel:labels.venueGroups[classification.venueGroup] || '',
       documentTypeLabel:labels.documentTypes[classification.documentType],
     };
     view.searchText=normalize([view.title,paper.titleZh,view.authors,view.citationKey,
@@ -50,12 +50,13 @@ export function catalogView(source) {
 const values = value => value === undefined ? [] : Array.isArray(value) ? value : [value];
 export function filterPapers(papers, filters = {}) {
   const words = normalize(filters.q || '').trim().split(/\s+/).filter(Boolean);
-  const selected=Object.fromEntries(['topic','keyword','journal','venue','year','object','evidence','type','publication'].map(key=>[key,values(filters[key])]));
+  const selected=Object.fromEntries(['topic','keyword','journal','venue','object','evidence','type','publication'].map(key=>[key,values(filters[key])]));
   const matches=(key,items)=>!selected[key].length || selected[key].some(value=>items.includes(value));
   return papers.filter(p => {
     const c=p.classification;
     return matches('topic',c.topics) && matches('keyword',p.keywords) && matches('journal',[p.journal])
-      && matches('venue',[c.venueGroup]) && matches('year',[p.year]) && matches('object',c.objects)
+      && matches('venue',[c.venueGroup]) && (filters.yearFrom===undefined || Number(p.year)>=filters.yearFrom)
+      && (filters.yearTo===undefined || Number(p.year)<=filters.yearTo) && matches('object',c.objects)
       && matches('evidence',c.evidenceTypes) && matches('type',[c.documentType])
       && matches('publication',[p.metadata.publication.kind]) && (!filters.hasReading || Boolean(p.reading))
       && words.every(word=>p.searchText.includes(word));
