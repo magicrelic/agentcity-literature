@@ -1,4 +1,4 @@
-import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=58e29ebe3aa01ed7e6aa56a54e772162611a4a07c879fd1f1e44b28a0c5a687e';
+import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=4a0349c39ce5e7b5bc07c25a85e52042e75a8f656aa3d433321dc4081392840c';
 
 async function start() {
   const $ = id => document.getElementById(id);
@@ -8,7 +8,6 @@ async function start() {
   if (!response.ok) throw new Error(`文献数据加载失败 (${response.status})`);
   const catalog=catalogView(await response.json());
   $('load-status').hidden=true;
-  $('total-count').textContent=`共 ${catalog.total} 篇论文`;
   const paperMap=new Map(catalog.papers.map(p=>[p.id,p]));
   const rows=$('paper-rows'), card=$('paper-card'), panel=$('filter-panel');
   const mobile=window.matchMedia('(max-width: 760px)');
@@ -24,6 +23,7 @@ async function start() {
   const years=catalog.papers.map(p=>Number(p.year)), minYear=Math.min(...years), maxYear=Math.max(...years);
   let tooltipAnchor=null;
   const dimensions={
+    hasReading:[{id:'true',label:'有解读'},{id:'false',label:'无解读'}],
     topic:catalog.taxonomy.topics,
     keyword:unique(catalog.papers.flatMap(p=>p.keywords)).sort((a,b)=>a.localeCompare(b,'zh-CN')).map(id=>({id,label:id})),
     venue:catalog.taxonomy.venueGroups,
@@ -31,8 +31,8 @@ async function start() {
     publication:Object.entries(publicationKinds).filter(([id])=>catalog.papers.some(p=>p.metadata.publication.kind===id)).map(([id,label])=>({id,label})),
   };
   const columnKeys=column=>column==='journal' ? ['venue','publication','journal'] : column==='year' ? ['yearFrom','yearTo'] : [column];
-  const titles={topic:'研究方向',keyword:'关键词',journal:'期刊',year:'年份'};
-  const filters=()=>({...state,...($('search').value.trim() ? {q:$('search').value.trim()} : {}),...($('has-reading').checked ? {hasReading:true} : {})});
+  const titles={topic:'研究方向',keyword:'关键词',journal:'期刊',year:'年份',hasReading:'链接'};
+  const filters=()=>({...state,...($('search').value.trim() ? {q:$('search').value.trim()} : {})});
   function updateHash(paperId=null) {
     const params=new URLSearchParams();
     for(const [key,value] of Object.entries(filters()))for(const item of Array.isArray(value)?value:[value])params.append(key,String(item));
@@ -43,7 +43,7 @@ async function start() {
     const active=filters();delete active[key];
     const available=filterPapers(catalog.papers,active), counts=new Map();
     for(const p of available) {
-      const values={topic:p.classification.topics,keyword:p.keywords,venue:[p.classification.venueGroup],journal:[p.journal],publication:[p.metadata.publication.kind]}[key];
+      const values={hasReading:[String(Boolean(p.reading))],topic:p.classification.topics,keyword:p.keywords,venue:[p.classification.venueGroup],journal:[p.journal],publication:[p.metadata.publication.kind]}[key];
       for(const value of values)counts.set(value,(counts.get(value)||0)+1);
     }
     return counts;
@@ -138,6 +138,7 @@ async function start() {
   $('clear-column').addEventListener('click',()=>{for(const key of columnKeys(activeColumn))delete state[key];filter();renderOptions();});
   function render() {
     const active=filters(),papers=filterPapers(catalog.papers,active),chips=[];
+    $('total-count').textContent=`${papers.length}/${catalog.total} 篇论文`;
     $('result-count').textContent=`${papers.length} / ${catalog.total} 篇文献`;
     for(const [key,values] of Object.entries(state).filter(([key])=>dimensions[key]))for(const value of values) {
       const label=dimensions[key].find(item=>item.id===value).label;
@@ -149,7 +150,7 @@ async function start() {
       button.addEventListener('click',()=>setYearRange(minYear,maxYear));chips.push(button);
     }
     $('active-filters').replaceChildren(...chips);
-    $('filter-summary').hidden=!chips.length && !active.hasReading;
+    $('filter-summary').hidden=!chips.length;
     $('empty').hidden=papers.length>0;$('clear-search').hidden=!$('search').value;
     for(const button of document.querySelectorAll('.column-filter'))button.classList.toggle('is-active',columnKeys(button.dataset.column).some(key=>state[key]!==undefined));
     const fragment=document.createDocumentFragment();
@@ -173,8 +174,8 @@ async function start() {
     rows.replaceChildren(fragment);refreshCounts();
   }
   function filter(){hideJournal();closeCard(false,false);render();updateHash();}
-  function resetFilters(){for(const key of Object.keys(state))delete state[key];$('search').value='';$('has-reading').checked=false;}
-  $('search').addEventListener('input',filter);$('has-reading').addEventListener('change',filter);
+  function resetFilters(){for(const key of Object.keys(state))delete state[key];$('search').value='';}
+  $('search').addEventListener('input',filter);
   $('clear-search').addEventListener('click',()=>{$('search').value='';filter();$('search').focus();});
   for(const id of ['reset-filter','clear-filters'])$(id).addEventListener('click',()=>{closeFilter();resetFilters();filter();});
   document.addEventListener('pointerdown',event=>{if(!panel.hidden && !panel.contains(event.target) && !event.target.closest('.column-filter'))closeFilter();});
@@ -352,7 +353,6 @@ async function start() {
     const parsedYear=key=>{const value=params.get(key);return value!==null && /^\d{1,4}$/.test(value)?Math.max(minYear,Math.min(maxYear,Number(value))):null;};
     const from=parsedYear('yearFrom')??minYear,to=parsedYear('yearTo')??maxYear;
     if(from!==minYear || to!==maxYear){state.yearFrom=Math.min(from,to);state.yearTo=Math.max(from,to);}
-    $('has-reading').checked=params.get('hasReading')==='true';
     const section=params.get('section');
     if(section && !params.has('topic')) {
       const topic=catalog.taxonomy.topics.find(t=>t.id===section || t.legacyIds.includes(section));

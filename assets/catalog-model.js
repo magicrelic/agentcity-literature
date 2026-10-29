@@ -50,7 +50,7 @@ export function catalogView(source) {
 const values = value => value === undefined ? [] : Array.isArray(value) ? value : [value];
 export function filterPapers(papers, filters = {}) {
   const words = normalize(filters.q || '').trim().split(/\s+/).filter(Boolean);
-  const selected=Object.fromEntries(['topic','keyword','journal','venue','object','evidence','type','publication'].map(key=>[key,values(filters[key])]));
+  const selected=Object.fromEntries(['topic','keyword','journal','venue','object','evidence','type','publication','hasReading'].map(key=>[key,values(filters[key])]));
   const matches=(key,items)=>!selected[key].length || selected[key].some(value=>items.includes(value));
   return papers.filter(p => {
     const c=p.classification;
@@ -58,7 +58,7 @@ export function filterPapers(papers, filters = {}) {
       && matches('venue',[c.venueGroup]) && (filters.yearFrom===undefined || Number(p.year)>=filters.yearFrom)
       && (filters.yearTo===undefined || Number(p.year)<=filters.yearTo) && matches('object',c.objects)
       && matches('evidence',c.evidenceTypes) && matches('type',[c.documentType])
-      && matches('publication',[p.metadata.publication.kind]) && (!filters.hasReading || Boolean(p.reading))
+      && matches('publication',[p.metadata.publication.kind]) && (!selected.hasReading.length || selected.hasReading.some(value=>String(value)===String(Boolean(p.reading))))
       && words.every(word=>p.searchText.includes(word));
   });
 }

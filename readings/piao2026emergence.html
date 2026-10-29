@@ -1,135 +1,94 @@
 <!doctype html>
-  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Emergence of polarization in networks of large language model agents · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=58e29ebe3aa01ed7e6aa56a54e772162611a4a07c879fd1f1e44b28a0c5a687e"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Emergence of polarization in networks of large language model agents · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=4a0349c39ce5e7b5bc07c25a85e52042e75a8f656aa3d433321dc4081392840c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1038/s41467-026-78228-y" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Piao et al. - Emergence of polarization in networks of large language model agents</h1>
-<p><strong>LLM互动与网络演化如何产生意见极化</strong></p>
+<p><strong>语言模型智能体如何在持续交往中形成意见极化，以及改变什么才能缓解极化</strong></p>
+<p>Nature Communications，2026；所读作者稿未载正式卷号、页码或文章号。DOI：<a href="https://doi.org/10.1038/s41467-026-78228-y">10.1038/s41467-026-78228-y</a>；<a href="https://arxiv.org/pdf/2501.05171v3">arXiv v3 原文</a>。</p>
 <blockquote>
-<p>资料范围：论文正文（不含补充材料）。
-文本可靠性：高。
-来源定位：page-grounded。
-主要分析类型：discovery。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：完整（相对于论文正文）。</p>
+<p>资料范围：正文依据 arXiv:2501.05171v3（2026年9月7日），覆盖完整正文、Methods M1–M5、全部主图1–4及内附研究补充资料（补图S1–S53、补表S1–S3）；同时覆盖正式版的56页研究补充资料（补图S1–S56、补表S1–S3）、3页 Reporting Summary 和主图源数据工作簿。正式版正文未取得；透明审稿史未覆盖。下文主图编号指作者稿，补图编号指正式版补充资料；所引PDF页序与各文件印刷页码一致，均不是期刊正式页码。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Piao et al.，<em>Emergence of polarization in networks of large language model agents</em>，<strong>Nature Communications（2026）</strong>。<a href="https://doi.org/10.1038/s41467-026-78228-y">原文</a>。</p>
+<p>资料检索日期：2026-10-29；阅读日期：2026-10-29；核验日期：2026-10-29。</p>
+<h2>一、研究问题</h2>
+<p>单个语言模型具有政治倾向，并不能直接告诉我们：当许多模型持续说服彼此、决定是否维持关系时，整个群体会形成共识，还是分裂为不同阵营？本文研究的对象是<strong>观点和交往网络共同演化的人工社会</strong>。作者让智能体自己生成理由、选择是否继续交往、更新立场，观察局部互动如何累积成群体现象。</p>
+<p>论文最关键的发现包含两层：未经自我校验的智能体形成偏向左侧的意见分布；加入自我校验后，左右阵营的失衡有所缓解，但极化仍然存在。这使“模型未忠实扮演指定立场”和“交互系统形成两极分化”成为两个可以区分的问题。进一步的网络替换与行为干预实验，则用于探查交往结构和信息处理方式分别起什么作用（主图1–4）。</p>
+<p>这是一项模拟研究，没有招募人类参与者。它展示了与若干人类社会现象相似的行为模式，其直接贡献是建立可操纵的智能体实验系统，而非证明语言模型已经能够定量替代真实社会。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从一句理由到持续交往</h3>
+<p>主实验使用1,000个GPT-3.5智能体，温度设为1，采用零样本提示。每次模拟只讨论一个议题：党派认同、枪支管制或堕胎禁令。个人机制实验使用100个智能体，扩规模实验使用2,000个。初始五档立场的目标比例为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0.1</mn><mo separator="true">,</mo><mn>0.2</mn><mo separator="true">,</mo><mn>0.4</mn><mo separator="true">,</mo><mn>0.2</mn><mo separator="true">,</mo><mn>0.1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0.1,0.2,0.4,0.2,0.1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0.1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.1</span><span class="mclose">]</span></span></span></span></eq>，初始网络采用平均度约4、重连概率0.001的Watts–Strogatz模型；这是带随机重连的网络，并非任意的完全随机图（Methods M1；补充方法1.1）。</p>
+<p>每轮的三个环节构成反馈循环。首先，智能体写约50词的理由支持自己的立场。随后，它依据双方观点和理由决定是否继续与现有对象交流；拒绝后由系统随机分配新对象，再结合历史消息生成说服信息。最后，它根据收到的消息自报五档立场，并产生新理由，供下一轮使用。因此，意见会影响保留哪些关系，关系又会决定下一轮看见哪些论据。</p>
+<p><a class="reading-image" href="assets/piao2026emergence/fig-agent-interaction-cycle.png?v=459aa6b83c6382ed38f8bb220ab35b7147cb8f33761b5a299a0d71cad7231132" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026emergence/fig-agent-interaction-cycle.png?v=459aa6b83c6382ed38f8bb220ab35b7147cb8f33761b5a299a0d71cad7231132" alt="智能体的三阶段交互与三个议题的意见演化" loading="lazy" decoding="async"></a></p>
+<p>图1｜a为自我表达、沟通、更新的循环；b横轴为模拟轮次，纵轴为五档立场所占比例，蓝色代表左倾、红色代表右倾；c、d比较初末分布和最终阵营规模。三个议题均出现中间立场减少，但左右不对称。原图1a–d，arXiv v3，PDF第17页；<a href="https://arxiv.org/pdf/2501.05171v3">来源</a>。</p>
+<p>这里的“涌现”有明确条件：基准提示没有直接规定智能体必须喜欢同阵营，也没有用固定的意见平均公式控制更新；但系统明确要求角色扮演、为当前观点提供理由并尝试说服他人。五档量表、消息长度、记忆形式和交往规则仍是实验设计的一部分。</p>
+<p>为检查角色是否自洽，作者让<strong>初始立场完全相同的两名智能体只交流一轮</strong>。若右倾智能体在只收到同立场信息后突然改为左倾，就提示模型输出可能偏离角色。自我调节方案要求模型再次检查表达是否对应立场、消息是否足以说服对方、立场更新是否合理；未通过则重新生成，达到重试上限便暂停该阶段行动（Methods M2–M3；补充方法1.2–1.3）。这同时改变了生成与接受输出的程序，不能据此认定底层模型偏见已被彻底清除。</p>
+<h3>两个指标分别回答什么</h3>
+<p>群体指标衡量“离中立有多远”。令 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mo stretchy="false">{</mo><mo>−</mo><mn>2</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">k\in\{-2,-1,0,1,2\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">−</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mclose">}</span></span></span></span></eq> 表示五档立场，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">f_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 是该档人数占比，且各占比之和为1；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq> 是无物理单位的等级编码，正负方向不影响本指标。Methods M5定义：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>s</mi><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow><mn>2</mn></munderover><mi mathvariant="normal">∣</mi><mi>k</mi><mi mathvariant="normal">∣</mi><msub><mi>f</mi><mi>k</mi></msub><mo separator="true">,</mo><mspace width="2em"/><mn>0</mn><mo>≤</mo><msub><mi>s</mi><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>≤</mo><mn>2.</mn></mrow><annotation encoding="application/x-tex">
+s_{\mathrm{pol}}=\sum_{k=-2}^{2}|k|f_k,\qquad 0\leq s_{\mathrm{pol}}\leq2.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">pol</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:3.1616em;vertical-align:-1.3604em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8011em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">−</span><span class="mord mtight">2</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3604em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.9221em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">pol</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.</span></span></span></span></span></eqn></section><p>作一个理解演示：10人中两端各1人、温和立场各2人、中立4人，指标为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>10</mn><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">(2+2+0+2+2)/10=0.8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mord">/10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.8</span></span></span></span></eq>；若4名中立者分别转向两端各2人，则变为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>10</mn><mo>=</mo><mn>1.6</mn></mrow><annotation encoding="application/x-tex">(6+2+2+6)/10=1.6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">6</span><span class="mclose">)</span><span class="mord">/10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.6</span></span></span></span></eq>。这些是假设人数，不是论文实验。值得注意的是，10人全在同一极端与两端各5人，指标都等于2。因此，<strong>极端化程度不能单凭这个数区分于两极分裂</strong>，还必须看分布和网络。</p>
+<p>单次互动则衡量“是否沿原立场继续走远”。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">x_{i,t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 表示智能体 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> 在轮次 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span></eq> 的立场，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">sign</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\operatorname{sign}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8623em;vertical-align:-0.1944em;"></span><span class="mop"><span class="mord mathrm">sign</span></span></span></span></span></eq> 表示原立场的正负号；单位仍为立场等级。作者使用：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>s</mi><mrow><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">p</mi></mrow><mo separator="true">,</mo><mi>i</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo><mi mathvariant="normal">sign</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+s_{\mathrm{cp},i}=(x_{i,t}-x_{i,t-1})\operatorname{sign}(x_{i,t-1}).
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">cp</span></span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mord mathrm">sign</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord">.</span></span></span></span></span></eqn></section><p>理解演示：从 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span></eq> 变为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">2</span></span></span></span></eq>，得到 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(-2+1)(-1)=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></eq>，表示原方向强化；从 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span></eq> 变为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span></eq>，得到 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(1+1)(-1)=-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">2</span></span></span></span></eq>，但离中立的距离仍为1。这说明负值也可能代表跨阵营转换，不能一概解释为变得温和。主图3c、d应按这种带方向的变化阅读。</p>
+<h2>三、主要结果与证据</h2>
+<h3>自洽程度提高，仍不等于不再极化</h3>
+<p>主图1中，初始化给中立档的目标概率为40%；经过40轮，党派认同、枪支管制、堕胎禁令三个系统的中立者分别剩22.5%、0.4%、5.1%。这些终值在源数据中分别对应225、4、51人。中立流失并不是全部证据：分布还显示左右两侧形成不同规模的群体。</p>
+<p>配对实验发现，右倾角色偶尔转到左侧，反向转移较少；补表S2给出了“指定立场与生成理由相矛盾”的实例。自我调节后，三议题的自我不一致指标分别从0.674、0.530、0.596降为0.322、0.480、0.524，相对下降约52.2%、9.4%、12.1%。这里的指标是按立场转移距离加权的均值，不是“犯错智能体百分比”（主图2c；Methods M5）。</p>
+<p><a class="reading-image" href="assets/piao2026emergence/fig-self-regulation-polarization.png?v=81408af1f053533c31ceaae969895b57973440b72ca47872a20c915e4cf0caf6" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026emergence/fig-self-regulation-polarization.png?v=81408af1f053533c31ceaae969895b57973440b72ca47872a20c915e4cf0caf6" alt="自我调节降低不一致性但保留极化分布" loading="lazy" decoding="async"></a></p>
+<p>图2｜a、b为同立场配对及一轮后的转移分布；c比较自我不一致指标；d显示自我调节后随时间演化的立场比例。校验后仍存在两侧阵营，且党派认同中的阵营规模仍不相等。原图2a–d，arXiv v3，PDF第18页；<a href="https://arxiv.org/pdf/2501.05171v3">来源</a>。</p>
+<p>例如，自我调节后的党派认同系统仍有51.8%左倾者、15.4%右倾者和32.8%中立者；堕胎议题的两侧则更接近。因此，证据支持的是“失衡缓解后仍可极化”，不宜简化成“消除了偏见，得到左右完全平衡”。作者也没有逐项拆除三个校验环节，不能分别认定每一环节都是必要条件。</p>
+<h3>交往结构与论据强化相互配合</h3>
+<p>主图3a中，同阵营互动的占比随时间升高，最终约为48.5%–88.3%；堕胎议题的网络逐渐分成两个社区。补图S9的模块度、同配性和同质性指标提供了网络图之外的量化支持。更有区分力的是补图S14：将自主择友替换成固定网络或始终随机交流，结果转向单一阵营占优，没有保持原来的较均衡双阵营形态。这一对照支持自主形成的关系结构对<strong>最终分裂形态</strong>的重要性，却不能证明一切极端化都必须依赖这种结构。</p>
+<p><a class="reading-image" href="assets/piao2026emergence/fig-network-opinion-feedback.png?v=085b24371a382af140c4225ab4a7b6e1176ed4b123be95e060682290707cd8dd" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026emergence/fig-network-opinion-feedback.png?v=085b24371a382af140c4225ab4a7b6e1176ed4b123be95e060682290707cd8dd" alt="同质交往、意见变化与行为干预的证据" loading="lazy" decoding="async"></a></p>
+<p>图3｜a为同阵营互动比例随轮次的变化；b为堕胎议题网络；c、d按邻居相对温和或激进程度，比较同阵营与异阵营互动后的方向性意见变化；e–g改变行为提示或外部影响者立场。c、d误差条为互动记录的95%置信区间，e–g为最后5个时间点的95%置信区间。原图3a–g，arXiv v3，PDF第19页；<a href="https://arxiv.org/pdf/2501.05171v3">来源</a>。</p>
+<p>同阵营中，接触更激进邻居后，三个议题的平均方向性变化约为0.718、0.233、0.520，95%置信区间分别为[0.633, 0.802]、[0.209, 0.256]、[0.447, 0.594]；对应170、1,466、246条互动记录（主图3c）。这与回音室强化相符。但这些是自然演化轨迹内的分组关联，不能单独排除智能体原有立场、择友及信息内容的共同影响。</p>
+<p>异阵营互动更复杂：有的分组向原方向强化，有的缓和，有的区间跨零。补图S11进一步显示阵营间差异，部分分组仅6–11条记录；补充说明4报告符合逆火模式的仅占一小部分智能体。因而，“接触异见可能强化原立场”有依据，“异见必然导致逆火”没有依据。</p>
+<p>机制解释主要沿用<strong>论据积累</strong>框架：智能体在交往中不断获得支持既有立场的理由，关系选择又让同类理由更容易反复到达。补图S35对每个议题在极化前后各随机抽取500名智能体的回答，借助语言模型提取论据，发现极化后的支持论据更多；补表S3把自报理由归为确认偏误、动机性推理、道德信念等模式。这使解释与输出证据衔接，但自报理由及其归类不是对模型内部心理过程的直接测量，也没有通过删除积累论据单独识别这一机制。</p>
+<h3>已经分裂的系统，怎样才会改变</h3>
+<p>作者在党派认同系统趋稳后的 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>35</mn></mrow><annotation encoding="application/x-tex">t=35</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">35</span></span></span></span></eq> 开始干预，并比较 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>35</mn></mrow><annotation encoding="application/x-tex">t=35</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">35</span></span></span></span></eq> 至40的6个时间点。下面的相对降幅依据主图源数据的时间点均值计算，对照均值为1.2927（Methods M4；主图4）。</p>
 <table>
 <thead>
 <tr>
-<th>项目</th>
-<th>内容</th>
+<th>干预</th>
+<th>实际改变</th>
+<th style="text-align:right">极化指标相对下降</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>分析类型与领域</td>
-<td>discovery；网络共演化与极化</td>
+<td>随机交流 RI</td>
+<td>按原联系人数量随机分配对象</td>
+<td style="text-align:right">2.84%</td>
 </tr>
 <tr>
-<td>标识符</td>
-<td>DOI：10.1038/s41467-026-78228-y</td>
+<td>温和异见 MOI</td>
+<td>仅保留现有联系人中温和对立者的消息</td>
+<td style="text-align:right">1.48%</td>
 </tr>
 <tr>
-<td>作者机构</td>
-<td>书目资料未提供</td>
+<td>无选择性接触 NSE</td>
+<td>提示愿意继续与不同意见者交流</td>
+<td style="text-align:right">0.45%</td>
 </tr>
 <tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
+<td>无确认偏误 NCB</td>
+<td>更新观点时提示开放地处理不同意见</td>
+<td style="text-align:right">11.76%</td>
 </tr>
 <tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
+<td>中立精英信号 NES</td>
+<td>外部中立者广播，每个智能体每轮最多接收两条</td>
+<td style="text-align:right">8.79%</td>
 </tr>
 </tbody>
 </table>
-<p>[Paper: PDF pp. 1–20, main text]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] 在多种 LLM 骨干构成的千人级网络中共同演化连接和意见，报告同质性聚集与极化，并测试人工群体中的干预策略。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] LLM 智能体的意见与交互网络如何共同演化并形成极化？ [Paper: PDF pp. 1–20, main text]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 语言交流会改变意见，也可能改变下一步接触对象，网络与状态相互反馈。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LLM 智能体的意见与交互网络如何共同演化并形成极化</td>
-<td>[Analysis] 语言交流会改变意见，也可能改变下一步接触对象，网络与状态相互反馈。</td>
-<td>[Analysis] 把观点更新和关系调整放在同一演化过程，才能观察极化与同质性聚集的共同形成。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 把观点更新和关系调整放在同一演化过程，才能观察极化与同质性聚集的共同形成。 [Paper: PDF p. 7, Methods]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 智能体通过语言对话交换观点并更新意见和关系，比较促进多样交互及削弱确认偏差等干预。 [Paper: PDF p. 7, Methods]</p>
-<h2>08 核心模块拆解</h2>
-<table>
-<thead>
-<tr>
-<th>分析环节</th>
-<th>在论证中的作用</th>
-<th>可区分性</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>核心表示或机制</td>
-<td>[Analysis] 把观点更新和关系调整放在同一演化过程，才能观察极化与同质性聚集的共同形成。</td>
-<td>[Analysis] 固定网络对照与固定信息对照承担不同的机制归因。</td>
-<td>[Paper: PDF p. 7, Methods]</td>
-</tr>
-</tbody>
-</table>
-<h2>09 关键公式与符号</h2>
-<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
-<h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>检验对象</th>
-<th>设计与证据</th>
-<th>支持的结论</th>
-<th>不支持的更强解释</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LLM 智能体的意见与交互网络如何共同演化并形成极化</td>
-<td>摘要列出 GPT-3.5、GPT-4o、ChatGLM、Llama-3 和 DeepSeek-V3；</td>
-<td>在多种 LLM 骨干构成的千人级网络中共同演化连接和意见，报告同质性聚集与极化，并测试人工群体中的干预策略。</td>
-<td>与人类文献中的模式一致不等于机制已在人类中验证；网络生成规则、意见编码和提示词可能共同决定极化。</td>
-<td>[Paper: PDF p. 2, Results]</td>
-</tr>
-</tbody>
-</table>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 与人类文献中的模式一致不等于机制已在人类中验证；网络生成规则、意见编码和提示词可能共同决定极化。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 固定初态、信息和动作权限，分开比较语言生成、网络重连和意见更新，检验极化速度；模型相同偏差及测量编码可能产生伪机制。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 固定网络对照与固定信息对照承担不同的机制归因。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 将本文的观测量、生成机制与独立验证分开，有助于判断类似的宏观模式是否来自同一过程；这里是方法联系，不据此主张领域创新。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：与人类文献中的模式一致不等于机制已在人类中验证；网络生成规则、意见编码和提示词可能共同决定极化。</li>
-<li>核心假说与增量：固定初态、信息和动作权限，分开比较语言生成、网络重连和意见更新，检验极化速度。</li>
-<li>初始方法与如何验证：固定初态、信息和动作权限，分开比较语言生成、网络重连和意见更新，检验极化速度；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：模型相同偏差及测量编码可能产生伪机制。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p><a class="reading-image" href="assets/piao2026emergence/fig-polarization-interventions.png?v=efb4d121b4d5d2ba6166f73d7c724e9bef2fb62f07e59e4a960d67ec6192cc2a" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026emergence/fig-polarization-interventions.png?v=efb4d121b4d5d2ba6166f73d7c724e9bef2fb62f07e59e4a960d67ec6192cc2a" alt="五种后期干预对极化程度和同质互动的不同作用" loading="lazy" decoding="async"></a></p>
+<p>图4｜a为干预设计；b–f中蓝色为对照，橙色为干预，上部横轴是极化指标，下部是同阵营互动比例。上部横轴从1.0起，柱长不能直接代表相对降幅；上下变化并不成比例，例如MOI将同阵营消息占比降至零，极化指标却只小幅下降。误差条为6个时间点的95%置信区间。原图4a–f，arXiv v3，PDF第20页；<a href="https://arxiv.org/pdf/2501.05171v3">来源</a>。</p>
+<p>NSE效果很小，有一个由程序结构决定的解释：到了后期，联系人已经高度同质；提示“愿意继续交往”会保留现有关系，却不会自动增加异见来源。补图S27显示该条件下网络几乎不再改变。NCB作用于理解和更新阶段，NES则直接补充中立信息，分别推动温和立场或中立立场增加（补图S24）。另一个堕胎议题实验中，“开放心态”诱导单独使用效果不显著，结合对立信息暴露后效果更大（补图S28），进一步说明接触条件与处理方式需要共同考虑。补充说明7一处把较有效策略写成NSE，与主图、补图S23及源数据不符；这里依据一致的图表证据区分NSE和NCB。</p>
+<p>这些降幅描述了模拟内的差异。主图3e–g的 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></eq>、主图4的 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">n=6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span></eq> 是连续时间点数量，不是5或6次独立模拟；主图3c、d的样本是互动记录，也不能等同于独立个体。故置信区间及显著性不能被解释为跨独立运行或真实人群的效果保证。</p>
+<h2>四、意义与适用边界</h2>
+<p>这项工作的价值，是把模型的角色一致性、网络的自组织和群体的极化状态放在同一套可干预系统里。最有力的结果不是某张看似人类社会的网络图，而是三个相互衔接的比较：改善角色自洽后极化仍然存在；限制自主择友会改变群体分裂形态；在既有网络中，改变信息处理方式与仅改变接触安排有不同后果。</p>
+<p>补充实验拓宽了条件范围，也显示结果对设置敏感。GPT-4o、ChatGLM和Llama-3均出现极化倾向，但Llama-3原始偏向与其他模型不同；Claude-3因政治问题响应率约10%而未纳入后续比较。中途改用GPT-4o或DeepSeek-V3没有明显逆转既有分裂，不能据此声称所有模型从任意初始状态出发都相同（补充说明6）。降低温度到0.5会减弱极化；从起点给10%智能体加入逐步推理提示，堕胎议题的极化指标约降低15%、最终模块度由0.43降至0.25；以10%概率阻止断交主要缓解网络分隔。这些结果说明提示、输出随机性和关系摩擦都能影响强度（补充说明9–11）。</p>
+<p><a class="reading-image" href="assets/piao2026emergence/fig-factual-consensus.png?v=b645ef6db1fc44ce0b6fc2bfe577b34502b47e54e4ccd49e10e0c6b0ece76be8" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026emergence/fig-factual-consensus.png?v=b645ef6db1fc44ce0b6fc2bfe577b34502b47e54e4ccd49e10e0c6b0ece76be8" alt="地平说讨论收敛为一致反对而非形成两极" loading="lazy" decoding="async"></a></p>
+<p>图5｜a的横轴为轮次、纵轴为立场比例；b比较初始与最终的立场分布。深绿表示强烈反对地平说，其他颜色为较弱反对、中立或支持。10轮后全部智能体强烈反对该说法，表明此设置也能产生共识。原补图S56a、b，正式版研究补充资料，PDF第54页；<a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-78228-y/MediaObjects/41467_2026_78228_MOESM1_ESM.pdf">来源</a>。</p>
+<p>地平说实验尤其限定了结论：极化并非交互程序不可避免的终点，但一个事实型议题的收敛也不足以代表全部事实争议。跨初始分布、初始网络和移民议题的检验支持已测试条件下的稳定性，不能扩展成所有议题、所有智能体社会的定律（补充说明12–13）。</p>
+<p>至于现实对应，补表S1中的人类分布来自不同平台、年份及口径，部分由既有图像估读，比较时又合并为三个阵营。它们支持形态相似，尚未构成人群层面的定量校准。本文能够确立的是：在特定提示和交往制度下，语言模型之间的持续说服可以与同质择友共同形成极化，且缓解效果取决于信息如何到达、如何被处理。人类社会中的效应大小和干预排序，仍不属于这些模拟已经证明的结论。</p>
 </main></body></html>

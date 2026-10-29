@@ -31,8 +31,6 @@ h1,h2,h3,p { margin:0; }
 .column-filter::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg) translateY(-2px); flex:none; }
 .column-filter.is-active { color:var(--blue); font-weight:700; }
 .column-filter:hover { color:var(--blue); }
-.reading-filter { display:flex; align-items:center; gap:5px; font:inherit; color:inherit; margin-top:2px; white-space:nowrap; cursor:pointer; }
-.reading-filter input { margin:0; accent-color:var(--blue); }
 .topic-tag { display:block; color:var(--muted); font-size:12px; margin-bottom:6px; }
 .keyword { display:block; border:0; background:transparent; text-align:left; color:var(--blue); font-size:12px; line-height:1.6; margin:0 0 5px; padding:0; }
 .keyword:hover { text-decoration:underline; text-underline-offset:3px; }

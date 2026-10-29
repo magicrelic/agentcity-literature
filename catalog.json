@@ -3771,7 +3771,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/nazerian2026frequency.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -10329,7 +10329,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/cao2025survey.md",
       "provenance": [
         {
           "id": "arxiv",
@@ -10638,7 +10638,7 @@
         "licenses": [],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/feng2025spatiotemporal.md",
       "provenance": [
         {
           "id": "crossref-20261029",
@@ -11417,7 +11417,7 @@
         ],
         "sourceIds": []
       },
-      "reading": null,
+      "reading": "论文解读/jung2025kinetic.md",
       "provenance": [
         {
           "id": "crossref",
@@ -26883,8 +26883,8 @@
       },
       "identifiers": {
         "doi": "10.1038/s41467-021-26752-4",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "2012.00489",
+        "arxivVersion": 5
       },
       "research": {
         "question": "地理与地点属性中的非线性关系能否改善传统重力模型的移动流量预测？",
@@ -26896,7 +26896,7 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41467-021-26752-4",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/2012.00489v5",
         "data": [],
         "code": [],
         "supplement": [
@@ -26977,6 +26977,17 @@
           "retrievedOn": "2026-10-29",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "arxiv-expanded-coverage-2026-10-29",
+          "provider": "Official arXiv abstract and versioned PDF identity check",
+          "url": "https://arxiv.org/abs/2012.00489v5",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
           ]
         }
       ],
@@ -30424,8 +30435,8 @@
       },
       "identifiers": {
         "doi": "10.1038/s41567-018-0409-0",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "1801.08854",
+        "arxivVersion": 1
       },
       "research": {
         "question": "网络拓扑与节点相互作用如何共同决定信号传播的路径和时间尺度？",
@@ -30437,7 +30448,7 @@
       },
       "links": {
         "original": "https://doi.org/10.1038/s41567-018-0409-0",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/1801.08854v1",
         "data": [],
         "code": [],
         "supplement": [
@@ -30538,6 +30549,17 @@
             "publication.publishedPrint",
             "publication.issn",
             "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-leading-batch-2026-10-29",
+          "provider": "Official arXiv identity/version verification",
+          "url": "https://arxiv.org/abs/1801.08854v1",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
           ]
         },
         {
@@ -32621,8 +32643,8 @@
       },
       "identifiers": {
         "doi": "10.1126/sciadv.aau9403",
-        "arxiv": null,
-        "arxivVersion": null
+        "arxiv": "1803.11542",
+        "arxivVersion": 3
       },
       "research": {
         "question": "网络的非正规结构如何影响瞬态放大、稳定性及非线性动力学？",
@@ -32634,7 +32656,7 @@
       },
       "links": {
         "original": "https://doi.org/10.1126/sciadv.aau9403",
-        "arxiv": null,
+        "arxiv": "https://arxiv.org/abs/1803.11542v3",
         "data": [],
         "code": [],
         "supplement": []
@@ -32676,6 +32698,17 @@
           "retrievedOn": "2026-10-29",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "arxiv-expanded-coverage-2026-10-29",
+          "provider": "Official arXiv abstract and versioned PDF identity check",
+          "url": "https://arxiv.org/abs/1803.11542v3",
+          "retrievedOn": "2026-10-29",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
           ]
         }
       ],
