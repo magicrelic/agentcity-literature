@@ -1,10 +1,10 @@
 {
-  "version": "f39ccdd1267fd71d907da492d7f8d64c0bfe5adb2568cf8fd709df99e4825e9f",
-  "catalogVersion": "0ef873f16c66f1e5770ed51d4fc249abe6dc9f6d1c994b248629ef6acc5d6714",
-  "tableVersion": "00aace3ca824122a427ed9dd27fc05f961bfd145a8a4696e158e16ed6012b608",
-  "readingVersion": "05de8829c54615ed03263a3bdb5e182a7885a992a3686b899498e398609763a0",
+  "version": "d1ef6c88fbdf305d6bc241b2f36e05c69c6e6507c38be3e8aafadfaed75d1edf",
+  "catalogVersion": "bafde6830d1db2fe27d6d5d0a6ea0965899d8d9923fe8fef60b04d953cec39c4",
+  "tableVersion": "f44ec8dd810415430d345a20db8235ecdc97d05ee777909f46b8774e2452d9c2",
+  "readingVersion": "4b6f06d88cd65dc6a057ec85b48af088848dd338a219f456fb0d5f88eaa6e687",
   "papers": 423,
-  "readings": 390,
+  "readings": 391,
   "chapters": [
     "集体运动与协调",
     "异质性与适应",
@@ -83,9 +83,9 @@
     "assets/katex-LICENSE.txt": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
     "assets/katex.min.css": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00",
     "assets/style.css": "cbf209777fb918fb30e4b4314aec9693599fdd89ea0ffb5bf4422af7636b0eda",
-    "catalog.json": "0ef873f16c66f1e5770ed51d4fc249abe6dc9f6d1c994b248629ef6acc5d6714",
+    "catalog.json": "bafde6830d1db2fe27d6d5d0a6ea0965899d8d9923fe8fef60b04d953cec39c4",
     "catalog.schema.json": "e03a20152e04b82e5bea1e189eadd588355dbc3a4b0b8a2a4ba6ad6bcd8bddd0",
-    "index.html": "3ce11707ffc43b9a01177bc52bd2fbc7da4bdd9e5bc923df526814912e7f4f9f",
+    "index.html": "af111c2cd6b01c9874835bde7b07009a33dfbb3105cc9771568eba9b10152a72",
     "readings/abdelaty2024matched.html": "1a018e0a202705b2a37a0c0fdd6aae0ffafcd93fb60c52c597700577c8568022",
     "readings/acemoglu2015systemic.html": "f97e812a4ffcda9206d75bac166b913d5a2deb635ff7e9ff44052efc3f218c13",
     "readings/acemoglu2018informational.html": "228f105e5dfc93b8fa6e4f57332c84c4d0e852bf7494cc594b20575019a9cd63",
@@ -1769,6 +1769,7 @@
     "readings/schnakenberg1976network.html": "2dfacb397187a4c1b6d9117921441f9dd7e96595cc57c0e9080c76a61c1df4b5",
     "readings/scholtes2014causality.html": "d8991262f06736ea77b2305eee4d2da3d778bd0e88604226a7b4fb190b004356",
     "readings/schreiber2000measuring.html": "9de866ed3fcb6a6f82f980672d96daadfb9a951236a2dc7ce4122d2af526f6aa",
+    "readings/sehwag2025collective.html": "cc843ec7fd9e0857c4da14ec787abe8aa0e41b1ef72ed0f2f2ac52392d5819d4",
     "readings/seifert2012stochastic.html": "eb68a2da65722dae9a461f849081758d5e8b8cb091292ade680a2efaa73c2f88",
     "readings/shalizi2001computational.html": "ac8fc797d89fcb7372afa4e2830fb74c1856fd328fd4d804977e7b4985454579",
     "readings/shao2024chain.html": "ceadfd1d2f3009a7665d0be5575cfc5b6f9d5d767de5bd9afe0eca0471d05478",
@@ -1876,6 +1877,6 @@
     "readings/zhu2024survey.html": "d8b3e1d009a209a31c8224c3a6c21dbf52a7d55184b63be6b4930a4ab638f792",
     "readings/zomer2026unraveling.html": "ebb058831059613b9415f41e9005d988ecb2b29058c2c7e2cce76f11e1f56443",
     "readings/zwanzig1961memory.html": "550e93b6b96a6651af705cfd08aafd842ba1410854ab490f8b67e66a169a8afc",
-    "table-index.json": "00aace3ca824122a427ed9dd27fc05f961bfd145a8a4696e158e16ed6012b608"
+    "table-index.json": "f44ec8dd810415430d345a20db8235ecdc97d05ee777909f46b8774e2452d9c2"
   }
 }
