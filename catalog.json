@@ -93,7 +93,8 @@
         "keywords": [
           "认知架构",
           "基础模型",
-          "决策机制"
+          "决策机制",
+          "综述"
         ]
       },
       "links": {
@@ -265,7 +266,8 @@
         "keywords": [
           "LLM智能体",
           "认知架构",
-          "评估基准"
+          "评估基准",
+          "综述"
         ]
       },
       "links": {
@@ -406,7 +408,8 @@
         "keywords": [
           "高阶网络",
           "集体动力学",
-          "高阶交互"
+          "高阶交互",
+          "综述"
         ]
       },
       "links": {
@@ -1291,7 +1294,8 @@
         "keywords": [
           "多智能体学习",
           "大规模模拟",
-          "长时程任务"
+          "长时程任务",
+          "综述"
         ]
       },
       "links": {
@@ -1547,7 +1551,8 @@
           "大语言模型",
           "多智能体系统",
           "社会模拟",
-          "涌现"
+          "涌现",
+          "综述"
         ]
       },
       "links": {
@@ -3769,7 +3774,8 @@
         "keywords": [
           "LLM智能体",
           "社会模拟",
-          "生成式模拟"
+          "生成式模拟",
+          "综述"
         ]
       },
       "links": {
@@ -4082,7 +4088,8 @@
         "keywords": [
           "地理仿真",
           "主体建模",
-          "LLM智能体"
+          "LLM智能体",
+          "综述"
         ]
       },
       "links": {
@@ -5339,7 +5346,8 @@
         "keywords": [
           "多智能体协作",
           "失败归因",
-          "智能体自演化"
+          "智能体自演化",
+          "综述"
         ]
       },
       "links": {
@@ -10552,7 +10560,8 @@
         "keywords": [
           "最短路径",
           "收缩层级",
-          "路网查询"
+          "路网查询",
+          "综述"
         ]
       },
       "links": {
@@ -11143,7 +11152,8 @@
         "question": "大语言模型如何作为信息处理器、奖励设计者、决策者和生成器增强强化学习？",
         "keywords": [
           "LLM智能体",
-          "强化学习"
+          "强化学习",
+          "综述"
         ]
       },
       "links": {
@@ -11747,7 +11757,8 @@
         "keywords": [
           "智能体自演化",
           "记忆机制",
-          "认知架构"
+          "认知架构",
+          "综述"
         ]
       },
       "links": {
@@ -14933,7 +14944,8 @@
         "question": "不同应用中的多智能体为何协调、与谁协调，以及如何通过学习、通信和利益冲突处理实现协调？",
         "keywords": [
           "多智能体协作",
-          "协调机制"
+          "协调机制",
+          "综述"
         ]
       },
       "links": {
@@ -15534,7 +15546,8 @@
         "keywords": [
           "LLM智能体",
           "多智能体协作",
-          "协作协议"
+          "协作协议",
+          "综述"
         ]
       },
       "links": {
@@ -16361,7 +16374,8 @@
         "question": "大语言模型驱动的多模态智能体有哪些结构、协作方式与评价方法？",
         "keywords": [
           "多模态智能体",
-          "大语言模型"
+          "大语言模型",
+          "综述"
         ]
       },
       "links": {
@@ -16749,7 +16763,8 @@
         "keywords": [
           "LLM智能体",
           "通信架构",
-          "多智能体协作"
+          "多智能体协作",
+          "综述"
         ]
       },
       "links": {
@@ -17383,7 +17398,8 @@
         "keywords": [
           "LLM智能体",
           "强化学习",
-          "策略优化"
+          "策略优化",
+          "综述"
         ]
       },
       "links": {
@@ -20107,7 +20123,8 @@
         "keywords": [
           "LLM智能体",
           "主体建模",
-          "社会模拟"
+          "社会模拟",
+          "综述"
         ]
       },
       "links": {
@@ -20315,7 +20332,8 @@
         "keywords": [
           "LLM智能体",
           "多智能体协作",
-          "认知架构"
+          "认知架构",
+          "综述"
         ]
       },
       "links": {
@@ -20978,7 +20996,8 @@
         "question": "大语言模型智能体规划方法可以如何分类与评价？",
         "keywords": [
           "大语言模型",
-          "规划机制"
+          "规划机制",
+          "综述"
         ]
       },
       "links": {
@@ -21345,7 +21364,8 @@
         "keywords": [
           "LLM智能体",
           "多智能体协作",
-          "工作流"
+          "工作流",
+          "综述"
         ]
       },
       "links": {
@@ -23172,7 +23192,8 @@
         "question": "基于大语言模型的自主智能体具有哪些架构、应用和评价方法？",
         "keywords": [
           "大语言模型",
-          "自主智能体"
+          "自主智能体",
+          "综述"
         ]
       },
       "links": {
@@ -23580,7 +23601,8 @@
       "research": {
         "question": "城市模型有哪些发展路径、分类与未来方向？",
         "keywords": [
-          "城市模型"
+          "城市模型",
+          "综述"
         ]
       },
       "links": {
@@ -24508,7 +24530,8 @@
         "keywords": [
           "多智能体学习",
           "通信机制",
-          "强化学习"
+          "强化学习",
+          "综述"
         ]
       },
       "links": {
@@ -26181,7 +26204,8 @@
         "question": "Transformer在强化学习中有哪些作用、方法与挑战？",
         "keywords": [
           "Transformer",
-          "强化学习"
+          "强化学习",
+          "综述"
         ]
       },
       "links": {
@@ -26842,7 +26866,8 @@
         "keywords": [
           "人类移动",
           "移动数据",
-          "模型验证"
+          "模型验证",
+          "综述"
         ]
       },
       "links": {
@@ -29376,7 +29401,8 @@
         "question": "城市系统科学中的模型与数据研究有哪些进展？",
         "keywords": [
           "城市科学",
-          "城市模型"
+          "城市模型",
+          "综述"
         ]
       },
       "links": {
@@ -32567,7 +32593,8 @@
         "question": "城市发展的模拟与预测方法有哪些进展、挑战与未来方向？",
         "keywords": [
           "城市模型",
-          "城市发展"
+          "城市发展",
+          "综述"
         ]
       },
       "links": {
@@ -33698,7 +33725,8 @@
         "question": "如何以综合建模应对城市可持续性与韧性的复杂系统挑战？",
         "keywords": [
           "城市复杂系统",
-          "城市韧性"
+          "城市韧性",
+          "综述"
         ]
       },
       "links": {
@@ -36696,7 +36724,8 @@
         "keywords": [
           "多智能体学习",
           "马尔可夫博弈",
-          "强化学习"
+          "强化学习",
+          "综述"
         ]
       },
       "links": {
@@ -36770,6 +36799,17 @@
           "retrievedOn": "2026-10-13",
           "fields": [
             "research.question"
+          ]
+        },
+        {
+          "id": "arxiv-review-expansion-20261030",
+          "provider": "Live arXiv title, author and submission-history verification",
+          "url": "https://arxiv.org/abs/1911.10635v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
           ]
         }
       ],
@@ -38082,7 +38122,8 @@
         "keywords": [
           "认知架构",
           "动作选择",
-          "认知能力"
+          "认知能力",
+          "综述"
         ]
       },
       "links": {
@@ -38762,6 +38803,139 @@
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-9ee294eb684e32": {
+      "citationKey": "schranz2020swarm",
+      "title": "Swarm Robotic Behaviors and Current Applications",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Schranz",
+            "given": "Melanie",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Umlauft",
+            "given": "Martina",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Sende",
+            "given": "Micha",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Elmenreich",
+            "given": "Wilfried",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Frontiers in Robotics and AI",
+        "venueShort": "Front. Robot. AI",
+        "kind": "journal-article",
+        "year": 2020,
+        "publisher": "Frontiers Media SA",
+        "volume": "7",
+        "issue": null,
+        "pages": null,
+        "articleNumber": "36",
+        "publishedOnline": "2020-04-02",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2296-9144"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.3389/frobt.2020.00036",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "已有群体机器人行为、实现平台和实际应用之间有哪些对应关系与工程限制？",
+        "keywords": [
+          "综述",
+          "群体机器人",
+          "集体决策",
+          "自组织"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.3389/frobt.2020.00036",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2020-04-02"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.3389/frobt.2020.00036",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2020.00036/full",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents"
+        ],
+        "objects": [
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
       }
     },
     "p-00394c4aa542c5": {
@@ -39549,7 +39723,8 @@
         "keywords": [
           "城市标度",
           "统计物理",
-          "空间结构"
+          "空间结构",
+          "综述"
         ]
       },
       "links": {
@@ -40426,6 +40601,150 @@
         "venueGroup": "leading-journal"
       }
     },
+    "p-43da57e1df2ecc": {
+      "citationKey": "hernandezleal2019survey",
+      "title": "A survey and critique of multiagent deep reinforcement learning",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Hernandez-Leal",
+            "given": "Pablo",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-8530-6775",
+            "affiliations": []
+          },
+          {
+            "family": "Kartal",
+            "given": "Bilal",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Taylor",
+            "given": "Matthew E.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Autonomous Agents and Multi-Agent Systems",
+        "venueShort": "Auton. Agents Multi-Agent Syst.",
+        "kind": "journal-article",
+        "year": 2019,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "33",
+        "issue": "6",
+        "pages": "750-797",
+        "articleNumber": null,
+        "publishedOnline": "2019-10-16",
+        "publishedPrint": "2019-11",
+        "posted": null,
+        "issn": [
+          "1387-2532",
+          "1573-7454"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/s10458-019-09421-1",
+        "arxiv": "1810.05587",
+        "arxivVersion": 3
+      },
+      "research": {
+        "question": "深度多智能体学习中的涌现、通信、合作与对手建模研究如何分类和评价？",
+        "keywords": [
+          "综述",
+          "多智能体强化学习",
+          "通信",
+          "涌现"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/s10458-019-09421-1",
+        "arxiv": "https://arxiv.org/abs/1810.05587v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://www.springer.com/tdm",
+            "appliesTo": "tdm",
+            "startDate": "2019-10-16"
+          },
+          {
+            "url": "http://www.springer.com/tdm",
+            "appliesTo": "vor",
+            "startDate": "2019-10-16"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1007/s10458-019-09421-1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://link.springer.com/article/10.1007/s10458-019-09421-1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-review-expansion-20261030",
+          "provider": "Live arXiv title, author and submission-history verification",
+          "url": "https://arxiv.org/abs/1810.05587v3",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "adaptation",
+          "collective"
+        ],
+        "objects": [
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-iacopini2019simplicial": {
       "citationKey": "iacopini2019simplicial",
       "title": "Simplicial models of social contagion",
@@ -40669,7 +40988,8 @@
         "keywords": [
           "物质记忆",
           "历史依赖",
-          "无序系统"
+          "无序系统",
+          "综述"
         ]
       },
       "links": {
@@ -43427,7 +43747,8 @@
         "keywords": [
           "模仿学习",
           "行为克隆",
-          "决策机制"
+          "决策机制",
+          "综述"
         ]
       },
       "links": {
@@ -45053,6 +45374,201 @@
         "venueGroup": "other-journal"
       }
     },
+    "p-3325e52a796faf": {
+      "citationKey": "perc2017statistical",
+      "title": "Statistical physics of human cooperation",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Perc",
+            "given": "Matjaž",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-3087-541X",
+            "affiliations": []
+          },
+          {
+            "family": "Jordan",
+            "given": "Jillian J.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Rand",
+            "given": "David G.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Wang",
+            "given": "Zhen",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Boccaletti",
+            "given": "Stefano",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Szolnoki",
+            "given": "Attila",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physics Reports",
+        "venueShort": "Phys. Rep.",
+        "kind": "journal-article",
+        "year": 2017,
+        "publisher": "Elsevier BV",
+        "volume": "687",
+        "issue": null,
+        "pages": "1-51",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2017-05",
+        "posted": null,
+        "issn": [
+          "0370-1573"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.physrep.2017.05.004",
+        "arxiv": "1705.07161",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "空间结构、个体策略与交互机制如何共同促进或抑制人类合作？",
+        "keywords": [
+          "综述",
+          "合作",
+          "进化博弈",
+          "社会困境"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.physrep.2017.05.004",
+        "arxiv": "https://arxiv.org/abs/1705.07161v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2017-05-01"
+          },
+          {
+            "url": "https://www.elsevier.com/legal/tdmrep-license",
+            "appliesTo": "tdm",
+            "startDate": "2017-05-01"
+          },
+          {
+            "url": "http://www.elsevier.com/open-access/userlicense/1.0/",
+            "appliesTo": "am",
+            "startDate": "2018-07-12"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-017",
+            "appliesTo": "stm-asf",
+            "startDate": "2017-05-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-037",
+            "appliesTo": "stm-asf",
+            "startDate": "2017-05-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-012",
+            "appliesTo": "stm-asf",
+            "startDate": "2017-05-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-029",
+            "appliesTo": "stm-asf",
+            "startDate": "2017-05-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-004",
+            "appliesTo": "stm-asf",
+            "startDate": "2017-05-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1016/j.physrep.2017.05.004",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://arxiv.org/abs/1705.07161",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-review-expansion-20261030",
+          "provider": "Live arXiv title, author and submission-history verification",
+          "url": "https://arxiv.org/abs/1705.07161v1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "adaptation",
+          "networks"
+        ],
+        "objects": [
+          "human",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "leading-journal"
+      }
+    },
     "p-schulman2017proximal": {
       "citationKey": "schulman2017proximal",
       "title": "Proximal Policy Optimization Algorithms",
@@ -45719,6 +46235,165 @@
         ],
         "documentType": "research",
         "venueGroup": "other-journal"
+      }
+    },
+    "p-ec0d26723d2dfd": {
+      "citationKey": "bechinger2016active",
+      "title": "Active Particles in Complex and Crowded Environments",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Bechinger",
+            "given": "Clemens",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Di Leonardo",
+            "given": "Roberto",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Löwen",
+            "given": "Hartmut",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Reichhardt",
+            "given": "Charles",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Volpe",
+            "given": "Giorgio",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Volpe",
+            "given": "Giovanni",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Reviews of Modern Physics",
+        "venueShort": "Rev. Mod. Phys.",
+        "kind": "journal-article",
+        "year": 2016,
+        "publisher": "American Physical Society (APS)",
+        "volume": "88",
+        "issue": "4",
+        "pages": null,
+        "articleNumber": "045006",
+        "publishedOnline": "2016-11-23",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0034-6861",
+          "1539-0756"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/revmodphys.88.045006",
+        "arxiv": "1602.00081",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "自驱动布朗粒子与障碍物、边界和其他粒子的相互作用如何产生非平衡输运与集体状态？",
+        "keywords": [
+          "综述",
+          "有源物质",
+          "自驱粒子",
+          "拥挤环境"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/revmodphys.88.045006",
+        "arxiv": "https://arxiv.org/abs/1602.00081v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2016-11-23"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1103/revmodphys.88.045006",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.88.045006",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-review-expansion-20261030",
+          "provider": "Live arXiv title, author and submission-history verification",
+          "url": "https://arxiv.org/abs/1602.00081v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "mobility"
+        ],
+        "objects": [
+          "physical"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "leading-journal"
       }
     },
     "p-eb94d584117646": {
@@ -46531,7 +47206,8 @@
         "keywords": [
           "主成分分析",
           "降维",
-          "统计估计"
+          "统计估计",
+          "综述"
         ]
       },
       "links": {
@@ -46842,7 +47518,8 @@
         "keywords": [
           "复杂网络",
           "可控性",
-          "控制理论"
+          "控制理论",
+          "综述"
         ]
       },
       "links": {
@@ -47736,6 +48413,135 @@
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-03a9f0c411e649": {
+      "citationKey": "bloembergen2015evolutionary",
+      "title": "Evolutionary Dynamics of Multi-Agent Learning: A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Bloembergen",
+            "given": "Daan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Tuyls",
+            "given": "Karl",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Hennes",
+            "given": "Daniel",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Kaisers",
+            "given": "Michael",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Journal of Artificial Intelligence Research",
+        "venueShort": "J. Artif. Intell. Res.",
+        "kind": "journal-article",
+        "year": 2015,
+        "publisher": "AI Access Foundation",
+        "volume": "53",
+        "issue": null,
+        "pages": "659-697",
+        "articleNumber": null,
+        "publishedOnline": "2015-08-17",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1076-9757"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1613/jair.4818",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "如何用进化动力学重建和分析多智能体学习规则的长期行为与稳定性？",
+        "keywords": [
+          "综述",
+          "学习动力学",
+          "进化博弈",
+          "多智能体强化学习"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1613/jair.4818",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1613/jair.4818",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://ir.cwi.nl/pub/23776",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "adaptation",
+          "agents",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
       }
     },
     "p-1cab18c64f255d": {
@@ -49544,7 +50350,8 @@
         "keywords": [
           "决策机制",
           "认知架构",
-          "主体建模"
+          "主体建模",
+          "综述"
         ]
       },
       "links": {
@@ -49703,7 +50510,8 @@
         "question": "不同类型的关系、跨层连接与时间层如何统一表示，并支持网络结构和过程分析？",
         "keywords": [
           "多层网络",
-          "网络结构"
+          "网络结构",
+          "综述"
         ]
       },
       "links": {
@@ -51210,6 +52018,140 @@
         "venueGroup": "nature-science"
       }
     },
+    "p-82591807410bd1": {
+      "citationKey": "brambilla2013swarm",
+      "title": "Swarm robotics: a review from the swarm engineering perspective",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Brambilla",
+            "given": "Manuele",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ferrante",
+            "given": "Eliseo",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Birattari",
+            "given": "Mauro",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Dorigo",
+            "given": "Marco",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Swarm Intelligence",
+        "venueShort": "Swarm Intell.",
+        "kind": "journal-article",
+        "year": 2013,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "7",
+        "issue": "1",
+        "pages": "1-41",
+        "articleNumber": null,
+        "publishedOnline": "2013-01-17",
+        "publishedPrint": "2013-03",
+        "posted": null,
+        "issn": [
+          "1935-3812",
+          "1935-3820"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/s11721-012-0075-2",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "如何从局部交互规则设计、分析和验证稳健、可扩展的机器人群体行为？",
+        "keywords": [
+          "综述",
+          "群体机器人",
+          "自组织",
+          "群体工程"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/s11721-012-0075-2",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://www.springer.com/tdm",
+            "appliesTo": "tdm",
+            "startDate": "2013-01-17"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1007/s11721-012-0075-2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://link.springer.com/article/10.1007/s11721-012-0075-2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents"
+        ],
+        "objects": [
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-ce58df2c686a73": {
       "citationKey": "brosi2013single",
       "title": "Single pollinator species losses reduce floral fidelity and plant reproductive function",
@@ -51660,7 +52602,8 @@
         "keywords": [
           "响应多样性",
           "社会生态系统",
-          "韧性"
+          "韧性",
+          "综述"
         ]
       },
       "links": {
@@ -52106,7 +53049,8 @@
         "keywords": [
           "有源物质",
           "流体动力学",
-          "集体运动"
+          "集体运动",
+          "综述"
         ]
       },
       "links": {
@@ -53699,7 +54643,8 @@
         "keywords": [
           "统计复杂性",
           "混沌",
-          "预测结构"
+          "预测结构",
+          "综述"
         ]
       },
       "links": {
@@ -53982,7 +54927,8 @@
         "keywords": [
           "模型验证",
           "模式匹配",
-          "生态系统"
+          "生态系统",
+          "综述"
         ]
       },
       "links": {
@@ -54130,7 +55076,8 @@
         "keywords": [
           "时序网络",
           "动态可达性",
-          "时间顺序"
+          "时间顺序",
+          "综述"
         ]
       },
       "links": {
@@ -54401,7 +55348,8 @@
         "keywords": [
           "风险感知",
           "保护行动",
-          "决策机制"
+          "决策机制",
+          "综述"
         ]
       },
       "links": {
@@ -54696,7 +55644,8 @@
         "keywords": [
           "随机热力学",
           "涨落定理",
-          "分子机器"
+          "分子机器",
+          "综述"
         ]
       },
       "links": {
@@ -55446,7 +56395,8 @@
         "keywords": [
           "集体运动",
           "自驱粒子",
-          "有源物质"
+          "有源物质",
+          "综述"
         ]
       },
       "links": {
@@ -55728,7 +56678,8 @@
         "keywords": [
           "空间网络",
           "网络结构",
-          "空间约束"
+          "空间约束",
+          "综述"
         ]
       },
       "links": {
@@ -57232,7 +58183,8 @@
         "keywords": [
           "社会动力学",
           "统计物理",
-          "意见动力学"
+          "意见动力学",
+          "综述"
         ]
       },
       "links": {
@@ -57418,7 +58370,8 @@
         "keywords": [
           "临界转变",
           "早期预警",
-          "临界减速"
+          "临界减速",
+          "综述"
         ]
       },
       "links": {
@@ -57704,7 +58657,8 @@
         "question": "相互作用动力学与网络结构如何共同决定同步的出现、稳定及失稳？",
         "keywords": [
           "网络同步",
-          "耦合动力学"
+          "耦合动力学",
+          "综述"
         ]
       },
       "links": {
@@ -57801,6 +58755,134 @@
         "venueGroup": "leading-journal"
       }
     },
+    "p-d9a47e18bca8c6": {
+      "citationKey": "busoniu2008comprehensive",
+      "title": "A Comprehensive Survey of Multiagent Reinforcement Learning",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Busoniu",
+            "given": "Lucian",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Babuska",
+            "given": "Robert",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "De Schutter",
+            "given": "Bart",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)",
+        "venueShort": "IEEE Trans. Syst. Man Cybern. C",
+        "kind": "journal-article",
+        "year": 2008,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "38",
+        "issue": "2",
+        "pages": "156-172",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2008-03",
+        "posted": null,
+        "issn": [
+          "1094-6977",
+          "1558-2442"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1109/tsmcc.2007.913919",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "多个智能体同时学习时，如何兼顾学习稳定性与对其他智能体行为变化的适应？",
+        "keywords": [
+          "综述",
+          "多智能体强化学习",
+          "非平稳性",
+          "学习动力学"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1109/tsmcc.2007.913919",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+            "appliesTo": "vor",
+            "startDate": "2008-03-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1109/tsmcc.2007.913919",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://doi.org/10.1109/TSMCC.2007.913919",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "adaptation",
+          "collective"
+        ],
+        "objects": [
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-a94aab3134500a": {
       "citationKey": "dorogovtsev2008critical",
       "title": "Critical phenomena in complex networks",
@@ -57860,7 +58942,8 @@
         "keywords": [
           "复杂网络",
           "临界现象",
-          "相变"
+          "相变",
+          "综述"
         ]
       },
       "links": {
@@ -58320,7 +59403,8 @@
         "question": "节点状态与连接结构相互反馈时，如何产生自组织、功能分化和动力学转变？",
         "keywords": [
           "共同演化网络",
-          "适应性网络"
+          "适应性网络",
+          "综述"
         ]
       },
       "links": {
@@ -60985,7 +62069,8 @@
         "keywords": [
           "模型约化",
           "多尺度分析",
-          "宏观动力学"
+          "宏观动力学",
+          "综述"
         ]
       },
       "links": {
@@ -62425,7 +63510,8 @@
         "keywords": [
           "交通流",
           "自驱粒子",
-          "非平衡系统"
+          "非平衡系统",
+          "综述"
         ]
       },
       "links": {
@@ -64930,7 +66016,8 @@
         "keywords": [
           "认知架构",
           "决策机制",
-          "智能体理论"
+          "智能体理论",
+          "综述"
         ]
       },
       "links": {
@@ -66225,7 +67312,8 @@
         "keywords": [
           "动态临界现象",
           "临界标度",
-          "普适性"
+          "普适性",
+          "综述"
         ]
       },
       "links": {
@@ -66322,7 +67410,8 @@
         "keywords": [
           "主方程",
           "网络热力学",
-          "非平衡系统"
+          "非平衡系统",
+          "综述"
         ]
       },
       "links": {
