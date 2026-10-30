@@ -1,8 +1,8 @@
 {
-  "version": "d1ef6c88fbdf305d6bc241b2f36e05c69c6e6507c38be3e8aafadfaed75d1edf",
+  "version": "4a435b0e50e99ecab90e44d1e76378a2a04260aa4a9ada6dda20bc999649e560",
   "catalogVersion": "bafde6830d1db2fe27d6d5d0a6ea0965899d8d9923fe8fef60b04d953cec39c4",
   "tableVersion": "f44ec8dd810415430d345a20db8235ecdc97d05ee777909f46b8774e2452d9c2",
-  "readingVersion": "4b6f06d88cd65dc6a057ec85b48af088848dd338a219f456fb0d5f88eaa6e687",
+  "readingVersion": "91fc1e19ad67716e8d327ec41c659de31946edf55667de50124f1efa90ab28ff",
   "papers": 423,
   "readings": 391,
   "chapters": [
@@ -85,7 +85,7 @@
     "assets/style.css": "cbf209777fb918fb30e4b4314aec9693599fdd89ea0ffb5bf4422af7636b0eda",
     "catalog.json": "bafde6830d1db2fe27d6d5d0a6ea0965899d8d9923fe8fef60b04d953cec39c4",
     "catalog.schema.json": "e03a20152e04b82e5bea1e189eadd588355dbc3a4b0b8a2a4ba6ad6bcd8bddd0",
-    "index.html": "af111c2cd6b01c9874835bde7b07009a33dfbb3105cc9771568eba9b10152a72",
+    "index.html": "0387e53de19f7b0f76e778d61fcb7d000ed29efb20c6d6f054d191d3de7f9c27",
     "readings/abdelaty2024matched.html": "1a018e0a202705b2a37a0c0fdd6aae0ffafcd93fb60c52c597700577c8568022",
     "readings/acemoglu2015systemic.html": "f97e812a4ffcda9206d75bac166b913d5a2deb635ff7e9ff44052efc3f218c13",
     "readings/acemoglu2018informational.html": "228f105e5dfc93b8fa6e4f57332c84c4d0e852bf7494cc594b20575019a9cd63",
@@ -1769,7 +1769,7 @@
     "readings/schnakenberg1976network.html": "2dfacb397187a4c1b6d9117921441f9dd7e96595cc57c0e9080c76a61c1df4b5",
     "readings/scholtes2014causality.html": "d8991262f06736ea77b2305eee4d2da3d778bd0e88604226a7b4fb190b004356",
     "readings/schreiber2000measuring.html": "9de866ed3fcb6a6f82f980672d96daadfb9a951236a2dc7ce4122d2af526f6aa",
-    "readings/sehwag2025collective.html": "cc843ec7fd9e0857c4da14ec787abe8aa0e41b1ef72ed0f2f2ac52392d5819d4",
+    "readings/sehwag2025collective.html": "ddb6aeb0bf6781796aec3bd12690672053eeba6b7c54b45e6dbd8f59a89d48db",
     "readings/seifert2012stochastic.html": "eb68a2da65722dae9a461f849081758d5e8b8cb091292ade680a2efaa73c2f88",
     "readings/shalizi2001computational.html": "ac8fc797d89fcb7372afa4e2830fb74c1856fd328fd4d804977e7b4985454579",
     "readings/shao2024chain.html": "ceadfd1d2f3009a7665d0be5575cfc5b6f9d5d767de5bd9afe0eca0471d05478",
