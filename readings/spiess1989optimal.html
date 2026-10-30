@@ -1,0 +1,24 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Optimal strategies: A new assignment model for transit networks · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1016/0191-2615(89)90034-9" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Spiess et al. - Optimal strategies: A new assignment model for transit networks</h1>
+<p><strong>固定公交线路下的最优出行策略与可计算的客流分配模型</strong></p>
+<p>Transportation Research Part B: Methodological，1989，23(2)：83–102。DOI：<a href="https://doi.org/10.1016/0191-2615(89)90034-9">10.1016/0191-2615(89)90034-9</a>。<a href="https://ideas.repec.org/a/eee/transb/v23y1989i2p83-102.html#author-abstract">书目与摘要原文</a>。</p>
+<blockquote>
+<p>资料范围：部分解读，仅依据 RePEc/IDEAS 收录的书目与摘要记录；该记录不是期刊正式版全文，也不是作者稿。正文、方法与证明、全部主图表及研究性补充材料均未取得，补充材料是否存在亦未确认。以下仅解释摘要所述问题、条件与贡献，不属于全文精读。</p>
+</blockquote>
+<p>资料检索日期：2026-10-29；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>这篇论文研究：在一组公交线路已经给定的情况下，如何描述旅客的出行选择，并建立相应的公交客流分配模型。线路固定是问题的起点，因此摘要讨论的决策不是增设线路或重排线网，而是旅客如何利用既有服务到达目的地。</p>
+<p>作者把旅客的目标表述为选择使到达目的地的<strong>期望成本最低</strong>的策略。这里有两个值得分开的概念：优化对象称为“策略”，评价标准是“期望成本”。它们表明模型的表述不限于一次行程已经实现后的成本比较；但摘要没有给出策略的数学定义，也没有说明成本包含哪些分项、采用什么单位，或期望针对何种随机过程。因此，不能仅凭题名把策略具体解释成某种候车、上车或换乘规则。<a href="https://ideas.repec.org/a/eee/transb/v23y1989i2p83-102.html#abstract-body">定位：摘要第1–2句</a>。</p>
+<h2>二、研究方法与关键机制</h2>
+<p>摘要呈现了一条有条件的建模路线：先研究无拥挤效应的情形，再在站点等待时间仅依赖合并发车频率的特殊条件下，将问题表述为线性规划，随后给出求解这一问题的标签设定算法，最后考虑非线性成本扩展。</p>
+<p>其中最关键的逻辑连接，是<strong>等待时间条件与线性规划表述之间的连接</strong>。作者并没有在摘要中宣称任意公交等待过程都可以如此处理，而是把“仅依赖合并频率”明确列为特殊情形的条件。这意味着，理解其线性模型必须同时保留这一条件与前述无拥挤设定。摘要未给出等待时间函数，无法据此写出频率如何合并、等待时间如何计算，或证明这种处理为什么成立。<a href="https://ideas.repec.org/a/eee/transb/v23y1989i2p83-102.html#abstract-body">定位：摘要第3–4句</a>。</p>
+<p>另一项设计是为该线性规划开发标签设定算法。摘要把算法与前述问题直接关联起来，但没有提供标签含义、更新规则、终止条件或正确性证明。因而可解释其在论文主张中的作用——使模型具有明确的求解途径——却不能重建算法步骤，也不能把某个熟悉的最短路算法当作本文实现。<a href="https://ideas.repec.org/a/eee/transb/v23y1989i2p83-102.html#abstract-body">定位：摘要第5句</a>。</p>
+<h2>三、主要结果与证据</h2>
+<p>现有摘要报告了两个层次的计算性质。第一，特殊情形下的线性规划规模随网络规模线性增长。这说的是模型规模的增长关系；摘要没有说明具体统计的是哪些变量或约束，也没有给出“网络规模”的精确定义。第二，作者称标签设定算法可在多项式时间内求解这一线性规划。<strong>模型规模线性增长与算法多项式时间可解是不同的结论</strong>，不能合并成“求解时间随网络规模线性增长”。<a href="https://ideas.repec.org/a/eee/transb/v23y1989i2p83-102.html#abstract-body">定位：摘要第4–5句</a>。</p>
+<p>摘要还称论文考虑了模型的非线性成本扩展，但“考虑扩展”没有交代扩展后的具体函数、求解性质与适用条件。特别是，前述多项式时间主张明确指向线性规划问题，不能自动延伸到所有非线性扩展。<a href="https://ideas.repec.org/a/eee/transb/v23y1989i2p83-102.html#abstract-body">定位：摘要第5–6句</a>。</p>
+<p>这些是作者在摘要中报告的理论与方法主张。现有记录不含公式、证明、网络实例、运行时间、对照结果或原始图表，无法进一步判断正文用什么证据支撑这些主张，也无法报告实验规模或性能提升数值。</p>
+<h2>四、意义与适用边界</h2>
+<p>从摘要能够辨认出的贡献，是把固定公交线路下的期望成本最优策略，与一个规模受控、具有多项式时间求解方法的数学规划表述联系起来。问题、特殊假设、模型规模和求解性质共同构成了这项工作的贡献轮廓。</p>
+<p>其适用边界也应按同一逻辑理解：线路集合给定；首先分析无拥挤情形；线性规划结果附带特定等待时间条件；非线性成本只确认被讨论。现有材料不足以确定“最优策略”的完整定义、这些假设的具体作用、非线性扩展是否覆盖拥挤，或模型对实际旅客行为的解释能力。可据此把握论文提出的问题及其声称的可计算性，不能把摘要中的存在性与复杂度陈述进一步解释为已经验证的现实预测能力。</p>
+</main></body></html>

@@ -1,167 +1,51 @@
 <!doctype html>
   <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>PHAST: Hardware-accelerated shortest path trees · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1016/j.jpdc.2012.02.007" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Delling et al. - PHAST: Hardware-accelerated shortest path trees</h1>
-<p><strong>如何借助硬件快速计算单源最短路树</strong></p>
+<p><strong>把道路网络的单源最短路变成可顺序访存、可分层并行的扫描。</strong></p>
+<p>Journal of Parallel and Distributed Computing，2013，73：940–952。DOI：<a href="https://doi.org/10.1016/j.jpdc.2012.02.007">10.1016/j.jpdc.2012.02.007</a>；<a href="https://renatowerneck.wordpress.com/wp-content/uploads/2016/06/dgnw13-phast-journal.pdf">作者公开稿</a>。</p>
 <blockquote>
-<p>资料范围：论文正文（不含补充材料）。
-文本可靠性：高。
-来源定位：page-grounded。
-主要分析类型：methods。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：完整（相对于论文正文）。</p>
+<p>资料范围：部分解读，版本与补充材料受限。依据36页作者公开完整期刊稿，首页预印日期为2014年10月18日；完整覆盖正文第1–10节、算法与实现方法、证明、全部2幅主图和9张表。未取得出版社正式版及独立研究性补充材料，不能据此断言原刊没有补充材料。下文页码均为作者稿PDF页序，不对应期刊940–952页。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Delling et al.，<em>PHAST: Hardware-accelerated shortest path trees</em>，<strong>Journal of Parallel and Distributed Computing（2013）</strong>。<a href="https://doi.org/10.1016/j.jpdc.2012.02.007">原文</a>。</p>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>分析类型与领域</td>
-<td>methods；并行与 GPU 路径搜索</td>
-</tr>
-<tr>
-<td>标识符</td>
-<td>DOI：10.1016/j.jpdc.2012.02.007</td>
-</tr>
-<tr>
-<td>作者机构</td>
-<td>书目资料未提供</td>
-</tr>
-<tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
-</tr>
-<tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
-</tr>
-</tbody>
-</table>
-<p>[Paper: PDF pp. 1–20, main text]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] PHAST利用层次预处理和按顺序扫描的距离传播，把单源到所有节点的计算映射为适合并行及硬件加速的操作。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] 路网预处理和有序扫描如何利用多核及 GPU 加速单源最短路径树？ [Paper: PDF pp. 1–20, main text]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 逐目标查询和单源全图计算具有不同并行模式及预算。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>路网预处理和有序扫描如何利用多核及 GPU 加速单源最短路径树</td>
-<td>[Analysis] 逐目标查询和单源全图计算具有不同并行模式及预算。</td>
-<td>[Analysis] 层次搜索后的有序扫描让距离传播更适合批量和硬件加速。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 层次搜索后的有序扫描让距离传播更适合批量和硬件加速。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 先执行层次图上的上行搜索，再按下降顺序传播距离，利用内存规律性处理大量目标节点。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>08 核心模块拆解</h2>
-<table>
-<thead>
-<tr>
-<th>分析环节</th>
-<th>在论证中的作用</th>
-<th>可区分性</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>核心表示或机制</td>
-<td>[Analysis] 层次搜索后的有序扫描让距离传播更适合批量和硬件加速。</td>
-<td>[Analysis] 单源、点对点和多源任务不可直接混比；预处理成本需摊销。</td>
-<td>[Paper: PDF pp. 1–20, main text]</td>
-</tr>
-</tbody>
-</table>
-<h2>09 关键公式与符号</h2>
-<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
-<h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>检验对象</th>
-<th>设计与证据</th>
-<th>支持的结论</th>
-<th>不支持的更强解释</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>路网预处理和有序扫描如何利用多核及 GPU 加速单源最短路径树</td>
-<td>正确性与单源全图性能是中心证据；它解决的任务不同于只查询一个目的地，不能直接混比时延。</td>
-<td>PHAST利用层次预处理和按顺序扫描的距离传播，把单源到所有节点的计算映射为适合并行及硬件加速的操作。</td>
-<td>硬件加速不改变最短路假设；预处理成本和动态图更新必须计入应用总预算。</td>
-<td>[Paper: PDF p. 11, Experimental Results]</td>
-</tr>
-</tbody>
-</table>
-<p>主文图表的论证入口（图题保留原文关键词）：</p>
-<table>
-<thead>
-<tr>
-<th>图表</th>
-<th>证据对象</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Figure 1</td>
-<td>vertices per level 8.2</td>
-<td>[Paper: PDF p. 12, Figure 1]</td>
-</tr>
-<tr>
-<td>Table 1</td>
-<td>Performance of various algorithms on the European road …</td>
-<td>[Paper: PDF p. 13, Table 1]</td>
-</tr>
-<tr>
-<td>Table 2</td>
-<td>Average running times per tree when computing multiple …</td>
-<td>[Paper: PDF p. 13, Table 2]</td>
-</tr>
-<tr>
-<td>Table 3</td>
-<td>Performance and GPU memory utilization of GPHAST in mil…</td>
-<td>[Paper: PDF p. 14, Table 3]</td>
-</tr>
-</tbody>
-</table>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 硬件加速不改变最短路假设；预处理成本和动态图更新必须计入应用总预算。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 在相同图和查询任务上比较Dijkstra、PHAST和并行实现的总时间；小图、低查询量及频繁更新可能抵消预处理收益。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 单源、点对点和多源任务不可直接混比；预处理成本需摊销。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 可与 <a href="dibbelt2016customizable.md">Dibbelt et al. - Customizable Contraction Hierarchies</a> 对照阅读：该文研究“如何把路网拓扑预处理与通行成本更新分开，以支持反复的最短路径查询”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：硬件加速不改变最短路假设；预处理成本和动态图更新必须计入应用总预算。</li>
-<li>核心假说与增量：在相同图和查询任务上比较Dijkstra、PHAST和并行实现的总时间。</li>
-<li>初始方法与如何验证：在相同图和查询任务上比较Dijkstra、PHAST和并行实现的总时间；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：小图、低查询量及频繁更新可能抵消预处理收益。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>论文要解决的是：在同一张道路网络上反复更换源点，精确计算它到<strong>所有顶点</strong>的最短距离，如何把每次计算压到毫秒量级？这比地图上的一次起终点查询更重，却是直径、部分中心性计算和路径规划预处理的共同基础。</p>
+<p>困难不只是优先队列慢。作者用优化过的Dijkstra实现说明：在欧洲路网上，采用DFS编号改善局部性后，smart queue版本约需2.826秒，简单BFS也需2.068秒。继续优化队列的空间已经有限，而Dijkstra按当前距离决定下一步访问谁，使访问顺序依赖源点，也难以形成大规模并行（第2.1节、表1）。BFS只处理单位权情形，此处是遍历成本参照，并非加权最短路的替代解法。</p>
+<p>作者的关键选择是复用收缩层次结构（contraction hierarchies，CH）：预先保留最短路信息，把每次查询的大部分工作改成与源点无关的固定扫描。代价是先做预处理；收益取决于后续查询次数和图的层次结构。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从收缩捷径到一次下行扫描</h3>
+<p>CH预处理给顶点安排收缩次序，以<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">rank(v)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal" style="margin-right:0.0315em;">ank</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span></span></span></span></eq>表示顶点<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span></span></span></span></eq>的名次。删除一个顶点时，如果经它连接两个邻点的最短路没有等长或更短的替代路径，就添加一条等长捷径。原边与捷径共同组成增强图；沿名次增大的边构成上行图，沿名次减小的边构成下行图（第2.2节）。</p>
+<p>PHAST先从源点在上行图运行一次Dijkstra，直到队列为空；随后按名次递减扫描全部顶点，利用下行入边更新距离。用于更新的<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d(v)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span></span></span></span></eq>是源点到<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span></span></span></span></eq>的当前距离上界，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ℓ</mi><mo stretchy="false">(</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\ell(u,v)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">ℓ</span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span></span></span></span></eq>是边长，两者单位相同；不可达的标签保持无穷大。对每条下行边执行：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>←</mo><mi>min</mi><mo>⁡</mo><mo stretchy="false">{</mo><mi>d</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mi>d</mi><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">ℓ</mi><mo stretchy="false">(</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+d(v)\leftarrow\min\{d(v),\ d(u)+\ell(u,v)\}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">←</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mopen">{</span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">ℓ</span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)}</span><span class="mord">.</span></span></span></span></span></eqn></section><p>下面是理解演示，不是论文实验。设名次依次为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>s</mi><mo separator="true">,</mo><mi>v</mi><mo separator="true">,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">x,s,v,h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">h</span></span></span></span></eq>，原图只有<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>→</mo><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">s\to x=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq>秒、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi>h</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x\to h=3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></eq>秒、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>→</mo><mi>v</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">h\to v=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span></eq>秒、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>→</mo><mi>v</mi><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">s\to v=12</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">12</span></span></span></span></eq>秒。收缩<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span></eq>时加入<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>→</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">s\to h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span></eq>捷径，长度为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2+3=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></eq>秒。由<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span></eq>出发的上行搜索得到<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">d(h)=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">h</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">d(v)=12</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">12</span></span></span></span></eq>；这说明上行搜索访问过的顶点也未必已有最终距离。下行扫描先处理<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span></eq>，随后用<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>→</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">h\to v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span></span></span></span></eq>得到<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mi>min</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>12</mn><mo separator="true">,</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">d(v)=\min(12,5+4)=9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mopen">(</span><span class="mord">12</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">9</span></span></span></span></eq>秒；继续扫描可得到<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">d(x)=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq>秒。最终距离为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>:</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s:0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x:2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>:</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">h:5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>:</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">v:9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">9</span></span></span></span></eq>秒。</p>
+<p>**正确性由CH保留的“先上行、后下行”的最短路承担。**对任意目标，存在一条增强图中的最短路，在最高名次顶点之前上行、之后下行。上行搜索保证找到通向这个最高点的正确距离；下行扫描遵循依赖顺序，将正确值传递到目标，因此无需从每个目标单独反向搜索（定理3.1，PDF第7页）。这一点解释了算法为什么正确，之后的重排与并行解释它为什么快。</p>
+<h3>固定顺序如何变成硬件优势</h3>
+<p>作者在预处理中分配层级，使每条下行边都从高层指向低层。因此层间按高到低处理，同层顶点之间没有下行依赖，可以任意排序或同时计算。将高层顶点排在数组前面、同层保留DFS相对顺序后，顶点、入边列表和待写距离标签都能顺序访问；仍不规则的主要是读取入边起点的距离（第4.1节）。</p>
+<p><a class="reading-image" href="assets/delling2013phast/fig-hierarchy-level-population.png?v=1368f79412a7a96845bed601ff8f2ac36cb39dbff83da2908731cc75e1d084fc" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/delling2013phast/fig-hierarchy-level-population.png?v=1368f79412a7a96845bed601ff8f2ac36cb39dbff83da2908731cc75e1d084fc" alt="欧洲路网的顶点高度集中在低层" loading="lazy" decoding="async"></a></p>
+<p>图1：横轴为层级，纵轴为顶点数，采用对数刻度；红线表示本层数量，黑虚线表示本层及更高层的累计数量。欧洲时间权重路网有138层，约一半顶点在第0层，最低20层之外仅约10万顶点。它既支持低层的大规模并行，也揭示高层可供GPU利用的工作很少。来源：作者公开稿Fig. 1，PDF第20页，<a href="https://renatowerneck.wordpress.com/wp-content/uploads/2016/06/dgnw13-phast-journal.pdf">原PDF</a>。</p>
+<p>另一个收益来自同时处理<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq>个源点：同一顶点的<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq>个距离连续存放，读到一条边后便可连续更新多棵树。SSE用128位寄存器同时处理四个32位距离，把同一边长分别加到四个距离，再逐项取较小值。增大<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq>会改善访问效率，也会增加距离数组和缓存压力，因此并非越大越好（第4.2节）。</p>
+<p>CPU可以让不同核计算不同源点，也可以让多个核并行处理同一层。GPU版本GPHAST则由CPU完成小规模上行搜索，将下行图与距离数组常驻显存，再按层启动GPU内核，每个线程负责一个距离标签；同层完成后才进入下一层。作者还省去了每次独立清空整个距离数组的扫描，改用上行访问标记，在下行处理时完成初始化（第4.3–6节）。</p>
+<p>第7节进一步证明，低highway dimension能够带来浅的下行结构：在各个距离尺度上，较稀疏的一组顶点即可截住相应尺度的所有最短路。理论预处理利用这些覆盖和着色控制层数，在highway dimension固定时，CREW PRAM并行时间上界随图直径的对数平方增长。这里假设无向图、整数边权和有界原始度数；实际程序用的是更简单的启发式CH次序，GPU也不是PRAM。因此该定理提供结构解释，不能直接换算实际毫秒数。</p>
+<h2>三、主要结果与证据</h2>
+<h3>加速来自哪些可分辨的环节</h3>
+<p>主要基准是约1800万顶点、4200万有向边的欧洲路网，边权为通行时间；主机是四核2.67 GHz Core-i7 920，GPU是1.5 GB显存的GTX 580。四核CH预处理用302秒，下行图含33,854,914条边（第9.1节、表4）。</p>
+<p>表1隔离了布局影响：从DFS布局出发，PHAST按层重排由678毫秒降至172毫秒，约快3.94倍；同层使用四核进一步降至约50毫秒。这支持内存布局和分层并行各有实际贡献。表2则显示，单核批量处理16个源点时，不用SSE为96.8毫秒/树，启用后为37.1毫秒/树，约快2.61倍；四核启用SSE达到18.8毫秒/树。后者是多树吞吐量，不能当作一次独立单树请求的延迟。</p>
+<p>带宽实验解释了收益为什么趋于饱和：四核、每次扫描16个源点时，仅顺序读写相关数组的参照程序已需12.8毫秒/树，PHAST为18.8毫秒/树（第9.3节）。这支持访存成为主要瓶颈，但参照程序没有完成同样的图计算，不能把其时间视为严格算法下界。</p>
+<p><a class="reading-image" href="assets/delling2013phast/fig-gpu-batch-throughput.png?v=357c47c44b73ad6145db291d35df76ec6ea4904cfae391fd0318bfc496840160" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/delling2013phast/fig-gpu-batch-throughput.png?v=357c47c44b73ad6145db291d35df76ec6ea4904cfae391fd0318bfc496840160" alt="GPU批量计算的显存占用与每树摊销时间" loading="lazy" decoding="async"></a></p>
+<p>表3：三列依次为每次扫描的树数、GPU显存占用（MB）和每树摊销时间（ms）；没有误差列。随着批量由1增至16，时间下降、显存占用上升，展示吞吐量与容量的交换关系。来源：作者公开稿Table 3，PDF第23页，<a href="https://renatowerneck.wordpress.com/wp-content/uploads/2016/06/dgnw13-phast-journal.pdf">原PDF</a>。</p>
+<p>GPU独立计算一棵树需5.53毫秒；一次计算16棵时为2.21毫秒/树，显存占用1448 MB。后者意味着一批约需<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>×</mo><mn>2.21</mn><mo>=</mo><mn>35.36</mn></mrow><annotation encoding="application/x-tex">16\times2.21=35.36</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">16</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.21</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">35.36</span></span></span></span></eq>毫秒，而非16棵都在2.21毫秒内完成。与单核smart queue的2826毫秒相比，约快1279倍；与四核Dijkstra的947.72毫秒/树相比，约快429倍（表1、3、7）。这才是“约三个数量级”的具体比较条件。</p>
+<p>表7按每树速度折算，全部源点的距离计算约需11小时，四核Dijkstra约需197.6天；这不是同时存下完整距离矩阵或展开全部路径的时间保证。预处理也需计入：按四核Dijkstra与GPHAST的每树耗时估算，约320棵树后可摊销302秒预处理成本（第9.4节、表3、7）。表7还给出GTX 580整机约0.83焦耳/树，对比48核服务器PHAST的3.01焦耳/树；能效优势属于这些硬件与负载条件。</p>
+<h3>为什么CPU和GPU混用还能更快</h3>
+<p>图1中高层顶点很少，而每层启动GPU内核约需5微秒。让GPU处理全部层会为小任务反复付出固定开销。作者据此把最高的若干层移回CPU，仅留下较大的低层交给GPU（第9.9节）。</p>
+<p><a class="reading-image" href="assets/delling2013phast/fig-hybrid-cpu-gpu-sweep.png?v=19d604e9482ab7c401354da38f444648d101f65c896fedbd9411b4fbcd6c9a16" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/delling2013phast/fig-hybrid-cpu-gpu-sweep.png?v=19d604e9482ab7c401354da38f444648d101f65c896fedbd9411b4fbcd6c9a16" alt="CPU承担稀疏高层后单树查询时间先降后升" loading="lazy" decoding="async"></a></p>
+<p>图2：横轴为下行扫描中交给CPU的最高层数量，纵轴为单树查询时间（ms）；左图采用通行时间权重，右图采用道路距离权重，两图纵轴范围不同，且均未从零起；陡升部分超出原图纵轴显示范围。曲线没有误差条。适量增加CPU工作可降低时间，但接近全部转交CPU时耗时陡增。来源：作者公开稿Fig. 2左右两图，PDF第30页，<a href="https://renatowerneck.wordpress.com/wp-content/uploads/2016/06/dgnw13-phast-journal.pdf">原PDF</a>。</p>
+<p>最优附近都只留约20个低层给GPU。时间权重的单树耗时从5.53降到4.81毫秒，下降约13%；距离权重由15.83降到7.53毫秒，下降约52%。后者的层数为410，明显多于时间权重的138层，所以减少小内核启动的收益更大。表4更换CH排序的结果也表明，GPU性能同时受边数和层数影响；减少层数却增加边数，不保证最终更快。</p>
+<h3>从距离标签走向实际应用</h3>
+<p>跨输入实验覆盖欧洲、美国路网及时间/距离权重。表8中GTX 580的每树摊销时间分别包括欧洲距离权重3.88毫秒、美国时间权重3.41毫秒、美国距离权重4.65毫秒；欧洲加入转弯模型后为17.91毫秒。每个输入都按显存限制选择有利于吞吐量的批量，不能与图2的独立单树时间直接混比。转弯数据是人工设置：掉头100秒，其余转弯零成本，并非真实转弯代价调查（第9.8节）。</p>
+<p>最具体的应用证据是arc flags。将欧洲图分成128个单元、得到11,046个边界点后，作者为每个边界点计算正反向树，并重建父指针、设置边标记。去除约600万顶点的附着树后，最后计算与标记步骤需92秒；连同划分和CH预处理，总时间从四核Dijkstra约5小时缩短到不足10分钟（第9.10节）。完整CHASE进一步把标记扩展到整个层次结构，预处理不足14分钟，点到点查询平均6.06微秒，而原部分CHASE为9.91微秒（第9.11节、表9）。表9的部分方法来自既有文献并按机器缩放，且预处理并行条件不同，因此这张表不是统一重跑的全面性能排名。</p>
+<h2>四、意义与适用边界</h2>
+<p>PHAST最有价值的改变，是让大量查询复用同一套依赖顺序：预处理保存精确最短路，上行搜索提供必要的初始标签，下行扫描把主要工作变成连续访存和同层并行。CH结构与扫描顺序承担正确性；重排、批量、SSE及CPU/GPU分工的性能贡献则分别有布局比较、表2和图2支持。</p>
+<p>正确性与高效率有不同范围。非负边权满足单源距离问题的设定；即使换成一般图，CH仍可保持距离正确，但可能产生大量捷径，令空间与时间成本失去优势。文中的实验证据集中于道路网络；低highway dimension是理论条件，论文没有测出这些路网的实际维数。五种机器的结果还说明，多核收益依赖线程绑定和NUMA本地数据放置，不能只凭核数外推（表5、6）。</p>
+<p>“最短路树”也有额外成本。主体基准主要计算距离标签；增强图中的父边可能是捷径。第8.1节给出一次扫描原始边恢复父指针的方法，要求原始边权严格为正，才能保证按距离递增形成树。精确reach与betweenness还需要反向遍历、捷径展开，后者需处理所有等长最短路，不能把2.21毫秒直接当作完整中心性计算的耗时。这些中心性用途在本文主要是算法说明，实测应用集中在arc flags和CHASE。</p>
+<p>最后，毫秒级结果建立在预处理完成、主要数组驻留相应内存的条件上，不代表频繁改变边权后的即时重算，也未证明包含全量距离回传与落盘时仍有相同吞吐量。文中没有统一给出计时重复次数和离散程度，双GPU约再快一倍也是外推。它扎实建立的是：在可复用预处理的大陆级路网上，精确距离计算能够从动态队列驱动，转变为适合当时CPU与GPU执行的固定扫描。</p>
 </main></body></html>

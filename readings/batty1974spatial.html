@@ -1,109 +1,27 @@
 <!doctype html>
   <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Spatial Entropy · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1111/j.1538-4632.1974.tb01014.x" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Batty - Spatial Entropy</h1>
-<p><strong>将单元面积纳入空间熵</strong></p>
+<p><strong>空间熵：把区间大小明确纳入离散熵的定义。</strong> Geographical Analysis，1974年，第6卷，1–31页。DOI：<a href="https://doi.org/10.1111/j.1538-4632.1974.tb01014.x">10.1111/j.1538-4632.1974.tb01014.x</a>。</p>
 <blockquote>
-<p>资料范围：仅摘要（不含补充材料）。
-文本可靠性：局限于可用资料。
-来源定位：source-limited。
-主要分析类型：methods。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：部分；全文方法、图表和作者局限不可据摘要完整评估。</p>
+<p>资料范围：部分解读。依据出版商存入 Crossref 的原始摘要之 HTML 转存文本，仅覆盖摘要及书目信息；未取得作者稿或正式版全文，正文、方法推导、主图表均不在可读范围内。未取得研究性补充材料，也未能确认补充材料是否存在及其完整清单。以下只解释摘要明确提出的问题、方法主张与应用线索，不构成全文精读。<a href="https://api.crossref.org/works/10.1111%2Fj.1538-4632.1974.tb01014.x">摘要来源</a>。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Batty，<em>Spatial Entropy</em>，<strong>Geographical Analysis（1974）</strong>。<a href="https://doi.org/10.1111/j.1538-4632.1974.tb01014.x">原文</a>。</p>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>分析类型与领域</td>
-<td>methods；空间分布的不确定性</td>
-</tr>
-<tr>
-<td>标识符</td>
-<td>DOI：10.1111/j.1538-4632.1974.tb01014.x</td>
-</tr>
-<tr>
-<td>作者机构</td>
-<td>书目资料未提供</td>
-</tr>
-<tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
-</tr>
-<tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
-</tr>
-</tbody>
-</table>
-<p>[Paper: Abstract]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] 把空间单元大小纳入离散熵，可分离面积机会与密度集中。 [Paper: Abstract]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] 如何在空间单元大小不一致时定义和比较空间分布的熵？ [Paper: Abstract]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 大小不同的单元使份额熵混合机会面积与实际密度。 [Paper: Abstract]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>如何在空间单元大小不一致时定义和比较空间分布的熵</td>
-<td>[Analysis] 大小不同的单元使份额熵混合机会面积与实际密度。</td>
-<td>[Analysis] 把单元面积引入空间熵，对相对面积的集中作校正。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 把单元面积引入空间熵，对相对面积的集中作校正。 [Paper: Abstract]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 以单元份额和面积构造空间熵，联系离散与连续熵的转换问题。 [Paper: Abstract]</p>
-<h2>08 核心模块拆解</h2>
-<p>不可据现有资料评估（Not assessable from supplied material）：摘要没有提供可独立核对的模块、接口与消融。</p>
-<h2>09 关键公式与符号</h2>
-<p>[Analysis] 以下为摘要所涉概念的数学解释；本文公式编号及具体估计实现不可据摘要评估。</p>
-<p><strong>定义。</strong> 将研究区分成 K 个空间单元，pᵢ 是第 i 单元人口、活动或建成量占全区的份额：</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>p</mi><mi>i</mi></msub><mi>ln</mi><mo>⁡</mo><msub><mi>p</mi><mi>i</mi></msub><mo separator="true">,</mo><mspace width="2em"/><msub><mi>H</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><mi>H</mi><mi mathvariant="normal">/</mi><mi>ln</mi><mo>⁡</mo><mi>K</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-H=-\sum_i p_i\ln p_i,\qquad H_{\rm rel}=H/\ln K.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.3277em;vertical-align:-1.2777em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">rel</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mord">/</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mord">.</span></span></span></span></span></eqn></section><p>固定 K 时，H 越大，质量在单元之间分配得越均匀。它不使用单元相互位置，所以把所有单元随机换位不改变 H；同一个 H 可能对应连续蔓延，也可能对应相隔很远的多个斑块。</p>
-<p>Batty 的空间熵显式计入单元面积 Aᵢ：</p>
-<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>H</mi><mi>B</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>p</mi><mi>i</mi></msub><mi>ln</mi><mo>⁡</mo><mfrac><msub><mi>A</mi><mi>i</mi></msub><msub><mi>p</mi><mi>i</mi></msub></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
-H_B=\sum_i p_i\ln\frac{A_i}{p_i}.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.638em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>在相同面积单位下，其最大值为 ln A（A=ΣAᵢ），在 pᵢ=Aᵢ/A 即密度均匀时达到。等价地，使用面积份额 aᵢ=Aᵢ/A，有 ln A−H_B=Σpᵢ ln(pᵢ/aᵢ)=D_KL(p∥a)。这一形式测的是相对于面积机会的集中；它纠正“单元大小不同”，仍没有自动加入邻接结构。<a href="https://doi.org/10.1111/j.1538-4632.1974.tb01014.x">Batty（1974）</a></p>
-<p>标准面积形式及其代数改写用于解释理论定义；所据论文摘要明确在离散熵中加入区间大小。此处不报告城市实测结果。</p>
-<h2>10 实验设计与证据链</h2>
-<p>[Paper] 摘要报告：把空间单元大小纳入离散熵，可分离面积机会与密度集中。 [Paper: Abstract]</p>
-<p>不可据现有资料评估（Not assessable from supplied material）：样本划分、全部图表、基线公平性、消融及不确定性。</p>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 面积校正不加入邻接信息；熵对单元换位不敏感，不能单独辨认聚集形状。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>不可据现有资料评估（Not assessable from supplied material）：作者局限不能由解读者批评代填。</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 固定质量和面积分布改变空间排列，联合比较空间熵与邻接指标；分区尺度和面积单位影响解释。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 面积校正仍不包含邻接与空间形状。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 可与 <a href="jha2025urban.md">Jha et al. - Urban sprawl assessment using integrated spatial and statistical analysis in the heritage city Varanasi, India</a> 对照阅读：该文研究“历史城市的建成区扩张在不同方向和时段呈现怎样的空间集中与蔓延”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：面积校正不加入邻接信息；熵对单元换位不敏感，不能单独辨认聚集形状。</li>
-<li>核心假说与增量：固定质量和面积分布改变空间排列，联合比较空间熵与邻接指标。</li>
-<li>初始方法与如何验证：固定质量和面积分布改变空间排列，联合比较空间熵与邻接指标；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：分区尺度和面积单位影响解释。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>Batty 的出发点，是信息论中如何由离散熵得到连续熵的问题。摘要称，已有不少分析者指出 Shannon 对这一问题的处理不完整，但真正重新开展这项分析的工作较少。这是作者对问题背景的概括；摘要没有交代“不完整”具体出现在哪个推导步骤，也没有列出相关争论的证据，因而不能据此判定某个具体公式有误。（摘要第1–2句）</p>
+<p>作者提出的解决方向很明确：需要一种把区间大小显式纳入的新离散熵度量，并把它称为空间熵。这里值得抓住的设计选择是，作者把区间大小放进度量本身，而不只把空间作为应用背景。由此可以理解论文为何把离散与连续的衔接视为地理学问题：当度量对象带有区间大小时，这一大小应当如何进入熵的定义，就成为必须回答的问题。（摘要第3句）</p>
+<p>这篇论文的主张因此首先是一项度量构造主张。摘要没有给出可用于检验该度量的观测数据，也没有报告它相对其他指标的定量优势；不能把作者提出“需要新度量”直接写成新度量已获得普遍验证。</p>
+<h2>二、研究方法与关键机制</h2>
+<p>摘要列出的论证路线是：提出显式包含区间大小的离散熵；将它用于一维和二维聚合问题；考察它对 Wilson 熵最大化方法的含义；从空间角度重新解释 Theil 的聚合统计量；最后提出使真实与理想化空间系统达到最大熵的一些启发式设计思路。（摘要第3–5句）</p>
+<p>这条路线的关键连接，是从“怎样定义度量”走向“用这个度量怎样理解聚合和最大化”。一维、二维聚合是摘要明确点出的首批应用场景，承担展示新度量如何使用的作用。Wilson 方法与 Theil 统计量则是作者进一步讨论的两个既有理论对象：前者涉及熵最大化，后者涉及聚合统计的空间解释。摘要没有说作者用一个方法取代另一个方法，也没有说明这两项讨论得到何种具体等价关系或修正结论。</p>
+<p>现有文字中，最明确的机制信息只有“区间大小显式进入离散熵”这一点。其数学形式、变量定义、归一化方式、单位，以及从离散到连续的推导条件都未提供。因而无法判断作者究竟如何处理区间变动，也无法检验新定义在什么条件下成立。这里不列公式或数值算例，因为任何具体形式都会超出可读证据。</p>
+<h2>三、主要结果与证据</h2>
+<p>摘要能够支持的是作者报告了哪些工作，而非这些工作的详细结果。三组内容尤其需要区分。</p>
+<p>第一，作者主张需要一种显式包含区间大小的离散熵度量，摘要将这一统计量称为空间熵。这是摘要中最清楚的核心主张；但公式与证明缺失，现阶段只能确认这一主张的内容，不能重现其推导。（摘要第3句）</p>
+<p>第二，作者报告用一维和二维聚合问题说明该度量的使用，并进一步追踪它对 Wilson 熵最大化方法的含义。摘要没有给出聚合对象、分组方式、输入条件、对照指标或数值结果，因此不能把这些应用解释为对任意空间划分都有效的证明，也不能判断它们属于理论例题还是经验案例。（摘要第4句）</p>
+<p>第三，作者报告对 Theil 聚合统计量作空间解释，并提出最大熵空间系统的启发式设计思路。“重新解释”不等于证明原统计量失效；“启发式”也不能改写成已经验证的最优设计法。摘要没有交代这些思路的具体规则、目标约束或实现后的效果。（摘要第5句）</p>
+<p>可读材料没有图、表、公式或定量结果，无法据其核对样本量、误差、拟合程度与对照条件，也没有可嵌入并用于支撑上述讨论的原图。上述结论的定位均止于摘要，不能替代正文中的证明与应用证据。</p>
+<h2>四、意义与适用边界</h2>
+<p>这份摘要最有价值的理论线索，是把空间区间的大小提升为熵定义中的显式要素，并围绕聚合与最大熵展开讨论。它提示读者，理解这项工作时应同时关注度量的定义和划分区间的方式，而不能仅凭“熵”这个名称就假定其数学性质。（摘要第3–5句）</p>
+<p>但摘要没有展示新定义是否解决了开篇提出的离散到连续问题，也没有呈现其适用条件。真实与理想化空间系统的设计仅被表述为启发式建议，不能据此主张论文证明了某种普遍的空间组织规律。</p>
+<p>当前能够确立的是论文的问题结构：以离散熵与连续熵的衔接为起点，以区间大小进入度量为核心选择，再把讨论延伸到聚合统计与最大熵设计。空间熵的准确表达式、推导为何成立、应用表现如何，以及边界条件是什么，均须依赖尚未取得的全文才能解释。</p>
 </main></body></html>

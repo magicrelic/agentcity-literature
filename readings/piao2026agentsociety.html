@@ -1,171 +1,63 @@
 <!doctype html>
   <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>AgentSociety: Large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.26599/IF.2026.9710004" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Piao et al. - AgentSociety: Large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society</h1>
-<p><strong>生成式决策与空间执行的结合</strong></p>
+<p><strong>让语言模型智能体在城市、社交与经济约束中生活：从个体反馈闭环到可干预的社会模拟。</strong></p>
+<p>iFuture，2026；卷期、页码未列明。DOI：<a href="https://doi.org/10.26599/IF.2026.9710004">10.26599/IF.2026.9710004</a>；<a href="https://arxiv.org/pdf/2502.08691v2">所读预印本全文</a>。</p>
 <blockquote>
-<p>资料范围：开放作者稿正文（不含补充材料）；正式发表信息见基本信息。
-文本可靠性：高。
-来源定位：page-grounded。
-主要分析类型：methods。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：完整（相对于论文正文）。</p>
+<p>资料范围：部分解读，依据 2026 年 4 月 10 日的 arXiv v2 作者预印本，共 49 页；覆盖全文、含于第 3—7 节的方法说明、全部 25 幅主图与 7 张主表。该版本没有独立 Methods 或附录。未取得期刊正式版全文及独立研究性补充材料，补充材料目录尚未确认。以下图注使用 PDF 页序；该版本自第 2 页起与页脚印刷页码一致，首页无印刷页码。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Piao et al.，<em>AgentSociety: Large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society</em>，<strong>iFuture（2026）</strong>。<a href="https://doi.org/10.26599/IF.2026.9710004">原文</a>。</p>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>分析类型与领域</td>
-<td>methods；大规模生成式模拟</td>
-</tr>
-<tr>
-<td>标识符</td>
-<td>DOI：10.26599/IF.2026.9710004</td>
-</tr>
-<tr>
-<td>作者机构</td>
-<td>书目资料未提供</td>
-</tr>
-<tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
-</tr>
-<tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
-</tr>
-</tbody>
-</table>
-<p>[Paper: PDF pp. 1–45, main text]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] AgentSociety把LLM需求与计划接入真实空间执行，形成可扩展的模拟平台。 [Paper: PDF pp. 1–45, main text]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] 如何构建大规模 LLM 智能体及其环境交互，以研究人类行为与群体现象？ [Paper: PDF pp. 1–45, main text]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 大规模语言行动需要地图、容量和任务执行层提供可运行环境。 [Paper: PDF pp. 1–45, main text]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>如何构建大规模 LLM 智能体及其环境交互，以研究人类行为与群体现象</td>
-<td>[Analysis] 大规模语言行动需要地图、容量和任务执行层提供可运行环境。</td>
-<td>[Analysis] 需求与计划生成接入空间执行，形成语义和物理约束的混合架构。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 需求与计划生成接入空间执行，形成语义和物理约束的混合架构。 [Paper: PDF pp. 1–45, main text]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 需求—计划—行为流程结合天气、空间环境和重力目的地选择，对照Hurricane Dorian的活动下降及恢复。 [Paper: PDF pp. 1–45, main text]</p>
-<h2>08 核心模块拆解</h2>
-<table>
-<thead>
-<tr>
-<th>分析环节</th>
-<th>在论证中的作用</th>
-<th>可区分性</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>核心表示或机制</td>
-<td>[Analysis] 需求与计划生成接入空间执行，形成语义和物理约束的混合架构。</td>
-<td>[Analysis] 地理规律可能来自执行模型，必须分离模块解释。</td>
-<td>[Paper: PDF pp. 1–45, main text]</td>
-</tr>
-</tbody>
-</table>
-<h2>09 关键公式与符号</h2>
-<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
-<p>其余形式化推导按主文位置索引：</p>
-<ul>
-<li>公式1：[Paper: PDF p. 10, equations]。</li>
-</ul>
-<h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>检验对象</th>
-<th>设计与证据</th>
-<th>支持的结论</th>
-<th>不支持的更强解释</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>如何构建大规模 LLM 智能体及其环境交互，以研究人类行为与群体现象</td>
-<td>AgentSociety把LLM需求与计划接入真实空间执行，形成可扩展的模拟平台。</td>
-<td>AgentSociety把LLM需求与计划接入真实空间执行，形成可扩展的模拟平台。</td>
-<td>生成行为与重力执行共同作用；移动距离与集聚不能全部归因于LLM。</td>
-<td>[Paper: PDF p. 28, Experiments]</td>
-</tr>
-</tbody>
-</table>
-<p>主文图表的论证入口（图题保留原文关键词）：</p>
-<table>
-<thead>
-<tr>
-<th>图表</th>
-<th>证据对象</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Figure 1</td>
-<td>Evaluation framework for LLM-driven social simulators. …</td>
-<td>[Paper: PDF p. 5, Figure 1]</td>
-</tr>
-<tr>
-<td>Figure 2</td>
-<td>Overview of the proposed social simulator AgentSociety.…</td>
-<td>[Paper: PDF p. 6, Figure 2]</td>
-</tr>
-<tr>
-<td>Figure 3</td>
-<td>Overview of LLM-driven social generative agents. the de…</td>
-<td>[Paper: PDF p. 7, Figure 3]</td>
-</tr>
-<tr>
-<td>Figure 4</td>
-<td>Modeling framework of emotion, needs, and cognition. Em…</td>
-<td>[Paper: PDF p. 8, Figure 4]</td>
-</tr>
-</tbody>
-</table>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 生成行为与重力执行共同作用；移动距离与集聚不能全部归因于LLM。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>在本卡引用的正文段落中，未确认可独立列出的作者明确局限（No explicit author-acknowledged limitation was found in the supplied source）。下节的解释边界属于解读者分析。</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 在相同执行器下替换计划生成机制并留出真实事件；已注入距离规律和历史校准可能解释表观真实性。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 地理规律可能来自执行模型，必须分离模块解释。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 可与 <a href="santos2026when.md">Santos et al. - When Plausible Is Not Realistic: Evaluating Human Mobility in LLM-Based Urban Simulation</a> 对照阅读：该文研究“看似合理的 LLM 行为能否同时再现真实移动的统计规律、节律与活动序列”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：生成行为与重力执行共同作用；移动距离与集聚不能全部归因于LLM。</li>
-<li>核心假说与增量：在相同执行器下替换计划生成机制并留出真实事件。</li>
-<li>初始方法与如何验证：在相同执行器下替换计划生成机制并留出真实事件；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：已注入距离规律和历史校准可能解释表观真实性。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>AgentSociety 要解决的实际问题是：如何让大量语言模型智能体持续过日子，使出行、交往、工作和消费互相牵动，并允许研究者改变条件、观察群体响应？单次角色扮演可以生成像人的回答，却没有保证这个人下一刻会受到刚才行为的约束。只模拟舆论或消费，也难以表达“工作影响收入，收入影响消费，消费又要求出行”这样的跨领域联系。</p>
+<p>作者的核心设计判断是，把三层东西接起来：有持续心理状态的个体、提供客观反馈的环境、容纳大量异步互动的执行系统。论文先论证系统能运行，再用极化、煽动信息传播、全民基本收入、飓风出行与城市环保五类案例展示实验能力。其最扎实的贡献是建成可操作的社会实验平台；五类案例进一步说明它能生成若干与现实经验相近的模式，但这种相似还需逐项辨认，不能直接等同于准确预测真实社会。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从需求到行动，再把结果写回心理状态</h3>
+<p>第 3 节将个体分为相对稳定的档案和不断变化的状态：前者包括人口属性与人格，后者包括心理、经济状况及社会关系。情绪用关键词、文字想法及六类情绪的 0—10 分强度表示；特定议题的态度也用 0—10 分记录。这些是模型内部的状态表征，尚不是经过真人测量校准的心理指标。</p>
+<p>需求模块借用马斯洛层级组织优先事项，再借助计划行为理论的思路把需求转为计划和动作。这里的理论主要提供结构，第 3.2 节没有给出一套可单独检验的完整心理动力学方程。真正把前后行为串起来的是第 3.6 节的流式记忆：事件流保存何时、何地、发生了什么，感知流保存个体对此的理解和态度，并关联相应事件。</p>
+<p>例如，智能体因社交需求计划赴约，环境反馈它是否实际到达；结果写入事件流，失约或成功的体验进入感知流，进而更新情绪、态度和后续需求。这是对系统流程的理解演示。表 6 的一天生活则给出论文中的具体轨迹：安全需求驱动工作，饥饿、社交和疲倦等需求驱动进食、交往与休息。它展示了行为连贯性，但单个案例不能测出整体人群的行为逼真程度。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-memory-behavior-loop.png?v=3dac86d8f53efec810d4304de195fc53d587353dd81e25bb6546d5df5943a60a" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-memory-behavior-loop.png?v=3dac86d8f53efec810d4304de195fc53d587353dd81e25bb6546d5df5943a60a" alt="需求、行为与双重记忆形成反馈闭环" loading="lazy" decoding="async"></a></p>
+<p>图示：上层为心理状态，下层为计划及行为，中间时间线连接事件 E 与感知 C；行动产生经历，经历反馈到态度和情绪。原图 Fig. 8，arXiv v2，PDF 第 13 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=13">来源</a>。</p>
+<h3>环境负责约束，语言模型负责情境决策</h3>
+<p>第 4 节把环境分成城市、社交和经济三个空间。城市空间使用道路、区域与兴趣点，交通规则计算位置、耗时等反馈；社交空间保存关系与联系强度，消息监管器可过滤内容、封禁账号或切断关系；经济空间用账本处理劳动、工资、消费、税收和利息。这样，模型表达“去购物”后，还必须面对路程、时间与资金约束。社交行为目前主要通过在线消息实现，不能把框架中的线下互动接口理解为已经充分验证了现实面对面交往。</p>
+<p>出行目的地选择体现了这种分工：语言模型提取意图、筛选地点类型、决定可行半径，再由重力模型分配选择概率。式（1）用于比较候选地点；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 是从位置 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> 选择地点 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span></span></span></span></eq> 的无量纲概率，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">S_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 是吸引力权重（原文未指定计量单位），<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">D_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq> 是距离，所有距离须用同一单位，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span></span></span></eq> 是无量纲距离衰减指数，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq> 遍历候选地点：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>S</mi><mi>j</mi></msub><mi mathvariant="normal">/</mi><msubsup><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>β</mi></msubsup></mrow><mrow><munder><mo>∑</mo><mi>k</mi></munder><msub><mi>S</mi><mi>k</mi></msub><mi mathvariant="normal">/</mi><msubsup><mi>D</mi><mrow><mi>i</mi><mi>k</mi></mrow><mi>β</mi></msubsup></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+P_{ij}=\frac{S_j/D_{ij}^{\beta}}{\sum_k S_k/D_{ik}^{\beta}}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.9283em;vertical-align:-1.1583em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.77em;"><span style="top:-2.143em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1864em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.967em;"><span style="top:-2.3987em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">ik</span></span></span></span><span style="top:-3.1809em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0528em;">β</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3013em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.803em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.967em;"><span style="top:-2.4231em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0572em;">ij</span></span></span></span><span style="top:-3.1809em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0528em;">β</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.413em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1583em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>理解演示，非论文实验：两个候选商店吸引力分别为 4 和 8，距离分别为 1 km 和 2 km，取 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq>。权重为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi mathvariant="normal">/</mi><msup><mn>1</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">4/1^2=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">4/</span><span class="mord"><span class="mord">1</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi mathvariant="normal">/</mi><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">8/2^2=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">8/</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq>，所以选择概率为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi mathvariant="normal">/</mi><mn>6</mn><mo>=</mo><mn>66.7</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">4/6=66.7\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4/6</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">66.7%</span></span></span></span></eq> 与 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>6</mn><mo>=</mo><mn>33.3</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">2/6=33.3\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2/6</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">33.3%</span></span></span></span></eq>。第二家虽更有吸引力，距离惩罚仍使第一家更可能被选中。由此可见，模拟结果同时包含语言模型决策和人为指定的行为规则。</p>
+<h3>如何让大量个体同时生活</h3>
+<p>第 5 节将智能体分组，每组由一个 Ray 进程运行，组内以 asyncio 重叠处理等待语言模型和环境响应的时间，并复用服务连接。MQTT 负责按个体地址传送消息，访谈、问卷和通知也走这一通道。研究者既能在开始前改变个体配置，也能在运行中修改状态或发送信息。这里的“异步”指个体不必按固定对话顺序行动，并不意味着现实社会中的时间因果关系已经得到全面验证。</p>
+<p>心理模块、双流记忆及跨领域环境共同构成闭环，但论文没有逐一移除这些组件的消融实验，因而没有分离出每个设计对真实性的独立贡献。</p>
+<h2>三、主要结果与证据</h2>
+<h3>规模首先是工程结果</h3>
+<p>第 6 节需要区分三种规模：环境负载测试最高到百万个体，消息系统测试为十万节点，完整语言模型智能体的性能测试为一千与一万名。它们不能互相替代。</p>
+<p>表 4 中，一万名智能体从 8 组增至 32 组，每轮耗时由 5681.18 s 降至 458.82 s，按表值计算约快 12.38 倍；32 组时环境调用平均 30.53 ms，语言模型调用平均 8.05 s。实验使用 64 核机器，环境与引擎各分配 32 核，并在 DeepSeek-V3 服务低峰时测试。该结果说明并发配置有明显作用，但受外部服务波动影响，不是纯算法加速比；一千名时 16 组还略快于 32 组。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-simulation-scaling.png?v=008345f87c21fdf73ddfeda020efb4d75b71c651a344bbde55365509e6f1de35" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-simulation-scaling.png?v=008345f87c21fdf73ddfeda020efb4d75b71c651a344bbde55365509e6f1de35" alt="不同智能体规模和分组数量下的性能" loading="lazy" decoding="async"></a></p>
+<p>表注：原表 Table 4，各行比较智能体数与分组数；ITs、OTs 为每次调用的输入、输出 token 数，All 为每轮秒数，LLM 与 Env 分别用秒/次和毫秒/次。表中未给出这些均值的误差。arXiv v2，PDF 第 26 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=26">来源</a>。</p>
+<p>MQTT 也并非吞吐最高的方案。表 3 的五次测试中，它为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>44702.1</mn><mo>±</mo><mn>111.3</mn></mrow><annotation encoding="application/x-tex">44702.1\pm111.3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">44702.1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">111.3</span></span></span></span></eq> 条/s，Redis 为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>81216.2</mn><mo>±</mo><mn>333.6</mn></mrow><annotation encoding="application/x-tex">81216.2\pm333.6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">81216.2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">333.6</span></span></span></span></eq> 条/s，均为均值±标准差；作者选择 MQTT 主要因为吞吐满足需求且有监控工具。表 5 报告每个体每天约 492 次环境互动，其中约 466 次只是城市状态查询。因此，摘要中的约五百万次互动不能理解成五百万段人际对话。</p>
+<h3>舆论实验：改变接触内容，会改变模拟中的传播与态度</h3>
+<p>极化实验让智能体讨论枪支管制，图 14 标示规模为 100 名。图 16 的对照组中，39% 变得更极端、33% 更温和；只接触同立场说服信息时，更极端者升至 52%；只接触相反立场信息时，89% 更温和、11% 转到对立立场。这支持了当前设置中“接触内容改变意见走向”，也重现了回音室式趋势。它没有证明所有相反观点暴露都会使真实人群去极化。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-opinion-exposure.png?v=3861f163dc421bebad1e56f67ee85800768547e7c073a9b85055796b1f7519c4" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-opinion-exposure.png?v=3861f163dc421bebad1e56f67ee85800768547e7c073a9b85055796b1f7519c4" alt="不同观点接触条件下的态度变化" loading="lazy" decoding="async"></a></p>
+<p>图示：横轴依次为更极端、更温和、转到对立立场和不变，纵轴为个体比例；a—c 比较自然讨论、同立场接触与相反立场接触。各面板纵轴上限略有不同，未展示重复运行误差。原图 Fig. 16，arXiv v2，PDF 第 30 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=30">来源</a>。</p>
+<p>煽动信息实验以徐州“铁链女”事件为背景，对比普通种子信息、煽动性种子信息，以及两种监管方式：封禁反复传播者，或永久移除传播煽动信息的连接。图 17 中，煽动信息传播更广、情绪更强；封禁节点的抑制效果大于删边，但两者均未完全回到普通信息组水平。这个排序属于该网络、分类器及干预规则共同产生的结果；正文未给出封禁阈值，也未将两种策略按相同干预成本对齐。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-message-interventions.png?v=75bba5eef6b6e6b0c51484e4d7f0fd98efc868eca20a6df80529f7428184b5f7" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-message-interventions.png?v=75bba5eef6b6e6b0c51484e4d7f0fd98efc868eca20a6df80529f7428184b5f7" alt="信息传播和情绪随时间的变化及监管效果" loading="lazy" decoding="async"></a></p>
+<p>图示：横轴为模拟时间步；a 的纵轴是传播范围，b 是情绪强度。四条曲线分别对应普通信息、煽动信息、节点干预与边干预，未给出误差带。原图 Fig. 17，arXiv v2，PDF 第 31 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=31">来源</a>。</p>
+<p>图 18 的访谈词云表达了智能体所述的情绪和社会责任感；它能帮助理解生成的解释，不能独立证明真人转发的心理原因。该实验人数在图 14 写为 100 名，而第 7.3 节称数百名，精确规模口径不一致。</p>
+<h3>经济与灾害实验：方向相似，效应量仍需区分</h3>
+<p>UBI 实验依据得州人口分布配置个体，图 14 标示 100 名；第 96 步开始每人每月无条件发放 1000 美元，与不发放组比较后续 24 步。图 19 展示经济序列从大幅波动趋于相对稳定；图 20 则显示发放组平均消费略高，智能体填写的 CES-D 抑郁量表分数略低。消费误差条明显重叠，原文又未说明误差类型、独立重复数或显著性检验，故只能报告图示均值方向。量表回答来自模型，不是人的临床改善。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-basic-income-outcomes.png?v=3136ed6af8c509020702bd9bca46d38de7f65be6b7dd3a7329b3c97786e580d5" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-basic-income-outcomes.png?v=3136ed6af8c509020702bd9bca46d38de7f65be6b7dd3a7329b3c97786e580d5" alt="有无基本收入时的消费与抑郁量表结果" loading="lazy" decoding="async"></a></p>
+<p>图示：横轴比较有、无 UBI，纵轴分别为消费水平和抑郁量表分数；消费轴没有标明货币单位，不能直接解读为美元。两图纵轴均未从零起始，且误差条定义未说明。原图 Fig. 20，arXiv v2，PDF 第 33 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=33">来源</a>。</p>
+<p>飓风实验提供了更直接的观测数据对照：在南卡罗来纳州哥伦比亚市，用人口普查街区组资料抽样 1000 名智能体，输入天气变化，并比较 2019 年 8 月 28 日至 9 月 5 日的 SafeGraph 出行数据。图 22 报告活动人数占地区人口的比例由灾前约 70%—90% 降至约 30%，随后恢复。图 23 的真实与模拟曲线都出现下降和恢复，但模拟在 8 月 31 日至 9 月 2 日下降更深，显示它捕捉到了阶段趋势，同时夸大了这一时段的出行收缩。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-hurricane-mobility.png?v=6a4b0224979709aba3ab8d2698698b7a57e1bd5eeff4c7b475cd7f12ee1c7814" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-hurricane-mobility.png?v=6a4b0224979709aba3ab8d2698698b7a57e1bd5eeff4c7b475cd7f12ee1c7814" alt="飓风期间真实与模拟日出行的比较" loading="lazy" decoding="async"></a></p>
+<p>图示：横轴为日期，纵轴为归一化访问量，蓝线为真实数据、红线为模拟。归一化后形状相近不代表绝对出行量一致；原文未报告预测误差或留出时段评估。原图 Fig. 23，arXiv v2，PDF 第 35 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=35">来源</a>。</p>
+<h3>城市环保：同时观察表态与实际模拟行为</h3>
+<p>第 7.6 节在北京 GIS 环境中配置 200 名异质智能体，邀请六个独立团队设计规范干预。实验仅两天：第一天允许有限直接交流、张贴海报和全城广播，后两者每次分别花费 1000、10000，总预算上限 100000，原文未注明货币单位；第二天停止干预，用表 7 的十道环保情境题衡量规范倾向，再按实际模拟行程的距离和方式估算碳排放。这个设计的关键是把问卷与后续行动分开观察，减少仅凭口头表态判定成功的问题。</p>
+<p>图 24 中，团队 3 的规范强度相对基线提高 15.15%，出行排放降低 13.48%，两项最高。六方案呈总体正向关联，但团队 4 的规范强度只增加 0.08%，仍减排 6.60%，说明态度变化和行为变化并非一一对应。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-environmental-norm-outcomes.png?v=b1d932d3ea0e79e001cd21d5c587178cb3251d68fcea639150683e693ff879f6" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-environmental-norm-outcomes.png?v=b1d932d3ea0e79e001cd21d5c587178cb3251d68fcea639150683e693ff879f6" alt="六套环保干预的规范变化与减排结果" loading="lazy" decoding="async"></a></p>
+<p>图示：a、b 的横轴分别为相对基线的规范强度增幅与排放降幅；c 将两者配对，每点是一支团队，虚线及阴影展示拟合趋势，不能作为因果效应或六队之外的预测。原图 Fig. 24，arXiv v2，PDF 第 36 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=36">来源</a>。</p>
+<p>作者用图 25 解释方案差异：描述性规范强调别人怎么做，指令性规范强调应该怎么做，个人规范强调道德义务，身份规范强调自我认同。团队 3 的个人规范占 42%、身份规范占 33%；团队 2 则有 83% 为指令性规范。作者由此提出，内化义务与身份认同可能更有效。不过六队自由设计的整套方案同时改变了内容、渠道等因素，没有只替换一种规范的对照，因此这里提供的是机制线索。</p>
+<p><a class="reading-image" href="assets/piao2026agentsociety/fig-normative-composition.png?v=f51d6364ea71ba33fc785e11442643ee79871a311babd9876cb9aa3d4f93cb69" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/piao2026agentsociety/fig-normative-composition.png?v=f51d6364ea71ba33fc785e11442643ee79871a311babd9876cb9aa3d4f93cb69" alt="六团队方案中四类规范的组成" loading="lazy" decoding="async"></a></p>
+<p>图示：各饼图比较描述性、指令性、个人与身份规范的比例；它解释干预构成，不表示各规范的独立贡献。原图 Fig. 25，arXiv v2，PDF 第 36 页；<a href="https://arxiv.org/pdf/2502.08691v2#page=36">来源</a>。</p>
+<h2>四、意义与适用边界</h2>
+<p>这项工作的价值在于把自然语言互动、生活约束和实验操控接成一套可运行系统。它使“给谁什么信息”“改变哪项经济条件”“何时停止干预”成为可操作变量，也让问卷结果、心理状态与行为记录能够并置观察。性能测试回答平台能否承载负载，案例回答它能否产生有解释价值的响应，两者共同支撑了实验平台的定位。</p>
+<p>真实性的证据仍以特定场景的模式复现为主。人口属性相似不能保证行为分布相似；共享语言模型的许多个体，也不等于同样多的独立真人样本。论文没有展示跨基础模型的稳定性，亦没有排除既有事件知识对历史案例复现的影响。经济环境还明确省略了细致商品竞争、失业和劳资议价，因此 UBI 结果受这些简化条件限制；环保实验只观察两天，不能代表长期习惯形成。</p>
+<p>第 9 节把平台延伸到个体预测、现实社会同步和人机混合社会。这些构想超出了当前五类案例直接验证的范围。就现有证据，AgentSociety 适合被理解为一个能比较模型内干预后果、连接多领域行为的生成式社会实验环境；从这样的环境走到现实政策效应与未来预测，还需要相应的外部验证。</p>
 </main></body></html>

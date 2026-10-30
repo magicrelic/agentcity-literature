@@ -1,0 +1,23 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1109/TAU.1967.1161901" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Welch - The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms</h1>
+<p><strong>通过短记录的修正周期图平均进行功率谱估计。</strong> IEEE Transactions on Audio and Electroacoustics，1967，15：70–73。DOI：<a href="https://doi.org/10.1109/TAU.1967.1161901">10.1109/TAU.1967.1161901</a>。</p>
+<blockquote>
+<p>资料范围：仅摘要的部分解读。依据 OpenAlex 倒排摘要索引逐字重建的原始摘要，来源为 <a href="https://api.openalex.org/works/W2106822551">OpenAlex 论文记录</a>；未取得正式版或作者稿全文，Methods、结果、全部主图表及研究性补充材料均未取得，补充材料是否存在亦未确认。无可核对的 PDF 页序；70–73 为书目信息所列印刷页码范围。</p>
+</blockquote>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>Welch 讨论的实际问题是：怎样把快速傅里叶变换（FFT）用于功率谱分析，同时减少计算次数和所需的主存储空间，并便于开展非平稳性检验。这三个目标均由摘要直接提出，涵盖计算资源与分析用途两个方面。</p>
+<p>摘要没有说明此前方法的具体资源瓶颈、比较对象或运行条件。因此，现有证据能够确认作者把计算量、存储需求和非平稳性检验作为方法优势，却不能确定这些优势分别相对于何种实现成立，也不能给出改善幅度。</p>
+<h2>二、研究方法与关键机制</h2>
+<p>摘要末句给出了最明确的方法骨架：把一段记录分成若干段，分别计算各段的修正周期图，再将这些周期图平均。结合题名中的“短”与“时间平均”，可以把处理顺序理解为：以时间上的短段为处理单元，先产生段级谱估计，再合成为一个平均结果。分段和平均因而是摘要明确列出的操作；FFT 则是这套功率谱分析方法使用的计算工具。</p>
+<p>这里最需要辨清的是“修正”一词的证据范围。摘要使用了 modified periodograms，却没有定义修正方式，也没有给出段长、段间关系、权重或归一化。仅凭这一术语，不能指定某种窗函数、重叠比例或软件参数。FFT 如何嵌入具体计算、怎样从分段结构获得所称的资源优势，也需要正文中的算法和分析才能展开。</p>
+<p>摘要没有给出估计公式，其符号、单位和归一化约定无法确定。对于分段、修正和平均各自承担什么作用，目前能确认的是它们在作者描述的流程中出现；各环节的独立贡献尚无可读取的推导或对照证据。</p>
+<h2>三、主要结果与证据</h2>
+<p>摘要把主要优势列为三项：减少计算次数、降低所需主存储空间，以及便于应用于非平稳性检验。三者都是作者的明确主张，但其证据形态在现有材料中止于摘要陈述：没有可读取的复杂度推导、计时结果、内存测量或检验示例。</p>
+<p>因此，这篇论文在当前可读范围内最清楚的贡献，是把“FFT 功率谱分析”与“分段后平均修正周期图”的处理结构联系起来。摘要末句承担方法定位，前一句承担优势概括；两者共同说明作者提出了怎样的方案及其预期用途，却没有展示足以复核优势大小的中间论证。</p>
+<p>摘要所称的“便于非平稳性检验”是一项用途主张，并未报告检出了某种非平稳现象，也未表明平均后的谱本身就构成非平稳性证明。摘要亦未报告样本量、频率分辨率、估计误差、置信范围及对照条件，因而无法评价这些方面的表现。</p>
+<h2>四、意义与适用边界</h2>
+<p>这份摘要传达的核心思路是：功率谱估计可以围绕短记录的段级处理与时间平均来组织，并使用 FFT 进行相关计算。它让读者看到作者把资源需求与分析用途放在同一方法框架中考虑；这也是现有材料能够支持的主要理解。</p>
+<p>适用条件仍取决于未取得的正文。现有摘要不足以确定该方法对信号性质的要求，不能确认分段和平均怎样影响谱估计的偏差、方差或分辨能力，也无法判断何种条件下资源优势成立。由此得到的是对论文问题与方法骨架的部分理解，尚不具备复现原算法或核实定量结果所需的信息。</p>
+</main></body></html>

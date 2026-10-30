@@ -1,0 +1,55 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Large language models empowered agent-based modeling and simulation: a survey and perspectives · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1057/s41599-024-03611-3" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Gao et al. - Large language models empowered agent-based modeling and simulation: a survey and perspectives</h1>
+<p><strong>大语言模型如何把个体行为生成接入复杂系统仿真，以及怎样判断这种仿真是否真实。</strong> Humanities and Social Sciences Communications，2024，11，文章号1259。<a href="https://doi.org/10.1057/s41599-024-03611-3">DOI：10.1057/s41599-024-03611-3</a>。</p>
+<blockquote>
+<p>资料范围：部分解读。依据正式发表版（Version of Record）24页，覆盖全部正文、检索与筛选方法说明、全部6幅主图和表1，以及参考文献与文末声明；原文没有独立Methods章节。未取得研究性补充文献，补充附件是否存在及其清单尚未确认。被引研究的讨论限于本篇综述实际呈现的内容，不包含对其全文的独立解读。以下PDF页序与印刷页码一致。</p>
+</blockquote>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>这篇综述讨论的核心，是能否用大语言模型（LLM）驱动具有不同身份、经验和目标的个体，让它们在共同环境中持续行动与交互，进而产生可研究的群体变化。它整理已有系统、提出分类与评价框架，没有开展一套新的跨领域对照实验。因此，文中“LLM能够改善仿真”的主张，要沿着各项被引研究的任务与验证条件理解。</p>
+<p>基于智能体的建模与仿真（ABMS）从个体出发：每个代理有自身属性和决策规则，环境规定资源与约束，交互把个体行动汇聚成交通、市场、舆论等宏观现象。传统方法包括预设规则、符号方程、随机模型和机器学习。作者指出的具体困难是：局部感知—行动规则难以表达长期规划；针对一个环境设计的代理难以迁移到另一个环境；行为准确性、机制可解释性和环境适应性难以兼得（Background，第2—4页）。</p>
+<p>作者押注于语言作为通用接口：环境可以描述为文本，身份和偏好可以通过提示指定，代理之间可以直接交流，还可以结合工具执行动作。这样，研究者不必为每一种处境逐条手写反应规则。图1把自主性、社会能力、反应性和主动性这些仿真需求，与LLM的感知、推理、决策和自我演进能力联系起来；这是一张能力对应示意图，不是性能比较结果（第5页）。</p>
+<p>这里存在一个贯穿全文的张力：<strong>能力更强，不自动等于更像真实的人。</strong> 作者在Background强调人的有限理性，但随后又以更正确、更优的决策说明LLM的优势。仿真要复制的可能恰好是人的偏见、信息不足和不合作。因此，是否达成任务目标，与是否忠实模拟目标人群，是两种需要分别验证的结果。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从文献筛选到两维分类</h3>
+<p>第2页“Discussions on PRISMA”说明，作者从期刊、会议、预印本和多个数据库检索LLM与ABMS的交集，并通过Google Scholar追踪引用；筛选重点是是否使用LLM代理、是否属于代理仿真，排除了20余篇主要把LLM作为助手或决策辅助的工作。随后按“应用领域”和“环境类型”组织文献。</p>
+<p>领域分为社会、物理、网络和混合四类；社会领域进一步展开为社会科学与经济系统。环境则分虚拟与真实。这两维分别回答“模拟什么系统”和“代理在何种环境中活动”。例如，社交行为可以在虚构小镇中模拟，也可以由真实社交网络数据初始化。表1提供这两维的交叉索引。不过，作者没有报告完整检索日期区间、各阶段记录数或逐项质量评价；这套材料更适合用于理解研究版图，而不宜据此计算整个领域的精确覆盖率。</p>
+<h3>代理怎样进入一个持续变化的世界</h3>
+<p>第7—9页把构造过程拆成环境与接口、人类对齐与个性化、行动生成和评价四个环节。真正把语言生成接入仿真的一步，是行动必须改变可继续运行的环境，而环境变化又成为下一轮决策输入。</p>
+<p><a class="reading-image" href="assets/gao2024large/fig-agent-environment-feedback.png?v=a1168dbb283cbe5704827ed183253f79dcca169601d04fe03fb1d31112ffe7d4" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gao2024large/fig-agent-environment-feedback.png?v=a1168dbb283cbe5704827ed183253f79dcca169601d04fe03fb1d31112ffe7d4" alt="代理内部状态、行动生成与环境更新形成反馈循环" loading="lazy" decoding="async"></a></p>
+<p>图示：原图2，正式发表版，PDF第6页。左侧为用户、消息和网络构成的环境，右侧为具有情绪、态度等内部状态的代理；底部点赞、转发、评论和内容生成分别通向环境更新与记忆更新。图中没有数值坐标或误差条，箭头表示信息流与更新关系。原图由作者根据S3修改，用于解释工作流程，未展示模块效果量。<a href="https://doi.org/10.1057/s41599-024-03611-3">来源</a>。</p>
+<p>环境首先要定义世界规则、可观察状态和可执行动作。即使场景是有空间结构的小镇，输入仍可能是文本描述；工具则把语言输出转成函数参数、程序或模拟器操作。代理之间既能通过消息直接交流，也会经由共享市场、工厂或资源产生间接影响。由此，LLM承担决策生成，环境仍承担状态转换和规则执行（Environment construction and interface，第7页）。</p>
+<p>对齐与个性化解决的是不同问题。前者补足领域知识、规则或价值约束，后者赋予代理各自的职业、偏好和关系。作者将两者的实现都归为提示工程与调优：提示在推理时提供背景和示例，调优则借助数据或反馈改变模型。可控的角色差异使异质群体成为可能，但“提示里写了某种性格”与“行为分布确实符合对应人群”之间，还隔着验证（第7—8页）。</p>
+<p>行动生成再由规划、记忆和反思配合。规划把大目标拆成子目标，并根据执行反馈修订；记忆以外部存储缓解上下文容量限制，组织和检索经历或技能；反思把行动反馈整理成后续决策可用的经验。以综述介绍的GITM为例，“挖到钻石”被分成子目标树，代理结合文本知识与记忆逐步执行。这里的适应可以通过上下文和外部记忆发生，并不意味着模型权重在每轮仿真中更新。</p>
+<p>这些机制解释了代理为何能够连续行动，但本篇综述没有统一消融实验，不能证明每个模块对所有场景都不可缺少。第17页对Generative Agents的介绍转述了众包评估对记忆、反思和规划的支持；具体效果量、样本量和消融条件并未在本篇展开。</p>
+<h3>评价为何必须分个体与群体</h3>
+<p>第9—10页区分微观行为真实性、宏观规律、解释与伦理。微观评价可以预测某个用户下一步的情绪或交互标签，宏观评价则比较传播速度、态度变化或经济规律。两者不能互相替代。</p>
+<p>一个理解演示（非论文实验）是：10人中真实持正面态度的是第1—6人，仿真认为是第5—10人。两组正面比例均为<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi mathvariant="normal">/</mi><mn>10</mn><mo>=</mo><mn>60</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">6/10=60\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">6/10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">60%</span></span></span></span></eq>，但逐人判断只有第5、6人正确，准确率是<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>10</mn><mo>=</mo><mn>20</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">2/10=20\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2/10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">20%</span></span></span></span></eq>。宏观比例完全一致，仍可伴随严重的个体错误。这说明作者为何要求同时考察两个层次。类似地，代理能流畅解释行动，只能提供可检查的理由，不能单凭解释文本确认其内部机制或现实因果关系。</p>
+<h2>三、主要结果与证据</h2>
+<h3>社会领域占主导，但计数口径并不完全一致</h3>
+<p><a class="reading-image" href="assets/gao2024large/fig-research-domain-distribution.png?v=aac0b826a4546b6f0ec3149d9cbb36cfd2cc646d4e717869afdf133d9378926e" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gao2024large/fig-research-domain-distribution.png?v=aac0b826a4546b6f0ec3149d9cbb36cfd2cc646d4e717869afdf133d9378926e" alt="综述所列领域与仿真目标的分布" loading="lazy" decoding="async"></a></p>
+<p>图示：原图4，正式发表版，PDF第12页。内环区分社会、物理、网络和混合领域，外环细分仿真目标；括号是工作数量，扇区表示其相对份额，没有实验误差。图中社会40项、网络6项、物理5项、混合5项，合计56项，支持“社会领域在该图统计中占多数”。<a href="https://doi.org/10.1057/s41599-024-03611-3">来源</a>。</p>
+<p>表1（第11页）逐行则列出社会45项、物理5项、网络6项、混合5项，共61项，与图4不同。两者都指向社会领域占主导，但无法据此给出唯一的精确占比。第10页另外报告约50%的工作考虑规划、50%使用反思、80%进行现实世界评价、40%考虑伦理评价，且几乎都设计了记忆机制；文中未给出相应逐项编码表或明确分母，这些是作者的概括性统计，不是模块有效率。</p>
+<h3>社会科学：网络规律、协作与个体行为是三类问题</h3>
+<p><a class="reading-image" href="assets/gao2024large/fig-social-simulation-levels.png?v=7b5ebe0aca43907b545a1832566fd2883630276cbd07a4a4c59d827502f41808" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gao2024large/fig-social-simulation-levels.png?v=7b5ebe0aca43907b545a1832566fd2883630276cbd07a4a4c59d827502f41808" alt="社会科学仿真分为网络动力学、合作任务与个体行为" loading="lazy" decoding="async"></a></p>
+<p>图示：原图5，正式发表版，PDF第12页。从左至右分别是信息传播与趋势、多角色共同完成任务、带有身份和认知模块的个体。左栏柱线图是示意符号，没有可读取的数值轴；三栏表达研究对象的区别，不表示效果高低。<a href="https://doi.org/10.1057/s41599-024-03611-3">来源</a>。</p>
+<p>网络动力学的代表是S3。综述介绍它用真实网络数据初始化，在性别歧视和核能话题下模拟情绪、态度与交互；微观上比较下一状态标签，宏观上比较传播速度、范围和态度趋势。网络形成研究则观察到三角闭合与同质性比优先连接更影响代理的连边决定。这些结果支持特定设置下的社会模式再现，尚不能说明所有社会机制都被准确恢复（第10、13页）。</p>
+<p>协作研究把代理分配成分析者、辩论者、总结者，或软件公司的不同职位。ChatDev与MetaGPT以角色和流程组织任务，AgentVerse则根据任务调整代理组合。这些工作主要提供“如何安排交互以完成任务”的证据；任务分数提升与再现真实团队行为仍是不同结论。个体行为研究进一步加入需求、情绪和关系亲疏，或用人口特征生成问卷响应。综述一方面转述部分合成人类回答具有相似性，另一方面也介绍用户模拟器与真实用户存在偏离的研究（第13—14页）。</p>
+<p>偏差还有双重含义：传播链中的刻板印象或负面内容偏好，可以成为研究人类式信息偏差的对象；如果目标是无偏地代表人群，它们又会损害仿真。作者并未把“像人”统一等同于“没有偏差”。</p>
+<h3>经济系统：个体合理性、互动策略和宏观规律逐层递进</h3>
+<p><a class="reading-image" href="assets/gao2024large/fig-economic-simulation-levels.png?v=da33084e8a98993528abcc5f0b9d6e922df4413d43f7ce366e6017b85b4d73c1" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gao2024large/fig-economic-simulation-levels.png?v=da33084e8a98993528abcc5f0b9d6e922df4413d43f7ce366e6017b85b4d73c1" alt="经济仿真由单个决策扩展到博弈与市场系统" loading="lazy" decoding="async"></a></p>
+<p>图示：原图6，正式发表版，PDF第14页。左栏考察理性、偏差和预期，中栏考察博弈互动，右栏考察交易与市场；这是三个分析层次，没有统一指标或数值比较。其意义在于展示从“答一道经济问题”到“生成市场动态”之间还需增加的交互结构。<a href="https://doi.org/10.1057/s41599-024-03611-3">来源</a>。</p>
+<p>个体层面，综述介绍了公平偏好、现状偏差与预算选择中的理性表现，但也报告相反的预测证据：用历史股价和相关推文预测股票变动的研究，LLM表现差于先进方法，部分情况下甚至差于线性回归；另一些通胀与经济预期研究则达到接近专业预测调查的结果。任务和信息来源不同，不能合并成LLM普遍具有可靠金融预测能力（第14—15页）。</p>
+<p>互动层面，重复囚徒困境中的合作率会随竞争、利他或自利提示变化，说明自然语言能够调节偏好表达；但代理有时不能恰当回应对手，甚至对背叛者保持较高合作倾向。其他研究又报告GPT-4在对手背叛一次后持续背叛。它们体现的是模型与设置依赖，不能抽象为一种稳定、统一的“LLM人格”。</p>
+<p>市场层面，一个更有辨别力的对照来自双寡头定价：综述转述，无交流时价格趋近Bertrand均衡，有交流时更接近垄断价格。该条件变化支持“沟通方式能够改变这一仿真市场的结果”，并不直接证明现实企业的行为。混合领域的宏观经济案例还把劳动与消费放进同一系统，规模由数十个代理扩展至数百个；相较所比较的规则与强化学习方法，LLM系统产生更合理、稳定的指标，并在该比较中再现失业率与通胀负相关的Phillips曲线（第15、17页）。本篇未列出统一误差、重复次数或置信区间，因此这一结果应保留在所述模型和比较条件内。</p>
+<h3>物理、网络与混合领域：接口决定能够模拟什么</h3>
+<p>物理领域包括导航、驾驶和无线网络。导航结合语言与视觉表示，驾驶代理从CARLA读取车辆和环境状态，再输出停车、加速或变道等操作；综述报告加入记忆与专家准则的框架降低碰撞率，但未给出可在此重算的降幅。无线网络案例中，4个用户代理参考彼此行动逐步调低功率，在保持传输速率的目标下节能，体现了共享环境中的协调（第16页）。</p>
+<p>网络领域的关键约束是网页或推荐系统的信息量。WebAgent分解指令、压缩HTML并生成操作程序，Mind2Web先以较小模型筛选网页内容；推荐系统代理则通过选择和反馈模拟用户。它们说明接口与信息筛选会影响代理能否行动，而不能仅凭成功操作网页就判断它代表真实用户（第16—17页）。</p>
+<p>混合领域把不同过程接起来：小镇同时包含空间活动和社会关系，疫情模型把疾病认知与移动接触结合，城市平台整合出行、社交与经济活动。Generative Agents产生聚会等可置信社会情节，是持续交互能力的例证；众包对可信度的判断仍区别于用真实人群数据校准。战争模拟所生成的国家互动同样可供探索情景，不能仅凭重现历史冲突就确认现实战争的原因（第17页）。</p>
+<h2>四、意义与适用边界</h2>
+<p>这篇综述最有价值的贡献，是把分散的LLM代理研究接成一条完整链条：定义世界、赋予差异化个体、让行为反复改变环境，再分别检查个体与群体结果。领域分类帮助读者找到场景，构造框架帮助读者比较系统，而微观—宏观评价区分则决定了结果能支持多强的结论。</p>
+<p>全文未来方向围绕这条链条的薄弱环节展开。扩大代理数量会增加推理、通信和记忆成本；文中引用批量提示最高约5倍的效率改善，但这不是整个人工社会的端到端加速保证。现有基准更常测试代理能否完成任务，专门检验仿真真实性的基准仍不足；开放平台也要处理代理与复杂环境的整合，而不只是提供模型调用接口（第17—18页）。</p>
+<p>稳健性与伦理问题则会从个体传播到群体。相同提示仍可能产生异常响应，攻击可能沿代理通信扩散，角色提示可能把人群压缩成刻板形象，偏差还会在传播链中放大。作者因此同时讨论个体与集体稳健性、重复性和多维人群表征，而没有把提高智能视为这些问题的自动解法（第18—19页）。</p>
+<p>据此，本篇证据足以说明LLM扩大了可构造、可交互的行为模型范围，也展示了若干具体社会和经济规律的再现。它尚未建立一个跨场景结论，证明这种方法整体优于传统ABMS，或能够直接替代真实人群实验和现实预测。其适用边界最终取决于：所模拟的人群与环境是否明确，行动是否受规则约束，观察到的模式是否有独立现实数据支持，以及结论是否停留在实际验证的尺度与条件内。</p>
+</main></body></html>

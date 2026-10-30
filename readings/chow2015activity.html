@@ -1,0 +1,57 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Activity-based Market Equilibrium for Capacitated Multimodal Transport Systems · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1016/j.trpro.2015.06.001" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Chow et al. - Activity-based Market Equilibrium for Capacitated Multimodal Transport Systems</h1>
+<p><strong>把活动日程与交通容量一起纳入多方式出行市场均衡。</strong> Transportation Research Procedia，2015，7：2–23。DOI：<a href="https://doi.org/10.1016/j.trpro.2015.06.001">10.1016/j.trpro.2015.06.001</a>。</p>
+<blockquote>
+<p>资料范围：部分解读。依据出版商页面所载原始英文摘要的文字提取版本；未取得正式版或作者稿全文，正文、Methods、公式、全部主图表及研究性补充材料均未覆盖。是否存在研究性补充材料尚未确定。以下仅解释摘要明确披露的问题、模型结构与结果。</p>
+</blockquote>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>这篇论文要解决的是：当多方式交通需求与个人活动日程相关、交通系统又存在容量约束时，怎样在同一模型里求出多方式出行的市场均衡？摘要把已有研究的缺口概括为：实证研究发现，多方式交通需求与个人活动日程高度相关，但既有解析均衡模型仍以单次出行为需求基础。这是作者在摘要中的文献判断；现有材料不能进一步核查其覆盖范围。</p>
+<p>两种建模单位的区别，是理解本文的入口。以单次出行为单位，关注的是一次交通选择；以活动日程为单位，则把活动参与及其伴随的交通安排放入同一个选择对象。作者明确纳入活动参与、公共交通、步行和车辆停车选择。因此，本文的分析对象扩展到了活动日程及其交通安排。摘要没有给出活动日程的具体变量与约束，不能据此补写时间窗、家庭成员协调或车辆使用规则。</p>
+<h2>二、研究方法与关键机制</h2>
+<p>摘要披露的模型可以沿着“生成日程—选择日程—处理容量—迭代分配”来理解。</p>
+<p>首先，作者对 Household Activity Pattern Problem（家庭活动模式问题）作多方式扩展，用它生成选择集中的活动日程。这个生成环节决定旅客有哪些候选安排；扩展中明确考虑活动参与以及公交、步行、停车等交通选择。不过，摘要没有展示任何一条完整日程，也没有说明候选日程如何筛选。</p>
+<p>其次，作者用带约束的混合 Logit 模型描述活动日程选择。选择对象是日程，容量约束则把这些选择与系统可承载的流量联系起来。摘要没有提供效用函数、随机系数分布、参数估计方法或选择概率公式，因此无法判断模型具体刻画了哪些偏好差异，也无法重建其数值计算。</p>
+<p>第三，作者通过拉格朗日松弛，确定容量约束的最优对偶价格，以实现市场均衡。这里需要区分两种“价格”：对偶价格是求解容量约束时产生的数学量，案例中的固定停车费则是政策情景中的收费。摘要没有说明二者如何对应，不能把它们直接等同。容量约束及其对偶价格承担了连接旅客选择与系统供给的核心作用，但这种作用目前只能从作者给出的模型描述识别，尚无完整推导可供检验。</p>
+<p>最后，逐次平均法与列生成结合，用于寻找适合流量分配的活动日程选择集，并在动态网络承载容量下分配流量。摘要将两者作为组合求解方法介绍，没有分开说明各自的实现步骤，也未披露更新公式、停止条件、计算耗时或比较算法。由于没有隔离这些组件作用的对照结果，不能判断某一求解组件是否不可替代。</p>
+<h2>三、主要结果与证据</h2>
+<p>摘要给出了两类应用证据。第一类是模型与算法的示例：作者称，其中可以观察到与 Vickrey 早高峰通勤模型类似的效应，并将其表述为一个特例。这说明作者尝试把新模型与经典通勤问题联系起来；但示例设定、输出曲线及推导均未取得，不能进一步断言两者在数学上完全等价。</p>
+<p>第二类是大多伦多地区 Oakville GO Transit 车站接驳“最后一公里”案例。摘要报告使用了 <strong>166 份调查样本，代表 3,680 人</strong>。这里必须保留两个数量的区别：3,680 人是摘要所称的代表人口，不能写成直接调查了 3,680 名独立受访者。其抽样、加权和代表人口的计算方式没有披露。</p>
+<p>在 **固定停车费 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>∗</mo><mo>∗</mo><mtext>情景下，摘要报告的结果如下。符号“</mtext></mrow><annotation encoding="application/x-tex">10** 情景下，摘要报告的结果如下。符号“</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">情景下，摘要报告的结果如下。符号</span><span class="mord">“</span></span></span></span></eq>”对应的具体币种及收费周期未在摘要中说明。</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align:right">基准值</th>
+<th style="text-align:right">收费情景值</th>
+<th style="text-align:right">按摘要数值计算的变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汽车接驳份额</td>
+<td style="text-align:right">54.8%</td>
+<td style="text-align:right">49.5%</td>
+<td style="text-align:right">下降 5.3 个百分点</td>
+</tr>
+<tr>
+<td>公交接驳份额</td>
+<td style="text-align:right">20.7%</td>
+<td style="text-align:right">25.9%</td>
+<td style="text-align:right">上升 5.2 个百分点</td>
+</tr>
+<tr>
+<td>Oakville 单活动居民的负效用</td>
+<td style="text-align:right">未给出绝对值</td>
+<td style="text-align:right">未给出绝对值</td>
+<td style="text-align:right">增加 11%</td>
+</tr>
+</tbody>
+</table>
+<p>这组结果支持的具体判断是：在作者的案例模型与收费情景中，停车收费伴随汽车接驳份额降低、公交接驳份额提高，同时特定居民群体承受更高负效用。前两项是接驳方式份额，不是整个地区所有出行的交通方式份额；后者只针对摘要所称的“单活动居民”，不能推广为所有旅客的平均损失。</p>
+<p>上述数字是摘要呈现的情景分析结果，不能写成实施停车收费后的实测因果效果。摘要也没有给出置信区间、敏感性分析或模型外验证。汽车份额下降与公交份额上升的幅度接近，但缺少其他方式的完整结果，不能据此认定减少的汽车旅客全部转向公交。负效用的尺度和基准值同样未给出，11% 不能换算成货币损失或福利总额。</p>
+<h2>四、意义与适用边界</h2>
+<p>这项工作的主要意义，在于把活动日程选择、交通方式选择与容量约束放进一个均衡框架。这样，政策分析既可以考察方式份额的变化，也可以呈现活动安排所对应的效用代价。Oakville 案例在摘要中同时报告方式份额与单活动居民负效用，正体现了这一分析视角。</p>
+<p>证据目前止于模型框架的文字描述和一组案例结果。正文缺失使得效用设定、容量定义、均衡条件、估计与校准、算法收敛以及情景可比性均无法展开。现有材料足以辨认作者提出了什么、算法各环节被安排做什么，以及案例报告了哪些方向和幅度；不足以验证技术推导或判断结果能否迁移到其他车站、收费水平和人群。可从摘要把握的核心，是活动日程与容量共同进入均衡分析，以及停车收费情景中方式份额变化与特定群体效用代价的并存。</p>
+</main></body></html>

@@ -1,0 +1,106 @@
+<!doctype html>
+  <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Analysis of architecture options for foundation-model-based agents: A taxonomy and decision model · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
+  <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1016/j.jss.2026.113109" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Zhou et al. - Analysis of architecture options for foundation-model-based agents: A taxonomy and decision model</h1>
+<p><strong>基础模型智能体的架构设计：把能力选项转化为系统质量取舍</strong></p>
+<p>Journal of Systems and Software，2027，243 卷。DOI：<a href="https://doi.org/10.1016/j.jss.2026.113109">10.1016/j.jss.2026.113109</a>；所读原文：<a href="https://arxiv.org/pdf/2408.02920v2">arXiv v2 作者稿</a>，2026 年 9 月 9 日。</p>
+<blockquote>
+<p>资料范围：部分解读，依据 arXiv v2 作者稿完整 39 页，覆盖正文第1–9节、第3节方法、全部主图1–6、表1–5及附录A的专家问卷。未取得正式发表版及文中外链复现资料；其他研究性补充附件的存在与范围尚未确认。以下页码均指原PDF页序；第2–32、38–39页的印刷页码与PDF页序一致，首页及问卷所在第33–37页无印刷页码。</p>
+</blockquote>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>一个智能体能规划、记忆、调用工具，不等于这些能力已经组成可维护、可靠、可审计的系统。作者面对的实际问题是：现有框架提供了很多组件，却没有统一方式说明“选择这个组件，会牺牲哪一种系统质量”。例如，多路径推理可能更能应对意外，但也让执行轨迹更难复现；共享更多记忆可能便利协作，同时扩大信息暴露和协调成本。只列能力清单，无法完成这种架构判断（第1节）。</p>
+<p>本文通过系统文献综述组织设计空间，并提出定性决策矩阵。它没有开发一种新的智能体算法，也没有以统一基准实验比较各种架构。其核心主张是：从文献中提炼架构选项，区分功能与质量，再显式连接二者，可以让设计选择更有条理。三个研究问题依次是“有哪些选项”“形成哪些取舍”“如何用于设计”（第3节）。整篇论证最关键的一步，是从描述性分类走向“某选项倾向于怎样影响某质量”的判断；这一步的依据和强度，决定了决策模型能够承担多大的指导作用。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从文献到分类：先统一概念，再分解设计问题</h3>
+<p>证据检索窗口为2017年7月至2025年7月。作者先从八个软件工程会议或期刊获得35篇准金标准文献，用它们辅助提取检索词，再检索七个数据库，获得19,644条记录。经篇幅、主题、文献类型、去重和全文筛选，形成640篇候选；质量评估分别排除47篇和538篇，留下55篇；前后向滚雪球检索再加入11篇，最终为66篇，其中52篇经同行评审、14篇为预印本（图1、表1–2，第5–8页）。这一筛选明确偏向具有架构贡献的研究，排除了仅评测任务表现、少于八页、非英语等文献。</p>
+<p>质量评估先检查研究对象与文献类型，再对动机、架构描述、方法、评价、发现、创新、发表场所和局限等评分。同行评审论文八项各0–2分，至少12/16分；预印本不评发表场所项，至少10/14分。两者门槛分别为75%和约71.4%，并不完全相等。作一个理解规则的演示，而非论文观测：某同行评审论文五项完全满足、三项部分满足，得分为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">5\times2+3\times1=13</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">13</span></span></span></span></eq> 分，即81.25%，通过门槛。评分控制的是文献纳入质量，不能据此把其架构结论变成无条件事实。</p>
+<p>作者用主题分析进行编码，并把不同论文中的近义词归并。例如，编排器、中心控制器等概念可归入集中式协调。功能类别主要自下而上形成，质量类别则以 ISO/IEC 25010 及架构文献为初始框架，再与所纳入研究对照修订。初次分类、提取和质量评分由一人完成、另一人审查，通过协商解决分歧；这与完全独立的双人编码不同（第3节、第7.2节）。</p>
+<h3>分类框架怎样避免把不同层次的问题混在一起</h3>
+<p>分类共有两大面向：功能能力回答系统如何运转，非功能质量回答运转得怎样。作者报告74种架构选项。功能部分分为11类：输入模态、上下文、角色、目标、规划、记忆、行动、反思、学习能力、工作流和底层模型访问（图2–4）。这些类别构成可组合的设计维度，而非把整个智能体划入唯一类型。</p>
+<p><a class="reading-image" href="assets/zhou2027analysis/fig-perception-planning-memory.png?v=77f9ac4171515975be8ef25cbeeb57b72ab0dc49187e9eefd10acf9b4d1aaf6f" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/zhou2027analysis/fig-perception-planning-memory.png?v=77f9ac4171515975be8ef25cbeeb57b72ab0dc49187e9eefd10acf9b4d1aaf6f" alt="从输入与目标到规划和记忆的架构分类" loading="lazy" decoding="async"></a></p>
+<p>图3｜功能分类前半部。树的分支表示设计问题及可选方案，没有性能坐标或实验分组；记忆被拆成类型、格式和操作，说明“有长期记忆”与“用什么格式、怎样读写”是不同选择。来源：arXiv v2，原图3，原PDF第12页，<a href="https://arxiv.org/pdf/2408.02920v2">原文</a>。</p>
+<p>规划被拆为规划引擎、工具选择和路径生成：采用模型内部推理还是外部规划器，与生成单路径还是多路径并不是同一问题。记忆又区分长期/短期、自然语言/向量/数据库等格式，以及读写、反思和共享；第4.6节明确允许混合格式。因此，“向量记忆”和“可读文本”也不必在整个系统中二选一。</p>
+<p>行动部分进一步拆出协调、通信、工具调用和物理/虚拟执行。集中式协调由中心细化任务并指挥；联邦式协调仍有高层编排器，但工作智能体具有较高执行自主性；完全分布式则无中心权威。这里的“联邦式协调”描述运行时组织关系，与第4.11节训练数据不集中、通过模型更新协作的“联邦学习”属于不同层次。</p>
+<p><a class="reading-image" href="assets/zhou2027analysis/fig-action-learning-models.png?v=25ccc2c5a86638ffd697984804612ccda9af332f327ce2827706a0786cbf15a2" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/zhou2027analysis/fig-action-learning-models.png?v=25ccc2c5a86638ffd697984804612ccda9af332f327ce2827706a0786cbf15a2" alt="行动、反思、学习、工作流与底层模型的架构分类" loading="lazy" decoding="async"></a></p>
+<p>图4｜功能分类后半部。反思分别按对象、反馈提供者和机制分类，底层模型则按用途、组合、来源和训练方式分类；相邻分支描述不同设计关注点，不代表它们在实际系统中互不影响。来源：arXiv v2，原图4，原PDF第17页，<a href="https://arxiv.org/pdf/2408.02920v2">原文</a>。</p>
+<p>反思针对计划、中间结果或最终输出，反馈可来自自身、其他智能体、人或环境；学习则区分自学习、上下文学习和群体学习。工作流关注任务控制流，规划关注策略生成，协调关注多个执行主体的互动。作者以“主要架构意图”处理边界案例，而非证明这些机制能被完全隔离（第3.3节、第4.8–4.10节）。底层模型还涉及专用/通用、单/多模型、自建/外购及集中/协同训练；分布式计算和在线更新被视为跨越上述分类的独立问题（第4.11节）。</p>
+<p>质量面向包含性能、可靠性、鲁棒性、韧性、安全、可维护性、负责任与可信AI、易用性和兼容性。三个近邻概念尤其需要分清：可靠性侧重正常条件下持续正确工作，鲁棒性侧重异常或干扰输入下维持功能，韧性侧重故障后的吸收、恢复和适应。性能同时包含准确性与效率；负责任与可信AI还包括隐私、公平、透明、可观测和可解释性（图5、第4.12节）。自主性则被解释为多种功能选择共同产生的属性，未单列为基本质量。</p>
+<h2>三、主要结果与证据</h2>
+<h3>决策矩阵的价值在于暴露冲突</h3>
+<p>表4以架构选项为行、九种质量为列。作者提取各研究对取舍的观察、讨论或实验结果，按跨案例证据的常见趋势赋予“++、+、o、-、强负面”评级，再由第二位研究者交叉审查。证据存在分歧时，采用最普遍的趋势，而非估计统一效应量（第5.1节、第7.4节）。因此，这套模型没有可直接计算最优架构的效用函数；符号不表示固定百分比、等距分值或可相加的收益。表注中的“o”还同时表示中性或未明确，不能一概解释为已经证实无影响。</p>
+<p><a class="reading-image" href="assets/zhou2027analysis/fig-architecture-quality-matrix.png?v=339a66bd05606396cd104a65711c05c71526cc4cf5f8730473f17da0a3d96e42" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/zhou2027analysis/fig-architecture-quality-matrix.png?v=339a66bd05606396cd104a65711c05c71526cc4cf5f8730473f17da0a3d96e42" alt="架构选项与九种系统质量之间的定性决策矩阵" loading="lazy" decoding="async"></a></p>
+<p>表4｜完整决策矩阵。列依次为性能、可靠性、鲁棒性、韧性、安全、可维护性、负责任与可信AI、易用性、兼容性；“++”“+”分别为强正面、正面，“-”“–”分别为负面、强负面，“o”为中性或未明确。每行是综合判断，不是同一受控实验中的处理组。来源：arXiv v2，原表4，原PDF第38页，<a href="https://arxiv.org/pdf/2408.02920v2">原文</a>。</p>
+<p>按表4直接读取，三个典型冲突如下：</p>
+<table>
+<thead>
+<tr>
+<th>设计选择</th>
+<th>表中倾向</th>
+<th>取舍的具体含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多路径规划</td>
+<td>鲁棒性、韧性、易用性为“++”；性能与可维护性为“-”</td>
+<td>更多候选路径增加应变空间，也扩大执行状态与调试负担</td>
+</tr>
+<tr>
+<td>自然语言记忆与向量记忆</td>
+<td>前者可信AI、易用性“++”，性能“-”；后者性能“++”，可信AI与易用性“-”</td>
+<td>人可阅读的语义记录与机器检索效率具有不同侧重</td>
+</tr>
+<tr>
+<td>完全分布式协调</td>
+<td>可靠性、鲁棒性、韧性“++”；性能“-”，可维护性和可信AI为强负面</td>
+<td>降低中心故障依赖的同时，增加通信、追踪与治理难度</td>
+</tr>
+</tbody>
+</table>
+<p>这些结论有明确的文本一致性边界：第5.2节把多路径规划的可维护性、自然语言记忆的性能损失，以及向量记忆的可信AI和易用性损失都描述为“强负面”，表4却均为普通负面；第5.3节对完全分布式协调性能损失的表述也更强。方向相同，强度不一致，故不能从叙述中提取比表格更确定的量级。此外，性能合并准确性与效率，表中一个正负号无法分别回答两者如何变化。</p>
+<h3>审计案例展示了使用顺序，尚未展示运行效果</h3>
+<p>第5.4节给出一个AI财务审计分析员：高优先级是可靠性与可审计性，低延迟可让步，因为工作离线批处理。作者依次选择单路径迭代提示与自验证，以便追踪；选择联邦式协调，以保留高层组织并分配执行；选择长期记忆，以跨批次保留审计规则。重要的是，选择从需求优先级出发，并非把每列正号最多的方案拼起来。</p>
+<p><a class="reading-image" href="assets/zhou2027analysis/fig-audit-architecture-decisions.png?v=ea6ade386bd923b33713d97d123697062ee06cc97a417b3057b511dfccbdcd10" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/zhou2027analysis/fig-audit-architecture-decisions.png?v=ea6ade386bd923b33713d97d123697062ee06cc97a417b3057b511dfccbdcd10" alt="从审计需求优先级到组合架构的决策流程" loading="lazy" decoding="async"></a></p>
+<p>图6｜菱形为规划、协调、记忆三个决策点，箭头标出优先需求或需缓解的风险，终点是单路径、联邦式子智能体和长期记忆的组合。这是说明性的架构推演，无实测横纵轴、样本量或误差条。来源：arXiv v2，原图6，原PDF第22页，<a href="https://arxiv.org/pdf/2408.02920v2">原文</a>。</p>
+<p>这个案例也显出矩阵需要情境解释：图6称联邦式方案改善敏感数据隔离，但表4给其安全性“o”；图中把长期记忆描述为能完全防止幻觉，正文没有审计数据集、对照实验或幻觉率支撑这一保证。案例支持“如何表达选择理由”，尚不能证明该组合达到零幻觉、法律可审计或确定的吞吐能力。</p>
+<h3>专家评价支持可理解性与感知用途</h3>
+<p>外部评价邀请12位专家：学术界6位，包括2位教授和4位高级研究人员；产业界6位，包括4位高级架构师和2位AI/ML工程师（表3，第23页）。作者报告的五分量表结果如下，离散程度为标准差，不能当作置信区间（第6.2节）：</p>
+<table>
+<thead>
+<tr>
+<th>评价项目</th>
+<th style="text-align:right">均值</th>
+<th style="text-align:right">标准差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分类完整性</td>
+<td style="text-align:right">4.63</td>
+<td style="text-align:right">0.53</td>
+</tr>
+<tr>
+<td>分类正确性</td>
+<td style="text-align:right">4.59</td>
+<td style="text-align:right">0.66</td>
+</tr>
+<tr>
+<td>决策模型清晰度</td>
+<td style="text-align:right">4.17</td>
+<td style="text-align:right">0.72</td>
+</tr>
+<tr>
+<td>决策模型实用性</td>
+<td style="text-align:right">4.58</td>
+<td style="text-align:right">0.67</td>
+</tr>
+</tbody>
+</table>
+<p>这些数值是作者报告的汇总结果。附录分别询问功能与非功能分类的完整性及清晰度、结构，正文未说明它们如何合并为上述完整性、正确性指标；未提供原始答复，无法独立复算均值和标准差，也不能直接将其解释为12份单题整数评分的平均值。</p>
+<p>附录问卷显示，评价包含量表、开放反馈、类别重叠判断及应用情景。其情景是分析大量客户评论，要求单个智能体失败不停止全局，同时保持状态容易监控调试；这与正文的财务审计案例不同。专家需解释协调方案中的困难取舍，而不是实际部署系统后测量收益（附录A，第33–37页）。正交性也主要通过类别重叠反馈讨论，正文未给独立量化得分。因而，高评分说明这个小组认可框架的组织方式和潜在用途，并不等于逐个验证矩阵单元格；第7.2节对此亦有明确说明。</p>
+<h2>四、意义与适用边界</h2>
+<p>本文最有价值的组织原则，是把“能力更多”拆解成“增加了什么机制，又改变了什么质量”。分类给不同框架提供共同词汇，矩阵迫使可靠性、可维护性、解释性等要求进入同一场设计讨论。文献归并承担分类的依据，定性综合承担取舍方向的依据，专家评价承担清晰度与感知用途的依据；三层证据作用不同，不能相互替代。</p>
+<p>适用范围首先受检索对象限制：66篇研究来自以软件工程任务或软件架构为筛选条件的学术文献，14篇预印本约占21.2%；工程博客、代码仓库等实践来源未被系统纳入。检索截至2025年7月，作者稿日期更晚，不能据此把覆盖期延长到2026年。安全关键嵌入式系统、医疗器械等领域，在文献与专家背景中均代表不足（第7.3节）。</p>
+<p>其次，筛选一致性92%仅针对640篇候选，不包括此前被辅助筛选排除的文献；第7.2节承认没有另外随机抽查排除集，因此这个比例不能说明全流程漏检率。表5提供“类别分支—参考文献”关系，却不提供每个“选项—质量”单元格的支持与反对证据分布；复现资料及原始问卷答复未在所读材料中提供，无法独立还原评分分布或逐格综合过程。</p>
+<p>最终，这篇研究建立了一张可讨论的架构地图和一套定性取舍语言。它能够提示某项质量要求可能与哪些机制冲突；具体系统的收益大小、多个组件的交互效应，以及满足严格可靠性约束的程度，仍超出本文所展示的验证结果。</p>
+</main></body></html>

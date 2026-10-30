@@ -1,155 +1,88 @@
 <!doctype html>
   <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Adaptive coevolutionary networks: a review · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1098/rsif.2007.1229" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Gross et al. - Adaptive coevolutionary networks: a review</h1>
-<p><strong>节点动力学与网络结构为何共同演化</strong></p>
+<p><strong>自适应网络：节点状态与连接结构如何共同演化，产生临界性、角色分化和新的集体动力学</strong></p>
+<p>Journal of the Royal Society Interface，2008，5：259–271。DOI：<a href="https://doi.org/10.1098/rsif.2007.1229">10.1098/rsif.2007.1229</a>；<a href="https://arxiv.org/pdf/0709.1858v2">作者稿原文</a>。</p>
 <blockquote>
-<p>资料范围：论文正文（不含补充材料）。
-文本可靠性：高。
-来源定位：structure-grounded。
-主要分析类型：review。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：完整（相对于论文正文）。</p>
+<p>资料范围：部分解读，依据 arXiv:0709.1858v2 作者稿，覆盖全部 13 页，包括正文第 I–VII 节、图 1–6、Box 1–2 及参考文献。本文是综述，没有独立 Methods、附录或编号数据表，模型方法分布于正文各节。未取得正式出版版 PDF；出版方补充材料清单无法确认，也未提供独立研究性补充文件。对被引研究的解释限于本综述实际呈现的内容，不等同于阅读了这些研究的全文。下文页码均为作者稿 PDF 页序；第 2–13 页与稿内页码一致，不对应期刊印刷页码 259–271。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Gross et al.，<em>Adaptive coevolutionary networks: a review</em>，<strong>Journal of the Royal Society Interface（2008）</strong>。<a href="https://doi.org/10.1098/rsif.2007.1229">原文</a>。</p>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>这篇综述要建立的认识是：<strong>网络的连接方式如果会响应节点状态而改变，连接本身就成为动力系统的一部分。</strong> 因而，即使节点遵守很简单的规则，整个系统也可能形成复杂结构、稳定的功能分工，或出现静态网络模型没有包含的转变。</p>
+<p>作者从当时网络研究的两条路线切入：一条研究网络怎样长成某种拓扑，另一条把拓扑固定下来，研究疾病、意见或振荡如何在上面传播。实际系统常把这两件事连在一起：道路决定交通流，拥堵又促使道路增建；社交关系影响意见，意见冲突又导致断交。只有拓扑随时间变化还不够，本文所称“自适应”的关键，是状态影响拓扑、拓扑再影响状态的闭环（第 I 节、图 1）。</p>
+<p><a class="reading-image" href="assets/gross2008adaptive/fig-state-topology-feedback.png?v=2151ac97348b5ac46a537f4d20711e495f47a1600119d6d5c27464702c1f0964" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gross2008adaptive/fig-state-topology-feedback.png?v=2151ac97348b5ac46a537f4d20711e495f47a1600119d6d5c27464702c1f0964" alt="节点状态与网络拓扑之间的双向反馈" loading="lazy" decoding="async"></a></p>
+<p>图 1｜左框表示连接约束下的局部状态变化，右框表示状态驱动的连接变化，外圈箭头闭合反馈。它是概念示意，没有数据轴或实验分组，界定了全文讨论对象。原图 Fig. 1，arXiv v2 作者稿，PDF 第 1 页；来源：<a href="https://arxiv.org/pdf/0709.1858v2">原文</a>。</p>
+<p>作者没有开展一项跨领域新实验，而是选择已有模型，寻找可贯通领域的机制。第 II 节用输运、生物调控、化学和生态网络说明问题普遍存在；第 III–VI 节依次用布尔网络、耦合振荡器、演化博弈、意见与疾病传播展开四类现象；第 VII 节尝试把它们统一为“信息在状态与拓扑之间传递”。这是一篇以机制组织领域的叙述性综述，不是按统一检索、筛选和效应量汇总得到的系统综述。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从局部活动中读出全局连接程度</h3>
+<p>布尔阈值网络是全文最清楚的机制范例（第 III 节，PDF 第 4 页）。节点只有激活或未激活两种状态，邻居输入可以促进或抑制激活。Bornholdt 与 Rohlf 的更新顺序是：先让节点动力学进入吸引子，再随机选择一个节点，观察一个周期；混沌情况下则观察较长的固定时段。如果它始终不变，即“冻结”，就增加一条连接；只要变化过，就移除一条连接。</p>
+<p>这条规则不要求节点知道全网平均连接数。网络的动力学先把全局连通程度转译为节点是否冻结，再让局部增删边作出反馈：连接不足时倾向增边，连接过多时倾向删边，系统因此靠近临界连接度。这里“局部”指决策不使用分布式全局信息，并不要求新邻居在空间上很近。</p>
+<p>综述用下列经验关系描述有限网络最终达到的平均连接度。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span></eq> 是节点数，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span></span></span></span></eq> 是平均连接度，均为无量纲计数；12.4 和 0.47 是文中报告的数值拟合系数：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>K</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>12.4</mn><msup><mi>N</mi><mrow><mo>−</mo><mn>0.47</mn></mrow></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+K(N)=2+12.4N^{-0.47}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8641em;"></span><span class="mord">12.4</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">0.47</span></span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>**理解演示，非论文实验：**取 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">N=1000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1000</span></span></span></span></eq>，则 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>N</mi><mrow><mo>−</mo><mn>0.47</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>1.41</mn></mrow></msup><mo>≈</mo><mn>0.0389045</mn></mrow><annotation encoding="application/x-tex">N^{-0.47}=10^{-1.41}\approx0.0389045</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">0.47</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1.41</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.0389045</span></span></span></span></eq>，所以 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>12.4</mn><mo>×</mo><mn>0.0389045</mn><mo>≈</mo><mn>2.48242</mn></mrow><annotation encoding="application/x-tex">K=2+12.4\times0.0389045\approx2.48242</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">12.4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.0389045</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.48242</span></span></span></span></eq>。取 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>10000</mn></mrow><annotation encoding="application/x-tex">N=10000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">10000</span></span></span></span></eq>，得到 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>≈</mo><mn>2.16346</mn></mrow><annotation encoding="application/x-tex">K\approx2.16346</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.16346</span></span></span></span></eq>。公式表达的是随规模增大趋近 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>c</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">K_c=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq>；不能把有限网络都说成恰好达到 2，也不能把这一拟合外推成所有自适应网络的定律。</p>
+<p>此处作者稿有一处实质性文字矛盾：它先说冻结节点比例从一降到零，随后却说转变前节点都变化、转变后几乎都不变；后一句与前一句以及紧接着“<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&lt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">K&lt;2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq> 增边、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">K&gt;2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></eq> 删边”的叙述相反。上述解释依据明确给出的更新规则和反馈方向，不能把冲突的两句同时当成成立的结论。</p>
+<p>作者还给出反向的时间尺度情形（第 III 节末，PDF 第 4–5 页）：连接变化很快，异态节点一接触便断开，同态节点最终互相连满。这时，一个节点有五个邻居，就意味着同态群体共有六个节点。拓扑把全局状态组成变成局部可读的度数；这个例子要求快速连接过程已经充分完成，不能直接套在尚未连满的网络上。</p>
+<h3>哪种连接规则，决定哪种组织方向</h3>
+<p>Box 2 把不同模型压缩成三组规则与结果。这是跨模型的初步归纳，不是同一实验中逐项删除组件的对照。</p>
 <table>
 <thead>
 <tr>
-<th>项目</th>
-<th>内容</th>
+<th>局部适应规则</th>
+<th>综述归纳的组织方向</th>
+<th>主要证据位置</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>分析类型与领域</td>
-<td>review；行为与结构共同演化</td>
+<td>冻结节点增边、活动节点减边</td>
+<td>靠近临界转变</td>
+<td>第 III 节</td>
 </tr>
 <tr>
-<td>标识符</td>
-<td>DOI：10.1098/rsif.2007.1229；arXiv：0709.1858</td>
+<td>强化相似状态节点的连接</td>
+<td>拓扑异质化，某些模型出现不同节点类别</td>
+<td>第 IV–V 节</td>
 </tr>
 <tr>
-<td>作者机构</td>
-<td>Biological Physics Section, Max-Planck Intitut für Physik komplexer SystemeNöthnitzer Straße 38, 01187 Dresden, Germany；Institute for Chemistry and Biology of the Marine Environment (ICBM), Carl von Ossietzky Universität26111 Oldenburg, Germany</td>
-</tr>
-<tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
-</tr>
-<tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
+<td>强化不同状态节点的连接</td>
+<td>更均匀的有效连接结构，有利于同步</td>
+<td>第 IV 节、图 3</td>
 </tr>
 </tbody>
 </table>
-<p>[Paper: Section Abstract]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] 将节点状态影响连边、连边又影响状态的反馈统一为自适应网络，解释简单局部规则如何产生拓扑自组织和复杂动力学。 [Paper: Section Abstract]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] 节点状态与连接结构相互反馈时，如何产生自组织、功能分化和动力学转变？ [Paper: Section Abstract]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 很多网络的连接不是固定背景：传播、合作或选择会反过来改变连接。 [Paper: Section Abstract]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>节点状态与连接结构相互反馈时，如何产生自组织、功能分化和动力学转变</td>
-<td>[Analysis] 很多网络的连接不是固定背景：传播、合作或选择会反过来改变连接。</td>
-<td>[Analysis] 状态改变结构、结构再改变状态，形成不能由固定网络动力学单独表达的反馈环。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 状态改变结构、结构再改变状态，形成不能由固定网络动力学单独表达的反馈环。 [Paper: Section main text]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 跨布尔网络、振子、演化博弈、传播和意见模型比较反馈环；明确固定网络上的动力学与结构随状态改变的共同演化的区别。 [Paper: Section main text]</p>
-<h2>08 核心模块拆解</h2>
-<p>不适用：这是理论或方法综合，分析单位是不同模型、适用假设和证据类别，而非可移除的软件组件。 [Paper: Section main text]</p>
-<h2>09 关键公式与符号</h2>
-<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
-<h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>检验对象</th>
-<th>设计与证据</th>
-<th>支持的结论</th>
-<th>不支持的更强解释</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>节点状态与连接结构相互反馈时，如何产生自组织、功能分化和动力学转变</td>
-<td>图1表示反馈环；图2—4展示不同机制的拓扑自组织；图5—6以自适应传播模型说明状态边界与节点群体分化。</td>
-<td>将节点状态影响连边、连边又影响状态的反馈统一为自适应网络，解释简单局部规则如何产生拓扑自组织和复杂动力学。</td>
-<td>综述揭示共同结构，不能证明所有自适应系统具有相同相图；局部规则仍可能是领域特定的。</td>
-<td>[Paper: Section main text]</td>
-</tr>
-</tbody>
-</table>
-<p>主文图表的论证入口（图题保留原文关键词）：</p>
-<table>
-<thead>
-<tr>
-<th>图表</th>
-<th>证据对象</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Figure 1</td>
-<td>In an adaptive network, the evolution of the topology d…</td>
-<td>[Paper: Figure 1]</td>
-</tr>
-<tr>
-<td>Figure 3</td>
-<td>For different initial conditions, the connectivity 〈 z …</td>
-<td>[Paper: Figure 3]</td>
-</tr>
-<tr>
-<td>Figure 2</td>
-<td>The adaptive network of coupled oscillators studied by …</td>
-<td>[Paper: Figure 2]</td>
-</tr>
-<tr>
-<td>Figure 4</td>
-<td>Two parameter bifurcation diagram of the adaptive epide…</td>
-<td>[Paper: Figure 4]</td>
-</tr>
-<tr>
-<td>Figure 6</td>
-<td>In the model of Gross et al . (2006) , two populations …</td>
-<td>[Paper: Figure 6]</td>
-</tr>
-</tbody>
-</table>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 综述揭示共同结构，不能证明所有自适应系统具有相同相图；局部规则仍可能是领域特定的。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>[Paper] 简单平均场近似可能遗漏自发分工；自适应网络仍需更基础的理论工作。 [Paper: Discussion]</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 保持节点过程不变，比较冻结结构、随机重连和状态依赖重连；检验结构变化是否反过来改变状态持续性。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 冻结网络、随机重连和状态依赖重连是区分结构反馈的不同对照。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 可与 <a href="rosvall2014memory.md">Rosvall et al. - Memory in network flows and its effects on spreading dynamics and community detection</a> 对照阅读：该文研究“网络流动中的路径记忆如何改变传播过程与可识别的社区结构”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：综述揭示共同结构，不能证明所有自适应系统具有相同相图；局部规则仍可能是领域特定的。</li>
-<li>核心假说与增量：保持节点过程不变，比较冻结结构、随机重连和状态依赖重连。</li>
-<li>初始方法与如何验证：保持节点过程不变，比较冻结结构、随机重连和状态依赖重连；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：检验结构变化是否反过来改变状态持续性。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p>因此，“适应”不是自动走向同一种网络结构的算法。时间尺度和强化方向都承担解释作用；但不同研究同时改变了模型设置，这些比较不能单独证明某一规则在所有情形中必要或充分。</p>
+<h2>三、主要结果与证据</h2>
+<h3>自组织的证据，从靠近一个连接度开始</h3>
+<p>Christensen 等的演化网络是作者介绍的先驱例子（第 II 节，PDF 第 3 页）。节点携带标量适应度，每轮替换最低适应度物种，并随机重置其邻居的适应度；适应版本再按替换节点相对邻居的度数，以小概率增删边。图 2 展示最大连通簇的平均度向 2 靠近。它支持简单局部规则可以组织全局连接性质，但图上最慢的曲线在展示时段内仍高于 2，不能把所有曲线都描述成已经收敛。</p>
+<p><a class="reading-image" href="assets/gross2008adaptive/fig-connectivity-self-organization.png?v=a57687c0a57c29480773bd04b8df54b09ea2afed841a079d0da30055a46c671b" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gross2008adaptive/fig-connectivity-self-organization.png?v=a57687c0a57c29480773bd04b8df54b09ea2afed841a079d0da30055a46c671b" alt="最大连通簇平均度随突变次数演化" loading="lazy" decoding="async"></a></p>
+<p>图 2｜横轴为突变次数，纵轴为最大连通簇的平均度 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mi>z</mi><msub><mo stretchy="false">⟩</mo><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\langle z\rangle_{\mathrm{largest}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">⟨</span><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="mclose"><span class="mclose">⟩</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">largest</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></eq>；符号区分初始平均度 2 或 3，以及不同拓扑更新概率。曲线表明趋向相近连接度的速度可以明显不同。原图 Fig. 2，arXiv v2 作者稿，PDF 第 3 页，转载自综述文献 [10] 图 3；来源：<a href="https://arxiv.org/pdf/0709.1858v2">原文</a>。</p>
+<p>不要把这幅图与上一节的布尔阈值模型混为一谈：它的图注称模型为“Boolean network”，正文却明确使用连续标量适应度。布尔网络趋近临界性的数值关系来自第 III 节转述的另一项研究，而非图 2 的同一组数据。</p>
+<h3>角色分化是否持久，比网络快照是否异质更关键</h3>
+<p>Ito 与 Kaneko 的模型中，节点是离散时间更新的混沌振荡器，连接有方向和连续权重。相似状态之间的连接增强，但每个节点接收的总输入权重保持不变；初始权重均匀、状态只有微小差异。演化中许多权重趋近零，保留较强连接后可见有效网络结构（第 IV 节，PDF 第 5 页）。</p>
+<p>关键结果不是“有些节点边多”：在一定参数区间内，即使具体连接不断出现、消失，高有效出度节点仍通常保持高出度，低出度节点也相似。出度代表对其他节点的影响，因而可称为“领导者”和“跟随者”。这里分化的是长期功能角色，不只是某一时刻的排序。至于这种持久分化是否源于临界点附近角色转换时间发散，作者在第 IV、VII 节明确将其作为猜想，没有给出统一证明。</p>
+<p>Zhou 与 Kurths 的模型则强化不同状态之间的连接，得到更均匀的有效拓扑及增强的同步能力。图 3 是这种规则并不必然制造“领袖”的重要对照线索。</p>
+<p><a class="reading-image" href="assets/gross2008adaptive/fig-degree-weight-scaling.png?v=0883f9f4e0921d14c06358db5271087076b492ee460f036b5fe935b9ce24769c" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gross2008adaptive/fig-degree-weight-scaling.png?v=0883f9f4e0921d14c06358db5271087076b492ee460f036b5fe935b9ce24769c" alt="不同设置下节点度与输入连接权重的关系" loading="lazy" decoding="async"></a></p>
+<p>图 3｜双对数横轴为节点度 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq>，纵轴为输入连接权重 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V(k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span></span></span></span></eq>；a 比较振荡器类型，b 比较平均度 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>5</mn><mo separator="true">,</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">M=5,10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">10</span></span></span></span></eq>，c 比较规模 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>500</mn><mo separator="true">,</mo><mn>1000</mn><mo separator="true">,</mo><mn>10000</mn></mrow><annotation encoding="application/x-tex">N=500,1000,10000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">500</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1000</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">10000</span></span></span></span></eq>，d 比较适应参数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi></mrow><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0556em;">γ</span></span></span></span></eq>。各组呈相似下降斜率，d 中曲线高度明显不同，因此共同斜率不等于相同权重值。原图 Fig. 3a–d，arXiv v2 作者稿，PDF 第 6 页，转载自综述文献 [72] 图 2；来源：<a href="https://arxiv.org/pdf/0709.1858v2">原文</a>。</p>
+<p>作者的解释是：高度节点先同步，低度节点较晚同步，其连接增强持续更久。这里也有符号冲突：正文写 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>∼</mo><msup><mi>k</mi><mrow><mo>−</mo><mi>θ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">V(k)\sim k^{-\theta}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8491em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight" style="margin-right:0.0278em;">θ</span></span></span></span></span></span></span></span></span></span></span></span></eq>，同时正文和图注写 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><mo>−</mo><mn>0.48</mn></mrow><annotation encoding="application/x-tex">\theta=-0.48</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">0.48</span></span></span></span></eq>，代入将得到增长，与下降图线相反。因此可确认图中的负斜率和约 0.48 的指数幅值，但不能原样把这组符号当成一致公式。图中跨设置的一致趋势也不证明所有振荡器、所有参数都具有相同指数。</p>
+<h3>合作提升与复杂结构，依赖具体博弈反馈</h3>
+<p>第 V 节把同一框架用于演化博弈：策略影响收益，收益影响策略更新，而玩家还可以断开与背叛者的联系。邻居于是成为一种会被行为改变的收益资源；背叛可能损坏自己的未来交往条件，形成“拓扑惩罚”。作者转述的相关研究均报告合作水平提高，但并未在本文中汇总统一效应量或共同基线。</p>
+<p>其中较明确的理论结果是：当连接演化远快于策略演化时，Pacheco 等把自适应网络上的囚徒困境映射为充分混合群体中的另一种博弈，且有效博弈成为协调博弈。这解释了合作为何可能更有利；它依赖快速连接极限，也不能据此说任意初始条件都会得到合作。</p>
+<p><a class="reading-image" href="assets/gross2008adaptive/fig-centrality-competition.png?v=a2be20838355987e28c6cbf20193f0fbbfc97188ee74061b16ddafcfaeba1488" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gross2008adaptive/fig-centrality-competition.png?v=a2be20838355987e28c6cbf20193f0fbbfc97188ee74061b16ddafcfaeba1488" alt="中心性收益与维持连接成本共同形成的网络结构" loading="lazy" decoding="async"></a></p>
+<p>图 4｜这是网络快照，没有数值轴。大量外围节点、少数高连接枢纽以及连接较少却处在有利位置的节点，展示中心性与连接成本竞争形成的结构分化；图形位置本身不是中心性的数值刻度。原图 Fig. 4，arXiv v2 作者稿，PDF 第 7 页，转载自综述文献 [28] 图 2b；来源：<a href="https://arxiv.org/pdf/0709.1858v2">原文</a>。</p>
+<p>Holme 与 Ghoshal 的模型追求高中心性、低度数，但第 V 节末指出，有利位置不由同一节点长期占据，而且中心性是全局信息。因此，图 4 不能证明“完全依靠局部信息形成稳定社会阶层”。另一些博弈模型会冻结于吸收态，类别持久可能只是网络停止变化；这也不同于振荡器网络在持续演化中保持角色。作者还讨论固定连接下策略表忽略某些邻居的少数派博弈：有效影响关系可以变化，提醒读者物理连边不变并不必然意味着有效网络不变。</p>
+<h3>规避接触为何既能控病，又能积累再次暴发的条件</h3>
+<p>第 VI 节的 SIS 模型把个体分为易感者 S 和感染者 I：沿 SI 接触以参数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq> 传播，感染者按恢复率 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span></eq> 回到 S；适应规则让易感者以参数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq> 把与感染者的连接改接到另一名易感者。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo separator="true">,</mo><mi>r</mi><mo separator="true">,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">p,r,w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq> 分别描述传播、恢复和重连的时间过程，本文没有给出可换算为“每天”的具体时间标度。</p>
+<p><a class="reading-image" href="assets/gross2008adaptive/fig-epidemic-bifurcations.png?v=706fd4592503477ff3125e8f1b09ddbcfcc2bdec9a1c0bdb9ba2bea457ae0bd9" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gross2008adaptive/fig-epidemic-bifurcations.png?v=706fd4592503477ff3125e8f1b09ddbcfcc2bdec9a1c0bdb9ba2bea457ae0bd9" alt="自适应SIS网络的传播与重连参数分岔图" loading="lazy" decoding="async"></a></p>
+<p>图 5｜横轴为传播参数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq>，纵轴为重连参数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span></span></span></span></eq>，均沿用模型时间标度。区域标出无病、地方性流行、双稳态及狭窄振荡区。点划线是跨临界分岔，对应疾病侵入无病系统的阈值；虚线、实线和点线分别表示鞍结、Hopf 及周期轨道折叠分岔。它展示模型参数空间的定性变化，不是病例观测数据。原图 Fig. 5，arXiv v2 作者稿，PDF 第 9 页，转载自综述文献 [25] 图 4；来源：<a href="https://arxiv.org/pdf/0709.1858v2">原文</a>。</p>
+<p>图 5 最重要的结果是双稳态：同一参数下，无病和已有流行都可能稳定，初始状态因此影响结局；“疾病不能从很小感染量入侵”不等于“已有流行必定消失”。较高重连率还可产生振荡，但只在图示的狭窄区域。机制有两个方向：规避先隔离感染者、降低感染；同时连接积累在易感者之间，形成越来越密的群体，一旦传播足以穿透它，感染回升、易感群体瓦解，循环得以完成。</p>
+<p><a class="reading-image" href="assets/gross2008adaptive/fig-state-conditioned-degree.png?v=b8d30e87e34050e42f0e7171f35060f3d48bd54f70b78e480f534fafa0475fbe" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/gross2008adaptive/fig-state-conditioned-degree.png?v=b8d30e87e34050e42f0e7171f35060f3d48bd54f70b78e480f534fafa0475fbe" alt="易感者和感染者具有不同的度分布" loading="lazy" decoding="async"></a></p>
+<p>图 6｜横轴为节点度 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></eq>；纵轴未标出量名或刻度数值，只宜定性比较分布。按原图注，空心圆为易感者，实心点为感染者，前者延伸至更高度数。原图注却把两类分别称为“低度”和“高度”，与图形及重连机制相反；这里保留符号对应关系并明确指出冲突，不从图中估算精确均值。原图 Fig. 6，arXiv v2 作者稿，PDF 第 9 页；来源：<a href="https://arxiv.org/pdf/0709.1858v2">原文</a>。</p>
+<p>为了分析这些转变，被综述研究采用矩闭合，把网络近似压缩成三个动力学变量，再做分岔分析；作者用它对照一个变量的标准 SIS 系统级描述，强调增加的两个拓扑自由度。综述没有列出闭合方程和全部参数条件，因而它给出的是方法和机制解释，并非可由本文独立复现的完整流行病模型。</p>
+<p>意见模型展示另一种终点（第 VI 节，PDF 第 9 页）：异议邻居以概率 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span></span></span></span></eq> 相互说服，或以 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">1-\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span></span></span></span></eq> 重连，最后各连通分量内部意见一致，但不同分量可以意见不同，不能称为全体一致。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\phi=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq> 时意见不改变，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\phi=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></eq> 时拓扑不改变；中间临界值的连续相变由所转述的有限尺寸标度分析支持，伴随临界减速和意见群体规模的幂律分布。作者进一步猜测另一类断边模型留下极少连接，可能与临界减速延长断边时间有关；这仍是跨模型解释，不能升级为已经证实的统一原因。</p>
+<h2>四、意义与适用边界</h2>
+<p>这篇综述的主要贡献，是把“连边会变”提升为一个可分析的因果回路：节点动力学可以暴露全局结构信息，结构又能保存状态历史并改变后续动力学。四类现象——趋近临界性、节点角色分化、复杂拓扑、复杂集体动态——由此有了共同语言。它们并不要求同时出现，更不能反过来仅凭其中一种现象就判定实际系统一定存在同一种适应机制。</p>
+<p>作者对统一理论的把握也分层次：布尔模型的局部反馈机制较清楚；持久分工是否由角色转换的临界减速产生，复杂结构如何由局部规则生成，以及哪些规则能够读出哪些全局量，在第 VII 节仍是开放问题。生物神经网络保持“混沌边缘”、细胞分化或工程自组装，是作者提出的潜在联系，不是本文完成的现实系统验证。</p>
+<p>这些证据主要来自作者选择的理论模型、数值结果及近似分析。图 2–6 未报告统一的重复次数、误差条或置信区间；网络规模 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span></eq> 也不是独立实验重复数。幂律形状、拟合系数和代表性网络快照，应分别按其证据性质理解，不能替代跨系统的统计验证。作者还指出，连接不断混合有时使平均场近似更容易成立，但若已分化出不同节点群体，把它们压成一个平均节点仍可能失效。</p>
+<p>因此，这篇文章最扎实的启示是：分析一个会响应自身状态而改连边的系统时，需要同时跟踪状态、有效连接和二者的时间尺度。具体是走向同步、分化、合作还是周期暴发，取决于反馈规则与参数条件；这些模型展示了可发生的机制，而不是所有自适应网络的共同命运。</p>
 </main></body></html>

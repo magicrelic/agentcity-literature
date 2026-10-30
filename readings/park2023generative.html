@@ -1,167 +1,91 @@
 <!doctype html>
   <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Generative Agents: Interactive Simulacra of Human Behavior · 城市复杂系统文献库</title><link rel="icon" href="../assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c"><link rel="stylesheet" href="../assets/katex.min.css"></head>
   <body class="reading-page"><a class="skip-link" href="#reading">跳到解读正文</a><header class="reading-nav"><a href="../">返回文献库</a><a href="https://doi.org/10.1145/3586183.3606763" target="_blank" rel="noopener noreferrer">原文</a></header><main id="reading" class="reading-body"><h1>Park et al. - Generative Agents: Interactive Simulacra of Human Behavior</h1>
-<p><strong>语义记忆与计划进入持续行为</strong></p>
+<p><strong>让虚拟角色把经历变成记忆、判断与行动，并在互动中形成连续的社会生活</strong></p>
+<p>ACM Symposium on User Interface Software and Technology（UIST）会议论文集，2023。DOI：<a href="https://doi.org/10.1145/3586183.3606763">10.1145/3586183.3606763</a>；<a href="https://arxiv.org/pdf/2304.03442v2">作者预印本原文</a>。</p>
 <blockquote>
-<p>资料范围：论文正文（不含补充材料）。
-文本可靠性：高。
-来源定位：page-grounded。
-主要分析类型：methods。
-次要分析类型：无。
-背景核验：paper-only；背景沿论文论证组织。
-解读完整性：完整（相对于论文正文）。</p>
+<p>资料范围：arXiv:2304.03442v2 作者预印本（2023 年 8 月 6 日），共 22 个 PDF 页面；覆盖正文第 1–9 节、方法与实现、全部 9 幅主图及附录 A、B。全文无编号表格，附录无补图；未提供出版方另附的补充附件，未覆盖在线演示与代码。以下定位均为这一版本的 PDF 页序，原文未标出数字印刷页码。</p>
 </blockquote>
-<h2>01 基本信息</h2>
-<p>Park et al.，<em>Generative Agents: Interactive Simulacra of Human Behavior</em>，<strong>ACM Symposium on User Interface Software and Technology (UIST)（会议论文集）（2023）</strong>。<a href="https://doi.org/10.1145/3586183.3606763">原文</a>。</p>
+<p>资料检索日期：2026-10-30；阅读日期：2026-10-30；核验日期：2026-10-30。</p>
+<h2>一、研究问题</h2>
+<p>一个虚拟人物能够回答“早餐烧焦了怎么办”，不意味着它能连续过完两天：它还要记得刚吃过午饭、昨天答应参加聚会、刚才听说谁要竞选市长。本文研究的实际问题，是如何让语言生成能力接上持续积累的个人经历，使角色在时间上保持连贯，并让多角色互动产生无需逐段编排的社会行为。</p>
+<p>作者把“可信”理解为角色表现令人信服，类似虚构人物带来的生命感，而非证明角色具有意识，或准确复现真实人群。图 1 用散步、上学、喝咖啡和分享消息呈现目标；它展示系统能承载哪些活动，本身不是效果测量。</p>
+<p>第 2 节的出发点是三种路线各有缺口：规则与行为树依赖预写程序，强化学习通常需要明确奖励，单次语言提示则难以容纳不断增长的经历。作者选择在语言模型外维护记忆、反思与计划，再把当前最需要的信息送回生成过程。核心判断不是“角色能否说出合理的一句话”，而是“昨天的互动能否改变今天的回答和行动”。</p>
+<h2>二、研究方法与关键机制</h2>
+<h3>从经历到行动的循环</h3>
+<p>Smallville 是人工搭建的小镇，内有 25 个角色。每个角色由一段身份、职业与关系描述初始化，分号隔开的陈述作为种子记忆，并非从零形成的人格。角色观察视野内的人与物，以自然语言生成行动；游戏引擎负责寻路、移动和更新物体状态。因此，画面里的行为同时依靠语言推理与结构化世界接口（第 3、5 节，PDF 第 5–7、12–13 页）。</p>
+<p><a class="reading-image" href="assets/park2023generative/fig-memory-action-architecture.png?v=d2407248d2009f0086f6e330aee3a022668ff381b602a0cc6549de07b69ca76e" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/park2023generative/fig-memory-action-architecture.png?v=d2407248d2009f0086f6e330aee3a022668ff381b602a0cc6549de07b69ca76e" alt="感知、记忆检索、计划与反思共同影响行动" loading="lazy" decoding="async"></a></p>
+<p>图解：原图 5，arXiv v2，PDF 第 8 页。横向是感知—记忆—检索—行动；上下回路把计划和反思写回记忆。它说明后续行为可受到先前生成内容的影响，不代表各回路的收益已被分别证明。<a href="https://arxiv.org/pdf/2304.03442v2#page=8">来源</a>。</p>
+<p>记忆流中的条目包含自然语言描述、创建时间和最近访问时间，既存观察，也存反思和计划。区别在于：观察记录发生了什么，反思概括其意义，计划描述准备做什么。三者一同参与后续检索，使“过去发生的事”与“未来承诺”都可能约束眼前行动。</p>
+<h3>检索：让重要而相关的旧事进入当前情境</h3>
+<p>检索不是把全部经历压缩成一段总摘要。作者希望保留具体事件，同时避免无关记录挤占上下文。第 4.1 节以三个无量纲标量评分：近期性衡量距上次访问的游戏小时数 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span></eq>，原始值为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><msup><mn>0.995</mn><mi>h</mi></msup></mrow><annotation encoding="application/x-tex">r=0.995^h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8491em;"></span><span class="mord">0.99</span><span class="mord"><span class="mord">5</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">h</span></span></span></span></span></span></span></span></span></span></span></eq>；重要性由语言模型在条目创建时按 1–10 分评定；相关性是记忆文本与查询文本嵌入向量的余弦相似度。三项分别经 min–max 归一化至 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></eq>，再求加权和：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><msub><mi>α</mi><mi>r</mi></msub><msub><mover accent="true"><mi>r</mi><mo>~</mo></mover><mi>i</mi></msub><mo>+</mo><msub><mi>α</mi><mi>p</mi></msub><msub><mover accent="true"><mi>p</mi><mo>~</mo></mover><mi>i</mi></msub><mo>+</mo><msub><mi>α</mi><mi>q</mi></msub><msub><mover accent="true"><mi>q</mi><mo>~</mo></mover><mi>i</mi></msub><mo separator="true">,</mo><mspace width="2em"/><msub><mi>α</mi><mi>r</mi></msub><mo>=</mo><msub><mi>α</mi><mi>p</mi></msub><mo>=</mo><msub><mi>α</mi><mi>q</mi></msub><mo>=</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
+s_i=\alpha_r\tilde r_i+\alpha_p\tilde p_i+\alpha_q\tilde q_i,
+\qquad \alpha_r=\alpha_p=\alpha_q=1.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8179em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span><span style="top:-3.35em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">~</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.954em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">p</span></span><span style="top:-3.35em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">~</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.954em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">q</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span><span style="top:-3.35em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">~</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">q</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.</span></span></span></span></span></eqn></section><p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> 表示一条记忆，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>r</mi><mo>~</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\tilde r_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8179em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span><span style="top:-3.35em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">~</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>p</mi><mo>~</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\tilde p_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8623em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">p</span></span><span style="top:-3.35em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">~</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>、<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>q</mi><mo>~</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\tilde q_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8623em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span></span><span style="top:-3.35em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">~</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 依次为其归一化后的近期性、重要性和相关性分数，三个 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span></eq> 为相应权重。<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">s_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> 是排序分数，既无物理单位，也不是概率。系统取排名靠前、且能放入上下文的条目，而非给全部记忆同等注意。</p>
+<p>用一个<strong>理解演示，非论文实验</strong>说明：一条 24 个游戏小时前访问过的记忆，其原始近期性为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>0.995</mn><mn>24</mn></msup><mo>≈</mo><mn>0.8867</mn></mrow><annotation encoding="application/x-tex">0.995^{24}\approx0.8867</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">0.99</span><span class="mord"><span class="mord">5</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">24</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.8867</span></span></span></span></eq>；它仍需与其他条目一起归一化。假定某次归一化后，“答应赴约”的三项分数为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo separator="true">,</mo><mn>0.8</mn><mo separator="true">,</mo><mn>0.9</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.2,0.8,0.9)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0.2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.9</span><span class="mclose">)</span></span></span></span></eq>，新近“看见桌子”为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1.0</mn><mo separator="true">,</mo><mn>0.1</mn><mo separator="true">,</mo><mn>0.1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1.0,0.1,0.1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1.0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.1</span><span class="mclose">)</span></span></span></span></eq>，则前者 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>1.9</mn></mrow><annotation encoding="application/x-tex">s=1.9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.9</span></span></span></span></eq>，后者 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>1.2</mn></mrow><annotation encoding="application/x-tex">s=1.2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.2</span></span></span></span></eq>。旧承诺可因重要且相关而优先。这个公式提供信息筛选规则，不保证筛中的内容完整或真实（图 6，PDF 第 9 页）。</p>
+<h3>反思与计划：分别补上概括和时间连续性</h3>
+<p>反思把零散经历变成可再次检索的判断。新事件的重要性累计超过 150 时，系统取最近 100 条记忆，请模型提出 3 个高层问题，再分别按问题检索，为每个问题生成 5 条推断并引用所依据的记录。一次运行中通常每天反思约两三次。反思还能引用既有反思，形成逐层抽象的树（第 4.2 节）。</p>
+<p><a class="reading-image" href="assets/park2023generative/fig-recursive-reflection-tree.png?v=c0aa4717a06eacd0b6714813cb4a2889be785f351adc725935fb4f80a2c0db83" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/park2023generative/fig-recursive-reflection-tree.png?v=c0aa4717a06eacd0b6714813cb4a2889be785f351adc725935fb4f80a2c0db83" alt="从阅读与研究活动归纳出角色对研究的投入" loading="lazy" decoding="async"></a></p>
+<p>图解：原图 7，arXiv v2，PDF 第 10 页。下层含阅读、查文献、与馆员交谈等观察，也包含计划与已有反思；向上的箭头通向“投入研究”的概括。这是推断来源结构，不是独立的事实验证。<a href="https://arxiv.org/pdf/2304.03442v2#page=10">来源</a>。</p>
+<p>这里最有用的变化，是把“经常碰到某人”提升为“与某人共享研究兴趣”，从而支持选择交往对象、推测礼物偏好等回答。但概括仍由模型产生；保存引用只提供可追溯线索，不使推断自动成立。</p>
+<p>计划解决另一种断裂：若只问“现在该做什么”，角色可能在中午接连吃好几顿午餐。系统先生成一天 5–8 个大块安排，再分解为小时级、继而 5–15 分钟的动作，注明地点、开始时间与持续时间。每一步观察后还要判断是否反应；若与路过的家人交谈，就从当前时刻调整计划。对话双方分别检索彼此关系和当前话题，再轮流生成发言（第 4.3 节，PDF 第 10–12 页）。</p>
+<p>附录 A 补充了运行细节：身份、当前职业活动与近期进展感受被定期汇总并缓存；详细计划只在即将执行时展开。第 5 节则将地点组织成“小镇—建筑—房间—物体”的树，逐层选择行动地点。角色只持有自己已知区域的子树，离开后物体状态可能过时。这些接口使计划能够落地，但论文未单独消融缓存、地点树或每个检索权重，不能据架构图判定其各自必要性。</p>
+<h2>三、主要结果与证据</h2>
+<h3>相同经历下，完整架构的回答更可信</h3>
+<p>受控实验先让完整架构运行两个游戏日，再固定所得经历，比较访谈时能够访问哪些记忆。四种系统条件依次为：完全不能访问记忆流；只能访问观察；可访问观察和计划；可访问观察、计划与反思。另请 25 名众包工作者各扮演一个角色，观看回放和记忆后撰写回答。100 名在美国、年龄超过 18 岁且英语流利的评价者，每人比较同一角色五类问题中的各一道，对五个条件排序；五类为自我认识、记忆、计划、反应与反思（第 6 节、附录 B）。</p>
+<p><a class="reading-image" href="assets/park2023generative/fig-believability-ablation.png?v=e8f2899654a42d9ecf6a2ff649b488c5462c9b66460d590b27d06f0b99b3cc2c" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/park2023generative/fig-believability-ablation.png?v=e8f2899654a42d9ecf6a2ff649b488c5462c9b66460d590b27d06f0b99b3cc2c" alt="完整架构与逐步移除记忆类型后的可信度评分比较" loading="lazy" decoding="async"></a></p>
+<p>图解：原图 8，arXiv v2，PDF 第 14 页。横轴为从可信度排名计算的 TrueSkill 评分，越高越受评价者认可；纵向比较四种架构与人工回答。误差线保留，原图注未单独说明其倍数定义。评分不是回答正确率。<a href="https://arxiv.org/pdf/2304.03442v2#page=14">来源</a>。</p>
 <table>
 <thead>
 <tr>
-<th>项目</th>
-<th>内容</th>
+<th>条件</th>
+<th style="text-align:right">TrueSkill 均值 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span></eq></th>
+<th style="text-align:right">TrueSkill 技能估计标准差 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span></span></span></span></eq></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>分析类型与领域</td>
-<td>methods；生成式智能体架构</td>
+<td>完整架构</td>
+<td style="text-align:right">29.89</td>
+<td style="text-align:right">0.72</td>
 </tr>
 <tr>
-<td>标识符</td>
-<td>DOI：10.1145/3586183.3606763</td>
+<td>无反思</td>
+<td style="text-align:right">26.88</td>
+<td style="text-align:right">0.69</td>
 </tr>
 <tr>
-<td>作者机构</td>
-<td>Computer Science Department, Stanford University, United States；Google, United States；Google Research, United States</td>
+<td>无反思、无计划</td>
+<td style="text-align:right">25.64</td>
+<td style="text-align:right">0.68</td>
 </tr>
 <tr>
-<td>代码与数据</td>
-<td>未确认公开资源入口</td>
+<td>众包工作者回答</td>
+<td style="text-align:right">22.95</td>
+<td style="text-align:right">0.69</td>
 </tr>
 <tr>
-<td>阅读日期</td>
-<td>2026-10-11</td>
+<td>无观察、无计划、无反思</td>
+<td style="text-align:right">21.21</td>
+<td style="text-align:right">0.70</td>
 </tr>
 </tbody>
 </table>
-<p>[Paper: PDF pp. 1–20, main text]</p>
-<h2>02 一句话概括</h2>
-<p>[Paper] 记忆检索、反思和计划支持虚拟角色在持续环境中产生连贯行为与局部协调。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>03 研究问题</h2>
-<p>[Paper] 记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为？ [Paper: PDF pp. 1–20, main text]</p>
-<h2>04 研究背景与发展路径</h2>
-<p>[Analysis] 持续角色行为需要从经历中选择相关信息，而非每次独立生成动作。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>05 论文识别的核心问题</h2>
-<table>
-<thead>
-<tr>
-<th>问题</th>
-<th>为什么难以辨别</th>
-<th>处理思路</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为</td>
-<td>[Analysis] 持续角色行为需要从经历中选择相关信息，而非每次独立生成动作。</td>
-<td>[Analysis] 记忆检索、反思与计划共同维持虚拟行为历史。</td>
-</tr>
-</tbody>
-</table>
-<h2>06 核心思想</h2>
-<p>[Analysis] 记忆检索、反思与计划共同维持虚拟行为历史。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>07 方法总览</h2>
-<p>[Paper] 25个虚拟角色进行两天演示，结合真人可信度评价及组件消融。 [Paper: PDF pp. 1–20, main text]</p>
-<h2>08 核心模块拆解</h2>
-<table>
-<thead>
-<tr>
-<th>分析环节</th>
-<th>在论证中的作用</th>
-<th>可区分性</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>核心表示或机制</td>
-<td>[Analysis] 记忆检索、反思与计划共同维持虚拟行为历史。</td>
-<td>[Analysis] 可信度、组件效用和真实长期轨迹需要不同验证。</td>
-<td>[Paper: PDF pp. 1–20, main text]</td>
-</tr>
-</tbody>
-</table>
-<h2>09 关键公式与符号</h2>
-<p>不适用：本卡的核心论证由上文的方法与证据关系承担，未额外引入一个通用“复杂性公式”。</p>
-<h2>10 实验设计与证据链</h2>
-<table>
-<thead>
-<tr>
-<th>检验对象</th>
-<th>设计与证据</th>
-<th>支持的结论</th>
-<th>不支持的更强解释</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>记忆、反思与规划如何支持智能体在交互环境中持续生成连贯行为</td>
-<td>记忆检索、反思和计划支持虚拟角色在持续环境中产生连贯行为与局部协调。</td>
-<td>记忆检索、反思和计划支持虚拟角色在持续环境中产生连贯行为与局部协调。</td>
-<td>可信度与短期演示不等于真实居民长期轨迹验证；无逐行为规则仍存在环境和执行约束。</td>
-<td>[Paper: PDF p. 14, Results]</td>
-</tr>
-</tbody>
-</table>
-<p>主文图表的论证入口（图题保留原文关键词）：</p>
-<table>
-<thead>
-<tr>
-<th>图表</th>
-<th>证据对象</th>
-<th>来源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Figure 1</td>
-<td>Generative agents are believable simulacra of human beh…</td>
-<td>[Paper: PDF p. 1, Figure 1]</td>
-</tr>
-<tr>
-<td>Figure 2</td>
-<td>The Smallville sandbox world, with areas labeled. The r…</td>
-<td>[Paper: PDF p. 5, Figure 2]</td>
-</tr>
-<tr>
-<td>Figure 3</td>
-<td>A morning in the life of a generative agent, John Lin. …</td>
-<td>[Paper: PDF p. 7, Figure 3]</td>
-</tr>
-<tr>
-<td>Figure 4</td>
-<td>At the beginning of the simulation, one agent is initia…</td>
-<td>[Paper: PDF p. 7, Figure 4]</td>
-</tr>
-</tbody>
-</table>
-<h2>11 结论的正确解释</h2>
-<p>[Analysis] 可信度与短期演示不等于真实居民长期轨迹验证；无逐行为规则仍存在环境和执行约束。</p>
-<h2>12 作者明确承认的局限</h2>
-<p>[Paper] 25个智能体运行两天仍耗费显著时间与调用资源；评价时间短，众包基线不代表最高人类表现；检索相关性及架构效率有待改善。 [Paper: PDF p. 17, Limitations]</p>
-<h2>13 批判性分析</h2>
-<p>[Analysis] 以独立真人活动对照，并匹配历史输入后消融检索和反思；评分偏好与提示内容可能混杂。</p>
-<h2>14 可迁移的知识</h2>
-<p>[Analysis] <strong>解读者提炼的知识候选。</strong> 可信度、组件效用和真实长期轨迹需要不同验证。</p>
-<h2>15 与现有知识的联系</h2>
-<p>[Analysis] 可与 <a href="rao1995bdi.md">Rao et al. - BDI Agents: From Theory to Practice</a> 对照阅读：该文研究“如何用信念、愿望和意图组织智能体的持续决策与计划更新”。两篇的对象、观测量和证据层级应分别比较，不能只按相近术语合并结论。</p>
-<h2>16 研究设想</h2>
-<p>[Hypothesis] <strong>解读者提出的候选：检验本文机制的适用边界。</strong></p>
-<ul>
-<li>来源观察：可信度与短期演示不等于真实居民长期轨迹验证；无逐行为规则仍存在环境和执行约束。</li>
-<li>核心假说与增量：以独立真人活动对照，并匹配历史输入后消融检索和反思。</li>
-<li>初始方法与如何验证：以独立真人活动对照，并匹配历史输入后消融检索和反思；预先固定比较条件，用未参与设定的样本检验方向和大小。</li>
-<li>可能失败：评分偏好与提示内容可能混杂。若对照能够解释观察差异，应收缩机制解释。</li>
-<li>创新状态：未核查（unverified）；该方向尚不构成新颖性主张。</li>
-</ul>
+<p>作者报告总体排名差异为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>150.29</mn></mrow><annotation encoding="application/x-tex">H(4)=150.29</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mopen">(</span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">150.29</span></span></span></span></eq>，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&lt;</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">p&lt;0.001</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7335em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.001</span></span></span></span></eq>；Dunn 事后比较经 Holm–Bonferroni 校正后，除众包工作者与完全消融条件外，其余两两差异均为 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&lt;</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">p&lt;0.001</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7335em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.001</span></span></span></span></eq>（第 6.4–6.5 节）。这支持观察、计划和反思的访问在这组嵌套条件下逐步改善回答。反思的定性例子是：Maria 不再只说不知道 Wolfgang 喜欢什么，而能据经历推荐与数学音乐创作有关的礼物。</p>
+<p>核心限制来自实验本身：消融发生在访谈访问阶段，各条件的经历均来自完整架构，未分别运行出自己的两日生活。因此，结果说明这些记忆类型有助于回答，不能直接量化删掉组件后整个社会会怎样演变；人工比较也只是众包角色扮演，并非人类专家的最高水平。</p>
+<h3>信息传播与赴约：行动链条接上了，但并非人人成功</h3>
+<p>端到端实验追踪同一小镇中 25 个角色的两日互动。初始化时，只有 Sam 知道自己竞选市长，只有 Isabella 知道自己准备举办聚会。结束时，知道竞选的角色从 1 人增至 8 人，即 4% 至 32%；知道聚会的从 1 人增至 13 人，即 4% 至 52%，后者包括组织者。作者逐一查找肯定回答对应的对话记录，在这两项消息上未发现虚构知情（第 7.1 节）。</p>
+<p><a class="reading-image" href="assets/park2023generative/fig-party-information-diffusion.png?v=4c409671c08b53f5221ecbdcc23fbbcbefc53fcb0b2665c339348e9856efad72" target="_blank" rel="noopener noreferrer" aria-label="查看原尺寸图片"><img src="assets/park2023generative/fig-party-information-diffusion.png?v=4c409671c08b53f5221ecbdcc23fbbcbefc53fcb0b2665c339348e9856efad72" alt="聚会消息由组织者传播并通过其他角色继续转述" loading="lazy" decoding="async"></a></p>
+<p>图解：原图 9，arXiv v2，PDF 第 16 页。节点为角色，箭头表示消息传播方向，无数值坐标轴。除 Isabella 外共有 12 人得知消息；Sam 向 Jennifer 转述等路径表明消息能经他人继续传播，箭头不代表赴约或友谊强度。<a href="https://arxiv.org/pdf/2304.03442v2#page=16">来源</a>。</p>
+<p>聚会案例将“收到消息—记住时间地点—纳入计划—实际到场”串成行动链。第 7.1.2 节明确报告，12 名获邀者中有 5 人到场，即约 41.7%；未到的 7 人中，3 人解释为有其他安排，4 人表达兴趣却未形成当天赴约计划。这里的“涌现”指邀请传播、协作装饰和到场等过程未经逐步脚本化；聚会意图以及 Maria 对 Klaus 的好感仍由人初始化（第 3.4.3 节）。</p>
+<p>关系测量也有明确口径：两名角色都表示认识对方，且记忆核查支持，才形成无向边。网络密度是实际边数占全部可能配对数的比例；<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span></span></span></span></eq> 为角色集合，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span></span></span></span></eq> 为边集合，<eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>V</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|V|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mord">∣</span></span></span></span></eq> 与 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>E</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|E|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span><span class="mord">∣</span></span></span></span></eq> 分别表示角色数与边数，密度无物理单位：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>η</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi mathvariant="normal">∣</mi><mi>E</mi><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mi>V</mi><mi mathvariant="normal">∣</mi><mo stretchy="false">(</mo><mi mathvariant="normal">∣</mi><mi>V</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+\eta=\frac{2|E|}{|V|(|V|-1)}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">η</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mord">∣</span><span class="mopen">(</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2∣</span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span><span class="mord">∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p><strong>理解演示，非论文另一次实验</strong>：若 5 人中有 4 对互相认识，则 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>4</mn><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.4</mn></mrow><annotation encoding="application/x-tex">\eta=2\times4/(5\times4)=0.4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">η</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4/</span><span class="mopen">(</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0.4</span></span></span></span></eq>。论文的 25 人网络密度从 0.167 增至 0.74，说明相互知晓更普遍，不能据此认定形成了同等强度的友谊。作者另报告，453 条关于认识其他角色的回答中有 6 条幻觉，约 1.3%；这不是全系统所有输出的幻觉率。</p>
+<h2>四、意义与适用边界</h2>
+<p>这项工作的实质，是把自然语言同时用于经历记录、抽象判断和未来安排，让一个角色的生成结果能够持续影响它和其他角色。它展示了可交互的连续生活片段，并用受控访谈证明记忆类型的访问对可信度有贡献；两个游戏日的群体案例则展示了消息传播和部分协调成功。</p>
+<p>可信表现仍有两层断点。第一是信息链不完整：Tom 能记起“在聚会上讨论竞选”，却没检索到聚会本身的邀请，因而对是否有聚会表示不确定；角色也会在真实记忆上添出未经发生的细节。第二是世界约束和社会风格偏差：角色可能误认单人浴室可多人使用、闭店后仍进商店，或因过度合作而不断吸收他人兴趣。作者把过度礼貌、合作与指令调优联系起来，但未用独立对照确立这个原因（第 6.5、7.2 节）。</p>
+<p>时间与成本也限定了结论。作者称 25 个角色的两日模拟耗费数千美元的文本调用费用，并需多个现实日完成；附录 A 的“现实一秒约对应游戏一分钟”不能理解为全程连续稳定的实时性能保证。论文未用长期重复运行或真实人群轨迹验证社会预测准确性，模型与参数变化的稳健性也未建立（第 8.2 节）。</p>
+<p>因此，其直接适用范围是游戏角色、互动叙事和早期社会系统原型。把它用于现实行为预测、特定群体代表或替代真实用户研究，需要超出本文的证据。第 8.3 节也明确主张补充而非取代真实人的参与，并讨论拟人依赖、错误推断和定向操纵的风险；披露计算实体身份、记录输入输出等属于作者提出的治理原则，本文没有验证其防护效果。</p>
 </main></body></html>
