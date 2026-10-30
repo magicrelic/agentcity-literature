@@ -1,9 +1,9 @@
 {
-  "version": "0030b3dbf975fd699bc2871052a3de43375860642aeeeccb3ab94ac4d2318ee9",
-  "catalogVersion": "a7a7b51efb231dd8f1a984e1c3691b383d3f45f0e9392f73f58877880b6d9d10",
-  "tableVersion": "19ad15849be183ccd67080ad62d483f85ca8863986c1a5901484135c574b589e",
+  "version": "0481e03cb36342bd6d35503d40bfec0b3834c1d77a78091f6dbfc5209af9bb38",
+  "catalogVersion": "69484992d12efc7eb6fc485f67989449fae23d9bde7c0119d1d0f4b78748a6e3",
+  "tableVersion": "0fdda520ba9ee5113ca61b0014ec9442a5b98c3b4964ce139af05fdb208012ec",
   "readingVersion": "73ed097a5d3ff7e064ede1948a55beb19fb9826918211d873790a3efc2fb973d",
-  "papers": 435,
+  "papers": 445,
   "readings": 405,
   "chapters": [
     "集体运动与协调",
@@ -83,9 +83,9 @@
     "assets/katex-LICENSE.txt": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
     "assets/katex.min.css": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00",
     "assets/style.css": "cbf209777fb918fb30e4b4314aec9693599fdd89ea0ffb5bf4422af7636b0eda",
-    "catalog.json": "a7a7b51efb231dd8f1a984e1c3691b383d3f45f0e9392f73f58877880b6d9d10",
+    "catalog.json": "69484992d12efc7eb6fc485f67989449fae23d9bde7c0119d1d0f4b78748a6e3",
     "catalog.schema.json": "e03a20152e04b82e5bea1e189eadd588355dbc3a4b0b8a2a4ba6ad6bcd8bddd0",
-    "index.html": "5775313bed934c5d25fee32c299dfe3dc0ffc9746d09e92d690140e56ac54f52",
+    "index.html": "900cd3de932ee43f529c85b15ba4fc4200103aed1a7adf45119b80b4adf340f5",
     "readings/abdelaty2024matched.html": "1a018e0a202705b2a37a0c0fdd6aae0ffafcd93fb60c52c597700577c8568022",
     "readings/acemoglu2015systemic.html": "f97e812a4ffcda9206d75bac166b913d5a2deb635ff7e9ff44052efc3f218c13",
     "readings/acemoglu2018informational.html": "228f105e5dfc93b8fa6e4f57332c84c4d0e852bf7494cc594b20575019a9cd63",
@@ -1957,6 +1957,6 @@
     "readings/zhu2024survey.html": "d8b3e1d009a209a31c8224c3a6c21dbf52a7d55184b63be6b4930a4ab638f792",
     "readings/zomer2026unraveling.html": "ebb058831059613b9415f41e9005d988ecb2b29058c2c7e2cce76f11e1f56443",
     "readings/zwanzig1961memory.html": "550e93b6b96a6651af705cfd08aafd842ba1410854ab490f8b67e66a169a8afc",
-    "table-index.json": "19ad15849be183ccd67080ad62d483f85ca8863986c1a5901484135c574b589e"
+    "table-index.json": "0fdda520ba9ee5113ca61b0014ec9442a5b98c3b4964ce139af05fdb208012ec"
   }
 }

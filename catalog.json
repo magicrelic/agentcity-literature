@@ -5771,6 +5771,202 @@
         "venueGroup": null
       }
     },
+    "p-7bef6bcffb0aeb": {
+      "citationKey": "starnini2026opinion",
+      "title": "Opinion dynamics: Statistical physics and beyond",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Starnini",
+            "given": "Michele",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-9161-5339",
+            "affiliations": [
+              "Universitat Pompeu Fabra"
+            ]
+          },
+          {
+            "family": "Baumann",
+            "given": "Fabian",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0001-3562-9728",
+            "affiliations": [
+              "University of Pennsylvania"
+            ]
+          },
+          {
+            "family": "Galla",
+            "given": "Tobias",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-3402-2163",
+            "affiliations": [
+              "Universitat de les Illes Balears"
+            ]
+          },
+          {
+            "family": "Garcia",
+            "given": "David",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2820-9151",
+            "affiliations": [
+              "University of Konstanz",
+              "Complexity Science Hub",
+              "Barcelona Supercomputing Center"
+            ]
+          },
+          {
+            "family": "Iñiguez",
+            "given": "Gerardo",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-7181-5520",
+            "affiliations": [
+              "Tampere University",
+              "Universidad Nacional Autónoma de México"
+            ]
+          },
+          {
+            "family": "Karsai",
+            "given": "Márton",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5382-8950",
+            "affiliations": [
+              "Central European University",
+              "Rényi Institute of Mathematics"
+            ]
+          },
+          {
+            "family": "Lorenz",
+            "given": "Jan",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-5547-7848",
+            "affiliations": [
+              "Constructor University"
+            ]
+          },
+          {
+            "family": "Sznajd-Weron",
+            "given": "Katarzyna",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-1851-8508",
+            "affiliations": [
+              "Wroclaw University of Science and Technology"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Reviews of Modern Physics",
+        "venueShort": "Rev. Mod. Phys.",
+        "kind": "journal-article",
+        "year": 2026,
+        "publisher": "American Physical Society (APS)",
+        "volume": "98",
+        "issue": "3",
+        "pages": null,
+        "articleNumber": "035004",
+        "publishedOnline": "2026-09-10",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "0034-6861",
+          "1539-0756"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/j1zg-ddqv",
+        "arxiv": "2507.11521",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "局部同化、同质偏好等个体机制如何产生共识、极化和碎片化，并与经验数据及AI主体实验连接？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "意见动力学",
+          "共识",
+          "极化"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/j1zg-ddqv",
+        "arxiv": "https://arxiv.org/abs/2507.11521v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "https://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2026-09-10"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1103/j1zg-ddqv",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://journals.aps.org/rmp/abstract/10.1103/j1zg-ddqv",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-intersection-20261030",
+          "provider": "Live arXiv title, authors, DOI relation and submission-history verification",
+          "url": "https://arxiv.org/abs/2507.11521v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents",
+          "networks"
+        ],
+        "objects": [
+          "human",
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "leading-journal"
+      }
+    },
     "p-e9ec0f37124bf6": {
       "citationKey": "sultimov2026respond",
       "title": "RESPOND: Realistic Environment Simulation of Population and Natural Disasters with LLM-Driven Agents",
@@ -6277,7 +6473,8 @@
         "keywords": [
           "集体智能",
           "动态网络",
-          "群体学习"
+          "群体学习",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -9392,7 +9589,8 @@
         "keywords": [
           "LLM智能体",
           "社会规范",
-          "集体偏差"
+          "集体偏差",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -9793,7 +9991,8 @@
           "进化博弈",
           "强化学习",
           "合作",
-          "群体动力学"
+          "群体动力学",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -13942,7 +14141,8 @@
           "强化学习",
           "随机博弈",
           "合作",
-          "激励设计"
+          "激励设计",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -14599,7 +14799,8 @@
           "强化学习",
           "进化博弈",
           "合作",
-          "群体动力学"
+          "群体动力学",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -15467,6 +15668,163 @@
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-753f2906ced97c": {
+      "citationKey": "tordeux2025modelling",
+      "title": "Modelling Vehicle and Pedestrian Collective Dynamics: Challenges and Advances",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Tordeux",
+            "given": "Antoine",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Appert-Rolland",
+            "given": "Cécile",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Nicolas",
+            "given": "Alexandre",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Seyfried",
+            "given": "Armin",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ullmo",
+            "given": "Denis",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Safety Engineering",
+        "venueShort": "Safety Engineering",
+        "kind": "book-chapter",
+        "year": 2025,
+        "publisher": "Springer Fachmedien Wiesbaden",
+        "volume": null,
+        "issue": null,
+        "pages": "125-155",
+        "articleNumber": null,
+        "publishedOnline": "2025-08-14",
+        "publishedPrint": "2025",
+        "posted": null,
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1007/978-3-658-47473-7_5",
+        "arxiv": "2410.22896",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "反应、预期与群体协调等个体机制如何产生走停波、分道、长期避让和负载均衡？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "人群动力学",
+          "交通流",
+          "预期行为"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1007/978-3-658-47473-7_5",
+        "arxiv": "https://arxiv.org/abs/2410.22896v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "tdm",
+            "startDate": "2025-01-01"
+          },
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "vor",
+            "startDate": "2025-01-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1007/978-3-658-47473-7_5",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://doi.org/10.1007/978-3-658-47473-7_5",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-intersection-20261030",
+          "provider": "Live arXiv title, authors, DOI relation and submission-history verification",
+          "url": "https://arxiv.org/abs/2410.22896v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents",
+          "mobility"
+        ],
+        "objects": [
+          "human",
+          "urban"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "chapter",
+        "venueGroup": null
       }
     },
     "p-tran2025multi": {
@@ -25498,6 +25856,151 @@
         "venueGroup": "nature-science"
       }
     },
+    "p-7d260679cd5dab": {
+      "citationKey": "gong2023crowd",
+      "title": "Crowd Dynamics: Modeling and Control of Multiagent Systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gong",
+            "given": "Xiaoqian",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "School of Mathematical and Statistical Sciences, Arizona State University, Tempe, Arizona, USA;"
+            ]
+          },
+          {
+            "family": "Herty",
+            "given": "Michael",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Department of Mathematics, RWTH Aachen University, Aachen, Germany;"
+            ]
+          },
+          {
+            "family": "Piccoli",
+            "given": "Benedetto",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Department of Mathematical Sciences, Rutgers University–Camden, Camden, New Jersey, USA;"
+            ]
+          },
+          {
+            "family": "Visconti",
+            "given": "Giuseppe",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Department of Mathematics, Sapienza University of Rome, Rome, Italy;"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Annual Review of Control, Robotics, and Autonomous Systems",
+        "venueShort": "Annual Review of Control, Robotics, and Autonomous Systems",
+        "kind": "journal-article",
+        "year": 2023,
+        "publisher": "Annual Reviews",
+        "volume": "6",
+        "issue": "1",
+        "pages": "261-282",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2023-05-03",
+        "posted": null,
+        "issn": [
+          "2573-5144"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1146/annurev-control-060822-123629",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "如何从交互主体的微观动力学推导群体分布演化，并在个体和群体尺度实施控制？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "人群动力学",
+          "平均场",
+          "多尺度建模"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1146/annurev-control-060822-123629",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "http://creativecommons.org/licenses/by/4.0/",
+            "appliesTo": "unspecified",
+            "startDate": "2023-05-03"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1146/annurev-control-060822-123629",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://doi.org/10.1146/annurev-control-060822-123629",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents",
+          "mobility"
+        ],
+        "objects": [
+          "human",
+          "urban",
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-bccc80d4644fbf": {
       "citationKey": "he2023heterogeneity",
       "title": "Heterogeneity induced localization of traffic congestion on networks",
@@ -31654,6 +32157,180 @@
         ],
         "documentType": "research",
         "venueGroup": "other-journal"
+      }
+    },
+    "p-55dd74f462f1d7": {
+      "citationKey": "lauriere2022learning",
+      "title": "Learning in Mean Field Games: A Survey",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Laurière",
+            "given": "Mathieu",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Perrin",
+            "given": "Sarah",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Pérolat",
+            "given": "Julien",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Girgin",
+            "given": "Sertan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Muller",
+            "given": "Paul",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Élie",
+            "given": "Romuald",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Geist",
+            "given": "Matthieu",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Pietquin",
+            "given": "Olivier",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "arXiv",
+        "venueShort": "arXiv",
+        "kind": "preprint",
+        "year": 2022,
+        "publisher": "arXiv",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": null,
+        "posted": "2022-05-25",
+        "issn": [],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.48550/arxiv.2205.12944",
+        "arxiv": "2205.12944",
+        "arxivVersion": 4
+      },
+      "research": {
+        "question": "如何把个体最优策略与群体状态分布的相互反馈形式化，并学习平均场博弈均衡与社会最优？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "平均场博弈",
+          "群体分布",
+          "多智能体强化学习"
+        ]
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2205.12944v4",
+        "arxiv": "https://arxiv.org/abs/2205.12944v4",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+            "appliesTo": "preprint",
+            "startDate": null
+          }
+        ],
+        "sourceIds": [
+          "datacite",
+          "arxiv"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "datacite",
+          "provider": "DataCite arXiv identity, authors and initial publication record",
+          "url": "https://api.datacite.org/dois/10.48550/arxiv.2205.12944",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv",
+          "provider": "Official arXiv title, authors, latest version and review scope",
+          "url": "https://arxiv.org/abs/2205.12944v4",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research",
+            "links",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-intersection-20261030",
+          "provider": "Live arXiv title, authors, DOI relation and submission-history verification",
+          "url": "https://arxiv.org/abs/2205.12944v4",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "collective",
+          "adaptation"
+        ],
+        "objects": [
+          "ai",
+          "human",
+          "economic"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": null
       }
     },
     "p-c14473946a8460": {
@@ -38871,7 +39548,8 @@
           "综述",
           "群体机器人",
           "集体决策",
-          "自组织"
+          "自组织",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -39598,7 +40276,8 @@
           "强化学习",
           "学习动力学",
           "随机博弈",
-          "混沌"
+          "混沌",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -44685,7 +45364,8 @@
         "keywords": [
           "多智能体学习",
           "平均场理论",
-          "强化学习"
+          "强化学习",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -45454,7 +46134,8 @@
           "综述",
           "合作",
           "进化博弈",
-          "社会困境"
+          "社会困境",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -45946,6 +46627,127 @@
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-f02b051d2b192f": {
+      "citationKey": "valentini2017best",
+      "title": "The Best-of-n Problem in Robot Swarms: Formalization, State of the Art, and Novel Perspectives",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Valentini",
+            "given": "Gabriele",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ferrante",
+            "given": "Eliseo",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Dorigo",
+            "given": "Marco",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Frontiers in Robotics and AI",
+        "venueShort": "Front. Robot. AI",
+        "kind": "journal-article",
+        "year": 2017,
+        "publisher": "Frontiers Media SA",
+        "volume": "4",
+        "issue": null,
+        "pages": null,
+        "articleNumber": null,
+        "publishedOnline": "2017-03-13",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2296-9144"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.3389/frobt.2017.00009",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "机器人个体的状态转换和局部交互如何产生群体选择，并决定收敛、准确性及速度之间的关系？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "集体决策",
+          "群体机器人",
+          "平均场"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.3389/frobt.2017.00009",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.3389/frobt.2017.00009",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2017.00009/full",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents"
+        ],
+        "objects": [
+          "ai"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
       }
     },
     "p-defa44d50e7ce6": {
@@ -48481,7 +49283,8 @@
           "综述",
           "学习动力学",
           "进化博弈",
-          "多智能体强化学习"
+          "多智能体强化学习",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -52085,7 +52888,8 @@
           "综述",
           "群体机器人",
           "自组织",
-          "群体工程"
+          "群体工程",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -56396,7 +57200,8 @@
           "集体运动",
           "自驱粒子",
           "有源物质",
-          "综述"
+          "综述",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -57792,6 +58597,139 @@
         "venueGroup": "other-journal"
       }
     },
+    "p-8a0260954b2572": {
+      "citationKey": "perc2010coevolutionary",
+      "title": "Coevolutionary games—A mini review",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Perc",
+            "given": "Matjaž",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Szolnoki",
+            "given": "Attila",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Biosystems",
+        "venueShort": "Biosystems",
+        "kind": "journal-article",
+        "year": 2010,
+        "publisher": "Elsevier BV",
+        "volume": "99",
+        "issue": "2",
+        "pages": "109-125",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2010-02",
+        "posted": null,
+        "issn": [
+          "0303-2647"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.biosystems.2009.10.003",
+        "arxiv": "0910.0826",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "策略更新与交互网络、移动和个体属性的共同演化如何改变群体合作状态？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "进化博弈",
+          "共同演化网络",
+          "合作"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.biosystems.2009.10.003",
+        "arxiv": "https://arxiv.org/abs/0910.0826v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2010-02-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1016/j.biosystems.2009.10.003",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://doi.org/10.1016/j.biosystems.2009.10.003",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-intersection-20261030",
+          "provider": "Live arXiv title, authors, DOI relation and submission-history verification",
+          "url": "https://arxiv.org/abs/0910.0826v1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "adaptation",
+          "collective",
+          "networks"
+        ],
+        "objects": [
+          "human",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-43c18ce455ce8c": {
       "citationKey": "song2010limits",
       "title": "Limits of Predictability in Human Mobility",
@@ -58184,7 +59122,8 @@
           "社会动力学",
           "统计物理",
           "意见动力学",
-          "综述"
+          "综述",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -58260,6 +59199,120 @@
         ],
         "documentType": "review",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-bfcc0bd57bfd07": {
+      "citationKey": "couzin2009collective",
+      "title": "Collective cognition in animal groups",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Couzin",
+            "given": "Iain D.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Trends in Cognitive Sciences",
+        "venueShort": "Trends in Cognitive Sciences",
+        "kind": "journal-article",
+        "year": 2009,
+        "publisher": "Elsevier BV",
+        "volume": "13",
+        "issue": "1",
+        "pages": "36-43",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2009-01",
+        "posted": null,
+        "issn": [
+          "1364-6613"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.tics.2008.10.002",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "个体状态、局部交互和信息放大如何共同产生动物群体的集体认知与适应性决策？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "集体决策",
+          "信息传播",
+          "局部交互"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.tics.2008.10.002",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2009-01-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1016/j.tics.2008.10.002",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://doi.org/10.1016/j.tics.2008.10.002",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents"
+        ],
+        "objects": [
+          "animal",
+          "human"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
       }
     },
     "p-b0256bc4c86303": {
@@ -59404,7 +60457,8 @@
         "keywords": [
           "共同演化网络",
           "适应性网络",
-          "综述"
+          "综述",
+          "集体动力学与多智能体"
         ]
       },
       "links": {
@@ -60601,6 +61655,139 @@
         "venueGroup": "other-journal"
       }
     },
+    "p-b354b05317b641": {
+      "citationKey": "szabo2007evolutionary",
+      "title": "Evolutionary games on graphs",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Szabó",
+            "given": "György",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Fáth",
+            "given": "Gábor",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physics Reports",
+        "venueShort": "Phys. Rep.",
+        "kind": "journal-article",
+        "year": 2007,
+        "publisher": "Elsevier BV",
+        "volume": "446",
+        "issue": "4-6",
+        "pages": "97-216",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2007-07",
+        "posted": null,
+        "issn": [
+          "0370-1573"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.physrep.2007.04.004",
+        "arxiv": "cond-mat/0607344",
+        "arxivVersion": 3
+      },
+      "research": {
+        "question": "网络上的个体策略更新如何产生空间合作、循环竞争及非平衡相变？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "进化博弈",
+          "相变",
+          "循环竞争"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.physrep.2007.04.004",
+        "arxiv": "https://arxiv.org/abs/cond-mat/0607344v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2007-07-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1016/j.physrep.2007.04.004",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://public.ek-cer.hu/~szabo/egg.pdf",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-intersection-20261030",
+          "provider": "Live arXiv title, authors, DOI relation and submission-history verification",
+          "url": "https://arxiv.org/abs/cond-mat/0607344v3",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "adaptation",
+          "networks"
+        ],
+        "objects": [
+          "human",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "leading-journal"
+      }
+    },
     "p-9686223e96f977": {
       "citationKey": "timme2007revealing",
       "title": "Revealing Network Connectivity from Response Dynamics",
@@ -61217,6 +62404,122 @@
           "observation"
         ],
         "documentType": "research",
+        "venueGroup": "other-journal"
+      }
+    },
+    "p-8a15153922a916": {
+      "citationKey": "sumpter2006principles",
+      "title": "The principles of collective animal behaviour",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Sumpter",
+            "given": "D.J.T",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Department of zoologySouth Parks Road, Oxford, OX1 3PS, UK"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+        "venueShort": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+        "kind": "journal-article",
+        "year": 2006,
+        "publisher": "The Royal Society",
+        "volume": "361",
+        "issue": "1465",
+        "pages": "5-22",
+        "articleNumber": null,
+        "publishedOnline": "2005-11-28",
+        "publishedPrint": "2006-01-29",
+        "posted": null,
+        "issn": [
+          "0962-8436",
+          "1471-2970"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1098/rstb.2005.1733",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "动物个体的局部行为规则如何通过反馈、阈值与异质性产生群体组织和集体响应？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "自组织",
+          "局部交互",
+          "集体决策"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1098/rstb.2005.1733",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://royalsociety.org/journals/ethics-policies/data-sharing-mining/",
+            "appliesTo": "tdm",
+            "startDate": "2005-11-28"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1098/rstb.2005.1733",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1626537/",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents"
+        ],
+        "objects": [
+          "animal"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
         "venueGroup": "other-journal"
       }
     },
@@ -62007,6 +63310,128 @@
           "observation"
         ],
         "documentType": "research",
+        "venueGroup": "other-journal"
+      }
+    },
+    "p-35edbb671d9972": {
+      "citationKey": "tuyls2005evolutionary",
+      "title": "Evolutionary game theory and multi-agent reinforcement learning",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "TUYLS",
+            "given": "KARL",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "NOWÉ",
+            "given": "ANN",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "The Knowledge Engineering Review",
+        "venueShort": "Knowl. Eng. Rev.",
+        "kind": "journal-article",
+        "year": 2005,
+        "publisher": "Maximum Academic Press",
+        "volume": "20",
+        "issue": "1",
+        "pages": "63-90",
+        "articleNumber": null,
+        "publishedOnline": "2005-12-01",
+        "publishedPrint": "2005-03",
+        "posted": null,
+        "issn": [
+          "0269-8889",
+          "1469-8005"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1017/s026988890500041x",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "多智能体强化学习的微观更新与进化博弈的人口动力学之间具有怎样的数学联系？",
+        "keywords": [
+          "综述",
+          "集体动力学与多智能体",
+          "学习动力学",
+          "进化博弈"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1017/s026988890500041x",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.cambridge.org/core/terms",
+            "appliesTo": "unspecified",
+            "startDate": "2005-12-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "article"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1017/s026988890500041x",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "article",
+          "provider": "Publisher or author publication record; review type and scope",
+          "url": "https://doi.org/10.1017/S026988890500041X",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "adaptation",
+          "agents",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
         "venueGroup": "other-journal"
       }
     },
