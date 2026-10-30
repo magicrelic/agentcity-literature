@@ -13758,6 +13758,160 @@
         "venueGroup": "leading-journal"
       }
     },
+    "p-7973f3d22291cd": {
+      "citationKey": "sehwag2025collective",
+      "title": "Collective artificial intelligence and evolutionary dynamics",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Sehwag",
+            "given": "Udari Madhushani",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6561-1000",
+            "affiliations": [
+              "Department of Computer Science",
+              "Stanford University"
+            ]
+          },
+          {
+            "family": "McAvoy",
+            "given": "Alex",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "School of Data Science and Society",
+              "University of North Carolina at Chapel Hill",
+              "Department of Mathematics"
+            ]
+          },
+          {
+            "family": "Plotkin",
+            "given": "Joshua B.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-2349-6304",
+            "affiliations": [
+              "Department of Biology",
+              "University of Pennsylvania",
+              "Center for Mathematical Biology"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Proceedings of the National Academy of Sciences",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "National Academy of Sciences",
+        "volume": "122",
+        "issue": "25",
+        "pages": null,
+        "articleNumber": "e2505860122",
+        "publishedOnline": "2025-06-16",
+        "publishedPrint": "2025-06-24",
+        "posted": null,
+        "issn": [
+          "0027-8424",
+          "1091-6490"
+        ],
+        "isbn": [],
+        "venueShort": "PNAS"
+      },
+      "identifiers": {
+        "doi": "10.1073/pnas.2505860122",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "如何连接进化博弈、群体动力学与多智能体强化学习，以解释并促进复杂环境中的合作和集体决策？",
+        "keywords": [
+          "强化学习",
+          "进化博弈",
+          "合作",
+          "群体动力学"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1073/pnas.2505860122",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2025-06-16"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "pmc",
+          "pubmed"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher deposit",
+          "url": "https://api.crossref.org/works/10.1073/pnas.2505860122",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "pubmed",
+          "provider": "PubMed PMID 40523180",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40523180/",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication.publishedPrint",
+            "publication.publishedOnline",
+            "publication.articleNumber"
+          ]
+        },
+        {
+          "id": "pmc",
+          "provider": "PMC12207492 Version of Record full text and article-type introduction",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12207492/",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "access.original",
+            "research.question",
+            "research.keywords",
+            "classification"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "adaptation",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "human"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "perspective",
+        "venueGroup": "leading-journal"
+      }
+    },
     "p-c0e932926cd737": {
       "citationKey": "slotte2025herring",
       "title": "Herring spawned poleward following fishery-induced collective memory loss",
