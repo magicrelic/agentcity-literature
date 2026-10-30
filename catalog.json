@@ -5887,7 +5887,8 @@
           "集体动力学与多智能体",
           "意见动力学",
           "共识",
-          "极化"
+          "极化",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -5911,7 +5912,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/starnini2026opinion.md",
       "provenance": [
         {
           "id": "crossref",
@@ -6552,6 +6553,15 @@
           "retrievedOn": "2026-10-30",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://www.nature.com/articles/s42256-026-01211-1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -9676,6 +9686,15 @@
           "fields": [
             "links.supplement"
           ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://arxiv.org/pdf/2410.08948v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
@@ -10055,6 +10074,15 @@
           "retrievedOn": "2026-10-30",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://pure.mpg.de/rest/items/item_3654392_2/component/file_3654393/content",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -14211,6 +14239,15 @@
           "fields": [
             "links.supplement"
           ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://pure.mpg.de/rest/items/item_3654404_2/component/file_3654405/content",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
@@ -14863,6 +14900,15 @@
             "research.question",
             "research.keywords",
             "classification"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12207492/",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -15728,7 +15774,10 @@
         "publishedPrint": "2025",
         "posted": null,
         "issn": [],
-        "isbn": []
+        "isbn": [
+          "9783658474720",
+          "9783658474737"
+        ]
       },
       "identifiers": {
         "doi": "10.1007/978-3-658-47473-7_5",
@@ -15742,7 +15791,8 @@
           "集体动力学与多智能体",
           "人群动力学",
           "交通流",
-          "预期行为"
+          "预期行为",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -15771,7 +15821,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/tordeux2025modelling.md",
       "provenance": [
         {
           "id": "crossref",
@@ -25903,7 +25953,7 @@
       },
       "publication": {
         "venue": "Annual Review of Control, Robotics, and Autonomous Systems",
-        "venueShort": "Annual Review of Control, Robotics, and Autonomous Systems",
+        "venueShort": "Annu. Rev. Control Robot. Auton. Syst.",
         "kind": "journal-article",
         "year": 2023,
         "publisher": "Annual Reviews",
@@ -25931,7 +25981,8 @@
           "集体动力学与多智能体",
           "人群动力学",
           "平均场",
-          "多尺度建模"
+          "多尺度建模",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -25955,7 +26006,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/gong2023crowd.md",
       "provenance": [
         {
           "id": "crossref",
@@ -32252,7 +32303,8 @@
           "集体动力学与多智能体",
           "平均场博弈",
           "群体分布",
-          "多智能体强化学习"
+          "多智能体强化学习",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -32276,7 +32328,7 @@
           "arxiv"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/lauriere2022learning.md",
       "provenance": [
         {
           "id": "datacite",
@@ -39549,7 +39601,8 @@
           "群体机器人",
           "集体决策",
           "自组织",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -39598,6 +39651,15 @@
             "research.question",
             "research.keywords",
             "access.original"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://public-pages-files-2025.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2020.00036/pdf",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -40337,6 +40399,15 @@
             "identifiers.arxiv",
             "identifiers.arxivVersion",
             "links.arxiv"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://arxiv.org/pdf/1809.07225v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -45429,6 +45500,15 @@
             "links.supplement",
             "links.code"
           ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://proceedings.mlr.press/v80/yang18d/yang18d.pdf",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
@@ -46135,7 +46215,8 @@
           "合作",
           "进化博弈",
           "社会困境",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -46230,6 +46311,15 @@
             "identifiers.arxiv",
             "identifiers.arxivVersion",
             "links.arxiv"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://sseh.uchicago.edu/doc/Perc_et_al_Physics_Reports_2017.pdf",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -46689,7 +46779,8 @@
           "集体动力学与多智能体",
           "集体决策",
           "群体机器人",
-          "平均场"
+          "平均场",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -46707,7 +46798,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/valentini2017best.md",
       "provenance": [
         {
           "id": "crossref",
@@ -49284,7 +49375,8 @@
           "学习动力学",
           "进化博弈",
           "多智能体强化学习",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -49327,6 +49419,15 @@
             "research.question",
             "research.keywords",
             "access.original"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://ir.cwi.nl/pub/23776/23776A.pdf",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -52889,7 +52990,8 @@
           "群体机器人",
           "自组织",
           "群体工程",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -52938,6 +53040,15 @@
             "research.question",
             "research.keywords",
             "access.original"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://iridia.ulb.ac.be/~mbiro/paperi/BraFerBirDor2013si.pdf",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -57201,7 +57312,8 @@
           "自驱粒子",
           "有源物质",
           "综述",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -57260,6 +57372,15 @@
           "retrievedOn": "2026-10-29",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://arxiv.org/pdf/1010.5017v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -58650,7 +58771,8 @@
           "集体动力学与多智能体",
           "进化博弈",
           "共同演化网络",
-          "合作"
+          "合作",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -58674,7 +58796,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/perc2010coevolutionary.md",
       "provenance": [
         {
           "id": "crossref",
@@ -59123,7 +59245,8 @@
           "统计物理",
           "意见动力学",
           "综述",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -59182,6 +59305,15 @@
           "retrievedOn": "2026-10-29",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://arxiv.org/pdf/0710.3256v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -59247,7 +59379,8 @@
           "集体动力学与多智能体",
           "集体决策",
           "信息传播",
-          "局部交互"
+          "局部交互",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -59271,7 +59404,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/couzin2009collective.md",
       "provenance": [
         {
           "id": "crossref",
@@ -60458,7 +60591,8 @@
           "共同演化网络",
           "适应性网络",
           "综述",
-          "集体动力学与多智能体"
+          "集体动力学与多智能体",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -60538,6 +60672,15 @@
           "retrievedOn": "2026-10-30",
           "fields": [
             "links.supplement"
+          ]
+        },
+        {
+          "id": "scope-intersection-20261030",
+          "provider": "Original full-text topic-scope verification against the archived reading version",
+          "url": "https://arxiv.org/pdf/0709.1858v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "research.keywords"
           ]
         }
       ],
@@ -61708,7 +61851,8 @@
           "集体动力学与多智能体",
           "进化博弈",
           "相变",
-          "循环竞争"
+          "循环竞争",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -61732,7 +61876,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/szabo2007evolutionary.md",
       "provenance": [
         {
           "id": "crossref",
@@ -62456,7 +62600,8 @@
           "集体动力学与多智能体",
           "自组织",
           "局部交互",
-          "集体决策"
+          "集体决策",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -62480,7 +62625,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/sumpter2006principles.md",
       "provenance": [
         {
           "id": "crossref",
@@ -63366,7 +63511,8 @@
           "综述",
           "集体动力学与多智能体",
           "学习动力学",
-          "进化博弈"
+          "进化博弈",
+          "集体动力学与多智能体综述"
         ]
       },
       "links": {
@@ -63390,7 +63536,7 @@
           "article"
         ]
       },
-      "reading": null,
+      "reading": "论文解读/tuyls2005evolutionary.md",
       "provenance": [
         {
           "id": "crossref",
