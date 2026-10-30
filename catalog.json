@@ -1495,6 +1495,142 @@
         "venueGroup": "other-journal"
       }
     },
+    "p-ba57478f39b014": {
+      "citationKey": "haase2026beyond",
+      "title": "Beyond static responses: multi-agent LLM systems as a new paradigm for social science research",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Haase",
+            "given": "Jennifer",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8450-7252",
+            "affiliations": []
+          },
+          {
+            "family": "Pokutta",
+            "given": "Sebastian",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Humanities and Social Sciences Communications",
+        "kind": "journal-article",
+        "year": 2026,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "13",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "1490",
+        "publishedOnline": "2026-09-02",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2662-9992"
+        ],
+        "isbn": [],
+        "venueShort": "Humanit. Soc. Sci. Commun."
+      },
+      "identifiers": {
+        "doi": "10.1057/s41599-026-08832-2",
+        "arxiv": "2506.01839",
+        "arxivVersion": 3
+      },
+      "research": {
+        "question": "LLM系统从静态工具发展为持续交互、自适应群体时，哪些架构能力支持哪些社会科学研究主张？",
+        "keywords": [
+          "大语言模型",
+          "多智能体系统",
+          "社会模拟",
+          "涌现"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1057/s41599-026-08832-2",
+        "arxiv": "https://arxiv.org/abs/2506.01839v3",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2026-09-02"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2026-09-02"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "primary-publication"
+        ]
+      },
+      "reading": "论文解读/haase2026beyond.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1057/s41599-026-08832-2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "primary-publication",
+          "provider": "Primary publisher or author version; article type and subject verification",
+          "url": "https://www.nature.com/articles/s41599-026-08832-2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-verified-20261030",
+          "provider": "Official arXiv title, authors and submission-history verification",
+          "url": "https://arxiv.org/abs/2506.01839v3",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "human"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-5a53b2982f1e73": {
       "citationKey": "han2026conformity",
       "title": "Conformity Dynamics in LLM Multi-Agent Systems: The Roles of Topology and Self-Social Weighting",
@@ -6089,6 +6225,149 @@
         "venueGroup": null
       }
     },
+    "p-cae71611eb00ba": {
+      "citationKey": "werfel2026fluid",
+      "title": "Fluid thinking about collective intelligence",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Werfel",
+            "given": "Justin",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2567-1172",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature Machine Intelligence",
+        "kind": "journal-article",
+        "year": 2026,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "8",
+        "issue": "4",
+        "pages": "506-516",
+        "articleNumber": null,
+        "publishedOnline": "2026-04-24",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2522-5839"
+        ],
+        "isbn": [],
+        "venueShort": "Nat. Mach. Intell."
+      },
+      "identifiers": {
+        "doi": "10.1038/s42256-026-01211-1",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "流动交互拓扑中的个体如何形成集体学习，并与固定拓扑系统互相借鉴计算和学习机制？",
+        "keywords": [
+          "集体智能",
+          "动态网络",
+          "群体学习"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s42256-026-01211-1",
+        "arxiv": null,
+        "data": [
+          {
+            "label": "Archived code and data",
+            "url": "https://doi.org/10.5281/zenodo.18684944"
+          }
+        ],
+        "code": [
+          {
+            "label": "FluidThinking code",
+            "url": "https://github.com/jkwerfel17/FluidThinking"
+          }
+        ],
+        "supplement": [
+          {
+            "label": "Supplementary Video 1",
+            "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42256-026-01211-1/MediaObjects/42256_2026_1211_MOESM1_ESM.mp4"
+          }
+        ]
+      },
+      "access": {
+        "original": "subscription",
+        "licenses": [
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "tdm",
+            "startDate": "2026-04-24"
+          },
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "vor",
+            "startDate": "2026-04-24"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "primary-publication"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1038/s42256-026-01211-1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "primary-publication",
+          "provider": "Primary publisher or author version; article type and subject verification",
+          "url": "https://www.nature.com/articles/s42256-026-01211-1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "materials-collective-review-20261030",
+          "provider": "Verified primary article, publisher appendix links and original material manifests",
+          "url": "https://doi.org/10.1038/s42256-026-01211-1",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents",
+          "networks"
+        ],
+        "objects": [
+          "ai",
+          "animal",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "perspective",
+        "venueGroup": "leading-journal"
+      }
+    },
     "p-cdba08b6b40b06": {
       "citationKey": "yan2026bridging",
       "title": "Bridging Individual and Collective Realism in LLM-Based Human Mobility Simulation via Mobility Scaling-Law Guidance",
@@ -9322,6 +9601,272 @@
         ],
         "documentType": "research",
         "venueGroup": null
+      }
+    },
+    "p-de8e20b65d110b": {
+      "citationKey": "barfuss2025collective",
+      "title": "Collective cooperative intelligence",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Barfuss",
+            "given": "Wolfram",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-9077-5242",
+            "affiliations": [
+              "Argelander-Chair Integrated System Modeling for Sustainability Transitions",
+              "Center for Development Research (ZEF)",
+              "University of Bonn"
+            ]
+          },
+          {
+            "family": "Flack",
+            "given": "Jessica",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Santa Fe Institute"
+            ]
+          },
+          {
+            "family": "Gokhale",
+            "given": "Chaitanya S.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-5749-3665",
+            "affiliations": [
+              "Max-Planck-Institute for Evolutionary Biology",
+              "Center for Computational and Theoretical Biology",
+              "Julius-Maximilians University"
+            ]
+          },
+          {
+            "family": "Hammond",
+            "given": "Lewis",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-1695-0871",
+            "affiliations": [
+              "Department of Computer Science",
+              "University of Oxford"
+            ]
+          },
+          {
+            "family": "Hilbe",
+            "given": "Christian",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5116-955X",
+            "affiliations": [
+              "Max-Planck-Institute for Evolutionary Biology"
+            ]
+          },
+          {
+            "family": "Hughes",
+            "given": "Edward",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Google DeepMind"
+            ]
+          },
+          {
+            "family": "Leibo",
+            "given": "Joel Z.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-3153-916X",
+            "affiliations": [
+              "Google DeepMind"
+            ]
+          },
+          {
+            "family": "Lenaerts",
+            "given": "Tom",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-3645-1455",
+            "affiliations": [
+              "Machine Learning Group, Département d’Informatique",
+              "Université Libre de Bruxelles",
+              "Artificial Intelligence Lab, Computer Science department",
+              "Vrije Universiteit Brussel",
+              "Center for Human Compatible AI",
+              "University of California"
+            ]
+          },
+          {
+            "family": "Leonard",
+            "given": "Naomi",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-5328-3871",
+            "affiliations": [
+              "Department of Mechanical and Aerospace Engineering",
+              "Princeton University"
+            ]
+          },
+          {
+            "family": "Levin",
+            "given": "Simon",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-8216-5639",
+            "affiliations": [
+              "Department of Ecology and Evolutionary Biology",
+              "Princeton University"
+            ]
+          },
+          {
+            "family": "Madhushani Sehwag",
+            "given": "Udari",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6561-1000",
+            "affiliations": [
+              "Department of Computer Science",
+              "Stanford University"
+            ]
+          },
+          {
+            "family": "McAvoy",
+            "given": "Alex",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-9110-4635",
+            "affiliations": [
+              "School of Data Science and Society",
+              "University of North Carolina at Chapel Hill",
+              "Department of Mathematics"
+            ]
+          },
+          {
+            "family": "Meylahn",
+            "given": "Janusz M.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-4388-805X",
+            "affiliations": [
+              "Department of Applied Mathematics",
+              "University of Twente"
+            ]
+          },
+          {
+            "family": "Santos",
+            "given": "Fernando P.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2310-6444",
+            "affiliations": [
+              "Faculty of Science, Informatics Institute",
+              "University of Amsterdam"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Proceedings of the National Academy of Sciences",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "National Academy of Sciences",
+        "volume": "122",
+        "issue": "25",
+        "pages": null,
+        "articleNumber": "e2319948121",
+        "publishedOnline": "2025-06-16",
+        "publishedPrint": "2025-06-24",
+        "posted": null,
+        "issn": [
+          "0027-8424",
+          "1091-6490"
+        ],
+        "isbn": [],
+        "venueShort": "PNAS"
+      },
+      "identifiers": {
+        "doi": "10.1073/pnas.2319948121",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "如何用复杂系统与多智能体强化学习的共同动力学框架理解和促进群体合作？",
+        "keywords": [
+          "进化博弈",
+          "强化学习",
+          "合作",
+          "群体动力学"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1073/pnas.2319948121",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "Supplementary Information",
+            "url": "https://pure.mpg.de/rest/items/item_3654392_2/component/file_3654394/content"
+          }
+        ]
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2025-06-16"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "primary-publication"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1073/pnas.2319948121",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "primary-publication",
+          "provider": "Primary publisher or author version; article type and subject verification",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12207418/",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "materials-collective-review-20261030",
+          "provider": "Verified primary article, publisher appendix links and original material manifests",
+          "url": "https://doi.org/10.1073/pnas.2319948121",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "adaptation",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "human",
+          "network"
+        ],
+        "evidenceTypes": [
+          "synthesis"
+        ],
+        "documentType": "perspective",
+        "venueGroup": "leading-journal"
       }
     },
     "p-b914703077d946": {
@@ -13259,6 +13804,220 @@
         ],
         "documentType": "research",
         "venueGroup": "nature-science"
+      }
+    },
+    "p-f75ea42b7b5759": {
+      "citationKey": "mcavoy2025unilateral",
+      "title": "Unilateral incentive alignment in two-agent stochastic games",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "McAvoy",
+            "given": "Alex",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-9110-4635",
+            "affiliations": [
+              "School of Data Science and Society",
+              "University of North Carolina at Chapel Hill",
+              "Department of Mathematics"
+            ]
+          },
+          {
+            "family": "Madhushani Sehwag",
+            "given": "Udari",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6561-1000",
+            "affiliations": [
+              "Department of Computer Science",
+              "Stanford University",
+              "JP Morgan AI Research"
+            ]
+          },
+          {
+            "family": "Hilbe",
+            "given": "Christian",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5116-955X",
+            "affiliations": [
+              "Max Planck Research Group: Dynamics of Social Behavior",
+              "Max Planck Institute for Evolutionary Biology"
+            ]
+          },
+          {
+            "family": "Chatterjee",
+            "given": "Krishnendu",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-4561-241X",
+            "affiliations": [
+              "Institute of Science and Technology Austria"
+            ]
+          },
+          {
+            "family": "Barfuss",
+            "given": "Wolfram",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-9077-5242",
+            "affiliations": [
+              "Transdisciplinary Research Area: Sustainable Futures",
+              "University of Bonn",
+              "Center for Development Research (ZEF)"
+            ]
+          },
+          {
+            "family": "Su",
+            "given": "Qi",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6490-686X",
+            "affiliations": [
+              "Department of Automation",
+              "Shanghai Jiao Tong University",
+              "Key Laboratory of System Control and Information Processing",
+              "Ministry of Education of China",
+              "Shanghai Engineering Research Center of Intelligent Control and Management"
+            ]
+          },
+          {
+            "family": "Leonard",
+            "given": "Naomi Ehrich",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-5328-3871",
+            "affiliations": [
+              "Department of Mechanical and Aerospace Engineering",
+              "Princeton University"
+            ]
+          },
+          {
+            "family": "Plotkin",
+            "given": "Joshua B.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-2349-6304",
+            "affiliations": [
+              "Department of Biology",
+              "University of Pennsylvania",
+              "Center for Mathematical Biology"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Proceedings of the National Academy of Sciences",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "National Academy of Sciences",
+        "volume": "122",
+        "issue": "25",
+        "pages": null,
+        "articleNumber": "e2319927121",
+        "publishedOnline": "2025-06-16",
+        "publishedPrint": "2025-06-24",
+        "posted": null,
+        "issn": [
+          "0027-8424",
+          "1091-6490"
+        ],
+        "isbn": [],
+        "venueShort": "PNAS"
+      },
+      "identifiers": {
+        "doi": "10.1073/pnas.2319927121",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "单个学习智能体如何在双智能体随机博弈中建立收益约束并对齐合作激励？",
+        "keywords": [
+          "强化学习",
+          "随机博弈",
+          "合作",
+          "激励设计"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1073/pnas.2319927121",
+        "arxiv": null,
+        "data": [],
+        "code": [
+          {
+            "label": "Author code repository",
+            "url": "https://github.com/alexmcavoy/evoenv"
+          }
+        ],
+        "supplement": [
+          {
+            "label": "SI Appendix (publisher-linked)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12207489/bin/pnas.2319927121.sapp.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "open",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2025-06-16"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "primary-publication"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1073/pnas.2319927121",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "primary-publication",
+          "provider": "Primary publisher or author version; article type and subject verification",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12207489/",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "materials-collective-review-20261030",
+          "provider": "Verified primary article, publisher appendix links and original material manifests",
+          "url": "https://doi.org/10.1073/pnas.2319927121",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "agents",
+          "adaptation",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "network"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "leading-journal"
       }
     },
     "p-775033b59d8398": {
@@ -38605,6 +39364,147 @@
         "venueGroup": "nature-science"
       }
     },
+    "p-8b831d34a0b91a": {
+      "citationKey": "barfuss2019deterministic",
+      "title": "Deterministic limit of temporal difference reinforcement learning for stochastic games",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Barfuss",
+            "given": "Wolfram",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Donges",
+            "given": "Jonathan F.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Kurths",
+            "given": "Jürgen",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review E",
+        "kind": "journal-article",
+        "year": 2019,
+        "publisher": "American Physical Society (APS)",
+        "volume": "99",
+        "issue": "4",
+        "pages": null,
+        "articleNumber": "043305",
+        "publishedOnline": "2019-04-10",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2470-0045",
+          "2470-0053"
+        ],
+        "isbn": [],
+        "venueShort": "Phys. Rev. E"
+      },
+      "identifiers": {
+        "doi": "10.1103/physreve.99.043305",
+        "arxiv": "1809.07225",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "如何从多状态时序差分学习算法推导确定性动力学，并识别稳定、周期和混沌等学习行为？",
+        "keywords": [
+          "强化学习",
+          "学习动力学",
+          "随机博弈",
+          "混沌"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physreve.99.043305",
+        "arxiv": "https://arxiv.org/abs/1809.07225v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2019-04-10"
+          }
+        ],
+        "sourceIds": [
+          "crossref",
+          "primary-publication"
+        ]
+      },
+      "reading": null,
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1103/physreve.99.043305",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "primary-publication",
+          "provider": "Primary publisher or author version; article type and subject verification",
+          "url": "https://arxiv.org/abs/1809.07225v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "classification",
+            "research.question",
+            "research.keywords",
+            "access.original"
+          ]
+        },
+        {
+          "id": "arxiv-verified-20261030",
+          "provider": "Official arXiv title, authors and submission-history verification",
+          "url": "https://arxiv.org/abs/1809.07225v2",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "adaptation",
+          "agents",
+          "collective"
+        ],
+        "objects": [
+          "ai",
+          "network"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-c70e39fc5f66f8": {
       "citationKey": "barthelemy2019statistical",
       "title": "The statistical physics of cities",
@@ -43471,8 +44371,18 @@
         "original": "https://proceedings.mlr.press/v80/yang18d.html",
         "arxiv": "https://arxiv.org/abs/1802.05438",
         "data": [],
-        "code": [],
-        "supplement": []
+        "code": [
+          {
+            "label": "Author mean-field RL implementation",
+            "url": "https://github.com/mlii/mfrl"
+          }
+        ],
+        "supplement": [
+          {
+            "label": "PMLR Supplementary PDF",
+            "url": "https://proceedings.mlr.press/v80/yang18d/yang18d-supp.pdf"
+          }
+        ]
       },
       "access": {
         "original": "open",
@@ -43507,6 +44417,16 @@
           "fields": [
             "publication",
             "links.original"
+          ]
+        },
+        {
+          "id": "materials-collective-review-20261030",
+          "provider": "Verified primary article, publisher appendix links and original material manifests",
+          "url": "https://proceedings.mlr.press/v80/yang18d.html",
+          "retrievedOn": "2026-10-30",
+          "fields": [
+            "links.supplement",
+            "links.code"
           ]
         }
       ],
