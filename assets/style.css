@@ -128,3 +128,6 @@ body.dialog-open { overflow:hidden; }
   .reading-nav { padding:22px; }.reading-body { padding:28px 22px 45px; font-size:14px; }.reading-body h1 { font-size:26px; }.reading-body h2 { font-size:20px; }.reading-body table { font-size:12px; }
 }
 @media (prefers-reduced-motion:no-preference) { .paper-card { animation:card-in .12s ease-out; } @keyframes card-in { from { opacity:0; } to { opacity:1; } } }
+
+.knowledge-map-link { margin-left:auto; font-size:12px; white-space:nowrap; }
+@media(max-width:650px) { .toolbar { flex-wrap:wrap; gap:10px; } .toolbar .search-box { width:100%; } .knowledge-map-link { margin-left:0; } }

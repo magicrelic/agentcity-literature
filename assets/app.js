@@ -1,4 +1,4 @@
-import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=fafbd14541b553366035742f49e0a3f6ef2597068d4eb25094e4dde4e606474c';
+import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=84ebef909df697638dde1ab0a892db191d8d6a6488da0e192297af24e981a704';
 
 async function start() {
   const $ = id => document.getElementById(id);
