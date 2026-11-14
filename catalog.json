@@ -11760,6 +11760,162 @@
         "venueGroup": "leading-journal"
       }
     },
+    "p-2a089c8cdff691": {
+      "citationKey": "gajrani2025environment",
+      "title": "Environment-mediated interactions cause an externalized and collective memory in bacteria",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Gajrani",
+            "given": "Shubham",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Interfaculty Institute for Microbiology and Infection Medicine Tübingen (IMIT), Cluster of Excellence EXC 2124 “Controlling Microbes to Fight Infections” (CMFI), University of Tübingen , Calwerstr. 7/1, 72076 Tübingen ,"
+            ]
+          },
+          {
+            "family": "Ye",
+            "given": "Xiaozhou",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Interfaculty Institute for Microbiology and Infection Medicine Tübingen (IMIT), Cluster of Excellence EXC 2124 “Controlling Microbes to Fight Infections” (CMFI), University of Tübingen , Calwerstr. 7/1, 72076 Tübingen ,"
+            ]
+          },
+          {
+            "family": "Ratzke",
+            "given": "Christoph",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Interfaculty Institute for Microbiology and Infection Medicine Tübingen (IMIT), Cluster of Excellence EXC 2124 “Controlling Microbes to Fight Infections” (CMFI), University of Tübingen , Calwerstr. 7/1, 72076 Tübingen ,"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "The ISME Journal",
+        "venueShort": "ISME J.",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "Oxford University Press (OUP)",
+        "volume": "19",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "wraf173",
+        "publishedOnline": "2025-08-11",
+        "publishedPrint": "2025-01-02",
+        "posted": null,
+        "issn": [
+          "1751-7362",
+          "1751-7370"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1093/ismejo/wraf173",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "细菌对环境的持久化学改变如何储存历史并改变后续竞争及群落组装结果？",
+        "keywords": [
+          "环境记忆",
+          "集体记忆",
+          "多稳态",
+          "群落组装"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1093/ismejo/wraf173",
+        "arxiv": null,
+        "data": [
+          {
+            "label": "Dryad: experimental source data",
+            "url": "https://doi.org/10.5061/dryad.ksn02v7hp"
+          }
+        ],
+        "code": [],
+        "supplement": [
+          {
+            "label": "official EuropePMC supplementary package",
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12456175/supplementaryFiles"
+          },
+          {
+            "label": "published supplementary PDF, 24 pages; official wraf173 attachment retaining earlier manuscript title “Environment-mediated interactions cause an externalized and collective memory in microbes”; identity verified by PMC XML attachment link and official EuropePMC package",
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12456175/supplementaryFiles#supplementary_text_wraf173.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2025-08-11"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/gajrani2025environment.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1093/ismejo/wraf173",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12456175/",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        },
+        {
+          "id": "data-deposit-20261114",
+          "provider": "Published Data Availability statement and public Dryad dataset version4 file inventory",
+          "url": "https://doi.org/10.5061/dryad.ksn02v7hp",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.data"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "resources",
+          "collective",
+          "resilience"
+        ],
+        "objects": [
+          "biological",
+          "ecology"
+        ],
+        "evidenceTypes": [
+          "experiment",
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-gao2025survey": {
       "citationKey": "gao2025survey",
       "title": "A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence",
@@ -12988,6 +13144,177 @@
         ],
         "documentType": "research",
         "venueGroup": null
+      }
+    },
+    "p-9e23fa0df604e9": {
+      "citationKey": "lama2025nonreciprocal",
+      "title": "Nonreciprocal field theory for decision-making in multi-agent control systems",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Lama",
+            "given": "Andrea",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0001-6250-1033",
+            "affiliations": []
+          },
+          {
+            "family": "di Bernardo",
+            "given": "Mario",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-2171-4745",
+            "affiliations": []
+          },
+          {
+            "family": "Klapp",
+            "given": "Sabine. H. L.",
+            "literal": null,
+            "orcid": "https://orcid.org/0009-0006-8525-4721",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature Communications",
+        "venueShort": "Nat. Commun.",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "16",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "8450",
+        "publishedOnline": "2025-09-26",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2041-1723"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/s41467-025-63071-4",
+        "arxiv": "2503.01112",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "移动主体的感知、决策与控制机制如何产生非互易和非成对作用及集体状态？",
+        "keywords": [
+          "非互易作用",
+          "集体决策",
+          "集体运动",
+          "场论",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41467-025-63071-4",
+        "arxiv": "https://arxiv.org/abs/2503.01112v2",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "Supplementary Information (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Description of Additional Supplementary Files (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM2_ESM.pdf"
+          },
+          {
+            "label": "Supplementary Video 1 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM3_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 2 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM4_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 3 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM5_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Video 4 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM6_ESM.mp4"
+          },
+          {
+            "label": "Transparent Peer Review file (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63071-4/MediaObjects/41467_2025_63071_MOESM7_ESM.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2025-09-26"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2025-09-26"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/lama2025nonreciprocal.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1038/s41467-025-63071-4",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/2503.01112v2",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://www.nature.com/articles/s41467-025-63071-4.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "agents",
+          "networks"
+        ],
+        "objects": [
+          "ai",
+          "physical"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "leading-journal"
       }
     },
     "p-ec991cba55dc96": {
@@ -14259,6 +14586,187 @@
         "objects": [
           "ai",
           "network"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "leading-journal"
+      }
+    },
+    "p-c0bea5564230a9": {
+      "citationKey": "montanari2025optimal",
+      "title": "Optimal flock formation induced by agent heterogeneity",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Montanari",
+            "given": "Arthur N.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-4866-3888",
+            "affiliations": []
+          },
+          {
+            "family": "Barioni",
+            "given": "Ana Elisa D.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Duan",
+            "given": "Chao",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Motter",
+            "given": "Adilson E.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-1794-4828",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature Communications",
+        "venueShort": "Nat. Commun.",
+        "kind": "journal-article",
+        "year": 2025,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "16",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "9626",
+        "publishedOnline": "2025-10-31",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2041-1723"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/s41467-025-64233-0",
+        "arxiv": "2504.12297",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "智能体反馈参数的异质配置如何改善群集编队的稳定性与收敛速度？",
+        "keywords": [
+          "异质性",
+          "集体运动",
+          "稳定性",
+          "分布式控制",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41467-025-64233-0",
+        "arxiv": "https://arxiv.org/abs/2504.12297v1",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "Supplementary Information (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Description of Additional Supplementary Files (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM2_ESM.pdf"
+          },
+          {
+            "label": "Supplementary Movie 1 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM3_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Movie 2 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM4_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Movie 3 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM5_ESM.mp4"
+          },
+          {
+            "label": "Supplementary Movie 4 (download MP4     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM6_ESM.mp4"
+          },
+          {
+            "label": "Reporting Summary (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM7_ESM.pdf"
+          },
+          {
+            "label": "Transparent Peer Review file (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64233-0/MediaObjects/41467_2025_64233_MOESM8_ESM.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by-nc-nd/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2025-10-31"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by-nc-nd/4.0",
+            "appliesTo": "vor",
+            "startDate": "2025-10-31"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/montanari2025optimal.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1038/s41467-025-64233-0",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/2504.12297v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://www.nature.com/articles/s41467-025-64233-0.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "adaptation",
+          "collective",
+          "resilience"
+        ],
+        "objects": [
+          "ai"
         ],
         "evidenceTypes": [
           "theory",
@@ -22086,6 +22594,191 @@
         "venueGroup": "leading-journal"
       }
     },
+    "p-77ae6b6b33ba86": {
+      "citationKey": "mikaberidze2024consensus",
+      "title": "Consensus formation among mobile agents in networks of heterogeneous interaction venues",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Mikaberidze",
+            "given": "Guram",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-6776-3481",
+            "affiliations": []
+          },
+          {
+            "family": "Nag Chowdhury",
+            "given": "Sayantan",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-0326-826X",
+            "affiliations": []
+          },
+          {
+            "family": "Hastings",
+            "given": "Alan",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "D’Souza",
+            "given": "Raissa M.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Chaos, Solitons & Fractals",
+        "venueShort": "Chaos, Solitons & Fractals",
+        "kind": "journal-article",
+        "year": 2024,
+        "publisher": "Elsevier BV",
+        "volume": "178",
+        "issue": null,
+        "pages": "114298",
+        "articleNumber": "114298",
+        "publishedOnline": null,
+        "publishedPrint": "2024-01",
+        "posted": null,
+        "issn": [
+          "0960-0779"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1016/j.chaos.2023.114298",
+        "arxiv": "2310.09096",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "移动主体在具有异质交互强度的场所网络中如何形成共识或同步？",
+        "keywords": [
+          "移动智能体",
+          "共识",
+          "异质交互场所",
+          "同步",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1016/j.chaos.2023.114298",
+        "arxiv": "https://arxiv.org/abs/2310.09096v1",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "Movie explicitly cited by original manuscript reference65; pinned commit",
+            "url": "https://raw.githubusercontent.com/SayantanNagChowdhury/Synchrony-Mobileagents-demo/23ab46e6485cbe59c0feb2d660733b34e80fb4f4/demo2.mp4"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "appliesTo": "tdm",
+            "startDate": "2024-01-01"
+          },
+          {
+            "url": "https://www.elsevier.com/legal/tdmrep-license",
+            "appliesTo": "tdm",
+            "startDate": "2024-01-01"
+          },
+          {
+            "url": "http://www.elsevier.com/open-access/userlicense/1.0/",
+            "appliesTo": "am",
+            "startDate": "2024-11-30"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-017",
+            "appliesTo": "stm-asf",
+            "startDate": "2024-01-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-037",
+            "appliesTo": "stm-asf",
+            "startDate": "2024-01-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-012",
+            "appliesTo": "stm-asf",
+            "startDate": "2024-01-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-029",
+            "appliesTo": "stm-asf",
+            "startDate": "2024-01-01"
+          },
+          {
+            "url": "https://doi.org/10.15223/policy-004",
+            "appliesTo": "stm-asf",
+            "startDate": "2024-01-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/mikaberidze2024consensus.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1016/j.chaos.2023.114298",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/2310.09096v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://arxiv.org/pdf/2310.09096v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "networks",
+          "collective",
+          "mobility"
+        ],
+        "objects": [
+          "network",
+          "human",
+          "biological"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "other-journal"
+      }
+    },
     "p-2665b4fea8615a": {
       "citationKey": "mou2024unveiling",
       "title": "Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation",
@@ -25445,6 +26138,173 @@
           "infrastructure"
         ],
         "evidenceTypes": [],
+        "documentType": "research",
+        "venueGroup": "leading-journal"
+      }
+    },
+    "p-94e817841b0d7b": {
+      "citationKey": "dias2023environmental",
+      "title": "Environmental memory boosts group formation of clueless individuals",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Dias",
+            "given": "Cristóvão S.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Trivedi",
+            "given": "Manish",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Volpe",
+            "given": "Giovanni",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5057-1846",
+            "affiliations": []
+          },
+          {
+            "family": "Araújo",
+            "given": "Nuno A. M.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-1677-6060",
+            "affiliations": []
+          },
+          {
+            "family": "Volpe",
+            "given": "Giorgio",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-9993-5348",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature Communications",
+        "venueShort": "Nat. Commun.",
+        "kind": "journal-article",
+        "year": 2023,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "14",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "7324",
+        "publishedOnline": "2023-11-13",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2041-1723"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/s41467-023-43099-0",
+        "arxiv": "2306.00516",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "主动粒子对被动环境留下的持久改变如何促进群体形成？",
+        "keywords": [
+          "环境记忆",
+          "主动粒子",
+          "群体形成",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41467-023-43099-0",
+        "arxiv": "https://arxiv.org/abs/2306.00516v2",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "Supplementary Information (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-43099-0/MediaObjects/41467_2023_43099_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Source Data (download XLSX     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-43099-0/MediaObjects/41467_2023_43099_MOESM3_ESM.xlsx"
+          },
+          {
+            "label": "Peer Review File (download PDF     )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-43099-0/MediaObjects/41467_2023_43099_MOESM2_ESM.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2023-11-13"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2023-11-13"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/dias2023environmental.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1038/s41467-023-43099-0",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/2306.00516v2",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://www.nature.com/articles/s41467-023-43099-0.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "mobility"
+        ],
+        "objects": [
+          "physical"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation",
+          "experiment"
+        ],
         "documentType": "research",
         "venueGroup": "leading-journal"
       }
@@ -37391,6 +38251,159 @@
         "venueGroup": "other-journal"
       }
     },
+    "p-7af06bcb807b78": {
+      "citationKey": "zampetaki2021collective",
+      "title": "Collective self-optimization of communicating active particles",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Zampetaki",
+            "given": "Alexandra V.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-6243-9356",
+            "affiliations": [
+              "Center for Astrochemical Studies, Max-Planck-Institut für Extraterrestrische Physik, 85741 Garching, Germany;",
+              "Institut für Theoretische Physik II, Weiche Materie, Heinrich-Heine-Universität, 40225 Düsseldorf, Germany;"
+            ]
+          },
+          {
+            "family": "Liebchen",
+            "given": "Benno",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-7647-6430",
+            "affiliations": [
+              "Institute of Condensed Matter Physics, Technische Universität Darmstadt, 64289 Darmstadt, Germany"
+            ]
+          },
+          {
+            "family": "Ivlev",
+            "given": "Alexei V.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Center for Astrochemical Studies, Max-Planck-Institut für Extraterrestrische Physik, 85741 Garching, Germany;"
+            ]
+          },
+          {
+            "family": "Löwen",
+            "given": "Hartmut",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5376-8062",
+            "affiliations": [
+              "Institut für Theoretische Physik II, Weiche Materie, Heinrich-Heine-Universität, 40225 Düsseldorf, Germany;"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Proceedings of the National Academy of Sciences",
+        "venueShort": "PNAS",
+        "kind": "journal-article",
+        "year": 2021,
+        "publisher": "National Academy of Sciences",
+        "volume": "118",
+        "issue": "49",
+        "pages": null,
+        "articleNumber": "e2111142118",
+        "publishedOnline": "2021-12",
+        "publishedPrint": "2021-12-07",
+        "posted": null,
+        "issn": [
+          "0027-8424",
+          "1091-6490"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1073/pnas.2111142118",
+        "arxiv": "2112.03578",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "个体如何通过共同产生或消耗并响应资源场，使群体接近共同的最优场值？",
+        "keywords": [
+          "环境介导耦合",
+          "共享资源",
+          "高阶相互作用",
+          "自组织",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1073/pnas.2111142118",
+        "arxiv": "https://arxiv.org/abs/2112.03578v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.pnas.org/site/aboutpnas/licenses.xhtml",
+            "appliesTo": "vor",
+            "startDate": "2022-06-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/zampetaki2021collective.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1073/pnas.2111142118",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/2112.03578v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://arxiv.org/pdf/2112.03578v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "resources"
+        ],
+        "objects": [
+          "physical",
+          "biological"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "leading-journal"
+      }
+    },
     "p-zhang2021multi": {
       "citationKey": "zhang2021multi",
       "title": "Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms",
@@ -38502,6 +39515,146 @@
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-2dec38e0fc3b04": {
+      "citationKey": "herreradelgado2020tractable",
+      "title": "Tractable nonlinear memory functions as a tool to capture and explain dynamical behaviors",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Herrera-Delgado",
+            "given": "Edgar",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-5111-353X",
+            "affiliations": []
+          },
+          {
+            "family": "Briscoe",
+            "given": "James",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0002-1020-5240",
+            "affiliations": []
+          },
+          {
+            "family": "Sollich",
+            "given": "Peter",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-0169-7893",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review Research",
+        "venueShort": "Phys. Rev. Res.",
+        "kind": "journal-article",
+        "year": 2020,
+        "publisher": "American Physical Society (APS)",
+        "volume": "2",
+        "issue": "4",
+        "pages": null,
+        "articleNumber": "043069",
+        "publishedOnline": "2020-10-13",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2643-1564"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physrevresearch.2.043069",
+        "arxiv": "2005.04751",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "如何构造可计算的非线性记忆函数，在减少状态变量时保留网络的瞬态与多稳态行为？",
+        "keywords": [
+          "模型约化",
+          "记忆核",
+          "粗粒化",
+          "非线性动力学"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physrevresearch.2.043069",
+        "arxiv": "https://arxiv.org/abs/2005.04751v2",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "genuine PDF supplementary Appendix extracted from official EuropePMC ZIP",
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7614247/supplementaryFiles#EMS170583-supplement-Appendix.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "appliesTo": "vor",
+            "startDate": "2020-10-13"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/herreradelgado2020tractable.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1103/physrevresearch.2.043069",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/2005.04751v2",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://edgar-hd.github.io/assets/papers/PhysRevResearch.2.043069.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "measurement",
+          "networks"
+        ],
+        "objects": [
+          "biological",
+          "network"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "other-journal"
       }
     },
     "p-f14bd7014d6021": {
@@ -46000,6 +47153,208 @@
         ],
         "evidenceTypes": [
           "observation"
+        ],
+        "documentType": "research",
+        "venueGroup": "leading-journal"
+      }
+    },
+    "p-5d633022e7fece": {
+      "citationKey": "okeeffe2017oscillators",
+      "title": "Oscillators that sync and swarm",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "O’Keeffe",
+            "given": "Kevin P.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Hong",
+            "given": "Hyunsuk",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0001-8132-1292",
+            "affiliations": []
+          },
+          {
+            "family": "Strogatz",
+            "given": "Steven H.",
+            "literal": null,
+            "orcid": "https://orcid.org/0000-0003-2923-3118",
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature Communications",
+        "venueShort": "Nat. Commun.",
+        "kind": "journal-article",
+        "year": 2017,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "8",
+        "issue": "1",
+        "pages": null,
+        "articleNumber": "1504",
+        "publishedOnline": "2017-11-15",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "2041-1723"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/s41467-017-01190-3",
+        "arxiv": "1701.05670",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "空间运动与内部相位的相互反馈如何生成同步、群集及相位波等集体状态？",
+        "keywords": [
+          "同步",
+          "集体运动",
+          "移动振子",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/s41467-017-01190-3",
+        "arxiv": "https://arxiv.org/abs/1701.05670v2",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "Supplementary Information (download PDF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM1_ESM.pdf"
+          },
+          {
+            "label": "Description of Additional Supplementary Files (download PDF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM3_ESM.pdf"
+          },
+          {
+            "label": "Supplementary Movie 1 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM4_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 2 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM5_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 3 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM6_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 4 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM7_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 5 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM8_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 6 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM9_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 7 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM10_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 8 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM11_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 9 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM12_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 10 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM13_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 11 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM14_ESM.gif"
+          },
+          {
+            "label": "Supplementary Movie 12 (download GIF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM15_ESM.gif"
+          },
+          {
+            "label": "Peer Review File (download PDF )",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-01190-3/MediaObjects/41467_2017_1190_MOESM2_ESM.pdf"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "tdm",
+            "startDate": "2017-11-15"
+          },
+          {
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "appliesTo": "vor",
+            "startDate": "2017-11-15"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/okeeffe2017oscillators.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1038/s41467-017-01190-3",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/1701.05670v2",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://www.nature.com/articles/s41467-017-01190-3.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "networks",
+          "mobility"
+        ],
+        "objects": [
+          "physical",
+          "network"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
@@ -58718,6 +60073,190 @@
         "venueGroup": "other-journal"
       }
     },
+    "p-aa3ecc9cd53c6f": {
+      "citationKey": "nagy2010hierarchical",
+      "title": "Hierarchical group dynamics in pigeon flocks",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Nagy",
+            "given": "Máté",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Ákos",
+            "given": "Zsuzsa",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Biro",
+            "given": "Dora",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Vicsek",
+            "given": "Tamás",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Nature",
+        "venueShort": "Nature",
+        "kind": "journal-article",
+        "year": 2010,
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "464",
+        "issue": "7290",
+        "pages": "890-893",
+        "articleNumber": null,
+        "publishedOnline": "2010-04-08",
+        "publishedPrint": "2010-04-08",
+        "posted": null,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1038/nature08891",
+        "arxiv": "1010.5394",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "如何从个体飞行轨迹中的方向变化延迟辨识鸽群的领随层级？",
+        "keywords": [
+          "领随关系",
+          "集体运动",
+          "有向网络",
+          "时间延迟",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1038/nature08891",
+        "arxiv": "https://arxiv.org/abs/1010.5394v1",
+        "data": [],
+        "code": [],
+        "supplement": [
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://hal.elte.hu/pigeonflocks/files/SI.pdf"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fnature08891/MediaObjects/41586_2010_BFnature08891_MOESM274_ESM.mov"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fnature08891/MediaObjects/41586_2010_BFnature08891_MOESM272_ESM.pdf"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fnature08891/MediaObjects/41586_2010_BFnature08891_MOESM273_ESM.mov"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://hal.elte.hu/pigeonflocks/files/readme_pigeonflocks_data.pdf"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://hal.elte.hu/pigeonflocks/files/freeflight_movie.avi"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://hal.elte.hu/pigeonflocks/files/homing_movie.avi"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://hal.elte.hu/pigeonflocks/files/freeflight_short.mov"
+          },
+          {
+            "label": "publicly obtained source; see file type and supplement inventory",
+            "url": "https://hal.elte.hu/pigeonflocks/files/homing_short.mov"
+          }
+        ]
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "tdm",
+            "startDate": "2010-04-08"
+          },
+          {
+            "url": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+            "appliesTo": "vor",
+            "startDate": "2010-04-08"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/nagy2010hierarchical.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1038/nature08891",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/1010.5394v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://hal.elte.hu/pigeonflocks/files/pigeonflocks_nature.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "measurement"
+        ],
+        "objects": [
+          "animal"
+        ],
+        "evidenceTypes": [
+          "observation"
+        ],
+        "documentType": "research",
+        "venueGroup": "nature-science"
+      }
+    },
     "p-8a0260954b2572": {
       "citationKey": "perc2010coevolutionary",
       "title": "Coevolutionary games—A mini review",
@@ -58849,6 +60388,137 @@
           "synthesis"
         ],
         "documentType": "review",
+        "venueGroup": "other-journal"
+      }
+    },
+    "p-96c2e560f9fee3": {
+      "citationKey": "russo2010global",
+      "title": "Global convergence of quorum-sensing networks",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Russo",
+            "given": "Giovanni",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Slotine",
+            "given": "Jean Jacques E.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Physical Review E",
+        "venueShort": "Phys. Rev. E",
+        "kind": "journal-article",
+        "year": 2010,
+        "publisher": "American Physical Society (APS)",
+        "volume": "82",
+        "issue": "4",
+        "pages": null,
+        "articleNumber": "041919",
+        "publishedOnline": "2010-10-25",
+        "publishedPrint": null,
+        "posted": null,
+        "issn": [
+          "1539-3755",
+          "1550-2376"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1103/physreve.82.041919",
+        "arxiv": "1003.5704",
+        "arxivVersion": 2
+      },
+      "research": {
+        "question": "共享动态环境介导的耦合在何种条件下使网络中的非线性个体全局同步？",
+        "keywords": [
+          "环境介导耦合",
+          "同步",
+          "收缩理论",
+          "群体感应",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1103/physreve.82.041919",
+        "arxiv": "https://arxiv.org/abs/1003.5704v2",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "http://link.aps.org/licenses/aps-default-license",
+            "appliesTo": "vor",
+            "startDate": "2010-10-25"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/russo2010global.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1103/physreve.82.041919",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/1003.5704v2",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://arxiv.org/pdf/1003.5704v2",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "networks",
+          "resilience"
+        ],
+        "objects": [
+          "biological",
+          "network"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
         "venueGroup": "other-journal"
       }
     },
@@ -59938,6 +61608,239 @@
           "synthesis"
         ],
         "documentType": "review",
+        "venueGroup": "leading-journal"
+      }
+    },
+    "p-44396eed0b2c85": {
+      "citationKey": "ballerini2008interaction",
+      "title": "Interaction ruling animal collective behavior depends on topological rather than metric distance: Evidence from a field study",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Ballerini",
+            "given": "M.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,",
+              "Istituto Superiore di Sanita', viale Regina Elena 299, 00161 Roma, Italy;"
+            ]
+          },
+          {
+            "family": "Cabibbo",
+            "given": "N.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Dipartimento di Fisica, and",
+              "Sezione Instituto Nazionale di Fisica Nucleare, Universita' di Roma “La Sapienza,” Piazzale Aldo Moro 2, 00185 Roma, Italy;"
+            ]
+          },
+          {
+            "family": "Candelier",
+            "given": "R.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Dipartimento di Fisica, and"
+            ]
+          },
+          {
+            "family": "Cavagna",
+            "given": "A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,",
+              "Istituto dei Sistemi Complessi (ISC), Consiglio Nazionale delle Ricerche, via dei Taurini 19, 00185 Roma, Italy; and"
+            ]
+          },
+          {
+            "family": "Cisbani",
+            "given": "E.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Istituto Superiore di Sanita', viale Regina Elena 299, 00161 Roma, Italy;"
+            ]
+          },
+          {
+            "family": "Giardina",
+            "given": "I.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,",
+              "Istituto dei Sistemi Complessi (ISC), Consiglio Nazionale delle Ricerche, via dei Taurini 19, 00185 Roma, Italy; and"
+            ]
+          },
+          {
+            "family": "Lecomte",
+            "given": "V.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Laboratoire Matière et Systèmes Complexes, (Centre National de la Recherche Scientifique Unite Mixte de Recherche 7057), Université Paris VII, 10 rue Alice Domon et Léonie Duquet, 75205 Paris Cedex 13, France"
+            ]
+          },
+          {
+            "family": "Orlandi",
+            "given": "A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,"
+            ]
+          },
+          {
+            "family": "Parisi",
+            "given": "G.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,",
+              "Dipartimento di Fisica, and",
+              "Sezione Instituto Nazionale di Fisica Nucleare, Universita' di Roma “La Sapienza,” Piazzale Aldo Moro 2, 00185 Roma, Italy;"
+            ]
+          },
+          {
+            "family": "Procaccini",
+            "given": "A.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,",
+              "Dipartimento di Fisica, and"
+            ]
+          },
+          {
+            "family": "Viale",
+            "given": "M.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "Dipartimento di Fisica, and"
+            ]
+          },
+          {
+            "family": "Zdravkovic",
+            "given": "V.",
+            "literal": null,
+            "orcid": null,
+            "affiliations": [
+              "*Centre for Statistical Mechanics and Complexity (SMC), Consiglio Nazionale delle Ricerche-Istituto Nazionale per la Fisica della Materia,"
+            ]
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "Proceedings of the National Academy of Sciences",
+        "venueShort": "PNAS",
+        "kind": "journal-article",
+        "year": 2008,
+        "publisher": "National Academy of Sciences",
+        "volume": "105",
+        "issue": "4",
+        "pages": "1232-1237",
+        "articleNumber": null,
+        "publishedOnline": "2008-01-29",
+        "publishedPrint": "2008-01-29",
+        "posted": null,
+        "issn": [
+          "0027-8424",
+          "1091-6490"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1073/pnas.0711437105",
+        "arxiv": "0709.1916",
+        "arxivVersion": 1
+      },
+      "research": {
+        "question": "鸟群中的有效交互范围更符合固定物理距离还是固定数量的近邻？",
+        "keywords": [
+          "拓扑交互",
+          "集体运动",
+          "近邻",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1073/pnas.0711437105",
+        "arxiv": "https://arxiv.org/abs/0709.1916v1",
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/ballerini2008interaction.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1073/pnas.0711437105",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "arxiv-20261114",
+          "provider": "Official arXiv title, author identity and latest submission history verification",
+          "url": "https://arxiv.org/abs/0709.1916v1",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "identifiers.arxiv",
+            "identifiers.arxivVersion",
+            "links.arxiv"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://liphy-annuaire.univ-grenoble-alpes.fr/pages_personnelles/vivien_lecomte/pnas_105_1232.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        },
+        {
+          "id": "reading-source-classification-20261114",
+          "provider": "Published main article Results and Materials and Methods; observational reconstruction and two-dimensional flock simulations independently checked",
+          "url": "https://doi.org/10.1073/pnas.0711437105",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "classification.evidenceTypes"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "measurement"
+        ],
+        "objects": [
+          "animal"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation",
+          "observation"
+        ],
+        "documentType": "research",
         "venueGroup": "leading-journal"
       }
     },
@@ -61524,6 +63427,123 @@
         ],
         "documentType": "research",
         "venueGroup": "leading-journal"
+      }
+    },
+    "p-d3e1780fe8f62e": {
+      "citationKey": "cucker2007emergent",
+      "title": "Emergent Behavior in Flocks",
+      "titleZh": null,
+      "authors": {
+        "items": [
+          {
+            "family": "Cucker",
+            "given": "Felipe",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          },
+          {
+            "family": "Smale",
+            "given": "Steve",
+            "literal": null,
+            "orcid": null,
+            "affiliations": []
+          }
+        ],
+        "complete": true
+      },
+      "publication": {
+        "venue": "IEEE Transactions on Automatic Control",
+        "venueShort": "IEEE Trans. Autom. Control",
+        "kind": "journal-article",
+        "year": 2007,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "52",
+        "issue": "5",
+        "pages": "852-862",
+        "articleNumber": null,
+        "publishedOnline": null,
+        "publishedPrint": "2007-05",
+        "posted": null,
+        "issn": [
+          "0018-9286"
+        ],
+        "isbn": []
+      },
+      "identifiers": {
+        "doi": "10.1109/tac.2007.895842",
+        "arxiv": null,
+        "arxivVersion": null
+      },
+      "research": {
+        "question": "随距离减弱的个体速度对齐在何种条件下产生群集及速度一致性？",
+        "keywords": [
+          "集体运动",
+          "速度共识",
+          "距离衰减",
+          "集体动力学与多智能体"
+        ]
+      },
+      "links": {
+        "original": "https://doi.org/10.1109/tac.2007.895842",
+        "arxiv": null,
+        "data": [],
+        "code": [],
+        "supplement": []
+      },
+      "access": {
+        "original": "unknown",
+        "licenses": [
+          {
+            "url": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+            "appliesTo": "vor",
+            "startDate": "2007-05-01"
+          }
+        ],
+        "sourceIds": [
+          "crossref"
+        ]
+      },
+      "reading": "论文解读/cucker2007emergent.md",
+      "provenance": [
+        {
+          "id": "crossref",
+          "provider": "Crossref publisher bibliographic metadata",
+          "url": "https://api.crossref.org/works/10.1109/tac.2007.895842",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "title",
+            "authors",
+            "publication",
+            "identifiers.doi",
+            "access.licenses"
+          ]
+        },
+        {
+          "id": "source-intake-20261114",
+          "provider": "Verified original source identity and public supplementary attachment inventory",
+          "url": "https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/CuckerSmale.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "links.supplement"
+          ]
+        }
+      ],
+      "classification": {
+        "topics": [
+          "collective",
+          "networks"
+        ],
+        "objects": [
+          "animal",
+          "ai"
+        ],
+        "evidenceTypes": [
+          "theory",
+          "simulation"
+        ],
+        "documentType": "research",
+        "venueGroup": "other-journal"
       }
     },
     "p-gneiting2007strictly": {
