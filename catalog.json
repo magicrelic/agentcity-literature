@@ -1,6 +1,6 @@
 {
   "$schema": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json",
-  "schemaVersion": 4,
+  "schemaVersion": 5,
   "library": {
     "title": "城市复杂系统文献库",
     "subtitle": "复杂系统、群体行为与智能体研究 · 多维分类文献库",
@@ -71867,7 +71867,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Collective dynamics"
       },
       {
         "id": "marl",
@@ -71881,7 +71882,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Multi-agent learning"
       },
       {
         "id": "agents",
@@ -71894,7 +71896,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Agent systems"
       },
       {
         "id": "social-simulation",
@@ -71909,7 +71912,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Social simulation"
       },
       {
         "id": "cognition",
@@ -71921,7 +71925,8 @@
           "resources",
           "s-agent-architectures-multi-agent-systems",
           "s-cc4665b62d22"
-        ]
+        ],
+        "labelEn": "Cognitive science"
       },
       {
         "id": "neuroscience",
@@ -71934,7 +71939,8 @@
           "s-7f01c87f5bc1",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Neuroscience"
       },
       {
         "id": "games",
@@ -71946,7 +71952,8 @@
           "resources",
           "s-agent-architectures-multi-agent-systems",
           "s-cc4665b62d22"
-        ]
+        ],
+        "labelEn": "Game theory"
       },
       {
         "id": "networks",
@@ -71962,7 +71969,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Network science"
       },
       {
         "id": "stability",
@@ -71974,7 +71982,8 @@
           "s-a617444be894",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Stability theory"
       },
       {
         "id": "resilience",
@@ -71989,7 +71998,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "System resilience"
       },
       {
         "id": "ecology",
@@ -72005,7 +72015,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Ecological dynamics"
       },
       {
         "id": "mobility",
@@ -72019,7 +72030,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Human mobility"
       },
       {
         "id": "urban",
@@ -72033,7 +72045,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Urban science"
       },
       {
         "id": "transport-planning",
@@ -72049,7 +72062,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Transportation planning"
       },
       {
         "id": "traffic-flow",
@@ -72065,7 +72079,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Traffic flow theory"
       },
       {
         "id": "autonomous-driving",
@@ -72075,7 +72090,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Autonomous driving"
       },
       {
         "id": "queueing",
@@ -72085,7 +72101,8 @@
           "adaptation",
           "s-7f01c87f5bc1",
           "resources"
-        ]
+        ],
+        "labelEn": "Queueing theory"
       },
       {
         "id": "control",
@@ -72100,7 +72117,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Control theory"
       },
       {
         "id": "reinforcement",
@@ -72114,7 +72132,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Reinforcement learning"
       },
       {
         "id": "optimization",
@@ -72126,7 +72145,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Optimization algorithms"
       },
       {
         "id": "inference",
@@ -72140,7 +72160,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Statistical inference"
       },
       {
         "id": "reduction",
@@ -72151,7 +72172,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Model reduction"
       },
       {
         "id": "information",
@@ -72160,7 +72182,8 @@
           "s-7f01c87f5bc1",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Information theory"
       },
       {
         "id": "statistical-physics",
@@ -72172,7 +72195,8 @@
           "s-a617444be894",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Statistical physics"
       },
       {
         "id": "fluids",
@@ -72182,7 +72206,8 @@
           "s-a617444be894",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Fluid mechanics"
       },
       {
         "id": "optics",
@@ -72190,7 +72215,8 @@
         "legacyIds": [
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Optics"
       },
       {
         "id": "particle-physics",
@@ -72198,7 +72224,8 @@
         "legacyIds": [
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Particle physics"
       },
       {
         "id": "energy",
@@ -72206,7 +72233,8 @@
         "legacyIds": [
           "s-a617444be894",
           "resources"
-        ]
+        ],
+        "labelEn": "Energy systems"
       },
       {
         "id": "environment",
@@ -72221,7 +72249,8 @@
           "s-cc4665b62d22",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Environmental science"
       },
       {
         "id": "economics",
@@ -72233,7 +72262,8 @@
           "resources",
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Economics"
       },
       {
         "id": "supply-chain",
@@ -72243,7 +72273,8 @@
           "adaptation",
           "s-a617444be894",
           "resources"
-        ]
+        ],
+        "labelEn": "Supply chain management"
       },
       {
         "id": "visualization",
@@ -72251,12 +72282,14 @@
         "legacyIds": [
           "s-10c00deb4a1d",
           "measurement"
-        ]
+        ],
+        "labelEn": "Data visualization"
       },
       {
         "id": "review",
         "label": "综述",
-        "legacyIds": []
+        "legacyIds": [],
+        "labelEn": "Reviews"
       }
     ],
     "objects": [
@@ -72433,5 +72466,2759 @@
         "venues": []
       }
     ]
+  },
+  "keywordGlossary": {
+    "BDI架构": {
+      "zh": "BDI架构",
+      "en": "belief–desire–intention architecture"
+    },
+    "Braess悖论": {
+      "zh": "Braess悖论",
+      "en": "Braess paradox"
+    },
+    "Consensus reaching problem": {
+      "zh": "共识达成问题",
+      "en": "consensus reaching problem"
+    },
+    "ElFarol问题": {
+      "zh": "ElFarol问题",
+      "en": "El Farol problem"
+    },
+    "GPU加速": {
+      "zh": "GPU加速",
+      "en": "GPU acceleration"
+    },
+    "Griffiths相": {
+      "zh": "Griffiths相",
+      "en": "Griffiths phase"
+    },
+    "Ising模型": {
+      "zh": "Ising模型",
+      "en": "Ising model"
+    },
+    "LLM智能体": {
+      "zh": "LLM智能体",
+      "en": "large language model agents"
+    },
+    "Lyapunov指数": {
+      "zh": "Lyapunov指数",
+      "en": "Lyapunov exponent"
+    },
+    "MATSim": {
+      "zh": "MATSim",
+      "en": "Multi-Agent Transport Simulation (MATSim)"
+    },
+    "Mori–Zwanzig": {
+      "zh": "Mori–Zwanzig",
+      "en": "Mori–Zwanzig formalism"
+    },
+    "PPO": {
+      "zh": "PPO",
+      "en": "proximal policy optimization (PPO)"
+    },
+    "Review": {
+      "zh": "综述",
+      "en": "Review"
+    },
+    "Swarm engineering": {
+      "zh": "群体工程",
+      "en": "swarm engineering"
+    },
+    "Swarm robotics": {
+      "zh": "群体机器人",
+      "en": "swarm robotics"
+    },
+    "TimeGeo": {
+      "zh": "TimeGeo",
+      "en": "TimeGeo"
+    },
+    "Transformer": {
+      "zh": "Transformer",
+      "en": "Transformer"
+    },
+    "active matter": {
+      "zh": "有源物质",
+      "en": "active matter"
+    },
+    "animal groups": {
+      "zh": "动物群体",
+      "en": "animal groups"
+    },
+    "behavioral rules": {
+      "zh": "行为规则",
+      "en": "behavioral rules"
+    },
+    "chemotaxis": {
+      "zh": "趋化性",
+      "en": "chemotaxis"
+    },
+    "collective behavior": {
+      "zh": "集体行为",
+      "en": "collective behavior"
+    },
+    "collective memory": {
+      "zh": "集体记忆",
+      "en": "collective memory"
+    },
+    "community assembly": {
+      "zh": "群落组装",
+      "en": "community assembly"
+    },
+    "complex systems": {
+      "zh": "复杂系统",
+      "en": "complex systems"
+    },
+    "emergence": {
+      "zh": "涌现",
+      "en": "emergence"
+    },
+    "externalized memory": {
+      "zh": "外部化记忆",
+      "en": "externalized memory"
+    },
+    "flocking": {
+      "zh": "群集",
+      "en": "flocking"
+    },
+    "microbial communities": {
+      "zh": "微生物群落",
+      "en": "microbial communities"
+    },
+    "microbial interactions": {
+      "zh": "微生物相互作用",
+      "en": "microbial interactions"
+    },
+    "multistability": {
+      "zh": "多稳态",
+      "en": "multistability"
+    },
+    "niche construction": {
+      "zh": "生态位构建",
+      "en": "niche construction"
+    },
+    "self-organization": {
+      "zh": "自组织",
+      "en": "self-organization"
+    },
+    "three-body interactions": {
+      "zh": "三体相互作用",
+      "en": "three-body interactions"
+    },
+    "三维结构": {
+      "zh": "三维结构",
+      "en": "three-dimensional structure"
+    },
+    "不平等": {
+      "zh": "不平等",
+      "en": "inequality"
+    },
+    "不等式": {
+      "zh": "不等式",
+      "en": "mathematical inequalities"
+    },
+    "中微子": {
+      "zh": "中微子",
+      "en": "neutrinos"
+    },
+    "临界减速": {
+      "zh": "临界减速",
+      "en": "critical slowing down"
+    },
+    "临界普适性": {
+      "zh": "临界普适性",
+      "en": "critical universality"
+    },
+    "临界标度": {
+      "zh": "临界标度",
+      "en": "critical scaling"
+    },
+    "临界模式": {
+      "zh": "临界模式",
+      "en": "critical modes"
+    },
+    "临界现象": {
+      "zh": "临界现象",
+      "en": "critical phenomena"
+    },
+    "临界规模": {
+      "zh": "临界规模",
+      "en": "critical mass"
+    },
+    "临界转变": {
+      "zh": "临界转变",
+      "en": "critical transitions"
+    },
+    "临界连续性": {
+      "zh": "临界连续性",
+      "en": "continuity at criticality"
+    },
+    "主体建模": {
+      "zh": "主体建模",
+      "en": "agent-based modeling"
+    },
+    "主动粒子": {
+      "zh": "主动粒子",
+      "en": "active particles"
+    },
+    "主成分分析": {
+      "zh": "主成分分析",
+      "en": "principal component analysis"
+    },
+    "主方程": {
+      "zh": "主方程",
+      "en": "master equations"
+    },
+    "事件条件": {
+      "zh": "事件条件",
+      "en": "event conditioning"
+    },
+    "事故风险": {
+      "zh": "事故风险",
+      "en": "accident risk"
+    },
+    "亚稳态": {
+      "zh": "亚稳态",
+      "en": "metastability"
+    },
+    "交互邻域": {
+      "zh": "交互邻域",
+      "en": "interaction neighborhoods"
+    },
+    "交通中断": {
+      "zh": "交通中断",
+      "en": "transport disruptions"
+    },
+    "交通优化": {
+      "zh": "交通优化",
+      "en": "transportation optimization"
+    },
+    "交通信号控制": {
+      "zh": "交通信号控制",
+      "en": "traffic signal control"
+    },
+    "交通分配": {
+      "zh": "交通分配",
+      "en": "traffic assignment"
+    },
+    "交通均衡": {
+      "zh": "交通均衡",
+      "en": "traffic equilibrium"
+    },
+    "交通恢复": {
+      "zh": "交通恢复",
+      "en": "traffic recovery"
+    },
+    "交通技术": {
+      "zh": "交通技术",
+      "en": "transport technology"
+    },
+    "交通拥堵": {
+      "zh": "交通拥堵",
+      "en": "traffic congestion"
+    },
+    "交通振荡": {
+      "zh": "交通振荡",
+      "en": "traffic oscillations"
+    },
+    "交通控制": {
+      "zh": "交通控制",
+      "en": "traffic control"
+    },
+    "交通模型": {
+      "zh": "交通模型",
+      "en": "traffic models"
+    },
+    "交通模拟": {
+      "zh": "交通模拟",
+      "en": "traffic simulation"
+    },
+    "交通波动": {
+      "zh": "交通波动",
+      "en": "traffic fluctuations"
+    },
+    "交通流": {
+      "zh": "交通流",
+      "en": "traffic flow"
+    },
+    "交通滞回": {
+      "zh": "交通滞回",
+      "en": "traffic hysteresis"
+    },
+    "交通状态": {
+      "zh": "交通状态",
+      "en": "traffic states"
+    },
+    "交通瓶颈": {
+      "zh": "交通瓶颈",
+      "en": "traffic bottlenecks"
+    },
+    "交通相关性": {
+      "zh": "交通相关性",
+      "en": "traffic correlations"
+    },
+    "交通稳定性": {
+      "zh": "交通稳定性",
+      "en": "traffic stability"
+    },
+    "交通结构": {
+      "zh": "交通结构",
+      "en": "transport structure"
+    },
+    "交通网络": {
+      "zh": "交通网络",
+      "en": "transportation networks"
+    },
+    "交通韧性": {
+      "zh": "交通韧性",
+      "en": "transport resilience"
+    },
+    "人口波动": {
+      "zh": "人口波动",
+      "en": "population fluctuations"
+    },
+    "人口移动": {
+      "zh": "人口移动",
+      "en": "population mobility"
+    },
+    "人工智能": {
+      "zh": "人工智能",
+      "en": "artificial intelligence"
+    },
+    "人类移动": {
+      "zh": "人类移动",
+      "en": "human mobility"
+    },
+    "人类行为": {
+      "zh": "人类行为",
+      "en": "human behavior"
+    },
+    "人群动力学": {
+      "zh": "人群动力学",
+      "en": "crowd dynamics"
+    },
+    "从众": {
+      "zh": "从众",
+      "en": "conformity"
+    },
+    "仿真平台": {
+      "zh": "仿真平台",
+      "en": "simulation platforms"
+    },
+    "企业网络": {
+      "zh": "企业网络",
+      "en": "firm networks"
+    },
+    "优化算法": {
+      "zh": "优化算法",
+      "en": "optimization algorithms"
+    },
+    "传播动力学": {
+      "zh": "传播动力学",
+      "en": "spreading dynamics"
+    },
+    "传播过程": {
+      "zh": "传播过程",
+      "en": "spreading processes"
+    },
+    "传染病": {
+      "zh": "传染病",
+      "en": "infectious diseases"
+    },
+    "传粉网络": {
+      "zh": "传粉网络",
+      "en": "pollination networks"
+    },
+    "低碳技术": {
+      "zh": "低碳技术",
+      "en": "low-carbon technologies"
+    },
+    "供应链": {
+      "zh": "供应链",
+      "en": "supply chains"
+    },
+    "保护行动": {
+      "zh": "保护行动",
+      "en": "protective action"
+    },
+    "信号传播": {
+      "zh": "信号传播",
+      "en": "signal propagation"
+    },
+    "信念状态": {
+      "zh": "信念状态",
+      "en": "belief states"
+    },
+    "信息传播": {
+      "zh": "信息传播",
+      "en": "information diffusion"
+    },
+    "信息传递": {
+      "zh": "信息传递",
+      "en": "information transfer"
+    },
+    "信息失真": {
+      "zh": "信息失真",
+      "en": "information distortion"
+    },
+    "信息时延": {
+      "zh": "信息时延",
+      "en": "information delay"
+    },
+    "信息论": {
+      "zh": "信息论",
+      "en": "information theory"
+    },
+    "候选路径": {
+      "zh": "候选路径",
+      "en": "candidate paths"
+    },
+    "元胞自动机": {
+      "zh": "元胞自动机",
+      "en": "cellular automata"
+    },
+    "充电基础设施": {
+      "zh": "充电基础设施",
+      "en": "charging infrastructure"
+    },
+    "充电需求": {
+      "zh": "充电需求",
+      "en": "charging demand"
+    },
+    "光场控制": {
+      "zh": "光场控制",
+      "en": "optical field control"
+    },
+    "光学涡旋": {
+      "zh": "光学涡旋",
+      "en": "optical vortices"
+    },
+    "光纤网络": {
+      "zh": "光纤网络",
+      "en": "fiber-optic networks"
+    },
+    "全局级联": {
+      "zh": "全局级联",
+      "en": "global cascades"
+    },
+    "公交分配": {
+      "zh": "公交分配",
+      "en": "transit assignment"
+    },
+    "公交网络": {
+      "zh": "公交网络",
+      "en": "bus networks"
+    },
+    "公共交通": {
+      "zh": "公共交通",
+      "en": "public transport"
+    },
+    "公共政策": {
+      "zh": "公共政策",
+      "en": "public policy"
+    },
+    "共同演化网络": {
+      "zh": "共同演化网络",
+      "en": "coevolutionary networks"
+    },
+    "共振": {
+      "zh": "共振",
+      "en": "resonance"
+    },
+    "共识": {
+      "zh": "共识",
+      "en": "consensus"
+    },
+    "共识形成": {
+      "zh": "共识形成",
+      "en": "consensus formation"
+    },
+    "共识聚类": {
+      "zh": "共识聚类",
+      "en": "consensus clustering"
+    },
+    "关键基础设施": {
+      "zh": "关键基础设施",
+      "en": "critical infrastructure"
+    },
+    "具身智能": {
+      "zh": "具身智能",
+      "en": "embodied intelligence"
+    },
+    "内生噪声": {
+      "zh": "内生噪声",
+      "en": "intrinsic noise"
+    },
+    "内部自由度": {
+      "zh": "内部自由度",
+      "en": "internal degrees of freedom"
+    },
+    "冗余度": {
+      "zh": "冗余度",
+      "en": "redundancy"
+    },
+    "决策机制": {
+      "zh": "决策机制",
+      "en": "decision mechanisms"
+    },
+    "决策规划": {
+      "zh": "决策规划",
+      "en": "decision planning"
+    },
+    "减排": {
+      "zh": "减排",
+      "en": "emissions reduction"
+    },
+    "出行方式": {
+      "zh": "出行方式",
+      "en": "travel modes"
+    },
+    "分子机器": {
+      "zh": "分子机器",
+      "en": "molecular machines"
+    },
+    "分岔": {
+      "zh": "分岔",
+      "en": "bifurcations"
+    },
+    "分布差异": {
+      "zh": "分布差异",
+      "en": "distributional differences"
+    },
+    "分布式控制": {
+      "zh": "分布式控制",
+      "en": "distributed control"
+    },
+    "分形测量": {
+      "zh": "分形测量",
+      "en": "fractal measurement"
+    },
+    "创新": {
+      "zh": "创新",
+      "en": "innovation"
+    },
+    "剩余行程分布": {
+      "zh": "剩余行程分布",
+      "en": "remaining trip length distributions"
+    },
+    "功率谱": {
+      "zh": "功率谱",
+      "en": "power spectra"
+    },
+    "加权网络": {
+      "zh": "加权网络",
+      "en": "weighted networks"
+    },
+    "动作选择": {
+      "zh": "动作选择",
+      "en": "action selection"
+    },
+    "动力学推断": {
+      "zh": "动力学推断",
+      "en": "dynamical inference"
+    },
+    "动态临界现象": {
+      "zh": "动态临界现象",
+      "en": "dynamic critical phenomena"
+    },
+    "动态决策": {
+      "zh": "动态决策",
+      "en": "dynamic decision making"
+    },
+    "动态加载": {
+      "zh": "动态加载",
+      "en": "dynamic network loading"
+    },
+    "动态可达性": {
+      "zh": "动态可达性",
+      "en": "temporal reachability"
+    },
+    "动态网络": {
+      "zh": "动态网络",
+      "en": "dynamic networks"
+    },
+    "动物群体": {
+      "zh": "动物群体",
+      "en": "animal groups"
+    },
+    "动物行为": {
+      "zh": "动物行为",
+      "en": "animal behavior"
+    },
+    "动理学": {
+      "zh": "动理学",
+      "en": "kinetic theory"
+    },
+    "匿名化": {
+      "zh": "匿名化",
+      "en": "anonymization"
+    },
+    "协作协议": {
+      "zh": "协作协议",
+      "en": "collaboration protocols"
+    },
+    "协作适应": {
+      "zh": "协作适应",
+      "en": "collaborative adaptation"
+    },
+    "协商合作": {
+      "zh": "协商合作",
+      "en": "negotiation and cooperation"
+    },
+    "协调机制": {
+      "zh": "协调机制",
+      "en": "coordination mechanisms"
+    },
+    "单纯复形": {
+      "zh": "单纯复形",
+      "en": "simplicial complexes"
+    },
+    "卡车编队": {
+      "zh": "卡车编队",
+      "en": "truck platooning"
+    },
+    "危机响应": {
+      "zh": "危机响应",
+      "en": "crisis response"
+    },
+    "历史依赖": {
+      "zh": "历史依赖",
+      "en": "history dependence"
+    },
+    "参数压缩": {
+      "zh": "参数压缩",
+      "en": "parameter compression"
+    },
+    "反弹效应": {
+      "zh": "反弹效应",
+      "en": "rebound effects"
+    },
+    "反思规划": {
+      "zh": "反思规划",
+      "en": "reflection and planning"
+    },
+    "反馈": {
+      "zh": "反馈",
+      "en": "feedback"
+    },
+    "反馈误判": {
+      "zh": "反馈误判",
+      "en": "feedback misperception"
+    },
+    "受迫探索": {
+      "zh": "受迫探索",
+      "en": "forced experimentation"
+    },
+    "可控性": {
+      "zh": "可控性",
+      "en": "controllability"
+    },
+    "可聚合性": {
+      "zh": "可聚合性",
+      "en": "lumpability"
+    },
+    "可识别性": {
+      "zh": "可识别性",
+      "en": "identifiability"
+    },
+    "台风": {
+      "zh": "台风",
+      "en": "typhoons"
+    },
+    "合作": {
+      "zh": "合作",
+      "en": "cooperation"
+    },
+    "合作机制": {
+      "zh": "合作机制",
+      "en": "cooperation mechanisms"
+    },
+    "同步": {
+      "zh": "同步",
+      "en": "synchronization"
+    },
+    "名义刚性": {
+      "zh": "名义刚性",
+      "en": "nominal rigidities"
+    },
+    "吸引域稳定性": {
+      "zh": "吸引域稳定性",
+      "en": "basin stability"
+    },
+    "响应多样性": {
+      "zh": "响应多样性",
+      "en": "response diversity"
+    },
+    "商业网络": {
+      "zh": "商业网络",
+      "en": "business networks"
+    },
+    "因果影响": {
+      "zh": "因果影响",
+      "en": "causal influence"
+    },
+    "因果推断": {
+      "zh": "因果推断",
+      "en": "causal inference"
+    },
+    "因果测量": {
+      "zh": "因果测量",
+      "en": "causal measurement"
+    },
+    "因果状态": {
+      "zh": "因果状态",
+      "en": "causal states"
+    },
+    "图加速": {
+      "zh": "图加速",
+      "en": "graph acceleration"
+    },
+    "图样识别": {
+      "zh": "图样识别",
+      "en": "pattern recognition"
+    },
+    "图案动力学": {
+      "zh": "图案动力学",
+      "en": "pattern dynamics"
+    },
+    "地理仿真": {
+      "zh": "地理仿真",
+      "en": "geosimulation"
+    },
+    "地理信息": {
+      "zh": "地理信息",
+      "en": "geographic information"
+    },
+    "地理约束": {
+      "zh": "地理约束",
+      "en": "geographical constraints"
+    },
+    "地铁网络": {
+      "zh": "地铁网络",
+      "en": "metro networks"
+    },
+    "场论": {
+      "zh": "场论",
+      "en": "field theory"
+    },
+    "均衡": {
+      "zh": "均衡",
+      "en": "equilibrium"
+    },
+    "城市交通": {
+      "zh": "城市交通",
+      "en": "urban transportation"
+    },
+    "城市功能": {
+      "zh": "城市功能",
+      "en": "urban functions"
+    },
+    "城市功能区": {
+      "zh": "城市功能区",
+      "en": "urban functional areas"
+    },
+    "城市动力学": {
+      "zh": "城市动力学",
+      "en": "urban dynamics"
+    },
+    "城市发展": {
+      "zh": "城市发展",
+      "en": "urban development"
+    },
+    "城市土地": {
+      "zh": "城市土地",
+      "en": "urban land"
+    },
+    "城市增长": {
+      "zh": "城市增长",
+      "en": "urban growth"
+    },
+    "城市复杂系统": {
+      "zh": "城市复杂系统",
+      "en": "complex urban systems"
+    },
+    "城市密度": {
+      "zh": "城市密度",
+      "en": "urban density"
+    },
+    "城市形态": {
+      "zh": "城市形态",
+      "en": "urban morphology"
+    },
+    "城市感知": {
+      "zh": "城市感知",
+      "en": "urban sensing"
+    },
+    "城市扩张": {
+      "zh": "城市扩张",
+      "en": "urban expansion"
+    },
+    "城市标度": {
+      "zh": "城市标度",
+      "en": "urban scaling"
+    },
+    "城市模型": {
+      "zh": "城市模型",
+      "en": "urban models"
+    },
+    "城市模拟": {
+      "zh": "城市模拟",
+      "en": "urban simulation"
+    },
+    "城市比较": {
+      "zh": "城市比较",
+      "en": "urban comparison"
+    },
+    "城市治理": {
+      "zh": "城市治理",
+      "en": "urban governance"
+    },
+    "城市混合": {
+      "zh": "城市混合",
+      "en": "urban mixing"
+    },
+    "城市科学": {
+      "zh": "城市科学",
+      "en": "urban science"
+    },
+    "城市移动": {
+      "zh": "城市移动",
+      "en": "urban mobility"
+    },
+    "城市系统": {
+      "zh": "城市系统",
+      "en": "urban systems"
+    },
+    "城市经济": {
+      "zh": "城市经济",
+      "en": "urban economics"
+    },
+    "城市网络": {
+      "zh": "城市网络",
+      "en": "city networks"
+    },
+    "城市蔓延": {
+      "zh": "城市蔓延",
+      "en": "urban sprawl"
+    },
+    "城市规划": {
+      "zh": "城市规划",
+      "en": "urban planning"
+    },
+    "城市规模": {
+      "zh": "城市规模",
+      "en": "city size"
+    },
+    "城市韧性": {
+      "zh": "城市韧性",
+      "en": "urban resilience"
+    },
+    "城际移动": {
+      "zh": "城际移动",
+      "en": "intercity mobility"
+    },
+    "城际联系": {
+      "zh": "城际联系",
+      "en": "intercity connectivity"
+    },
+    "基准验证": {
+      "zh": "基准验证",
+      "en": "benchmark validation"
+    },
+    "基础模型": {
+      "zh": "基础模型",
+      "en": "foundation models"
+    },
+    "基础设施": {
+      "zh": "基础设施",
+      "en": "infrastructure"
+    },
+    "基础设施设计": {
+      "zh": "基础设施设计",
+      "en": "infrastructure design"
+    },
+    "复合风险": {
+      "zh": "复合风险",
+      "en": "compound risks"
+    },
+    "复杂度–熵平面": {
+      "zh": "复杂度–熵平面",
+      "en": "complexity–entropy plane"
+    },
+    "复杂性": {
+      "zh": "复杂性",
+      "en": "complexity"
+    },
+    "复杂网络": {
+      "zh": "复杂网络",
+      "en": "complex networks"
+    },
+    "复杂适应系统": {
+      "zh": "复杂适应系统",
+      "en": "complex adaptive systems"
+    },
+    "外生噪声": {
+      "zh": "外生噪声",
+      "en": "extrinsic noise"
+    },
+    "多中心城市": {
+      "zh": "多中心城市",
+      "en": "polycentric cities"
+    },
+    "多变量分析": {
+      "zh": "多变量分析",
+      "en": "multivariate analysis"
+    },
+    "多尺度分析": {
+      "zh": "多尺度分析",
+      "en": "multiscale analysis"
+    },
+    "多尺度建模": {
+      "zh": "多尺度建模",
+      "en": "multiscale modeling"
+    },
+    "多尺度熵": {
+      "zh": "多尺度熵",
+      "en": "multiscale entropy"
+    },
+    "多层网络": {
+      "zh": "多层网络",
+      "en": "multilayer networks"
+    },
+    "多数跟随": {
+      "zh": "多数跟随",
+      "en": "majority following"
+    },
+    "多方式交通": {
+      "zh": "多方式交通",
+      "en": "multimodal transportation"
+    },
+    "多智能体协作": {
+      "zh": "多智能体协作",
+      "en": "multi-agent collaboration"
+    },
+    "多智能体学习": {
+      "zh": "多智能体学习",
+      "en": "multi-agent learning"
+    },
+    "多智能体强化学习": {
+      "zh": "多智能体强化学习",
+      "en": "multi-agent reinforcement learning"
+    },
+    "多智能体系统": {
+      "zh": "多智能体系统",
+      "en": "multi-agent systems"
+    },
+    "多模态智能体": {
+      "zh": "多模态智能体",
+      "en": "multimodal agents"
+    },
+    "多稳态": {
+      "zh": "多稳态",
+      "en": "multistability"
+    },
+    "多重分形": {
+      "zh": "多重分形",
+      "en": "multifractality"
+    },
+    "大型活动": {
+      "zh": "大型活动",
+      "en": "mass events"
+    },
+    "大规模模拟": {
+      "zh": "大规模模拟",
+      "en": "large-scale simulation"
+    },
+    "大语言模型": {
+      "zh": "大语言模型",
+      "en": "large language models"
+    },
+    "失败归因": {
+      "zh": "失败归因",
+      "en": "failure attribution"
+    },
+    "奖励学习": {
+      "zh": "奖励学习",
+      "en": "reward learning"
+    },
+    "孔隙度": {
+      "zh": "孔隙度",
+      "en": "lacunarity"
+    },
+    "学习动力学": {
+      "zh": "学习动力学",
+      "en": "learning dynamics"
+    },
+    "安全验证": {
+      "zh": "安全验证",
+      "en": "safety validation"
+    },
+    "宏观动力学": {
+      "zh": "宏观动力学",
+      "en": "macroscopic dynamics"
+    },
+    "宏观基本图": {
+      "zh": "宏观基本图",
+      "en": "macroscopic fundamental diagram"
+    },
+    "宏观经济": {
+      "zh": "宏观经济",
+      "en": "macroeconomics"
+    },
+    "定量模型": {
+      "zh": "定量模型",
+      "en": "quantitative models"
+    },
+    "实例学习": {
+      "zh": "实例学习",
+      "en": "instance-based learning"
+    },
+    "家庭协调": {
+      "zh": "家庭协调",
+      "en": "household coordination"
+    },
+    "家庭适应": {
+      "zh": "家庭适应",
+      "en": "household adaptation"
+    },
+    "容量瓶颈": {
+      "zh": "容量瓶颈",
+      "en": "capacity bottlenecks"
+    },
+    "容量约束": {
+      "zh": "容量约束",
+      "en": "capacity constraints"
+    },
+    "对称性破缺": {
+      "zh": "对称性破缺",
+      "en": "symmetry breaking"
+    },
+    "导航攻击": {
+      "zh": "导航攻击",
+      "en": "route guidance attacks"
+    },
+    "小世界网络": {
+      "zh": "小世界网络",
+      "en": "small-world networks"
+    },
+    "少数者博弈": {
+      "zh": "少数者博弈",
+      "en": "minority games"
+    },
+    "局域化": {
+      "zh": "局域化",
+      "en": "localization"
+    },
+    "局部交互": {
+      "zh": "局部交互",
+      "en": "local interactions"
+    },
+    "局部偏好": {
+      "zh": "局部偏好",
+      "en": "local preferences"
+    },
+    "局部弱收敛": {
+      "zh": "局部弱收敛",
+      "en": "local weak convergence"
+    },
+    "层级结构": {
+      "zh": "层级结构",
+      "en": "hierarchical structure"
+    },
+    "工作流": {
+      "zh": "工作流",
+      "en": "workflows"
+    },
+    "平均场": {
+      "zh": "平均场",
+      "en": "mean field"
+    },
+    "平均场博弈": {
+      "zh": "平均场博弈",
+      "en": "mean field games"
+    },
+    "平均场极限": {
+      "zh": "平均场极限",
+      "en": "mean field limits"
+    },
+    "平均场理论": {
+      "zh": "平均场理论",
+      "en": "mean field theory"
+    },
+    "并行计算": {
+      "zh": "并行计算",
+      "en": "parallel computing"
+    },
+    "库存决策": {
+      "zh": "库存决策",
+      "en": "inventory decisions"
+    },
+    "开放系统": {
+      "zh": "开放系统",
+      "en": "open systems"
+    },
+    "异质交互场所": {
+      "zh": "异质交互场所",
+      "en": "heterogeneous interaction venues"
+    },
+    "异质性": {
+      "zh": "异质性",
+      "en": "heterogeneity"
+    },
+    "引力模型": {
+      "zh": "重力模型",
+      "en": "gravity models"
+    },
+    "弱监督学习": {
+      "zh": "弱监督学习",
+      "en": "weakly supervised learning"
+    },
+    "强化学习": {
+      "zh": "强化学习",
+      "en": "reinforcement learning"
+    },
+    "循环竞争": {
+      "zh": "循环竞争",
+      "en": "cyclic competition"
+    },
+    "循环网络": {
+      "zh": "循环网络",
+      "en": "recurrent networks"
+    },
+    "微型交通": {
+      "zh": "微型交通",
+      "en": "micromobility"
+    },
+    "心智理论": {
+      "zh": "心智理论",
+      "en": "theory of mind"
+    },
+    "恢复模式": {
+      "zh": "恢复模式",
+      "en": "recovery patterns"
+    },
+    "意见动力学": {
+      "zh": "意见动力学",
+      "en": "opinion dynamics"
+    },
+    "意见极化": {
+      "zh": "意见极化",
+      "en": "opinion polarization"
+    },
+    "成本权衡": {
+      "zh": "成本权衡",
+      "en": "cost trade-offs"
+    },
+    "扩展临界区": {
+      "zh": "扩展临界区",
+      "en": "extended critical regions"
+    },
+    "扩散模型": {
+      "zh": "扩散模型",
+      "en": "diffusion models"
+    },
+    "扰动传播": {
+      "zh": "扰动传播",
+      "en": "perturbation propagation"
+    },
+    "扰动响应": {
+      "zh": "扰动响应",
+      "en": "perturbation response"
+    },
+    "扰动恢复": {
+      "zh": "扰动恢复",
+      "en": "perturbation recovery"
+    },
+    "技能库": {
+      "zh": "技能库",
+      "en": "skill libraries"
+    },
+    "投入产出模型": {
+      "zh": "投入产出模型",
+      "en": "input–output models"
+    },
+    "拓扑交互": {
+      "zh": "拓扑交互",
+      "en": "topological interactions"
+    },
+    "拥堵博弈": {
+      "zh": "拥堵博弈",
+      "en": "congestion games"
+    },
+    "拥堵波": {
+      "zh": "拥堵波",
+      "en": "congestion waves"
+    },
+    "拥挤失稳": {
+      "zh": "拥挤失稳",
+      "en": "crowding instability"
+    },
+    "拥挤环境": {
+      "zh": "拥挤环境",
+      "en": "crowded environments"
+    },
+    "排队网络": {
+      "zh": "排队网络",
+      "en": "queueing networks"
+    },
+    "探索返回": {
+      "zh": "探索返回",
+      "en": "exploration and preferential return"
+    },
+    "控制理论": {
+      "zh": "控制理论",
+      "en": "control theory"
+    },
+    "收入隔离": {
+      "zh": "收入隔离",
+      "en": "income segregation"
+    },
+    "收缩层级": {
+      "zh": "收缩层级",
+      "en": "contraction hierarchies"
+    },
+    "收缩理论": {
+      "zh": "收缩理论",
+      "en": "contraction theory"
+    },
+    "政策评价": {
+      "zh": "政策评价",
+      "en": "policy evaluation"
+    },
+    "散度": {
+      "zh": "散度",
+      "en": "divergence"
+    },
+    "数据可视化": {
+      "zh": "数据可视化",
+      "en": "data visualization"
+    },
+    "数据集": {
+      "zh": "数据集",
+      "en": "datasets"
+    },
+    "数据驱动控制": {
+      "zh": "数据驱动控制",
+      "en": "data-driven control"
+    },
+    "文化演化": {
+      "zh": "文化演化",
+      "en": "cultural evolution"
+    },
+    "无人机": {
+      "zh": "无人机",
+      "en": "unmanned aerial vehicles"
+    },
+    "无序系统": {
+      "zh": "无序系统",
+      "en": "disordered systems"
+    },
+    "无方程计算": {
+      "zh": "无方程计算",
+      "en": "equation-free computation"
+    },
+    "早期预警": {
+      "zh": "早期预警",
+      "en": "early warning"
+    },
+    "时序网络": {
+      "zh": "时序网络",
+      "en": "temporal networks"
+    },
+    "时空恢复": {
+      "zh": "时空恢复",
+      "en": "spatiotemporal recovery"
+    },
+    "时空标度": {
+      "zh": "时空标度",
+      "en": "spatiotemporal scaling"
+    },
+    "时空结构": {
+      "zh": "时空结构",
+      "en": "spatiotemporal structure"
+    },
+    "时空衰减": {
+      "zh": "时空衰减",
+      "en": "spatiotemporal decay"
+    },
+    "时间动态": {
+      "zh": "时间动态",
+      "en": "temporal dynamics"
+    },
+    "时间序列": {
+      "zh": "时间序列",
+      "en": "time series"
+    },
+    "时间延迟": {
+      "zh": "时间延迟",
+      "en": "time delays"
+    },
+    "时间相关": {
+      "zh": "时间相关",
+      "en": "temporal correlations"
+    },
+    "时间顺序": {
+      "zh": "时间顺序",
+      "en": "temporal order"
+    },
+    "普适性": {
+      "zh": "普适性",
+      "en": "universality"
+    },
+    "智能体仿真": {
+      "zh": "智能体仿真",
+      "en": "agent-based simulation"
+    },
+    "智能体理论": {
+      "zh": "智能体理论",
+      "en": "agent theory"
+    },
+    "智能体自演化": {
+      "zh": "智能体自演化",
+      "en": "self-evolving agents"
+    },
+    "替代路径": {
+      "zh": "替代路径",
+      "en": "alternative paths"
+    },
+    "最优传输": {
+      "zh": "最优传输",
+      "en": "optimal transport"
+    },
+    "最优策略": {
+      "zh": "最优策略",
+      "en": "optimal policies"
+    },
+    "最优预测": {
+      "zh": "最优预测",
+      "en": "optimal prediction"
+    },
+    "最大熵": {
+      "zh": "最大熵",
+      "en": "maximum entropy"
+    },
+    "最小模型": {
+      "zh": "最小模型",
+      "en": "minimal models"
+    },
+    "最小预测状态": {
+      "zh": "最小预测状态",
+      "en": "minimal predictive states"
+    },
+    "最短路径": {
+      "zh": "最短路径",
+      "en": "shortest paths"
+    },
+    "有向网络": {
+      "zh": "有向网络",
+      "en": "directed networks"
+    },
+    "有序转变": {
+      "zh": "有序转变",
+      "en": "ordering transitions"
+    },
+    "有效理论": {
+      "zh": "有效理论",
+      "en": "effective theories"
+    },
+    "有源物质": {
+      "zh": "有源物质",
+      "en": "active matter"
+    },
+    "有限尺寸": {
+      "zh": "有限尺寸",
+      "en": "finite size"
+    },
+    "有限理性": {
+      "zh": "有限理性",
+      "en": "bounded rationality"
+    },
+    "服务可达性": {
+      "zh": "服务可达性",
+      "en": "service accessibility"
+    },
+    "极化": {
+      "zh": "极化",
+      "en": "polarization"
+    },
+    "极端事件": {
+      "zh": "极端事件",
+      "en": "extreme events"
+    },
+    "极端天气": {
+      "zh": "极端天气",
+      "en": "extreme weather"
+    },
+    "极端降雨": {
+      "zh": "极端降雨",
+      "en": "extreme rainfall"
+    },
+    "标度关系": {
+      "zh": "标度关系",
+      "en": "scaling relations"
+    },
+    "标度分析": {
+      "zh": "标度分析",
+      "en": "scaling analysis"
+    },
+    "检索增强": {
+      "zh": "检索增强",
+      "en": "retrieval augmentation"
+    },
+    "概率预测": {
+      "zh": "概率预测",
+      "en": "probabilistic forecasting"
+    },
+    "模仿学习": {
+      "zh": "模仿学习",
+      "en": "imitation learning"
+    },
+    "模块化架构": {
+      "zh": "模块化架构",
+      "en": "modular architectures"
+    },
+    "模型多样性": {
+      "zh": "模型多样性",
+      "en": "model diversity"
+    },
+    "模型约化": {
+      "zh": "模型约化",
+      "en": "model reduction"
+    },
+    "模型选择": {
+      "zh": "模型选择",
+      "en": "model selection"
+    },
+    "模型预测控制": {
+      "zh": "模型预测控制",
+      "en": "model predictive control"
+    },
+    "模型验证": {
+      "zh": "模型验证",
+      "en": "model validation"
+    },
+    "模式匹配": {
+      "zh": "模式匹配",
+      "en": "pattern matching"
+    },
+    "气候系统": {
+      "zh": "气候系统",
+      "en": "climate systems"
+    },
+    "气候适应": {
+      "zh": "气候适应",
+      "en": "climate adaptation"
+    },
+    "波前控制": {
+      "zh": "波前控制",
+      "en": "wavefront control"
+    },
+    "洪水": {
+      "zh": "洪水",
+      "en": "flooding"
+    },
+    "洪涝灾害": {
+      "zh": "洪涝灾害",
+      "en": "flood disasters"
+    },
+    "活动可达性": {
+      "zh": "活动可达性",
+      "en": "activity-based accessibility"
+    },
+    "活动容量": {
+      "zh": "活动容量",
+      "en": "activity capacity"
+    },
+    "活动意图": {
+      "zh": "活动意图",
+      "en": "activity intentions"
+    },
+    "活动热点": {
+      "zh": "活动热点",
+      "en": "activity hotspots"
+    },
+    "活动移动": {
+      "zh": "活动移动",
+      "en": "activity-related mobility"
+    },
+    "活动空间": {
+      "zh": "活动空间",
+      "en": "activity spaces"
+    },
+    "活动计划": {
+      "zh": "活动计划",
+      "en": "activity plans"
+    },
+    "活动集合": {
+      "zh": "活动集合",
+      "en": "activity sets"
+    },
+    "流体动力学": {
+      "zh": "流体动力学",
+      "en": "fluid dynamics"
+    },
+    "流动组织": {
+      "zh": "流动组织",
+      "en": "flow organization"
+    },
+    "流量预测": {
+      "zh": "流量预测",
+      "en": "flow prediction"
+    },
+    "测试评价": {
+      "zh": "测试评价",
+      "en": "testing and evaluation"
+    },
+    "测量误差": {
+      "zh": "测量误差",
+      "en": "measurement error"
+    },
+    "海马表征": {
+      "zh": "海马表征",
+      "en": "hippocampal representations"
+    },
+    "涌现": {
+      "zh": "涌现",
+      "en": "emergence"
+    },
+    "涨落定理": {
+      "zh": "涨落定理",
+      "en": "fluctuation theorems"
+    },
+    "深度学习": {
+      "zh": "深度学习",
+      "en": "deep learning"
+    },
+    "深度强化学习": {
+      "zh": "深度强化学习",
+      "en": "deep reinforcement learning"
+    },
+    "混合智能体": {
+      "zh": "混合智能体",
+      "en": "hybrid agents"
+    },
+    "混合系统": {
+      "zh": "混合系统",
+      "en": "hybrid systems"
+    },
+    "混沌": {
+      "zh": "混沌",
+      "en": "chaos"
+    },
+    "温室气体排放": {
+      "zh": "温室气体排放",
+      "en": "greenhouse gas emissions"
+    },
+    "游戏引擎": {
+      "zh": "游戏引擎",
+      "en": "game engines"
+    },
+    "湍流": {
+      "zh": "湍流",
+      "en": "turbulence"
+    },
+    "演化模型": {
+      "zh": "演化模型",
+      "en": "evolutionary models"
+    },
+    "激励设计": {
+      "zh": "激励设计",
+      "en": "incentive design"
+    },
+    "灾后恢复": {
+      "zh": "灾后恢复",
+      "en": "post-disaster recovery"
+    },
+    "灾害模拟": {
+      "zh": "灾害模拟",
+      "en": "disaster simulation"
+    },
+    "灾害疏散": {
+      "zh": "灾害疏散",
+      "en": "disaster evacuation"
+    },
+    "点云": {
+      "zh": "点云",
+      "en": "point clouds"
+    },
+    "熵收敛": {
+      "zh": "熵收敛",
+      "en": "entropy convergence"
+    },
+    "牛鞭效应": {
+      "zh": "牛鞭效应",
+      "en": "bullwhip effect"
+    },
+    "物质记忆": {
+      "zh": "物质记忆",
+      "en": "memory in matter"
+    },
+    "状态推断": {
+      "zh": "状态推断",
+      "en": "state inference"
+    },
+    "状态空间": {
+      "zh": "状态空间",
+      "en": "state space"
+    },
+    "状态空间模型": {
+      "zh": "状态空间模型",
+      "en": "state-space models"
+    },
+    "状态空间重建": {
+      "zh": "状态空间重建",
+      "en": "state-space reconstruction"
+    },
+    "状态转变": {
+      "zh": "状态转变",
+      "en": "state transitions"
+    },
+    "环境介导耦合": {
+      "zh": "环境介导耦合",
+      "en": "environment-mediated coupling"
+    },
+    "环境冲击": {
+      "zh": "环境冲击",
+      "en": "environmental shocks"
+    },
+    "环境反馈": {
+      "zh": "环境反馈",
+      "en": "environmental feedback"
+    },
+    "环境变化": {
+      "zh": "环境变化",
+      "en": "environmental change"
+    },
+    "环境建模": {
+      "zh": "环境建模",
+      "en": "environment modeling"
+    },
+    "环境记忆": {
+      "zh": "环境记忆",
+      "en": "environmental memory"
+    },
+    "环路实验": {
+      "zh": "环路实验",
+      "en": "ring-road experiments"
+    },
+    "生态保险": {
+      "zh": "生态保险",
+      "en": "ecological insurance"
+    },
+    "生态功能": {
+      "zh": "生态功能",
+      "en": "ecological functions"
+    },
+    "生态稳定性": {
+      "zh": "生态稳定性",
+      "en": "ecological stability"
+    },
+    "生态系统": {
+      "zh": "生态系统",
+      "en": "ecosystems"
+    },
+    "生成式模拟": {
+      "zh": "生成式模拟",
+      "en": "generative simulation"
+    },
+    "生成机制": {
+      "zh": "生成机制",
+      "en": "generating mechanisms"
+    },
+    "生成模型": {
+      "zh": "生成模型",
+      "en": "generative models"
+    },
+    "生物多样性": {
+      "zh": "生物多样性",
+      "en": "biodiversity"
+    },
+    "生物膜": {
+      "zh": "生物膜",
+      "en": "biofilms"
+    },
+    "生理信号": {
+      "zh": "生理信号",
+      "en": "physiological signals"
+    },
+    "用水需求": {
+      "zh": "用水需求",
+      "en": "water demand"
+    },
+    "电动车": {
+      "zh": "电动车",
+      "en": "electric vehicles"
+    },
+    "电网规划": {
+      "zh": "电网规划",
+      "en": "power grid planning"
+    },
+    "畴壁动力学": {
+      "zh": "畴壁动力学",
+      "en": "domain wall dynamics"
+    },
+    "疫情传播": {
+      "zh": "疫情传播",
+      "en": "epidemic spreading"
+    },
+    "疫情冲击": {
+      "zh": "疫情冲击",
+      "en": "pandemic shocks"
+    },
+    "疫情响应": {
+      "zh": "疫情响应",
+      "en": "pandemic response"
+    },
+    "相互作用": {
+      "zh": "相互作用",
+      "en": "interactions"
+    },
+    "相互作用过程": {
+      "zh": "相互作用过程",
+      "en": "interacting processes"
+    },
+    "相互预期": {
+      "zh": "相互预期",
+      "en": "mutual anticipation"
+    },
+    "相变": {
+      "zh": "相变",
+      "en": "phase transitions"
+    },
+    "瞬态响应": {
+      "zh": "瞬态响应",
+      "en": "transient response"
+    },
+    "瞬态放大": {
+      "zh": "瞬态放大",
+      "en": "transient amplification"
+    },
+    "知情个体": {
+      "zh": "知情个体",
+      "en": "informed individuals"
+    },
+    "知识外溢": {
+      "zh": "知识外溢",
+      "en": "knowledge spillovers"
+    },
+    "磁流体力学": {
+      "zh": "磁流体力学",
+      "en": "magnetohydrodynamics"
+    },
+    "磁通冻结": {
+      "zh": "磁通冻结",
+      "en": "flux freezing"
+    },
+    "社会不平等": {
+      "zh": "社会不平等",
+      "en": "social inequality"
+    },
+    "社会传播": {
+      "zh": "社会传播",
+      "en": "social contagion"
+    },
+    "社会动力学": {
+      "zh": "社会动力学",
+      "en": "social dynamics"
+    },
+    "社会困境": {
+      "zh": "社会困境",
+      "en": "social dilemmas"
+    },
+    "社会实验": {
+      "zh": "社会实验",
+      "en": "social experiments"
+    },
+    "社会模拟": {
+      "zh": "社会模拟",
+      "en": "social simulation"
+    },
+    "社会生态系统": {
+      "zh": "社会生态系统",
+      "en": "social-ecological systems"
+    },
+    "社会网络": {
+      "zh": "社会网络",
+      "en": "social networks"
+    },
+    "社会联系": {
+      "zh": "社会联系",
+      "en": "social ties"
+    },
+    "社会行为": {
+      "zh": "社会行为",
+      "en": "social behavior"
+    },
+    "社会规范": {
+      "zh": "社会规范",
+      "en": "social norms"
+    },
+    "社会认知": {
+      "zh": "社会认知",
+      "en": "social cognition"
+    },
+    "社会资本": {
+      "zh": "社会资本",
+      "en": "social capital"
+    },
+    "社会运动": {
+      "zh": "社会运动",
+      "en": "social movements"
+    },
+    "社区发现": {
+      "zh": "社区发现",
+      "en": "community detection"
+    },
+    "神经网络": {
+      "zh": "神经网络",
+      "en": "neural networks"
+    },
+    "离散选择": {
+      "zh": "离散选择",
+      "en": "discrete choice"
+    },
+    "离线强化学习": {
+      "zh": "离线强化学习",
+      "en": "offline reinforcement learning"
+    },
+    "科研智能体": {
+      "zh": "科研智能体",
+      "en": "scientific agents"
+    },
+    "移动可预测性": {
+      "zh": "移动可预测性",
+      "en": "mobility predictability"
+    },
+    "移动振子": {
+      "zh": "移动振子",
+      "en": "mobile oscillators"
+    },
+    "移动数据": {
+      "zh": "移动数据",
+      "en": "mobility data"
+    },
+    "移动智能体": {
+      "zh": "移动智能体",
+      "en": "mobile agents"
+    },
+    "移动标度": {
+      "zh": "移动标度",
+      "en": "mobility scaling"
+    },
+    "移动特征": {
+      "zh": "移动特征",
+      "en": "mobility signatures"
+    },
+    "移动网络": {
+      "zh": "移动网络",
+      "en": "mobility networks"
+    },
+    "移动规律性": {
+      "zh": "移动规律性",
+      "en": "mobility regularity"
+    },
+    "移动限制": {
+      "zh": "移动限制",
+      "en": "mobility restrictions"
+    },
+    "稀有事件": {
+      "zh": "稀有事件",
+      "en": "rare events"
+    },
+    "稀疏网络": {
+      "zh": "稀疏网络",
+      "en": "sparse networks"
+    },
+    "程序知识": {
+      "zh": "程序知识",
+      "en": "procedural knowledge"
+    },
+    "稳定性": {
+      "zh": "稳定性",
+      "en": "stability"
+    },
+    "空间交互": {
+      "zh": "空间交互",
+      "en": "spatial interaction"
+    },
+    "空间保险": {
+      "zh": "空间保险",
+      "en": "spatial insurance"
+    },
+    "空间分布": {
+      "zh": "空间分布",
+      "en": "spatial distributions"
+    },
+    "空间尺度": {
+      "zh": "空间尺度",
+      "en": "spatial scales"
+    },
+    "空间异质性": {
+      "zh": "空间异质性",
+      "en": "spatial heterogeneity"
+    },
+    "空间形态": {
+      "zh": "空间形态",
+      "en": "spatial morphology"
+    },
+    "空间有序性": {
+      "zh": "空间有序性",
+      "en": "spatial order"
+    },
+    "空间机会": {
+      "zh": "空间机会",
+      "en": "spatial opportunities"
+    },
+    "空间熵": {
+      "zh": "空间熵",
+      "en": "spatial entropy"
+    },
+    "空间约束": {
+      "zh": "空间约束",
+      "en": "spatial constraints"
+    },
+    "空间结构": {
+      "zh": "空间结构",
+      "en": "spatial structure"
+    },
+    "空间网络": {
+      "zh": "空间网络",
+      "en": "spatial networks"
+    },
+    "空间自组织": {
+      "zh": "空间自组织",
+      "en": "spatial self-organization"
+    },
+    "空间规划": {
+      "zh": "空间规划",
+      "en": "spatial planning"
+    },
+    "空间量化": {
+      "zh": "空间量化",
+      "en": "spatial quantification"
+    },
+    "空间隔离": {
+      "zh": "空间隔离",
+      "en": "spatial segregation"
+    },
+    "空间集聚": {
+      "zh": "空间集聚",
+      "en": "spatial agglomeration"
+    },
+    "突发性": {
+      "zh": "突发性",
+      "en": "burstiness"
+    },
+    "等待时间": {
+      "zh": "等待时间",
+      "en": "waiting times"
+    },
+    "策略优化": {
+      "zh": "策略优化",
+      "en": "policy optimization"
+    },
+    "策略推理": {
+      "zh": "策略推理",
+      "en": "strategic reasoning"
+    },
+    "粒子加速度": {
+      "zh": "粒子加速度",
+      "en": "particle acceleration"
+    },
+    "粗粒化": {
+      "zh": "粗粒化",
+      "en": "coarse-graining"
+    },
+    "系统异质性": {
+      "zh": "系统异质性",
+      "en": "system heterogeneity"
+    },
+    "系统性风险": {
+      "zh": "系统性风险",
+      "en": "systemic risk"
+    },
+    "紧凑性": {
+      "zh": "紧凑性",
+      "en": "compactness"
+    },
+    "紧急事件": {
+      "zh": "紧急事件",
+      "en": "emergencies"
+    },
+    "约束模型": {
+      "zh": "约束模型",
+      "en": "constrained models"
+    },
+    "级联失效": {
+      "zh": "级联失效",
+      "en": "cascading failures"
+    },
+    "经济流动性": {
+      "zh": "经济流动性",
+      "en": "economic mobility"
+    },
+    "经济联系": {
+      "zh": "经济联系",
+      "en": "economic connectedness"
+    },
+    "结构异质性": {
+      "zh": "结构异质性",
+      "en": "structural heterogeneity"
+    },
+    "统计估计": {
+      "zh": "统计估计",
+      "en": "statistical estimation"
+    },
+    "统计复杂性": {
+      "zh": "统计复杂性",
+      "en": "statistical complexity"
+    },
+    "统计物理": {
+      "zh": "统计物理",
+      "en": "statistical physics"
+    },
+    "网约车": {
+      "zh": "网约车",
+      "en": "ride-hailing"
+    },
+    "网络动力学": {
+      "zh": "网络动力学",
+      "en": "network dynamics"
+    },
+    "网络可视化": {
+      "zh": "网络可视化",
+      "en": "network visualization"
+    },
+    "网络同步": {
+      "zh": "网络同步",
+      "en": "network synchronization"
+    },
+    "网络干扰": {
+      "zh": "网络干扰",
+      "en": "network interference"
+    },
+    "网络异质性": {
+      "zh": "网络异质性",
+      "en": "network heterogeneity"
+    },
+    "网络拓扑": {
+      "zh": "网络拓扑",
+      "en": "network topology"
+    },
+    "网络控制": {
+      "zh": "网络控制",
+      "en": "network control"
+    },
+    "网络架构": {
+      "zh": "网络架构",
+      "en": "network architectures"
+    },
+    "网络渗流": {
+      "zh": "网络渗流",
+      "en": "network percolation"
+    },
+    "网络热力学": {
+      "zh": "网络热力学",
+      "en": "network thermodynamics"
+    },
+    "网络稳定性": {
+      "zh": "网络稳定性",
+      "en": "network stability"
+    },
+    "网络算法": {
+      "zh": "网络算法",
+      "en": "network algorithms"
+    },
+    "网络粗粒化": {
+      "zh": "网络粗粒化",
+      "en": "network coarse-graining"
+    },
+    "网络结构": {
+      "zh": "网络结构",
+      "en": "network structure"
+    },
+    "网络耦合": {
+      "zh": "网络耦合",
+      "en": "network coupling"
+    },
+    "网络连接": {
+      "zh": "网络连接",
+      "en": "network connectivity"
+    },
+    "网络重组": {
+      "zh": "网络重组",
+      "en": "network reorganization"
+    },
+    "网络韧性": {
+      "zh": "网络韧性",
+      "en": "network resilience"
+    },
+    "群体决策": {
+      "zh": "群体决策",
+      "en": "group decision making"
+    },
+    "群体分布": {
+      "zh": "群体分布",
+      "en": "group distributions"
+    },
+    "群体动力学": {
+      "zh": "群体动力学",
+      "en": "group dynamics"
+    },
+    "群体协调": {
+      "zh": "群体协调",
+      "en": "group coordination"
+    },
+    "群体学习": {
+      "zh": "群体学习",
+      "en": "group learning"
+    },
+    "群体安全": {
+      "zh": "群体安全",
+      "en": "crowd safety"
+    },
+    "群体形成": {
+      "zh": "群体形成",
+      "en": "group formation"
+    },
+    "群体感应": {
+      "zh": "群体感应",
+      "en": "quorum sensing"
+    },
+    "群体机器人": {
+      "zh": "群体机器人",
+      "en": "swarm robotics"
+    },
+    "群居昆虫": {
+      "zh": "群居昆虫",
+      "en": "eusocial insects"
+    },
+    "群集": {
+      "zh": "群集",
+      "en": "flocking"
+    },
+    "老化": {
+      "zh": "老化",
+      "en": "aging"
+    },
+    "耦合动力学": {
+      "zh": "耦合动力学",
+      "en": "coupled dynamics"
+    },
+    "职住分离": {
+      "zh": "职住分离",
+      "en": "separation of workplaces and residences"
+    },
+    "脑网络": {
+      "zh": "脑网络",
+      "en": "brain networks"
+    },
+    "自主智能体": {
+      "zh": "自主智能体",
+      "en": "autonomous agents"
+    },
+    "自动驾驶": {
+      "zh": "自动驾驶",
+      "en": "autonomous driving"
+    },
+    "自发失稳": {
+      "zh": "自发失稳",
+      "en": "spontaneous instability"
+    },
+    "自然实验": {
+      "zh": "自然实验",
+      "en": "natural experiments"
+    },
+    "自组织": {
+      "zh": "自组织",
+      "en": "self-organization"
+    },
+    "自行车网络": {
+      "zh": "自行车网络",
+      "en": "bicycle networks"
+    },
+    "自衰减": {
+      "zh": "自衰减",
+      "en": "self-attenuation"
+    },
+    "自述数据": {
+      "zh": "自述数据",
+      "en": "self-report data"
+    },
+    "自驱粒子": {
+      "zh": "自驱粒子",
+      "en": "self-propelled particles"
+    },
+    "蓄水池模型": {
+      "zh": "蓄水池模型",
+      "en": "bathtub models"
+    },
+    "蛋白质设计": {
+      "zh": "蛋白质设计",
+      "en": "protein design"
+    },
+    "行为依赖": {
+      "zh": "行为依赖",
+      "en": "behavioral dependence"
+    },
+    "行为克隆": {
+      "zh": "行为克隆",
+      "en": "behavioral cloning"
+    },
+    "行为原型": {
+      "zh": "行为原型",
+      "en": "behavioral prototypes"
+    },
+    "行为反馈": {
+      "zh": "行为反馈",
+      "en": "behavioral feedback"
+    },
+    "行为实验": {
+      "zh": "行为实验",
+      "en": "behavioral experiments"
+    },
+    "行为异质性": {
+      "zh": "行为异质性",
+      "en": "behavioral heterogeneity"
+    },
+    "行为模拟": {
+      "zh": "行为模拟",
+      "en": "behavioral simulation"
+    },
+    "行为监测": {
+      "zh": "行为监测",
+      "en": "behavior monitoring"
+    },
+    "行为适应": {
+      "zh": "行为适应",
+      "en": "behavioral adaptation"
+    },
+    "行为预测": {
+      "zh": "行为预测",
+      "en": "behavior prediction"
+    },
+    "行人群组": {
+      "zh": "行人群组",
+      "en": "pedestrian groups"
+    },
+    "行人路径": {
+      "zh": "行人路径",
+      "en": "pedestrian trails"
+    },
+    "街道网络": {
+      "zh": "街道网络",
+      "en": "street networks"
+    },
+    "观测偏差": {
+      "zh": "观测偏差",
+      "en": "observational bias"
+    },
+    "观测探测": {
+      "zh": "观测探测",
+      "en": "observational detection"
+    },
+    "规划机制": {
+      "zh": "规划机制",
+      "en": "planning mechanisms"
+    },
+    "计算力学": {
+      "zh": "计算力学",
+      "en": "computational mechanics"
+    },
+    "计算图": {
+      "zh": "计算图",
+      "en": "computational graphs"
+    },
+    "认知智能体": {
+      "zh": "认知智能体",
+      "en": "cognitive agents"
+    },
+    "认知架构": {
+      "zh": "认知架构",
+      "en": "cognitive architectures"
+    },
+    "认知模型": {
+      "zh": "认知模型",
+      "en": "cognitive models"
+    },
+    "认知能力": {
+      "zh": "认知能力",
+      "en": "cognitive abilities"
+    },
+    "记忆效应": {
+      "zh": "记忆效应",
+      "en": "memory effects"
+    },
+    "记忆机制": {
+      "zh": "记忆机制",
+      "en": "memory mechanisms"
+    },
+    "记忆核": {
+      "zh": "记忆核",
+      "en": "memory kernels"
+    },
+    "访问规律": {
+      "zh": "访问规律",
+      "en": "visitation patterns"
+    },
+    "评估基准": {
+      "zh": "评估基准",
+      "en": "evaluation benchmarks"
+    },
+    "评分规则": {
+      "zh": "评分规则",
+      "en": "scoring rules"
+    },
+    "误差相关": {
+      "zh": "误差相关",
+      "en": "correlated errors"
+    },
+    "谱分析": {
+      "zh": "谱分析",
+      "en": "spectral analysis"
+    },
+    "负载均衡": {
+      "zh": "负载均衡",
+      "en": "load balancing"
+    },
+    "货币冲击": {
+      "zh": "货币冲击",
+      "en": "monetary shocks"
+    },
+    "资产抛售": {
+      "zh": "资产抛售",
+      "en": "asset fire sales"
+    },
+    "资源分配": {
+      "zh": "资源分配",
+      "en": "resource allocation"
+    },
+    "资源效率": {
+      "zh": "资源效率",
+      "en": "resource efficiency"
+    },
+    "资源汇聚": {
+      "zh": "资源汇聚",
+      "en": "resource pooling"
+    },
+    "资源竞争": {
+      "zh": "资源竞争",
+      "en": "resource competition"
+    },
+    "资源规划": {
+      "zh": "资源规划",
+      "en": "resource planning"
+    },
+    "超加性": {
+      "zh": "超加性",
+      "en": "superadditivity"
+    },
+    "超固体": {
+      "zh": "超固体",
+      "en": "supersolids"
+    },
+    "超图": {
+      "zh": "超图",
+      "en": "hypergraphs"
+    },
+    "超短脉冲": {
+      "zh": "超短脉冲",
+      "en": "ultrashort pulses"
+    },
+    "路径记忆": {
+      "zh": "路径记忆",
+      "en": "path memory"
+    },
+    "路线信息": {
+      "zh": "路线信息",
+      "en": "route information"
+    },
+    "路线选择": {
+      "zh": "路线选择",
+      "en": "route choice"
+    },
+    "路网失效": {
+      "zh": "路网失效",
+      "en": "road network failures"
+    },
+    "路网查询": {
+      "zh": "路网查询",
+      "en": "road network queries"
+    },
+    "路网演化": {
+      "zh": "路网演化",
+      "en": "road network evolution"
+    },
+    "车辆排放": {
+      "zh": "车辆排放",
+      "en": "vehicle emissions"
+    },
+    "车辆轨迹": {
+      "zh": "车辆轨迹",
+      "en": "vehicle trajectories"
+    },
+    "轨迹敏感性": {
+      "zh": "轨迹敏感性",
+      "en": "trajectory sensitivity"
+    },
+    "轨迹数据": {
+      "zh": "轨迹数据",
+      "en": "trajectory data"
+    },
+    "轨迹熵": {
+      "zh": "轨迹熵",
+      "en": "trajectory entropy"
+    },
+    "轨迹生成": {
+      "zh": "轨迹生成",
+      "en": "trajectory generation"
+    },
+    "轨迹规律": {
+      "zh": "轨迹规律",
+      "en": "trajectory regularity"
+    },
+    "转移熵": {
+      "zh": "转移熵",
+      "en": "transfer entropy"
+    },
+    "软件实现": {
+      "zh": "软件实现",
+      "en": "software implementations"
+    },
+    "辐射模型": {
+      "zh": "辐射模型",
+      "en": "radiation models"
+    },
+    "边捆绑": {
+      "zh": "边捆绑",
+      "en": "edge bundling"
+    },
+    "迁徙": {
+      "zh": "迁徙",
+      "en": "migration"
+    },
+    "运动控制": {
+      "zh": "运动控制",
+      "en": "motion control"
+    },
+    "运动波": {
+      "zh": "运动波",
+      "en": "kinematic waves"
+    },
+    "进化博弈": {
+      "zh": "进化博弈",
+      "en": "evolutionary games"
+    },
+    "连续模型": {
+      "zh": "连续模型",
+      "en": "continuum models"
+    },
+    "连续理论": {
+      "zh": "连续理论",
+      "en": "continuum theory"
+    },
+    "适应性时延": {
+      "zh": "适应性时延",
+      "en": "adaptive delays"
+    },
+    "适应性网络": {
+      "zh": "适应性网络",
+      "en": "adaptive networks"
+    },
+    "适应性觅食": {
+      "zh": "适应性觅食",
+      "en": "adaptive foraging"
+    },
+    "适应性选路": {
+      "zh": "适应性选路",
+      "en": "adaptive route choice"
+    },
+    "适应能力": {
+      "zh": "适应能力",
+      "en": "adaptive capacity"
+    },
+    "逐日学习": {
+      "zh": "逐日学习",
+      "en": "day-to-day learning"
+    },
+    "通信": {
+      "zh": "通信",
+      "en": "communication"
+    },
+    "通信机制": {
+      "zh": "通信机制",
+      "en": "communication mechanisms"
+    },
+    "通信架构": {
+      "zh": "通信架构",
+      "en": "communication architectures"
+    },
+    "通勤": {
+      "zh": "通勤",
+      "en": "commuting"
+    },
+    "速度响应": {
+      "zh": "速度响应",
+      "en": "velocity response"
+    },
+    "遥感": {
+      "zh": "遥感",
+      "en": "remote sensing"
+    },
+    "部分可观测性": {
+      "zh": "部分可观测性",
+      "en": "partial observability"
+    },
+    "配电网": {
+      "zh": "配电网",
+      "en": "power distribution networks"
+    },
+    "采样偏差": {
+      "zh": "采样偏差",
+      "en": "sampling bias"
+    },
+    "重力模型": {
+      "zh": "重力模型",
+      "en": "gravity models"
+    },
+    "重复移动": {
+      "zh": "重复移动",
+      "en": "recurrent mobility"
+    },
+    "重整化群": {
+      "zh": "重整化群",
+      "en": "renormalization group"
+    },
+    "量子模拟": {
+      "zh": "量子模拟",
+      "en": "quantum simulation"
+    },
+    "金融市场": {
+      "zh": "金融市场",
+      "en": "financial markets"
+    },
+    "金融网络": {
+      "zh": "金融网络",
+      "en": "financial networks"
+    },
+    "银行脆弱性": {
+      "zh": "银行脆弱性",
+      "en": "bank vulnerability"
+    },
+    "长时程任务": {
+      "zh": "长时程任务",
+      "en": "long-horizon tasks"
+    },
+    "长程有序": {
+      "zh": "长程有序",
+      "en": "long-range order"
+    },
+    "长程相关": {
+      "zh": "长程相关",
+      "en": "long-range correlations"
+    },
+    "阈值传播": {
+      "zh": "阈值传播",
+      "en": "threshold contagion"
+    },
+    "降维": {
+      "zh": "降维",
+      "en": "dimensionality reduction"
+    },
+    "随机博弈": {
+      "zh": "随机博弈",
+      "en": "stochastic games"
+    },
+    "随机块模型": {
+      "zh": "随机块模型",
+      "en": "stochastic block models"
+    },
+    "随机效用": {
+      "zh": "随机效用",
+      "en": "random utility"
+    },
+    "随机时耗": {
+      "zh": "随机时耗",
+      "en": "stochastic travel times"
+    },
+    "随机游走": {
+      "zh": "随机游走",
+      "en": "random walks"
+    },
+    "随机热力学": {
+      "zh": "随机热力学",
+      "en": "stochastic thermodynamics"
+    },
+    "随机网络": {
+      "zh": "随机网络",
+      "en": "random networks"
+    },
+    "随机过程": {
+      "zh": "随机过程",
+      "en": "stochastic processes"
+    },
+    "集体偏差": {
+      "zh": "集体偏差",
+      "en": "collective bias"
+    },
+    "集体决策": {
+      "zh": "集体决策",
+      "en": "collective decision making"
+    },
+    "集体动力学": {
+      "zh": "集体动力学",
+      "en": "collective dynamics"
+    },
+    "集体协调": {
+      "zh": "集体协调",
+      "en": "collective coordination"
+    },
+    "集体响应": {
+      "zh": "集体响应",
+      "en": "collective response"
+    },
+    "集体学习": {
+      "zh": "集体学习",
+      "en": "collective learning"
+    },
+    "集体振荡": {
+      "zh": "集体振荡",
+      "en": "collective oscillations"
+    },
+    "集体智能": {
+      "zh": "集体智能",
+      "en": "collective intelligence"
+    },
+    "集体生长": {
+      "zh": "集体生长",
+      "en": "collective growth"
+    },
+    "集体粗化": {
+      "zh": "集体粗化",
+      "en": "collective coarsening"
+    },
+    "集体行为": {
+      "zh": "集体行为",
+      "en": "collective behavior"
+    },
+    "集体表现": {
+      "zh": "集体表现",
+      "en": "collective performance"
+    },
+    "集体记忆": {
+      "zh": "集体记忆",
+      "en": "collective memory"
+    },
+    "集体运动": {
+      "zh": "集体运动",
+      "en": "collective motion"
+    },
+    "雷达": {
+      "zh": "雷达",
+      "en": "radar"
+    },
+    "需求异质性": {
+      "zh": "需求异质性",
+      "en": "demand heterogeneity"
+    },
+    "非互易作用": {
+      "zh": "非互易作用",
+      "en": "nonreciprocal interactions"
+    },
+    "非参数推断": {
+      "zh": "非参数推断",
+      "en": "nonparametric inference"
+    },
+    "非平稳性": {
+      "zh": "非平稳性",
+      "en": "nonstationarity"
+    },
+    "非平衡系统": {
+      "zh": "非平衡系统",
+      "en": "nonequilibrium systems"
+    },
+    "非正规网络": {
+      "zh": "非正规网络",
+      "en": "non-normal networks"
+    },
+    "非线性动力学": {
+      "zh": "非线性动力学",
+      "en": "nonlinear dynamics"
+    },
+    "非线性系统": {
+      "zh": "非线性系统",
+      "en": "nonlinear systems"
+    },
+    "非马尔可夫性": {
+      "zh": "非马尔可夫性",
+      "en": "non-Markovianity"
+    },
+    "韧性": {
+      "zh": "韧性",
+      "en": "resilience"
+    },
+    "预期行为": {
+      "zh": "预期行为",
+      "en": "anticipatory behavior"
+    },
+    "预测结构": {
+      "zh": "预测结构",
+      "en": "predictive structure"
+    },
+    "预测记忆": {
+      "zh": "预测记忆",
+      "en": "predictive memory"
+    },
+    "领随关系": {
+      "zh": "领随关系",
+      "en": "leader–follower relations"
+    },
+    "频域分析": {
+      "zh": "频域分析",
+      "en": "frequency-domain analysis"
+    },
+    "频率响应": {
+      "zh": "频率响应",
+      "en": "frequency response"
+    },
+    "风险外溢": {
+      "zh": "风险外溢",
+      "en": "risk spillovers"
+    },
+    "风险感知": {
+      "zh": "风险感知",
+      "en": "risk perception"
+    },
+    "食物网": {
+      "zh": "食物网",
+      "en": "food webs"
+    },
+    "马尔可夫博弈": {
+      "zh": "马尔可夫博弈",
+      "en": "Markov games"
+    },
+    "马尔可夫稳定性": {
+      "zh": "马尔可夫稳定性",
+      "en": "Markov stability"
+    },
+    "马尔可夫过程": {
+      "zh": "马尔可夫过程",
+      "en": "Markov processes"
+    },
+    "马尔可夫链": {
+      "zh": "马尔可夫链",
+      "en": "Markov chains"
+    },
+    "高能粒子": {
+      "zh": "高能粒子",
+      "en": "high-energy particles"
+    },
+    "高阶交互": {
+      "zh": "高阶交互",
+      "en": "higher-order interactions"
+    },
+    "高阶网络": {
+      "zh": "高阶网络",
+      "en": "higher-order networks"
+    }
   }
 }

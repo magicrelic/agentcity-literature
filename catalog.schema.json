@@ -10,7 +10,7 @@
       "const": "https://magicrelic.github.io/agentcity-literature/catalog.schema.json"
     },
     "schemaVersion": {
-      "const": 4,
+      "const": 5,
       "description": "数据结构版本。"
     },
     "library": {
@@ -657,12 +657,19 @@
                   "type": "string"
                 },
                 "uniqueItems": true
+              },
+              "labelEn": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^\\S(?:.*\\S)?$",
+                "description": "研究方向的英文名称。"
               }
             },
             "required": [
               "id",
               "label",
-              "legacyIds"
+              "legacyIds",
+              "labelEn"
             ]
           },
           "minItems": 1
@@ -771,6 +778,38 @@
         "documentTypes",
         "venueGroups"
       ]
+    },
+    "keywordGlossary": {
+      "type": "object",
+      "description": "按已登记原词索引的中文显示名和英文对照。译名不代表作者原词；原词仍完整保存在 research.keywords。",
+      "minProperties": 1,
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^\\S(?:.*\\S)?$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "zh": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^\\S(?:.*\\S)?$",
+            "description": "默认中文显示名；通用缩写和专名可保留。"
+          },
+          "en": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^\\S(?:.*\\S)?$",
+            "description": "英文术语对照，用于双语提示和检索。"
+          }
+        },
+        "required": [
+          "zh",
+          "en"
+        ]
+      }
     }
   },
   "required": [
@@ -778,6 +817,7 @@
     "schemaVersion",
     "library",
     "papers",
-    "taxonomy"
+    "taxonomy",
+    "keywordGlossary"
   ]
 }
