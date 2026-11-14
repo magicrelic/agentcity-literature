@@ -18,6 +18,14 @@ export const publicationKinds = {
 export const comparePapers = (a,b) => b.publication.year-a.publication.year || a.citationKey.localeCompare(b.citationKey,'en');
 export const normalize = value => String(value).normalize('NFKC').toLocaleLowerCase();
 
+// A former broad direction can split into several current directions.
+export function resolveTopicIds(topics, selected) {
+  return [...new Set(selected.flatMap(id => {
+    const current=topics.find(topic=>topic.id===id);
+    return current ? [current.id] : topics.filter(topic=>topic.legacyIds.includes(id)).map(topic=>topic.id);
+  }))];
+}
+
 // The table index and full catalog share field names; this view is never persisted.
 export function catalogView(source) {
   const labels = Object.fromEntries(Object.entries(source.taxonomy).map(([key, values]) =>
@@ -42,7 +50,7 @@ export function catalogView(source) {
     return view;
   });
   const chapters = source.taxonomy.topics.map(topic => ({id:topic.id, title:topic.label,
-    papers:papers.filter(p=>p.classification.topics[0]===topic.id)}));
+    papers:papers.filter(p=>p.classification.topics[0]===topic.id)})).filter(chapter=>chapter.papers.length);
   return { ...source.library, taxonomy:source.taxonomy, papers, chapters, total:papers.length,
     readingCount:papers.filter(p=>p.reading).length };
 }

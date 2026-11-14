@@ -1,4 +1,4 @@
-import { catalogView, filterPapers, normalize, publicationKinds } from './catalog-model.js?v=84ebef909df697638dde1ab0a892db191d8d6a6488da0e192297af24e981a704';
+import { catalogView, filterPapers, normalize, publicationKinds, resolveTopicIds } from './catalog-model.js?v=849576391683d59228a5efb1a58e2be4af916e7a7ea55037a301d0124ab8c736';
 
 async function start() {
   const $ = id => document.getElementById(id);
@@ -297,7 +297,8 @@ async function start() {
     resetFilters();
     $('search').value=params.get('q') || '';
     for(const [key,options] of Object.entries(dimensions)) {
-      const selected=params.getAll(key).filter(value=>options.some(item=>item.id===value));
+      const selected=key==='topic' ? resolveTopicIds(catalog.taxonomy.topics,params.getAll(key))
+        : params.getAll(key).filter(value=>options.some(item=>item.id===value));
       if(selected.length)state[key]=unique(selected);
     }
     const parsedYear=key=>{const value=params.get(key);return value!==null && /^\d{1,4}$/.test(value)?Math.max(minYear,Math.min(maxYear,Number(value))):null;};
@@ -305,8 +306,8 @@ async function start() {
     if(from!==minYear || to!==maxYear){state.yearFrom=Math.min(from,to);state.yearTo=Math.max(from,to);}
     const section=params.get('section');
     if(section && !params.has('topic')) {
-      const topic=catalog.taxonomy.topics.find(t=>t.id===section || t.legacyIds.includes(section));
-      if(topic)state.topic=[topic.id];
+      const topics=resolveTopicIds(catalog.taxonomy.topics,[section]);
+      if(topics.length)state.topic=topics;
     }
     const paper=paperMap.get(params.get('paper'));
     if(paper && !filterPapers([paper],filters()).length)resetFilters();

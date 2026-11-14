@@ -93,8 +93,7 @@
         "keywords": [
           "认知架构",
           "基础模型",
-          "决策机制",
-          "综述"
+          "决策机制"
         ]
       },
       "links": {
@@ -198,7 +197,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -266,8 +266,7 @@
         "keywords": [
           "LLM智能体",
           "认知架构",
-          "评估基准",
-          "综述"
+          "评估基准"
         ]
       },
       "links": {
@@ -317,7 +316,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -408,8 +408,7 @@
         "keywords": [
           "高阶网络",
           "集体动力学",
-          "高阶交互",
-          "综述"
+          "高阶交互"
         ]
       },
       "links": {
@@ -499,7 +498,8 @@
       "classification": {
         "topics": [
           "networks",
-          "collective"
+          "collective",
+          "review"
         ],
         "objects": [
           "network"
@@ -598,8 +598,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -705,7 +704,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -876,9 +875,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation",
-          "agents"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -1077,8 +1074,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "urban"
         ],
         "objects": [
           "urban",
@@ -1206,9 +1202,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility",
-          "adaptation"
+          "social-simulation",
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -1294,8 +1289,7 @@
         "keywords": [
           "多智能体学习",
           "大规模模拟",
-          "长时程任务",
-          "综述"
+          "长时程任务"
         ]
       },
       "links": {
@@ -1364,8 +1358,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "marl",
+          "review"
         ],
         "objects": [
           "ai"
@@ -1486,8 +1480,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -1551,8 +1544,7 @@
           "大语言模型",
           "多智能体系统",
           "社会模拟",
-          "涌现",
-          "综述"
+          "涌现"
         ]
       },
       "links": {
@@ -1622,8 +1614,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation",
+          "review"
         ],
         "objects": [
           "ai",
@@ -1758,9 +1750,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation",
-          "agents"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -1901,8 +1891,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -1994,9 +1983,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "measurement",
-          "adaptation"
+          "social-simulation"
         ],
         "objects": [
           "ai"
@@ -2103,9 +2090,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation",
-          "agents"
+          "games"
         ],
         "objects": [
           "ai"
@@ -2230,9 +2215,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "collective",
-          "agents"
+          "marl",
+          "collective"
         ],
         "objects": [
           "ai"
@@ -2336,9 +2320,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -2585,8 +2567,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -2794,7 +2775,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
+          "social-simulation",
           "mobility"
         ],
         "objects": [
@@ -2960,8 +2941,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -3086,9 +3066,7 @@
       "classification": {
         "topics": [
           "resilience",
-          "mobility",
-          "adaptation",
-          "measurement"
+          "inference"
         ],
         "objects": [
           "urban"
@@ -3266,9 +3244,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -3382,9 +3358,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation",
-          "agents"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -3490,8 +3464,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resources"
+          "marl",
+          "games"
         ],
         "objects": [
           "ai"
@@ -3614,9 +3588,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "networks"
+          "stability"
         ],
         "objects": [
           "network",
@@ -3774,8 +3746,7 @@
         "keywords": [
           "LLM智能体",
           "社会模拟",
-          "生成式模拟",
-          "综述"
+          "生成式模拟"
         ]
       },
       "links": {
@@ -3872,8 +3843,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation",
+          "review"
         ],
         "objects": [
           "ai",
@@ -4018,8 +3989,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "network"
@@ -4088,8 +4058,7 @@
         "keywords": [
           "地理仿真",
           "主体建模",
-          "LLM智能体",
-          "综述"
+          "LLM智能体"
         ]
       },
       "links": {
@@ -4177,8 +4146,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "social-simulation",
+          "review"
         ],
         "objects": [
           "ai",
@@ -4355,8 +4324,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -4615,8 +4583,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -4861,8 +4828,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -5068,9 +5034,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation",
-          "agents"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -5171,9 +5135,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "agents"
+          "resilience"
         ],
         "objects": [
           "economic"
@@ -5346,8 +5308,7 @@
         "keywords": [
           "多智能体协作",
           "失败归因",
-          "智能体自演化",
-          "综述"
+          "智能体自演化"
         ]
       },
       "links": {
@@ -5398,7 +5359,7 @@
       "classification": {
         "topics": [
           "agents",
-          "collective"
+          "review"
         ],
         "objects": [
           "ai"
@@ -5511,9 +5472,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "collective",
-          "agents"
+          "traffic-flow"
         ],
         "objects": [
           "ai",
@@ -5634,8 +5593,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -5756,8 +5714,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "agents",
+          "social-simulation",
           "mobility"
         ],
         "objects": [
@@ -5883,12 +5840,9 @@
       "research": {
         "question": "局部同化、同质偏好等个体机制如何产生共识、极化和碎片化，并与经验数据及AI主体实验连接？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "意见动力学",
           "共识",
-          "极化",
-          "集体动力学与多智能体综述"
+          "极化"
         ]
       },
       "links": {
@@ -5954,8 +5908,7 @@
       "classification": {
         "topics": [
           "collective",
-          "agents",
-          "networks"
+          "review"
         ],
         "objects": [
           "human",
@@ -6123,9 +6076,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "agents",
-          "mobility"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -6321,8 +6272,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -6415,8 +6365,6 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "agents",
           "mobility"
         ],
         "objects": [
@@ -6474,8 +6422,7 @@
         "keywords": [
           "集体智能",
           "动态网络",
-          "群体学习",
-          "集体动力学与多智能体"
+          "群体学习"
         ]
       },
       "links": {
@@ -6567,9 +6514,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents",
-          "networks"
+          "collective"
         ],
         "objects": [
           "ai",
@@ -6691,9 +6636,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility",
-          "measurement"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -6843,9 +6786,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "agents",
-          "mobility"
+          "social-simulation",
+          "environment"
         ],
         "objects": [
           "ai",
@@ -6954,9 +6896,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility",
-          "adaptation"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -7098,7 +7038,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -7254,9 +7194,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience",
-          "collective"
+          "traffic-flow",
+          "stability"
         ],
         "objects": [
           "urban"
@@ -7407,9 +7346,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation",
-          "agents"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -9521,7 +9458,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "particle-physics"
         ],
         "objects": [
           "physical"
@@ -9599,8 +9536,7 @@
         "keywords": [
           "LLM智能体",
           "社会规范",
-          "集体偏差",
-          "集体动力学与多智能体"
+          "集体偏差"
         ]
       },
       "links": {
@@ -9699,9 +9635,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation",
-          "agents"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -9814,8 +9748,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "stability"
         ],
         "objects": [
           "network"
@@ -10010,8 +9943,7 @@
           "进化博弈",
           "强化学习",
           "合作",
-          "群体动力学",
-          "集体动力学与多智能体"
+          "群体动力学"
         ]
       },
       "links": {
@@ -10088,9 +10020,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
-          "collective"
+          "marl"
         ],
         "objects": [
           "ai",
@@ -10290,8 +10220,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resources"
+          "marl",
+          "games"
         ],
         "objects": [
           "network"
@@ -10731,8 +10661,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "cognition"
         ],
         "objects": [
           "ai",
@@ -10787,8 +10716,7 @@
         "keywords": [
           "最短路径",
           "收缩层级",
-          "路网查询",
-          "综述"
+          "路网查询"
         ]
       },
       "links": {
@@ -10821,8 +10749,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "optimization",
+          "review"
         ],
         "objects": [
           "urban",
@@ -11094,9 +11022,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility",
-          "adaptation"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -11379,8 +11305,7 @@
         "question": "大语言模型如何作为信息处理器、奖励设计者、决策者和生成器增强强化学习？",
         "keywords": [
           "LLM智能体",
-          "强化学习",
-          "综述"
+          "强化学习"
         ]
       },
       "links": {
@@ -11484,8 +11409,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement",
+          "review"
         ],
         "objects": [
           "ai"
@@ -11578,7 +11503,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -11747,7 +11672,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "optics"
         ],
         "objects": [
           "physical"
@@ -11823,10 +11748,14 @@
       "research": {
         "question": "细菌对环境的持久化学改变如何储存历史并改变后续竞争及群落组装结果？",
         "keywords": [
-          "环境记忆",
-          "集体记忆",
-          "多稳态",
-          "群落组装"
+          "community assembly",
+          "externalized memory",
+          "microbial interactions",
+          "collective memory",
+          "microbial communities",
+          "niche construction",
+          "multistability",
+          "complex systems"
         ]
       },
       "links": {
@@ -11895,13 +11824,20 @@
           "fields": [
             "links.data"
           ]
+        },
+        {
+          "id": "author-keywords-20261114",
+          "provider": "Author keyword list in the checked article version",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12456175/",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
         "topics": [
-          "resources",
-          "collective",
-          "resilience"
+          "ecology"
         ],
         "objects": [
           "biological",
@@ -12140,8 +12076,7 @@
         "keywords": [
           "智能体自演化",
           "记忆机制",
-          "认知架构",
-          "综述"
+          "认知架构"
         ]
       },
       "links": {
@@ -12192,7 +12127,7 @@
       "classification": {
         "topics": [
           "agents",
-          "adaptation"
+          "review"
         ],
         "objects": [
           "ai"
@@ -12568,8 +12503,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -12729,9 +12663,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "collective",
-          "agents"
+          "marl",
+          "collective"
         ],
         "objects": [
           "ai"
@@ -12857,9 +12790,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -13133,7 +13064,6 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
           "agents"
         ],
         "objects": [
@@ -13205,8 +13135,7 @@
           "非互易作用",
           "集体决策",
           "集体运动",
-          "场论",
-          "集体动力学与多智能体"
+          "场论"
         ]
       },
       "links": {
@@ -13301,9 +13230,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents",
-          "networks"
+          "collective"
         ],
         "objects": [
           "ai",
@@ -13541,9 +13468,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban",
@@ -13686,7 +13611,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -13811,9 +13736,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban",
@@ -13956,7 +13879,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
+          "social-simulation",
           "mobility"
         ],
         "objects": [
@@ -14125,7 +14048,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban",
@@ -14359,7 +14282,7 @@
       ],
       "classification": {
         "topics": [
-          "collective"
+          "statistical-physics"
         ],
         "objects": [
           "physical"
@@ -14496,8 +14419,7 @@
           "强化学习",
           "随机博弈",
           "合作",
-          "激励设计",
-          "集体动力学与多智能体"
+          "激励设计"
         ]
       },
       "links": {
@@ -14579,9 +14501,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
-          "collective"
+          "games",
+          "marl"
         ],
         "objects": [
           "ai",
@@ -14661,8 +14582,7 @@
           "异质性",
           "集体运动",
           "稳定性",
-          "分布式控制",
-          "集体动力学与多智能体"
+          "分布式控制"
         ]
       },
       "links": {
@@ -14761,9 +14681,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "collective",
-          "resilience"
+          "collective"
         ],
         "objects": [
           "ai"
@@ -15086,9 +15004,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
           "networks",
-          "resilience"
+          "ecology"
         ],
         "objects": [
           "human"
@@ -15261,6 +15178,7 @@
       ],
       "classification": {
         "topics": [
+          "statistical-physics",
           "collective"
         ],
         "objects": [
@@ -15344,8 +15262,7 @@
           "强化学习",
           "进化博弈",
           "合作",
-          "群体动力学",
-          "集体动力学与多智能体"
+          "群体动力学"
         ]
       },
       "links": {
@@ -15422,8 +15339,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
+          "marl",
           "collective"
         ],
         "objects": [
@@ -15596,8 +15512,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "animal"
@@ -15699,8 +15614,7 @@
         "question": "不同应用中的多智能体为何协调、与谁协调，以及如何通过学习、通信和利益冲突处理实现协调？",
         "keywords": [
           "多智能体协作",
-          "协调机制",
-          "综述"
+          "协调机制"
         ]
       },
       "links": {
@@ -15751,7 +15665,7 @@
       "classification": {
         "topics": [
           "agents",
-          "collective"
+          "review"
         ],
         "objects": [
           "ai"
@@ -16020,9 +15934,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation",
-          "agents"
+          "games"
         ],
         "objects": [
           "ai"
@@ -16211,8 +16123,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -16295,12 +16206,9 @@
       "research": {
         "question": "反应、预期与群体协调等个体机制如何产生走停波、分道、长期避让和负载均衡？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "人群动力学",
           "交通流",
-          "预期行为",
-          "集体动力学与多智能体综述"
+          "预期行为"
         ]
       },
       "links": {
@@ -16371,8 +16279,7 @@
       "classification": {
         "topics": [
           "collective",
-          "agents",
-          "mobility"
+          "review"
         ],
         "objects": [
           "human",
@@ -16462,8 +16369,7 @@
         "keywords": [
           "LLM智能体",
           "多智能体协作",
-          "协作协议",
-          "综述"
+          "协作协议"
         ]
       },
       "links": {
@@ -16534,7 +16440,7 @@
       "classification": {
         "topics": [
           "agents",
-          "collective"
+          "review"
         ],
         "objects": [
           "ai"
@@ -16708,8 +16614,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -16925,9 +16830,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "ai",
@@ -17066,8 +16969,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -17215,7 +17117,8 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "energy",
+          "reinforcement"
         ],
         "objects": [
           "urban"
@@ -17290,8 +17193,7 @@
         "question": "大语言模型驱动的多模态智能体有哪些结构、协作方式与评价方法？",
         "keywords": [
           "多模态智能体",
-          "大语言模型",
-          "综述"
+          "大语言模型"
         ]
       },
       "links": {
@@ -17381,7 +17283,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -17567,9 +17470,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -17679,8 +17580,7 @@
         "keywords": [
           "LLM智能体",
           "通信架构",
-          "多智能体协作",
-          "综述"
+          "多智能体协作"
         ]
       },
       "links": {
@@ -17731,7 +17631,7 @@
       "classification": {
         "topics": [
           "agents",
-          "networks"
+          "review"
         ],
         "objects": [
           "ai"
@@ -17912,6 +17812,7 @@
       ],
       "classification": {
         "topics": [
+          "networks",
           "agents"
         ],
         "objects": [
@@ -18091,7 +17992,6 @@
       ],
       "classification": {
         "topics": [
-          "agents",
           "mobility"
         ],
         "objects": [
@@ -18314,8 +18214,7 @@
         "keywords": [
           "LLM智能体",
           "强化学习",
-          "策略优化",
-          "综述"
+          "策略优化"
         ]
       },
       "links": {
@@ -18365,8 +18264,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement",
+          "review"
         ],
         "objects": [
           "ai"
@@ -18495,7 +18394,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -18802,9 +18701,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility",
-          "measurement"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -18998,9 +18895,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "networks",
-          "resources"
+          "transport-planning",
+          "optimization"
         ],
         "objects": [
           "urban"
@@ -19152,7 +19048,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "autonomous-driving",
+          "inference"
         ],
         "objects": [
           "urban"
@@ -19291,9 +19188,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "networks"
+          "resilience"
         ],
         "objects": [
           "economic"
@@ -19492,7 +19387,6 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
           "networks"
         ],
         "objects": [
@@ -19616,9 +19510,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "collective",
-          "resources"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -19801,7 +19693,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -19912,8 +19804,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "stability",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -20287,8 +20179,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -20455,8 +20346,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents"
+          "marl"
         ],
         "objects": [
           "ai"
@@ -20609,8 +20499,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "games"
         ],
         "objects": [
           "human"
@@ -20775,7 +20664,7 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "energy"
         ],
         "objects": [
           "infrastructure"
@@ -20933,8 +20822,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "mobility",
+          "inference"
         ],
         "objects": [
           "urban"
@@ -21039,8 +20928,7 @@
         "keywords": [
           "LLM智能体",
           "主体建模",
-          "社会模拟",
-          "综述"
+          "社会模拟"
         ]
       },
       "links": {
@@ -21128,7 +21016,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation",
+          "review"
         ],
         "objects": [
           "ai",
@@ -21248,8 +21137,7 @@
         "keywords": [
           "LLM智能体",
           "多智能体协作",
-          "认知架构",
-          "综述"
+          "认知架构"
         ]
       },
       "links": {
@@ -21341,7 +21229,7 @@
       "classification": {
         "topics": [
           "agents",
-          "networks"
+          "review"
         ],
         "objects": [
           "ai"
@@ -21507,7 +21395,6 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
           "mobility"
         ],
         "objects": [
@@ -21686,8 +21573,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "measurement"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -21801,8 +21687,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "network"
@@ -21912,8 +21797,7 @@
         "question": "大语言模型智能体规划方法可以如何分类与评价？",
         "keywords": [
           "大语言模型",
-          "规划机制",
-          "综述"
+          "规划机制"
         ]
       },
       "links": {
@@ -21978,7 +21862,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -22077,8 +21962,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "statistical-physics"
         ],
         "objects": [
           "network"
@@ -22197,7 +22081,7 @@
       ],
       "classification": {
         "topics": [
-          "networks"
+          "transport-planning"
         ],
         "objects": [
           "urban",
@@ -22280,8 +22164,7 @@
         "keywords": [
           "LLM智能体",
           "多智能体协作",
-          "工作流",
-          "综述"
+          "工作流"
         ]
       },
       "links": {
@@ -22359,7 +22242,7 @@
       "classification": {
         "topics": [
           "agents",
-          "networks"
+          "review"
         ],
         "objects": [
           "ai"
@@ -22583,7 +22466,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "reinforcement",
+          "control"
         ],
         "objects": [
           "ai",
@@ -22660,8 +22544,7 @@
           "移动智能体",
           "共识",
           "异质交互场所",
-          "同步",
-          "集体动力学与多智能体"
+          "同步"
         ]
       },
       "links": {
@@ -22762,9 +22645,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "collective",
-          "mobility"
+          "collective"
         ],
         "objects": [
           "network",
@@ -22860,8 +22741,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -22965,9 +22845,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "networks"
+          "supply-chain"
         ],
         "objects": [
           "economic"
@@ -23095,9 +22973,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience",
-          "collective"
+          "neuroscience"
         ],
         "objects": [
           "biological"
@@ -23211,8 +23087,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -23360,7 +23235,6 @@
       ],
       "classification": {
         "topics": [
-          "agents",
           "mobility"
         ],
         "objects": [
@@ -23594,8 +23468,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "cognition"
         ],
         "objects": [
           "ai",
@@ -23766,8 +23639,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "agents"
         ],
         "objects": [
           "ai"
@@ -23994,7 +23866,7 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "energy"
         ],
         "objects": [
           "infrastructure"
@@ -24152,8 +24024,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -24293,8 +24164,7 @@
         "question": "基于大语言模型的自主智能体具有哪些架构、应用和评价方法？",
         "keywords": [
           "大语言模型",
-          "自主智能体",
-          "综述"
+          "自主智能体"
         ]
       },
       "links": {
@@ -24369,7 +24239,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -24629,7 +24500,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "transport-planning",
+          "control"
         ],
         "objects": [
           "urban"
@@ -24702,8 +24574,7 @@
       "research": {
         "question": "城市模型有哪些发展路径、分类与未来方向？",
         "keywords": [
-          "城市模型",
-          "综述"
+          "城市模型"
         ]
       },
       "links": {
@@ -24772,7 +24643,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban",
+          "review"
         ],
         "objects": [
           "urban"
@@ -24910,7 +24782,6 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
           "mobility"
         ],
         "objects": [
@@ -25178,8 +25049,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -25328,8 +25198,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "transport-planning",
+          "marl"
         ],
         "objects": [
           "ai",
@@ -25561,7 +25431,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "autonomous-driving"
         ],
         "objects": [
           "urban",
@@ -25631,8 +25501,7 @@
         "keywords": [
           "多智能体学习",
           "通信机制",
-          "强化学习",
-          "综述"
+          "强化学习"
         ]
       },
       "links": {
@@ -25720,8 +25589,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "networks"
+          "marl",
+          "review"
         ],
         "objects": [
           "ai"
@@ -25908,7 +25777,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "autonomous-driving",
+          "reinforcement"
         ],
         "objects": [
           "urban",
@@ -26131,7 +26001,7 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "environment"
         ],
         "objects": [
           "urban",
@@ -26214,8 +26084,7 @@
         "keywords": [
           "环境记忆",
           "主动粒子",
-          "群体形成",
-          "集体动力学与多智能体"
+          "群体形成"
         ]
       },
       "links": {
@@ -26294,8 +26163,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "mobility"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -26624,8 +26492,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "measurement"
+          "autonomous-driving",
+          "reinforcement"
         ],
         "objects": [
           "ai",
@@ -26752,8 +26620,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "mobility"
+          "neuroscience"
         ],
         "objects": [
           "animal",
@@ -26837,12 +26704,9 @@
       "research": {
         "question": "如何从交互主体的微观动力学推导群体分布演化，并在个体和群体尺度实施控制？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "人群动力学",
           "平均场",
-          "多尺度建模",
-          "集体动力学与多智能体综述"
+          "多尺度建模"
         ]
       },
       "links": {
@@ -26897,8 +26761,8 @@
       "classification": {
         "topics": [
           "collective",
-          "agents",
-          "mobility"
+          "control",
+          "review"
         ],
         "objects": [
           "human",
@@ -26992,9 +26856,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation",
-          "resilience"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -27154,9 +27016,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -27287,8 +27147,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement",
+          "control"
         ],
         "objects": [
           "ai"
@@ -27421,8 +27281,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "measurement"
+          "networks"
         ],
         "objects": [
           "network"
@@ -27530,7 +27389,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "visualization"
         ],
         "objects": [
           "biological"
@@ -27618,8 +27477,7 @@
         "question": "Transformer在强化学习中有哪些作用、方法与挑战？",
         "keywords": [
           "Transformer",
-          "强化学习",
-          "综述"
+          "强化学习"
         ]
       },
       "links": {
@@ -27684,7 +27542,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "reinforcement",
+          "review"
         ],
         "objects": [
           "ai"
@@ -27811,7 +27670,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "optics"
         ],
         "objects": [
           "physical"
@@ -28201,8 +28060,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "mobility"
         ],
         "objects": [
           "urban",
@@ -28280,8 +28138,7 @@
         "keywords": [
           "人类移动",
           "移动数据",
-          "模型验证",
-          "综述"
+          "模型验证"
         ]
       },
       "links": {
@@ -28371,7 +28228,7 @@
       "classification": {
         "topics": [
           "mobility",
-          "measurement"
+          "review"
         ],
         "objects": [
           "urban"
@@ -28563,7 +28420,7 @@
       "classification": {
         "topics": [
           "agents",
-          "adaptation"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -28703,8 +28560,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "agents"
+          "reduction",
+          "control"
         ],
         "objects": [
           "network",
@@ -28873,7 +28730,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "urban",
+          "marl"
         ],
         "objects": [
           "urban",
@@ -29029,9 +28887,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -29133,7 +28989,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban",
@@ -29242,9 +29098,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility",
-          "adaptation"
+          "transport-planning"
         ],
         "objects": [
           "urban",
@@ -29400,8 +29254,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resilience"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -29559,7 +29412,6 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
           "mobility"
         ],
         "objects": [
@@ -29698,9 +29550,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience",
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "human"
@@ -29882,8 +29732,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective"
+          "social-simulation"
         ],
         "objects": [
           "ai",
@@ -30057,7 +29906,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
+          "reduction",
           "networks"
         ],
         "objects": [
@@ -30218,8 +30067,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "measurement"
+          "neuroscience"
         ],
         "objects": [
           "animal",
@@ -30562,7 +30410,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "autonomous-driving"
         ],
         "objects": [
           "urban"
@@ -30755,7 +30603,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "urban",
+          "reinforcement"
         ],
         "objects": [
           "urban"
@@ -30815,8 +30664,7 @@
         "question": "城市系统科学中的模型与数据研究有哪些进展？",
         "keywords": [
           "城市科学",
-          "城市模型",
-          "综述"
+          "城市模型"
         ]
       },
       "links": {
@@ -30875,7 +30723,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban",
+          "review"
         ],
         "objects": [
           "urban"
@@ -31043,7 +30892,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -31305,7 +31154,7 @@
       "classification": {
         "topics": [
           "agents",
-          "collective"
+          "games"
         ],
         "objects": [
           "ai",
@@ -31477,7 +31326,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience"
+          "social-simulation"
         ],
         "objects": [
           "urban",
@@ -31677,7 +31526,7 @@
       "classification": {
         "topics": [
           "mobility",
-          "measurement"
+          "information"
         ],
         "objects": [
           "urban"
@@ -31929,8 +31778,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "economics"
         ],
         "objects": [
           "human",
@@ -32183,8 +32031,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation"
+          "economics"
         ],
         "objects": [
           "human",
@@ -32345,9 +32192,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban",
@@ -32517,8 +32362,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "stability",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -32684,8 +32529,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement"
         ],
         "objects": [
           "ai"
@@ -32883,7 +32727,6 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
           "mobility"
         ],
         "objects": [
@@ -33055,8 +32898,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "human"
@@ -33159,12 +33001,9 @@
       "research": {
         "question": "如何把个体最优策略与群体状态分布的相互反馈形式化，并学习平均场博弈均衡与社会最优？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "平均场博弈",
           "群体分布",
-          "多智能体强化学习",
-          "集体动力学与多智能体综述"
+          "多智能体强化学习"
         ]
       },
       "links": {
@@ -33229,9 +33068,9 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "collective",
-          "adaptation"
+          "games",
+          "marl",
+          "review"
         ],
         "objects": [
           "ai",
@@ -33402,7 +33241,6 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
           "mobility"
         ],
         "objects": [
@@ -33581,9 +33419,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban",
@@ -33690,8 +33526,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement"
         ],
         "objects": [
           "ai"
@@ -33818,7 +33653,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience"
+          "resilience",
+          "energy"
         ],
         "objects": [
           "urban",
@@ -33937,7 +33773,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -34102,7 +33938,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban",
@@ -34182,8 +34018,7 @@
         "question": "城市发展的模拟与预测方法有哪些进展、挑战与未来方向？",
         "keywords": [
           "城市模型",
-          "城市发展",
-          "综述"
+          "城市发展"
         ]
       },
       "links": {
@@ -34223,7 +34058,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban",
+          "review"
         ],
         "objects": [
           "urban"
@@ -34370,9 +34206,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "mobility",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "urban",
@@ -34540,9 +34374,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "mobility",
+          "networks"
         ],
         "objects": [
           "urban"
@@ -34692,7 +34525,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -34865,8 +34698,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "agents"
+          "mobility",
+          "reinforcement"
         ],
         "objects": [
           "ai",
@@ -35055,7 +34888,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "autonomous-driving"
         ],
         "objects": [
           "urban",
@@ -35242,8 +35075,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "networks"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -35314,8 +35146,7 @@
         "question": "如何以综合建模应对城市可持续性与韧性的复杂系统挑战？",
         "keywords": [
           "城市复杂系统",
-          "城市韧性",
-          "综述"
+          "城市韧性"
         ]
       },
       "links": {
@@ -35374,7 +35205,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience"
+          "urban",
+          "review"
         ],
         "objects": [
           "urban"
@@ -35538,9 +35370,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resources",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "urban",
@@ -35706,8 +35536,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -35894,9 +35723,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience",
-          "resources"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -36065,8 +35892,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "mobility"
         ],
         "objects": [
           "urban",
@@ -36216,8 +36042,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents"
+          "collective"
         ],
         "objects": [
           "human"
@@ -36363,7 +36188,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "autonomous-driving"
         ],
         "objects": [
           "urban"
@@ -36502,7 +36327,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "reinforcement"
         ],
         "objects": [
           "ai"
@@ -36606,9 +36431,7 @@
       "classification": {
         "topics": [
           "resilience",
-          "adaptation",
-          "resources",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -36899,8 +36722,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -37234,7 +37056,7 @@
       ],
       "classification": {
         "topics": [
-          "networks"
+          "urban"
         ],
         "objects": [
           "urban",
@@ -37412,7 +37234,6 @@
       ],
       "classification": {
         "topics": [
-          "agents",
           "mobility"
         ],
         "objects": [
@@ -37571,7 +37392,8 @@
       ],
       "classification": {
         "topics": [
-          "collective"
+          "control",
+          "agents"
         ],
         "objects": [
           "ai"
@@ -37736,8 +37558,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -37869,8 +37690,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "reduction"
         ],
         "objects": [
           "human"
@@ -38047,8 +37867,8 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "urban",
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -38235,9 +38055,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban",
@@ -38324,11 +38142,11 @@
       "research": {
         "question": "个体如何通过共同产生或消耗并响应资源场，使群体接近共同的最优场值？",
         "keywords": [
-          "环境介导耦合",
-          "共享资源",
-          "高阶相互作用",
-          "自组织",
-          "集体动力学与多智能体"
+          "collective behavior",
+          "self-organization",
+          "active matter",
+          "chemotaxis",
+          "three-body interactions"
         ]
       },
       "links": {
@@ -38385,12 +38203,20 @@
           "fields": [
             "links.supplement"
           ]
+        },
+        {
+          "id": "author-keywords-20261114",
+          "provider": "Author keyword list in the checked article version",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8670500/",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
         "topics": [
-          "collective",
-          "resources"
+          "collective"
         ],
         "objects": [
           "physical",
@@ -38466,8 +38292,7 @@
         "keywords": [
           "多智能体学习",
           "马尔可夫博弈",
-          "强化学习",
-          "综述"
+          "强化学习"
         ]
       },
       "links": {
@@ -38557,8 +38382,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "marl",
+          "review"
         ],
         "objects": [
           "ai"
@@ -38679,8 +38504,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation"
+          "queueing"
         ],
         "objects": [
           "network"
@@ -39054,8 +38878,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -39182,8 +39005,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "resilience"
+          "fluids"
         ],
         "objects": [
           "physical"
@@ -39351,8 +39173,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation"
+          "cognition"
         ],
         "objects": [
           "human"
@@ -39505,7 +39326,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -39642,8 +39463,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "reduction"
         ],
         "objects": [
           "biological",
@@ -39823,7 +39643,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "environment"
         ],
         "objects": [
           "urban"
@@ -39939,8 +39759,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -40004,8 +39823,7 @@
         "keywords": [
           "认知架构",
           "动作选择",
-          "认知能力",
-          "综述"
+          "认知能力"
         ]
       },
       "links": {
@@ -40105,8 +39923,9 @@
       ],
       "classification": {
         "topics": [
+          "cognition",
           "agents",
-          "adaptation"
+          "review"
         ],
         "objects": [
           "ai",
@@ -40258,7 +40077,7 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "environment"
         ],
         "objects": [
           "urban",
@@ -40463,6 +40282,7 @@
       ],
       "classification": {
         "topics": [
+          "traffic-flow",
           "networks"
         ],
         "objects": [
@@ -40673,9 +40493,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "mobility",
+          "networks"
         ],
         "objects": [
           "urban"
@@ -40750,12 +40569,9 @@
       "research": {
         "question": "已有群体机器人行为、实现平台和实际应用之间有哪些对应关系与工程限制？",
         "keywords": [
-          "综述",
           "群体机器人",
           "集体决策",
-          "自组织",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "自组织"
         ]
       },
       "links": {
@@ -40818,8 +40634,8 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -41043,8 +40859,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban"
@@ -41293,8 +41108,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -41417,8 +41231,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "resilience"
+          "collective"
         ],
         "objects": [
           "human"
@@ -41491,8 +41304,7 @@
           "强化学习",
           "学习动力学",
           "随机博弈",
-          "混沌",
-          "集体动力学与多智能体"
+          "混沌"
         ]
       },
       "links": {
@@ -41566,9 +41378,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "agents",
-          "collective"
+          "marl"
         ],
         "objects": [
           "ai",
@@ -41626,8 +41436,7 @@
         "keywords": [
           "城市标度",
           "统计物理",
-          "空间结构",
-          "综述"
+          "空间结构"
         ]
       },
       "links": {
@@ -41716,8 +41525,8 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "urban",
+          "review"
         ],
         "objects": [
           "urban"
@@ -42097,8 +41906,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -42272,8 +42080,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "mobility"
+          "collective"
         ],
         "objects": [
           "biological"
@@ -42490,8 +42297,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "network"
@@ -42561,7 +42367,6 @@
       "research": {
         "question": "深度多智能体学习中的涌现、通信、合作与对手建模研究如何分类和评价？",
         "keywords": [
-          "综述",
           "多智能体强化学习",
           "通信",
           "涌现"
@@ -42634,9 +42439,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
-          "collective"
+          "marl",
+          "review"
         ],
         "objects": [
           "ai"
@@ -42807,8 +42611,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "collective"
+          "networks"
         ],
         "objects": [
           "human"
@@ -42891,8 +42694,7 @@
         "keywords": [
           "物质记忆",
           "历史依赖",
-          "无序系统",
-          "综述"
+          "无序系统"
         ]
       },
       "links": {
@@ -42945,8 +42747,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "measurement"
+          "statistical-physics",
+          "review"
         ],
         "objects": [
           "physical"
@@ -43104,8 +42906,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "mobility",
+          "information"
         ],
         "objects": [
           "urban"
@@ -43294,8 +43096,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -43406,8 +43207,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience"
+          "social-simulation"
         ],
         "objects": [
           "human"
@@ -43545,9 +43345,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation",
-          "resources"
+          "collective"
         ],
         "objects": [
           "urban"
@@ -43707,9 +43505,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "mobility"
+          "resilience"
         ],
         "objects": [
           "urban",
@@ -43861,7 +43657,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -44060,9 +43856,8 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience",
-          "mobility"
+          "traffic-flow",
+          "networks"
         ],
         "objects": [
           "urban"
@@ -44242,8 +44037,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "information",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -44424,9 +44219,8 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation",
-          "agents"
+          "marl",
+          "games"
         ],
         "objects": [
           "ai"
@@ -44595,8 +44389,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resources"
+          "games",
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -44891,8 +44685,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "ecology",
+          "resilience"
         ],
         "objects": [
           "ecology"
@@ -45033,8 +44827,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks"
+          "stability"
         ],
         "objects": [
           "network"
@@ -45149,8 +44942,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks"
+          "stability",
+          "resilience"
         ],
         "objects": [
           "network"
@@ -45292,8 +45085,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "human"
@@ -45396,9 +45188,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility",
-          "resources"
+          "transport-planning"
         ],
         "objects": [
           "urban",
@@ -45559,7 +45349,6 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
           "networks"
         ],
         "objects": [
@@ -45650,8 +45439,7 @@
         "keywords": [
           "模仿学习",
           "行为克隆",
-          "决策机制",
-          "综述"
+          "决策机制"
         ]
       },
       "links": {
@@ -45704,8 +45492,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement",
+          "review"
         ],
         "objects": [
           "ai"
@@ -45843,7 +45631,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
+          "inference",
           "networks"
         ],
         "objects": [
@@ -46107,8 +45895,8 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "resilience"
+          "traffic-flow",
+          "control"
         ],
         "objects": [
           "urban"
@@ -46230,9 +46018,8 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation",
-          "resilience"
+          "ecology",
+          "networks"
         ],
         "objects": [
           "animal"
@@ -46373,7 +46160,8 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "energy",
+          "transport-planning"
         ],
         "objects": [
           "urban",
@@ -46496,9 +46284,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks",
-          "resilience"
+          "resilience",
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -46588,8 +46375,7 @@
         "keywords": [
           "多智能体学习",
           "平均场理论",
-          "强化学习",
-          "集体动力学与多智能体"
+          "强化学习"
         ]
       },
       "links": {
@@ -46666,9 +46452,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
-          "measurement"
+          "marl"
         ],
         "objects": [
           "ai"
@@ -46783,8 +46567,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "inference"
         ],
         "objects": [
           "human"
@@ -46884,7 +46667,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "control"
         ],
         "objects": [
           "network"
@@ -47012,8 +46795,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience"
+          "statistical-physics"
         ],
         "objects": [
           "physical"
@@ -47144,9 +46926,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -47216,8 +46996,7 @@
         "keywords": [
           "同步",
           "集体运动",
-          "移动振子",
-          "集体动力学与多智能体"
+          "移动振子"
         ]
       },
       "links": {
@@ -47344,9 +47123,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "networks",
-          "mobility"
+          "collective"
         ],
         "objects": [
           "physical",
@@ -47476,8 +47253,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "information"
         ],
         "objects": [
           "urban"
@@ -47566,12 +47342,9 @@
       "research": {
         "question": "空间结构、个体策略与交互机制如何共同促进或抑制人类合作？",
         "keywords": [
-          "综述",
           "合作",
           "进化博弈",
-          "社会困境",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "社会困境"
         ]
       },
       "links": {
@@ -47680,9 +47453,8 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation",
-          "networks"
+          "games",
+          "review"
         ],
         "objects": [
           "human",
@@ -47807,8 +47579,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement"
         ],
         "objects": [
           "ai"
@@ -47946,8 +47717,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "human"
@@ -48061,8 +47831,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "networks"
+          "queueing"
         ],
         "objects": [
           "network"
@@ -48130,12 +47899,9 @@
       "research": {
         "question": "机器人个体的状态转换和局部交互如何产生群体选择，并决定收敛、准确性及速度之间的关系？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "集体决策",
           "群体机器人",
-          "平均场",
-          "集体动力学与多智能体综述"
+          "平均场"
         ]
       },
       "links": {
@@ -48184,7 +47950,8 @@
       "classification": {
         "topics": [
           "collective",
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -48322,8 +48089,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "adaptation"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -48472,8 +48238,8 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "measurement"
+          "traffic-flow",
+          "statistical-physics"
         ],
         "objects": [
           "urban"
@@ -48563,7 +48329,6 @@
       "research": {
         "question": "自驱动布朗粒子与障碍物、边界和其他粒子的相互作用如何产生非平衡输运与集体状态？",
         "keywords": [
-          "综述",
           "有源物质",
           "自驱粒子",
           "拥挤环境"
@@ -48632,7 +48397,7 @@
       "classification": {
         "topics": [
           "collective",
-          "mobility"
+          "review"
         ],
         "objects": [
           "physical"
@@ -48824,8 +48589,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "inference"
         ],
         "objects": [
           "biological"
@@ -48955,8 +48719,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "optimization"
         ],
         "objects": [
           "urban",
@@ -49110,8 +48873,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "resilience"
         ],
         "objects": [
           "network",
@@ -49215,8 +48977,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "social-simulation",
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -49384,7 +49146,6 @@
       ],
       "classification": {
         "topics": [
-          "agents",
           "mobility"
         ],
         "objects": [
@@ -49454,8 +49215,7 @@
         "keywords": [
           "主成分分析",
           "降维",
-          "统计估计",
-          "综述"
+          "统计估计"
         ]
       },
       "links": {
@@ -49702,7 +49462,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "inference",
+          "review"
         ],
         "objects": [
           "network"
@@ -49766,8 +49527,7 @@
         "keywords": [
           "复杂网络",
           "可控性",
-          "控制理论",
-          "综述"
+          "控制理论"
         ]
       },
       "links": {
@@ -49851,8 +49611,9 @@
       ],
       "classification": {
         "topics": [
+          "control",
           "networks",
-          "resilience"
+          "review"
         ],
         "objects": [
           "network"
@@ -49962,8 +49723,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -50095,9 +49855,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "networks"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -50234,8 +49992,8 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "information",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -50346,7 +50104,7 @@
       "classification": {
         "topics": [
           "resilience",
-          "networks"
+          "economics"
         ],
         "objects": [
           "economic"
@@ -50498,7 +50256,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -50648,9 +50406,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks",
-          "resilience"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -50726,12 +50482,9 @@
       "research": {
         "question": "如何用进化动力学重建和分析多智能体学习规则的长期行为与稳定性？",
         "keywords": [
-          "综述",
           "学习动力学",
           "进化博弈",
-          "多智能体强化学习",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "多智能体强化学习"
         ]
       },
       "links": {
@@ -50788,9 +50541,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "agents",
-          "collective"
+          "marl",
+          "review"
         ],
         "objects": [
           "ai",
@@ -50945,8 +50697,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "human"
@@ -51049,9 +50800,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources",
-          "agents"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -51186,8 +50935,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "mobility"
+          "social-simulation",
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -51298,7 +51047,7 @@
       "classification": {
         "topics": [
           "resilience",
-          "networks"
+          "economics"
         ],
         "objects": [
           "economic"
@@ -51408,8 +51157,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "reinforcement"
         ],
         "objects": [
           "ai"
@@ -51605,9 +51353,8 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience",
-          "mobility"
+          "traffic-flow",
+          "networks"
         ],
         "objects": [
           "urban"
@@ -51964,8 +51711,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -52128,8 +51874,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -52257,8 +52002,8 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "mobility"
+          "transport-planning",
+          "networks"
         ],
         "objects": [
           "urban"
@@ -52432,8 +52177,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "mobility"
         ],
         "objects": [
           "urban",
@@ -52544,8 +52288,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "adaptation"
+          "mobility"
         ],
         "objects": [
           "urban",
@@ -52609,8 +52352,7 @@
         "keywords": [
           "决策机制",
           "认知架构",
-          "主体建模",
-          "综述"
+          "主体建模"
         ]
       },
       "links": {
@@ -52677,7 +52419,8 @@
       "classification": {
         "topics": [
           "agents",
-          "adaptation"
+          "social-simulation",
+          "review"
         ],
         "objects": [
           "ai",
@@ -52769,8 +52512,7 @@
         "question": "不同类型的关系、跨层连接与时间层如何统一表示，并支持网络结构和过程分析？",
         "keywords": [
           "多层网络",
-          "网络结构",
-          "综述"
+          "网络结构"
         ]
       },
       "links": {
@@ -52844,7 +52586,8 @@
       ],
       "classification": {
         "topics": [
-          "networks"
+          "networks",
+          "review"
         ],
         "objects": [
           "network"
@@ -53038,7 +52781,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -53178,7 +52921,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
+          "inference",
           "networks"
         ],
         "objects": [
@@ -53324,8 +53067,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "mobility"
+          "transport-planning"
         ],
         "objects": [
           "human"
@@ -53503,8 +53245,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "measurement"
+          "networks"
         ],
         "objects": [
           "network"
@@ -53687,8 +53428,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "measurement"
+          "networks"
         ],
         "objects": [
           "network"
@@ -53843,8 +53583,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -54004,8 +53743,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -54150,8 +53888,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "network"
@@ -54265,7 +54002,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -54341,12 +54078,9 @@
       "research": {
         "question": "如何从局部交互规则设计、分析和验证稳健、可扩展的机器人群体行为？",
         "keywords": [
-          "综述",
-          "群体机器人",
-          "自组织",
-          "群体工程",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "Swarm robotics",
+          "Review",
+          "Swarm engineering"
         ]
       },
       "links": {
@@ -54405,12 +54139,21 @@
           "fields": [
             "research.keywords"
           ]
+        },
+        {
+          "id": "author-keywords-20261114",
+          "provider": "Author keyword list in the checked article version",
+          "url": "https://iridia.ulb.ac.be/~mbiro/paperi/BraFerBirDor2013si.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -54522,8 +54265,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -54642,8 +54384,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "optimization"
         ],
         "objects": [
           "urban",
@@ -54810,8 +54551,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "networks"
+          "fluids"
         ],
         "objects": [
           "physical"
@@ -54872,8 +54612,7 @@
         "keywords": [
           "响应多样性",
           "社会生态系统",
-          "韧性",
-          "综述"
+          "韧性"
         ]
       },
       "links": {
@@ -54915,8 +54654,9 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience"
+          "resilience",
+          "ecology",
+          "review"
         ],
         "objects": [
           "ecology",
@@ -55065,7 +54805,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -55218,7 +54958,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network",
@@ -55319,8 +55059,7 @@
         "keywords": [
           "有源物质",
           "流体动力学",
-          "集体运动",
-          "综述"
+          "集体运动"
         ]
       },
       "links": {
@@ -55394,7 +55133,8 @@
       ],
       "classification": {
         "topics": [
-          "collective"
+          "collective",
+          "review"
         ],
         "objects": [
           "physical"
@@ -55553,8 +55293,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "stability"
         ],
         "objects": [
           "network"
@@ -55674,9 +55413,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks",
-          "collective"
+          "neuroscience",
+          "statistical-physics"
         ],
         "objects": [
           "biological"
@@ -55808,8 +55546,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "stability"
         ],
         "objects": [
           "network"
@@ -56101,7 +55838,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -56249,8 +55986,8 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "information",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -56420,7 +56157,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience"
+          "stability"
         ],
         "objects": [
           "network",
@@ -56539,8 +56276,8 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources"
+          "queueing",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -56698,9 +56435,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks",
-          "agents"
+          "reduction",
+          "collective"
         ],
         "objects": [
           "human"
@@ -56853,8 +56589,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "resilience"
+          "inference",
+          "stability"
         ],
         "objects": [
           "network",
@@ -56913,8 +56649,7 @@
         "keywords": [
           "统计复杂性",
           "混沌",
-          "预测结构",
-          "综述"
+          "预测结构"
         ]
       },
       "links": {
@@ -56990,7 +56725,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information",
+          "review"
         ],
         "objects": [
           "network",
@@ -57131,7 +56867,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "social-simulation"
         ],
         "objects": [
           "urban"
@@ -57197,8 +56933,7 @@
         "keywords": [
           "模型验证",
           "模式匹配",
-          "生态系统",
-          "综述"
+          "生态系统"
         ]
       },
       "links": {
@@ -57282,8 +57017,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "agents"
+          "ecology",
+          "review"
         ],
         "objects": [
           "ecology"
@@ -57346,8 +57081,7 @@
         "keywords": [
           "时序网络",
           "动态可达性",
-          "时间顺序",
-          "综述"
+          "时间顺序"
         ]
       },
       "links": {
@@ -57421,7 +57155,8 @@
       ],
       "classification": {
         "topics": [
-          "networks"
+          "networks",
+          "review"
         ],
         "objects": [
           "network"
@@ -57553,8 +57288,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "information",
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -57618,8 +57353,7 @@
         "keywords": [
           "风险感知",
           "保护行动",
-          "决策机制",
-          "综述"
+          "决策机制"
         ]
       },
       "links": {
@@ -57690,8 +57424,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience"
+          "cognition",
+          "review"
         ],
         "objects": [
           "human"
@@ -57859,7 +57593,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "network",
@@ -57914,8 +57648,7 @@
         "keywords": [
           "随机热力学",
           "涨落定理",
-          "分子机器",
-          "综述"
+          "分子机器"
         ]
       },
       "links": {
@@ -57979,7 +57712,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "statistical-physics",
+          "review"
         ],
         "objects": [
           "physical",
@@ -58316,8 +58050,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "networks"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -58498,8 +58231,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "inference"
         ],
         "objects": [
           "ecology"
@@ -58603,8 +58335,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "networks"
+          "queueing"
         ],
         "objects": [
           "network"
@@ -58665,10 +58396,7 @@
         "keywords": [
           "集体运动",
           "自驱粒子",
-          "有源物质",
-          "综述",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "有源物质"
         ]
       },
       "links": {
@@ -58741,7 +58469,8 @@
       ],
       "classification": {
         "topics": [
-          "collective"
+          "collective",
+          "review"
         ],
         "objects": [
           "physical",
@@ -58902,7 +58631,6 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
           "mobility"
         ],
         "objects": [
@@ -58959,8 +58687,7 @@
         "keywords": [
           "空间网络",
           "网络结构",
-          "空间约束",
-          "综述"
+          "空间约束"
         ]
       },
       "links": {
@@ -59045,7 +58772,7 @@
       "classification": {
         "topics": [
           "networks",
-          "mobility"
+          "review"
         ],
         "objects": [
           "network"
@@ -59209,7 +58936,6 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
           "networks"
         ],
         "objects": [
@@ -59342,8 +59068,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -59477,8 +59202,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "mobility"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -59582,8 +59306,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -59731,8 +59454,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "networks",
+          "information"
         ],
         "objects": [
           "network"
@@ -59880,8 +59603,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "networks"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -60059,8 +59781,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "agents"
+          "collective"
         ],
         "objects": [
           "human"
@@ -60140,8 +59861,7 @@
           "领随关系",
           "集体运动",
           "有向网络",
-          "时间延迟",
-          "集体动力学与多智能体"
+          "时间延迟"
         ]
       },
       "links": {
@@ -60244,8 +59964,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "measurement"
+          "collective"
         ],
         "objects": [
           "animal"
@@ -60306,12 +60025,9 @@
       "research": {
         "question": "策略更新与交互网络、移动和个体属性的共同演化如何改变群体合作状态？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "进化博弈",
           "共同演化网络",
-          "合作",
-          "集体动力学与多智能体综述"
+          "合作"
         ]
       },
       "links": {
@@ -60376,9 +60092,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "collective",
-          "networks"
+          "games",
+          "review"
         ],
         "objects": [
           "human",
@@ -60444,8 +60159,7 @@
           "环境介导耦合",
           "同步",
           "收缩理论",
-          "群体感应",
-          "集体动力学与多智能体"
+          "群体感应"
         ]
       },
       "links": {
@@ -60507,8 +60221,7 @@
       "classification": {
         "topics": [
           "collective",
-          "networks",
-          "resilience"
+          "control"
         ],
         "objects": [
           "biological",
@@ -60669,8 +60382,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "measurement"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -60843,8 +60555,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "agents"
+          "mobility"
         ],
         "objects": [
           "urban"
@@ -60913,10 +60624,7 @@
         "keywords": [
           "社会动力学",
           "统计物理",
-          "意见动力学",
-          "综述",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "意见动力学"
         ]
       },
       "links": {
@@ -60990,8 +60698,7 @@
       "classification": {
         "topics": [
           "collective",
-          "adaptation",
-          "networks"
+          "review"
         ],
         "objects": [
           "human"
@@ -61045,12 +60752,9 @@
       "research": {
         "question": "个体状态、局部交互和信息放大如何共同产生动物群体的集体认知与适应性决策？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "集体决策",
           "信息传播",
-          "局部交互",
-          "集体动力学与多智能体综述"
+          "局部交互"
         ]
       },
       "links": {
@@ -61105,7 +60809,7 @@
       "classification": {
         "topics": [
           "collective",
-          "agents"
+          "review"
         ],
         "objects": [
           "animal",
@@ -61226,8 +60930,7 @@
         "keywords": [
           "临界转变",
           "早期预警",
-          "临界减速",
-          "综述"
+          "临界减速"
         ]
       },
       "links": {
@@ -61302,8 +61005,8 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "measurement"
+          "stability",
+          "review"
         ],
         "objects": [
           "ecology",
@@ -61429,8 +61132,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "inference"
         ],
         "objects": [
           "human"
@@ -61513,8 +61215,7 @@
         "question": "相互作用动力学与网络结构如何共同决定同步的出现、稳定及失稳？",
         "keywords": [
           "网络同步",
-          "耦合动力学",
-          "综述"
+          "耦合动力学"
         ]
       },
       "links": {
@@ -61599,7 +61300,8 @@
       "classification": {
         "topics": [
           "collective",
-          "networks"
+          "networks",
+          "review"
         ],
         "objects": [
           "network"
@@ -61762,10 +61464,10 @@
       "research": {
         "question": "鸟群中的有效交互范围更符合固定物理距离还是固定数量的近邻？",
         "keywords": [
-          "拓扑交互",
-          "集体运动",
-          "近邻",
-          "集体动力学与多智能体"
+          "animal groups",
+          "behavioral rules",
+          "flocking",
+          "self-organization"
         ]
       },
       "links": {
@@ -61825,12 +61527,20 @@
           "fields": [
             "classification.evidenceTypes"
           ]
+        },
+        {
+          "id": "author-keywords-20261114",
+          "provider": "Author keyword list in the checked article version",
+          "url": "https://liphy-annuaire.univ-grenoble-alpes.fr/pages_personnelles/vivien_lecomte/pnas_105_1232.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
         "topics": [
-          "collective",
-          "measurement"
+          "collective"
         ],
         "objects": [
           "animal"
@@ -61901,7 +61611,6 @@
       "research": {
         "question": "多个智能体同时学习时，如何兼顾学习稳定性与对其他智能体行为变化的适应？",
         "keywords": [
-          "综述",
           "多智能体强化学习",
           "非平稳性",
           "学习动力学"
@@ -61958,9 +61667,8 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation",
-          "collective"
+          "marl",
+          "review"
         ],
         "objects": [
           "ai"
@@ -62031,8 +61739,7 @@
         "keywords": [
           "复杂网络",
           "临界现象",
-          "相变",
-          "综述"
+          "相变"
         ]
       },
       "links": {
@@ -62117,7 +61824,8 @@
       "classification": {
         "topics": [
           "networks",
-          "resilience"
+          "statistical-physics",
+          "review"
         ],
         "objects": [
           "network"
@@ -62259,7 +61967,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "statistical-physics"
         ],
         "objects": [
           "network",
@@ -62492,10 +62200,7 @@
         "question": "节点状态与连接结构相互反馈时，如何产生自组织、功能分化和动力学转变？",
         "keywords": [
           "共同演化网络",
-          "适应性网络",
-          "综述",
-          "集体动力学与多智能体",
-          "集体动力学与多智能体综述"
+          "适应性网络"
         ]
       },
       "links": {
@@ -62589,8 +62294,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "networks"
+          "networks",
+          "review"
         ],
         "objects": [
           "network",
@@ -62688,8 +62393,7 @@
       "classification": {
         "topics": [
           "resilience",
-          "adaptation",
-          "resources"
+          "economics"
         ],
         "objects": [
           "economic"
@@ -63020,8 +62724,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "resilience"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -63129,8 +62832,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation"
+          "environment"
         ],
         "objects": [
           "economic"
@@ -63312,7 +63014,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -63416,8 +63118,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "networks"
+          "economics"
         ],
         "objects": [
           "economic"
@@ -63478,10 +63179,9 @@
       "research": {
         "question": "随距离减弱的个体速度对齐在何种条件下产生群集及速度一致性？",
         "keywords": [
-          "集体运动",
-          "速度共识",
-          "距离衰减",
-          "集体动力学与多智能体"
+          "Consensus reaching problem",
+          "emergence",
+          "flocking"
         ]
       },
       "links": {
@@ -63527,12 +63227,20 @@
           "fields": [
             "links.supplement"
           ]
+        },
+        {
+          "id": "author-keywords-20261114",
+          "provider": "Author keyword list in the checked article version",
+          "url": "https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/CuckerSmale.pdf",
+          "retrievedOn": "2026-11-14",
+          "fields": [
+            "research.keywords"
+          ]
         }
       ],
       "classification": {
         "topics": [
-          "collective",
-          "networks"
+          "collective"
         ],
         "objects": [
           "animal",
@@ -63650,7 +63358,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "inference"
         ],
         "objects": [
           "network"
@@ -63805,8 +63513,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "resilience"
+          "collective"
         ],
         "objects": [
           "human"
@@ -63867,12 +63574,9 @@
       "research": {
         "question": "网络上的个体策略更新如何产生空间合作、循环竞争及非平衡相变？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "进化博弈",
           "相变",
-          "循环竞争",
-          "集体动力学与多智能体综述"
+          "循环竞争"
         ]
       },
       "links": {
@@ -63937,9 +63641,8 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation",
-          "networks"
+          "games",
+          "review"
         ],
         "objects": [
           "human",
@@ -64081,7 +63784,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
+          "inference",
           "networks"
         ],
         "objects": [
@@ -64193,8 +63896,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -64316,9 +64018,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "adaptation",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "network"
@@ -64415,8 +64115,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "networks"
+          "visualization"
         ],
         "objects": [
           "network"
@@ -64558,8 +64257,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -64616,12 +64314,9 @@
       "research": {
         "question": "动物个体的局部行为规则如何通过反馈、阈值与异质性产生群体组织和集体响应？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "自组织",
           "局部交互",
-          "集体决策",
-          "集体动力学与多智能体综述"
+          "集体决策"
         ]
       },
       "links": {
@@ -64676,7 +64371,7 @@
       "classification": {
         "topics": [
           "collective",
-          "agents"
+          "review"
         ],
         "objects": [
           "animal"
@@ -64804,9 +64499,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "collective",
-          "resilience"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -64942,7 +64635,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -65052,8 +64745,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation"
+          "economics"
         ],
         "objects": [
           "economic"
@@ -65206,8 +64898,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "animal"
@@ -65334,8 +65025,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -65465,8 +65155,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -65528,11 +65217,8 @@
       "research": {
         "question": "多智能体强化学习的微观更新与进化博弈的人口动力学之间具有怎样的数学联系？",
         "keywords": [
-          "综述",
-          "集体动力学与多智能体",
           "学习动力学",
-          "进化博弈",
-          "集体动力学与多智能体综述"
+          "进化博弈"
         ]
       },
       "links": {
@@ -65586,9 +65272,9 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "agents",
-          "collective"
+          "marl",
+          "games",
+          "review"
         ],
         "objects": [
           "ai",
@@ -65660,8 +65346,7 @@
         "keywords": [
           "模型约化",
           "多尺度分析",
-          "宏观动力学",
-          "综述"
+          "宏观动力学"
         ]
       },
       "links": {
@@ -65721,7 +65406,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction",
+          "review"
         ],
         "objects": [
           "network"
@@ -65835,8 +65521,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "networks"
+          "collective"
         ],
         "objects": [
           "physical"
@@ -65982,7 +65667,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "network"
@@ -66135,8 +65820,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "cognition"
         ],
         "objects": [
           "human"
@@ -66294,7 +65978,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -66396,9 +66080,7 @@
       ],
       "classification": {
         "topics": [
-          "resilience",
-          "adaptation",
-          "networks"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -66522,9 +66204,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience",
-          "mobility"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -66638,7 +66318,7 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "social-simulation"
         ],
         "objects": [
           "human"
@@ -66777,7 +66457,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -66919,7 +66599,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "biological"
@@ -67043,8 +66723,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resilience"
+          "networks"
         ],
         "objects": [
           "network"
@@ -67101,8 +66780,7 @@
         "keywords": [
           "交通流",
           "自驱粒子",
-          "非平衡系统",
-          "综述"
+          "非平衡系统"
         ]
       },
       "links": {
@@ -67176,8 +66854,9 @@
       ],
       "classification": {
         "topics": [
+          "traffic-flow",
           "collective",
-          "mobility"
+          "review"
         ],
         "objects": [
           "urban",
@@ -67304,8 +66983,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "measurement"
+          "fluids"
         ],
         "objects": [
           "physical"
@@ -67457,7 +67135,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "network"
@@ -67608,9 +67286,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation",
-          "agents"
+          "games"
         ],
         "objects": [
           "network",
@@ -67722,7 +67398,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction"
         ],
         "objects": [
           "network"
@@ -67863,7 +67539,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "network"
@@ -67989,9 +67665,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation",
-          "collective"
+          "games"
         ],
         "objects": [
           "network",
@@ -68136,8 +67810,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation"
+          "games"
         ],
         "objects": [
           "economic"
@@ -68262,8 +67935,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resilience"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -68405,8 +68077,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "agents"
         ],
         "objects": [
           "ai"
@@ -68526,8 +68197,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "agents"
+          "ecology"
         ],
         "objects": [
           "ecology"
@@ -68621,8 +68291,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "collective"
+          "networks"
         ],
         "objects": [
           "network"
@@ -68719,8 +68388,7 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "mobility"
+          "urban"
         ],
         "objects": [
           "urban"
@@ -68865,8 +68533,7 @@
       ],
       "classification": {
         "topics": [
-          "resources",
-          "adaptation"
+          "games"
         ],
         "objects": [
           "network"
@@ -69015,8 +68682,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "human"
@@ -69127,8 +68793,7 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "resources"
+          "supply-chain"
         ],
         "objects": [
           "economic"
@@ -69221,8 +68886,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "agents"
         ],
         "objects": [
           "ai"
@@ -69607,8 +69271,7 @@
         "keywords": [
           "认知架构",
           "决策机制",
-          "智能体理论",
-          "综述"
+          "智能体理论"
         ]
       },
       "links": {
@@ -69677,7 +69340,8 @@
       ],
       "classification": {
         "topics": [
-          "agents"
+          "agents",
+          "review"
         ],
         "objects": [
           "ai"
@@ -69792,8 +69456,7 @@
       ],
       "classification": {
         "topics": [
-          "agents",
-          "adaptation"
+          "marl"
         ],
         "objects": [
           "ai"
@@ -69903,8 +69566,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -70008,8 +69670,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -70126,8 +69787,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "adaptation"
+          "urban"
         ],
         "objects": [
           "urban",
@@ -70242,7 +69902,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "network"
@@ -70375,7 +70035,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "information"
         ],
         "objects": [
           "network"
@@ -70478,8 +70138,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -70575,8 +70234,8 @@
       ],
       "classification": {
         "topics": [
-          "adaptation",
-          "resources"
+          "cognition",
+          "supply-chain"
         ],
         "objects": [
           "economic"
@@ -70712,7 +70371,7 @@
       ],
       "classification": {
         "topics": [
-          "collective"
+          "statistical-physics"
         ],
         "objects": [
           "network",
@@ -70841,7 +70500,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "statistical-physics"
         ],
         "objects": [
           "physical"
@@ -70903,8 +70562,7 @@
         "keywords": [
           "动态临界现象",
           "临界标度",
-          "普适性",
-          "综述"
+          "普适性"
         ]
       },
       "links": {
@@ -70946,8 +70604,8 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "measurement"
+          "statistical-physics",
+          "review"
         ],
         "objects": [
           "physical"
@@ -71001,8 +70659,7 @@
         "keywords": [
           "主方程",
           "网络热力学",
-          "非平衡系统",
-          "综述"
+          "非平衡系统"
         ]
       },
       "links": {
@@ -71044,8 +70701,8 @@
       ],
       "classification": {
         "topics": [
-          "networks",
-          "measurement"
+          "statistical-physics",
+          "review"
         ],
         "objects": [
           "network",
@@ -71173,8 +70830,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "information",
+          "urban"
         ],
         "objects": [
           "urban"
@@ -71294,8 +70951,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "adaptation"
+          "collective"
         ],
         "objects": [
           "human"
@@ -71417,8 +71073,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "collective"
+          "statistical-physics"
         ],
         "objects": [
           "physical"
@@ -71516,8 +71171,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement",
-          "mobility"
+          "optimization"
         ],
         "objects": [
           "urban",
@@ -71633,7 +71287,7 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "inference"
         ],
         "objects": [
           "network"
@@ -71750,7 +71404,8 @@
       ],
       "classification": {
         "topics": [
-          "mobility"
+          "mobility",
+          "information"
         ],
         "objects": [
           "urban"
@@ -71872,7 +71527,8 @@
       ],
       "classification": {
         "topics": [
-          "measurement"
+          "reduction",
+          "statistical-physics"
         ],
         "objects": [
           "physical"
@@ -71983,7 +71639,7 @@
       ],
       "classification": {
         "topics": [
-          "resources"
+          "queueing"
         ],
         "objects": [
           "network"
@@ -72086,8 +71742,7 @@
       ],
       "classification": {
         "topics": [
-          "collective",
-          "mobility"
+          "traffic-flow"
         ],
         "objects": [
           "urban"
@@ -72183,8 +71838,7 @@
       ],
       "classification": {
         "topics": [
-          "mobility",
-          "resources"
+          "transport-planning"
         ],
         "objects": [
           "urban"
@@ -72201,56 +71855,408 @@
     "topics": [
       {
         "id": "collective",
-        "label": "集体运动与协调",
+        "label": "集体动力学",
         "legacyIds": [
-          "s-5ef9d6e943d4"
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
         ]
       },
       {
-        "id": "adaptation",
-        "label": "异质性与适应",
+        "id": "marl",
+        "label": "多智能体学习",
         "legacyIds": [
-          "s-45a455701696"
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
         ]
-      },
-      {
-        "id": "networks",
-        "label": "网络交互与传播",
-        "legacyIds": []
-      },
-      {
-        "id": "resilience",
-        "label": "稳定性、扰动与恢复",
-        "legacyIds": [
-          "s-a617444be894"
-        ]
-      },
-      {
-        "id": "mobility",
-        "label": "空间组织与移动",
-        "legacyIds": [
-          "s-7f01c87f5bc1"
-        ]
-      },
-      {
-        "id": "resources",
-        "label": "资源竞争与分配",
-        "legacyIds": []
       },
       {
         "id": "agents",
-        "label": "智能体建模与仿真",
+        "label": "智能体系统",
         "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "social-simulation",
+        "label": "社会仿真",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "cognition",
+        "label": "认知科学",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "resources",
           "s-agent-architectures-multi-agent-systems",
           "s-cc4665b62d22"
         ]
       },
       {
-        "id": "measurement",
-        "label": "测量、推断与模型约化",
+        "id": "neuroscience",
+        "label": "神经科学",
         "legacyIds": [
-          "s-10c00deb4a1d"
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "s-10c00deb4a1d",
+          "measurement"
         ]
+      },
+      {
+        "id": "games",
+        "label": "博弈论",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22"
+        ]
+      },
+      {
+        "id": "networks",
+        "label": "网络科学",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "stability",
+        "label": "稳定性理论",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "resilience",
+        "label": "系统韧性",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "ecology",
+        "label": "生态动力学",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "mobility",
+        "label": "人类移动",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "urban",
+        "label": "城市科学",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "transport-planning",
+        "label": "交通规划",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "traffic-flow",
+        "label": "交通流理论",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "autonomous-driving",
+        "label": "自动驾驶",
+        "legacyIds": [
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "queueing",
+        "label": "排队论",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-7f01c87f5bc1",
+          "resources"
+        ]
+      },
+      {
+        "id": "control",
+        "label": "控制理论",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "reinforcement",
+        "label": "强化学习",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "optimization",
+        "label": "优化算法",
+        "legacyIds": [
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "inference",
+        "label": "统计推断",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "reduction",
+        "label": "模型约化",
+        "legacyIds": [
+          "s-a617444be894",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "information",
+        "label": "信息论",
+        "legacyIds": [
+          "s-7f01c87f5bc1",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "statistical-physics",
+        "label": "统计物理",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "fluids",
+        "label": "流体力学",
+        "legacyIds": [
+          "s-5ef9d6e943d4",
+          "s-a617444be894",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "optics",
+        "label": "光学",
+        "legacyIds": [
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "particle-physics",
+        "label": "粒子物理",
+        "legacyIds": [
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "energy",
+        "label": "能源系统",
+        "legacyIds": [
+          "s-a617444be894",
+          "resources"
+        ]
+      },
+      {
+        "id": "environment",
+        "label": "环境科学",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "s-7f01c87f5bc1",
+          "resources",
+          "s-agent-architectures-multi-agent-systems",
+          "s-cc4665b62d22",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "economics",
+        "label": "经济学",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "resources",
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "supply-chain",
+        "label": "供应链管理",
+        "legacyIds": [
+          "s-45a455701696",
+          "adaptation",
+          "s-a617444be894",
+          "resources"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "数据可视化",
+        "legacyIds": [
+          "s-10c00deb4a1d",
+          "measurement"
+        ]
+      },
+      {
+        "id": "review",
+        "label": "综述",
+        "legacyIds": []
       }
     ],
     "objects": [

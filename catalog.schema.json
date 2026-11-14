@@ -317,16 +317,14 @@
                 },
                 "keywords": {
                   "type": "array",
-                  "minItems": 1,
-                  "maxItems": 8,
+                  "minItems": 0,
                   "uniqueItems": true,
                   "items": {
                     "type": "string",
                     "minLength": 1,
-                    "maxLength": 40,
                     "pattern": "^\\S(?:.*\\S)?$"
                   },
-                  "description": "人工维护、可复用的检索关键词；同义概念统一用词。"
+                  "description": "优先照录作者关键词并记录来源；可保留既有简短检索词，不人工拼接、翻译或扩写。空数组表示尚无已登记词条。"
                 }
               },
               "required": [
