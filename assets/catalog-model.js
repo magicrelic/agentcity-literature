@@ -82,10 +82,11 @@ export function catalogView(source) {
       venueGroupLabel:labels.venueGroups[classification.venueGroup] || '',
       documentTypeLabel:labels.documentTypes[classification.documentType],
     };
-    view.searchText=normalize([view.title,paper.titleZh,view.authors,view.citationKey,
-      ...paper.authors.items.flatMap(a=>[a.given,a.family,a.literal]),view.journal,view.journalShort,view.year,view.question,
-      ...view.keywordAliases,...view.topicTerms.flatMap(topic=>[topic.label,topic.labelEn]),...view.objectLabels,...view.evidenceLabels,view.venueGroupLabel,
-      view.documentTypeLabel,paper.identifiers.doi,paper.identifiers.arxiv].join(' '));
+    view.termSearchText=normalize([view.title,paper.titleZh,view.question,...view.keywordAliases,
+      ...view.topicTerms.flatMap(topic=>[topic.label,topic.labelEn]),...view.objectLabels,...view.evidenceLabels,view.documentTypeLabel].join(' '));
+    view.searchText=normalize([view.termSearchText,view.authors,view.citationKey,
+      ...paper.authors.items.flatMap(a=>[a.given,a.family,a.literal]),view.journal,view.journalShort,view.year,
+      view.venueGroupLabel,paper.identifiers.doi,paper.identifiers.arxiv].join(' '));
     return view;
   });
   const chapters = source.taxonomy.topics.map(topic => ({id:topic.id, title:topic.label,
@@ -97,7 +98,8 @@ export function catalogView(source) {
 const values = value => value === undefined ? [] : Array.isArray(value) ? value : [value];
 export function filterPapers(papers, filters = {}, searchAliases = new Map()) {
   const query=normalize(filters.q || '').trim();
-  const alternatives=(searchAliases.get(query)||[query]).map(value=>normalize(value).split(/\s+/).filter(Boolean));
+  const translated=searchAliases.get(query);
+  const alternatives=(translated||[query]).map(value=>normalize(value).split(/\s+/).filter(Boolean));
   const selected=Object.fromEntries(['topic','keyword','journal','venue','object','evidence','type','publication','hasReading'].map(key=>[key,values(filters[key])]));
   const matches=(key,items)=>!selected[key].length || selected[key].some(value=>items.includes(value));
   return papers.filter(p => {
@@ -107,6 +109,6 @@ export function filterPapers(papers, filters = {}, searchAliases = new Map()) {
       && (filters.yearTo===undefined || Number(p.year)<=filters.yearTo) && matches('object',c.objects)
       && matches('evidence',c.evidenceTypes) && matches('type',[c.documentType])
       && matches('publication',[p.metadata.publication.kind]) && (!selected.hasReading.length || selected.hasReading.some(value=>String(value)===String(Boolean(p.reading))))
-      && alternatives.some(words=>words.every(word=>p.searchText.includes(word)));
+      && alternatives.some(words=>words.every(word=>(translated?p.termSearchText:p.searchText).includes(word)));
   });
 }
